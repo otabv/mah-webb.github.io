@@ -1,0 +1,14 @@
+---
+title: Kontakt
+markdown: 0
+---
+
+<h2>Kontaktpersoner</h2>
+<ul class="member-list">
+    {% for member in site.data.members %}
+    <li>
+        <span class="member-name">{{ member.name }}</span>
+        <span class="member-email">{{ member.email }}</span>
+    </li>
+    {% endfor %}
+</ul>

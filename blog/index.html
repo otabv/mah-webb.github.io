@@ -1,0 +1,23 @@
+---
+layout: blog
+title: Blogg
+markdown: 0
+---
+
+{% for post in site.posts %}
+<article class="blog-post">
+    <h2 class="blog-post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+
+    <a href="{{ post.url }}" class="blog-post-date">
+        Publicerad: {{ post.date | date: "%-d %B %Y" }}
+    </a>
+
+    <div class="blog-post-excerpt">
+        <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+    </div>
+
+    <a href="{{ post.url }}" class="blog-post-readmore">Läs mer &raquo;</a>
+</article>
+{% endfor %}

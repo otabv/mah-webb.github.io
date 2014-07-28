@@ -1,0 +1,599 @@
+/* Apply a natural box layout model to all elements (@paulirish) */
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Green color: #42b983 */
+
+/**
+ * General and content
+ **/
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #34495e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    word-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+a {
+    text-decoration: none;
+    color: #34495e;
+}
+
+code, pre {
+    font-family: "Inconsolata", Monaco, courier, monospace;
+    font-size: 0.9em;
+    background-color: #f9f9f9;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: initial;
+}
+
+code {
+    color: #525252;
+    padding: 2px 6px;
+    margin: 0 2px;
+    border: 1px solid #e6e6e6;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+.highlight {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.125);
+}
+
+.highlight pre code {
+    display: block; 
+    position: relative;
+    padding: 1.7em 1em;
+    margin: 0;
+    overflow-x: auto;
+    background-color: #f9f9f9;
+    line-height: 1.1em;
+    font-size: 0.95em;
+}
+
+.highlight .lineno {
+    color: #999;
+    display: inline-block;
+    padding: 0.15em 1.2em;
+    margin: 0;
+}
+
+.highlight code {
+    border: 0;
+    white-space: inherit;
+}
+
+.content {
+    max-width: 720px;
+    min-height: 300px; /* TODO temporary? */
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+.highlight,
+.content figure,
+.content p,
+.content ul,
+.content ol {
+    margin: 0.8em 0 0.8em 0.8em;
+}
+
+.content p,
+.content ul,
+.content ol {
+    line-height: 1.6em;
+}
+
+.content a {
+    color: #42b983;
+    font-weight: 600;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.contribute {
+    margin-top: 4em;
+    margin-left: 0.8em;
+    padding-top: 2em;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.contribute p {
+    margin-left: 0;
+}
+
+.content table {
+    background: #eee;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/**
+ * Navigation
+ **/
+.header {
+    box-shadow: 0 0 4px rgba(0,0,0,0.25)
+}
+
+.header-inner {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.brand {
+    display: inline-block;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 0.6em;
+}
+
+.navigation a {
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.navigation a.current,
+.navigation a:hover {
+    border-bottom: 3px solid #42b983;
+}
+
+.navigation .submenu {
+    display: none;
+}
+
+/**
+ * Footer
+ **/
+.footer {
+    background: #f9f9f9; 
+    padding: 2em 0;
+    margin-top: 4em;
+}
+
+.footer-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer .license,
+.footer .fork,
+.footer-links {
+    display: inline-block;
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+.footer .license,
+.footer .fork {
+    width: 36%;
+    margin-right: 3em;
+}
+
+.footer-links {
+    margin-right: 0;
+    width: 15%;
+}
+
+.footer a {
+    color: #42b983;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * Course list
+ **/
+.course-list-header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.course-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.course-list li {
+    margin-bottom: 1em; 
+}
+.content .course-list a:hover {
+    text-decoration: none;
+}
+.content .course-list a:hover .course-name {
+    color: #42b983;
+}
+.course-list .course-name {
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #34495e;
+    display: block;
+}
+.course-list .course-code {
+    color: #838E8F;
+    margin-left: 1.1em;
+}
+.course-list .course-credits {
+    color: #838E8F;
+    margin-left: 1.1em;
+}
+
+/**
+ * Course and blog sidebar
+ **/
+.sidebar {
+    margin-left: 4em;
+    margin-top: 1em;
+    position: absolute;
+    max-width: 20%;
+}
+
+.blog .sidebar .blog-overview .blog-overview-submenu {
+    font-size: 0.9em;
+}
+
+.fix-sidebar .sidebar {
+    position: fixed;
+    top: 0;
+}
+
+.toggle-sidebar {
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 0.8em;
+    height: 32px;
+    cursor: pointer;
+}
+
+.toggle-sidebar:hover {
+    background: #f9f9f9;
+}
+
+.course-name a,
+.blog-header a {
+    font-weight: 200;
+}
+
+.course-name a:hover,
+.blog-header a:hover {
+    color: #42b983;
+}
+
+.course-name small {
+    font-size: 0.8em;
+    margin-left: 0.8em; 
+    color: #99A5A6; 
+}
+
+.course-overview,
+.blog-overview {
+    list-style: none;
+    padding-left: 0.8em;
+}
+
+.course-overview-element,
+.blog-overview-element {
+    color: #99A5A6; 
+    font-size: 0.95em;
+    line-height: 1.8em;
+    cursor: pointer;
+}
+
+.course-overview-element .expand {
+    display: none;
+    color: #42b983;
+    margin-left: 0.5em;
+}
+
+.course-overview-element.toggle .expand,
+.course-overview-element:hover .expand {
+    display: inline;
+}
+
+.course-overview-submenu {
+    display: none;
+    list-style: none;
+    padding-left: 1em;
+}
+
+.blog-overview-submenu {
+    list-style: none;
+    padding-left: 1em;
+}
+
+.course-overview-element.toggle + .course-overview-submenu {
+    display: block;
+}
+
+.course-overview-submenu a,
+.blog-overview-submenu a {
+    color: #4F5858;
+    line-height: 1.8em;
+}
+
+.course-overview-submenu a:hover,
+.blog-overview-submenu a:hover {
+    border-bottom: 2px solid #42b983;
+}
+
+/**
+ * Blog
+ **/
+.blog-post {
+    margin-bottom: 2em;
+}
+
+.blog-post-title {
+    margin-bottom: 5px;
+}
+
+.blog-post-title a {
+    color: #34495e;
+}
+
+.blog-post-title a:hover {
+    color: #42b983;
+    text-decoration: none;
+}
+
+.blog-post .blog-post-date {
+    color: #34495e;
+    display: block;
+    font-size: 0.9em;
+}
+
+.blog-post-date:hover {
+    color: #42b983;
+    text-decoration: none;
+}
+
+.blog-post-excerpt p {
+    margin-left: 0.5em;
+}
+
+/**
+ * Media Queries
+ **/
+@media (max-width: 1300px) {
+    .sidebar {
+        margin-left: 3em;
+    }
+    .content {
+        margin-left: 290px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-inner {
+        max-width: 95%;
+    }
+    .brand {
+        position: relative;
+        left: 80px;
+    }
+    .navigation {
+        right: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        margin-top: 2em;
+    }
+    .footer-inner {
+        max-width: 100%;
+    }
+    .footer .license,
+    .footer .fork,
+    .footer-links {
+        display: block;
+        width: 80%;
+        margin: 0 auto 1.3em auto;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-links li {
+        display: inline-block;
+        margin-right: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    .brand {
+        left: 20px;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 1em 1.4em;
+        margin: 1em auto 0 auto;
+    }
+
+    .content p,
+    .content ul,
+    .content ol,
+    .content a {
+        font-size: 0.9em;
+    }
+
+    .highlight,
+    .content figure,
+    .content p,
+    .content ul,
+    .content ol {
+        margin: 0.8em 0 0.8em 0;
+    }
+
+    .content h1 {
+        font-size: 1.7em;
+    }
+    .content h2 {
+        font-size: 1.3em;
+    }
+
+    .highlight pre code {
+        font-size: 0.9em;
+        padding: 1.2em 0;
+    }
+
+    .sidebar {
+        margin: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        background: white;
+        border-top: 1px solid #eee;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    .contribute {
+        margin-top: 3em;
+        margin-left: 0;
+        padding-top: 1em;
+    }
+
+    .sidebar .course-name,
+    .sidebar .course-overview,
+    .sidebar .blog-header,
+    .sidebar .blog-overview {
+        display: none;
+    }
+
+    .sidebar.toggle .course-name,
+    .sidebar.toggle .course-overview,
+    .sidebar.toggle .blog-header,
+    .sidebar.toggle .blog-overview {
+        display: block;
+    }
+
+    .course-overview-element,
+    .blog-overview-element {
+        cursor: auto;
+    }
+
+    .course-overview-element:hover .expand,
+    .course-overview-element.toggle .expand,
+    .course-overview-element .expand {
+        display: none;
+    }
+    
+    .course-overview-submenu,
+    .blog-overview-submenu {
+        display: block;
+    }
+
+    .course-name,
+    .blog-header {
+        margin-top: 0.2em;
+    }
+
+    .toggle-sidebar {
+        display: block;
+    }
+}
+
+
+/**
+ * ===============
+ * Code Highlight
+ * ===============
+ **/
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2; } /* Error */
+.highlight .k { color: #e96900; } /* Keyword */
+.highlight .o { } /* Operator */
+.highlight .cm { color: #999988; } /* Comment.Multiline */
+.highlight .cp { color: #999999; } /* Comment.Preproc */
+.highlight .c1 { color: #999988; } /* Comment.Single */
+.highlight .cs { color: #999999; } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd; } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa; } /* Generic.Deleted.Specific */
+.highlight .ge { } /* Generic.Emph */
+.highlight .gr { color: #aa0000; } /* Generic.Error */
+.highlight .gh { color: #999999; } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd; } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa; } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888; } /* Generic.Output */
+.highlight .gp { color: #555555; } /* Generic.Prompt */
+.highlight .gs { } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa; } /* Generic.Subheading */
+.highlight .gt { color: #aa0000; } /* Generic.Traceback */
+.highlight .kc {  } /* Keyword.Constant */
+.highlight .kd { color: #0092db; } /* Keyword.Declaration */
+.highlight .kp {  } /* Keyword.Pseudo */
+.highlight .kr {  } /* Keyword.Reserved */
+.highlight .kt { color: #445588; } /* Keyword.Type */
+.highlight .m { color: #42b983; } /* Literal.Number */
+.highlight .s { color: #d14; } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0092db; } /* Name.Builtin */
+.highlight .nc { color: #0092db; } /* Name.Class */
+.highlight .no { color: #008080; } /* Name.Constant */
+.highlight .ni { color: #800080; } /* Name.Entity */
+.highlight .ne { color: #990000; } /* Name.Exception */
+.highlight .nf { color: #990000; } /* Name.Function */
+.highlight .nn { color: #555555; } /* Name.Namespace */
+.highlight .nt { color: #000080; } /* Name.Tag */
+.highlight .nv { color: #099999; } /* Name.Variable */
+.highlight .ow {  } /* Operator.Word */
+.highlight .w { color: #bbbbbb; } /* Text.Whitespace */
+.highlight .mf { color: #009999; } /* Literal.Number.Float */
+.highlight .mh { color: #009999; } /* Literal.Number.Hex */
+.highlight .mi { color: #42b983; } /* Literal.Number.Integer */
+.highlight .mo { color: #009999; } /* Literal.Number.Oct */
+.highlight .sb { color: #d14; } /* Literal.String.Backtick */
+.highlight .sc { color: #d14; } /* Literal.String.Char */
+.highlight .sd { color: #d14; } /* Literal.String.Doc */
+.highlight .s2 { color: #42b983; } /* Literal.String.Double */
+.highlight .se { color: #d14; } /* Literal.String.Escape */
+.highlight .sh { color: #d14; } /* Literal.String.Heredoc */
+.highlight .si { color: #d14; } /* Literal.String.Interpol */
+.highlight .sx { color: #d14; } /* Literal.String.Other */
+.highlight .sr { color: #009926; } /* Literal.String.Regex */
+.highlight .s1 { color: #d14; } /* Literal.String.Single */
+.highlight .ss { color: #990073; } /* Literal.String.Symbol */
+.highlight .bp { color: #999999; } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080; } /* Name.Variable.Class */
+.highlight .vg { color: #008080; } /* Name.Variable.Global */
+.highlight .vi { color: #008080; } /* Name.Variable.Instance */
+.highlight .il { color: #009999; } /* Literal.Number.Integer.Long */

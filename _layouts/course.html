@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    {% include head.html %}
+    <body class="course">
+        {% include header.html %}
+        {% include sidebars/course.html %}
+
+        <div class="content">
+        {% if page.markdown == 0 %}
+            {{ content }}
+        {% else %}
+            {{ content || markdownify }}
+        {% endif %}
+
+        {% include contribute.html %}
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>
+

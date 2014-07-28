@@ -1,0 +1,18 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+
+    Sebastian Bengtegård
+    Site: http://github.com/trumtomte
+    Location: Ystad, SE
+
+    Johannes Karlsson
+    Site: http://github.com/johanneskason
+    Twitter: johanneskason
+    Location: Malmö, SE
+
+    Bo Peterson
+    Site:
+    Twitter: bo_peterson
+    Location: Lund, SE

@@ -1,0 +1,33 @@
+# Kursinformation
+name: Webbpublicering
+code: me134a
+credits: 15.0
+
+# Uppgifter
+assignments:
+  - name: Uppgift 1
+    file: U01
+    credits: 1.0
+
+  - name: Uppgift 2
+    file: U02
+    credits: 2.0
+
+# Laborationer
+exercises:
+  - name: Laboration 1
+    file: L01
+
+  - name: Laboration 2
+    file: L02
+
+# Projekt
+projects:
+  - name: Bornholm
+    file: P01
+    credits: 7.0
+
+# Föreläsningar
+lectures:
+  - name: HTML 1
+    file: F01

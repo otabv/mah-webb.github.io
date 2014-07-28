@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    {% include head.html %}
+    <body class="blog">
+        {% include header.html %}
+        {% include sidebars/blog.html %}
+
+        <div class="content">
+        {% if page.markdown == 0 %}
+            {{ content }}
+        {% else %}
+            {{ content || markdownify }}
+        {% endif %}
+        </div>
+
+        {% include footer.html %}
+    </body>
+</html>
+
