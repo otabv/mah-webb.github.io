@@ -5,22 +5,13 @@
     <ul class="navigation">
         <li>
             <a href="/courses" title="Gå till kursöversikt">Kurser</a>
-            <!--
-            <ul class="submenu">
-            {% for courses in site.data.courses %}
-            {% assign course = courses[1] %}
-                <li>
-                    <a href="/courses/{{ course.code }}">
-                        {{ course.name }}
-                        <small>{{ course.code}} - {{ course.credits }} hp</small>
-                    </a>
-                </li>
-            {% endfor %}
-            </ul>
-            -->
         </li>
-        <li><a href="/blog" title="Gå till bloggöversikt">Blogg</a></li>
-        <li><a href="/contact" title="Gå till kontaktsidan">Kontakt</a></li>
+        <li>
+            <a href="/blog" title="Gå till bloggöversikt">Blogg</a>
+        </li>
+        <li>
+            <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
+        </li>
     </ul>
 </div>
 </header>

@@ -1,4 +1,5 @@
 ---
+layout: blog
 title: Webbpublicering HT14
 category: me134a
 ---
