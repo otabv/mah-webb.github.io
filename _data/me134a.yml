@@ -1,33 +1,30 @@
 # Kursinformation
-name: Webbproduktion
-code: me135a
-credits: 15.0
 
 # Uppgifter
 assignments:
   - name: Uppgift 1
-    short: U01
+    file: U01
     credits: 1.0
 
   - name: Uppgift 2
-    short: U02
+    file: U02
     credits: 2.0
 
 # Laborationer
 exercises:
   - name: Laboration 1
-    short: L01
+    file: L01
 
   - name: Laboration 2
-    short: L02
+    file: L02
 
 # Projekt
 projects:
   - name: Bornholm
-    short: P01
+    file: P01
     credits: 7.0
 
 # Föreläsningar
 lectures:
   - name: HTML 1
-    short: F01
+    file: F01

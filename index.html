@@ -6,8 +6,7 @@ markdown: 0
 
 <h1 class="course-list-header">Öppna kurser</h1>
 <ul class="course-list">
-    {% for courses in site.data.courses %}
-    {% assign course = courses[1] %}
+    {% for course in site.data.courses %}
     <li>
         <a href="/courses/{{ course.code }}" title="Gå till kursen {{ course.name }}">
             <span class="course-name">{{ course.name }}</span>
