@@ -385,6 +385,26 @@ code {
 }
 
 /**
+ * Contact
+ **/
+.member-list li {
+    margin-bottom: 1em;
+}
+
+.member-list span {
+    display: block;
+}
+
+.member-list .member-name {
+    font-size: 1.2em;
+}
+
+.member-list .member-email,
+.member-list .member-phone {
+    color:
+}
+
+/**
  * Media Queries
  **/
 @media (max-width: 1300px) {
@@ -531,6 +551,17 @@ code {
     }
 }
 
+@media (max-width: 370px) {
+    .header .brand,
+    .header .navigation {
+        position: static;
+        display: block;
+        text-align: center;
+    }
+    .header .brand {
+        margin-bottom: 1em;
+    }
+}
 
 /**
  * ===============
