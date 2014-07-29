@@ -336,6 +336,13 @@ code {
     padding-left: 1em;
 }
 
+.blog-overview-submenu a small,
+.course-overview-submenu a small {
+    margin-left: 0.6em;
+    font-size: 0.9em;
+    color: #758383;
+}
+
 .course-overview-element.toggle + .course-overview-submenu {
     display: block;
 }

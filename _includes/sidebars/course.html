@@ -17,7 +17,7 @@
                 {% for assignment in site.data[page.code].assignments %}
                 <li>
                     <a href="/courses/{{ page.code }}/assignments/{{ assignment.file | append: '.html' }}" title="Gå till uppgiften {{ assignment.name }}">
-                        {{ assignment.name }}
+                        {{ assignment.name }} <small>({{ assignment.credits }} hp)</small>
                     </a>
                 </li>
                 {% endfor %}

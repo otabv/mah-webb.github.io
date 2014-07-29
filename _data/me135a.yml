@@ -5,29 +5,41 @@ credits: 15.0
 
 # Uppgifter
 assignments:
-  - name: Uppgift 1
-    file: U01
-    credits: 1.0
+    - name: Uppgift 1
+      file: U01
+      credits: 1
 
-  - name: Uppgift 2
-    file: U02
-    credits: 2.0
+    - name: Uppgift 2
+      file: U02
+      credits: 1
+
+    - name: Uppgift 3
+      file: U03
+      credits: 2
+
+    - name: Uppgift 4
+      file: U04
+      credits: 3
+
+    - name: Uppgift 5
+      file: U05
+      credits: 2
 
 # Laborationer
 exercises:
-  - name: Laboration 1
-    file: L01
+    - name: Laboration 1
+      file: L01
 
-  - name: Laboration 2
-    file: L02
+    - name: Laboration 2
+      file: L02
 
 # Projekt
 projects:
-  - name: Bornholm
-    file: P01
-    credits: 7.0
+    - name: Bornholm
+      file: P01
+      credits: 7
 
 # Föreläsningar
 lectures:
-  - name: HTML 1
-    file: F01
+    - name: HTML 1
+      file: F01
