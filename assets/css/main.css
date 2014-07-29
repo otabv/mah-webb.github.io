@@ -267,6 +267,8 @@ code {
 .fix-sidebar .sidebar {
     position: fixed;
     top: 0;
+    overflow-x: scroll;
+    max-height: 85%;
 }
 
 .toggle-sidebar {
