@@ -1,9 +1,18 @@
 name: MaH Webb
+
 description: MaH Webb
+
 author:
     name: Sebastian Bengtegård
+
 url: http://mah-webb.github.io
+
 highlighter: pygments
+
 markdown: kramdown
+
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md']
+
 include: ['.htaccess']
+
+permalink: /blog/:title.html
