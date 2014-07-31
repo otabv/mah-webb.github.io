@@ -8,6 +8,7 @@
     </h3>
 
     <ul class="course-overview">
+        {% if site.data[page.code].assignments %}
         <li>
             <span class="course-overview-element">
                 Uppgifter
@@ -23,7 +24,9 @@
                 {% endfor %}
             </ul>
         </li>
+        {% endif %}
 
+        {% if site.data[page.code].exercises %}
         <li>
             <span class="course-overview-element">
                 Laborationer
@@ -39,7 +42,9 @@
                 {% endfor %}
             </ul>
         </li>
+        {% endif %}
 
+        {% if site.data[page.code].projects %}
         <li>
             <span class="course-overview-element">
                 Projekt
@@ -55,7 +60,9 @@
                 {% endfor %}
             </ul>
         </li>
+        {% endif %}
 
+        {% if site.data[page.code].lectures %}
         <li>
             <span class="course-overview-element">
                 Föreläsningar
@@ -71,5 +78,6 @@
                 {% endfor %}
             </ul>
         </li>
+        {% endif %}
     </ul>
 </div>
