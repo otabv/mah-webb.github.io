@@ -97,6 +97,7 @@ code {
 .content ul,
 .content ol {
     line-height: 1.6em;
+    text-align: justify;
 }
 
 .content a {
