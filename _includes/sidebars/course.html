@@ -18,7 +18,7 @@
                 {% for assignment in site.data[page.code].assignments %}
                 <li>
                     <a href="/courses/{{ page.code }}/assignments/{{ assignment.file | append: '.html' }}" title="Gå till uppgiften {{ assignment.name }}">
-                        {{ assignment.name }} <small>({{ assignment.credits }} hp)</small>
+                        {{ assignment.name }} {% if assignment.credits %}<small>({{ assignment.credits }} hp)</small>{% endif %}
                     </a>
                 </li>
                 {% endfor %}
@@ -54,7 +54,7 @@
                 {% for project in site.data[page.code].projects %}
                 <li>
                     <a href="/courses/{{ page.code }}/projects/{{ project.file | append: '.html' }}" title="Gå till projektet {{ project.name }}">
-                        {{ project.name }}
+                        {{ project.name }} {% if project.credits %}<small>({{ project.credits }} hp)</small>{% endif %}
                     </a>
                 </li>
                 {% endfor %}
