@@ -19,6 +19,7 @@ Samtliga inlämningar sker via platformen [It's Learning][itslearning]. En inlä
 1. Vid en textbaserad inlämning, t.ex en rapport, __skall__ den vara i filformatet PDF. Det vill säga om du skapat din rapport med Word så skall du exportera den till en PDF.
 
     Namnge din inlämning på följande vis: nummer på inlämning, förnamn, efternamn (initial) och kurskod. Ett exempel för Anders Svensson kan vara `inl1_anders_s_me134a.pdf`. 
+
 2. Vid inlämning av ett flertal filer, t.ex en HTML-baserad inlämning, __skall__ dessa komprimeras till en ZIP fil (eller likvärdigt som t.ex RAR).
 
     Namnge din inläming på samma vis som i ovanstående punkt, t.ex `inl1_anders_s_me134a.zip`. Notera att det är bara den komprimerade filen som behövs namnges, det vill säga att du behöver inte döpa om alla filer.
