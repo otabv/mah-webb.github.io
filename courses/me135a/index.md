@@ -1,10 +1,10 @@
 ---
 layout: course
-code: me135a
-title: Webbpublicering ME135A (15.0 hp)
+code: me134a
+title: Webbproduktion ME135A (15.0 hp)
 ---
 
-# Webbpublicering - ME135A
+# Webbproduktion - ME135A
 
 ## Beskrivning
 
@@ -17,11 +17,10 @@ Den fullständiga kursplanen finner ni [här][kursplan].
 Samtliga inlämningar sker via platformen [It's Learning][itslearning]. En inlämning kan struktureras på ett av två följande vis:
 
 1. Vid en textbaserad inlämning, t.ex en rapport, __skall__ den vara i filformatet PDF. Det vill säga om du skapat din rapport med Word så skall du exportera den till en PDF.
+    * Namnge din inlämning på följande vis: nummer på inlämning, förnamn, efternamn (initial) och kurskod. Ett exempel för Anders Svensson kan vara `inl1_anders_s_me134a.pdf`. 
 
-    Namnge din inlämning på följande vis: nummer på inlämning, förnamn, efternamn (initial) och kurskod. Ett exempel för Anders Svensson kan vara `inl1_anders_s_me134a.pdf`. 
 2. Vid inlämning av ett flertal filer, t.ex en HTML-baserad inlämning, __skall__ dessa komprimeras till en ZIP fil (eller likvärdigt som t.ex RAR).
-
-    Namnge din inläming på samma vis som i ovanstående punkt, t.ex `inl1_anders_s_me134a.zip`. Notera att det är bara den komprimerade filen som behövs namnges, det vill säga att du behöver inte döpa om alla filer.
+    * Namnge din inläming på samma vis som i ovanstående punkt, t.ex `inl1_anders_s_me134a.zip`. Notera att det är bara den komprimerade filen som behövs namnges, det vill säga att du behöver inte döpa om alla filer.
 
 Innan inlämning är det bra att kontrollera att det material du lämnar in är korrekt. Nedan finner du en mindre checklista som du kan ta för vana att säkerställa:
 
@@ -40,5 +39,5 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 
 
 [kursplan]: http://edu.mah.se/ME134A#Syllabus "Gå till kursplanen"
-[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME134A-20142-75076-%2Ck.ME134A-20142-TS495-%2C "Gå till schemat"
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20142-TS401-%2C "Gå till schemat"
 [itslearning]: https://mah.itslearning.com/elogin/ "Gå till It's learning"
