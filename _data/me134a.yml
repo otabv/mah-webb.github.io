@@ -40,6 +40,6 @@ projects:
       credits: 6
 
 # Föreläsningar
-lectures:
-    - name: HTML 1
-      file: F01
+# lectures:
+#     - name: HTML 1
+#       file: F01
