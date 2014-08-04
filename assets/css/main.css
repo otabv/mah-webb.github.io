@@ -109,6 +109,19 @@ code {
     text-decoration: underline;
 }
 
+.content p img {
+    display: block;
+    margin: 0 auto 1.2em auto;
+    max-width: 100%;
+}
+
+/* TODO better solution.. */
+.content p img + em {
+    display: block;
+    text-align: center;
+    font-style: normal;
+}
+
 .contribute {
     margin-top: 4em;
     margin-left: 0.8em;
