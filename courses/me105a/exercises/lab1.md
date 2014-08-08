@@ -149,13 +149,13 @@ catch (Exception $e)
 
 Ersätt sedan raden 
 
-{% highlight php %}
+{% highlight php startinline=True %}
 $pdo=new PDO(...
 {% endhighlight %}
 
 i index.php med
 
-{% highlight php %}
+{% highlight php startinline=True %}
 include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
 {% endhighlight %}
 

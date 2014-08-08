@@ -12,7 +12,7 @@ credits: 15.0
 # Laborationer
 exercises:
     - name: Laboration 1
-      file: L01
+      file: lab1
 
 # Projekt
 #projects:
