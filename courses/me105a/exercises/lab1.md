@@ -5,19 +5,6 @@ title: Laboration 1
 ---
 
 #Laboration 1
-<!--
-cd /Users/k3bope/Box\ Sync/Box\ ME/kurser/ME105A_Databasbaserad_publicering/notes2014/lab1-filer/
-pandoc lab1.md --css=test.css -s -o lab1.html -t html5
-
-
-cp project.html /Users/k3bope/Sites/dvwebb/me132a/public2014
-curl -3 -v --ftp-ssl -T "project.html" -u k3bope ftp://ddwap.mah.se/me132a/public2014/
-
--->
-
-**xxx fixa några bilder (skala ner), annars är det nog klart**
-
-
 
 Syfte med laborationen:
 att testa PHP-kod för att kommunicera med MySQL
@@ -34,7 +21,7 @@ Gå till <http://ddwap.mah.se> och logga in.
 
 Klicka sedan MYSQL QUERY BROWSER och logga in. **OBS ange ditt användarnamn med små bokstäver, annars blir det problem längre fram i kursen.**
 
-![](im1/image001.png)
+![mysql query browser](im1/image001.png)
  
 
 ![](im1/image002.png)
