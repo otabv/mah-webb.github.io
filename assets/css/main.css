@@ -408,6 +408,29 @@ code {
 }
 
 /**
+ * Pagination
+ **/
+.blog .pagination-container {
+    margin-top: 3em;
+}
+
+.blog .pagination {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+.blog .pagination li {
+    display: inline-block;
+}
+
+.blog .pagination li a,
+.blog .pagination li span {
+    padding: 0.3em 0.5em;
+}
+
+/**
  * Contact
  **/
 .member-list li {

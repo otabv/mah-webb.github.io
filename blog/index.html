@@ -4,7 +4,7 @@ title: Blogg
 markdown: 0
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article class="blog-post">
     <h2 class="blog-post-title">
         <a href="{{ post.url }}">{{ post.title }}</a>
@@ -21,3 +21,37 @@ markdown: 0
     <a href="{{ post.url }}" class="blog-post-readmore">Läs mer &raquo;</a>
 </article>
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination-container">
+    <ul class="pagination">
+        <li class="previous">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#8592;</a>
+        {% else %}
+            <span>&#8592;</span>
+        {% endif %}
+        </li>
+
+        {% for page in (1..paginator.total_pages) %}
+        <li class="item">
+            {% if page == paginator.page %}
+                <span>{{ page }}</span>
+            {% elsif page == 1 %}
+                <a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+            {% else %}
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+
+        <li class="next">
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#8594;</a>
+        {% else %}
+            <span>&#8594;</span>
+        {% endif %}
+        </li>
+    </ul>
+</div>
+{% endif %}
