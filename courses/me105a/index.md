@@ -23,6 +23,8 @@ echo $x+$y;
 ?>
 ```
 
+Funkade bra inne i github, men inte med jekyl verkar det som. Men nu vägrar github committa. Varför?
+
 ## Länkar
 
 * [Kursplan][kursplan]
