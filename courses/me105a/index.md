@@ -13,6 +13,16 @@ Den fullständiga kursplanen finner ni [här][kursplan].
 ## Inlämning
 
 
+highlight-test:
+
+```php
+<?php
+$x=9;
+$y=7;
+echo $x+$y;
+?>
+```
+
 ## Länkar
 
 * [Kursplan][kursplan]
