@@ -5,14 +5,17 @@
 
     Sebastian Bengtegård
     Site: http://github.com/trumtomte
+    Github: trumtomte
     Location: Ystad, SE
 
     Johannes Karlsson
     Site: http://github.com/johanneskason
+    Github: johanneskason
     Twitter: johanneskason
     Location: Malmö, SE
 
     Bo Peterson
-    Site:
+    Site: http://github.com/bopeterson
+    Github: bopeterson
     Twitter: bo_peterson
     Location: Lund, SE
