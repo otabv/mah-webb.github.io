@@ -591,10 +591,16 @@ code {
     .course-overview-element .expand {
         display: none;
     }
+
+    .course-overview,
+    .blog-overview {
+        padding-left: 0;
+    }
     
     .course-overview-submenu,
     .blog-overview-submenu {
         display: block;
+        padding-left: 0;
     }
 
     .course-name,
