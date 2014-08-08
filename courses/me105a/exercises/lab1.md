@@ -1,3 +1,9 @@
+---
+layout: instructions
+code: me105a
+title: Laboration 1
+---
+
 #Laboration 1
 <!--
 cd /Users/k3bope/Box\ Sync/Box\ ME/kurser/ME105A_Databasbaserad_publicering/notes2014/lab1-filer/
@@ -22,7 +28,7 @@ Genom hela kursen kommer vi att använda samma webbserver som i Programmering f�
 
 ##Uppgift 1 - Skapa databas
 
-Stegen på sidorna 35-42 i boken PHP & MySQK-Novice to Ninja ska följas, men något modifierade. De modifierade stegen finns beskrivna nedan. 
+Stegen på sidorna 35-42 i boken PHP & MySQL - Novice to Ninja ska följas, men något modifierade. De modifierade stegen finns beskrivna nedan. 
 
 Gå till <http://ddwap.mah.se> och logga in.
 
@@ -92,7 +98,7 @@ Skapa en ny php-fil i mappen ddwap/me105/lab1 som döps till index.php. Mappen d
 
 Testa sedan koden nedan. 
 
-```php
+{% highlight php %}
 <?php
 /* 
 steg 1: upprätta kontakt mellan php-sidan och databasen
@@ -116,7 +122,7 @@ foreach ($result as $row) {
 	echo "<br>";
 }
 ?>
-```
+{% endhighlight %}
 
 Publicera den på servern och öppna med webbläsare. Om allt funkar ska det skämt som matades in i uppgift 1 visas. 
 
@@ -125,7 +131,7 @@ Som ni ser i föregående uppgift så sparas ert lösenord i klartext i php-file
 
 Skapa en fil som ligger direkt i katalogen me105a (alltså inte i lab1) som heter *connect.php*. Den ska innehålla följande kod (men med k3bope ersätt med ert användarnamn och xxxxxxx med ert lösenord). Filen ska bara innehålla php-kod, ingen html-kod. 
 
-```php
+{% highlight php %}
 <?php
 try 
 {
@@ -139,19 +145,19 @@ catch (Exception $e)
 	exit();
 }
 ?>
-```
+{% endhighlight %}
 
 Ersätt sedan raden 
 
-```php
+{% highlight php %}
 $pdo=new PDO(...
-```
+{% endhighlight %}
 
 i index.php med
 
-```php
+{% highlight php %}
 include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
-```
+{% endhighlight %}
 
 Testa att öppna index.php med en webbläsare. Om allt funkar ska skämtet som matades in i första uppgiften visas. 
 
