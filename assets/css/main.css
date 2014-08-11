@@ -271,6 +271,7 @@ code {
     margin-left: 2em;
     margin-top: 1em;
     position: absolute;
+    max-width: 19em;
 }
 
 .blog .sidebar .blog-overview .blog-overview-submenu {
