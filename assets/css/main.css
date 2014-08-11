@@ -268,10 +268,9 @@ code {
  * Course and blog sidebar
  **/
 .sidebar {
-    margin-left: 4em;
+    margin-left: 2em;
     margin-top: 1em;
     position: absolute;
-    max-width: 25%;
 }
 
 .blog .sidebar .blog-overview .blog-overview-submenu {
@@ -453,7 +452,7 @@ code {
 /**
  * Media Queries
  **/
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .sidebar {
         margin-left: 3em;
     }
@@ -462,7 +461,7 @@ code {
         text-align: center;
     }
     .content {
-        margin-left: 290px;
+        margin-left: 21em;
         padding-right: 15px;
     }
 }
