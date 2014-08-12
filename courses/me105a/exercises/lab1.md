@@ -6,6 +6,7 @@ title: Laboration 1
 
 #Laboration 1
 
+Bästa labben nånsin!!!!
 Syfte med laborationen:
 att testa PHP-kod för att kommunicera med MySQL
 
@@ -149,3 +150,22 @@ include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
 Testa att öppna index.php med en webbläsare. Om allt funkar ska skämtet som matades in i första uppgiften visas. 
 
 **OBS** Lämna endast in filen index.php på it's learning, behåll connect.php för er själva eftersom den innehåller ert lösenord. 
+
+## Uppgift 4
+
+Använd MySQL Query Browser för att skapa en ny tabell med SQL-kod 
+
+{% highlight sql %}
+CREATE TABLE...
+{% endhighlight %}Tabellen ska ha följande kolumner:
+id
+firstname
+lastname
+email
+
+Lägg sedan till ett namn och epostadress till tabellen. 
+
+Lämna in på it's learning:
+
+* sql-kod för att skapa tabell
+* sql-kod för att lägga till namn till tabellen
