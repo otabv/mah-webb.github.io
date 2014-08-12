@@ -6,7 +6,6 @@ title: Laboration 1
 
 #Laboration 1
 
-Bästa labben nånsin!!!!
 Syfte med laborationen:
 att testa PHP-kod för att kommunicera med MySQL
 
