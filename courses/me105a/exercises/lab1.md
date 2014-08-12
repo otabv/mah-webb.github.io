@@ -167,4 +167,4 @@ Lägg sedan till ett namn och epostadress till tabellen.
 Lämna in på it's learning:
 
 * sql-kod för att skapa tabell
-* sql-kod för att lägga till namn till tabellen
+* sql-kod för att lägga till namn till tabellen
