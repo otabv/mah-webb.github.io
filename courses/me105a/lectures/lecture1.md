@@ -8,10 +8,6 @@ title: Föreläsning 1
 
 ## Föreläsning 1
 
-Obs lägg till tre streck och layout: instructions
-
-Nu är min branch i terminal och github app me105a. 
-
 ---
 
 ### Allmänt om kursen
@@ -75,87 +71,89 @@ Ett databassystem kan delas upp i följande komponenter:
 
 - Systemets data
 - Databashanterare (database management system eller DBMS)
-- Tillämpningar
 - Användare
+- Tillämpningsprogram eller applikationsprogram
+
 
 ---
 
 ### Exempel
 
-xxx håller på här
+Ett **lagerhanteringssystem** är ett typexempel på ett databassystem. 
 
-Ett lagerhanteringssystem är ett typexempel på ett databassystem. 
+Först har vi systemets **data**, dvs **information om varor** i lagret. 
 
-Först har vi systemets data, dvs information om varor i lagret. 
-
-Sedan har vi databashanteraren som hanterar informationen. 
-
-Olika tillämpningar är olika sätt att se på data i databasen. En tillämpning kan vara att se var i lagret en vara finns, något som behövs för dem som jobbar på lagret. En annan tillämpning kan vara att se vad som finns på lagret vilket kan utnyttjas av en kund som vill ha en viss vara. 
- 
-	Lagerarbetaren och kunden är två användare av databasen. Båda använder samma bakomliggande data, men sett ur olika vyer eller synvinklar dvs med olika applikationer.
-	
----
-
-### tabell xxx
-
-kan man göra tabeller i cleaver?
-
-| Tables        | Are           | Cool  |
-| ------------- | ------------- | ----- |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-ja, men inget rutnät som default. 
-
-<table border="1"><tr><td>Hej</td></tr><tr><td>Hopp</td></tr></table>
-
+Sedan har vi **databashanteraren** som **hanterar informationen** 
 
 ---
 
-### tabell utan header???
+En lagerarbetaren och en kund är två olika **användare** av databasen. Båda använder samma bakomliggande data, men sett ur olika **vyer**.
 
-|         |            |   |
-| ------------- | ------------- | ----- |
-|**rubrik** | ** också rubrik ** | ** jadå ** |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-
-
+Olika **tillämpningsprogram** kan användas för att på olika sätt att se på data i databasen. En lagerarbetare och en kund har olika behov och tillämpningsprogram kan därför skräddarsys så att de passar olika användare.
 
 ---
 
-## De olika delarna i ett databassystem
-### Vad behövs till ett databassystem?
-En databashanterare, till exempel
-Access
-Oracle
-MySQL
-SQLite
-FileMaker
-Neo4j
-Fler exempel: se  http://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
+![](im1/parts.png)
 
-Gränssnitt för att mata in och ut data, till exempel
-Webbsidor med PHP
-Inbyggt grafiskt gränssnitt
-Skräddarsytt program
+---
 
-Vi kommer att använda MySQL som databashanterare och webbsidor 
-med PHP som användargränssnitt.
+### Exempel på databashanterare
+
+-   Oracle
+-   MySQL
+-   SQLite
+-   Neo4j
+-   Microsoft SQL Server
+
+Fler exempel: se  <http://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems>
+
+---
+
+### I kursen
+
+Vi kommer att använda MySQL som databashanterare och bygga våra tillämpningsprogram med PHP
+
+---
+
 ### Relationsdatabaser
+
 Kursen kommer endast att behandla relationsdatabaser. Utöver relationsdatabaser finns det exempelvis grafdatabaser (se tex http://en.wikipedia.org/wiki/Graph_database)
 
-Relationsdatabaser består av en samling tabeller. Den korrekta termen för en tabell är egentligen relation men oftast används begreppet tabell. Tabeller (relationer) kan vara relaterade till varandra.
+**Relationsdatabaser** består av en **samling tabeller**. Den korrekta termen för en tabell är egentligen relation men oftast används begreppet tabell. Tabeller (relationer) kan vara relaterade till varandra dvs kopplade till varandra, och det är en av styrkorna hos relationsdatabaser. 
+
+---
+
 ### Enkelt exempel på tabell
 
-### Terminologi
-Varje rad i en tabell kallas även för en tupel eller en post. 
-Varje kolumn kallas även för attribut eller fält. 
-Nycklar används för att ange hur tabeller är relaterade till varandra. Mer om det senare i kursen.
-### Sammanfattning av terminologi (engelsk term inom parentes)
+![](im1/table1.png)
 
-## om phpmyadmin, om create
+En viktig egenskap i en tabell är att det inte spelar någon roll vilken ordning kolumner och rader visas i. Följande tabell är identisk med tabell ovan:
+
+![](im1/table2.png)
+
+---
+
+### Terminologi
+
+-   Varje **rad** i en tabell kallas även för en **tupel**
+-   Varje **kolumn** kallas även för **attribut** eller **fält** 
+-   **Nycklar** används för att ange hur tabeller är **relaterade** till varandra.
+
+--- 
+
+### SQL
+
+SQL, Structured Query Language används vanligtvis för att hantera relationsdatabaser. Med SQL kan man skapa tabeller, spara data i tabeller, ändra data i tabeller, söka och sortera data. En tabell kan skapas på följande sätt:
+
+{% highlight sql %}
+CREATE TABLE classroom (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  roomnumber CHAR(4),
+  seats INT
+)
+{% endhighlight %}
+
+**classroom** är namnet på **tabellen**
+
+**id, roomnumber** och **seats** är namn på **kolumner**
+
