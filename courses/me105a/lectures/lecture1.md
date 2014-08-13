@@ -61,7 +61,7 @@ Trebokstavsförkortningar!
 
 ---
 
-#### Vad är databas? 
+### Vad är databas? 
 
 En databas kan definieras som ett datorbaserat informationssystem där informationen (databasens data) lagras på ett strukturerat sätt vilket gör det möjligt för många olika tillämpningar att komma åt informationen.
  
@@ -113,15 +113,13 @@ ja, men inget rutnät som default.
 
 |         |            |   |
 | ------------- | ------------- | ----- |
+|**rubrik** | ** också rubrik ** | ** jadå ** |
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
 
-| ------------- | ------------- | ----- |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+
 
 
 ---

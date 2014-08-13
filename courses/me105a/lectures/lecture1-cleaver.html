@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Föreläsning 1</title>
+  <title>Untitled</title>
   <style type="text/css">
     body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -401,12 +401,18 @@ pre .chunk {
   </div>
 
   <div class="slide -" id="slide-1">
+    <section class="slide-content"><p>layout: instructions
+code: me105a
+title: Föreläsning 1</p>
+</section>
+  </div>
+  <div class="slide hidden -" id="slide-2">
     <section class="slide-content"><h1 id="databasbaserad-publicering">Databasbaserad publicering</h1>
 <h2 id="f-rel-sning-1">Föreläsning 1</h2>
 <p>Obs lägg till tre streck och layout: instructions</p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-2">
+  <div class="slide hidden -" id="slide-3">
     <section class="slide-content"><h3 id="allm-nt-om-kursen">Allmänt om kursen</h3>
 <h4 id="l-rare">Lärare</h4>
 <p>Bo Peterson och Sebastian Bengtegård</p>
@@ -414,7 +420,7 @@ pre .chunk {
 <p><a href="http://mah-webb.github.io">http://mah-webb.github.io</a></p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-3">
+  <div class="slide hidden -" id="slide-4">
     <section class="slide-content"><h3 id="kurslitteratur">Kurslitteratur</h3>
 <ul>
 <li>Databasteknik</li>
@@ -425,13 +431,13 @@ pre .chunk {
 <p><img src="im1/books.png" alt=""></p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-4">
+  <div class="slide hidden -" id="slide-5">
     <section class="slide-content"><h3 id="om-boken-databasteknik">Om boken Databasteknik</h3>
 <p>Det för den här kursen viktigaste innehållet i boken Databasteknik finns även på webbplatsen</p>
 <p><a href="http://www.databasteknik.se/webbkursen/">http://www.databasteknik.se/webbkursen/</a></p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-5">
+  <div class="slide hidden -" id="slide-6">
     <section class="slide-content"><h3 id="kursinneh-ll">Kursinnehåll</h3>
 <p>Trebokstavsförkortningar!</p>
 <ul>
@@ -443,17 +449,17 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-6">
+  <div class="slide hidden -" id="slide-7">
     <section class="slide-content"><h3 id="kursinneh-ll-som-fl-desschema">Kursinnehåll som flödesschema</h3>
 <p><img src="im1/flow.png" alt=""></p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-7">
-    <section class="slide-content"><h4 id="vad-r-databas-">Vad är databas?</h4>
+  <div class="slide hidden -" id="slide-8">
+    <section class="slide-content"><h3 id="vad-r-databas-">Vad är databas?</h3>
 <p>En databas kan definieras som ett datorbaserat informationssystem där informationen (databasens data) lagras på ett strukturerat sätt vilket gör det möjligt för många olika tillämpningar att komma åt informationen.</p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-8">
+  <div class="slide hidden -" id="slide-9">
     <section class="slide-content"><h3 id="strukturen-p-ett-databassystem">Strukturen på ett databassystem</h3>
 <p>Ett databassystem kan delas upp i följande komponenter:</p>
 <ul>
@@ -464,7 +470,7 @@ pre .chunk {
 </ul>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-9">
+  <div class="slide hidden -" id="slide-10">
     <section class="slide-content"><h3 id="exempel">Exempel</h3>
 <p>Ett lagerhanteringssystem är ett typexempel på ett databassystem. </p>
 <p>Först har vi systemets data, dvs information om varor i lagret. </p>
@@ -473,7 +479,7 @@ pre .chunk {
 <pre><code>Lagerarbetaren och kunden är två användare av databasen. Båda använder samma bakomliggande data, men sett ur olika vyer eller synvinklar dvs med olika applikationer.</code></pre>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-10">
+  <div class="slide hidden -" id="slide-11">
     <section class="slide-content"><h3 id="tabell-xxx">tabell xxx</h3>
 <p>kan man göra tabeller i cleaver?</p>
 <table>
@@ -505,7 +511,7 @@ pre .chunk {
 <p>ja, men inget rutnät som default. </p>
 <table border="1"><tr><td>Hej</td></tr><tr><td>Hopp</td></tr></table></section>
   </div>
-  <div class="slide hidden -" id="slide-11">
+  <div class="slide hidden -" id="slide-12">
     <section class="slide-content"><h3 id="tabell-utan-header-">tabell utan header???</h3>
 <table>
 <thead>
@@ -516,6 +522,11 @@ pre .chunk {
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong>rubrik</strong></td>
+<td><strong> också rubrik </strong></td>
+<td><strong> jadå </strong></td>
+</tr>
 <tr>
 <td>col 3 is</td>
 <td>right-aligned</td>
@@ -533,13 +544,9 @@ pre .chunk {
 </tr>
 </tbody>
 </table>
-<p>| ------------- | ------------- | ----- |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |</p>
 </section>
   </div>
-  <div class="slide hidden -" id="slide-12">
+  <div class="slide hidden -" id="slide-13">
     <section class="slide-content"><h2 id="de-olika-delarna-i-ett-databassystem">De olika delarna i ett databassystem</h2>
 <h3 id="vad-beh-vs-till-ett-databassystem-">Vad behövs till ett databassystem?</h3>
 <p>En databashanterare, till exempel
