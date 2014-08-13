@@ -1,5 +1,5 @@
----
-layout: instructions
+
+
 code: me105a
 title: Föreläsning 1
 ---
@@ -18,7 +18,7 @@ nothing here
 
 --
 
-### Slide two xxx
+### Slide two
 
 The code highlighting tags must be replaced when used with cleaver
 
