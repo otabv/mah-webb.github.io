@@ -13,7 +13,7 @@ Redovisning: Redovisa filen index.php på It's learning.
 
 Genom hela kursen kommer vi att använda samma webbserver som i Programmering för webben, <http://ddwap.mah.se>  med stöd för PHP och MySQL. För att kunna använda MySQL-delen för databaser måste först en databas skapas som sedan kan användas genom hela kursen. 
 
-##Uppgift 1 - Skapa databas
+##Uppgift 1
 
 Stegen på sidorna 35-42 i boken PHP & MySQL - Novice to Ninja ska följas, men något modifierade. De modifierade stegen finns beskrivna nedan. 
 
@@ -167,4 +167,4 @@ Lägg sedan till ett namn och epostadress till tabellen.
 Lämna in på it's learning:
 
 * sql-kod för att skapa tabell
-* sql-kod för att lägga till namn till tabellen
+* sql-kod för att lägga till namn till tabellen
