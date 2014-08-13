@@ -1,20 +1,23 @@
+<<<<<<< HEAD:courses/me105a/lectures/lecture1.md
 ---
 layout: instructions
 code: me105a
 title: Laboration 1
+=======
+layout: foo
+title: Lecture 1
+>>>>>>> me105a:courses/me105a/lectures/lecture1mod.md
 author:
   name: Bo Peterson
   twitter: bo_peterson
   email: bo.peterson@mah.se
-controls: true
-progress: true
 ---
 
 # This
 
 ## Cleaver thing is clever
 
-Yeah
+Yeah. Double yeah. 
 
 --
 
@@ -28,7 +31,7 @@ nothing here
 
 This does not work
 
-{% highlight php %}
+```php
 <?php
 echo "hej";
 ?>
