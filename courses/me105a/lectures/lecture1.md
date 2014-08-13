@@ -10,13 +10,17 @@ title: Föreläsning 1
 
 Yeah. Double yeah. Bör i sin ursprungsform funka med Jekyll. 
 
---
+---------
 
 ### Slide 1
 
 nothing here
 
---
+***
+
+nor here
+
+---------
 
 ### Slide two xxx
 
