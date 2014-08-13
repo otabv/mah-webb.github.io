@@ -80,6 +80,8 @@ Ett databassystem kan delas upp i följande komponenter:
 
 ### Exempel
 
+xxx håller på här
+
 Ett lagerhanteringssystem är ett typexempel på ett databassystem. 
 
 Först har vi systemets data, dvs information om varor i lagret. 
