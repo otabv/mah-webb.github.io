@@ -10,6 +10,8 @@ title: Föreläsning 1
 
 Obs lägg till tre streck och layout: instructions
 
+Nu är min branch i terminal och github app me105a. 
+
 ---
 
 ### Allmänt om kursen
