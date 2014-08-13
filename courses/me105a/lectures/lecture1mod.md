@@ -1,18 +1,16 @@
-code: me105a
-title: Laboration 1
+layout: foo
+title: Lecture 1
 author:
   name: Bo Peterson
   twitter: bo_peterson
   email: bo.peterson@mah.se
-controls: true
-progress: true
 ---
 
 # This
 
 ## Cleaver thing is clever
 
-Yeah
+Yeah. Double yeah. 
 
 --
 
@@ -26,7 +24,7 @@ nothing here
 
 This does not work
 
-{% highlight php %}
+```php
 <?php
 echo "hej";
 ?>
