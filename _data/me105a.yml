@@ -3,6 +3,11 @@ name: Databasbaserad publicering
 code: me105a
 credits: 15.0
 
+# Föreläsningar
+lectures:
+     - name: Föreläsning 1
+       file: lecture1
+
 # Uppgifter
 #assignments:
 #    - name: Uppgift 1
@@ -20,7 +25,3 @@ exercises:
 #      file: P01
 #      credits: 6
 
-# Föreläsningar
-lectures:
-     - name: Föreläsning 1
-       file: lecture1
