@@ -12,7 +12,8 @@ Välkomna till Databasbaserad publicering. Information för kursen kommer i år 
 
 Vi kommer att använda boken **PHP & MySQL - Novice to Ninja** även i denna kurs. 
 
-Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T och Risch, T. Det för kursen viktigaste innehållet i Databasteknik finns på bokens webbplats, <http://www.databasteknik.se/webbkursen>. 
+Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T och Risch, T. Det för kursen viktigaste innehållet i Databasteknik finns på bokens webbplats, 
+<http://www.databasteknik.se/webbkursen>. 
 
 Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte att beställa längre, så den utgår. 
 
