@@ -26,7 +26,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 36
 
-[Föreläsning 1](/lectures/lecture1.html) och [laboration 1](/exercises/lab1.html) - Introduktion till kursen och databaser
+[Föreläsning 1](lectures/lecture1.html) och [laboration 1](exercises/lab1.html) - Introduktion till kursen och databaser
 
 ### Vecka 37
 	
