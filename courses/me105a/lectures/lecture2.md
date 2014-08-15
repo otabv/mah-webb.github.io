@@ -64,6 +64,13 @@ Följande skrivs ut:
 
 Vi kan se detta som en rad i en tabell, med rubrik och värde:
 
+<style>
+table {border-collapse: collapse;font-size:smaller}
+th, td {border: 1px solid #FFFF00}
+th, td {text-align:left}
+th, td {padding: 6px;}
+</style>
+
 | id  | animaltype  | color  |
 |---|---|---|
 | 0 | cat | black |
