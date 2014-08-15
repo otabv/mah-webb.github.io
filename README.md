@@ -34,22 +34,16 @@ Now you're ready to start contributing!
 ### Workflow Example
 
 ```bash
-git pull                        # Fetch remote updates to master
-git checkout -b me134a#ex-2     # Create a new branch
-# Code changes...
-git add .                       
-git commit -am "message"
-git push origin me134a#ex-2     # Commit and push changes
+git checkout -b fix#123     # Create a new branch
+# Fix stuff!
+git add .
+git commit . -m "message"   # Commit changes
 git checkout master
-git merge me134a#ex-2
-git push origin master          # Merge with master and push to github
-```
-
-Deleting a temporary branch locally and remotely:
-
-```bash
-git branch -D me134a#ex-2
-git push origin --delete me134a#ex-2    # From the master branch
+git pull                    # Fetch remote changes
+git merge fix#123           # Merge changes to master
+git push origin master      # Push changes to github
+# (Optional)
+git branch -D fix#123       # Delete local branch
 ```
 
 ## Courses
