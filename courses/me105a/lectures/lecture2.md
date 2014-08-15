@@ -2,7 +2,6 @@
 layout: instructions
 code: me105a
 title: Föreläsning 2
-controls: false
 theme: bopeterson/cleaver-lecture
 ---
 
