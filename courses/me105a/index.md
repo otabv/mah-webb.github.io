@@ -6,14 +6,15 @@ title: Databasbaserad publicering ME105A (15.0 hp)
 
 # Databasbaserad publicering ME105A
 
-Välkomna till Databasbaserad publicering. Information för kursen kommer i år att finnas på <http://mah-webb.github.io> istället för på Things I Teach. Inlämningar sker som vanligt på [It's learning][itslearning]. 
+Välkomna till Databasbaserad publicering. Information för kursen kommer i år att finnas på [mah-webb.github.io](http://mah-webb.github.io) istället för på Things I Teach. Inlämningar sker som vanligt på [It's learning][itslearning]. 
 
 ## Kurslitteratur
 
 Vi kommer att använda boken **PHP & MySQL - Novice to Ninja** även i denna kurs. 
 
 Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T och Risch, T. Det för kursen viktigaste innehållet i Databasteknik finns på bokens webbplats, 
-<http://www.databasteknik.se/webbkursen>. 
+
+[www.databasteknik.se/webbkursen](http://www.databasteknik.se/webbkursen)
 
 Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte att beställa längre, så den utgår. 
 
