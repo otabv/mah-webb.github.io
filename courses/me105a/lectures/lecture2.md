@@ -10,6 +10,7 @@ theme: bopeterson/cleaver-lecture
 
 ## Föreläsning 2
 	
+2014-08-15
 
 ---
 
