@@ -41,7 +41,7 @@ foreach ($list as $month) {
 
 Båda alternativen skriver ut
 
-{% highlight %}
+{% highlight php %}
 januari
 februari
 mars
@@ -61,7 +61,7 @@ echo $row['color'];
 
 Följande skrivs ut:
 
-{% highlight %}
+{% highlight php %}
 black
 {% endhighlight %}
 
@@ -115,7 +115,7 @@ echo "The color is " + $table[1]['color'];
 
 Följande skrivs ut: 
 
-{% highlight %}
+{% highlight php %}
 The color is white
 {% endhighlight %}
 
@@ -132,7 +132,7 @@ foreach ($table as $row) {
 
 Följande skrivs ut:
 
-{% highlight %}
+{% highlight php %}
 cat
 dog
 elephant
