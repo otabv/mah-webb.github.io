@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: instructions
 code: me105a
@@ -13,6 +14,24 @@ theme: bopeterson/cleaver-lecture
 
 ---
 
+=======
+---
+layout: instructions
+code: me105a
+title: Föreläsning 2
+controls: false
+theme: bopeterson/cleaver-lecture
+---
+
+# Databasbaserad publicering
+
+## Föreläsning 2
+	
+2014-08-15
+
+---
+
+>>>>>>> me105a
 ### Idag
 
 - PHP-repetition
