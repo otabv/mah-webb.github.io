@@ -443,23 +443,30 @@ mars</code></pre>
     <section class="slide-content"><h3 id="associativ-array">Associativ array</h3>
 <pre><code class="lang-php"><span class="preprocessor">&lt;?php</span>
 <span class="comment">//associativ array (varje element får ett namn)</span>
-<span class="variable">$row</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="string">'0'</span>,<span class="string">'animaltype'</span>=&gt;<span class="string">'cat'</span>,<span class="string">'color'</span>=&gt;<span class="string">'black'</span>);
+<span class="variable">$row</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">1</span>,<span class="string">'animal'</span>=&gt;<span class="string">'cat'</span>,<span class="string">'color'</span>=&gt;<span class="string">'black'</span>);
 <span class="keyword">echo</span> <span class="variable">$row</span>[<span class="string">'color'</span>];
 <span class="preprocessor">?&gt;</span></code></pre>
 <p>Följande skrivs ut:</p>
 <pre><code>black</code></pre>
 <p>Vi kan se detta som en rad i en tabell, med rubrik och värde:</p>
+<style>
+table {border-collapse: collapse;font-size:smaller}
+th, td {border: 1px solid #BBBBBB}
+th, td {text-align:left}
+th, td {padding: 6px;}
+</style>
+
 <table>
 <thead>
 <tr>
 <th>id</th>
-<th>animaltype</th>
+<th>animal</th>
 <th>color</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0</td>
+<td>1</td>
 <td>cat</td>
 <td>black</td>
 </tr>
@@ -468,7 +475,82 @@ mars</code></pre>
 </section>
   </div>
   <div class="slide hidden -" id="slide-5">
-    <section class="slide-content"><h3 id="xxx">xxx</h3>
+    <section class="slide-content"><h3 id="flerdimensionell-array">Flerdimensionell array</h3>
+<p>I föregående exemplet hade vi bara en rad. Om vi vill spara flera rader i en array behöver vi en <strong>tvådimensionell</strong> array. </p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>animal</th>
+<th>color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>cat</td>
+<td>black</td>
+</tr>
+<tr>
+<td>2</td>
+<td>dog</td>
+<td>white</td>
+</tr>
+<tr>
+<td>3</td>
+<td>elephant</td>
+<td>pink</td>
+</tr>
+</tbody>
+</table>
+</section>
+  </div>
+  <div class="slide hidden -" id="slide-6">
+    <section class="slide-content"><p>Denna tabell kan sparas så här i en tvådimensionell php-array</p>
+<pre><code class="lang-php"><span class="variable">$cat</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">1</span>,animal=&gt;<span class="string">'cat'</span>,<span class="string">'color'</span>=&gt;<span class="string">'black'</span>);
+<span class="variable">$dog</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">2</span>,<span class="string">'animal'</span>=&gt;<span class="string">'dog'</span>,<span class="string">'color'</span>=&gt;<span class="string">'white'</span>);
+<span class="variable">$elephant</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">3</span>,<span class="string">'animal'</span>=&gt;<span class="string">'elephant'</span>,<span class="string">'color'</span>=&gt;<span class="string">'pink'</span>);
+
+<span class="variable">$table</span>=<span class="keyword">array</span>(<span class="variable">$cat</span>,<span class="variable">$dog</span>,<span class="variable">$elephant</span>);
+<span class="comment">//eftersom $cat, $dog och $elephant är arrayer, som i sin tur</span>
+<span class="comment">//sparas i en array, blir $table en array av arrayer eller en </span>
+<span class="comment">//tvådimensionell array</span>
+
+<span class="comment">//vi kan skriva ut färgen på andra djuret på följande vis:</span>
+<span class="keyword">echo</span> <span class="string">"The color is "</span> + <span class="variable">$table</span>[<span class="number">1</span>][<span class="string">'color'</span>];
+
+<span class="comment">//$table[1] motsvarar hela andra raden i tabellen </span>
+<span class="comment">//eftersom numrering börjar från ett.</span>
+<span class="comment">//$table[1]['color'] motsvarar i sin tur innehållet </span>
+<span class="comment">//i kolumnen 'color' i andra raden.</span></code></pre>
+<p>Följande skrivs ut: </p>
+<pre><code>The color is white</code></pre>
+</section>
+  </div>
+  <div class="slide hidden -" id="slide-7">
+    <section class="slide-content"><p>Vi kan använda foreach-loopen för att loopa igenom hela tabellen:</p>
+<pre><code class="lang-php"><span class="keyword">foreach</span> (<span class="variable">$table</span> <span class="keyword">as</span> <span class="variable">$row</span>) {
+    <span class="keyword">echo</span> <span class="variable">$row</span>[<span class="string">'animal'</span>];
+    <span class="keyword">echo</span> <span class="string">"&lt;br&gt;"</span>;
+}</code></pre>
+<p>Följande skrivs ut:</p>
+<pre><code>cat
+dog
+elephant</code></pre>
+</section>
+  </div>
+  <div class="slide hidden -" id="slide-8">
+    <section class="slide-content"><h3 id="s-kresultat-fr-n-databas">Sökresultat från databas</h3>
+<p>Relationsdatabaser lagrar data i tabeller. Det normala när man gör en sökning i en databas med <code>select</code> är att resultatet blir en tvådimensionell array liknande <code>$table</code> i exemplet. </p>
+<p>Här är en komplett sökning som söker i tabellen <code>animals</code>:</p>
+<pre><code class="lang-php"><span class="variable">$pdo</span>=<span class="keyword">new</span> PDO(<span class="string">'mysql:host=localhost;dbname=k3bope'</span>,<span class="string">'k3bope'</span>,<span class="string">'lösenord'</span>); 
+<span class="variable">$sql</span>=<span class="string">'SELECT * FROM animals'</span>;
+<span class="variable">$result</span>=<span class="variable">$pdo</span>-&gt;query(<span class="variable">$sql</span>);
+<span class="comment">//foreach som i exemplet innan men med $result istället för $table</span>
+<span class="keyword">foreach</span> (<span class="variable">$result</span> <span class="keyword">as</span> <span class="variable">$row</span>) {
+    <span class="keyword">echo</span> <span class="variable">$row</span>[<span class="string">'animal'</span>];
+    <span class="keyword">echo</span> <span class="string">"&lt;br&gt;"</span>;
+}</code></pre>
 </section>
   </div>
 
