@@ -503,11 +503,31 @@ th, td {padding: 6px;}
 </tr>
 </tbody>
 </table>
-</section>
+<p><img id="myImage" src="im2/elephant.png"></p>
+<script>
+var left=0, imgObj=null;
+function init(){
+   imgObj = document.getElementById('myImage');
+   imgObj.style.position= 'absolute';
+   imgObj.style.top = window.innerHeight-240+'px';
+   imgObj.style.left = '-300px';
+   moveRight();
+} 
+
+function moveRight(){
+    left = parseInt(imgObj.style.left);
+    imgObj.style.left = (left + 3) + 'px';
+    setTimeout(function(){moveRight();},10); 
+    if (left>window.innerWidth+50) {
+        imgObj.style.left = '-300px'; 
+    }    
+}
+window.onload = function() {init();};
+</script></section>
   </div>
   <div class="slide hidden -" id="slide-6">
     <section class="slide-content"><p>Denna tabell kan sparas så här i en tvådimensionell php-array</p>
-<pre><code class="lang-php"><span class="variable">$cat</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">1</span>,animal=&gt;<span class="string">'cat'</span>,<span class="string">'color'</span>=&gt;<span class="string">'black'</span>);
+<pre><code class="lang-php"><span class="variable">$cat</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">1</span>,<span class="string">'animal'</span>=&gt;<span class="string">'cat'</span>,<span class="string">'color'</span>=&gt;<span class="string">'black'</span>);
 <span class="variable">$dog</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">2</span>,<span class="string">'animal'</span>=&gt;<span class="string">'dog'</span>,<span class="string">'color'</span>=&gt;<span class="string">'white'</span>);
 <span class="variable">$elephant</span>=<span class="keyword">array</span>(<span class="string">'id'</span>=&gt;<span class="number">3</span>,<span class="string">'animal'</span>=&gt;<span class="string">'elephant'</span>,<span class="string">'color'</span>=&gt;<span class="string">'pink'</span>);
 
@@ -517,12 +537,12 @@ th, td {padding: 6px;}
 <span class="comment">//tvådimensionell array</span>
 
 <span class="comment">//vi kan skriva ut färgen på andra djuret på följande vis:</span>
-<span class="keyword">echo</span> <span class="string">"The color is "</span> + <span class="variable">$table</span>[<span class="number">1</span>][<span class="string">'color'</span>];
+<span class="keyword">echo</span> <span class="string">"The color is "</span> . <span class="variable">$table</span>[<span class="number">1</span>][<span class="string">'color'</span>];
 
-<span class="comment">//$table[1] motsvarar hela andra raden i tabellen </span>
+<span class="comment">//$table[1] motsvarar hela andra raden i tabellen ($dog)</span>
 <span class="comment">//eftersom numrering börjar från ett.</span>
 <span class="comment">//$table[1]['color'] motsvarar i sin tur innehållet </span>
-<span class="comment">//i kolumnen 'color' i andra raden.</span></code></pre>
+<span class="comment">//i kolumnen 'color' i andra raden</span></code></pre>
 <p>Följande skrivs ut: </p>
 <pre><code class="lang-php">The color is white</code></pre>
 </section>
@@ -557,6 +577,19 @@ elephant</code></pre>
     <section class="slide-content"><h3 id="phpmyadmin-och-mysql-query-browser">PHPMyAdmin och MySQL Query Browser</h3>
 <p>I kursen kommer vi att använda MySQL Query Browser, ett webb-baserat verktyg för att administrera MySQL-databaser. I boken beskrivs ett liknande verktyg, phpMyAdmin. </p>
 <p><img src="im2/mysqlquery_myadmin.png" alt=""></p>
+</section>
+  </div>
+  <div class="slide hidden -" id="slide-10">
+    <section class="slide-content"><h3 id="bilaga">BILAGA</h3>
+<p>SQL-kod för att skapa tabellen animals och lägga in data:</p>
+<pre><code class="lang-sql"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> animals (
+id <span class="keyword">INT</span> <span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="keyword">PRIMARY</span> <span class="keyword">KEY</span> AUTO_INCREMENT,
+animal TEXT,
+color TEXT);</span>
+
+<span class="operator"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> animals (animal,color) <span class="keyword">VALUES</span> (<span class="string">'cat'</span>,<span class="string">'black'</span>);</span>
+<span class="operator"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> animals (animal,color) <span class="keyword">VALUES</span> (<span class="string">'dog'</span>,<span class="string">'white'</span>);</span>
+<span class="operator"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> animals (animal,color) <span class="keyword">VALUES</span> (<span class="string">'elephant'</span>,<span class="string">'pink'</span>);</span></code></pre>
 </section>
   </div>
 

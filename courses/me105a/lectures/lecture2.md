@@ -89,12 +89,35 @@ I föregående exemplet hade vi bara en rad. Om vi vill spara flera rader i en a
 | 2 | dog | white |
 | 3 | elephant | pink |
 
+<img id="myImage" src="im2/elephant.png">
+<script>
+var left=0, imgObj=null;
+function init(){
+   imgObj = document.getElementById('myImage');
+   imgObj.style.position= 'absolute';
+   imgObj.style.top = window.innerHeight-240+'px';
+   imgObj.style.left = '-300px';
+   moveRight();
+} 
+
+function moveRight(){
+    left = parseInt(imgObj.style.left);
+    imgObj.style.left = (left + 3) + 'px';
+    setTimeout(function(){moveRight();},10); 
+    if (left>window.innerWidth+50) {
+        imgObj.style.left = '-300px'; 
+    }    
+}
+window.onload = function() {init();};
+</script>
+
+
 ---
 
 Denna tabell kan sparas så här i en tvådimensionell php-array
 
 {% highlight php startinline=True %}
-$cat=array('id'=>1,animal=>'cat','color'=>'black');
+$cat=array('id'=>1,'animal'=>'cat','color'=>'black');
 $dog=array('id'=>2,'animal'=>'dog','color'=>'white');
 $elephant=array('id'=>3,'animal'=>'elephant','color'=>'pink');
 
@@ -104,12 +127,12 @@ $table=array($cat,$dog,$elephant);
 //tvådimensionell array
 
 //vi kan skriva ut färgen på andra djuret på följande vis:
-echo "The color is " + $table[1]['color'];
+echo "The color is " . $table[1]['color'];
 
-//$table[1] motsvarar hela andra raden i tabellen 
+//$table[1] motsvarar hela andra raden i tabellen ($dog)
 //eftersom numrering börjar från ett.
 //$table[1]['color'] motsvarar i sin tur innehållet 
-//i kolumnen 'color' i andra raden. 
+//i kolumnen 'color' i andra raden
 {% endhighlight %}
 
 Följande skrivs ut: 
@@ -164,5 +187,24 @@ I kursen kommer vi att använda MySQL Query Browser, ett webb-baserat verktyg f�
 
 
 ![](im2/mysqlquery_myadmin.png)
+
+
+---
+
+### BILAGA
+
+SQL-kod för att skapa tabellen animals och lägga in data:
+
+{% highlight sql %}
+CREATE TABLE animals (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+animal TEXT,
+color TEXT);
+
+INSERT INTO animals (animal,color) VALUES ('cat','black');
+INSERT INTO animals (animal,color) VALUES ('dog','white');
+INSERT INTO animals (animal,color) VALUES ('elephant','pink');
+
+{% endhighlight %}
 
 
