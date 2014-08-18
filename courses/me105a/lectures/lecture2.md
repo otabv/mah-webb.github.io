@@ -99,7 +99,6 @@ function init(){
    imgObj.style.left = '-300px';
    moveRight();
 } 
-
 function moveRight(){
     left = parseInt(imgObj.style.left);
     imgObj.style.left = (left + 3) + 'px';
