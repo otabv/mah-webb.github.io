@@ -467,7 +467,7 @@ code {
 .content p.info:before {
     position: absolute;
     top: 50%;
-    margin-top: -17px;
+    margin-top: -15px;
     left: -17px;
     background-color: #42A3B9;
     color: #fff;
