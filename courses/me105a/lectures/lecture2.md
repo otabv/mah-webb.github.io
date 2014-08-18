@@ -187,6 +187,7 @@ foreach ($result as $row) {
     echo "<br>";
 }
 {% endhighlight %}
+<<<<<<< HEAD
 >>>>>>> me105a
 =======
 ---
@@ -299,3 +300,8 @@ foreach ($result as $row) {
 }
 {% endhighlight %}
 >>>>>>> FETCH_HEAD
+=======
+
+### PHPMyAdmin och MySQL Query Browser
+
+>>>>>>> me105a
