@@ -158,6 +158,17 @@ foreach ($result as $row) {
 }
 {% endhighlight %}
 
+---
+
 ### PHPMyAdmin och MySQL Query Browser
 
-hej hopp
+I kursen kommer vi att använda MySQL Query Browser, ett webb-baserat verktyg för att administrera MySQl-databaser. I boken beskrivs ett liknande verktyg, phpMyAdmin. 
+
+#### MySQL QUERY Browser
+
+![](im2/mysqlquery.png)
+
+#### phpMyAdmin
+
+![](im2/phpmyadmin.png)
+
