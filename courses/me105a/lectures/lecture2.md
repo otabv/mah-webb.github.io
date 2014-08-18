@@ -98,7 +98,9 @@ function init(){
    imgObj.style.top = window.innerHeight-240+'px';
    imgObj.style.left = '-300px';
    moveRight();
-} 
+}
+</script>
+<script>
 function moveRight(){
     left = parseInt(imgObj.style.left);
     imgObj.style.left = (left + 3) + 'px';
@@ -109,7 +111,6 @@ function moveRight(){
 }
 window.onload = function() {init();};
 </script>
-
 
 ---
 
