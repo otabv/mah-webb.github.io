@@ -79,5 +79,13 @@
             </ul>
         </li>
         {% endif %}
+
+        {% if site.data[page.code].syllabus %}
+        <li>
+            <span class="course-overview-element">
+                <a href="/courses/{{ page.code }}/syllabus.html">Kursplan</a>
+            </span>
+        </li>
+        {% endif %}
     </ul>
 </div>

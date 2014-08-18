@@ -8,7 +8,7 @@ title: Webbpublicering ME134A (15.0 hp)
 
 ## Beskrivning
 
-Kursen syftar till att studenten tillgodogör sig grundläggande kunskap om webbpublicering, utifrån aktuella standarder, för att självständigt kunna framställa och underhålla tekniskt- samt användbarhetsmässigt korrekta webbproduktioner. Men även mindre produktioner för skärmvisning innehållande interaktivitet i form av ljud, bild, animation och interaktivitet. Lärandet sker i former av föreläsningar, laborationer och projekt på kampus.
+Kursen syftar till att studenten tillgodogör sig grundläggande kunskap om webbpublicering, utifrån aktuella standarder, för att självständigt kunna framställa och underhålla tekniskt- samt användbarhetsmässigt korrekta webbproduktioner. Men även mindre produktioner för skärmvisning innehållande interaktivitet i form av ljud, bild, animation och interaktivitet. Lärandet sker i former av föreläsningar, laborationer och projekt på campus.
 
 Den fullständiga kursplanen finner ni [här][kursplan].
 
@@ -30,6 +30,8 @@ Innan inlämning är det bra att kontrollera att det material du lämnar in är 
 
 Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla dina resurser och förmågor för att lära dig är det okej att misslyckas!
 
+Bedömningsmatriser finner ni [här][matrix].
+
 ## Länkar
 
 * [Kursplan][kursplan]
@@ -38,6 +40,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 * [Kursansvarig](/contact) (Johannes Karlsson)
 
 
-[kursplan]: http://edu.mah.se/ME134A#Syllabus "Gå till kursplanen"
+[kursplan]: /courses/me134a/syllabus.html "Gå till kursplanen"
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME134A-20142-75076-%2Ck.ME134A-20142-TS495-%2C "Gå till schemat"
 [itslearning]: https://mah.itslearning.com/elogin/ "Gå till It's learning"
+[matrix]: /assets/pdf/me134a_bedomningsmatris.pdf

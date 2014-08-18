@@ -328,6 +328,14 @@ code {
     cursor: pointer;
 }
 
+.course-overview-element a {
+    color: #99A5A6; 
+}
+
+.course-overview-element a:hover {
+    color: #42b983; 
+}
+
 .course-overview-element .expand {
     display: none;
     color: #42b983;
@@ -484,6 +492,19 @@ code {
 /**
  * Media Queries
  **/
+@media print {
+    #header,
+    #sidebar,
+    .footer,
+    .contribute {
+        display: none;
+    }
+
+    .content a {
+        color: #2B7A56 !important;
+    }
+}
+
 @media (max-width: 1400px) {
     .sidebar {
         margin-left: 3em;

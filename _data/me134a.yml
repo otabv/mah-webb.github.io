@@ -2,6 +2,9 @@
 name: Webbpublicering
 code: me134a
 credits: 15.0
+   
+# Kursplan, filnamn (syllabus.md)
+syllabus: true
 
 # Uppgifter
 assignments:
