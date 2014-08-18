@@ -7,6 +7,9 @@ credits: 15.0
 lectures:
      - name: Föreläsning 1
        file: lecture1
+     - name: Föreläsning 2
+       file: lecture2
+
 
 # Uppgifter
 #assignments:

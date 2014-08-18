@@ -9,8 +9,6 @@ theme: bopeterson/cleaver-lecture
 # Databasbaserad publicering
 
 ## Föreläsning 2
-	
-2014-08-15
 
 ---
 
@@ -162,13 +160,9 @@ foreach ($result as $row) {
 
 ### PHPMyAdmin och MySQL Query Browser
 
-I kursen kommer vi att använda MySQL Query Browser, ett webb-baserat verktyg för att administrera MySQl-databaser. I boken beskrivs ett liknande verktyg, phpMyAdmin. 
+I kursen kommer vi att använda MySQL Query Browser, ett webb-baserat verktyg för att administrera MySQL-databaser. I boken beskrivs ett liknande verktyg, phpMyAdmin. 
 
-#### MySQL QUERY Browser
 
-![](im2/mysqlquery.png)
+![](im2/mysqlquery_myadmin.png)
 
-#### phpMyAdmin
-
-![](im2/phpmyadmin.png)
 
