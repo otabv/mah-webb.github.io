@@ -89,29 +89,6 @@ I föregående exemplet hade vi bara en rad. Om vi vill spara flera rader i en a
 | 2 | dog | white |
 | 3 | elephant | pink |
 
-<img id="myImage" src="im2/elephant.png">
-<script>
-var left=0, imgObj=null;
-function init(){
-   imgObj = document.getElementById('myImage');
-   imgObj.style.position= 'absolute';
-   imgObj.style.top = window.innerHeight-240+'px';
-   imgObj.style.left = '-300px';
-   moveRight();
-}
-</script>
-<script>
-function moveRight(){
-    left = parseInt(imgObj.style.left);
-    imgObj.style.left = (left + 3) + 'px';
-    setTimeout(function(){moveRight();},10); 
-    if (left>window.innerWidth+50) {
-        imgObj.style.left = '-300px'; 
-    }    
-}
-window.onload = function() {init();};
-</script>
-
 ---
 
 Denna tabell kan sparas så här i en tvådimensionell php-array
