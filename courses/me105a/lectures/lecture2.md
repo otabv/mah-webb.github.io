@@ -157,3 +157,6 @@ foreach ($result as $row) {
     echo "<br>";
 }
 {% endhighlight %}
+
+### PHPMyAdmin och MySQL Query Browser
+
