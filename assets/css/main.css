@@ -135,10 +135,32 @@ code {
     margin-left: 0;
 }
 
-.content table {
-    background: #eee;
-    width: 95%;
-    margin: 0 auto;
+table {
+   width: 100%;
+   max-width: 100%;
+   margin: 0 auto;
+   border-spacing: 0;
+   border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd;
+    padding: 8px;
+}
+
+table tbody td {
+   padding: 8px; 
+   vertical-align: top;
+   border-top: 1px solid #dddddd;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
 }
 
 /**
