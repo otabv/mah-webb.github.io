@@ -622,6 +622,7 @@ table tbody tr:nth-child(odd) {
     .content ol,
     .content a {
         font-size: 0.9em;
+        text-align: left;
     }
 
     .highlight,
