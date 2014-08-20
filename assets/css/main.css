@@ -138,9 +138,13 @@ code {
 table {
    width: 100%;
    max-width: 100%;
-   margin: 0 auto;
+   margin: 20px auto;
    border-spacing: 0;
    border-collapse: collapse;
+}
+
+table tbody {
+    border-bottom: 1px solid #dddddd;
 }
 
 th {
@@ -157,6 +161,10 @@ table tbody td {
    padding: 8px; 
    vertical-align: top;
    border-top: 1px solid #dddddd;
+}
+
+table.small tbody td {
+    font-size: 0.9em;
 }
 
 table tbody tr:nth-child(odd) {
@@ -603,6 +611,12 @@ table tbody tr:nth-child(odd) {
     .footer-links li {
         display: inline-block;
         margin-right: 1em;
+    }
+    .content table thead th {
+        font-size: 0.9em;
+    }
+    .content table tbody td {
+        font-size: 0.7em;
     }
 }
 

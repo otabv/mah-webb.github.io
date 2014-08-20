@@ -30,17 +30,16 @@ Innan inlämning är det bra att kontrollera att det material du lämnar in är 
 
 Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla dina resurser och förmågor för att lära dig är det okej att misslyckas!
 
-Bedömningsmatriser finner ni [här][matrix].
-
 ## Länkar
 
 * [Kursplan][kursplan]
 * [Schema][schema]
 * [It's learning][itslearning]
+* [Bedömningsmatriser][matrix]
 * [Kursansvarig](/contact) (Johannes Karlsson)
 
 
 [kursplan]: /courses/me135a/syllabus.html "Gå till kursplanen"
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20142-TS401-%2C "Gå till schemat"
 [itslearning]: https://mah.itslearning.com/elogin/ "Gå till It's learning"
-[matrix]: /assets/pdf/me135a_bedomningsmatris.pdf
+[matrix]: /courses/me135a/matrix.html "Gå till bedömningsmatriser"
