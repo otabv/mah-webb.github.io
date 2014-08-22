@@ -38,6 +38,38 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 * [Bedömningsmatriser][matrix]
 * [Kursansvarig](/contact) (Johannes Karlsson)
 
+## Veckoplan
+
+| Vecka     | Moment                                                                     | Vem         |
+| :-------: | --------                                                                   | -----       |
+| 36        | Kursintroduktion                                                           | Alla        |
+| 36        | Gästföreläsning                                                            | Alla        |
+| 37        | Föreläsning: HTML 1                                                        | Alla        |
+| 37        | [Laboration 1: Grunläggande HTML](/courses/me134a/exercises/L01.html)      | Labbgrupper |
+| 38        | Föreläsning: Användbarhet 1                                                | Alla        |
+| 38        | Seminarium: Användbarhet                                                   | Labbgrupper |
+| 39        | Föreläsning: HTML 2                                                        | Alla        |
+| 39        | [Laboration 2: Grundläggande CSS](/courses/me134a/exercises/L02.html)      | Labbgrupper |
+| 40        | Föreläsning: Användbarhet 2                                                | Alla        |
+| 40        | Seminarium: Struktur                                                       | Labbgrupper |
+| 41        | Föreläsning: HTML 3                                                        | Alla        |
+| 41        | [Laboration 3: Positionering](/courses/me134a/exercises/L03.html)          | Labbgrupper |
+| 42        | Föreläsning: HTML 4                                                        | Alla        |
+| 42        | [Laboration 4:Tabeller & Formulär](/courses/me134a/exercises/L04.html)     | Labbgrupper |
+| 43        | [Laboration 5: Responsive Web Design](/courses/me134a/exercises/L05.html)  | Labbgrupper |
+| 44        | Föreläsning: CMS                                                           | Alla        |
+| 44        | [Laboration 6: WordPress introduktion](/courses/me134a/exercises/L06.html) | Labbgrupper |
+| 45        | Föreläsning: Bilder & Grafik                                               | Alla        |
+| 45        | [Laboration 7: WordPress 2](/courses/me134a/exercises/L07.html)            | Labbgrupper |
+| 46        | Föreläsning: Inför produktion                                              | Alla        |
+| 46        | [Laboration 8: WordPress 3](/courses/me134a/exercises/L08.html)            | Labbgrupper |
+| 47        | [Laboration 9: WordPress 4](/courses/me134a/exercises/L09.html)            | Labbgrupper |
+| 48        | Workshop: Projektgrupperna                                                 | Labbgrupper |
+| 49        | Föreläsning: Scriptspråk                                                   | Alla        |
+| 49        | Projekt: handledning                                                       | Labbgrupper |
+| 50        | Laboration 10: Extra                                                       | Labbgrupper |
+| 51        | Projekt: Självständigt arbete                                              | Alla        |
+| 2         | Projekt: Redovisning                                                       | Alla        |
 
 [kursplan]: /courses/me134a/syllabus.html "Gå till kursplanen"
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME134A-20142-75076-%2Ck.ME134A-20142-TS495-%2C "Gå till schemat"

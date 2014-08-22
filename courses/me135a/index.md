@@ -38,6 +38,43 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 * [Bedömningsmatriser][matrix]
 * [Kursansvarig](/contact) (Johannes Karlsson)
 
+## Veckoplan
+
+| Vecka     | Moment                                                                     | Vem         |
+| :-------: | --------                                                                   | -----       |
+| 36        | Kursintroduktion                                                           | Alla        |
+| 36        | Gästföreläsning                                                            | Alla        |
+| 37        | Föreläsning: HTML 1                                                        | Alla        |
+| 37        | [Laboration 1: Grunläggande HTML](/courses/me135a/exercises/L01.html)      | Labbgrupper |
+| 38        | Föreläsning: Användbarhet 1                                                | Alla        |
+| 38        | Seminarium: Användbarhet                                                   | Labbgrupper |
+| 39        | Föreläsning: HTML 2                                                        | Alla        |
+| 39        | [Laboration 2: Grundläggande CSS](/courses/me135a/exercises/L02.html)      | Labbgrupper |
+| 40        | Föreläsning: Användbarhet 2                                                | Alla        |
+| 40        | Seminarium: Struktur                                                       | Labbgrupper |
+| 41        | Föreläsning: HTML 3                                                        | Alla        |
+| 41        | [Laboration 3: Positionering](/courses/me135a/exercises/L03.html)          | Labbgrupper |
+| 42        | Föreläsning: HTML 4                                                        | Alla        |
+| 42        | Föreläsning: Agila projektmetoder                                          | Alla        |
+| 42        | Workshop: Gruppdynamik och projektledning                                  | Labbgrupper |
+| 43        | Föreläsning: Konsten att ta betalt, och konsten att fakturera              | Alla        |
+| 43        | Seminarium: Professor kalkyl                                               | Labbgrupper |
+| 44        | Föreläsning: CMS                                                           | Alla        |
+| 44        | [Laboration 4: WordPress introduktion](/courses/me135a/exercises/L04.html) | Labbgrupper |
+| 45        | Föreläsning: Bilder & Grafik                                               | Alla        |
+| 45        | [Laboration 5: WordPress 2](/courses/me135a/exercises/L05.html)            | Labbgrupper |
+| 46        | Föreläsning: Inför produktion                                              | Alla        |
+| 46        | [Laboration 6: WordPress 3](/courses/me135a/exercises/L06.html)            | Labbgrupper |
+| 47        | Gästföreläsning: Att skriva för webben                                     | Alla        |
+| 47        | Seminarium: Att skriva för webben                                          | Labbgrupper |
+| 48        | Workshop: Projektgrupperna                                                 | Labbgrupper |
+| 49        | Föreläsning: Scriptspråk                                                   | Alla        |
+| 49        | Projekt: handledning                                                       | Labbgrupper |
+| 50        | Föreläsning: Trendspaning och konceptutveckling                            | Alla        |
+| 50        | Seminarium: Trendspaning                                                   | Labbgrupper |
+| 50        | Laboration 7: Extra                                                        | Labbgrupper |
+| 51        | Projekt: Självständigt arbete                                              | Alla        |
+| 2         | Projekt: Redovisning                                                       | Alla        |
 
 [kursplan]: /courses/me135a/syllabus.html "Gå till kursplanen"
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20142-TS401-%2C "Gå till schemat"
