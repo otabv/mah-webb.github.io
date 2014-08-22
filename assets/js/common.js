@@ -50,21 +50,30 @@
         var columns = document.getElementById( 'grid-columns' ),
             margin = document.getElementById( 'grid-margin' ),
             padding = document.getElementById( 'grid-padding' ),
-            border = document.getElementById( 'grid-border' );
+            border = document.getElementById( 'grid-border' ),
+            column = document.getElementById( 'grid-column' ),
+            width = document.getElementById( 'grid-width' );
 
         var result = document.getElementById( 'grid-result' );
-
-        console.log( columns, margin, padding, border, result );
 
         function calculateWidth() {
             var m = margin.value || 0,
                 p = padding.value || 0,
                 b = border.value || 0;
 
-            var w = 80 * columns.value - ( ( m * 2 ) + ( p * 2 ) + ( b * 2 ) );
+            var w = column.innerHTML * columns.value - ( ( m * 2 ) + ( p * 2 ) + ( b * 2 ) );
 
             result.innerHTML = +w;
         }
+
+        width.addEventListener( 'change', function() {
+            column.innerHTML = Math.round( width.value / 12 );
+            calculateWidth();
+        });
+        width.addEventListener( 'keyup', function() {
+            column.innerHTML = Math.round( width.value / 12 );
+            calculateWidth();
+        });
 
         [columns, margin, padding, border].forEach( function( input ) {
             input.addEventListener( 'change', function() {

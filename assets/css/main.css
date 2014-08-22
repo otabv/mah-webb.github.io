@@ -555,7 +555,8 @@ table tbody tr:nth-child(odd) {
     margin-bottom: 30px;
 }
 
-#grid-calculator .grid-column,
+#grid-calculator #grid-width,
+#grid-calculator #grid-column,
 #grid-calculator .other,
 #grid-calculator #grid-columns,
 #grid-calculator #grid-margin,
@@ -566,6 +567,7 @@ table tbody tr:nth-child(odd) {
     margin-right: 10px;
 }
 
+#grid-calculator #grid-width,
 #grid-calculator #grid-margin,
 #grid-calculator #grid-padding,
 #grid-calculator #grid-border {
@@ -573,6 +575,8 @@ table tbody tr:nth-child(odd) {
     border: 1px solid #dddddd;
     padding: 4px 8px;
 }
+
+#grid-calculator #grid-width:focus,
 #grid-calculator #grid-margin:focus,
 #grid-calculator #grid-padding:focus,
 #grid-calculator #grid-border:focus {
@@ -580,7 +584,7 @@ table tbody tr:nth-child(odd) {
     border-color: #42b983;
 }
 
-#grid-calculator .grid-column,
+#grid-calculator #grid-column,
 #grid-calculator .other,
 #grid-calculator #grid-result {
     font-size: 1.2em;
