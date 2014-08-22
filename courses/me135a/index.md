@@ -75,6 +75,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 50        | Laboration 7: Extra                                                        | Labbgrupper |
 | 51        | Projekt: Självständigt arbete                                              | Alla        |
 | 2         | Projekt: Redovisning                                                       | Alla        |
+{: .small}
 
 [kursplan]: /courses/me135a/syllabus.html "Gå till kursplanen"
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20142-TS401-%2C "Gå till schemat"

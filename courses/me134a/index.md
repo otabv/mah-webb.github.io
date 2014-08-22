@@ -70,6 +70,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 50        | Laboration 10: Extra                                                       | Labbgrupper |
 | 51        | Projekt: Självständigt arbete                                              | Alla        |
 | 2         | Projekt: Redovisning                                                       | Alla        |
+{: .small}
 
 [kursplan]: /courses/me134a/syllabus.html "Gå till kursplanen"
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME134A-20142-75076-%2Ck.ME134A-20142-TS495-%2C "Gå till schemat"
