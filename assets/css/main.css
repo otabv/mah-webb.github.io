@@ -273,6 +273,9 @@ table tbody tr:nth-child(odd) {
 .course-list li {
     margin-bottom: 1em; 
 }
+.content .course-list li a {
+    text-align: center;
+}
 .content .course-list a:hover {
     text-decoration: none;
 }
