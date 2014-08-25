@@ -21,7 +21,7 @@ th, td {border: 1px solid #BBBBBB}
 th, td {text-align:left}
 th, td {padding: 6px;}
 </style>
-{% endhiglight %}
+{% endhighlight %}
 
 | roomnumber  | seats  |
 |---|---|
