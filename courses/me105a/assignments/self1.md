@@ -14,14 +14,14 @@ Starta MySQL Query Browser och skapa tabellen *classroom* från föreläsningsan
 
 Lägg till följande klassrum med hjälp av lämpliga SQL-satser i MySQL Query Browser;
 
-{% highlight html %}
+
 <style>
 table {border-collapse: collapse;font-size:smaller}
 th, td {border: 1px solid #BBBBBB}
 th, td {text-align:left}
 th, td {padding: 6px;}
 </style>
-{% endhighlight %}
+
 
 | roomnumber  | seats  |
 |---|---|
