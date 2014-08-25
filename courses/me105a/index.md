@@ -26,17 +26,23 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ## Veckoplan
 
-### Vecka 36
+### Vecka 36 - Introduktion till kursen och till databaser
 
-[Föreläsning 1](lectures/lecture1.html) och [laboration 1](exercises/lab1.html) - Introduktion till kursen och databaser
+- [Föreläsning 1](lectures/lecture1.html)
+- [Laboration 1](exercises/lab1.html)
+- [Självstudie 1](assignments/self1.html)
 
-### Vecka 37
-	
-[Föreläsning 2](lectures/lecture2.html) och [laboration 2](exercises/lab2.html) - PHP och MySQL
 
-### Vecka 38
+### Vecka 37 - PHP och MySQL
 
-Föreläsning 3 och laboration 3 - E/R-diagram
+- [Föreläsning 2](lectures/lecture2.html)
+- [Laboration 2](exercises/lab2.html)
+- [Självstudie 2](assignments/self2.html)
+
+
+### Vecka 38 - E/R-diagram
+
+### Vecka 39 
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=idag&resurser=k.ME105A-20142-TS342-
