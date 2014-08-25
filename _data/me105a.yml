@@ -12,10 +12,12 @@ lectures:
 
 
 # Uppgifter
-#assignments:
-#    - name: Uppgift 1
-#      file: U01
-#      credits: 1#
+assignments:
+    - name: Självstudie 1
+      file: self1
+    - name: Självstude 2
+      file: self2
+
 
 # Laborationer
 exercises:
@@ -29,4 +31,5 @@ exercises:
 #    - name: Bornholm
 #      file: P01
 #      credits: 6
+# ett miniprojekt i mitten av kursen
 
