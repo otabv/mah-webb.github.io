@@ -21,6 +21,8 @@ lectures:
 exercises:
     - name: Laboration 1
       file: lab1
+    - name: Laboration 2
+      file: lab2
 
 # Projekt
 #projects:
