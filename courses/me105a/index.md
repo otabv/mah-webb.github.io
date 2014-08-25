@@ -32,7 +32,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 37
 	
-Föreläsning 2 och laboration 2 - PHP och MySQL
+[Föreläsning 2](lectures/lecture2.html) och [laboration 2](exercises/lab2.html) - PHP och MySQL
 
 ### Vecka 38
 
