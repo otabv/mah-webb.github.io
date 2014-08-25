@@ -75,7 +75,7 @@ Vissa saker måste dock bytas ut:
 - Username är ert användarnamn
 - Databasens namn är inte ijdb utan ert användarnamn
 
-PHP-filerna sparas på precis samma sätt som i kursen Programmering för webben. Du kan behålla dina Dreamweaver-inställningar. Om inställningarna inte finns kvar finns det instruktioner på <http://dvwebb.mah.se/k3bope/me132a/public2014/dwsettings.pdf>. 
+PHP-filerna sparas på precis samma sätt som i kursen Programmering för webben. Du kan behålla dina Dreamweaver-inställningar. Om inställningarna inte finns kvar finns det instruktioner på <http://ddwap.mah.se/k3bope/me132a/public2014/dwsettings.pdf>. 
 
 Förhoppningsvis finns mappen ddwap kvar från föregående kurs. Skapa en ny mapp *inuti* ddwap som heter *me105a*.  Skapa dessutom en mapp i me105a som heter *lab1*. Labbens filer lägger du sedan i *ddwap/me105a/lab1*. 
 
@@ -95,7 +95,7 @@ använda vårt användarnamn som databasnamn
 ersätt k3bope på två ställen med ert userid och 
 ersätt XXXXXXXXX med ert lösenord
 */
-*
+
 $pdo=new PDO('mysql:host=localhost;dbname=k3bope','k3bope','XXXXXXXXX'); 
 
 /*steg 2: fråga efter alla rader i tabellen joke*/
@@ -128,7 +128,7 @@ try
 } 
 catch (Exception $e)
 {
-	echo "Unable to connect to the database server.";
+	echo "Unable to connect to the database server.<br>";
 	exit();
 }
 ?>
@@ -156,15 +156,16 @@ Använd MySQL Query Browser för att skapa en ny tabell med SQL-kod
 
 {% highlight sql %}
 CREATE TABLE...
-{% endhighlight %}Tabellen ska ha följande kolumner:
-id
-firstname
-lastname
-email
+{% endhighlight %}Tabellen ska heta *contacts* och ha följande kolumner:
+
+- id (med auto increment)
+- firstname
+- lastname
+- email
 
 Lägg sedan till ett namn och epostadress till tabellen. 
 
 Lämna in på it's learning:
 
-* sql-kod för att skapa tabell
-* sql-kod för att lägga till namn till tabellen
+- sql-kod för att skapa tabell
+- sql-kod för att lägga till namn till tabellen
