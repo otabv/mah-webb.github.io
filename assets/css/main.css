@@ -599,12 +599,34 @@ table tbody tr:nth-child(odd) {
     #header,
     #sidebar,
     .footer,
-    .contribute {
-        display: none;
+    .contribute,
+    .up {
+        display: none !important;
     }
 
     .content a {
         color: #2B7A56 !important;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 1em 1.4em;
+        margin: 1em auto 0 auto;
+    }
+
+    .content p,
+    .content ul,
+    .content ol,
+    .content a {
+        text-align: left;
+    }
+
+    .highlight,
+    .content figure,
+    .content p,
+    .content ul,
+    .content ol {
+        margin: 0.8em 0 0.8em 0;
     }
 }
 
