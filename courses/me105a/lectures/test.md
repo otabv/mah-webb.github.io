@@ -67,5 +67,8 @@ echo "The color is " . $table[1]['color'];
 
 ![Bildtext](im2/mysqlquery_myadmin.png)
 
+### När är det...
+...slut
+
 ---
 
