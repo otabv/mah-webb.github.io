@@ -611,7 +611,7 @@ table tbody tr:nth-child(odd) {
     .content {
         max-width: 100%;
         padding: 1em 1.4em;
-        margin: 1em auto 0 auto;
+        margin: 1em auto 0 auto !important;
     }
 
     .content p,
