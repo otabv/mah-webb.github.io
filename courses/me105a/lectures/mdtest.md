@@ -22,14 +22,14 @@ for ($i=0;$i<count($list);$i++) {
 ?>
 {% endhighlight %}
 
-##En tabell före eget style-sheet
+##En tabell före eget style-sheet, med .small
 
 | id  | animal  | color  |
 |---|---|---|
 | 1 | cat | black |
 | 2 | dog | white |
 | 3 | elephant | pink |
-
+{: .small}
 
 ##En tabell med eget style-sheet
 
