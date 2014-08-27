@@ -22,11 +22,20 @@ for ($i=0;$i<count($list);$i++) {
 ?>
 {% endhighlight %}
 
+##En tabell före eget style-sheet
+
+| id  | animal  | color  |
+|---|---|---|
+| 1 | cat | black |
+| 2 | dog | white |
+| 3 | elephant | pink |
+
+
 ##En tabell med eget style-sheet
 
 <style>
 table {border-collapse: collapse;font-size:smaller}
-th, td {border: 1px solid #BBBBBB}
+th, td {border: 1px solid #FF0000}
 th, td {text-align:left}
 th, td {padding: 6px;}
 </style>
@@ -65,7 +74,7 @@ echo "The color is " . $table[1]['color'];
 
 ##Samma bild med bildtext
 
-![Bildtext](im2/mysqlquery_myadmin.png)
+![Bildtext](im2/mysqlquery_myadmin.png) _hej_
 
 ### När är det...
 ...slut
