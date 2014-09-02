@@ -143,8 +143,10 @@ $pdo=new PDO(...
 i index.php med
 
 {% highlight php startinline=True %}
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
 {% endhighlight %}
+
+där *username* är ditt användarnamn. 
 
 Testa att öppna index.php med en webbläsare. Om allt funkar ska skämtet som matades in i första uppgiften visas. 
 
