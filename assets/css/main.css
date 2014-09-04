@@ -314,7 +314,7 @@ table tbody tr:nth-child(odd) {
 .fix-sidebar .sidebar {
     position: fixed;
     top: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 85%;
 }
 
@@ -604,12 +604,16 @@ table tbody tr:nth-child(odd) {
         display: none !important;
     }
 
+    body {
+        color: Black !important;
+    }
+
     .content a {
         color: #2B7A56 !important;
     }
 
     .content {
-        max-width: 100%;
+        max-width: 90%;
         padding: 1em 1.4em;
         margin: 1em auto 0 auto !important;
     }
@@ -618,6 +622,7 @@ table tbody tr:nth-child(odd) {
     .content ul,
     .content ol,
     .content a {
+        font-size: 0.9em;
         text-align: left;
     }
 
@@ -627,6 +632,18 @@ table tbody tr:nth-child(odd) {
     .content ul,
     .content ol {
         margin: 0.8em 0 0.8em 0;
+    }
+
+    .content h1 {
+        font-size: 1.7em;
+    }
+    .content h2 {
+        font-size: 1.3em;
+    }
+
+    .highlight pre code {
+        font-size: 0.9em;
+        padding: 1.2em 0;
     }
 }
 
