@@ -606,23 +606,22 @@ table tbody tr:nth-child(odd) {
 
     body {
         color: Black !important;
+        margin: 3em;
+    }
+
+    body .content {
+        max-width: 100%;
     }
 
     .content a {
         color: #2B7A56 !important;
     }
 
-    .content {
-        max-width: 80%;
-        padding: 1em 1.4em;
-        margin: 1em auto 0 auto !important;
-    }
-
     .content p,
     .content ul,
     .content ol,
     .content a {
-        font-size: 0.9em !important;
+        font-size: 10pt !important;
         text-align: left;
     }
 
@@ -634,11 +633,11 @@ table tbody tr:nth-child(odd) {
         margin: 0.8em 0 0.8em 0;
     }
 
-    .content h1 { font-size: 1.7em !important; }
-    .content h2 { font-size: 1.3em !important; }
+    .content h1 { font-size: 18pt !important; }
+    .content h2 { font-size: 16pt !important; }
 
     .highlight pre code {
-        font-size: 0.9em !important;
+        font-size: 11pt !important;
         padding: 1.2em 0;
     }
 }
