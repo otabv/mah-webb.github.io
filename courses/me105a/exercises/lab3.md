@@ -2,11 +2,7 @@
 layout: instructions
 code: me105a
 title: Laboration 3
-<<<<<<< HEAD
-—
-=======
 ---
->>>>>>> me105a
 
 # Laboration 3
 
