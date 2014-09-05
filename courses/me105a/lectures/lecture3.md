@@ -20,7 +20,7 @@ hr {display: none}
 
 Dagens föreläsning går igenom **E/R-modellen**
 
-Läs om E/R-diagram i kapitel 2-3 i boken "Databasteknik" eller motsvarande avsnitt på http://www.databasteknik.se/webbkursen/er/index.html
+Läs om E/R-diagram i kapitel 2-3 i boken "Databasteknik" eller motsvarande avsnitt på <http://www.databasteknik.se/webbkursen/er/index.html>
 
 ---
 
