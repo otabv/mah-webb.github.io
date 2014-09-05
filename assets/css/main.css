@@ -595,6 +595,7 @@ table tbody tr:nth-child(odd) {
 /**
  * Media Queries
  **/
+
 @media print {
     #header,
     #sidebar,
@@ -606,11 +607,33 @@ table tbody tr:nth-child(odd) {
 
     body {
         color: Black !important;
-        margin: 3em;
     }
 
     body .content {
         max-width: 100%;
+        margin: 4em 3em;
+    }
+
+    code {
+        border-color: #eeeeee;
+        border-radius: 2px;
+    }
+
+    .highlight {
+        box-shadow: none;
+    }
+
+    .highlight .lineno {
+        color: #bbbbbb;
+        border-right: 1px solid #dddddd;
+        padding-left: 0.5em;
+        padding-right: 1.1em;
+        margin-right: 1em;
+    }
+
+    .highlight pre code {
+        font-size: 8pt !important;
+        padding: 1.2em 0;
     }
 
     .content a {
@@ -621,7 +644,7 @@ table tbody tr:nth-child(odd) {
     .content ul,
     .content ol,
     .content a {
-        font-size: 10pt !important;
+        font-size: 9pt !important;
         text-align: left;
     }
 
@@ -633,12 +656,24 @@ table tbody tr:nth-child(odd) {
         margin: 0.8em 0 0.8em 0;
     }
 
-    .content h1 { font-size: 18pt !important; }
-    .content h2 { font-size: 16pt !important; }
+    .content h1 { font-size: 16pt !important; }
+    .content h2 { font-size: 14pt !important; }
 
-    .highlight pre code {
-        font-size: 11pt !important;
-        padding: 1.2em 0;
+    .content p.info:before { display: none; }
+    .content p.info {
+        padding: 10px 10px 10px 20px;
+        margin: 1em 1em 1em 1.2em;
+        border-left: 2px solid #dddddd;
+        box-shadow: none;
+        font-size: 8pt !important;
+    }
+}
+
+@page {
+    margin: 4em 3em;
+
+    @bottom {
+        content: counter(page) "/" counter(pages);
     }
 }
 
