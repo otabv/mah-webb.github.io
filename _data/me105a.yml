@@ -9,6 +9,8 @@ lectures:
        file: lecture1
      - name: Föreläsning 2
        file: lecture2
+     - name: Föreläsning 3
+       file: lecture3
 
 
 # Uppgifter
