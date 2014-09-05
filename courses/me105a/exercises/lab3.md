@@ -8,11 +8,6 @@ title: Laboration 3
 
 Syftet med laborationen är att komplettera joke-databasen så att den även kan hantera vem som som matat in skämten. **OBS** I uppgift 1-3 hanterar vi databasen direkt med SQL-kommandon i MySQL Query Browser. I uppgift 4 använder vi istället PHP-kod.
 
-xxx
-yyy
-zzz
-bilden finns nu
-
 ## Uppgift 1
 
 Gå in på ddwap.mah.se, Manage files, och sedan MySQL Query Browser. Komplettera tabellen joke med en kolumn för **authorname** och en kolumn för **authoremail** enligt s 143 i boken. 
@@ -64,4 +59,13 @@ I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabel
 
 ## Uppgift 5
 
-xxx kolla på uppgifterna i lab 2
+Utgå från uppgifter i förra labben. De såg ut så är:
+De såg ut så här:
+
+- Uppgift 4
+I förra labben skapades även tabellen contacts. Gör ett formulär och en svarssida där du kan mata in namn och e-post.
+- Uppgift 5
+Gör en sida showall.php som visar alla namn och e-postadresser som finns i tabellen contacts.
+- Uppgift 6 (frivillig)
+Komplettera uppgift 4 så att epost-adressen endast läggs till i tabellen om den innehåller ett @-tecken. Tips: använd php-funktionen strpos för att testa om @-tecknet finns med.
+
