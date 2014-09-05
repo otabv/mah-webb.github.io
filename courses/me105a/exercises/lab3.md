@@ -9,6 +9,9 @@ title: Laboration 3
 Syftet med laborationen är att komplettera joke-databasen så att den även kan hantera vem som som matat in skämten. **OBS** I uppgift 1-3 hanterar vi databasen direkt med SQL-kommandon i MySQL Query Browser. I uppgift 4 använder vi istället PHP-kod.
 
 xxx
+yyy
+zzz
+bilden saknas
 
 ## Uppgift 1
 
