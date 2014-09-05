@@ -3,10 +3,7 @@ layout: instructions
 code: me105a
 title: Laboration 3
 <<<<<<< HEAD
-—
-=======
 ---
->>>>>>> me105a
 
 # Laboration 3
 
@@ -41,7 +38,8 @@ Nu har vi en bättre struktur för databasen och kan börja lägga in data.
 
 Lägg till dig själv som author i tabellen author. Det kan göras enligt exemplet på s 147, 
 
-{% highlight sql %}INSERT INTO author SET id=1 
+{% highlight sql %}
+INSERT INTO author SET id=1 
 {% endhighlight %}
 
 osv. 
