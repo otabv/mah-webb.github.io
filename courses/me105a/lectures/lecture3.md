@@ -11,6 +11,7 @@ table {border-collapse: collapse;font-size:smaller}
 th, td {border: 1px solid #BB0000}
 th, td {text-align:left}
 th, td {padding: 6px;}
+hr {display: none}
 </style>
 
 #Databasbaserad publicering
