@@ -11,7 +11,7 @@ Syftet med laborationen är att komplettera joke-databasen så att den även kan
 xxx
 yyy
 zzz
-bilden saknas
+bilden finns nu
 
 ## Uppgift 1
 
