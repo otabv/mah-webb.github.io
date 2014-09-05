@@ -404,10 +404,16 @@ th, td {padding: 6px;}
     <div class="progress">
     <div class="progress-bar"></div>
   </div>
-  <div id="slidenumber">xxx</div>
 
   <div class="slide -" id="slide-1">
-    <section class="slide-content"><h1 id="databasbaserad-publicering">Databasbaserad publicering</h1>
+    <section class="slide-content"><style>
+table {border-collapse: collapse;font-size:smaller}
+th, td {border: 1px solid #BB0000}
+th, td {text-align:left}
+th, td {padding: 6px;}
+</style>
+
+<h1 id="databasbaserad-publicering">Databasbaserad publicering</h1>
 <h2 id="f-rel-sning-3">Föreläsning 3</h2>
 <p>Dagens föreläsning går igenom <strong>E/R-modellen</strong></p>
 <p>Läs om E/R-diagram i kapitel 2-3 i boken &quot;Databasteknik&quot; eller motsvarande avsnitt på <a href="http://www.databasteknik.se/webbkursen/er/index.html">http://www.databasteknik.se/webbkursen/er/index.html</a></p>
@@ -664,7 +670,6 @@ function updateProgress() {
     var percent = (numSlides === 1) ? 100 : 100 * position / (numSlides - 1);
     progressBar.style.width = percent.toString() + '%';
   }
-  document.getElementById('slidenumber').innerHTML=(position+1);
 }
 
 
