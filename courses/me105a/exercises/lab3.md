@@ -9,6 +9,8 @@ title: Laboration 3
 
 Syftet med laborationen är att komplettera joke-databasen så att den även kan hantera vem som som matat in skämten. **OBS** I uppgift 1-3 hanterar vi databasen direkt med SQL-kommandon i MySQL Query Browser. I uppgift 4 använder vi istället PHP-kod.
 
+xxx
+
 ## Uppgift 1
 
 Gå in på ddwap.mah.se, Manage files, och sedan MySQL Query Browser. Komplettera tabellen joke med en kolumn för **authorname** och en kolumn för **authoremail** enligt s 143 i boken. 
