@@ -8,7 +8,7 @@ theme: bopeterson/cleaver-lecture
 
 <style>
 table {border-collapse: collapse;font-size:smaller}
-th, td {border: 1px solid #BB0000}
+th, td {border: 1px solid #BBBBBB}
 th, td {text-align:left}
 th, td {padding: 6px;}
 hr {display: none}
