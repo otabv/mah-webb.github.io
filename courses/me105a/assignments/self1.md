@@ -55,5 +55,6 @@ INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
 
 Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:
 
-{% highlight %}
+{% highlight sql %}
 Data too long for column 'roomnumber' at row 1{% endhighlight %}
+
