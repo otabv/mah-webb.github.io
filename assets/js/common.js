@@ -4,6 +4,8 @@
         header = document.getElementById( 'header' ),
         sidebar = document.getElementById( 'sidebar' );
 
+    // Sidebar toggle
+
     if ( sidebar ) {
         var currentClass = body.className;
 
@@ -33,6 +35,8 @@
         });
     }
 
+    // Highlight navigation items
+
     var navigationItems = document.querySelectorAll( '.navigation li a' );
 
     for ( var i = 0; i < navigationItems.length; i++ ) {
@@ -43,6 +47,8 @@
             el.classList.add( 'current' );
         }
     }
+
+    // Exercise calculator
 
     var calculator = document.getElementById( 'grid-calculator' );
 
@@ -101,4 +107,20 @@
     window.onload = function() {
         fixedFooter();
     };
+
+    if (window.navigator.standalone) {
+	var local = document.domain,
+            links = document.querySelectorAll( 'a' );
+
+        for ( var i = 0; i < links.length; i++ ) {
+            links[i].addEventListener( 'click', function( e ) {
+                var href = e.target.href;
+
+                if ( href.math( 'http://' + local ) || href.match( 'http://www.' + local ) ) {
+                    e.preventDefault();
+                    document.location.href = href;
+                }
+            });
+        }
+    }
 })()
