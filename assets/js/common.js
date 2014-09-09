@@ -94,24 +94,6 @@
         })
     }
 
-    // iOS web app navigation issue
-
-    if ( window.navigator.standalone ) {
-	var local = document.domain,
-            links = document.querySelectorAll( 'a' );
-
-        for ( var i = 0; i < links.length; i++ ) {
-            links[i].addEventListener( 'click', function( e ) {
-                var href = e.target.href;
-
-                if ( href.math( 'http://' + local ) || href.match( 'http://www.' + local ) ) {
-                    e.preventDefault();
-                    document.location.href = href;
-                }
-            });
-        }
-    }
-
     // Simple solution for a sticky footer
     function fixedFooter() {
         var h = window.innerHeight - body.clientHeight;
@@ -124,5 +106,22 @@
 
     window.onload = function() {
         fixedFooter();
+        
+        // iOS web app navigation issue
+        if ( window.navigator.standalone ) {
+            var local = document.domain,
+                links = document.querySelectorAll( 'a' );
+
+            for ( var i = 0; i < links.length; i++ ) {
+                links[i].addEventListener( 'click', function( e ) {
+                    var href = e.target.href;
+
+                    if ( href.math( 'http://' + local ) || href.match( 'http://www.' + local ) ) {
+                        e.preventDefault();
+                        document.location.href = href;
+                    }
+                });
+            }
+        }
     };
 })()
