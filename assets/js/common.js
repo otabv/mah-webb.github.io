@@ -109,6 +109,8 @@
         
         // iOS web app navigation issue
         if ( window.navigator.standalone ) {
+            alert( 'is standalone' );
+
             var links = document.getElementsByTagName( 'a' );
 
             for ( var i = 0; i < links.length; i++ ) {
@@ -118,7 +120,6 @@
                     if ( ! href.math( /^http(s?)/g ) ) {
                         e.preventDefault();
                         window.location = href;
-                        alert( 'test' );
                         return false;
                     }
                 });
