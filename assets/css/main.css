@@ -592,10 +592,32 @@ table tbody tr:nth-child(odd) {
 #grid-calculator #grid-result {
     font-size: 1.2em;
 }
+
+/**
+ * Iframes
+ **/
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Hide the extra div from slideshare by default. */
+.video div { display: none; }
+
 /**
  * Media Queries
  **/
-
 @media print {
     #header,
     #sidebar,
