@@ -32,3 +32,28 @@ th, td {padding: 6px;}
 ##Uppgift 3
 
 Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
+
+## Lösning till uppgift 1
+
+{% highlight sql %}
+CREATE TABLE classroom (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  roomnumber CHAR(4),
+  seats INT
+)
+{% endhighlight %}## Lösning till uppgift 2
+	
+SQL för att lägga till rum:
+
+{% highlight sql %}
+INSERT INTO  classroom (roomnumber,seats) VALUES ('B305',28);
+INSERT INTO  classroom (roomnumber,seats) VALUES ('C310',40);
+INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
+{% endhighlight %}
+
+## Lösning till uppgift 3
+
+Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:
+
+{% highlight %}
+Data too long for column 'roomnumber' at row 1{% endhighlight %}
