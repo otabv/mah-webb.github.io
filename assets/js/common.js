@@ -109,20 +109,23 @@
         
         // iOS web app navigation issue
         if ( window.navigator.standalone ) {
-            alert( 'is standalone' );
-
             var links = document.getElementsByTagName( 'a' );
 
             for ( var i = 0; i < links.length; i++ ) {
-                links[i].addEventListener( 'click', function( e ) {
-                    var href = e.target.href;
+                links[i].onclick = function( e ) {
+                    e.preventDefault();
+                    window.location = e.target.href;
+                    return false;
+                };
+                // links[i].addEventListener( 'click', function( e ) {
+                //     var href = e.target.href;
 
-                    if ( ! href.math( /^http(s?)/g ) ) {
-                        e.preventDefault();
-                        window.location = href;
-                        return false;
-                    }
-                });
+                //     if ( ! href.math( /^http(s?)/g ) ) {
+                //         e.preventDefault();
+                //         window.location = href;
+                //         return false;
+                //     }
+                // });
             }
         }
     };
