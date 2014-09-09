@@ -44,7 +44,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | :-------: | --------                                                                   | -----       |
 | 36        | Kursintroduktion                                                           | Alla        |
 | 36        | Gästföreläsning                                                            | Alla        |
-| 37        | Föreläsning: HTML 1                                                        | Alla        |
+| 37        | [Föreläsning: HTML 1](/courses/me135a/lectures/F01.html)                   | Alla        |
 | 37        | [Laboration 1: Grunläggande HTML](/courses/me135a/exercises/L01.html)      | Labbgrupper |
 | 38        | Föreläsning: Användbarhet 1                                                | Alla        |
 | 38        | Seminarium: Användbarhet                                                   | Labbgrupper |

@@ -870,6 +870,17 @@ table tbody tr:nth-child(odd) {
     }
 }
 
+/**
+ * TODO: better solution for tables @ smaller devices?
+ **/
+@media (max-width: 500px) {
+    .content table thead th,
+    .content table tbody td {
+        display: block;
+        text-align: left !important;
+    }
+}
+
 @media (max-width: 370px) {
     .header .brand,
     .header .navigation {
