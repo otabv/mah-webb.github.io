@@ -59,6 +59,8 @@ I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabel
 
 ## Uppgift 5
 
+Borde även ha lite er
+
 Utgå från uppgifter i förra labben. 
 De såg ut så här:
 
