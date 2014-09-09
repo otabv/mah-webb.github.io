@@ -45,7 +45,7 @@ CREATE TABLE classroom (
 	
 SQL för att lägga till rum:
 
-{% highlight sql %}
+{% highlight mysql %}
 INSERT INTO  classroom (roomnumber,seats) VALUES ('B305',28);
 INSERT INTO  classroom (roomnumber,seats) VALUES ('C310',40);
 INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
@@ -55,6 +55,6 @@ INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
 
 Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:
 
-{% highlight sql %}
+{% highlight text %}
 Data too long for column 'roomnumber' at row 1{% endhighlight %}
 
