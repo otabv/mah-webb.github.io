@@ -109,16 +109,15 @@
         
         // iOS web app navigation issue
         if ( window.navigator.standalone ) {
-            var local = document.domain,
-                links = document.querySelectorAll( 'a' );
+            var links = document.getElementsByTagName( 'a' );
 
             for ( var i = 0; i < links.length; i++ ) {
                 links[i].addEventListener( 'click', function( e ) {
                     var href = e.target.href;
 
-                    if ( href.math( 'http://' + local ) || href.match( 'http://www.' + local ) ) {
+                    if ( ! href.math( /^http(s?)/g ) ) {
                         e.preventDefault();
-                        document.location.href = href;
+                        window.location = href;
                     }
                 });
             }
