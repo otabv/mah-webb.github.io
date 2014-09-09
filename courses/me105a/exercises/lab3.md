@@ -59,7 +59,7 @@ I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabel
 
 ## Uppgift 5
 
-Utgå från uppgifter i förra labben. De såg ut så är:
+Utgå från uppgifter i förra labben. 
 De såg ut så här:
 
 - Uppgift 4
