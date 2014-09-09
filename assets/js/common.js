@@ -118,6 +118,7 @@
                     if ( ! href.math( /^http(s?)/g ) ) {
                         e.preventDefault();
                         window.location = href;
+                        return false;
                     }
                 });
             }
