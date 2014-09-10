@@ -616,6 +616,71 @@ table tbody tr:nth-child(odd) {
 .video div { display: none; }
 
 /**
+ * Web App
+ **/
+body .web-app-enabled {
+    display: none;
+}
+
+.standalone .web-app-enabled {
+    display: block;
+}
+
+.standalone .header .brand {
+    display: none;
+}
+
+.standalone .header {
+    box-shadow: none;
+}
+
+.standalone .navigation {
+    position: static;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    border: 1px solid #42b983;
+    border-radius: 4px;
+    max-width: 400px;
+}
+.standalone .navigation:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.standalone .navigation li {
+    display: inline;
+    float: left;
+    width: 33.3%;
+    border-right: 1px solid #42b983;
+    margin: 0;
+}
+
+.standalone .navigation li:last-child {
+    border-right: 0;
+}
+
+.standalone .navigation a {
+    width: 100%;
+    display: inline-block;
+    font-weight: 200;
+    text-decoration: none;
+    color: #42b983;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.standalone .navigation a.current,
+.standalone .navigation a:hover,
+.standalone .navigation a:active {
+    background: #42b983;
+    color: white;
+    border: 0;
+}
+
+/**
  * Media Queries
  **/
 @media print {
