@@ -120,7 +120,7 @@
                     location = document.location,
                     stop = /^(a|html)$/i;
 
-                // body.classList.add( 'standalone' );
+                body.classList.add( 'standalone' );
                 
                 if ( sidebar ) {
                     var toggleSidebar = document.getElementById( 'web-app-sidebar' );
