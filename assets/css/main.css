@@ -655,6 +655,7 @@ body .web-app-nav-container {
     padding: 10px 0;
     border-right: 1px solid #42b983;
     color: #328962;
+    cursor: pointer;
 }
 
 .standalone .web-app-subnav li:last-child {
@@ -726,6 +727,18 @@ body .web-app-nav-container {
 
 .standalone .content {
     margin: 1em auto 3em auto;
+}
+
+.standalone .toggle-sidebar {
+    display: none;
+}
+
+.standalone .sidebar {
+    position: fixed;
+    top: 0;
+    max-height: 93%;
+    overflow: auto; 
+    box-shadow: none;
 }
 
 /**
