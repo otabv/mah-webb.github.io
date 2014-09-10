@@ -8,6 +8,12 @@
         <title>Mah Webb</title>
     {% endif %}
 
+    <script>
+        if ( ( "standalone" in window.navigator ) && window.navigator["standalone"] ) {
+            document.body.classList.add( 'standalone' );
+        }
+    </script>
+
     <meta name="description" content="Öppet kursmaterial tillgängligt för alla från Malmö Högskola">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

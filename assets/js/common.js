@@ -120,7 +120,33 @@
                     location = document.location,
                     stop = /^(a|html)$/i;
 
-                body.classList.add( 'standalone' );
+                // body.classList.add( 'standalone' );
+                
+                if ( sidebar ) {
+                    var toggleSidebar = document.getElementById( 'web-app-sidebar' );
+                    
+                    toggleSidebar.addEventListener( 'click', function( e ) {
+                        sidebar.classList.toggle( 'toggle' );
+                    });
+                }
+
+                var goUp = document.getElementById( 'web-app-top' );
+
+                goUp.addEventListener( 'click', function() {
+                    document.body.scrollTop = document.documentElement.scrollTop = 0;
+                });
+
+                var goPrev = document.getElementById( 'web-app-prev' );
+
+                goPrev.addEventListener( 'click', function() {
+                    window.history.go( -1 );
+                });
+
+                var goNext = document.getElementById( 'web-app-next' );
+
+                goNext.addEventListener( 'click', function() {
+                    window.history.go( 1 );
+                });
 
                 document.addEventListener( 'click', function( e ) {
                     curnode = e.target;
