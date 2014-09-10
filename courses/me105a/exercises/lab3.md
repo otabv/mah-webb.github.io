@@ -53,21 +53,18 @@ UPDATE joke SET authorid=1
 
 ## Uppgift 4
 
-I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabellen. Gör nu sidor på samma sätt för att lägga till name och email i authortabellen. Gör en sida *index.php* som leder vidare till *add.php*. Lägg sidorna i */ddwap/me105a/lab3/uppgift4/*
+I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabellen. Gör nu sidor på samma sätt för att lägga till name och email i authortabellen. Gör en sida *author.php* som leder vidare till *addauthor.php*. Lägg sidorna i */ddwap/me105a/lab3/uppgift4/*
 
 ![](im3/add.png)
 
+I kommande labbar ska vi se hur man kan koppla ihop author-tabellen med joke-tabellen. 
+
 ## Uppgift 5
 
-Borde även ha lite er
+Rita ett E/R-diagram av tabellen *contacts* från tidigare labbar. Vad är entiteten? Vad är attributen?
 
-Utgå från uppgifter i förra labben. 
-De såg ut så här:
+## Uppgift 6
 
-- Uppgift 4
-I förra labben skapades även tabellen contacts. Gör ett formulär och en svarssida där du kan mata in namn och e-post.
-- Uppgift 5
-Gör en sida showall.php som visar alla namn och e-postadresser som finns i tabellen contacts.
-- Uppgift 6 (frivillig)
-Komplettera uppgift 4 så att epost-adressen endast läggs till i tabellen om den innehåller ett @-tecken. Tips: använd php-funktionen strpos för att testa om @-tecknet finns med.
+Rita ett E/R-diagram över tabellerna *joke* och *author* där det framgår hur joke och author är kopplade till varandra. 
 
+Det går bra att rita E/R-diagrammen med papper och penna, och lämna in foto av skissen som du tar till exempel med mobilkameran. 
