@@ -113,7 +113,6 @@
 
             for ( var i = 0; i < links.length; i++ ) {
                 links[i].onclick = function( e ) {
-                    alert( e.
                     e.preventDefault();
                     window.location.href = e.target.href;
                     return false;
