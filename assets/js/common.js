@@ -10,12 +10,18 @@
         var currentClass = body.className;
 
         window.addEventListener( 'scroll', function() {
+            if ( body.classList.contains( 'standalone' ) ) {
+                return false;
+            }
+
             var t = doc && doc.scrollTop || body.scrollTop;
 
             if ( t > header.offsetHeight ) {
-                body.className = currentClass + ' fix-sidebar';
+                if ( ! body.classList.contains( 'fix-sidebar' ) ) {
+                    body.classList.add( 'fix-sidebar' );
+                }
             } else {
-                body.className = currentClass;
+                body.classList.remove( 'fix-sidebar' );
             }
 
         });

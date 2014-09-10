@@ -618,12 +618,48 @@ table tbody tr:nth-child(odd) {
 /**
  * Web App
  **/
-body .web-app-enabled {
+body .web-app-nav-container {
     display: none;
 }
 
-.standalone .web-app-enabled {
+.standalone .web-app-nav-container {
     display: block;
+    background: white;
+}
+
+.standalone .web-app-nav-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.standalone .web-app-subnav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid #42b983;
+}
+
+.standalone .web-app-subnav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.standalone .web-app-subnav li {
+    float: left;
+    width: 25%;
+    padding: 10px 0;
+    border-right: 1px solid #42b983;
+    color: #328962;
+}
+
+.standalone .web-app-subnav li:last-child {
+    border: 0;
+    margin-top: -4px;
 }
 
 .standalone .header .brand {
@@ -632,6 +668,10 @@ body .web-app-enabled {
 
 .standalone .header {
     box-shadow: none;
+}
+
+.standalone .header .header-inner {
+    padding: 10px 0;
 }
 
 .standalone .navigation {
@@ -678,6 +718,14 @@ body .web-app-enabled {
     background: #42b983;
     color: white;
     border: 0;
+}
+
+.standalone .footer {
+    display: none;
+}
+
+.standalone .content {
+    margin: 1em auto 3em auto;
 }
 
 /**
