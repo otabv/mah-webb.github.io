@@ -113,8 +113,9 @@
 
             for ( var i = 0; i < links.length; i++ ) {
                 links[i].onclick = function( e ) {
+                    alert( e.
                     e.preventDefault();
-                    window.location = e.target.href;
+                    window.location.href = e.target.href;
                     return false;
                 };
                 // links[i].addEventListener( 'click', function( e ) {
