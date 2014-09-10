@@ -107,45 +107,28 @@
     window.onload = function() {
         fixedFooter();
         
-        // iOS web app navigation issue
-        // if ( window.navigator.standalone ) {
-        //     var links = document.getElementsByTagName( 'a' );
+        // iOS web app navigation
+        (function( document, navigator, standalone ) {
+            if ( ( standalone in navigator ) && navigator[standalone] ) {
+                var curnode,
+                    location = document.location,
+                    stop = /^(a|html)$/i;
 
-        //     for ( var i = 0; i < links.length; i++ ) {
-        //         links[i].onclick = function( e ) {
-        //             e.preventDefault();
-        //             window.location.href = e.target.href;
-        //             return false;
-        //         };
-        //         // links[i].addEventListener( 'click', function( e ) {
-        //         //     var href = e.target.href;
+                body.classList.add( 'standalone' );
 
-        //         //     if ( ! href.math( /^http(s?)/g ) ) {
-        //         //         e.preventDefault();
-        //         //         window.location = href;
-        //         //         return false;
-        //         //     }
-        //         // });
-        //     }
-        // }
-        (function(document,navigator,standalone) {
-            // prevents links from apps from oppening in mobile safari
-            // this javascript must be the first script in your <head>
-            if ((standalone in navigator) && navigator[standalone]) {
-                var curnode, location=document.location, stop=/^(a|html)$/i;
-                document.addEventListener('click', function(e) {
-                    curnode=e.target;
-                    while (!(stop).test(curnode.nodeName)) {
-                        curnode=curnode.parentNode;
+                document.addEventListener( 'click', function( e ) {
+                    curnode = e.target;
+
+                    while ( !(stop).test( curnode.nodeName ) ) {
+                        curnode = curnode.parentNode;
                     }
-                    // Condidions to do this only on links to your own app
-                    // if you want all links, use if('href' in curnode) instead.
-                    if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+
+                    if( 'href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
                         e.preventDefault();
                         location.href = curnode.href;
                     }
-                },false);
+                }, false);
             }
-        })(document,window.navigator,'standalone');
+        })( document, window.navigator, 'standalone' );
     };
 })()
