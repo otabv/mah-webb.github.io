@@ -19,6 +19,8 @@ assignments:
       file: self1
     - name: Självstude 2
       file: self2
+    - name: Självstude 3
+      file: self3
 
 
 # Laborationer
