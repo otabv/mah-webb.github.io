@@ -61,6 +61,8 @@ I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabel
 
 Borde även ha lite er
 
+Men... hade jag inte skrivit lite här :(
+
 Utgå från uppgifter i förra labben. 
 De såg ut så här:
 
