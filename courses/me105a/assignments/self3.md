@@ -33,7 +33,7 @@ Följande information om byggnaden ska sparas:
 - gatunummer (*street number*)
 - benämning (*name*, tex kranen, ubåtshallen etc)
 
-Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med en förhållande mellan entiteterna byggnad och sal.
+Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med ett förhållande mellan entiteterna byggnad och sal.
 
 ## Uppgift 2
 

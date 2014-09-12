@@ -17,9 +17,9 @@ lectures:
 assignments:
     - name: Självstudie 1
       file: self1
-    - name: Självstude 2
+    - name: Självstudie 2
       file: self2
-    - name: Självstude 3
+    - name: Självstudie 3
       file: self3
 
 
