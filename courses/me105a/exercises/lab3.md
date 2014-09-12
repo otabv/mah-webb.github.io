@@ -63,8 +63,13 @@ I kommande labbar ska vi se hur man kan koppla ihop author-tabellen med joke-tab
 
 Rita ett E/R-diagram av tabellen *contacts* från tidigare labbar. Vad är entiteten? Vad är attributen?
 
+
 ## Uppgift 6
+=======
 
 Rita ett E/R-diagram över tabellerna *joke* och *author* där det framgår hur joke och author är kopplade till varandra. 
 
 Det går bra att rita E/R-diagrammen med papper och penna, och lämna in foto av skissen som du tar till exempel med mobilkameran. 
+
+Vojne
+
