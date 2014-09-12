@@ -53,7 +53,7 @@ UPDATE joke SET authorid=1
 
 ## Uppgift 4
 
-I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabellen. Gör nu sidor på samma sätt för att lägga till name och email i authortabellen. Gör en sida *author.php* som leder vidare till *addauthor.php*. Lägg sidorna i */ddwap/me105a/lab3/uppgift4/*
+I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabellen. Gör nu sidor på samma sätt för att lägga till name och email i authortabellen. Gör en sida *authorform.php* som leder vidare till *authoradded.php*. Lägg sidorna i */ddwap/me105a/lab3/uppgift4/*
 
 ![](im3/add.png)
 
@@ -63,6 +63,8 @@ I kommande labbar ska vi se hur man kan koppla ihop author-tabellen med joke-tab
 
 Rita ett E/R-diagram av tabellen *contacts* från tidigare labbar. Vad är entiteten? Vad är attributen?
 
+(Normalt går man åt andra hållet, man börjar att göra E/R-diagrammet, sedan skapar man tabellerna. Här gör vi tvärt om som övning).
+
 
 ## Uppgift 6
 =======
@@ -71,5 +73,4 @@ Rita ett E/R-diagram över tabellerna *joke* och *author* där det framgår hur 
 
 Det går bra att rita E/R-diagrammen med papper och penna, och lämna in foto av skissen som du tar till exempel med mobilkameran. 
 
-Vojne
 
