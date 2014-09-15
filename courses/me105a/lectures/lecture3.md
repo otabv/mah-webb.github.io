@@ -71,7 +71,7 @@ Det finns några grundläggande typer av förhållanden mellan entiteter, förh�
 - många-till-ett
 - många-till-många1
 
-I exemplet på föregående sida såg vi ett förhållande av typen ett-till-många mellan abonnent och abonnemang. En abonnent kan ha många abonnemang. Det anges av ettan och bokstaven M i E/R-diagrammet.
+I exemplet på föregående sida såg vi ett förhållande av typen ett-till-många mellan person och abonnemang. En person kan ha många abonnemang. Det anges av ettan och bokstaven M i E/R-diagrammet.
 
 Om vi vill att ett abonnemang ska kunna delas mellan flera personer behöver vi bara ändra ordningsbeteckningarna i diagrammet:
 
@@ -141,7 +141,7 @@ Tabellen för person är rättfram:
 
 **person**
 
-| namn | <u>personnummer1</u> |
+| namn | <u>personnummer</u> |
 |---|---|
 | Bo Peterson | 650201-9999 |
 | Sven Svensson | 731212-5555 |

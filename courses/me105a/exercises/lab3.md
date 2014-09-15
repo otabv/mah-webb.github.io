@@ -67,7 +67,6 @@ Rita ett E/R-diagram av tabellen *contacts* från tidigare labbar. Vad är entit
 
 
 ## Uppgift 6
-=======
 
 Rita ett E/R-diagram över tabellerna *joke* och *author* där det framgår hur joke och author är kopplade till varandra. 
 
