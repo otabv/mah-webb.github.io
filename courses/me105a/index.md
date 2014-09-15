@@ -42,7 +42,15 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 38 - E/R-diagram
 
-### Vecka 39 
+- [Föreläsning 3](lectures/lecture3.html)
+- [Laboration 3](exercises/lab3.html)
+- [Självstudie 3](assignments/self3.html)
+
+### Vecka 39 - Mer om E/R-diagram
+
+- [Föreläsning 4](lectures/lecture4.html)
+
+
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=idag&resurser=k.ME105A-20142-TS342-
