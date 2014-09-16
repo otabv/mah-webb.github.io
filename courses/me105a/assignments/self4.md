@@ -15,11 +15,15 @@ th, td {padding: 6px;}
 
 ##Uppgift 1 
 
-Skapa tabellerna *classroom* och *building* utifrån E/R-diagrammen från självstudie 3.
+Skapa tabellerna *classroom* och *building* utifrån E/R-diagrammen från självstudie 3 med lämplig SQL (CREATE TABLE classroom etc). Använd MySQL Query Browser. **OBS** Om du redan har en tabell *classroom* från självstudie 1 måste du börja med att ta bort den. Det gör du med
+
+{% highlight sql %}
+DROP TABLE classroom
+{% endhighlight %} 
 
 ##Uppgift 2
 
-Gör formulär för att mata in byggnader i tabellen *building*.
+Gör html och php-sidor med formulär för att mata in byggnader i tabellen *building*.
 
 ##Uppgift 3
 
