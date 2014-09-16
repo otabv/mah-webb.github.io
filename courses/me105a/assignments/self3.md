@@ -41,6 +41,6 @@ Vilken typ av förhållande är det mellan byggnad och sal? En-till-en, en-till-
 
 ## Uppgift 3
 
-Ta fram tabeller som motsvarar entiteterna sal och byggnad. 
+Ta fram tabeller som motsvarar entiteterna sal och byggnad. Vilka kolumner behövs, dels för själva innehållet, men dessutom för att hantera sambandet mellan sal och byggnad?
 
  
