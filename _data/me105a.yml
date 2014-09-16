@@ -33,6 +33,8 @@ exercises:
       file: lab2
     - name: Laboration 3
       file: lab3
+    - name: Laboration 4
+      file: lab4
 
 # Projekt
 #projects:
