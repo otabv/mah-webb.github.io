@@ -14,7 +14,9 @@ I laboration 2 gjorde vi ett formulär för att lägga till skämt i joke-tabell
 
 | <u>id</u> | joketext | jokedate | authorid |
 | --- | --- | --- | --- |
-| 1 | Två tomater... | 2014-09-15 | 2 |
+| 1 | Why did the chicken cross... | 2013-09-16 | 1 |
+| 2 | - Tar ni kort här... | 2013-09-20 | 1 |
+| 3 | Två tomater... | 2014-09-15 | 2 |
 
 **Author**-tabellen har följande struktur:
 
@@ -78,11 +80,7 @@ Använd sedan INNER JOIN för att  söka alla skämt i joketabellen som  har dit
 
 ## Uppgift 5
 
-Gör en PHP-sida som listar alla skämt som finns i databasen inklusive författare. Sidan kan heta *showalljokes.php* och visa följande:
+Gör en PHP-sida som listar alla skämt som finns i databasen inklusive författare. Sidan kan heta *showalljokes.php* och visa följande (men med era egna skämt):
 
-| joketext | name |
-| --- | --- |
-| Why did the chicken cross the road? To get to the other side. | Bo P |
-| - Tar ni kort här? <br>- Nej vi har inga kameror. | Bo P |
-| Två tomater gick över en väg. Den ena blev överkörd. Då sa den andra: "Kom nu ketchup". | Johannes K |
+![](im4/innerjoin.png)
 
