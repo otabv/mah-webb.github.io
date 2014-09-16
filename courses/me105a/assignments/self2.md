@@ -24,5 +24,36 @@ Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som f
 
 Vi har inte gått igenom hur man sorterar ett sökresultat från en databas än. För att lösa denna uppgift kan du t. ex. googla "sort sql"
 
+##Lösning uppgift 1
+
+###showrooms.php:
+
+{% highlight php %}
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+$sql="SELECT * FROM classroom";
+$result=$pdo->query($sql);
+
+foreach ($result as $row) {
+	$roomnumber=$row['roomnumber'];
+	$seats=$row['seats'];
+	
+	echo "$roomnumber har $seats platser";
+	echo "<br>";
+}
+?>
+{% endhighlight %}
+
+##Lösning uppgift 2
+
+Ändra SELECT-raden till
+
+{% highlight php  startinline=True %}
+$sql="SELECT * FROM classroom ORDER BY seats";
+{% endhighlight %}
+
+
+
 
 
