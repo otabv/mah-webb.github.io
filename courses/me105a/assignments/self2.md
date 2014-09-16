@@ -30,7 +30,8 @@ Vi har inte gått igenom hur man sorterar ett sökresultat från en databas än.
 
 {% highlight php %}
 <?php
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+//ändra userid till ditt eget
+include $_SERVER['DOCUMENT_ROOT'].'/userid/me105a/connect.php';
 
 $sql="SELECT * FROM classroom";
 $result=$pdo->query($sql);
