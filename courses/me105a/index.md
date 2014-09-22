@@ -30,14 +30,14 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 - [Föreläsning 1](lectures/lecture1.html)
 - [Laboration 1](exercises/lab1.html)
-- [Självstudie 1](assignments/self1.html)
+- [Självstudie 1 - med lösning](assignments/self1.html)
 
 
 ### Vecka 37 - PHP och MySQL
 
 - [Föreläsning 2](lectures/lecture2.html)
 - [Laboration 2](exercises/lab2.html)
-- [Självstudie 2](assignments/self2.html)
+- [Självstudie 2 - med lösning](assignments/self2.html)
 
 
 ### Vecka 38 - E/R-diagram
@@ -49,6 +49,8 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 ### Vecka 39 - Mer om E/R-diagram
 
 - [Föreläsning 4](lectures/lecture4.html)
+- [Laboration 4](exercises/lab4.html)
+- [Självstudie 4](assignments/self4.html)
 
 
 
