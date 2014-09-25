@@ -69,7 +69,7 @@ Nu ska MySQL Qurey Browser användas för att testa att söka i tabellerna joke 
 Ange SQL-kod för att söka samtliga skämt med författare och vem som är författare till skämten. Använd 
 
 {% highlight sql %}
-SELECT * FROM joke INNER JOIN author... 
+SELECT * FROM joke INNER JOIN author ON komplettera här med lämplig fortsättning 
 {% endhighlight %}
 
 för att göra sökningen. Redovisa SQL-koden på It's learning. 
@@ -80,7 +80,7 @@ Använd sedan INNER JOIN för att  söka alla skämt i joketabellen som  har dit
 
 ## Uppgift 5
 
-Gör en PHP-sida som listar alla skämt som finns i databasen inklusive författare. Sidan kan heta *showalljokes.php* och visa följande (men med era egna skämt):
+Gör en PHP-sida som listar alla skämt som finns i databasen inklusive författare. Använd SQL-koden du tog fram i uppgift 3 till detta! Sidan kan heta *showalljokes.php* och visa följande (men med era egna skämt):
 
 ![](im4/innerjoin.png)
 
