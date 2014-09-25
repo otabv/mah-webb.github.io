@@ -48,7 +48,11 @@ Man skiljer på kommandon för *Data Manipulation* och kommandon för *Data Defi
 Följande fyra kommandon används huvudsakligen för datamanipulation: 
 
 {% highlight sql %}
-SELECT (...FROM...WHERE) #För att hämta och visa information från tabellen.  UPDATE #För att ändra och uppdatera information i tabellen.  DELETE #För att radera information i tabellen.  INSERT INTO #För att lägga till ny information i tabellen. {% endhighlight %}
+SELECT (...FROM...WHERE)
+#För att hämta och visa information från tabellen.  UPDATE
+#För att ändra och uppdatera information i tabellen.  DELETE
+#För att radera information i tabellen.  INSERT INTO
+#För att lägga till ny information i tabellen. {% endhighlight %}
 
 ---
 
