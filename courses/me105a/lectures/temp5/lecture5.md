@@ -151,9 +151,6 @@ SELECT AVG(skonummer) FROM Studenter;
 #Returnerar medelvärdet  av skonumren i tabellen Studenter.
 {% endhighlight %}
 
-
-
-
 ---
 
 ###BETWEEN ... AND ...
@@ -174,9 +171,6 @@ BETWEEN 5000 AND 10000;
 
 Hittar alla förekomster där poängen är mellan 5000 och 10000 inklusive 5000 och 10000.
 DISTINCT för att slippa dubbletter
-
-
-
 
 NOT
 Används för att negera ett villkor.
@@ -284,7 +278,7 @@ orders
 orderitems
 
 
-En massa exempel:
+###En massa exempel:
 
 {% highlight sql %}
 #sortering
@@ -297,6 +291,14 @@ SELECT prod_name, prod_price FROM products ORDER BY prod_price DESC, prod_name;
 SELECT prod_name, prod_price 
 FROM products
 WHERE prod_price<10;
+{% endhighlight %}
+
+
+xxxxxx dessa highlightstycken ska slås ihop
+
+
+{% highlight sql %}
+
 
 #söka null-värden:
 
