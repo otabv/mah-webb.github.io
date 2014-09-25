@@ -29,12 +29,8 @@ Dagens föreläsning går igenom
 - SQL-sammanfattning
 - Komplett exempel, från E/R till tabeller och SQL
 
-
-
 ---
 
-
----
 ###SQL
 
 Står för Structured Query Language och används för att hämta, uppdatera, lägga till och radera data och tabeller från en databas.
@@ -44,14 +40,18 @@ SQL är standard men existerar i olika variationer för olika databaser (Access,
 Följande exempel ger en SQL-överblick. 
 
 Man skiljer på kommandon för *Data Manipulation* och kommandon för *Data Definition*. I korthet kan man säga att data manipulation innebär att man arbetar med data i tabeller medan data definition innebär att man definierar databasens struktur, dvs vilka tabeller som ska ingå och hur tabellerna ska se ut. SQL-kommandon skrivs vanligtvis med stora bokstäver.
+
 ---
+
 ###Data Manipulation
 
 Följande fyra kommandon används huvudsakligen för datamanipulation: 
 
 {% highlight sql %}
 SELECT (...FROM...WHERE) #För att hämta och visa information från tabellen.  UPDATE #För att ändra och uppdatera information i tabellen.  DELETE #För att radera information i tabellen.  INSERT INTO #För att lägga till ny information i tabellen. {% endhighlight %}
+
 ---
+
 ###SELECT
 
 Hämtar rader och kolumner från en eller flera tabeller genom ett antal villkor.
@@ -92,7 +92,9 @@ WHERE postnummer <= 21155 AND ort = ’Malmö’ OR ort = ’Lund’;
 {% endhighlight %}
 
 Observera apostroferna runt Malmö och Lund (text) men inte runt 21155 (heltal).
+
 ---
+
 ###ORDER BY
 
 Används för att sortera informationen
@@ -108,6 +110,7 @@ För att vända ordningen används DESC efter sorteringskolumnen;
 {% highlight sql %}
 SELECT * FROM Kurser ORDER BY kurskod DESC;
 {% endhighlight %}
+
 ---
 
 ###Mer om SELECT
