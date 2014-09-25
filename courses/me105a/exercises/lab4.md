@@ -42,7 +42,7 @@ Detta kräver en sökning i author-tabellen, och varje rad i dropdown-meny skapa
 </select>
 {% endhighlight %}
 
-## Uppgift 2
+## Uppgift 2a
 
 Lägg till en länk add new author som leder till formulär för att lägga till author.
 
@@ -58,7 +58,7 @@ Sidan *authoradded.php* ska ha en länk tillbaka till *index.php* så att man ka
 
 Nu finns ett komplett system för att lägga till författare och skämt och koppla dem till varandra. 
 
-## Uppgift 2
+## Uppgift 2b
 
 Fundera över systemets användbarhet. Vad händer om matat in ett skämt, upptäcker att författaren inte finns i menyn, klickar *add new author* och sedan tillbaka till formuläret för att lägga till skämt. Lämna kortfattat in dina tankar om detta på It's learning.  
 
