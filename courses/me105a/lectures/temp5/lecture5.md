@@ -82,6 +82,7 @@ I villkor används ' ' runt text, dock ej kring heltal (integers)
 
 ###Jämförelser
 
+
 Det går att kombinera villkor genom logiska operatorerna (AND OR NOT), samt jämförelse (<, >, <=, >=, <>)
 
 Till exempel:
