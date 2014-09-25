@@ -281,6 +281,8 @@ orderitems
 
 
 En massa exempel:
+
+{% highlight sql %}
 #sortering
 #sortera dyraste varor först. om två varor har samma pris sorteras de i bokstavsordning
 
@@ -376,4 +378,6 @@ WHERE vendors.vend_id = products.vend_id;
 SELECT vend_name,prod_name,prod_price
 FROM vendors INNER JOIN products 
 ON vendors.vend_id = products.vend_id;
+
+{% endhighlight %}
 
