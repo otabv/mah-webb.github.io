@@ -48,7 +48,11 @@ Man skiljer på kommandon för *Data Manipulation* och kommandon för *Data Defi
 Följande fyra kommandon används huvudsakligen för datamanipulation: 
 
 {% highlight sql %}
-SELECT (...FROM...WHERE) #För att hämta och visa information från tabellen.  UPDATE #För att ändra och uppdatera information i tabellen.  DELETE #För att radera information i tabellen.  INSERT INTO #För att lägga till ny information i tabellen. {% endhighlight %}
+SELECT (...FROM...WHERE)
+#För att hämta och visa information från tabellen.  UPDATE
+#För att ändra och uppdatera information i tabellen.  DELETE
+#För att radera information i tabellen.  INSERT INTO
+#För att lägga till ny information i tabellen. {% endhighlight %}
 
 ---
 
@@ -281,6 +285,8 @@ orderitems
 
 
 En massa exempel:
+
+{% highlight sql %}
 #sortering
 #sortera dyraste varor först. om två varor har samma pris sorteras de i bokstavsordning
 
@@ -376,4 +382,6 @@ WHERE vendors.vend_id = products.vend_id;
 SELECT vend_name,prod_name,prod_price
 FROM vendors INNER JOIN products 
 ON vendors.vend_id = products.vend_id;
+
+{% endhighlight %}
 
