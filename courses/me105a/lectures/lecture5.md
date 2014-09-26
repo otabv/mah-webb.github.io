@@ -191,7 +191,8 @@ UPDATE Tabell SET kolumnnamn = 'Nytt värde'  WHERE (villkor);
 Exempel:
 
 {% highlight sql %}
-UPDATE studenter SET gatuadress = 'Amiralsgatan' WHERE personnummer = '630126-2351';
+UPDATE studenter SET gatuadress = 'Amiralsgatan' 
+WHERE personnummer = '630126-2351';
 {% endhighlight %}
 
 DELETE
