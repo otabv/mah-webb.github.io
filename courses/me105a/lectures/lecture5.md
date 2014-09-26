@@ -271,7 +271,22 @@ id INT PRIMARY KEY NOT NULL)
 
 ###ALTER TABLE
 
-Exempel för att lägga till kolumn, byta namn på kolumn
+Exempel:
+
+Lägg till en kolumnen *hp* av typen INT till tabellen kurser
+
+{% highlight sql %}
+ALTER TABLE kurser
+ADD hp INT
+{% endhighlight %}
+
+Ändra namn på kolumnen *hp* till *hogskolepoang*:
+
+{% highlight sql %}
+ALTER TABLE kurser CHANGE hp hogskolepoang INT
+{% endhighlight %}
+
+OBS att man måste ange gamla namnet på kolumnet, sedan nya namnet, och slutligen typen (även om man inte ändrar typen på kolumnen)
 
 ###DROP TABLE
 

@@ -13,6 +13,8 @@ lectures:
        file: lecture3
      - name: Föreläsning 4
        file: lecture4
+     - name: Föreläsning 5
+       file: lecture5
 
 
 # Uppgifter
@@ -21,10 +23,12 @@ assignments:
       file: self1
     - name: Självstudie 2 - nu med lösning
       file: self2
-    - name: Självstudie 3
+    - name: Självstudie 3 - nu med lösning
       file: self3
     - name: Självstudie 4
       file: self4
+    - name: Självstudie 5
+      file: self5
 
 
 # Laborationer
@@ -37,6 +41,8 @@ exercises:
       file: lab3
     - name: Laboration 4
       file: lab4
+    - name: Laboration 5
+      file: lab5
 
 # Projekt
 #projects:

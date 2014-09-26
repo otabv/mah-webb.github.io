@@ -44,7 +44,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 - [Föreläsning 3](lectures/lecture3.html)
 - [Laboration 3](exercises/lab3.html)
-- [Självstudie 3](assignments/self3.html)
+- [Självstudie 3 - med lösning](assignments/self3.html)
 
 ### Vecka 39 - Mer om E/R-diagram
 
@@ -52,7 +52,11 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 - [Laboration 4](exercises/lab4.html)
 - [Självstudie 4](assignments/self4.html)
 
+### Vecka 40 - SQL framlänges och baklänges
 
+- [Föreläsning 5](lectures/lecture5.html)
+- [Laboration 5](exercises/lab5.html)
+- [Självstudie 5](assignments/self5.html)
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=idag&resurser=k.ME105A-20142-TS342-
