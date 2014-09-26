@@ -215,7 +215,7 @@ tar bort alla rader där Elisabeth Nilsson är examinator.
 **Om man inte har WHERE med i**
 
 {% highlight sql %}
-DELETE FROM tabell**
+DELETE FROM tabell
 {% endhighlight %}
 
 **försvinner alla rader från tabellen!**
@@ -278,13 +278,13 @@ Exempel för att lägga till kolumn, byta namn på kolumn
 Tar bort en hel tabell och all data som finns i den.
 
 {% highlight sql %}
-DROP TABLE tabellnamn;
+DROP TABLE tabellnamn
 {% endhighlight %}
 
 Exempel:
 
 {% highlight sql %}
-DROP TABLE game;
+DROP TABLE game
 {% endhighlight %}
 
 **OBS Tar bort hela tabellen game och allt som finns i den, så använd med försiktighet…**
@@ -311,7 +311,8 @@ Vi kommer att använda en exempeldatabas hämtad från boken SAMS Teach Yourself
 
 {% highlight sql %}
 #sortering
-#sortera dyraste varor först. om två varor har samma pris sorteras de i bokstavsordning
+#sortera dyraste varor först. om två varor har samma pris 
+#sorteras de i bokstavsordning
 
 SELECT prod_name, prod_price FROM products ORDER BY prod_price DESC, prod_name;
 
@@ -345,7 +346,8 @@ FROM products
 WHERE prod_price>=5 and prod_price<=10;
 
 #NOT operatorn
-#Observera parenteserna kring det som ska negeras. Det krävs av MySQL men inte av alla DBMS
+#Observera parenteserna kring det som ska negeras. 
+#Det krävs av MySQL men inte av alla DBMS
 
 SELECT prod_name FROM products WHERE NOT (prod_name='King Doll');
 
@@ -362,9 +364,9 @@ SELECT prod_name FROM products WHERE prod_name LIKE "r%";
 #sök produkter som slutar med ordet bear
 SELECT prod_name FROM products WHERE prod_name LIKE "%bear";
 
-#beräknade fält. det finns ett stort antal funktioner och operator som kan användas,
+#beräknade fält. det finns ett stort antal funktioner och 
+#operatorer som kan användas,
 #tex + - * /  trim() etc. 
-
 
 SELECT quantity,item_price,quantity*item_price
 FROM orderitems 
@@ -386,8 +388,8 @@ SUM(prod_price) as sum_price,
 SUM(prod_price)/COUNT(*) as avg_price_v2
 FROM products;
 
-
-#det kanske viktigaste att förstå är hur man kopplar samman tabeller med join.
+#det kanske viktigaste att förstå är hur man kopplar samman 
+#tabeller med join.
 
 #skapa en lista över alla försäljares produkter:
 
