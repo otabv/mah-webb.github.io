@@ -314,7 +314,8 @@ Vi kommer att använda en exempeldatabas hämtad från boken SAMS Teach Yourself
 #sortera dyraste varor först. om två varor har samma pris 
 #sorteras de i bokstavsordning
 
-SELECT prod_name, prod_price FROM products ORDER BY prod_price DESC, prod_name;
+SELECT prod_name, prod_price FROM products 
+ORDER BY prod_price DESC, prod_name;
 
 #filtrering med WHERE
 

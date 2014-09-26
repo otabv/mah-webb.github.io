@@ -1,6 +1,40 @@
-sqlkod till labb 5
+---
+layout: instructions
+code: me105a
+title: Laboration 5
+---
 
-
+#Laboration 5I denna labb ska vi skapa tabeller för ett orderhanteringssystem, och sedan göra olika sökningar i systemet. Ordersystemet har ett E/R-diagram enligt nedan. Attributen är utelämnade men framgår av tabellerna nedan. Vi kommer uteslutande att arbeta med MySQL Query Browser idag (inga PHP-sidor alltså). All SQL-kod du skapar i uppgifterna lämnas in på It's learning.![](im5/er.png)Detta diagram kan översättas till följande tabeller. Typen för varje kolumn framgår också, och primärnycklarna är understrukna. Både kolumner av typen TEXT och CHAR(10) kan innehålla text, men med vissa skillnader. CHAR(10) kan endast innehålla upp till 10 tecken, men kan i gengäld användas som primärnyckel. Kolumner av typen TEXT kan inte vara primärnyckel. **vendors** | 
+ --- | ---<u>vend_id</u> | CHAR(10)
+vend_name	 | TEXT
+vend_address | TEXT
+vend_city | TEXT
+vend_state | TEXT
+vend_zip | TEXT
+vend_country | TEXT**products** | 
+ --- | ---<u>prod_id</u> | CHAR(10)
+vend_id | CHAR(10)
+prod_name | TEXT
+prod_price | DECIMAL(8,2)
+prod_desc | TEXT
+**customers** | 
+ --- | ---<u>cust_id</u> | CHAR(10)
+cust_name | TEXT
+cust_address | TEXT
+cust_city | TEXT
+cust_state | TEXT
+cust_zip | TEXT
+cust_country | TEXT
+cust_contact | TEXT
+cust_email | TEXT**orders** | 
+ --- | ---<u>order_num</u> | INT
+order_date | DATETIME
+cust_id | CHAR(10)**orderitems** | 
+ --- | ---<u>order_num</u> | INT
+order_item | INT
+<u>prod_id</u> | CHAR(10) 
+quantity | INT
+item_price | DECIMAL(8,2)**OBS** att orderitems har två kolumner som tillsammans utgör primärnyckeln. ##Uppgift 1Börja med att logga in på MySQL Query Browser. Skriv SQL-kod i inmatningsfältet för att skapa alla tabellerna ovan! Skapa en tabell åt gången. Det är mycket viktigt att tabell- och kolumnnamn stavas exakt som i tabellerna ovan, samt att prmary key anges korrekt. Observera att orderitems har två kolumner tillsammans som primary key. ##Uppgift 2Mata in data i de olika tabellerna. Till detta finns färdig SQL-kod sist i handledningen. OBS: om du i uppgift 1 gjort något fel när du skapat någon tabell kommer det kanske inte att fungera att lägga till data. Gå då tillbaka till uppgift 1, ta bort tabellen med DROP TABLE.... och skapa en ny som är korrekt. ##Uppgift 3Visa en lista med namn på alla produkter samt landet (vend_country) för produktens försäljare (vendor). Ledtråd: man måste söka i både products och vendors och koppla ihop dem med INNER JOIN##Uppgift 4Visa en lista med namn på alla kunder (customers) och orderdatum (order_date) för alla beställningar som gjorts till och med januari 2001. Ledtråd: börja med att koppla ihop customers och orders med INNER JOIN. Lägg till ett villkor med WHERE som kollar att datum är mindre än '2001-02-01'Uppgift 5Vem (dvs vilket customer name) har gjort order nr 20007?##Uppgift 6Visa en lista över ordernummer på alla beställningar som Village Toys gjort.##Uppgift 7Hur många ordrar har Village Toys gjort?##Uppgift 8Visa en lista med order_num, prod_desc och order_date för samtliga beställda objekt. Ledtråd: här måste orders och products kopplas ihop via orderitems. Man måste alltså göra alltså först koppla ihop products och orderitems med INNER JOIN, och sedan koppla vidare till orders, också med INNER JOIN.##Uppgift 9Visa namnet på alla customers som beställt en 'Raggedy Ann'##Uppgift 10Visa sorterat i bokstavsordning namn och beskrivning för alla produkter där beskrivningen innehåller ordet 'doll'Lämna in SQL-koden för alla uppgifter på It's learning.
 
 {% highlight sql %}
 #customers
@@ -18,9 +52,6 @@ VALUES('1000000004', 'Fun4All', '829 Riverside Drive', 'Phoenix', 'AZ', '88888',
 
 INSERT INTO customers(cust_id, cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact)
 VALUES('1000000005', 'The Toy Store', '4545 53rd Street', 'Chicago', 'IL', '54545', 'USA', 'Kim Howard');
-
-
-
 
 #orderitems
 INSERT INTO orderitems(order_num, order_item, prod_id, quantity, item_price)
