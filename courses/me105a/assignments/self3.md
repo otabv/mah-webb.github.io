@@ -30,7 +30,7 @@ Följande information om sal ska sparas i databasen:
 Följande information om byggnaden ska sparas:
 
 - gatuadress (*street*)
-- gatunummer (*street number*)
+- gatunummer (*streetnumber*)
 - benämning (*name*, tex kranen, ubåtshallen etc)
 
 Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med ett förhållande mellan entiteterna byggnad och sal.
@@ -43,4 +43,17 @@ Vilken typ av förhållande är det mellan byggnad och sal? En-till-en, en-till-
 
 Ta fram tabeller som motsvarar entiteterna sal och byggnad. Vilka kolumner behövs, dels för själva innehållet, men dessutom för att hantera sambandet mellan sal och byggnad?
 
+ ##Lösning uppgift 1
  
+![](im3/er.png)
+
+##Lösning uppgift 2
+
+Mellan byggnad och sal är sambandet *en-till-många*: En byggnad kan innehålla många salar. (Mellan sal och byggnad är sambandet *många-till-en*).
+
+##Lösning uppgift 3
+
+Vi ser direkt i ER-diagrammet att tabellen *classroom* behöver kolumnerna *id*, *seats* och *roomnumber*. Dessutom behövs kolumnen *buildingid* för att koppla ett visst rum till en viss byggnad. 
+
+Tabellen *building* behöver kolumnerna *id*, *name*, *street* och *streetnumber*. Här behövs ingen extra kolumn. 
+

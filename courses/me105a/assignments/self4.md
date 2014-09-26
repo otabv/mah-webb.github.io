@@ -38,3 +38,34 @@ Gör formulär för att mata in sal i tabellen *classroom*. Man ska med en dropd
 Mata in några salar i de olika byggnaderna. 
 
 
+##Lösning uppgift 1
+
+CREATE TABLE classroom (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  roomnumber CHAR(4),
+  seats INT,
+  buildingid INT
+)
+
+Kolumnen *buildingid* i *classroom* kopplar ett visst rum till en viss byggnad. 
+
+CREATE TABLE building (
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+name TEXT,
+streetnumber CHAR(10),
+street TEXT)
+
+Typen CHAR(10) på *streetnumber* gör att 10 tecken, både siffror och bokstäver kan sparas, till exempel 3C eller 11H. 
+
+
+##Lösning uppgift 2
+
+kommer snart
+
+##Lösning uppgift 3
+
+kommer snart
+
+##Lösning uppgift 4
+
+kommer snart
