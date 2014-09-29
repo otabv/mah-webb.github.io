@@ -40,23 +40,26 @@ Mata in några salar i de olika byggnaderna.
 
 ##Lösning uppgift 1
 
+{% highlight sql %}
 CREATE TABLE classroom (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   roomnumber CHAR(4),
   seats INT,
   buildingid INT
 )
+{% endhighlight %}
 
 Kolumnen *buildingid* i *classroom* kopplar ett visst rum till en viss byggnad. 
 
+{% highlight sql %}
 CREATE TABLE building (
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 name TEXT,
 streetnumber CHAR(10),
 street TEXT)
+{% endhighlight %}
 
 Typen CHAR(10) på *streetnumber* gör att 10 tecken, både siffror och bokstäver kan sparas, till exempel 3C eller 11H. 
-
 
 ##Lösning uppgift 2
 
