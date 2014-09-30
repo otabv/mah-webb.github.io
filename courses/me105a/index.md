@@ -64,52 +64,52 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 - Laboration 6
 - Självstudie 6
 
-## Vecka 42 - Export av data, introduktion till xml
+### Vecka 42 - Export av data, introduktion till xml
 
 - Föreläsning 7
 - Laboration 7
 - Självstudie 7
 
-## Vecka 43 - Miniprojekt
+### Vecka 43 - Miniprojekt
 
 - Ingen föreläsning, eget arbete med miniprojektet. 
 - Handledning av miniprojekt under laborationstillfällena. 
 
-## Vecka 44 - Miniprojekt
+### Vecka 44 - Miniprojekt
 
 - Ingen föreläsning, eget arbete med miniprojektet
 - Handledning av miniprojekt under laborationstillfällena. 
 - Inlämning av miniprojekt på It's learning fredag 31 oktober kl 17.00
 
-## Vecka 45 - Import av data
+### Vecka 45 - Import av data
 
 - Föreläsning 8
 - Laboration 8
 
-## Vecka 46 - Mer xml, xslt, json
+### Vecka 46 - Mer xml, xslt, json
 
 - Föreläsning 9
 - Laboration 9
 
-## Vecka 47 - Projektstart
+### Vecka 47 - Projektstart
 
 - Handledning av projekt under laborationstillfällena
 
-## Vecka 48 - Projekt
+### Vecka 48 - Projekt
 
 - Handledning av projekt under laborationstillfällena
 
-## Vecka 49 - Projekt
+### Vecka 49 - Projekt
 
 - Handledning av projekt under laborationstillfällena
 
-## Vecka 50 - Projekt
+### Vecka 50 - Projekt
 
 - Handledning av projekt under laborationstillfällena
 
-## Vecka 51 - Projekt
+### Vecka 51 - Projekt
 
-- Inlämning och redovisning av projekt 
+- Inlämning och redovisning av projekt, torsdag 18 december.
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=idag&resurser=k.ME105A-20142-TS342-
