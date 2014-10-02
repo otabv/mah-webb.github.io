@@ -4,6 +4,10 @@ code: me105a
 title: Laboration 5
 ---
 
+<style>
+pre {white-space: pre-wrap;}
+</style>
+
 #Laboration 5I denna labb ska vi skapa tabeller för ett orderhanteringssystem, och sedan göra olika sökningar i systemet. Ordersystemet har ett E/R-diagram enligt nedan. Attributen är utelämnade men framgår av tabellerna nedan. Vi kommer uteslutande att arbeta med MySQL Query Browser idag (inga PHP-sidor alltså). All SQL-kod du skapar i uppgifterna lämnas in på It's learning.![](im5/er.png)Detta diagram kan översättas till följande tabeller. Typen för varje kolumn framgår också, och primärnycklarna är understrukna. Både kolumner av typen TEXT och CHAR(10) kan innehålla text, men med vissa skillnader. CHAR(10) kan endast innehålla upp till 10 tecken, men kan i gengäld användas som primärnyckel. Kolumner av typen TEXT kan inte vara primärnyckel. **vendors** | 
  --- | ---<u>vend_id</u> | CHAR(10)
 vend_name	 | TEXT
@@ -41,7 +45,7 @@ Lämna in SQL-kod på It's learning!##Uppgift 2Mata in data i de olika tabel
 
 ##SQL-kod för att lägga till data i tabellerna
 
-{% highlight sql %}
+{% highlight mysql %}
 #customers
 INSERT INTO customers(cust_id, cust_name, cust_address, cust_city, cust_state, cust_zip, cust_country, cust_contact, cust_email)
 VALUES('1000000001', 'Village Toys', '200 Maple Lane', 'Detroit', 'MI', '44444', 'USA', 'John Smith', 'sales@villagetoys.com');
