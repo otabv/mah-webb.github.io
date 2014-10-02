@@ -4,9 +4,10 @@ code: me105a
 title: Laboration 5
 ---
 
+utan white-space: pre-wrap;
 
 <style>
-pre {white-space: pre-wrap;font-size:40px}
+pre {font-size:30px}
 </style>
 
 
