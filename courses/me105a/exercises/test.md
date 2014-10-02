@@ -4,13 +4,9 @@ code: me105a
 title: Laboration 5
 ---
 
+
 <style>
-table {border-collapse: collapse;font-size:smaller}
-th, td {border: 1px solid #BBBBBB}
-th, td {text-align:left}
-th, td {padding: 6px;}
-hr {display: none}
-pre {white-space: pre-wrap;}
+pre {white-space: pre-wrap;font-size:40px}
 </style>
 
 
