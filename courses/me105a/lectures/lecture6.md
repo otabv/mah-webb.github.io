@@ -27,7 +27,9 @@ pre {font-size:large}
 ![http://xkcd.com/327 Exploits of a Mom](im6/xkcd.com-327-exploits-of-a-mum.png)
 *<http://xkcd.com/327> Exploits of a Mom*
 
-Läs kapitel 9 i boken PHP & MySQL: Novice to Ninja. Läs even kapitel 13 i boken Databasteknik eller kolla en sammanfattning av det kapitlet på <http://www.databasteknik.se/webbkursen/transaktioner/index.html>.
+Läs kapitel 9 i boken PHP & MySQL: Novice to Ninja. Läs even kapitel 13 i boken Databasteknik eller kolla en sammanfattning av det kapitlet på 
+
+<http://www.databasteknik.se/webbkursen/transaktioner/index.html>.
  
 ###Olika typer av säkerhet
 
@@ -190,7 +192,7 @@ Spara aldrig lösenord i klartext i tabeller. Spara kodade lösenord. Boken anv�
 
 MD5 finns både i PHP och i MySQL. 
  
-###Exploits of a Mom
+###Exploits of a Mom - Mer om SQL injection
 
 Antag att vi har tabellen **Students** med kolumnerna **id**, **name**, **class** och **address**:
 
