@@ -99,9 +99,9 @@ SELECT joketext,name FROM joke INNER JOIN author
 ON author.id=authorid
 {% endhighlight %}
 
-för att få fram alla skämt och deras författare. Testa att sökningen funkar. 
+för att få fram alla skämt och deras författare. Testa att sökningen funkar med MySQL Query Browser.
 
 ##Uppgift 4
 
-Vi har nu sett till så att man måste ha lösenord för att kunna logga in. Vi har däremot inte säkrat databasen mot sql-injections. Komplettera formulärhanteringen så att databasen har ett grundläggande skydd mort det. 
+Vi har nu sett till så att man måste ha lösenord för att kunna logga in. Vi har däremot inte säkrat databasen mot sql-injections. Komplettera formulärhanteringen så att databasen har ett grundläggande skydd mot det. 
 
