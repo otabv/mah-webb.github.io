@@ -46,11 +46,11 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 36        | Gästföreläsning                                                            | Alla        |
 | 37        | [Föreläsning: HTML 1](/courses/me135a/lectures/F01.html)                   | Alla        |
 | 37        | [Laboration 1: Grunläggande HTML](/courses/me135a/exercises/L01.html)      | Labbgrupper |
-| 38        | Föreläsning: Användbarhet 1                                                | Alla        |
+| 38        | [Föreläsning: Användbarhet 1](/courses/me135a/lectures/F02.html)           | Alla        |
 | 38        | Seminarium: Användbarhet                                                   | Labbgrupper |
-| 39        | Föreläsning: HTML 2                                                        | Alla        |
+| 39        | [Föreläsning: HTML 2](/courses/me135a/lectures/F03.html)                   | Alla        |
 | 39        | [Laboration 2: Grundläggande CSS](/courses/me135a/exercises/L02.html)      | Labbgrupper |
-| 40        | Föreläsning: Användbarhet 2                                                | Alla        |
+| 40        | [Föreläsning: Användbarhet 2](/courses/me135a/lectures/F04.html)           | Alla        |
 | 40        | Seminarium: Struktur                                                       | Labbgrupper |
 | 41        | Föreläsning: HTML 3                                                        | Alla        |
 | 41        | [Laboration 3: Positionering](/courses/me135a/exercises/L03.html)          | Labbgrupper |
