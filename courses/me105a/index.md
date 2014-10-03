@@ -60,8 +60,8 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 41 - Säkerhet
 
-- Föreläsning 6
-- Laboration 6
+- [Föreläsning 6](lectures/lecture6.html)
+- [Laboration 6](exercises/lab6.html)
 - Självstudie 6
 
 ### Vecka 42 - Export av data, introduktion till xml
