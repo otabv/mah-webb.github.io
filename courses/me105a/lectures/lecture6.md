@@ -18,16 +18,17 @@ pre {font-size:large}
 
 # Databasbaserad publicering
 
-## Föreläsning 5
+## Föreläsning 6
 
 ### Dagens innehåll
 
 **Databaser och säkerhet**
 
 ![http://xkcd.com/327 Exploits of a Mom](im6/xkcd.com-327-exploits-of-a-mum.png)
+*<http://xkcd.com/327> Exploits of a Mom*
 
-Läs kapitel 13 i Databasteknik (kolla web xxx)  och kapitel 9 i boken PHP & MySQL: Novice to Ninja
-
+Läs kapitel 9 i boken PHP & MySQL: Novice to Ninja. Läs even kapitel 13 i boken Databasteknik eller kolla en sammanfattning av det kapitlet på <http://www.databasteknik.se/webbkursen/transaktioner/index.html>.
+ 
 ###Olika typer av säkerhet
 
 - säkerhet mot intrång av obehöriga
@@ -124,7 +125,7 @@ user='elev' and password='xxx' or 'a'='a'
 
 Eftersom 'a' alltid är lika med 'a' kommer SELECT att hitta poster även om man angivit fel lösenord för elev, och eventuellt få rättigheter trots att man egentligen saknar det. 
 
-PHP har ett antal funktioner man kan använda för att undvika apostrofer kommer med i inmatningsfält. Användbara funktioner är tex stripslashes och addslashes. Läs mer på <http://se2.php.net/mysql_real_escape_string>. Det finns även en inställning i PHP som man kan använda, "magic quotes". Läs mer på <http://se2.php.net/manual/sv/ref.info.php#ini.magic-quotes-gpc>. 
+PHP har ett antal funktioner man kan använda för att undvika apostrofer kommer med i inmatningsfält. Användbara funktioner är tex stripslashes och addslashes. Läs mer på <http://se2.php.net/mysql_real_escape_string>. 
 
 ###Säkerhet mot olämpliga inmatningar/ändringar av behöriga användare
 
@@ -145,11 +146,15 @@ En transaktion är en serie av SQL-kommandon som måste utföras tillsammans.
 
 **Ett klassiskt exempel:** antag att vi ska överföra pengar (785 kr) från ett konto  till ett annat. Då börjar vi med att dra pengar från ett konto:
 
+{% highlight mysql %}
 UPDATE konto SET saldo=saldo-785 WHERE kontonr='113-335-7891';
+{% endhighlight %}
 
 Sedan sätter vi in på annat konto:
 
+{% highlight mysql %}
 UPDATE konto SET saldo=saldo+785 WHERE kontonr='113-684-4322';
+{% endhighlight %}
 
 Vad händer om servern kraschar efter att vi dragit pengar men inte hunnit sätta in? Jo, pengarna försvinner helt och hållet!
 
@@ -181,11 +186,43 @@ Eftersom vi här gör ROLLBACK innan vi hunnit göra COMMIT kommer inte ändring
 
 Se kapitel 9 i PHP & MySQL: Novice to Ninja. Cookies, sessions and access control.
 
-Spara aldrig lösenord i klartext i tabeller. Spara kodade lösenord. Boken använder en kodningsmetod som kallas MD5, som har vissa säkerhetsbrister men som vi kommer att använda som exempel i labbarna.
+Spara aldrig lösenord i klartext i tabeller. Spara kodade lösenord. Boken använder en kodningsmetod som kallas MD5, som har vissa säkerhetsbrister men som vi kommer att använda som exempel i labbarna. En säkrare metod finns beskriven på <http://se2.php.net/manual/en/book.password.php>.
 
 MD5 finns både i PHP och i MySQL. 
  
-xxx nämn inbyggda funktioner i php, kolla dem
+###Exploits of a Mom
 
-xxx kolla backup av databas, kolla i php-boken, kolla på nätet
-xxx xkcd
+Antag att vi har tabellen **Students** med kolumnerna **id**, **name**, **class** och **address**:
+
+{% highlight mysql %}
+CREATE TABLE Students (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+adress TEXT,
+class TEXT,
+name TEXT)
+{% endhighlight %}
+
+Lägg till några rader:
+
+{% highlight mysql %}
+INSERT INTO Students (adress,class,name) VALUES 
+('4A','Bråkmakargatan 6','Lotta');
+INSERT INTO Students (adress,class,name) VALUES 
+('3B','Lönneberga','Emil');
+{% endhighlight %}
+
+Prova sedan att lägga till lille *Bobby Tables* med fullständiga namnet *Robert');DROP TABLE Students;--* med hjälp av en PHP-fil, där namnet finns i variablen $name:
+
+{% highlight php %}
+<?php
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+$name="Robert');DROP TABLE Students;--";
+$class="1C";
+$adress="Östra Varvsgatan 11";
+$sql="INSERT INTO Students (adress,class,name) VALUES ('$adress','$class','$name')";
+$result=$pdo->exec($sql);
+echo "$name has been added";
+?>
+{% endhighlight %}
+
+Resultatet blir att tabellen Students med hela sitt innehåll försvinner!
