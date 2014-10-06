@@ -127,7 +127,7 @@ user='elev' and password='xxx' or 'a'='a'
 
 Eftersom 'a' alltid är lika med 'a' kommer SELECT att hitta poster även om man angivit fel lösenord för elev, och eventuellt få rättigheter trots att man egentligen saknar det. 
 
-PHP har ett antal funktioner man kan använda för att undvika apostrofer kommer med i inmatningsfält. Användbara funktioner är tex stripslashes och addslashes. Läs mer på <http://se2.php.net/mysql_real_escape_string>. 
+PHP har ett antal funktioner man kan använda för att undvika apostrofer kommer med i inmatningsfält. Bland annat kan man använda sig av *prepared statements*. Läs mer om det på sidan 123-124 i boken PHP and MySQL - Novice to Ninja. 
 
 ###Säkerhet mot olämpliga inmatningar/ändringar av behöriga användare
 
