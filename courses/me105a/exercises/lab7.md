@@ -7,7 +7,7 @@ title: Laboration 7
 <style>
 pre {white-space: pre-wrap;}
 img { 
-   border:1px solid #FF0000;
+   border:1px solid #CCCCCC;
 }
 </style>
 
