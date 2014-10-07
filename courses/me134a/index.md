@@ -52,10 +52,10 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 39        | [Laboration 2: Grundläggande CSS](/courses/me134a/exercises/L02.html)      | Labbgrupper |
 | 40        | [Föreläsning: Användbarhet 2](/courses/me134a/lectures/F04.html)           | Alla        |
 | 40        | Seminarium: Struktur                                                       | Labbgrupper |
-| 41        | Föreläsning: HTML 3                                                        | Alla        |
+| 41        | [Föreläsning: HTML 3](/courses/me134a/lectures/F05.html)                   | Alla        |
 | 41        | [Laboration 3: Positionering](/courses/me134a/exercises/L03.html)          | Labbgrupper |
 | 42        | Föreläsning: HTML 4                                                        | Alla        |
-| 42        | [Laboration 4: Tabeller & Formulär](/courses/me134a/exercises/L04.html)     | Labbgrupper |
+| 42        | [Laboration 4: Tabeller & Formulär](/courses/me134a/exercises/L04.html)    | Labbgrupper |
 | 43        | [Laboration 5: Responsive Web Design](/courses/me134a/exercises/L05.html)  | Labbgrupper |
 | 44        | Föreläsning: CMS                                                           | Alla        |
 | 44        | [Laboration 6: WordPress introduktion](/courses/me134a/exercises/L06.html) | Labbgrupper |

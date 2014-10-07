@@ -52,7 +52,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 39        | [Laboration 2: Grundläggande CSS](/courses/me135a/exercises/L02.html)      | Labbgrupper |
 | 40        | [Föreläsning: Användbarhet 2](/courses/me135a/lectures/F04.html)           | Alla        |
 | 40        | Seminarium: Struktur                                                       | Labbgrupper |
-| 41        | Föreläsning: HTML 3                                                        | Alla        |
+| 41        | [Föreläsning: HTML 3](/courses/me135a/lectures/F05.html)                   | Alla        |
 | 41        | [Laboration 3: Positionering](/courses/me135a/exercises/L03.html)          | Labbgrupper |
 | 42        | Föreläsning: HTML 4                                                        | Alla        |
 | 42        | Föreläsning: Agila projektmetoder                                          | Alla        |
