@@ -102,11 +102,14 @@
 
     // Simple solution for a sticky footer
     function fixedFooter() {
-        var h = window.innerHeight - body.clientHeight;
+        var content = document.querySelector( '.content' );
 
-        if ( h > 0 ) {
-            var c = document.querySelector( '.content' );
-            c.style.minHeight = ( 300 + h ) + "px";
+        var wHeight = window.innerHeight,
+            bHeight = body.clientHeight,
+            cHeight = content.offsetHeight;
+
+        if ( ( wHeight - bHeight) > 0 ) {
+            content.style.minHeight = ( wHeight - ( bHeight - cHeight ) ) + "px";
         }
     }
 
