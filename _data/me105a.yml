@@ -17,6 +17,8 @@ lectures:
        file: lecture5
      - name: Föreläsning 6
        file: lecture6
+     - name: Föreläsning 7
+       file: lecture7
 
 
 # Uppgifter
