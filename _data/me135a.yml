@@ -76,3 +76,6 @@ lectures:
 
     - name: Föreläsning 5
       file: F05
+
+    - name: Föreläsning 6
+      file: F06
