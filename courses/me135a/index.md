@@ -54,7 +54,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 40        | Seminarium: Struktur                                                       | Labbgrupper |
 | 41        | [Föreläsning: HTML 3](/courses/me135a/lectures/F05.html)                   | Alla        |
 | 41        | [Laboration 3: Positionering](/courses/me135a/exercises/L03.html)          | Labbgrupper |
-| 42        | Föreläsning: HTML 4                                                        | Alla        |
+| 42        | [Föreläsning: Tabeller & Formulär](/courses/me135a/lectures/F06.html)      | Alla        |
 | 42        | Föreläsning: Agila projektmetoder                                          | Alla        |
 | 42        | Workshop: Gruppdynamik och projektledning                                  | Labbgrupper |
 | 43        | Föreläsning: Konsten att ta betalt, och konsten att fakturera              | Alla        |
