@@ -837,6 +837,11 @@ body .web-app-nav-container {
         margin-left: 21em;
         padding-right: 15px;
     }
+
+    .default .content {
+        margin: 0 auto;
+        padding-right: 0;
+    }
 }
 
 @media (max-width: 1000px) {
