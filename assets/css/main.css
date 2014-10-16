@@ -551,7 +551,6 @@ table tbody tr:nth-child(odd) {
 /**
  * Gridcalculator
  **/
-
 #grid-calculator {
     text-align: center;
     padding: 10px;
@@ -590,6 +589,43 @@ table tbody tr:nth-child(odd) {
 #grid-calculator #grid-column,
 #grid-calculator .other,
 #grid-calculator #grid-result {
+    font-size: 1.2em;
+}
+
+/**
+ * Percent calculator
+ */
+#percent-calculator {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#percent-calculator #target-width,
+#percent-calculator #context-width,
+#percent-calculator #decimal-result,
+#percent-calculator #percent-result,
+#percent-calculator .other {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#percent-calculator #target-width,
+#percent-calculator #context-width {
+    width: 90px;
+    border: 1px solid #dddddd;
+    padding: 4px 8px;
+}
+
+#percent-calculator #target-width:focus,
+#percent-calculator #context-width:focus {
+    outline: none;
+    border-color: #42b983;
+}
+
+#percent-calculator #decimal-result,
+#percent-calculator #percent-result,
+#percent-calculator .other {
     font-size: 1.2em;
 }
 
