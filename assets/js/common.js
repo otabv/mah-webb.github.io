@@ -54,11 +54,13 @@
         }
     }
 
-    // Exercise calculator
+    // Exercise grid calculator
+    (function() {
+        var calculator = document.getElementById( 'grid-calculator' );
 
-    var calculator = document.getElementById( 'grid-calculator' );
-
-    if ( calculator ) {
+        if ( ! calculator ) {
+            return false;
+        }
         var columns = document.getElementById( 'grid-columns' ),
             margin = document.getElementById( 'grid-margin' ),
             padding = document.getElementById( 'grid-padding' ),
@@ -98,7 +100,35 @@
                 calculateWidth();
             }, false );
         })
-    }
+    })();
+
+    (function() {
+        var calculator = document.getElementById( 'percent-calculator' );
+
+        if ( ! calculator ) {
+            return false;
+        }
+
+        var target = document.getElementById( 'target-width' ),
+            context = document.getElementById( 'context-width' ),
+            percent = document.getElementById( 'percent-result' );
+
+        function calculatePercent() {
+            if ( target.value <= 0 || context.value <= 0 ) {
+                percent.innerHTML = "0%";
+                return;
+            }
+
+            percent.innerHTML = ( ( target.value / context.value ) * 100 ).toFixed(6) + "%";
+        }
+
+        [target, context].forEach( function( input ) {
+            input.addEventListener( 'change', calculatePercent );
+            input.addEventListener( 'keyup', calculatePercent );
+        });
+
+        calculatePercent();
+    })();
 
     // Simple solution for a sticky footer
     function fixedFooter() {
