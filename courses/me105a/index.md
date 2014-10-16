@@ -72,7 +72,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 43 - Miniprojekt
 
-- Ingen föreläsning, eget arbete med miniprojektet. 
+- Ingen föreläsning, eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
 
 ### Vecka 44 - Miniprojekt
