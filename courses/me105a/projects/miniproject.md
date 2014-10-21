@@ -42,6 +42,25 @@ Observera att denna sida hämtar information från alla tre tabellerna.
 
 Handledning kommer att ges under labbtillfällena, men det krävs att ni jobbar med projektet även på egen hand. De tre php-filerna lämnas in på It's learning senast måndag 3 november kl 12.00. 
 
+
+##Bilaga: Bilder och sql-kod
+
+cat.jpg
+![](cat.jpg)
+
+iguana.jpg
+![](iguana.jpg)
+
+lion.jpg
+![](lion.jpg)
+
+tiger.jpg
+![](tiger.jpg)
+
+wolf.jpg
+![](wolf.jpg)
+
+
 {% highlight mysql %}
 #skapa tabeller
 
