@@ -14,7 +14,7 @@ th, td {text-align:left}
 th, td {padding: 6px;}
 hr {display: none}
 pre {font-size:large}
-body {text-alignt:left}
+body {text-align:left}
 </style>
 
 # Databasbaserad publicering
@@ -40,8 +40,8 @@ body {text-alignt:left}
 ### Tredje normalform 3NF
 - Måste vara 2NF samt- Attribut som är icke-nycklar får inte vara funktionellt beroende av andra attribut som är icke-nycklar### Exempel
 
-Följande exempel uppfyller inte första normalformen. Förutsättningen är att en person kan ha endast en adress men flera telefonnummer.<u>id</u> | namn | adress | telefonnummer--- | --- | --- | --- 1 | Bo P | Sofiavägen 3C | 133816, 66576192 | Sebastian B | Stora Östergatan | 3460010Ej 1NF eftersom telefonnummer innehåller flera värden (inte *atomär*)Lösning: dela upp i två tabellernamn | <u>id</u>
---- | --- Bo P | 1Sebastian B | 2| <u>id</u> | person_id | adress | telefonnummer| --- | --- | --- | ---| 1 | 1 | Sofiavägen 3C | 133816| 2 | 2 | Stora Östergatan | 3460010| 3 | 1 | Sofiavägen 3C | 6657619### Exempel
+Följande exempel uppfyller inte första normalformen. Förutsättningen är att en person kan ha endast en adress men flera telefonnummer.|  <u>id</u> | namn | adress | telefonnummer| --- | --- | --- | --- | 1 | Bo P | Sofiavägen 3C | 133816, 6657619| 2 | Sebastian B | Stora Östergatan | 3460010Ej 1NF eftersom telefonnummer innehåller flera värden (inte *atomär*)Lösning: dela upp i två tabeller| namn | <u>id</u>
+| --- | --- | Bo P | 1| Sebastian B | 2| <u>id</u> | person_id | adress | telefonnummer| --- | --- | --- | ---| 1 | 1 | Sofiavägen 3C | 133816| 2 | 2 | Stora Östergatan | 3460010| 3 | 1 | Sofiavägen 3C | 6657619### Exempel
 
 Följande exempel uppfyller 1NF men innehåller redundanta data| studentnamn | <u>studentid</u> | <u>labnr</u> | labstatus | postnr | stad | | --- | --- | --- | Pär Pärsson | ad123456 | 1 | G | 22240 | Lund | | Stina Stenhammar | ad654321 | 1 | VG | 22240 | Lund | | Pär Pärsson | ad123456 | 2 | G | 22240 | Lund | | Ola Olasson | ad314159 | 1 | G | 20506 | Malmö | | Ola Olasson | ad314159 | 2 | VG | 20506 | Malmö | | Pär Pärsson | ad999999 | 1 | VG | 20507 | MalmöOBS 1: två olika Pär Pärsson i tabellen.OBS 2: tabellen har sammansatt primärnyckel, studentid och labnr tillsammans
 
