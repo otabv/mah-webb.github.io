@@ -36,7 +36,7 @@ li {text-align:left}
 
 Det gäller även att **labstatus** är funktionellt beroende av **studentid** och **labnr** tillsammans. Det skrivs 
 
-	{studentid,labnr} -> labstatus. ### Första normalform 1NF- Varje attribut i en tabell får endast innehålla ett värde### Andra normalform 2NF- Måste vara i 1NF samt- Alla attribut som är *icke-nycklar* måste vara funktionellt beroende av *hela* *primärnyckeln*. Detta är endast ett problem då man har sammansatta primärnycklar.Ett icke-nyckelattribut definieras som ett attribut som inte ingår i primärnyckeln.
+    {studentid,labnr} -> labstatus. ### Första normalform 1NF- Varje attribut i en tabell får endast innehålla ett värde### Andra normalform 2NF- Måste vara i 1NF samt- Alla attribut som är *icke-nycklar* måste vara funktionellt beroende av *hela* *primärnyckeln*. Detta är endast ett problem då man har sammansatta primärnycklar.Ett icke-nyckelattribut definieras som ett attribut som inte ingår i primärnyckeln.
 
 ### Tredje normalform 3NF
 - Måste vara 2NF samt- Attribut som är icke-nycklar får inte vara funktionellt beroende av andra attribut som är icke-nycklar### Exempel
@@ -48,14 +48,18 @@ Följande exempel uppfyller 1NF men innehåller redundanta data| studentnamn |
 
 Vi har följande funktionella beroenden:
 
-	studentid -> studentnamn
-	studentid -> postnr
-	studentid -> stadEj 2NF eftersom den har sammansatt primärnyckel, men studentnamn, postnr och stad beror inte av hela nyckeln, utan bara av studentid. De kolumnerna ska bort och in egen tabell!
+{% highlight text %}
+studentid -> studentnamn
+studentid -> postnr
+studentid -> stad
+{% endhighlight %}Ej 2NF eftersom den har sammansatt primärnyckel, men studentnamn, postnr och stad beror inte av hela nyckeln, utan bara av studentid. De kolumnerna ska bort och in egen tabell!
 | <u>studentid</u> | <u>labnr</u> | labstatus| --- | --- | --- | ad123456 | 1 | G| ad654321 | 1 | VG| ad123456 | 2 | G| ad314159 | 1 | G| ad314159 | 2 | VG| ad999999 | 1 | VG| studentnamn | <u>studentid</u> | postnr | stad| --- | --- | --- | Pär Pärsson | ad123456 | 22240 | Lund| Stina Stenhammar | ad654321 | 22240 | Lund| Ola Olasson | ad314159 | 20506 | Malmö| Pär Pärsson | ad999999 | 20507 | MalmöTabellerna är nu i 2NF!
 
 Vi har följande funktionella beroende:
 
-	postnr -> stadMen de är inte i 3NF eftersom stad är beroende av postnr och båda är icke-nycklar.Lösning: stad in i egen tabell| <u>studentid</u> | <u>labnr</u> | labstatus| --- | --- | --- | ad123456 | 1 | G| ad654321 | 1 | VG| ad123456 | 2 | G| ad314159 | 1 | G| ad314159 | 2 | VG| ad999999 | 1 | VG| studentnamn | <u>studentid</u> | postnr| --- | --- | --- | Pär Pärsson | ad123456 | 22240| Stina Stenhammar | ad654321 | 22241| Ola Olasson | ad314159 | 20506| Pär Pärsson | ad999999 | 20507| <u>postnr</u> | stad| --- | --- | --- | 22240 | Lund| 22241 | Lund| 20506 | Malmö| 20507 | MalmöNu är tabellen i 3NF.
+{% highlight text %}
+postnr -> stad{% endhighlight %}
+Men de är inte i 3NF eftersom stad är beroende av postnr och båda är icke-nycklar.Lösning: stad in i egen tabell| <u>studentid</u> | <u>labnr</u> | labstatus| --- | --- | --- | ad123456 | 1 | G| ad654321 | 1 | VG| ad123456 | 2 | G| ad314159 | 1 | G| ad314159 | 2 | VG| ad999999 | 1 | VG| studentnamn | <u>studentid</u> | postnr| --- | --- | --- | Pär Pärsson | ad123456 | 22240| Stina Stenhammar | ad654321 | 22241| Ola Olasson | ad314159 | 20506| Pär Pärsson | ad999999 | 20507| <u>postnr</u> | stad| --- | --- | --- | 22240 | Lund| 22241 | Lund| 20506 | Malmö| 20507 | MalmöNu är tabellen i 3NF.
 OBS:  i vissa fall kan 2NF vara att föredra framför 3NF. I exemplet ovan kan till exempel prestanda bli lidande när man delar upp i flera tabeller - det tar ofta längre tid att söka i flera än i en tabell. 
 
 Utöver 1NF, 2NF och 3NF finns det ytterligare normalformer, tex Boyce-Codds normalform, *BCNF*. Den kan ni läsa om på 
