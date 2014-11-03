@@ -59,4 +59,4 @@ Preview existing courses for example files.
 
 ## License
 
-All content is available under a [Creative Commons Attribution 2.5 Sweden](http://creativecommons.org/licenses/by/2.5/se/) license. In most cases, this should be equal to the [generic version](http://creativecommons.org/licenses/by/2.5/). Attribution in the form of a link to <http://mah-webb.github.io/> is much appreciated.
+All content is available under a [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/legalcode) license. In most cases, this should be equal to the [generic version](http://creativecommons.org/licenses/by/4.0/). Attribution in the form of a link to <http://mah-webb.github.io/> is much appreciated.
