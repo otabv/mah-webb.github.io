@@ -1,7 +1,7 @@
 ---
 layout: course
 code: me134a
-title: Webbpublicering ME134A (15.0 hp)
+title: Kursplan - Webbpublicering ME134A (15.0 hp)
 ---
 
 # Kursplan - Webbpublicering (ME134A)
