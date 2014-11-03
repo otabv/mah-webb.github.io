@@ -571,9 +571,8 @@ table tbody tr:nth-child(odd) {
     content: "#";
     color: #888888;
     font-size: 0.8em;
-    padding: 0 6px;
+    padding: 4px 6px;
     position: absolute;
-    top: 10%;
 }
 
 /**
