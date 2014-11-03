@@ -37,7 +37,7 @@ a {
 code, pre {
     font-family: "Inconsolata", Monaco, courier, monospace;
     font-size: 0.9em;
-    background-color: #f9f9f9;
+    background-color: #f3f3f3;
     -webkit-font-smoothing: initial;
     -moz-osx-font-smoothing: initial;
 }
@@ -61,7 +61,7 @@ code {
     padding: 1.7em 1em;
     margin: 0;
     overflow-x: auto;
-    background-color: #f9f9f9;
+    background-color: #f3f3f3;
     line-height: 1.1em;
     font-size: 0.95em;
 }
@@ -168,14 +168,14 @@ table.small tbody td {
 }
 
 table tbody tr:nth-child(odd) {
-    background: #f9f9f9;
+    background: #f3f3f3;
 }
 
 /**
  * Navigation
  **/
 .header {
-    box-shadow: 0 0 4px rgba(0,0,0,0.25)
+    box-shadow: 0 0 4px rgba(0,0,0,0.35)
 }
 
 .header-inner {
@@ -221,7 +221,7 @@ table tbody tr:nth-child(odd) {
  * Footer
  **/
 .footer {
-    background: #f9f9f9; 
+    background: #f3f3f3; 
     padding: 2em 0;
     margin-top: 4em;
 }
@@ -328,7 +328,7 @@ table tbody tr:nth-child(odd) {
 }
 
 .toggle-sidebar:hover {
-    background: #f9f9f9;
+    background: #f3f3f3;
 }
 
 .course-name a,
@@ -344,7 +344,7 @@ table tbody tr:nth-child(odd) {
 .course-name small {
     font-size: 0.8em;
     margin-left: 0.8em; 
-    color: #99A5A6; 
+    color: #727b7c; 
 }
 
 .course-overview,
@@ -355,14 +355,14 @@ table tbody tr:nth-child(odd) {
 
 .course-overview-element,
 .blog-overview-element {
-    color: #99A5A6; 
+    color: #727b7c; 
     font-size: 0.95em;
     line-height: 1.8em;
     cursor: pointer;
 }
 
 .course-overview-element a {
-    color: #99A5A6; 
+    color: #727b7c; 
 }
 
 .course-overview-element a:hover {
@@ -498,7 +498,7 @@ table tbody tr:nth-child(odd) {
     padding: 12px 24px 12px 30px;
     margin: 2em 0 2em 0.8em;
     border-left: 4px solid #42A3B9;
-    background-color: #f9f9f9;
+    background-color: #f3f3f3;
     position: relative;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -539,7 +539,7 @@ table tbody tr:nth-child(odd) {
 
 .up a {
     padding: 6px 20px 11px 20px;
-    background: #f9f9f9;
+    background: #f3f3f3;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.125);
 }
