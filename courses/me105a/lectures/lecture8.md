@@ -14,7 +14,7 @@ th, td {text-align:left}
 th, td {padding: 6px;}
 hr {display: none}
 pre {font-size:large}
-body {text-align:left}
+.content {text-align:left}
 </style>
 
 # Databasbaserad publicering
