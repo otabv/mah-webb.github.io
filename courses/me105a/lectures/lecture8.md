@@ -68,4 +68,24 @@ Utöver 1NF, 2NF och 3NF finns det ytterligare normalformer, tex Boyce-Codds nor
 
 ### Import av data
 
-xxx
+Hur importerar man data från en databas till InDesign eller annat layoutprogram?
+
+Första steget är att exportera data på något av de sätt som beskrevs på förra föreläsningen, tex som xml, csv, tsv eller json
+
+Andra steget är att antingen någon av InDesigns inbyggda importfunktioner, eller att använda en plugin. 
+
+![](im8/xml.png)
+
+Den funktionen är kraftfull och flexibel men svåranvänd. Ett enklare men mer begränsat sätt är att använda InDesigns Data Merge-funktion:
+
+![](im8/datamerge.png)
+
+Data Merge-funktionen kan importera tab-separerade filer (tsv) och skapa ett innehåll med konsistent layout. 
+
+Det finns även olika plugins till InDesign, som ger ytterligare möjligheter till automatiserad layout. Några sådana exempel  är [InData](http://emsoftware.com/products/emdata/), [CatBase](https://www.catbase.com/) och [Easy Catalog](http://www.65bit.com/software/easycatalog/). 
+
+Vi kommer att använda dels inbyggda Data Merge, dels InData i veckans laboration. 
+
+![](im8/indata.png)Även Word innehåller en data merge-funktion liknande den i InDesign, "Koppla dokument" på svenska:
+
+![](im8/word.png)
