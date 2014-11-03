@@ -143,8 +143,27 @@
         }
     }
 
+    // Adds anchor to content headers
+    function headerAnchors() {
+        var headers = document.querySelectorAll( '.content h1, .content h2, .content h3' );
+
+        for ( var i = 0, len = headers.length; i < len; i++ ) {
+            if ( headers[i].id ) {
+                var header = headers[i],
+                    id = header.id,
+                    anchor = document.createElement( 'a' );
+
+                anchor.href = '#' + id;
+                anchor.className = 'header-anchor';
+
+                header.appendChild( anchor );
+            }
+        }
+    }
+
     window.onload = function() {
         fixedFooter();
+        headerAnchors();
         
         // iOS web app navigation
         (function( document, navigator, standalone ) {
