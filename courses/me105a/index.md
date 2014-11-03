@@ -83,7 +83,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 45 - Import av data
 
-- Föreläsning 8
+- [Föreläsning 8](lectures/lecture8.html)
 - Laboration 8
 
 ### Vecka 46 - Mer xml, xslt, json
