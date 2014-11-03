@@ -409,7 +409,9 @@ table tbody tr:nth-child(odd) {
     line-height: 1.8em;
 }
 
+.course-overview-submenu a.active,
 .course-overview-submenu a:hover,
+.blog-overview-submenu a.active,
 .blog-overview-submenu a:hover {
     border-bottom: 2px solid #42b983;
 }

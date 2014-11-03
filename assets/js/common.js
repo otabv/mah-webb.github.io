@@ -161,9 +161,27 @@
         }
     }
 
+    // Highlight navigation item in sidebar
+    function highlightSidebar() {
+        var anchors = document.querySelectorAll( '#sidebar .course-overview-submenu a, #sidebar .blog-overview-submenu a' );
+
+        for ( var i = 0, len = anchors.length; i < len; i++ ) {
+
+            var anchor = anchors[i],
+                re = new RegExp( '^' + anchor.href );
+
+            if ( re.test( location.href ) ) {
+                anchor.classList.add( 'active' );
+                // <a> -> <li> -> <ul> -> sibling (span), better solution?
+                anchor.parentNode.parentNode.previousElementSibling.classList.add( 'toggle' );
+            }
+        }
+    }
+
     window.onload = function() {
         fixedFooter();
         headerAnchors();
+        highlightSidebar();
         
         // iOS web app navigation
         (function( document, navigator, standalone ) {
