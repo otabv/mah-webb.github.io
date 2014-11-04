@@ -89,3 +89,6 @@ Vi kommer att använda dels inbyggda Data Merge, dels InData i veckans laboratio
 ![](im8/indata.png)Även Word innehåller en data merge-funktion liknande den i InDesign, "Koppla dokument" på svenska:
 
 ![](im8/word.png)
+
+
+/Bo
