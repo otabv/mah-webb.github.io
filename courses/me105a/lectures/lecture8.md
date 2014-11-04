@@ -90,5 +90,3 @@ Vi kommer att använda dels inbyggda Data Merge, dels InData i veckans laboratio
 
 ![](im8/word.png)
 
-
-/Bo
