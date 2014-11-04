@@ -62,13 +62,13 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 - [Föreläsning 6](lectures/lecture6.html)
 - [Laboration 6](exercises/lab6.html)
-- Självstudie 6
+
 
 ### Vecka 42 - Export av data, introduktion till xml
 
-- Föreläsning 7
-- Laboration 7
-- Självstudie 7
+- [Föreläsning 7](lectures/lecture7.html)
+- [Laboration 7](exercises/lab7.html)
+
 
 ### Vecka 43 - Miniprojekt
 
@@ -84,7 +84,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 ### Vecka 45 - Import av data
 
 - [Föreläsning 8](lectures/lecture8.html)
-- Laboration 8
+- [Laboration 8](exercises/lab8.html)
 
 ### Vecka 46 - Mer xml, xslt, json
 
