@@ -1,7 +1,7 @@
 ---
 layout: course
 code: me135a
-title: Webbproduktion ME135A (15.0 hp)
+title: Kursplan - Webbproduktion ME135A (15.0 hp)
 ---
 
 # Kursplan - Webbproduktion (ME135A)

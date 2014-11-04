@@ -143,8 +143,45 @@
         }
     }
 
+    // Adds anchor to content headers
+    function headerAnchors() {
+        var headers = document.querySelectorAll( '.content h1, .content h2, .content h3' );
+
+        for ( var i = 0, len = headers.length; i < len; i++ ) {
+            if ( headers[i].id ) {
+                var header = headers[i],
+                    id = header.id,
+                    anchor = document.createElement( 'a' );
+
+                anchor.href = '#' + id;
+                anchor.className = 'header-anchor';
+
+                header.appendChild( anchor );
+            }
+        }
+    }
+
+    // Highlight navigation item in sidebar
+    function highlightSidebar() {
+        var anchors = document.querySelectorAll( '#sidebar .course-overview-submenu a, #sidebar .blog-overview-submenu a' );
+
+        for ( var i = 0, len = anchors.length; i < len; i++ ) {
+
+            var anchor = anchors[i],
+                re = new RegExp( '^' + anchor.href );
+
+            if ( re.test( location.href ) ) {
+                anchor.classList.add( 'active' );
+                // <a> -> <li> -> <ul> -> sibling (span), better solution?
+                anchor.parentNode.parentNode.previousElementSibling.classList.add( 'toggle' );
+            }
+        }
+    }
+
     window.onload = function() {
         fixedFooter();
+        headerAnchors();
+        highlightSidebar();
         
         // iOS web app navigation
         (function( document, navigator, standalone ) {
