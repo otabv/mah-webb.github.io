@@ -178,10 +178,25 @@
         }
     }
 
+    // Make external links open in a new tab
+    function setTargetForLinks() {
+        var anchors = document.getElementsByTagName( 'a' ),
+            re = new RegExp( '^http://mah-webb.github.io' );
+
+        for ( var i = 0, len = anchors.length; i < len; i++ ) {
+            var anchor = anchors[i];
+
+            if ( ! re.test( anchor.href ) ) {
+                anchor.target = '_blank';
+            }
+        }
+    }
+
     window.onload = function() {
         fixedFooter();
         headerAnchors();
         highlightSidebar();
+        setTargetForLinks();
         
         // iOS web app navigation
         (function( document, navigator, standalone ) {
