@@ -63,4 +63,6 @@ exercises:
 projects:
     - name: Miniprojekt
       file: miniproject
+    - name: Projekt
+      file: project
 
