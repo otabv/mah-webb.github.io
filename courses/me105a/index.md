@@ -93,6 +93,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 47 - Projektstart
 
+- [Projektbeskrivning](projects/project.html)
 - Handledning av projekt under laborationstillfällena
 
 ### Vecka 48 - Projekt
@@ -109,7 +110,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 51 - Projekt
 
-- Inlämning och redovisning av projekt, torsdag 18 december.
+- Inlämning  17 december kl 12.00 och redovisning av projekt, torsdag 18 december kl 9.15-12.00. 
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=idag&resurser=k.ME105A-20142-TS342-
