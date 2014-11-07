@@ -89,7 +89,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 ### Vecka 46 - Mer xml, xslt, json
 
 - Föreläsning 9
-- Laboration 9
+- [Laboration 9](exercises/lab9.html)
 
 ### Vecka 47 - Projektstart
 
