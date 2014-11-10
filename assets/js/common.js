@@ -1,3 +1,5 @@
+"use strict";
+
 (function() {
     var doc = document.documentElement,
         body = document.body,
@@ -192,23 +194,19 @@
         }
     }
 
-    function toggleLineNumber() {
-
-    }
-
     function createLineNumberButton() {
         var button = document.createElement( 'button' ),
-            text = document.createTextNode( 'radnummer' );
-            button.className = 'toggle-lineno';
-            button.type = 'button';
+        text = document.createTextNode( 'radnummer' );
+        button.className = 'toggle-lineno';
+        button.type = 'button';
 
         var show = document.createElement( 'span' );
-            show.className = 'show';
-            show.textContent = 'Visa ';
+        show.className = 'show';
+        show.textContent = 'Visa ';
 
         var hide = document.createElement( 'span' );
-            hide.className = 'hide';
-            hide.textContent = 'Dölj ';
+        hide.className = 'hide';
+        hide.textContent = 'Dölj ';
 
         button.appendChild( show );
         button.appendChild( hide );
@@ -217,20 +215,99 @@
         return button;
     }
 
-    function appendLineNumberButtons() {
+    function appendLineNumberButton( codeExample ) {
+        if ( codeExample.firstChild.firstChild.childNodes[0].className != 'lineno' ) {
+            return false;
+        }
+
+        var button = createLineNumberButton();
+
+        button.addEventListener( 'click', function() {
+            this.parentElement.classList.toggle( 'toggle' );
+        });
+
+        codeExample.appendChild( button );
+    }
+
+
+    function appendCodePenButton( codeExample ) {
+        var language = codeExample.firstChild.firstChild.className;
+
+        if ( language != 'css' && language != 'html' && language != 'js' ) {
+            return false;
+        }
+
+        var button = document.createElement( 'button' );
+        button.textContent = 'Öppna i CodePen';
+        button.className = 'codepen-button';
+        button.type = 'button';
+
+        button.addEventListener( 'click', function() {
+            submitToCodePen( this.parentElement );
+        });
+
+        codeExample.appendChild( button );
+    }
+
+    function serializeCodeExample( codeExample ) {
+        var code = codeExample.firstChild.firstChild,
+            language = code.className,
+            nodes = code.childNodes,
+            content = '',
+            data = {};
+
+        if ( language != 'css' && language != 'html' && language != 'js' ) {
+            return false;
+        }
+
+        for ( var i = 0, len = nodes.length; i < len; i++ ) {
+            content += nodes[i].className == 'lineno' ? '' : nodes[i].textContent;
+        }
+
+        data[language] = content;
+        data['title'] = 'Code Example';
+
+        return data;
+    }
+
+    function submitToCodePen( codeExample ) {
+        var serialized = serializeCodeExample( codeExample ),
+            form = document.createElement( 'form' ),
+            input = document.createElement( 'input' );
+
+        if ( ! serialized ) {
+            return false;
+        }
+
+        // Cant solve sending åäö?
+        var json = JSON.stringify( serialized )
+                .replace(/"/g, '&quot;' )
+                .replace(/'/g, '&apos;' );
+
+        input.setAttribute( 'type', 'hidden' );
+        input.setAttribute( 'name', 'data' );
+        input.setAttribute( 'value', json );
+
+        form.setAttribute( 'method', 'post' );
+        form.setAttribute( 'action', 'http://codepen.io/pen/define' );
+        form.setAttribute( 'target', '_blank' );
+        form.appendChild( input );
+
+        document.body.appendChild( form );
+        form.submit();
+    }
+
+    function extendCodeExamples() {
         var codeExamples = document.querySelectorAll( '.highlight' );
 
         for ( var i = 0, len = codeExamples.length; i < len; i++ ) {
-            var codeExample = codeExamples[i],
-                button = createLineNumberButton();
+            var codeExample = codeExamples[i];
+            
+            // Append button for hiding line numbers
+            appendLineNumberButton( codeExample );
 
-            button.addEventListener( 'click', function() {
-                this.parentElement.classList.toggle( 'toggle' );
-            });
-
-            codeExample.appendChild( button );
+            appendCodePenButton( codeExample );
         }
-
     }
 
     window.onload = function() {
@@ -238,7 +315,7 @@
         headerAnchors();
         highlightSidebar();
         setTargetForLinks();
-        appendLineNumberButtons();
+        extendCodeExamples();
         
         // iOS web app navigation
         (function( document, navigator, standalone ) {
