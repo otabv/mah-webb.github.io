@@ -63,7 +63,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 44        | [Laboration 4: WordPress introduktion](/courses/me135a/exercises/L04.html)  | Labbgrupper |
 | 45        | Föreläsning: Bilder & Grafik                                                | Alla        |
 | 45        | [Laboration 5: WordPress 2](/courses/me135a/exercises/L05.html)             | Labbgrupper |
-| 46        | Föreläsning: Inför produktion                                               | Alla        |
+| 46        | [Föreläsning: Inför produktion](/courses/lectures/F09.html)                 | Alla        |
 | 46        | [Laboration 6: WordPress 3](/courses/me135a/exercises/L06.html)             | Labbgrupper |
 | 47        | Gästföreläsning: Att skriva för webben                                      | Alla        |
 | 47        | Seminarium: Att skriva för webben                                           | Labbgrupper |
