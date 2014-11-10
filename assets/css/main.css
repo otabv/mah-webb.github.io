@@ -54,6 +54,38 @@ code {
 
 .highlight {
     box-shadow: 0 1px 1px rgba(0,0,0,0.125);
+    position: relative;
+}
+
+.highlight .toggle-lineno {
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    background: transparent;
+    border: 0;
+    color: #42b983;
+    font-size: 0.9em;
+    display: none;
+}
+
+.highlight:hover .toggle-lineno {
+    display: inline;
+}
+
+.highlight .toggle-lineno:hover {
+    text-decoration: underline;
+}
+
+.highlight .toggle-lineno .show {
+    display: none;
+}
+
+.highlight.toggle .toggle-lineno .show {
+    display: inline;
+}
+
+.highlight.toggle .toggle-lineno .hide {
+    display: none;
 }
 
 .highlight pre code {
@@ -72,6 +104,11 @@ code {
     display: inline-block;
     padding: 0.15em 1.2em;
     margin: 0;
+}
+
+/* Hide line numbers */
+.highlight.toggle .lineno {
+    visibility: hidden;
 }
 
 .highlight code {

@@ -192,11 +192,53 @@
         }
     }
 
+    function toggleLineNumber() {
+
+    }
+
+    function createLineNumberButton() {
+        var button = document.createElement( 'button' ),
+            text = document.createTextNode( 'radnummer' );
+            button.className = 'toggle-lineno';
+            button.type = 'button';
+
+        var show = document.createElement( 'span' );
+            show.className = 'show';
+            show.textContent = 'Visa ';
+
+        var hide = document.createElement( 'span' );
+            hide.className = 'hide';
+            hide.textContent = 'Dölj ';
+
+        button.appendChild( show );
+        button.appendChild( hide );
+        button.appendChild( text );
+
+        return button;
+    }
+
+    function appendLineNumberButtons() {
+        var codeExamples = document.querySelectorAll( '.highlight' );
+
+        for ( var i = 0, len = codeExamples.length; i < len; i++ ) {
+            var codeExample = codeExamples[i],
+                button = createLineNumberButton();
+
+            button.addEventListener( 'click', function() {
+                this.parentElement.classList.toggle( 'toggle' );
+            });
+
+            codeExample.appendChild( button );
+        }
+
+    }
+
     window.onload = function() {
         fixedFooter();
         headerAnchors();
         highlightSidebar();
         setTargetForLinks();
+        appendLineNumberButtons();
         
         // iOS web app navigation
         (function( document, navigator, standalone ) {
