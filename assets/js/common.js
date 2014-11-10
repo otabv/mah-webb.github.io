@@ -233,7 +233,9 @@
     function appendCodePenButton( codeExample ) {
         var language = codeExample.firstChild.firstChild.className;
 
-        if ( language != 'css' && language != 'html' && language != 'js' ) {
+        if ( language != 'css' && language != 'language-css' &&
+             language != 'html' && language != 'language-html' &&
+             language != 'js' && language != 'language-js' ) {
             return false;
         }
 
@@ -256,7 +258,9 @@
             content = '',
             data = {};
 
-        if ( language != 'css' && language != 'html' && language != 'js' ) {
+        if ( language != 'css' && language != 'language-css' &&
+             language != 'html' && language != 'language-html' &&
+             language != 'js' && language != 'language-js' ) {
             return false;
         }
 
