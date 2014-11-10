@@ -268,7 +268,7 @@
             content += nodes[i].className == 'lineno' ? '' : nodes[i].textContent;
         }
 
-        data[language] = content;
+        data[language.substr( 9 )] = content;
         data['title'] = 'Code Example';
 
         return data;
