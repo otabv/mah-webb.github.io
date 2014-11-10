@@ -88,7 +88,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 46 - Mer xml, xslt, json
 
-- Föreläsning 9
+- Föreläsning 9. Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://www.w3schools.com/xml/default.asp), [xslt](http://www.w3schools.com/xsl/default.asp) och [json](http://www.w3schools.com/json/default.asp) är [w3schools](http://www.w3schools.com). Alla exempel från labben finns samlade i [lecture9.zip](lectures/lecture9.zip).
 - [Laboration 9](exercises/lab9.html)
 
 ### Vecka 47 - Projektstart
