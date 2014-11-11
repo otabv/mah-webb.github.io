@@ -162,7 +162,7 @@ code {
 
 .content p img {
     display: block;
-    margin: 0 auto 1.2em auto;
+    margin: 1.5em auto 1.2em auto;
     max-width: 100%;
 }
 
@@ -171,6 +171,7 @@ code {
     display: block;
     text-align: center;
     font-style: normal;
+    margin-bottom: 2em;
 }
 
 .contribute {
