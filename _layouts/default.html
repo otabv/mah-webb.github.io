@@ -6,7 +6,7 @@
         {% include header.html %}
         {% endif %}
 
-        <div class="content">
+        <div class="content {{ page.class }}">
         {% if page.markdown == 1 %}
             {{ content || markdownify }}
         {% else %}

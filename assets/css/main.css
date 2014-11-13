@@ -52,6 +52,11 @@ code {
     border-radius: 3px;
 }
 
+.info code {
+    background-color: #ffffff;
+    border-color: #c9c9c9;
+}
+
 .highlight {
     box-shadow: 0 1px 1px rgba(0,0,0,0.125);
     position: relative;
@@ -136,12 +141,16 @@ code {
     padding-top: 1em;
 }
 
+.content.index {
+    max-width: 750px;
+}
+
 .highlight,
 .content figure,
 .content p,
 .content ul,
 .content ol {
-    margin: 0.8em 0 0.8em 0.8em;
+    margin: 1em 0 1em 0.8em;
 }
 
 .content p,
@@ -221,6 +230,71 @@ table.small tbody td {
 
 table tbody tr:nth-child(odd) {
     background: #f3f3f3;
+}
+
+/**
+ * Grid
+ **/
+.row {
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-6 {
+    float: left;
+    padding: 1.33333%;
+    margin: 1.33333%;
+    width: 44.666667%;
+}
+
+/**
+ * Index
+ **/
+
+.index .brand {
+    display: block;
+    text-align: center;
+}
+
+.index .content-header {
+    text-align: center;
+}
+
+.index .content-list {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.index .content-list li {
+    margin-bottom: 10px;
+}
+
+.index .course-name,
+.index .blog-title {
+    font-size: 1.4em;
+    font-weight: 200;
+    display: block;
+    color: #42b983;
+}
+
+.index.content a:hover {
+    text-decoration: none;
+}
+
+.index .content-list a:hover .course-name,
+.index .content-list a:hover .blog-title {
+    text-decoration: underline;
+}
+
+.index .course-code,
+.index .course-credits,
+.index .blog-date {
+    color: #838E8F;
 }
 
 /**
@@ -865,7 +939,8 @@ body .web-app-nav-container {
     #sidebar,
     .footer,
     .contribute,
-    .up {
+    .up,
+    form {
         display: none !important;
     }
 
@@ -957,6 +1032,7 @@ body .web-app-nav-container {
     .default .content {
         margin: 0 auto;
         padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -964,7 +1040,7 @@ body .web-app-nav-container {
     .header-inner {
         max-width: 95%;
     }
-    .brand {
+    .header .brand {
         position: relative;
         left: 80px;
     }
@@ -1006,7 +1082,7 @@ body .web-app-nav-container {
 }
 
 @media (max-width: 800px) {
-    .brand {
+    .header .brand {
         left: 20px;
     }
 
@@ -1022,6 +1098,11 @@ body .web-app-nav-container {
     .content a {
         font-size: 0.9em;
         text-align: left;
+    }
+
+    .index .content-list,
+    .index .content-list a {
+        text-align: center;
     }
 
     .highlight,
@@ -1114,6 +1195,15 @@ body .web-app-nav-container {
 
     .toggle-sidebar {
         display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .index .col-6 {
+        float: none;
+        width: 97%;
+        padding: 0;
+        margin: 1.5em auto;
     }
 }
 
