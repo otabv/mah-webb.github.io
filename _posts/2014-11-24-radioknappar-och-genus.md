@@ -1,3 +1,9 @@
+---
+layout: blog
+title: Om radioknappar och genus
+category: gender
+---
+
 #Om radioknappar och genus
 
 För ett tag sedan uppstod det en diskussion om genus under en föreläsning i kursen [Webbproduktion](http://edu.mah.se/sv/Course/ME135A#Syllabus). Föreläsaren skulle gå igenom radioknappar i webbformulär och använde sig av följande exempel:
