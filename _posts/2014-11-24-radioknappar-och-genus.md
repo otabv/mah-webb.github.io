@@ -1,7 +1,6 @@
 ---
 layout: blog
 title: Om radioknappar och genus
-category: gender
 ---
 
 #Om radioknappar och genus
