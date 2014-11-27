@@ -59,13 +59,9 @@ function displayDate()
 document.getElementById("demo").innerHTML=Date();
 }
 </script>
-<div id="demo">Klicka knappen för att visa dagens datum här</div>
+<div id="demo">Click button to show date here</div>
 <button type="button" onclick="displayDate()">Display Date</button></div>
 {% endhighlight %}
-
-<div id="demo">Klicka knappen för att visa dagens datum här</div>
-
-<button type="button" onclick="displayDate()">Display Date</button>
         
 Fler exempel:
 
