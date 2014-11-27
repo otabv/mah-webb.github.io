@@ -42,7 +42,7 @@ Flera alternativ:
       
 Enklaste exemplet:
 
-{% highlight javascript %}
+{% highlight html %}
 <a href="javascript:alert('Hello, world!')">Hello, world</a>
 {% endhighlight %}
 
@@ -51,15 +51,18 @@ Enklaste exemplet:
        
         
 Lite mer avancerat:
-        
+
+{% highlight html %}
 <button type="button" onclick="displayDate()">Display Date</button></div>
+{% endhighlight %}
+
 <div id="demo">Klicka knappen för att visa dagens datum</div>
         
 Fler exempel:
 
-<a href="kvitter.html">Räkna tecken</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/kvitter.html">Räkna tecken</a>
         
-<a href="telefonvalidering.html">Validering</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/telefonvalidering.html">Validering</a>
 
   
   
@@ -67,17 +70,17 @@ Fler exempel:
 
 Ett stort JavaScript-bibliotek med färdiga funktioner
       
-<a href="jquerytest.html">test</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/jquerytest.html">Fade in, fade out</a>
   
 ###Canvas - möjlighet att rita med html5
       
-<a href="canvas.html">Enkelt statiskt exempel</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/canvas.html">Enkelt statiskt exempel</a>
       
-<a href="http://www.djallo.se/hunden/game4.html">Animering</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/http://www.djallo.se/hunden/game4.html">Animering</a>
   
 ###PHP
 
-<a href="hello.php">hello.php</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/hello.php">hello.php</a>
 
 {% highlight php %}
 <?php
@@ -88,7 +91,7 @@ echo date("G:i:s",time());
       
       
       
-<a href="form.html">Formulärexempel</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/form.html">Formulärexempel</a>
  
   
   
@@ -102,7 +105,7 @@ echo date("G:i:s",time());
 
 Asynchronous JavaScript and XML
      
-<a href="namesuggestion.html">Namesuggestion</a>
+<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/namesuggestion.html">Namesuggestion</a>
   
   
 ##Serverside JavaScript
