@@ -60,3 +60,6 @@ För den som tycker det är intressant och vill läsa mer om kombinationen genus
 
 Bo Peterson  
 @bo_peterson
+
+<iframe frameborder="0" src="http://ddwap.mah.se/k3bope/genus/result.php" width="500" height="500">
+</iframe>
