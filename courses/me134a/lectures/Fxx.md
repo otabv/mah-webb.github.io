@@ -4,7 +4,7 @@ title: Föreläsning X
 code: me134a
 ---
 
-<script type="text/javascript">
+<script>
 function displayDate()
 {
 document.getElementById("demo").innerHTML=Date();
@@ -53,10 +53,18 @@ Enklaste exemplet:
 Lite mer avancerat:
 
 {% highlight html %}
+<script>
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+</script>
+
 <button type="button" onclick="displayDate()">Display Date</button></div>
 {% endhighlight %}
 
-<div id="demo">Klicka knappen för att visa dagens datum</div>
+<div id="demo">Klicka knappen för att visa dagens datum här</div>
+<button type="button" onclick="displayDate()">Display Date</button></div>
         
 Fler exempel:
 
