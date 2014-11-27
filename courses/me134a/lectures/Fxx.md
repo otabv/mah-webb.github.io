@@ -81,7 +81,7 @@ Ett stort JavaScript-bibliotek med färdiga funktioner
       
 <a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/canvas.html">Enkelt statiskt exempel</a>
       
-<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/http://www.djallo.se/hunden/game4.html">Animering</a>
+<a href="http://www.djallo.se/hunden/game4.html">Animering</a>
   
 ###PHP
 
