@@ -65,9 +65,9 @@ document.getElementById("demo").innerHTML=Date();
         
 Fler exempel:
 
-<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/kvitter.html">Räkna tecken</a>
+<a href="http://codepen.io/bopeterson/pen/ZYbppE/l">Räkna tecken</a>
         
-<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/telefonvalidering.html">Validering</a>
+<a href="http://codepen.io/bopeterson/pen/EaVgNy">Validering</a>
 
   
   
@@ -75,11 +75,11 @@ Fler exempel:
 
 Ett stort JavaScript-bibliotek med färdiga funktioner
       
-<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/jquerytest.html">Fade in, fade out</a>
+<a href="http://codepen.io/bopeterson/pen/azvmpm">Fade in, fade out</a>
   
 ###Canvas - möjlighet att rita med html5
       
-<a href="http://ddwap.mah.se/k3bope/me119a/2012/scriptinhopp/canvas.html">Enkelt statiskt exempel</a>
+<a href="http://codepen.io/bopeterson/pen/gbawgK">Enkelt statiskt exempel</a>
       
 <a href="http://www.djallo.se/hunden/game4.html">Animering</a>
   
