@@ -42,6 +42,15 @@ Dessutom måste följande finnas i en zip-fil:
 - Indesign-mall som kan importera exportfilen
 - PDF-fil som resultat av att mallen importerat den tab-separerade filen. 
 
+Krav för VG (tillagt 2014-12-02):
+
+- Minst en många-till-många-relation. 
+- ÅÄÖ ska hanteras korrekt i in- och utmatningar. 
+- Grundläggande skydd mot sql-injection. 
+- HTML-kod ska kunna matas in utan att layout förstörs. 
+- Välkommenterad kod. 
+- Strukturerad kod med indragningar. 
+
 ## Projektredovisning
 
 Färdigt projekt redovisas inför klassen torsdag 18 december. Projektet lämnas in på It's learning senast onsdag 17 december kl 12.00. 
@@ -64,3 +73,7 @@ Följande uppgifter finns som förslag:
 ## Handledning
 
 Handledning kommer att finnas tillgänglig under de schemalagda laborationstillfällena. 
+
+## Projekttips
+
+Här finns några [projekttips](tips.html). 

@@ -65,4 +65,7 @@ projects:
       file: miniproject
     - name: Projekt
       file: project
+    - name: Projekttips
+      file: tips
+      
 
