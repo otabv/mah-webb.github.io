@@ -68,7 +68,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 47        | Gästföreläsning: Att skriva för webben                                      | Alla        |
 | 47        | Seminarium: Att skriva för webben                                           | Labbgrupper |
 | 48        | Workshop: Projektgrupperna                                                  | Labbgrupper |
-| 49        | Föreläsning: Scriptspråk                                                    | Alla        |
+| 49        | [Föreläsning: Scriptspråk](/courses/me135a/lectures/F10.html)               | Alla        |
 | 49        | Projekt: handledning                                                        | Labbgrupper |
 | 50        | Föreläsning: Trendspaning och konceptutveckling                             | Alla        |
 | 50        | Seminarium: Trendspaning                                                    | Labbgrupper |

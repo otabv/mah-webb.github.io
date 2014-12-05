@@ -65,7 +65,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 | 46        | [Laboration 8: WordPress 3](/courses/me134a/exercises/L08.html)             | Labbgrupper |
 | 47        | [Laboration 9: WordPress 4](/courses/me134a/exercises/L09.html)             | Labbgrupper |
 | 48        | Workshop: Projektgrupperna                                                  | Labbgrupper |
-| 49        | Föreläsning: Scriptspråk                                                    | Alla        |
+| 49        | [Föreläsning: Scriptspråk](/courses/me134a/lectures/F09.html)               | Alla        |
 | 49        | Projekt: handledning                                                        | Labbgrupper |
 | 50        | Laboration 10: Extra                                                        | Labbgrupper |
 | 51        | Projekt: Självständigt arbete                                               | Alla        |

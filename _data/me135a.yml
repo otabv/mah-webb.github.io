@@ -82,3 +82,6 @@ lectures:
 
     - name: Föreläsning 9
       file: F09
+
+    - name: Föreläsning 10
+      file: F10
