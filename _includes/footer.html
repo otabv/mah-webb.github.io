@@ -4,21 +4,14 @@
             Användning av allt material är fritt, om motsatsen inte anges. Formellt utrycks detta med licensen <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" title="Gå till Creative Commons license">Creative Commons Attribution 4.0</a>.
         </p>
         <p class="fork">
-            Detta projekt är publicerat som <a href="https://github.com/mah-webb/mah-webb.github.io" target="_blank" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="https://github.com/mah-webb/mah-webb.github.io" target="_blank" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
+            Detta projekt är publicerat som <a href="{{ site.github }}" target="_blank" title="Gå till GitHub">öppen källkod på GitHub</a>. Föreslå gärna ändringar och bidra med förbättringar genom att göra en <a href="{{ site.github }}" target="_blank" title="Gå till GitHub">fork av detta projekt på GitHub</a>.
         </p>
         <ul class="footer-links">
-            <li>
-                <a href="/" title="Gå till startsidan">Hem</a>
-            </li>
-            <li>
-                <a href="/courses" title="Gå till kursöversikt">Kurser</a>
-            </li>
-            <li>
-                <a href="/blog" title="Gå till bloggöversikt">Blogg</a>
-            </li>
-            <li>
-                <a href="/contact" title="Gå till kontaktsidan">Kontakt</a>
-            </li>
+            <li><a href="/" title="Gå till startsidan">Hem</a></li>
+            <li><a href="/courses" title="Gå till kursöversikt">Kurser</a></li>
+            <li><a href="/blog" title="Gå till bloggöversikt">Blogg</a></li>
+            <li><a href="/contact" title="Gå till kontaktsidan">Kontakt</a></li>
+            <li><a href="{{ site.github }}" title="Gå till github repositoriet">GitHub</a></li>
         </ul>
     </div>
 </footer>
@@ -26,18 +19,10 @@
 <!-- Only shown on iOS standalone web apps -->
 <div class="web-app-nav-container">
     <ul class="web-app-subnav">
-        <li id="web-app-prev">
-            &larr;
-        </li>
-        <li id="web-app-next">
-            &rarr;
-        </li>
-        <li id="web-app-top">
-            &uarr;
-        </li>
-        <li id="web-app-sidebar">
-            &hellip;
-        </li>
+        <li id="web-app-prev">&larr;</li>
+        <li id="web-app-next">&rarr;</li>
+        <li id="web-app-top">&uarr;</li>
+        <li id="web-app-sidebar">&hellip;</li>
     </ul>
 </div>
 
@@ -48,7 +33,6 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-48530327-3', 'auto');
+  ga('create', '{{ site.analytics }}', 'auto');
   ga('send', 'pageview');
-
 </script>

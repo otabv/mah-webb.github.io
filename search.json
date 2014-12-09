@@ -1,0 +1,59 @@
+---
+layout: none
+---
+{
+    "posts": [
+        {% for post in site.posts %}
+        {
+            "title"    : "{{ post.title | escape }}",
+            "category" : "{{ post.category }}",
+            "tags"     : "{{ post.tags | array_to_sentence_string }}",
+            "url"      : "{{ site.url }}{{ post.url }}",
+            "date"     : "{{ post.date }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ],
+    "courses": [
+        {% for course in site.data.courses %}
+        {
+            "name": "{{ course.name }}",
+            "code": "{{ course.code }}",
+            "credits": "{{ course.credits }}",
+            "assignments": [
+                {% for assignment in site.data[course.code].assignments %}
+                {
+                    "name": "{{ assignment.name }}",
+                    "credits": "{{ assignment.credits }}",
+                    "url": "{{ site.url }}/courses/{{ course.code }}/assignments/{{ assignment.file }}.html"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "exercises": [
+                {% for exercise in site.data[course.code].exercises %}
+                {
+                    "name": "{{ exercise.name }}",
+                    "url": "{{ site.url }}/courses/{{ course.code }}/exercises/{{ exercise.file }}.html"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "projects": [
+                {% for project in site.data[course.code].projects %}
+                {
+                    "name": "{{ project.name }}",
+                    "credits": "{{ project.credits }}",
+                    "url": "{{ site.url }}/courses/{{ course.code }}/projects/{{ project.file }}.html"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "lectures": [
+                {% for lecture in site.data[course.code].lectures %}
+                {
+                    "name": "{{ lecture.name }}",
+                    "url": "{{ site.url }}/courses/{{ course.code }}/lectures/{{ lecture.file }}.html"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}

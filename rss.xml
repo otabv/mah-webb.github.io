@@ -1,0 +1,24 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://w3.org/2005/atom">
+    <channel>
+        <title>Mah Webb | Blogg</title>
+        <link>http://mah-webb.github.io</link>
+        <atom:link href="{{ site.url }}/rss.xml" rel="self" type="application/rss+xml" />
+        <description>Öppna läranderesurser fritt tillgängligt för alla via Mah Webb</description>
+        <language>sv-SE</language>
+        {% for post in site.posts %}
+        <item>
+            <title><![CDATA[{{ post.title | escape }}]]></title>
+            <link>http://mah-webb.github.io/{{ post.url }}</link>
+            <description>{{ post.content | strip_html | truncatewords: 50 }}</description>
+            <author>{% for member in site.data.members %}{{ member.email }} ({{ member.name }}){% unless forloop.last %}, {% endunless %}{% endfor %}</author>
+            <category>{{ post.category }}</category>
+            <pubDate>{{ post.date | date: "%a, %d %b %Y %T" }} +0100</pubDate>
+            <guid>{{ site.url }}{{ post.url }}</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>
