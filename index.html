@@ -6,14 +6,14 @@ markdown: 0
 ---
 
 <div class="row">
-    <h1 class="brand">Mah Webb</h1>
+    <h1 class="brand">{{ site.name }}</h1>
 </div>
 
 <div class="row">
     <div class="col-6">
         <h2 class="content-header">Öppna kurser</h2>
         <ul class="content-list">
-            {% for course in site.data.courses offset: 0 limit: 3 %}
+            {% for course in site.data.courses %}
             <li>
                 <a href="/courses/{{ course.code }}" title="Gå till kursen {{ course.name }}">
                     <span class="course-name">{{ course.name }}</span>
@@ -28,7 +28,7 @@ markdown: 0
     <div class="col-6">
         <h2 class="content-header">Senaste blogginlägg</h2>
         <ul class="content-list">
-            {% for post in site.posts offset: 0 limit: 3 %}
+            {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}" title="Gå till blogg inlägget {{ post.title }}">
                     <span class="blog-title">{{ post.title }}</span>
