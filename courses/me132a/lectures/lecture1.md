@@ -4,25 +4,23 @@ code: me132a
 title: Föreläsning 1
 controls: false
 date: 2014-12-15
-theme: bopeterson/cleaver-lecture
 ---
 
 # Programmering för webben	
 
-Lärare:
+##Lärare:
 
 Sebastian Bengtegård
 
 Bo Peterson (kursansvarig)
 
-## Praktiskt om kursen
-
-### Webbplatser med kursmaterial:
+##Webbplatser med kursmaterial:
 
 - It’s learning - inlämningar av uppgifter
 - <http://mah-webb.github.io/courses/me132a/> - all annan information
 
 ## Kurslitteratur
+
 ### PHP & MySQL – Novice to Ninja av Kevin Yank
 
 ![](im1/ninja.png)
@@ -37,10 +35,9 @@ Programmering i programspråket PHP
 
 ###Vad är programmering?
 
-**Kort defininition:** programming: creating a sequence of instructions to enable the computer to do something 
+**Kort defininition av programmering:** creating a sequence of instructions to enable the computer to do something 
 
 **Från wikipedia:** Computer programming (often shortened to programming or coding) is the process of writing, testing, debugging/troubleshooting, and maintaining the source code of computer programs. This source code is written in a programming language. 
-
 
 ###Vad är webbprogrammering?
 
@@ -48,10 +45,7 @@ Webbprogrammering innebär vanligtvis att man skriver program som inte kan köra
 
 ###Vad är PHP?
 
-PHP står för PHP: Hypertext Preprocessor och är ett programmeringsspråk som är utvecklat för att passa bra ihop med HTML-kod och webbsidor. PHP är, till skillnad från JavaScript som också används med HTML-kod, ett språk för program som körs på *webservern*, så kallad *server-side scripting*. 
-
-
-
+PHP står för **PHP: Hypertext Preprocessor**  och är ett programmeringsspråk som är utvecklat för att passa bra ihop med HTML-kod och webbsidor. PHP är, till skillnad från JavaScript som också används med HTML-kod, ett språk för program som körs på *webservern*, så kallad *server-side scripting*. 
 
 Officiell webbplats: <http://www.php.net/>
 
@@ -61,7 +55,7 @@ Java, C, C++, C#, Python, Ruby är exempel på programmeringsspråk som kan anv�
 
 PHP-kod används huvudsakligen för att ge webbsidor dynamiskt innehåll och interaktivitet. PHP-kod inbäddas vanligtvis i html-kod. 
 
-PHP-kod börjar med `<?` php och avslutas med `?>`
+PHP-kod börjar med `<?php` och avslutas med `?>`
 
 `echo` används när man vill att något som PHP beräknat fram ska synas på en webbsida
 
