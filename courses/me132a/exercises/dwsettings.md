@@ -27,7 +27,7 @@ Skapa mappen *ddwap* på ett ställe där du enkelt kommer åt den framöver i k
 
 ![](dw/folder.png)
 
-###Steg 3
+###Steg 3 - endast för Dreamweaver
 
 Starta Dreamweaver CS6. (Om du hellre vill använda valfri texteditor och FileZilla går du vidare till steg 5). 
 
@@ -58,13 +58,13 @@ Ange slutligen servern som både *Remote* och *Testing*. Klicka *Save* och du ka
 ![](dw/remote.png)
 
 
-### Steg 4
+### Steg 4 - endast för Dreamweaver
 
 Det är lämpligt men inte tvunget att ställa in Dreamweaver så att den autmatiskt jobbar med html5. Välj Dreamweaver->Preferences och välj sedan html 5 som Default Document Type:
 
 ![](dw/html5.png)
 
-### Steg 5
+### Steg 5 - endast för FileZilla
 
 Detta gör du endast om du **inte vill använda Dreamweaver**.
 

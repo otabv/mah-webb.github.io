@@ -21,7 +21,7 @@ Lämna in följande på it's learning:
 
 ## Uppgift 1 – Dreamweaverinställningar
 
-Ställ in Dreamweaver enligt instruktioner i *dwsettings.pdf*. De inställningar som gjorts nu kan behållas genom hela kursen. Se till att de funkar nu, annars kommer inte laborationerna att fungera framöver! Inställningarna går i korthet ut på att ställa in Dreamweaver så att alla php-sidor skapas lokalt på din Mac. För att kunna testa sidorna måste de skickas till webbservern ddwap.mah.se. När inställningarna är korrekt gjorda skickar man sidorna till servern genom att välja *Skicka/Put* under de gröna och blåa pilarna. 
+Ställ in Dreamweaver enligt instruktioner i [dwsettings](dwsettings.html). De inställningar som gjorts nu kan behållas genom hela kursen. Se till att de funkar nu, annars kommer inte laborationerna att fungera framöver! Inställningarna går i korthet ut på att ställa in Dreamweaver så att alla php-sidor skapas lokalt på din Mac. För att kunna testa sidorna måste de skickas till webbservern ddwap.mah.se. När inställningarna är korrekt gjorda skickar man sidorna till servern genom att välja *Skicka/Put* under de gröna och blåa pilarna. 
 
 ![](im1/put.png)
 
