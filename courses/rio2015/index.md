@@ -78,8 +78,6 @@ Workshop 3
 ###Friday 16 January 10.00-14.00
 
 Workshop 4
-<<<<<<< Updated upstream
-=======
 
 ###Monday 19 January 12.00-16.00 (preliminary)
 
@@ -88,4 +86,3 @@ Workshop 5
 ###Friday 23 January 10.00-14.00 (preliminary)
 
 Workshop 6
->>>>>>> Stashed changes
