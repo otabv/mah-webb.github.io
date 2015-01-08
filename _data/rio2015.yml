@@ -1,0 +1,8 @@
+# Kursinformation
+name: Arduino Workshop at ESDI Rio 2015
+code: rio2015
+
+# Föreläsningar
+lectures:
+     - name: Workshop 1
+       file: ws1
