@@ -65,11 +65,11 @@ Material for the course will be found at
 
 ###Monday 5 January 12.00-16.00
 
-[Workshop 1](ws1.html)
+[Workshop 1](ws1.html) - Introduction
 
 ###Friday 9 January 10.00-14.00
 
-Workshop 2
+Workshop 2 - Sensors and actuators
 
 ###Monday 12 January 12.00-16.00
 
