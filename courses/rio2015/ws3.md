@@ -8,9 +8,6 @@ title: Workshop 3
 
 Today we connect the Arduino to Internet and make it act as a web server and a web client. But first we will have try some sensors and actuators. 
 
-xxx ta bort alla backtick
-
-
 ##A simple musical instrument
 
 Our first mission is to make a simply instrument or sound device behaving somewhat like a [Theremin](http://en.wikipedia.org/wiki/Theremin). We will connect a light sensor - a photo resistor - and small speaker to the Arduino. 
@@ -27,7 +24,7 @@ This example introduces some new important components:
 - Serial.print() is very useful for testing and debugging (finding errors)
 - The map() function is very useful for adjusting the range of values from sensors. 
 
-```
+
 {% highlight c++ %}
 void setup() {
   // initialize serial communications (for debugging only):
@@ -50,7 +47,7 @@ void loop() {
   delay(1);        // delay in between reads for stability
 }
 {% endhighlight %}
-```
+
 
 ##Accessing the light sensor from a web browser
 
@@ -60,7 +57,7 @@ Examples -> Ethernet - WebServer
 
 but it has been modified a little. 
 
-```
+
 {% highlight c++ %}
 /*
   Web Server 
@@ -109,8 +106,8 @@ void loop()
           // send a standard http response header
           client.println("HTTP/1.1 200 OK");
           client.println("Content-Type: text/html");
-          client.println("Connection: close");  // the connection will be closed after completion of the response
-          client.println("Refresh: 2");  // refresh the page automatically every 2 sec
+          client.println("Connection: close");
+          client.println("Refresh: 2");  // refresh every 2 sec
           client.println();
 
           //read the value of analog pin 0          
@@ -168,7 +165,7 @@ void loop()
   }
 }
 {% endhighlight %}
-```
+
 
 Open a web browser and enter the IP-number of your Arduino in the address field, for example
 
@@ -192,7 +189,7 @@ http://10.0.19.21/off
 
 Here is the code that will be explained in detail. Don't be scared by the length of it. 
 
-```
+
 {% highlight c++ %}
 #include <SPI.h>
 #include <Ethernet.h>
@@ -272,7 +269,8 @@ void loop()
 
 void htmlstart(EthernetClient client) {
   //this text will be the beginning of all http requests
-  //Strings can eat meomory. With F, the constant strings are stored in Flash memory and saves memory for the code. 
+  //Strings can eat meomory. With F, the constant strings 
+  //are stored in Flash memory and saves memory for the code. 
   client.println(F("HTTP/1.1 200 OK"));
   client.println(F("Content-Type: text/html"));
   client.println();
@@ -291,9 +289,3 @@ void htmlend(EthernetClient client) {
   client.print(F("</html>"));
 }
 {% endhighlight %}
-```
-
-
-
-
-
