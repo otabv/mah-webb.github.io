@@ -73,7 +73,7 @@ Material for the course will be found at
 
 ###Monday 12 January 12.00-16.00
 
-Workshop 3
+[Workshop 3](ws3.html) - Connecting to the internet
 
 ###Friday 16 January 10.00-14.00
 
