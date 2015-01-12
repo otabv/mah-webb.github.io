@@ -179,11 +179,11 @@ In the last example we saw how we could read values from an Arduino. Now will tr
 
 The led is turned on or off by requesting a web page from the arduino with either 
 
-http://10.0.19.21/on
+http://10.0.19.21/arduino/on
 
 or
 
-http://10.0.19.21/off
+http://10.0.19.21/arduino/off
 
 **NOTE** The IP-number must be changed to your IP-number.
 
@@ -196,7 +196,7 @@ Here is the code that will be explained in detail. Don't be scared by the length
 
 #define BUFSIZ 100
 
-int led=13;
+int led=9;
 
 //replace with mac address of your arduino
 byte mac[]= { 0x90, 0xA2, 0xDA, 0x00, 0x7?, 0x?? }; //esdi shield
@@ -240,15 +240,17 @@ void loop()
           //http ok, doctype, html, head
           htmlstart(client);
           //is "on" part of url?
-          if (strstr(url,"on")!=0) {
+          if (strstr(url,"arduino/on")!=0) {
             client.print("turning on");
             digitalWrite(led,HIGH);
           }         
           //is "off" part of url?
-          else if (strstr(url,"off")!=0) {
+          else if (strstr(url,"arduino/off")!=0) {
             client.print("turning off");
             digitalWrite(led,LOW);
-          } 
+          } else {
+            client.print("unknown command");
+          }
           htmlend(client);
           break;
         }
