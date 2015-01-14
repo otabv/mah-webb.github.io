@@ -77,7 +77,7 @@ Material for the course will be found at
 
 ###Friday 16 January 10.00-14.00
 
-Workshop 4
+[Workshop 4](ws4.html) - Servo motors, more about connecting to the internet
 
 ###Monday 19 January 12.00-16.00 (preliminary)
 

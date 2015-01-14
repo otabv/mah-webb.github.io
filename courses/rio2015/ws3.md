@@ -6,7 +6,7 @@ title: Workshop 3
 
 # Workshop 3 - Connecting the Arduino to the Internet
 
-Today we connect the Arduino to Internet and make it act as a web server and a web client. But first we will have try some sensors and actuators. 
+Today we connect the Arduino to Internet and make it act as a web server. But first we will have try some sensors and actuators. 
 
 ##A simple musical instrument
 
@@ -175,117 +175,4 @@ and you should see a web page that changes color when the light condition for th
 
 ##Controlling a LED from the web
 
-In the last example we saw how we could read values from an Arduino. Now will try to control the Arduino from a web page, by turning on and off an LED. 
-
-The led is turned on or off by requesting a web page from the arduino with either 
-
-http://10.0.19.21/on
-
-or
-
-http://10.0.19.21/off
-
-**NOTE** The IP-number must be changed to your IP-number.
-
-Here is the code that will be explained in detail. Don't be scared by the length of it. 
-
-
-{% highlight c++ %}
-#include <SPI.h>
-#include <Ethernet.h>
-
-#define BUFSIZ 100
-
-int led=13;
-
-//replace with mac address of your arduino
-byte mac[]= { 0x90, 0xA2, 0xDA, 0x00, 0x7?, 0x?? }; //esdi shield
-//NOTE The last three ? should be changed to 
-//the letters or numbers on your shield
-
-EthernetServer server(80);
-
-void setup()
-{
-  Serial.begin(9600);
-  pinMode(led, OUTPUT);
-  Ethernet.begin(mac);
-  server.begin();
-  Serial.println(Ethernet.localIP()); //useful for debugging
-}
-
-void loop()
-{
-  char url[BUFSIZ];
-  int index = 0;
- 
-  // listen for incoming clients
-  EthernetClient client = server.available();
-  if (client) {
-    // an http request ends with a blank line
-    boolean currentLineIsBlank = true;
-    while (client.connected()) {
-      if (client.available()) {
-        char c = client.read();
-        //find the reuested url and store in array url
-        url[index]=c;
-        index++;
-        if (index >= BUFSIZ) { 
-            index = BUFSIZ -1;
-        }
-        
-        if (c == '\n' && currentLineIsBlank) {
-          url[index]=0; //end of string
-
-          //http ok, doctype, html, head
-          htmlstart(client);
-          //is "on" part of url?
-          if (strstr(url,"on")!=0) {
-            client.print("turning on");
-            digitalWrite(led,HIGH);
-          }         
-          //is "off" part of url?
-          else if (strstr(url,"off")!=0) {
-            client.print("turning off");
-            digitalWrite(led,LOW);
-          } 
-          htmlend(client);
-          break;
-        }
-        if (c == '\n') {
-          currentLineIsBlank = true;
-        } 
-        else if (c != '\r') {
-          currentLineIsBlank = false;
-        }
-      }
-    }
-    // give the web browser time to receive the data
-    delay(1);
-    // close the connection:
-    client.stop();
-  }
-}
-
-void htmlstart(EthernetClient client) {
-  //this text will be the beginning of all http requests
-  //Strings can eat meomory. With F, the constant strings 
-  //are stored in Flash memory and saves memory for the code. 
-  client.println(F("HTTP/1.1 200 OK"));
-  client.println(F("Content-Type: text/html"));
-  client.println();
-  client.print(F("<!doctype html>"));
-  client.print(F("<html>"));
-  client.print(F("<head>"));
-  client.print(F("<meta charset='UTF-8'>"));
-  client.print(F("<title>on off</title>"));
-  client.print(F("</head>"));
-  client.print(F("<body>"));
-}
-
-void htmlend(EthernetClient client) {
-  //this text will be the end of all http requests
-  client.print(F("</body>"));
-  client.print(F("</html>"));
-}
-{% endhighlight %}
+This example has moved to [Workshop 4](ws4.html).
