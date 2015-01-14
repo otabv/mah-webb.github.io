@@ -8,8 +8,8 @@ lectures:
      - name: Föreläsning 1
        file: lecture1
 
-# Laborationer
-exercises:
+# Workshops
+workshops:
     - name: Serverinställningar
       file: dwsettings
     - name: Laboration 1
