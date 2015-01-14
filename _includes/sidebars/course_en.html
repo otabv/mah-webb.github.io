@@ -80,6 +80,24 @@
         </li>
         {% endif %}
 
+        {% if site.data[page.code].workshops %}
+        <li>
+            <span class="course-overview-element">
+                Workshops
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                {% for workshop in site.data[page.code].workshops %}
+                <li>
+                    <a href="/courses/{{ page.code }}/workshops/{{ workshop.file | append: '.html' }}" title="Go to workshop {{ workshop.name }}">
+                        {{ workshop.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+
         {% if site.data[page.code].syllabus %}
         <li>
             <span class="course-overview-element">
