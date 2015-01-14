@@ -1,0 +1,91 @@
+<div id="sidebar" class="sidebar">
+    <div id="toggle-sidebar" class="toggle-sidebar">...</div>
+
+    <h3 class="course-name">
+        <a href="/courses/{{ page.code }}" title="Go to course overview for {{ site.data[page.code].name }}">
+            {{ site.data[page.code].name }}<small>{{ page.code | upcase }}</small>
+        </a>
+    </h3>
+
+    <ul class="course-overview">
+        {% if site.data[page.code].assignments %}
+        <li>
+            <span class="course-overview-element">
+                Assignments
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                {% for assignment in site.data[page.code].assignments %}
+                <li>
+                    <a href="/courses/{{ page.code }}/assignments/{{ assignment.file | append: '.html' }}" title="Go to assignment {{ assignment.name }}">
+                        {{ assignment.name }} {% if assignment.credits %}<small>({{ assignment.credits }} hp)</small>{% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+
+        {% if site.data[page.code].exercises %}
+        <li>
+            <span class="course-overview-element">
+                Exercises
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                {% for exercise in site.data[page.code].exercises %}
+                <li>
+                    <a href="/courses/{{ page.code }}/exercises/{{ exercise.file | append: '.html' }}" title="Go to exercise {{ exercise.name }}">
+                        {{ exercise.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+
+        {% if site.data[page.code].projects %}
+        <li>
+            <span class="course-overview-element">
+                Project
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                {% for project in site.data[page.code].projects %}
+                <li>
+                    <a href="/courses/{{ page.code }}/projects/{{ project.file | append: '.html' }}" title="Go to project {{ project.name }}">
+                        {{ project.name }} {% if project.credits %}<small>({{ project.credits }} hp)</small>{% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+
+        {% if site.data[page.code].lectures %}
+        <li>
+            <span class="course-overview-element">
+                Lectures
+                <span class="expand">+</span>
+            </span>
+            <ul class="course-overview-submenu">
+                {% for lecture in site.data[page.code].lectures %}
+                <li>
+                    <a href="/courses/{{ page.code }}/lectures/{{ lecture.file | append: '.html' }}" title="Go to lecture {{ lecture.name }}">
+                        {{ lecture.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
+
+        {% if site.data[page.code].syllabus %}
+        <li>
+            <span class="course-overview-element">
+                <a href="/courses/{{ page.code }}/syllabus.html">Syllabus</a>
+            </span>
+        </li>
+        {% endif %}
+    </ul>
+</div>
