@@ -4,23 +4,36 @@ code: da606a
 title: Course introduction
 ---
 
-# Course introduction
+# Course introduction - self studies
 
-Hi all!
 
-Welcome to the course Interaction technology! There will be no class on 21 Jan because I will be teaching abroad that week. Instead the first class will be on 28 Jan. There are some preparations you will have to do before we meet on 28 Jan. Please make sure this is done before the first class as we will need it from start. Here are the preparations you must do:
+## Step 1 - Get some material
 
-1) we will use the Arduino microcontroller throughout the course. If you don't have it already, you will need a get starter kit. There is no course litterature so you won't have to buy any books. You can chose from two different starter kits:
+ we will use the Arduino microcontroller throughout the course. If you don't have it already, you will need a get starter kit. There is no course litterature so you won't have to buy any books. You can chose from two different starter kits:
 
-Alternative A:  <http://www.electrokit.com/mah-starterkit-for-arduino-rev-3.49175>  
-
-Alternative B:  <http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/start-kit-for-arduino-p87966#ProductDetailedInformation> and <http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/arduino-uno-rev3-p87860>
+- Alternative A:  <http://www.electrokit.com/mah-starterkit-for-arduino-rev-3.49175>  
+- Alternative B:  <http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/start-kit-for-arduino-p87966#ProductDetailedInformation> and <http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/arduino-uno-rev3-p87860>
 
 If you already have an Arduino, you only have to get the "start-kit-for-arduino-p87966" in alternative B. 
 
-2) go to http://arduino.cc and download the Arduino IDE to your computer and install it. 
-3) register an account at xively.com
-4) register an account at zapier.com
-5) register an account at ifttt.com
+## Step 2 - install the Arduino IDE
+
+Go to http://arduino.cc and download the Arduino IDE to your computer and install it. 
+
+The Arduino programs are called sketches and are made on any standard computer with the Arduino Integrated Development Environment. It is then downloaded to the Arduino, and after that, the Arduino can work by itself. The IDE can be downloaded at
+
+[arduino.cc -> Download](http://arduino.cc/en/Main/Software#toc2)
+
+Installation instructions:
+
+- [Windows](http://arduino.cc/en/Guide/Windows)
+- [Mac](http://arduino.cc/en/Guide/MacOSX)
+- [Linux](http://playground.arduino.cc/Learning/Linux)
+
+## Step 3 - register accounts
+
+- register an account at <http://xively.com>
+- register an account at <http://zapier.com>
+- register an account at <http://ifttt.com>
 
 Please mail me at bo.peterson@mah.se if you have any questions.
