@@ -1,5 +1,5 @@
 ---
-layout: instructions-en
+layout: instructions_en
 code: da606a
 title: Arduino introduction
 ---
