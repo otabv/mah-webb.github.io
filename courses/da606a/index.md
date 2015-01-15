@@ -1,36 +1,33 @@
 ---
 layout: course_en
 code: da606a
-title: Programmering för webben ME132A (15.0 hp)
+title: Interaction Technology DA606A
 ---
 
-# Programmering för webben våren 2015
+# Interaction Technology DA606A
 
-Välkomna till Programmering för webben! Kursen är upplagd med en föreläsning följd av laboration i stort sett varje vecka, där syftet med laborationen är att träna de moment som gicks igenom på föreläsningen. I slutet av kursen kommer även ett projekt att genomföras. 
+Welcome to Interaction Technology
 
-Kursmaterial kommer att finnas på denna webbplats, men inlämningar av uppgifter görs på It's learning.
-
-Föreläsningar och laborationer kommer att vara tätt kopplade till boken PHP & MySQL-Novice to Ninja av Kevin Yank. Boken behandlar både PHP och MySQL. Denna kurs kommer i stort sett endast att behandla PHP-delen av boken. MySQL-delen av boken, dvs kopplingar till databaser, kommer att gås igenom i kursen Databasbaserad publicering i höst.
-
-Lärare på kursen:
+Course responsible:
 
 - Bo Peterson, bo.peterson@mah.se (kursansvarig)
-- Sebastian Bengtegård, sebastian.bengtegard@mah.se
 
-## Nyttiga länkar
+## Links
 
-* [Kursplan][kursplan]
-* [Schema][schema]
+* [Syllabus][kursplan]
+* [Schedule][schema]
 * [It's learning][itslearning]
 
-## Veckoplan
+## Week 1 - Course introduction - NOTE not scheduled, do it by yourselves
 
-### Vecka 4 - Introduktion till kursen
+- [Workshop 1](workshops/ws1.html)
 
-- [Föreläsning 1](lectures/lecture1.html)
-- [Laboration 1](exercises/lab1.html)
-- [Inställningar av Dreamweaver eller FileZilla](exercises/dwsettings.html)
-[kursplan]: http://edu.mah.se/me132a#Syllabus
-[schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
+## Vecka 2 - Introduction to Arduino
+
+- [Workshop 2](workshops/ws2.html)
+
+
+[kursplan]: http://edu.mah.se/da606a#Syllabus
+[schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.DA606A-20151-TS432-
 [itslearning]: https://mah.itslearning.com
 

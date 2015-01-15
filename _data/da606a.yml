@@ -4,14 +4,11 @@ code: da606a
 credits: 7.5
 
 # Föreläsningar
-lectures:
-     - name: Föreläsning 1
-       file: lecture1
 
 # Workshops
 workshops:
-    - name: Serverinställningar
-      file: dwsettings
-    - name: Laboration 1
-      file: lab1
+    - name: Course introduction
+      file: ws1
+    - name: Introduction to Arduino
+      file: ws2
 
