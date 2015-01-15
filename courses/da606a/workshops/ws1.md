@@ -9,12 +9,12 @@ title: Course introduction
 
 ## Step 1 - Get some material
 
- we will use the Arduino microcontroller throughout the course. If you don't have it already, you will need a get starter kit. There is no course litterature so you won't have to buy any books. You can chose from two different starter kits:
+We will use the Arduino microcontroller throughout the course. If you don't have it already, you will need a get starter kit. There is no course literature so you won't have to buy any books. You can chose from two different starter kits:
 
-- Alternative A:  <http://www.electrokit.com/mah-starterkit-for-arduino-rev-3.49175>  
-- Alternative B:  <http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/start-kit-for-arduino-p87966#ProductDetailedInformation> and <http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/arduino-uno-rev3-p87860>
+- Alternative A:  [Electrokit starterkit](http://www.electrokit.com/mah-starterkit-for-arduino-rev-3.49175) 
+- Alternative B:  [Kjell och company startkit](http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/start-kit-for-arduino-p87966#ProductDetailedInformation) and [Kjell och company Arduino Uno](http://www.kjell.com/sortiment/el/elektronik/mikrokontroller/arduino/arduino-uno-rev3-p87860)
 
-If you already have an Arduino, you only have to get the "start-kit-for-arduino-p87966" in alternative B. 
+If you already have an Arduino, you only have to get the Kjell och company startkit in alternative B. 
 
 ## Step 2 - install the Arduino IDE
 
