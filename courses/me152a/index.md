@@ -1,6 +1,6 @@
 ---
 layout: course
-code: me134a
+code: me152a
 title: Inledande webbprogrammering med JavaScript ME152A (15.0 hp)
 ---
 
