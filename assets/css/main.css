@@ -458,6 +458,11 @@ table tbody tr:nth-child(odd) {
     background: #f3f3f3;
 }
 
+.sidebar h3.course-name {
+    font-size: 16px;
+    max-width: 270px;
+}
+
 .course-name a,
 .blog-header a {
     font-weight: 200;
