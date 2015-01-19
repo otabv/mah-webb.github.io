@@ -13,8 +13,8 @@ date: 2015-02-19
 
 ###Dagens innehåll 
 
-- Varför använda PHP? Var används PHP? Variabler- 
-- Tilldelning- 
+- Varför använda PHP? Var används PHP?
+- Tilldelning
 - Operatorer 
 - Kommentarer 
 - Arrayer 
@@ -74,10 +74,10 @@ Operatorer används för att utföra beräkningar och för att manipulera såvä
 
 Exempel på *aritmetiska operatorer* dvs operatorer för numeriska värden är
 
-`+` (plus)  
-`-` (minus)  
-`*` (gånger)  
-`/` (dividerat med)
+`+` plus  
+`-` minus  
+`*` gånger  
+`/` dividerat med
 
 **Exempel**
 Detta exempel beräknar och skriver ut aktuell ålder.
@@ -91,7 +91,7 @@ echo $age;
 
 Det finns två *strängoperatorer* i PHP dvs operatorer för text. Den vanligaste är en punkt:
 
-`.` (en punkt) används för *konkatenering* dvs slå ihop två strängar.
+`.` används för *konkatenering* dvs slå ihop två strängar.
 
 **Exempel** 
 

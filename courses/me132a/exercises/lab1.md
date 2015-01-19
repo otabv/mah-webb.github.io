@@ -5,6 +5,7 @@ title: Laboration 1
 ---
 
 # Laboration 1
+
 Syfte med laborationen:
 
 - att få en första PHP-sida att fungera
