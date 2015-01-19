@@ -115,7 +115,7 @@ Med mellanslag mellan för- och efternamn:
 
 {% highlight php  startinline=True %} 
 $fullname = $firstname . " " . $lastname;- 
-{% highlight %}
+{% endhighlight %}
  
 Resultat som skrivs ut: 
 {% highlight text %}	
