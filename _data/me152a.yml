@@ -21,3 +21,5 @@ projects:
 lectures:
     - name: Kursintroduktion
       file: L01
+    - name: Föreläsning 1
+      file: L02
