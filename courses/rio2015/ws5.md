@@ -220,7 +220,7 @@ SoftwareSerial bluetooth(bluetoothTx, bluetoothRx);
 void setup()
 {
 
-  bluetooth.begin(115200);  // The Bluetooth Mate defaults to 115200bps
+  bluetooth.begin(115200);  // The Bluetooth Smirf defaults to 115200bps
   bluetooth.print("$");  // Print three times individually
   bluetooth.print("$");
   bluetooth.print("$");  // Enter command mode
@@ -241,4 +241,6 @@ If you want to develop your own Android apps, or modify existing apps, check the
 
 - [Bluesmirf Demo](https://github.com/jeffboody/bluesmirf-demo)
 - [App inventor](http://www.appinventor.org) (Thank you Pedro Zohrer for the link)
+- [BlueTooth Link with auto-detect & connect](http://www.instructables.com/id/BlueTooth-Link-with-auto-detect-connect/)
+- [Build your own Android app with Processing and communicate with Arduino](http://arduinobasics.blogspot.com.au/2013/03/arduino-basics-bluetooth-android.html)
 
