@@ -114,7 +114,7 @@ SashaFierce
 Med mellanslag mellan för- och efternamn: 
 
 {% highlight php  startinline=True %} 
-$fullname = $firstname . " " . $lastname;- 
+$fullname = $firstname . " " . $lastname;
 {% endhighlight %}
  
 Resultat som skrivs ut: 
@@ -188,7 +188,7 @@ Ett fjärde element (med index = 3) skapas med innehållet plånbok.
 Man kan även utelämna index för att lägga till ett element sist i en array: 
 
 {% highlight php  startinline=True %}
-$drawer[] = "klocka";- 
+$drawer[] = "klocka";
 {% endhighlight %}
  
 Ett femte element skapas (om det redan fanns fyra) med innehållet klocka.
@@ -202,7 +202,7 @@ Variabler kan användas som index:
  
 {% highlight php  startinline=True %} 
 $i = 4;
-echo $drawer[$i]; //skriver ut klocka- 
+echo $drawer[$i]; //skriver ut klocka
 {% endhighlight %}
  
 
@@ -223,15 +223,15 @@ $days['mars'] = 31;
 Eller så här: 
 
 {% highlight php  startinline=True %} 
-$days = array('januari'=>31,'februari'=>28,'mars'=>31);- 
+$days = array('januari'=>31,'februari'=>28,'mars'=>31);
 {% endhighlight %}
  
 Utskrift: 
 
 {% highlight php  startinline=True %} 
-echo $days['januari']; //31 skrivs ut- 
-echo $days['februari']; //28 skrivs ut- 
-echo $days['mars']; //31 skrivs ut- 
+echo $days['januari']; //31 skrivs ut
+echo $days['februari']; //28 skrivs ut
+echo $days['mars']; //31 skrivs ut
 {% endhighlight %}
  
 ### Variabelvärden i strängar
