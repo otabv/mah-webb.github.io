@@ -83,7 +83,7 @@ Exempel på *aritmetiska operatorer* dvs operatorer för numeriska värden är
 Detta exempel beräknar och skriver ut aktuell ålder.
 
 {% highlight php  startinline=True %}
-$birthyear = 1965;- 
+$birthyear = 1965;
 $year = 2015; 
 $age = $year - $birthyear;
 echo $age; 
