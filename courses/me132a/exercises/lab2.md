@@ -37,6 +37,7 @@ Bredden är 20, höjden är 5, arean är 50
 {% endhighlight %}
 
 ## Uppgift 2
+
 Skapa en PHP-fil med namnet upp2.php. Skriv kod som slår ihop för- och efternamn.  
 
 Programmet ska innehålla tre variabler, en för förnamn, en för efternamn och en för hela namnet. Programmet ska göra följande:
