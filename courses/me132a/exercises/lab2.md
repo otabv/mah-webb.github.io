@@ -41,9 +41,10 @@ Bredden är 20, höjden är 5, arean är 50
 Skapa en PHP-fil med namnet upp2.php. Skriv kod som slår ihop för- och efternamn.  
 
 Programmet ska innehålla tre variabler, en för förnamn, en för efternamn och en för hela namnet. Programmet ska göra följande:
-- variabeln för förnamn tilldelas ditt eget förnamn
+
+- variabeln för förnamn tilldelas ditt eget förnamn
 - variabeln för efternamn tilldelas ditt eget efternamn
-- variabeln för hela namnet tilldelas hela ditt namn genom att med sammanslagningsoperatorn `.` slå ihop variablerna förnamn och efternamn. 
+- variabeln för hela namnet tilldelas hela ditt namn genom att med sammanslagningsoperatorn `.` slå ihop variablerna förnamn och efternamn.
 
 Programmet ska ge följande utskrift (men ditt eget namn):
 
