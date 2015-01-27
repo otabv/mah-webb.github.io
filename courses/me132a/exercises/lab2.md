@@ -61,7 +61,7 @@ Spara en kopia av filen från förra uppgiften men nu med namnet upp3.php. Kompl
 Skapa en fil med namnet upp4.php. Skriv PHP-kod som kan skriva ut hur många dagar det är i en viss månad enligt följande:
 
 - Skapa en vanlig array (dvs med numeriska index) som innehåller 12 element, där de olika elementen innehåller antalet dagar i de olika månaderna, dvs 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31.
-- Använd en variable med namne `$month` som anger nummer på månaden.
+- Använd en variabel med namnet `$month` som anger nummer på månaden.
 - Använd en variabel med namnet `$i` som används som index för månadsarrayen. **Observera att första elementet i en array har nummer noll**. Det innebär att när man ska visa antalet dagar i femte månaden är det alltså elementet med index=4 som ska visas.
 
 Om `$month` har värdet 5 ska `$i` få värdet `4` och utskriften ska bli
