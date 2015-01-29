@@ -35,6 +35,14 @@ Lärare på kursen:
 
 - [Föreläsning 2](lectures/lecture2.html)
 - [Laboration 2](exercises/lab2.html)
+
+### Vecka 6 - Formulär
+
+- [Föreläsning 3](lectures/lecture3.html)
+- [Laboration 3](exercises/lab3.html)
+
+
+
 [kursplan]: http://edu.mah.se/me132a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
 [itslearning]: https://mah.itslearning.com
