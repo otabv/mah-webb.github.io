@@ -14,14 +14,9 @@ date: 2015-01-29
 
 - Teckenkodning 
 - Formulär 
-- HTML-koder i inmatningsfält 
-- Fördefinierade variabler ($_POST, $_GET och $_REQUEST) 
-- Apostrofer i formulär
+- PHP-kod för att ta hand om formulärdata
 
 ###Teckenkodning
-
-Vissa tecken måste kodas för
-att visas på en webbsida
 
 Tecken som används i html-taggar och i URLer måste hanteras på ett speciellt sätt för att kunna visas på en webbsida:
 
@@ -47,7 +42,7 @@ Alla tecken i datorer representeras av koder. Det finns olika standarder för hu
 
 - ASCII
 - ISO-8859-1
-- UTF-8.
+- UTF-8
 
 Olika standarder hanterar exempelvis svenska tecken (åäö) olika. Det är viktigt att man anger korrekt teckenkodning i meta-tagg i head och sparar sina filer i samma format. 
 
@@ -58,9 +53,9 @@ Olika standarder hanterar exempelvis svenska tecken (åäö) olika. Det är vikt
 <meta charset="UTF-8">
 {% endhighlight %}
 
-Om man anger felaktig meta-tagg kan till exempel åäö visas felkaktigt. 
+Om man anger felaktig meta-tagg kan till exempel åäö visas felaktigt. 
 
-Korrekta angiven meta-tagg:
+Korrekt angiven meta-tagg:
 
 ![](im3/shrimputf8.png)
 
@@ -88,8 +83,6 @@ HTML-formulär är ofta input till PHP-program
 
 När man klickar Send går man vidare till sidan formoutput.php. 
 
-![](im3/formoutput.png)
-
 {% highlight php %}
 <?php
 $firstname=$_GET['firstname'];
@@ -97,6 +90,8 @@ $lastname=$_GET['lastname'];
 echo "Welcome $firstname $lastname";
 ?>
 {% endhighlight %}
+
+![](im3/formoutput.png)
 
 Det som matats in i fälten skickas med som en del av adressen till formoutput.php:
 
@@ -114,7 +109,7 @@ Vanligaste formulär-elementen:
  
 ###PHP-kod som tar hand om formulärdata
 
-- Sidan forminput.html innehåller ett formulär. När man klickar Send
+Sidan forminput.html innehåller ett formulär. När man klickar Send
 kommer man till sidan formoutput.php. PHP-sidan skapar automatiskt
 en associativ array med namnet $_GET som innehåller formulärdata.
  
@@ -143,18 +138,16 @@ PHP skapar  tre associativa arrayer som innehåller värden från skickade formu
 
 - $_POST innehåller värden om formuläret skickats med method='post'.
 - $_GET innehåller värden om formuläret skickats med method='get'.
-- $_REQUEST innehåller värden oavsett om formuläret skickats med method="post" eller "get".
+- $_REQUEST innehåller värden oavsett om formuläret skickats med method='post' eller 'get'.
  
 ###Säkerhetslucka mm
 
 En eventuell säkerhetslucka i formulär är möjligheten att
-inmataren lägger in skadlig kod i formuläret. Antag att vi skriver in ett javascript i inmatningsfältet.
-
-Om följande matas in:
+inmataren lägger in skadlig kod i formuläret. Antag att vi skriver in ett javascript i inmatningsfältet:
  
 ![](im3/forminputscript.png)
 
-Kan resultatet bli det följande:
+Då kan resultatet bli det följande:
 
 ![](im3/formoutputscript.png)
 
