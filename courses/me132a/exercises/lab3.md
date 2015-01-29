@@ -59,7 +59,7 @@ Testa att mata in
 
 `<h1>dittnamn`
 
-i fältet namn (men ersätt *dittnamn* med det du heter). Vad händer?
+i fältet *förnamn* (men ersätt *dittnamn* med det du heter). Vad händer?
 
 Komplettera lösningen till uppgift 3 så att den oskadliggör eventuell kod i inmatningsfält.
 
