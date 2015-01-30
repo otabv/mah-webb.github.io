@@ -28,9 +28,13 @@ Useful links:
 
 - [Workshop 1](workshops/ws1.html)
 
-## Vecka 2 - Introduction to Arduino
+## Week 2 - Introduction to Arduino
 
 - [Workshop 2](workshops/ws2.html)
+
+## Week 3 - Sensors and actuators, Connecting to internet
+
+- [Workshop 3](workshops/ws3.html)
 
 
 [kursplan]: http://edu.mah.se/da606a#Syllabus

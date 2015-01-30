@@ -11,4 +11,5 @@ workshops:
       file: ws1
     - name: Introduction to Arduino
       file: ws2
-
+    - name: Sensors, actuators, internet
+      file: ws3
