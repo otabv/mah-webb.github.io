@@ -148,7 +148,7 @@ void loop() {
 
 ## Connecting the Arduino to the Internet
 
-## Accessing the light sensor from a web browser
+### Accessing the light sensor from a web browser
 
 We will now try to access the value of the light sensor from a web browser. We can keep the same connection for the light sensor but we should disconnect the speaker, and put an ethernet shield on top of the Arduino. The Arduino sketch will be more complicated now that we add Internet connection. Most of the code is taken from
 
