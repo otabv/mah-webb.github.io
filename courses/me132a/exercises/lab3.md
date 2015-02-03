@@ -59,7 +59,7 @@ Testa att mata in
 
 `<h1>dittnamn`
 
-i fältet *förnamn* (men ersätt *dittnamn* med det du heter). Vad händer?
+i fältet *förnamn* i formuläret (men ersätt *dittnamn* med det du heter). Klicka *Skicka*. Vad händer?
 
 Komplettera lösningen till uppgift 3 så att den oskadliggör eventuell kod i inmatningsfält.
 
@@ -74,3 +74,5 @@ Följande sida
 leder fram till denna:
 
 ![](im3/svar5.png)
+
+**OBS** Sidan med månadsmenyn måste även ha en skicka-knapp som inte syns i bilden. 
