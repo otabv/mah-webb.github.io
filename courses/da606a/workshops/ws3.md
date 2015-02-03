@@ -167,8 +167,8 @@ but it has been modified a little.
 
 // Enter the MAC address for your Arduino.
 
-byte mac[]= { 0x90, 0xA2, 0xDA, 0x00, 0x7?, 0x?? }; //esdi shield
-//NOTE The last three ? should be changed to 
+byte mac[]= { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? };
+//NOTE The mac-address should be changed to 
 //the letters or numbers on your shield
 
 // Initialize the Ethernet server library with port 80 (standard for a server)
