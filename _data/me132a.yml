@@ -11,6 +11,8 @@ lectures:
        file: lecture2
      - name: Föreläsning 3
        file: lecture3
+     - name: Föreläsning 4
+       file: lecture4
 
 
 
@@ -24,4 +26,6 @@ exercises:
       file: lab2
     - name: Laboration 3
       file: lab3
+    - name: Laboration 4
+      file: lab4
 
