@@ -32,7 +32,27 @@ Uppgiften nu är att göra ett formulär upp2.html som leder vidare till upp2.ph
 - Eventuella html-taggar som matas in ska oskadliggöras så att de inte påverkar formatteringen
 - Man ska med en checkbox kunna välja om resultattexten ska visas som den matas in eller enbart med stora bokstäver.
 
-Det är *inte* tvunget att svenska tecken åäö hanteras korrekt. 
+Om kryssrutan **inte** är förbockad:
+
+Formuläret 
+
+![](im4/upp2_1.png)
+
+leder vidare till
+
+![](im4/upp2_2.png)
+
+Om kryssrutan **är** förbockad:
+
+Formuläret 
+
+![](im4/upp2_3.png)
+
+leder vidare till
+
+![](im4/upp2_4.png)
+
+Det är *inte* tvunget att svenska tecken åäö hanteras korrekt. Observera att funktionen `isset()` kan behöva användas för att hantera kryssrutan. Se <http://php.net/manual/en/function.isset.php>. 
 
 ## Uppgift 3
 
