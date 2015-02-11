@@ -13,3 +13,5 @@ workshops:
       file: ws2
     - name: Sensors, actuators, internet
       file: ws3
+    - name: Connecting to web services
+      file: ws4

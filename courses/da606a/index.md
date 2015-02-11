@@ -36,6 +36,9 @@ Useful links:
 
 - [Workshop 3](workshops/ws3.html)
 
+## Week 4 - Connecting to web services
+
+- [Workshop 4](workshops/ws4.html)
 
 [kursplan]: http://edu.mah.se/da606a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.DA606A-20151-TS432-
