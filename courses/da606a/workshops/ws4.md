@@ -1,36 +1,12 @@
 ---
 layout: instructions
-code: rio2015
+code: da606a
 title: Workshop 4
 ---
 
-# Workshop 4 - Servos and Internet
+# Workshop 4 - Connecting to web service
 
-Today we will make one Arduino connected to the internet control another Arduino, also connected to the internet. The first Arduino acts as web client (basically an automatic web browser) and the other us a web server. But first let's have a look at servo motors. 
-
-##The servo motor
-
-The servo motor is often found in radio controlled airplanes and cars to control flaps and steering. They are very practical to use together with the Arduino if you want to make a movement between fixed positions. A normal electrical motor such as the one in the image below is simply rotating continuously when it is connected to a power source. 
-
-![](dcmotor.jpg)
-
-**Standard DC motor**
-
-The servo motor on the other hand can move between two end points.
-
-![](micro_servo.jpg)
-
-**Servo motor**. Image from [Wikipedia](http://en.wikipedia.org/wiki/Servo_(radio_control))
-
-The servo motor has a gear box built in and a sensor for measuring the position of the outgoing shaft. Arduino already has a built in function for controlling servos:
-
-{% highlight c++ %}
-myservo.write(val); 
-{% endhighlight %}
-	
-where `val` is a variable that should have a value between 0 and 180. When this function is called, the servo will move to the number of degrees according to `val`.
-
-[Sweep](http://arduino.cc/en/Tutorial/sweep) and [Knob](http://arduino.cc/en/Tutorial/Knob) are two good tutorials from the official Arduino site. 
+Today we will connect the Arduino to web services like <http://xively.com>, <http://zapier.com> and <http://twitter.com>.
 
 ##Controlling a LED from the web
 
@@ -38,15 +14,15 @@ Now will try to control the Arduino from a web page, by turning on and off an LE
 
 The led is turned on or off by requesting a web page from the Arduino with either 
 
-http://10.0.19.21/on
+http://http://195.178.228.115/arduino/on
 
 or
 
-http://10.0.19.21/off
+http://http://195.178.228.115/arduino/off
 
 **NOTE** The IP-number must be changed to your IP-number.
 
-Here is the code that will be explained in detail. Don't be scared by the length of it. 
+Here is the code that will be explained in detail. 
 
 {% highlight c++ %}
 #include <SPI.h>
@@ -57,8 +33,8 @@ Here is the code that will be explained in detail. Don't be scared by the length
 int led=9;
 
 //replace with mac address of your arduino
-byte mac[]= { 0x90, 0xA2, 0xDA, 0x00, 0x??, 0x?? };
-//NOTE The last four ? should be changed to 
+byte mac[]= { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? };
+//NOTE The ? should be changed to 
 //the letters or numbers on your shield
 
 EthernetServer server(80);
@@ -156,7 +132,7 @@ void htmlend(EthernetClient client) {
 
 Now it is time to control the Arduino in the example above from another Arduino. The Arduino that will be *controlled* will use exactly the same sketch as the in example above. This Arduino is the web server. 
 
-The Arduino that will *control* will instead act as web client. That means that it acts as an automatic web browser in the same way as the standard web browser from above. 
+The Arduino that *control* will instead act as web client. That means that it acts as an automatic web browser in the same way as the standard web browser from above. 
 
 A push button should be connected to the pin 9 of the controlling Arduino. We will now use an internal pull up resistor meaning that we can connect the push button directly between pin 9 and GND. Pushing the button on the client will turn on or off the LED on the server. Here is the web client sketch: 
 
@@ -169,8 +145,8 @@ A push button should be connected to the pin 9 of the controlling Arduino. We wi
 
 int buttonPin=9;
 
-byte mac[] = { 0x90, 0xA2, 0xDA, 0x00, 0x??, 0x?? }; 
-//NOTE The last four ? should be changed to 
+byte mac[] = { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? }; 
+//NOTE The ? should be changed to 
 //the letters or numbers on your shield
 
 int ledState=LOW;
@@ -259,9 +235,177 @@ void httpRequest() {
 }
 {% endhighlight %}
 
-##Challenge: Control a servo over the web
+##Connecting to Xively
 
-Try to combine what we have done so far so that the servo on one Arduino can be controlled by a web browser or by another Arduino. 
+Xively is a cloud based data logging service. It is easy to send data from the Arduino to Xively. Xively also offers the possibility to add *triggers* that can for example make http posts when a sensor value exceeds a certain value. 
+
+Start by logging in to <http://xively.com>. Add a device, then add a channel for that device. Name the channel `sensor1` (you can name it something else, but then you must make some changes to the Arduino sketch below). 
+
+Note the API key and Feed ID for this channel. These values will go into this Arduino sketch:
+
+{% highlight c++ %}
+//this is a slight modification of the example
+//Ethernet->CosmClient, modified to work both for Arduino Uno with ethernet shield and for Arduino Galileo
+
+#define DEBUG 1
+
+#if DEBUG
+  #define DEBUG_PRINTLN(x)  Serial.println(x)
+  #define DEBUG_PRINT(x) Serial.print(x)
+#else
+  #define DEBUG_PRINTLN(x)
+  #define DEBUG_PRINT(x)
+#endif
+
+
+#include <SPI.h>
+#include <Ethernet.h>
+char compile_date[] = __DATE__ " " __TIME__;
+
+byte mac[]= { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? };//change to your mac address. For the Galileo it can be 00 00 00 00 00 00
+
+unsigned long postingInterval=10000L; //milliseconds between connections 
+
+#define APIKEY         "xxxxxxxxxxxxxxxxxxxxxxxxxxx" // replace your xively api key here between double quotes
+#define FEEDID         0000000000 // replace your feed ID, without double quotes
+
+char server[] = "api.xively.com";
+
+EthernetClient client;
+unsigned long lastConnectionTime = 0;  // last time you connected to the server, in milliseconds
+boolean lastConnected=false;
+
+boolean initSucceeded=false;
+
+int led=3;
+
+boolean started=false;
+
+void setup() {
+  Serial.begin(9600);
+  DEBUG_PRINTLN(compile_date);
+  pinMode(led, OUTPUT);
+
+  flashLed(5);
+  
+  //ethernet stuff
+  if (Ethernet.begin(mac)==0) {
+    DEBUG_PRINTLN("ethernet init failed");
+    initSucceeded=false;
+  } else {
+    DEBUG_PRINTLN("ethernet init succeded");
+    initSucceeded=true;
+    DEBUG_PRINTLN(Ethernet.localIP());
+  }
+  delay(2000);
+  lastConnectionTime=millis();
+}
+
+void loop() {
+  int sensorReading=analogRead(0);
+
+  if(!client.connected() && (millis() - lastConnectionTime > postingInterval)) {
+    sendData(sensorReading);
+    lastConnectionTime=millis();
+  }  
+  
+  //if there are incoming bytes available 
+  // from the server, read them (if not buffer will be full and next connection will fail)
+  if (client.available()) {
+    started=true;
+    char c = client.read();
+    DEBUG_PRINT(c);
+  } 
+   
+
+  if (!client.connected() && lastConnected) { 
+    DEBUG_PRINTLN("stopping method 1");
+    client.stop();
+    started=false;
+  }
+  
+  //sometimes method 1 fails to stop the connection, at least on the Galileo version. 
+  //Use this second method as a fallback. 
+  if (started && !client.available()) {
+    DEBUG_PRINTLN("stopping method 2");
+    client.stop();
+    client.flush();
+    started=false;
+  }
+  
+  lastConnected = client.connected();
+  
+}
+
+void sendData(int thisData) {
+  //try to connect to web
+  DEBUG_PRINTLN("trying to connect");
+  if (client.connect(server, 80) && initSucceeded) {
+    DEBUG_PRINTLN("connected");
+    // Make a HTTP request:
+    client.print("PUT /v2/feeds/");
+    client.print(FEEDID);
+    client.println(".csv HTTP/1.1");
+    client.print("Host: ");
+    client.println(server);
+    client.print("X-PachubeApiKey: ");
+    client.println(APIKEY);
+    client.print("Content-Length: ");
+    // calculate the length of the sensor reading in bytes:
+    // 8 bytes for "sensor1," + number of digits of the data:
+    //NOTE: if channel called something with different length from sensor1, 8 must be changed
+    //to the new length of the channel, including the comma
+    int thisLength = 8 + getLength(thisData);
+    client.println(thisLength);
+    // last pieces of the HTTP PUT request:
+    client.println("Content-Type: text/csv");
+    client.println("Connection: close");
+    client.println();
+
+    // here's the actual content of the PUT request:
+    client.print("sensor1,"); //NOTE thisLength calculation above might have to be adjusted if name of channel is changed
+    client.println(thisData); //send to xively
+    DEBUG_PRINTLN(thisData); //print in serial monitor for debugging
+
+    flashLed(1); //indicate there was a successful connection
+  } 
+  else {
+    // if you didn't get a connection to the server:
+    DEBUG_PRINTLN("connection failed");       
+    client.stop();
+  }
+}
+
+int getLength(int someValue) {
+  // there's at least one byte:
+  int digits = 1;
+  // continually divide the value by ten, 
+  // adding one to the digit count for each
+  // time you divide, until you're at 0:
+  int dividend = someValue /10;
+  while (dividend > 0) {
+    dividend = dividend /10;
+    digits++;
+  }
+  // return the number of digits:
+  return digits;
+}
+
+void flashLed(int times) {
+  for (int j=0;j<times;j++){
+    for (int i=0;i<6;i++) {
+      digitalWrite(led,1-digitalRead(led));
+      delay(30);
+    }
+  }
+}
+{% endhighlight %}
+
+##Connection to Zapier
 
 
 
+
+##Challenge for next week
+
+Make processing sketch that reads and visualizes Xively data. More info coming soon. 
