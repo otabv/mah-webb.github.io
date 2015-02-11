@@ -403,8 +403,16 @@ void flashLed(int times) {
 
 ##Connection to Zapier
 
-
-
+- Log in to <http://zapier.com>
+- Make a new zap
+- Choose web hook as trigger
+- Choose something where you have an account as action, for example Twitter
+- Choose Catch hook as trigger method
+- Continue and copy the generated web hook url
+- Switch back to Xively and create a trigger. 
+- Add the web hook url to Xively and test the trigger. 
+- Go back again to Zapier and match up the web hook to for example Twitter. You can insert fields containing values from the Xively data stream. 
+- Name it and turn it on. You can now have a tweet automatically sent when a sensor value passes a certain threshold. 
 
 ##Challenge for next week
 
