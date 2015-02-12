@@ -12,11 +12,11 @@ Processing is a programming environment based on Java, that shares the same phil
 
 ## Preparations
 
-1. Install Processing on your computer (<http://processing.org>) and read the intro to processing at <http://www.processing.org/tutorials/gettingstarted/>
-2. Xively will send data in json format. Read this intro to json if you are not already familiar with json: http://www.w3schools.com/json/
-3. Read the json for processing reference at <http://www.processing.org/reference/JSONObject.html>
-4. Read about Xively data in json format at <https://xively.com/dev/docs/api/data/read/single_feed/>
-5. Read about Xively historical data at <https://xively.com/dev/docs/api/quick_reference/historical_data/>
+1. Install Processing on your computer (<http://processing.org>) and read the [intro to processing](http://www.processing.org/tutorials/gettingstarted/)
+2. Xively will send data in json format. Read this [intro to json](http://www.w3schools.com/json/) if you are not already familiar with json. 
+3. Read the [json for processing reference](http://www.processing.org/reference/JSONObject.html) 
+4. Read about [Xively data in json format](https://xively.com/dev/docs/api/data/read/single_feed/)
+5. Read about [Xively historical data](https://xively.com/dev/docs/api/quick_reference/historical_data/)
 
 ## Assignment
 
@@ -25,6 +25,14 @@ The assignment is as following: Connect your Arduino to some sensor (for example
 Modify the Processing sketch below so that it reads data from Xively for the last 24 hours and makes som kind of visualization of the data. 
 
 Submit your solution on It's learning not later than Monday 23 February 23.55. 
+
+The historical data is stored in a json array that is stored by the processing sketch in the file data.txt in the same folder as the sketch itself. Have a look at it to see the format. It might look something like this:
+
+{% highlight json %}
+{"id":190399412,"title":"testdevice","private":"false","feed":"https://api.xively.com/v2/feeds/190399412.json","status":"live","updated":"2015-02-12T14:02:07.902223Z","created":"2015-02-11T09:51:57.420430Z","creator":"https://xively.com/users/bop","version":"1.0.0","datastreams":[{"id":"sensor7","current_value":"645","at":"2015-02-12T14:02:07.851935Z","max_value":"1023.0","min_value":"0.0","datapoints":
+[{"value":"514","at":"2015-02-12T13:00:50.098185Z"},{"value":"516","at":"2015-02-12T13:01:52.775045Z"},{"value":"518","at":"2015-02-12T13:02:55.466381Z"},{"value":"521","at":"2015-02-12T13:03:58.144429Z"},{"value":"522","at":"2015-02-12T13:04:50.383877Z"},{"value":"525","at":"2015-02-12T13:05:53.097647Z"},{"value":"527","at":"2015-02-12T13:06:55.789043Z"},{"value":"529","at":"2015-02-12T13:07:58.469460Z"},{"value":"531","at":"2015-02-12T13:08:50.698089Z"},{"value":"533","at":"2015-02-12T13:09:53.367837Z"},{"value":"536","at":"2015-02-12T13:10:56.069740Z"},{"value":"538","at":"2015-02-12T13:11:58.753527Z"},{"value":"540","at":"2015-02-12T13:12:50.975844Z"}]
+}],"product_id":"n_IMzJrRIGDCK_7s8khZ","device_serial":"XYXZ2NDKRAHH"}
+{% endhighlight %}
 
 {% highlight java %}
 //This sketch reads data from xively at a regular interval specified by updateinterval
