@@ -15,3 +15,5 @@ workshops:
       file: ws3
     - name: Connecting to web services
       file: ws4
+    - name: Reading Xively data with Processing
+      file: ws5

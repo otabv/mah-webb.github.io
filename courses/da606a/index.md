@@ -40,6 +40,10 @@ Useful links:
 
 - [Workshop 4](workshops/ws4.html)
 
+## Week 5 - Reading Xively data with Processing
+
+- This week you have to work on your own with the assignment described in [Workshop 5](workshops/ws5.html)
+
 [kursplan]: http://edu.mah.se/da606a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.DA606A-20151-TS432-
 [itslearning]: https://mah.itslearning.com

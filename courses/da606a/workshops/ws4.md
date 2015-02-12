@@ -4,7 +4,7 @@ code: da606a
 title: Workshop 4
 ---
 
-# Workshop 4 - Connecting to web service
+# Workshop 4 - Connecting to web services
 
 Today we will connect the Arduino to web services like <http://xively.com>, <http://zapier.com> and <http://twitter.com>.
 
@@ -134,7 +134,7 @@ Now it is time to control the Arduino in the example above from another Arduino.
 
 The Arduino that *control* will instead act as web client. That means that it acts as an automatic web browser in the same way as the standard web browser from above. 
 
-A push button should be connected to the pin 9 of the controlling Arduino. We will now use an internal pull up resistor meaning that we can connect the push button directly between pin 9 and GND. Pushing the button on the client will turn on or off the LED on the server. Here is the web client sketch: 
+A push button should be connected to the pin 8 of the controlling Arduino. We will now use an internal pull up resistor meaning that we can connect the push button directly between pin 8 and GND. Pushing the button on the client will turn on or off the LED on the server. Here is the web client sketch: 
 
 {% highlight c++ %}
 //This is an adapted version of the Example
@@ -143,7 +143,7 @@ A push button should be connected to the pin 9 of the controlling Arduino. We wi
 #include <SPI.h>
 #include <Ethernet.h>
 
-int buttonPin=9;
+int buttonPin=8;
 
 byte mac[] = { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? }; 
 //NOTE The ? should be changed to 
@@ -416,4 +416,4 @@ void flashLed(int times) {
 
 ##Challenge for next week
 
-Make processing sketch that reads and visualizes Xively data. More info coming soon. 
+Make processing sketch that reads and visualizes Xively data. See [workshop 5](ws5.html) for more info.  
