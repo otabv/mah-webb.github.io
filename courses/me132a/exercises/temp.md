@@ -98,3 +98,14 @@ Största talet är 88<br>
 <br>&nbsp;
 <br>&nbsp;
 &copy; Bo Peterson, k3bope
+</div>
+
+
+{% highlight css %}
+<style type="text/css">
+#footer {
+	position:absolute;
+	bottom:0.5cm;
+}
+</style>
+{% endhighlight %}
