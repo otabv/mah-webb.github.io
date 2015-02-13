@@ -100,6 +100,7 @@ Största talet är 88<br>
 &copy; Bo Peterson, k3bope
 </div>
 
+Följande css kan användas för att placera sidfoten längst ned på sidan:
 
 {% highlight css %}
 <style type="text/css">
