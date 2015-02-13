@@ -6,16 +6,11 @@ title: Laboration 5
 
 # Laboration 5
 
-Syfte med laborationen:
+## Syfte med laborationen
 
+Att förstå hur olika kontrollstrukturer såsom for-loop och while-loop fungerar i PHP.
 
 ## Förberedelser:
-
-Syfte med laborationen:
-
-Att förstå hur olika kontrollstrukturer såsom for-loop och while-loop fungerar i PHP
-
-Förberedelser:
 
 - Läs sidorna 76-85 i boken. 
 
@@ -120,7 +115,7 @@ $days_in_months=array('januari'=>31,'februari'=>28,'mars'=>31,'april'=>30,'maj'=
 
 {% highlight html %}
 <h2>Foreach-exempel</h2>
-<table><tr><td>januari</td><td>31</td></tr>
+<table border="1"><tr><td>januari</td><td>31</td></tr>
 <tr><td>februari</td><td>28</td></tr>
 <tr><td>mars</td><td>31</td></tr>
 <tr><td>april</td><td>30</td></tr>
@@ -139,7 +134,7 @@ Resultatet kan då se ut så här:
 
 <div style="border:2px solid black;padding:20px">
 <h2>Foreach-exempel</h2>
-<table><tr><td>januari</td><td>31</td></tr>
+<table border="1"><tr><td>januari</td><td>31</td></tr>
 <tr><td>februari</td><td>28</td></tr>
 <tr><td>mars</td><td>31</td></tr>
 <tr><td>april</td><td>30</td></tr>
@@ -178,9 +173,9 @@ include 'singers.html.php';
 {% endhighlight %}
 
 
-OBS att denna fil inte ska innehålla någon html-kod utanför PHP-koden, dvs ingen inledande !DOCTYPE etc.
+OBS att denna fil inte ska innehålla någon html-kod utanför PHP-koden, dvs ingen inledande `<!doctype html><html>` etc.
 
-!DOCTYPE etc ska istället finnas i filen *singers.html.php* i samma mapp som *index.php* som i stort sett är identisk med count.html.php i boken:
+`<!doctype html><html>` ska istället finnas i filen *singers.html.php* som i stort sett är identisk med count.html.php i boken. Filen måste ligga i samma mapp som *index.php*. 
 
 {% highlight html+php %}
 <!doctype html>
