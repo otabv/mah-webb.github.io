@@ -48,7 +48,7 @@ Lärare på kursen:
 
 ### Vecka 8 - Loopar, include
 
-- Ingen föreläsning
+- Ingen föreläsning. Förbered istället genom att läsa s. 76-85 i boken. Börja längst ned på s. 76 där det står om *while-loopar*.
 - [Laboration 5](exercises/lab5.html)
 
 [kursplan]: http://edu.mah.se/me132a#Syllabus
