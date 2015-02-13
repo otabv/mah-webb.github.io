@@ -28,4 +28,6 @@ exercises:
       file: lab3
     - name: Laboration 4
       file: lab4
+    - name: Laboration 5
+      file: lab5
 
