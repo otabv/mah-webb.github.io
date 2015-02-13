@@ -26,13 +26,12 @@ Förberedelser:
 Lämna in följande
 
 - Alla php-filer ihopzippade
-- Svara på eventuella frågor
 
 OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen ddwap/me132a/lab5.
 
 ##Uppgift 1
 
-Gör en PHP-fil som heter upp1.php som innhåller en array med 5 element. Varje element ska innehålla ett namn. Skriv PHP-kod som **med en while-loop** genererar följande HTML-kod, dvs kod som ger en punktlista:
+Gör en PHP-fil som heter upp1.php som innhåller en array med 5 element. Varje element ska innehålla ett namn. Skriv PHP-kod som med en **while-loop** genererar följande HTML-kod, dvs kod som ger en punktlista:
 
 {% highlight html %}
 <ul>
@@ -47,7 +46,15 @@ Gör en PHP-fil som heter upp1.php som innhåller en array med 5 element. Varje 
 
 där Namn 1 - Namn 5 ska vara de namn som finns i arrayen. Resulterande webbsida skulle till exempel kunna se ut så här:
 
-xxx bild 
+<div style="border:2px solid black">
+<ul>
+<li>Beyoncé Knowles</li>
+<li>Alicia Keys</li>
+<li>Jay-Z</li>
+<li>Lil&#39; Wayne</li>
+<li>Lill Babs</li>
+</ul>
+</div>
 
 
 
@@ -55,7 +62,7 @@ Det är viktigt att utskriften uppdateras om arrayen med namn uppdateras dvs om 
 
 ## Uppgift 2
 
-Gör en fil upp2.php som istället skriver ut namn från en array **med en for-loop** som en numrerad lista:
+Gör en fil upp2.php som istället skriver ut namn från en array med en **for-loop** som en numrerad lista:
 
 {% highlight html %}
 <ol>
@@ -68,17 +75,35 @@ Gör en fil upp2.php som istället skriver ut namn från en array **med en for-l
 {% endhighlight %}
 
 
-xxx bild
+Resultatet kan se ut så här:
 
-
-
+<div style="border:2px solid black">
+<ol>
+<li>Beyoncé Knowles</li>
+<li>Alicia Keys</li>
+<li>Jay-Z</li>
+<li>Lil&#39; Wayne</li>
+<li>Lill Babs</li>
+</ul>
+</div>
 
 ## Uppgift 3
 
-Gör en php-sida som denna gången döps till index.php och som läggs i katalogen upp3 i lab 5. Denna sida ska använda en for-loop för att skapa en tabell med två kolumner:
-
+Gör en php-sida upp3.php. Denna sida ska ocks använda en **for-loop**, men nu ska en tabell med två kolumner skapas. Följande HTML-kod ska skapas av PHP:
 
 {% highlight html %}
+<table border="1">
+<tr><td>1</td><td>Beyoncé Knowles</td></tr>
+<tr><td>2</td><td>Alicia Keys</td></tr>
+<tr><td>3</td><td>Jay-Z</td></tr>
+<tr><td>4</td><td>Lil&#39; Wayne</td></tr>
+<tr><td>5</td><td>Lill Babs</td></tr>
+</table>
+{% endhighlight %}
+
+Resultatet kan se ut så här:
+
+<div style="border:2px solid black;padding:20px">
 <table border="1">
 <tr><td>1</td><td>Namn 1</td></tr>
 <tr><td>2</td><td>Namn 2</td></tr>
@@ -86,24 +111,17 @@ Gör en php-sida som denna gången döps till index.php och som läggs i katalog
 <tr><td>4</td><td>Namn 4</td></tr>
 <tr><td>5</td><td>Namn 5</td></tr>
 </table>
-{% endhighlight %}
-
-
-xxx bild
-
-
-
-**Fråga:** Hur ser en komplett URL ut för denna sida, där det inte framgår att det är en PHP-sida?
+</div>
 
 ##Uppgift 4
 
-for each
-xxx
+Nu ska en **for-each-loop** användas för att skapa en xxxx
+
 
 
 ##Uppgift 5
 
-Gör en php-sida som döps till index.php och som läggs i katalogen upp4 i lab 5. 
+Gör en php-sida som döps till index.php och som läggs i katalogen upp5 i lab 5. 
 Filen ska ha samma struktur som exemplet på sidan 84 i boken. 
 
 Sidan ska ska skapa en variabel, $output, som ska innehålla den kod som producerades i uppgift 1. Utgå från följande mall:
