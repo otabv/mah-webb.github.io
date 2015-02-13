@@ -84,8 +84,9 @@ Resultatet kan se ut så här:
 <li>Jay-Z</li>
 <li>Lil&#39; Wayne</li>
 <li>Lill Babs</li>
-</ul>
+</ol>
 </div>
+
 
 ## Uppgift 3
 
