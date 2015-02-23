@@ -51,6 +51,11 @@ Lärare på kursen:
 - Ingen föreläsning. Förbered istället genom att läsa s. 76-85 i boken. Börja längst ned på s. 76 där det står om *while-loopar*.
 - [Laboration 5](exercises/lab5.html)
 
+### Vecka 9 - Funktioner
+
+- [Föreläsning 6](lectures/lecture6.html)
+- [Laboration 6](exercises/lab6.html)
+
 [kursplan]: http://edu.mah.se/me132a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
 [itslearning]: https://mah.itslearning.com
