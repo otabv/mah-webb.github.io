@@ -17,3 +17,5 @@ workshops:
       file: ws4
     - name: Reading Xively data with Processing
       file: ws5
+    - name: Presentation of project
+      file: ws6

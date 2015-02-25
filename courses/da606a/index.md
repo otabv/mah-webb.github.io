@@ -48,3 +48,24 @@ Useful links:
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.DA606A-20151-TS432-
 [itslearning]: https://mah.itslearning.com
 
+## Week 6 - Getting internet access behind routers and Introduction to the project
+
+- [Workshop 6](workshops/ws6.html)
+
+## Week 7 - Project work
+
+- Workshop 7 - Supervision of project 
+
+## Week 8 - Project work
+
+- Workshop 8 - Supervision of project 
+
+## Week 9 - Project work
+
+- Workshop 9 - Supervision of project 
+
+## Week 10 - Project presentation
+
+- Workshop 10 - Presentation of project
+
+ 
