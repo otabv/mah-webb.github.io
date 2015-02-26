@@ -81,7 +81,7 @@ För att referera till *nina.jpg* anger vi
 
 För att referera till *index.html* anger vi
 
-example/index.html`
+`example/index.html`
 
 För att referera till *file3.html* anger vi
 
