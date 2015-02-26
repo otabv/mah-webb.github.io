@@ -16,6 +16,8 @@ exercises:
       file: E03
     - name: Laboration 4
       file: E04
+    - name: GitHub
+      file: E05
 
 # Projekt
 projects:
