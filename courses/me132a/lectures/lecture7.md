@@ -11,17 +11,17 @@ date: 2015-02-26
 ##Föreläsning 7
 
 ###Dagens innehåll- Filhantering 
-
+- Repetition av arrayer och loopar
  
 ###Filhantering
 
 Funktionen `scandir` listar alla filer och kataloger i en katalog och sparar dem i en array. 
 
-Exempel: mappen images innehåller följande filer. 
+Exempel: mappen *images* innehåller följande filer. 
 
 ![](im7/bild1.png)
 
-PHP-kod för att spara filnamn i en array $files och sedan skriva ut dem blir:
+PHP-kod för att spara filnamn i en array `$files` och sedan skriva ut dem blir:
 
 {% highlight php  startinline=True %}
 $files=scandir("images"); //$files blir en array med alla filnamn i mappen images
@@ -33,7 +33,7 @@ foreach ($files as $file) {
 
 ###Sökvägar
 
-För att öppna en fil som ligger i annan katalog måste man ange sökväg
+För att öppna en fil som ligger i annan katalog måste man ange sökväg.
 
 Antag att vi har en mapp som innehåller filen *file1.html* samt mapparna *images* och *example*.
 *images* innehåller filen *nina.jpg*. *example* innehåller filen *index.html* samt mappen *sub*. *sub* innehåller i sin tur filen *file3.html*.
@@ -42,11 +42,11 @@ Antag att vi har en mapp som innehåller filen *file1.html* samt mapparna *image
 
 ![](im7/bild2.png)
 
-För att referera till file3.html anger vi 
+För att referera till *file3.html* anger vi 
 
 `sub/file3.html`
 
-För att referera till file1.html anger vi
+För att referera till *file1.html* anger vi
 
 `../file1.html`
 
@@ -93,7 +93,7 @@ För att referera till *nina.jpg* anger vi
  
 ###Läsa in filer
 
-Funktionen file_get_contents` kan användas för att läsa in godtycklig fil i en php-variabel.
+Funktionen `file_get_contents` kan användas för att läsa in godtycklig fil i en php-variabel.
 
 **Exempel**
 
@@ -106,9 +106,9 @@ $str=file_get_contents("text.txt"); //$str innehåller nu texten från filen tex
 Följande funktioner är användbara för att hantera filer:
 
 - `file_exists` - kontrollerar om en fil finns
-- copy - kopierar fil
-- `unlink - raderar fil
-- file_put_contents` - sparar data i en fil
+- `copy` - kopierar fil
+- `unlink` - raderar fil
+- `file_put_contents` - sparar data i en fil
  
 ###Radbrytningar i textfiler
 
@@ -160,7 +160,6 @@ Värden i en array kan tilldelas på följande sätt:
 $drawer = array("nyckel","telefon","passagekort");
 {% endhighlight %} 
 
-
 Värden kan hämtas på följande sätt:
 
 {% highlight php  startinline=True %}
@@ -169,26 +168,25 @@ echo $drawer[1]; //skriver ut telefon
 echo $drawer[2]; //skriver ut passagekort
 {% endhighlight %} 
  
-Värden kan läggas till i en befintlig array:
+Värden kan läggas till i en befintlig array. Här skapas ett fjärde element (med index = 3) med innehållet plånbok:
 
 {% highlight php  startinline=True %}
 $drawer[3] = "plånbok";
 {% endhighlight %} 
 
-Här skapas ett fjärde element (med index = 3) med innehållet plånbok. 
-Man kan även utelämna index för att lägga till ett element i slutet:
+
+Man kan även utelämna index för att lägga till ett element i slutet. Här skapas ett femte element (om det redan fanns fyra) med innehållet klocka:
 
 {% highlight php  startinline=True %}
 $drawer[] = "klocka";
 {% endhighlight %} 
 
-Här skapas ett femte element (om det redan fanns fyra) med innehållet klocka.
-
 {% highlight php  startinline=True %}
-echo $drawer[3]; //skriver ut plånbok echo $drawer[4]; //skriver ut klocka
+echo $drawer[3]; //skriver ut plånbok 
+echo $drawer[4]; //skriver ut klocka
 {% endhighlight %} 
 
-Variabler kan användas som index:
+Variabler kan användas som index till en array:
 
 {% highlight php  startinline=True %}
 $i = 4;
@@ -216,17 +214,15 @@ foreach ($arrayvariabel as $variabel)
 **Exempel**
 
 {% highlight php  startinline=True %}
-for ($i=1; $i<=3; ++$i)
+for ($i=1; $i<=3; $i++)
 {
-echo "$i ";
+    echo "$i ";
 }
 {% endhighlight %} 
 
 Resultat:
 
-`1 2 3`
-
-skrivs ut.
+`1 2 3 `
 
 **Exempel**
 
@@ -247,8 +243,6 @@ Bertil
 Cesar
 {% endhighlight %}
 
-skrivs ut.
-
 **Exempel**
 
 Samma sak med foreach:
@@ -268,5 +262,4 @@ Bertil
 Cesar
 {% endhighlight %}
 
-skrivs ut.
  

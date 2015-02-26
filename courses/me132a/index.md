@@ -56,6 +56,11 @@ Lärare på kursen:
 - [Föreläsning 6](lectures/lecture6.html)
 - [Laboration 6](exercises/lab6.html)
 
+### Vecka 9 - Filhantering
+
+- [Föreläsning 7](lectures/lecture7.html)
+- [Laboration 7](exercises/lab7.html)
+
 [kursplan]: http://edu.mah.se/me132a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
 [itslearning]: https://mah.itslearning.com

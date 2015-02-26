@@ -15,6 +15,8 @@ lectures:
        file: lecture4
      - name: Föreläsning 6 (F 5 utgick)
        file: lecture6
+     - name: Föreläsning 7
+       file: lecture7
 
 
 
@@ -34,4 +36,6 @@ exercises:
       file: lab5
     - name: Laboration 6
       file: lab6
+    - name: Laboration 7
+      file: lab7
 
