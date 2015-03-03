@@ -18,6 +18,8 @@ exercises:
       file: E04
     - name: GitHub
       file: E05
+    - name: Laboration 5
+      file: E06
 
 # Projekt
 projects:
@@ -39,3 +41,5 @@ lectures:
       file: L05
     - name: Föreläsning 5
       file: L06
+    - name: Föreläsning 6
+      file: L07
