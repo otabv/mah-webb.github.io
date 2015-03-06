@@ -98,7 +98,7 @@ Källkoden ska se ut ungefär så här:
 <body>
 <h3>Stränghantering</h3>
 Dagens laborationshandledning finns färdig att 
-<a href="http://homeweb.mah.se/~k3bope/da130a/notes2011/public/lab7.pdf">ladda ned</a>.
+<a href="http://dvwebb.mah.se/k3bope/me132a/public2014/lab7.pdf">ladda ned</a>.
 </body>
 </html>
 {% endhighlight %}
