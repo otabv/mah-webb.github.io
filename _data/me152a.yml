@@ -20,6 +20,8 @@ exercises:
       file: E05
     - name: Laboration 5
       file: E06
+    - name: Laboration 6
+      file: E07
 
 # Projekt
 projects:
@@ -43,3 +45,5 @@ lectures:
       file: L06
     - name: Föreläsning 6
       file: L07
+    - name: Föreläsning 7
+      file: L08
