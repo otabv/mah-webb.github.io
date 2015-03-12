@@ -75,7 +75,7 @@ $_SESSION['sessionvariablename']
 
 Räknar antal besök på en site
 
-{% highlight html %}
+{% highlight html+php %}
 <?php
 //spara antal tidigare besök i variablen $visits eller sätt $visits till 0 om 
 //inga tidigare besök gjorts:
@@ -108,7 +108,7 @@ echo "Howdy partner, this is your visit number $visits to this site.";
 
 Räknar besök på en viss sida under en session.
 
-{% highlight html %}
+{% highlight html+php %}
 <?php
 session_start();
 ?>
