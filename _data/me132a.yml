@@ -44,4 +44,6 @@ exercises:
       file: lab7
     - name: Laboration 8
       file: lab8
+    - name: Laboration 9
+      file: lab9
 

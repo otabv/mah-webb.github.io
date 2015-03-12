@@ -66,6 +66,12 @@ Lärare på kursen:
 - [Föreläsning 8](lectures/lecture8.html)
 - [Laboration 8](exercises/lab8.html)
 
+### Vecka 11 - Cookies, sessions
+
+- [Föreläsning 9](lectures/lecture9.html)
+- [Laboration 9](exercises/lab9.html)
+
+
 
 [kursplan]: http://edu.mah.se/me132a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
