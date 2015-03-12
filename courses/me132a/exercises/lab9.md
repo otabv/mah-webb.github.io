@@ -28,23 +28,23 @@ OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i ka
 
 Uppgiften går ut på att göra en sida som sätter en cookie med namnet *visitorname* som håller reda på besökarens namn. Första gången man kommer till webbplatsen (dvs om det inte finns någon cookie med namnet *visitorname*) ska man bli tillfrågad om namnet. Om man sedan besöker sidan inom ett år ska cookien komma ihåg besökarens namn och visa det. 
 
-Första gången man går in på sidan */me132a/lab9/upp1/index.php* ska man se följande:
+Första gången man går in på sidan **index.php** ska man se följande:
 
 ![](im9/bild1.png)
 
-Om man fyller i sitt namn och klickar *continue* ska man komma vidare till sidan *setcookie.php* med följande utseende:
+Om man fyller i sitt namn och klickar *continue* ska man komma vidare till sidan **setcookie.php** med följande utseende:
 
 ![](im9/bild2.png)
 
-Sidan *setcookie.php* lagrar en det inmatade namnet i cookien *visitorname*. 
+Sidan setcookie.php lagrar en det inmatade namnet i cookien *visitorname*. 
 
-Nästa gång man går till sidan *index.php* ska man istället se följande:
+Nästa gång man går till sidan **index.php** ska man istället se följande:
 
 ![](im9/bild3.png)
 
-Sammanfattningsvis: Sidan *index.php* visar ett formulär om det inte finns någon cookie *visitorname*. Om det finns en cookie *visitorname* visas istället en välkomsthälsning där även namnet som är lagrat i cookien visas. 
+Sammanfattningsvis: Sidan **index.php** visar ett formulär om det inte finns någon cookie *visitorname*. Om det finns en cookie *visitorname* visas istället en välkomsthälsning där även namnet som är lagrat i cookien visas. 
 
-För att kunna testa lösningen behöver vi även en sida som tar bort cookien. Gör en sida *clearcookie.php* som tar bort cookien *visitorname* och visar följande:
+För att kunna testa lösningen behöver vi även en sida som tar bort cookien. Gör en sida **clearcookie.php** som tar bort cookien *visitorname* och visar följande:
 
 ![](im9/bild4.png)
 
@@ -66,7 +66,7 @@ Om man anger felaktigt användarnamn/lösenord blir resultatet av sidan **checku
 
 ![](im9/bild8.png)
 
-Om man istället anger korrekt lösenord blir resultatet av samma sida **checkuser.php**:****
+Om man istället anger korrekt lösenord blir resultatet av samma sida **checkuser.php**:
 
 ![](im9/bild9.png)
 
@@ -91,12 +91,13 @@ session_start();
 
 De olika sidorna ska sedan fungera enligt följande:
 
-- Sidan index.php ska kolla om sessionsvariabeln `$_SESSION['loggedin']` är sann. Isåfall är man inloggad och *Congratulations... * visas. Om `$_SESSION['loggedin']` är falsk ska man få meddelandet *You must log in first* och länk till inloggningssidan. 
-- Sidan login.php ska visa ett inloggningsformulär om man inte redan är inloggad. 
-- Sidan checkuser.php ska visa *Wrong user...* om man angivit fel användarnamn eller lösenord. Om man gett rätt lösenord ska *You are now logged in. Please continue to main page* med länk till index.php visas. Dessutom ska sessionsvariabeln `$_SESSION['loggedin']` tilldelas värdet *true*. Använd din egen *datoridentitet* som *användarnamn* och *qwerty* som *password*. 
-- Sidan logout.php ska avsluta sessionen så att man blir utloggad samt ge möjlighet till ny inloggning.
+- Sidan **index.php** ska kolla om sessionsvariabeln `$_SESSION['loggedin']` är sann. Isåfall är man inloggad och *Congratulations... * visas. Om `$_SESSION['loggedin']` är falsk ska man få meddelandet *You must log in first* och länk till inloggningssidan. 
+- Sidan **login.php** ska visa ett inloggningsformulär om man inte redan är inloggad. 
+- Sidan **checkuser.php** ska visa *Wrong user...* om man angivit fel användarnamn eller lösenord. Om man gett rätt lösenord ska *You are now logged in. Please continue to main page* med länk till index.php visas. Dessutom ska sessionsvariabeln `$_SESSION['loggedin']` tilldelas värdet *true*. Använd din egen *datoridentitet* som *användarnamn* och *qwerty* som *password*. 
+- Sidan **logout.php** ska avsluta sessionen så att man blir utloggad samt ge möjlighet till ny inloggning.
  
 ##Uppgift 3
+
 Uppgiften går ut på att testa olika sätt att pussla ihop strängar. Målet med alla sätten är att skapa html-koden
 
 {% highlight html %}
