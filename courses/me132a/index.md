@@ -71,7 +71,10 @@ Lärare på kursen:
 - [Föreläsning 9](lectures/lecture9.html)
 - [Laboration 9](exercises/lab9.html)
 
+### Vecka 11 - Skicka mail, skapa bilder, skapa pdf
 
+- [Föreläsning 10](lectures/lecture10.html)
+- [Laboration 10](exercises/lab10.html)
 
 [kursplan]: http://edu.mah.se/me132a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
