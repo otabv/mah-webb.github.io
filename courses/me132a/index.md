@@ -56,25 +56,77 @@ Lärare på kursen:
 - [Föreläsning 6](lectures/lecture6.html)
 - [Laboration 6](exercises/lab6.html)
 
-### Vecka 9 - Filhantering
+### Vecka 10 - Filhantering
 
 - [Föreläsning 7](lectures/lecture7.html)
 - [Laboration 7](exercises/lab7.html)
 
-### Vecka 10 - Filuppladdning mm
+### Vecka 11 - Filuppladdning mm
 
 - [Föreläsning 8](lectures/lecture8.html)
 - [Laboration 8](exercises/lab8.html)
 
-### Vecka 11 - Cookies, sessions
+### Vecka 12 - Cookies, sessions
 
 - [Föreläsning 9](lectures/lecture9.html)
 - [Laboration 9](exercises/lab9.html)
 
-### Vecka 11 - Skicka mail, skapa bilder, skapa pdf
+### Vecka 13 - Skicka mail, skapa bilder, skapa pdf
 
 - [Föreläsning 10](lectures/lecture10.html)
 - [Laboration 10](exercises/lab10.html)
+
+### Vecka 14
+
+Påsk-katten hälsar: Ingen undervisning
+
+![](eastercat.jpg)
+
+### Vecka 15 - Introduktion till databaser
+
+- Föreläsning 11
+- Laboration 11
+
+### Vecka 16 - Använda externa API
+
+- Föreläsning 12
+- Laboration 12
+
+### Vecka 17 - Felsökningstekniker samt projektintroduktion
+
+- Föreläsning 13
+- Laboration - projekthandledning
+- Projektbeskrivning
+
+### Vecka 18 - Viktiga verktyg såsom Git, Github mm
+
+- Föreläsning 14
+
+
+### Vecka 19 - Ramverk
+
+- Föreläsning 15
+- Laboration - projekthandledning
+
+
+### Vecka 20
+
+- Laboration - projekthandledning
+
+### Vecka 21
+
+- Laboration - projekthandledning
+
+### Vecka 22
+
+- Laboration - projekthandledning
+
+### Vecka 23
+
+- Projektredovisning för båda grupperna onsdag 3 juni kl 13.15-17.00
+
+
+
 
 [kursplan]: http://edu.mah.se/me132a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
