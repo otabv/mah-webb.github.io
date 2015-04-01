@@ -19,13 +19,14 @@ title: Laboration 11
 - Alla php-filer ihopzippade
 
 OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen *ddwap/me132a/lab11*
+
 ##Uppgift 1
 
-Utgångspunkten är tabellen **friends** från föreläsningsanteckningarna till föreläsning 11. 
+Utgångspunkten är tabellen *friends* från föreläsningsanteckningarna till föreläsning 11. 
 
-Skriv en PHP-fil *create.php* som skapar tabellen **friends** med hjälp av PHP-koden i exemplet *Skapa databas med PHP* i föreläsningsanteckningarna. Ladda upp filen på servern och öppna den sedan med en webbläsare.
+Skriv en PHP-fil *create.php* som skapar tabellen *friends* med hjälp av PHP-koden i exemplet *Skapa databas med PHP* i föreläsningsanteckningarna. Ladda upp filen på servern och öppna den sedan med en webbläsare.
 
-Om allt funkar kommer en databas med namnet **friendbase** och tabellen **friends** skapats. OBS: denna sida behöver man inte öppna igen, tabellen behöver bara skapas en enda gång. 
+Om allt funkar kommer en databas med namnet *friendbase* och tabellen *friends* skapats. OBS: denna sida behöver man inte öppna igen, tabellen behöver bara skapas en enda gång. 
 
 Skapa sedan ett formulär i en fil med namnet index.html. Formuläret ska innehålla tre fält, id, name och email. 
 
@@ -33,8 +34,8 @@ Skapa sedan ett formulär i en fil med namnet index.html. Formuläret ska inneh�
 
 När man klickar send ska man komma vidare till sidan *insert.php* som har två uppgifter:
 
-1 Lägga till en rad i tabellen med det namn och epostadress som skrivits in i formuläret
-2 Visa alla namn och adresser som finns i tabellen
+1. Lägga till en rad i tabellen med det namn och epostadress som skrivits in i formuläret
+2. Visa alla namn och adresser som finns i tabellen
 
 För varje namn som läggs till i formuläret tillkommer en rad i databasen, och alla hittills inlagda namn visas.
 
