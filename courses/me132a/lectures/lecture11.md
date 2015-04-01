@@ -20,7 +20,7 @@ Introduktion till databaser
 - Databaser gör det möjligt att komma åt informationen på flera sätt
 - Innehåll i databaser kan sökas, sorteras mm
 
-Det finns olika typer av databaser, bland annat relationsdatabaser, objektdatabaser och och grafdatabaser. Vi kommer endast att titta översiktligt på relationsdatabaser.
+Det finns olika typer av databaser, bland annat relationsdatabaser, objektdatabaser  och grafdatabaser. Vi kommer endast att titta översiktligt på relationsdatabaser.
 
 ###Relationsdatabaser
 
@@ -99,12 +99,11 @@ SELECT * FROM tabellnamn WHERE
 kolumnnamn3='Columbia'
 {% endhighlight %}
 
-**Exempel: skapa tabellen friends
+**Exempel: skapa tabellen friends**
 
 {% highlight mysql %}
 CREATE TABLE friends
-(id INTEGER PRIMARY KEY NOT NULL, name TEXT,
-email TEXT)
+(id INTEGER PRIMARY KEY NOT NULL, name TEXT, email TEXT)
 {% endhighlight %}
 
 
@@ -127,7 +126,7 @@ INSERT INTO friends (id,name,email) VALUES
 (3,'KRS-1','krs@one.com')
 {% endhighlight %}
 
-###Exempel: söka rader**
+**Exempel: söka rader**
 
 {% highlight mysql %}
 SELECT email FROM friends WHERE name='Wyclef Jean'
@@ -135,28 +134,16 @@ SELECT email FROM friends WHERE name='Wyclef Jean'
  
 ###DBMS Databese management systems
 
-Det finns många olika så kallade Database Management
+Det finns många olika så kallade Database Management Systems, DBMS, till exempel:
 
-Systems, DBMS, till exempel:
-
-SQLite - väldigt enkel men begränsad, gratis. Används av
-
-mobilappar, HTML5
-
-MySQL - mycket vanlig, kraftfull, gratis. Används bland annat
-
-av WordPress.
-
-PostgreSQL - också vanlig, kraftfull, gratis
-
-Oracle - mycket kraftfull, dyr, stora komersiella system
+- SQLite - väldigt enkel men begränsad, gratis. Används av ofta av mobilappar
+- MySQL - mycket vanlig, kraftfull, gratis. Används bland annat av WordPress.
+- PostgreSQL - också vanlig, kraftfull, gratis
+- Oracle - mycket kraftfull, dyr, stora kommersiella system
 
 ###PHP och databaser
 
-I denna kursen kommer vi att använda en av de allra enklaste
-
-databashanterarna, SQLite. I fortsättningskurs kommer vi att använda den mer kraftfulla MySQL. SQL-kommandon för båda
-är i stort sett desamma.
+I denna kursen kommer vi att använda en av de allra enklaste, databashanterarna, SQLite. I fortsättningskurs kommer vi att använda den mer kraftfulla MySQL. SQL-kommandon för båda är i stort sett desamma.
 
 **Exempel: skapa databas med PHP**
 
@@ -187,7 +174,7 @@ catch (PDOException $e) {
 {% endhighlight %}
 
 
-**Exempel: lägga in rader i tabell me PHP**
+**Exempel: lägga in rader i tabell med PHP**
 
 {% highlight php startinline=True %}
 <?php
@@ -251,8 +238,6 @@ while ($row = $results->fetch()) {
 ?>
 {% endhighlight %}
 
-Autoincrement
-
 ###Autoincrement och primärnyckel
 
 {% highlight mysql %}
@@ -262,3 +247,4 @@ email TEXT)
 {% endhighlight %}
 
 Primärnyckeln får automatiskt ett unikt värde. Vanligtvis startar det på 1, och blir sedan 2, 3 osv. 
+
