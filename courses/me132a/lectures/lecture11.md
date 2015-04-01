@@ -99,7 +99,7 @@ SELECT * FROM tabellnamn WHERE
 kolumnnamn3='Columbia'
 {% endhighlight %}
 
-**Exempel: skapa tabellen friends**
+**Exempel: Skapa tabellen friends**
 
 {% highlight mysql %}
 CREATE TABLE friends
@@ -115,7 +115,7 @@ CREATE TABLE friends
 
 `TEXT` att kolumnen innehåller text
 
-**Exempel : lägga till rader**
+**Exempel : Lägga till rader**
 
 {% highlight mysql %}
 INSERT INTO friends (id,name,email) VALUES
@@ -126,7 +126,7 @@ INSERT INTO friends (id,name,email) VALUES
 (3,'KRS-1','krs@one.com')
 {% endhighlight %}
 
-**Exempel: söka rader**
+**Exempel: Söka rader**
 
 {% highlight mysql %}
 SELECT email FROM friends WHERE name='Wyclef Jean'
@@ -242,7 +242,8 @@ while ($row = $results->fetch()) {
 
 {% highlight mysql %}
 CREATE TABLE friends
-(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT,
+(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+name TEXT,
 email TEXT)
 {% endhighlight %}
 

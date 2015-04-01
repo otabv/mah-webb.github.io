@@ -84,8 +84,8 @@ Påsk-katten hälsar: Ingen undervisning
 
 ### Vecka 15 - Introduktion till databaser
 
-- Föreläsning 11
-- Laboration 11
+- [Föreläsning 11](lectures/lecture11.html)
+- [Laboration 11](exercises/lab11.html)
 
 ### Vecka 16 - Använda externa API
 
