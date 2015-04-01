@@ -30,13 +30,13 @@ där `$additional_headers` vanligtvis måste innehålla en address till brevets 
 
 {% highlight php  startinline=True %}
 <?php
-//Ange vilken PHP-server som ska användas. Detta är ofta redan 
+//Ange vilken SMTP-server som ska användas. Detta är ofta redan 
 //konfigurerat på servern och behöver då inte anges
 ini_set("SMTP","smtp.drift.se");
 //Avsändaradress
-$from="bo.peterson@gmail.com";
+$from="some.valid@emailaddress.com";
 //Mottagaradress
-$to="bo.peterson@mah.se";
+$to="another.valid@emailaddress.com";
 $subject="Testmail";
 $message="Mail skickat med PHP ".date('Y-m-d H:i');
 //Avsändaradressen måste in i $additional_headers
