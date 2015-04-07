@@ -125,13 +125,13 @@ Från början, alltså innan man gjort klart funktionen show_question, visas bar
 
 ![Testshowquestion innan funktionen show_question är klar](images/testshowquestion.png)
 
-<div style="text-align:center">*Testshowquestion innan funktionen show_question är klar*</div>
+<div style="text-align:center">Testshowquestion innan funktionen show_question är klar</div>
 
 När funktionen show_question är klar visas ett formulär med en fråga.
 
 ![Testshowquestion när funktionen show_question är klar](images/testshowquestionfinished.png)
 
-<div style="text-align:center">*Testshowquestion när funktionen show_question är klar*</div>
+<div style="text-align:center">Testshowquestion när funktionen show_question är klar</div>
 
 Poängen med funktionen är att den ska kunna visa en godtycklig fråga. Om innehållet i variblerna `$question, $image och $alternative`  ändras så ska formuläret ändras. Testa till exempel att lägga till fler alternativ i variabeln `$alternative`. Då ska alla alternativ automatiskt läggas till. 
 
@@ -143,7 +143,7 @@ $alternative=array("ros","maskros","fyrklöver","tulpan","vitsippa");
 
 ![Testshowquestion när fler alternativ lagts till](images/testshowquestionextended.png)
 
-<div style="text-align:center">*Testshowquestion när fler alternativ lagts till*</div>
+<div style="text-align:center">Testshowquestion när fler alternativ lagts till</div>
 
 När du fått testshowquestion att fungera bör den skapa ett formulär med html-kod som ser ut ungefär så här:
 
@@ -165,7 +165,7 @@ När detta fungerar är det dags att göra sidorna start.php och question.php.
 
 ![Sidan start.php](images/startphp.png) 
 
-<div style="text-align:center">*Sidan start.php*</div>
+<div style="text-align:center">Sidan start.php</div>
 
 Sidan start.php innehåller också PHP-kod som lagrar alla frågor i sessionsvariabler. Följande sessionsvariabler kan definieras:
 
@@ -191,13 +191,13 @@ För att avgöra om man är på sidan första gången eller inte kan man använd
 
 ![Sidan question.php första gågen den visas](images/questionphp1.png)
 
-<div style="text-align:center">*Sidan question.php första gågen den visas*</div>
+<div style="text-align:center">Sidan question.php första gågen den visas</div>
 
 När man kommit till sista frågan och klickar nästa ska resultatet av quizen visas.
 
 ![Sidan question.php när alla frågor visats](images/questionphp2.png)
 
-<div style="text-align:center">*Sidan question.php när alla frågor visats*</div>
+<div style="text-align:center">Sidan question.php när alla frågor visats</div>
 
 För att visa resultatet finns en färdig funktion `find_most($array)` som hittar det tal som förekommer flest gånger i en array. Det svarsalternativ som man svarat flest gånger är också det blir resultatet på quizen. 
 
@@ -205,7 +205,7 @@ För VG måste även projektet kompletteras med ett formulär där man kan ange 
 
 ![Sidan question med epost-funktion](images/questionphp3.png)
 
-<div style="text-align:center">*Sidan question med epost-funktion*</div>
+<div style="text-align:center">Sidan question med epost-funktion</div>
 
 När man klickar skicka kommer man vidare till sidan sendmail.php. 
   
@@ -213,7 +213,7 @@ När man klickar skicka kommer man vidare till sidan sendmail.php.
  
 ![Sidan sendmail.php](images/sendmailphp.png)
 
-<div style="text-align:center">*Sidan sendmail.php*</div>
+<div style="text-align:center">Sidan sendmail.php</div>
 
 ## Projektalternativ 2: Meme-generator
 
@@ -263,15 +263,15 @@ Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/
 
 ![Startsida](images/meme1.png)
 
-<div style="text-align:center">*Startsida*</div>
+<div style="text-align:center">Startsida</div>
 
 ![Formulär för att lägga till text](images/meme2.png)
 
-<div style="text-align:center">*Formulär för att lägga till text*</div>
+<div style="text-align:center">Formulär för att lägga till text</div>
 
 ![Färdig bild med text](images/meme3.png)
 
-<div style="text-align:center">*Färdig bild med text*</div>
+<div style="text-align:center">Färdig bild med text</div>
 
 ## Projektalternativ 3: Egen idé
 
