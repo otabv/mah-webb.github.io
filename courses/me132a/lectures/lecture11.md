@@ -157,14 +157,14 @@ $base= new PDO("sqlite:$dbname");
 $base->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 //define sql-statement for creating a table with three columns
-$query = "CREATE TABLE friends (
+$sql = "CREATE TABLE friends (
           id INTEGER PRIMARY KEY NOT NULL,
           name text,            
           email text)";
 
 //execute the sql-statement
 try {
-    $base->exec($query);
+    $base->exec($sql);
     echo "table created";
 }
 catch (PDOException $e) {

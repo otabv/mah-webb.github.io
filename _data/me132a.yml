@@ -55,3 +55,8 @@ exercises:
     - name: Laboration 11
       file: lab11
 
+# Projekt
+projects:
+    - name: Projektbeskrivning
+      file: project
+      

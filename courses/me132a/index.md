@@ -96,7 +96,7 @@ Påsk-katten hälsar: Ingen undervisning
 
 - Föreläsning 13
 - Laboration - projekthandledning
-- Projektbeskrivning
+- [Projektbeskrivning](projects/project.html)
 
 ### Vecka 18 - Viktiga verktyg såsom Git, Github mm
 

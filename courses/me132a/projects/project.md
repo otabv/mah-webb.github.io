@@ -10,8 +10,6 @@ date: 2015-04-07
 
 ## Projektbeskrivning vt 2015
 
-### Allmänt om projektet
-
 Det finns tre olika projekt att välja mellan:
 
 1. Quiz. Se vidare beskrivning nedan.
@@ -24,7 +22,7 @@ Handledning kommer att ges under schemalagda laborationstillfällen varje vecka.
 
 ## Projektinlämning
 
-Följande ska lämnas in på it's learning senast xxx juni kl xxxx:
+Följande ska lämnas in på it's learning senast 2 juni kl 13:00:
 
 * Alla sidor med PHP-kod och HTML-kod ihopzippade.
 * En webbadress (url) till ett fungerande projekt. **OBS** Om adressen saknas går projeket ej att testa vilket automatiskt leder till underkänt. 
@@ -40,7 +38,7 @@ Följande ska lämnas in på it's learning senast xxx juni kl xxxx:
 
 ## Projektredovisning
 
-Projektet visas för lärare och övriga kursdeltagare den xxx juni kl xxx. Projektet ska vara fullt fungerande så att det kan visas och testas.
+Projektet visas för lärare och övriga kursdeltagare den 3 juni kl 13:15-17:00. Projektet ska vara fullt fungerande så att det kan visas och testas.
 
 ## Betygsbedömning
 
@@ -53,7 +51,7 @@ För väl godkänd krävs även tilläggskrav som beskrivs under de olika projek
 
 
 Projektet går ut på att skriva PHP-kod för en quiz. 
-Ett mini-exempel på hur resultatet av projektet kan se ut finns på <http://ddwap.mah.se/k3bope/me132a/projekt2014/quiz/start.php>
+Här finns ett mini-exempel på hur [resultatet av projektet kan se ut](http://ddwap.mah.se/k3bope/me132a/projekt2014/quiz/start.php).
 
 Det rekommenderas, men är inte tvunget, att använda följande struktur:
 
@@ -85,7 +83,7 @@ Följande beskrivning är en **rekommendation**. Om ni hellre vill lösa uppgift
 
 Det **rekommenderas varmt** att man börjar med att skriva en funktion för att visa en fråga.
 
-I filen functions.php (finns i <http://ddwap.mah.se/k3bope/me132a/public2014/projektfiler.zip>) finns en stomme till funktionen show_question som kan användas för att visa en fråga:
+I filen functions.php i [projektfiler.zip](projektfiler.zip) finns en stomme till funktionen show_question som kan användas för att visa en fråga:
 
 {% highlight php  startinline=True %}
 <?php
@@ -101,7 +99,7 @@ function show_question($question,$alternative,$image) {
 
 Raden `shuffle_assoc($alternative)` gör att radioknapparna med svarsalternativen kommer i slumpvis ordning. 
 
-I filen testshowquestion.php (finns i <http://ddwap.mah.se/k3bope/me132a/public2014/projektfiler.zip>) finns **en fråga** förberedd:
+I filen testshowquestion.php i [projektfiler.zip](projektfiler.zip) finns **en fråga** förberedd:
 
 {% highlight html+php %}
 <!doctype html>
@@ -127,13 +125,13 @@ Från början, alltså innan man gjort klart funktionen show_question, visas bar
 
 ![Testshowquestion innan funktionen show_question är klar](images/testshowquestion.png)
 
-*Testshowquestion innan funktionen show_question är klar*
+<div style="text-align:center">*Testshowquestion innan funktionen show_question är klar*</div>
 
 När funktionen show_question är klar visas ett formulär med en fråga.
 
 ![Testshowquestion när funktionen show_question är klar](images/testshowquestionfinished.png)
 
-*Testshowquestion när funktionen show_question är klar*
+<div style="text-align:center">*Testshowquestion när funktionen show_question är klar*</div>
 
 Poängen med funktionen är att den ska kunna visa en godtycklig fråga. Om innehållet i variblerna `$question, $image och $alternative`  ändras så ska formuläret ändras. Testa till exempel att lägga till fler alternativ i variabeln `$alternative`. Då ska alla alternativ automatiskt läggas till. 
 
@@ -144,6 +142,8 @@ $alternative=array("ros","maskros","fyrklöver","tulpan","vitsippa");
 {% endhighlight %}
 
 ![Testshowquestion när fler alternativ lagts till](images/testshowquestionextended.png)
+
+<div style="text-align:center">*Testshowquestion när fler alternativ lagts till*</div>
 
 När du fått testshowquestion att fungera bör den skapa ett formulär med html-kod som ser ut ungefär så här:
 
@@ -164,6 +164,8 @@ När detta fungerar är det dags att göra sidorna start.php och question.php.
 **start.php** innehåller ett formulär där man anger sitt namn. 
 
 ![Sidan start.php](images/startphp.png) 
+
+<div style="text-align:center">*Sidan start.php*</div>
 
 Sidan start.php innehåller också PHP-kod som lagrar alla frågor i sessionsvariabler. Följande sessionsvariabler kan definieras:
 
@@ -189,13 +191,13 @@ För att avgöra om man är på sidan första gången eller inte kan man använd
 
 ![Sidan question.php första gågen den visas](images/questionphp1.png)
 
-*Sidan question.php första gågen den visas*
+<div style="text-align:center">*Sidan question.php första gågen den visas*</div>
 
 När man kommit till sista frågan och klickar nästa ska resultatet av quizen visas.
 
 ![Sidan question.php när alla frågor visats](images/questionphp2.png)
 
-*Sidan question.php när alla frågor visats*
+<div style="text-align:center">*Sidan question.php när alla frågor visats*</div>
 
 För att visa resultatet finns en färdig funktion `find_most($array)` som hittar det tal som förekommer flest gånger i en array. Det svarsalternativ som man svarat flest gånger är också det blir resultatet på quizen. 
 
@@ -203,7 +205,7 @@ För VG måste även projektet kompletteras med ett formulär där man kan ange 
 
 ![Sidan question med epost-funktion](images/questionphp3.png)
 
-*Sidan question med epost-funktion*
+<div style="text-align:center">*Sidan question med epost-funktion*</div>
 
 När man klickar skicka kommer man vidare till sidan sendmail.php. 
   
@@ -211,11 +213,11 @@ När man klickar skicka kommer man vidare till sidan sendmail.php.
  
 ![Sidan sendmail.php](images/sendmailphp.png)
 
-*Sidan sendmail.php*
+<div style="text-align:center">*Sidan sendmail.php*</div>
 
 ## Projektalternativ 2: Meme-generator
 
-Projektet går ut på att skriva PHP-kod som gör det möjligt att ladda upp en bild och sedan förse bilden med text i bildens överkant och nederkant. Man ska även kunna lägga till text till befintliga bilder. Detta projektet är inte lika styrt som quiz-alternativet, här gäller i större utsträckning att finna egna lösningar. Det finns en färdig funktion i filen memefunctions.php (finns i <http://ddwap.mah.se/k3bope/me132a/public2014/projektfiler.zip>) att tillgå som är till hjälp för att komplettera bild med text "av meme-typ" på bestämda koordinater:
+Projektet går ut på att skriva PHP-kod som gör det möjligt att ladda upp en bild och sedan förse bilden med text i bildens överkant och nederkant. Man ska även kunna lägga till text till befintliga bilder. Detta projektet är inte lika styrt som quiz-alternativet, här gäller i större utsträckning att finna egna lösningar. Det finns en färdig funktion i filen memefunctions.php i [projektfiler.zip](projektfiler.zip) att tillgå som är till hjälp för att komplettera bild med text "av meme-typ" på bestämda koordinater:
 
 {% highlight php  startinline=True %}
 <?php
@@ -241,7 +243,7 @@ function meme_text(&$im,$size,$x,$y,$font,$text) {
 ?>
 {% endhighlight %}
 
-Typsnittet som brukar användas är Impact. (finns i <http://ddwap.mah.se/k3bope/me132a/public2014/projektfiler.zip>). 
+Typsnittet som brukar användas är Impact. (finns i [projektfiler.zip](projektfiler.zip)). 
 
 Projektet måste stödja följande:
 
@@ -257,20 +259,20 @@ För VG krävs även:
 
 ### Miniexempel på meme-generator
 
-Följande miniexempel finns på <http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php>
+Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php) på en meme-generator. 
 
 ![Startsida](images/meme1.png)
 
-*Startsida*
+<div style="text-align:center">*Startsida*</div>
 
 ![Formulär för att lägga till text](images/meme2.png)
 
-*Formulär för att lägga till text*
+<div style="text-align:center">*Formulär för att lägga till text*</div>
 
 ![Färdig bild med text](images/meme3.png)
 
-*Färdig bild med text*
+<div style="text-align:center">*Färdig bild med text*</div>
 
 ## Projektalternativ 3: Egen idé
 
-Om du har en egen idé måste du kontakta kursansvarig <bo.peterson@mah.se> för att diskutera idén senast 2015-xx-xx.
+Om du har en egen idé måste du kontakta kursansvarig <bo.peterson@mah.se> för att diskutera idén senast 2015-04-24.
