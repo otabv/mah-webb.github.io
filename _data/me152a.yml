@@ -26,6 +26,8 @@ exercises:
       file: E08
     - name: Laboration 8
       file: E09
+    - name: Laboration 9
+      file: E10
 
 # Projekt
 projects:
