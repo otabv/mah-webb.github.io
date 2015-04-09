@@ -89,6 +89,12 @@ Påsk-katten hälsar: Ingen undervisning
 
 ### Vecka 16 - Använda externa API
 
+**Viktig förberedelse inför laborationen:**
+
+1. Gå in på flickr.com och öppna ett konto om du inte redan har ett
+2. Ladda upp minst 10 egna foton på flickr och tagga bilderna med sökord. Använd olika taggar men se till att flera bilder har samma tag.
+3. Läs igenom avsnittet API authentication i instruktionerna på [Search for photos using PHP and the flickr API](http://www.web-development-blog.com/archives/search-for-photos-using-php-and-the-flickr-api/) och skaffa en egen API key. Spara den på ett ställe så att du kommer åt den under labben. 
+
 - Föreläsning 12
 - Laboration 12
 
