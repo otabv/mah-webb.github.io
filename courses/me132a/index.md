@@ -95,8 +95,8 @@ Påsk-katten hälsar: Ingen undervisning
 2. Ladda upp minst 10 egna foton på flickr och tagga bilderna med sökord. Använd olika taggar men se till att flera bilder har samma tag.
 3. Läs igenom avsnittet API authentication i instruktionerna på [Search for photos using PHP and the flickr API](http://www.web-development-blog.com/archives/search-for-photos-using-php-and-the-flickr-api/) och skaffa en egen API key. Spara den på ett ställe så att du kommer åt den under labben. 
 
-- Föreläsning 12
-- Laboration 12
+- [Föreläsning 12](lectures/lecture12.html)
+- [Laboration 12](exercises/lab12.html)
 
 ### Vecka 17 - Felsökningstekniker samt projektintroduktion
 

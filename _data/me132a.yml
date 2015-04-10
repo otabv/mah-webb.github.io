@@ -25,6 +25,8 @@ lectures:
        file: lecture10
      - name: Föreläsning 11
        file: lecture11
+     - name: Föreläsning 12
+       file: lecture12
 
 
 
@@ -54,6 +56,8 @@ exercises:
       file: lab10
     - name: Laboration 11
       file: lab11
+    - name: Laboration 12
+      file: lab12
 
 # Projekt
 projects:
