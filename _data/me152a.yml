@@ -30,6 +30,8 @@ exercises:
       file: E10
     - name: Laboration 10
       file: E11
+    - name: Laboration 11
+      file: E12
 
 # Projekt
 projects:
