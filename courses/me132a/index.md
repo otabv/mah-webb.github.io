@@ -100,7 +100,7 @@ Påsk-katten hälsar: Ingen undervisning
 
 ### Vecka 17 - Felsökningstekniker samt projektintroduktion
 
-- Föreläsning 13
+- [Föreläsning 13](lectures/lecture13.html)
 - Laboration - projekthandledning
 - [Projektbeskrivning](projects/project.html)
 
