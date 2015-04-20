@@ -86,10 +86,10 @@ echo '<p>Welcome $name</p>'; //$name kommer att skrivas ut
 
 Utskriften blir 
 
-`
+{% highlight text %}
 Welcome Robyn Fenty
 Welcome $name
-`
+{% endhighlight %}
 
 Vanligtvis är det första alternativet man är intresserad dvs att *variabelns värde* används. 
 
