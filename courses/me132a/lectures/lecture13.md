@@ -74,11 +74,10 @@ blir utskriften
 
 `Testutskrift av city: Lund`
 
-**Många fel beror på felaktiga citationstecken**. Man kan ofta välj om man använder enkla eller dubbla citationstecken, men ibland är det avgörande vad man använder. Den stora skillnaden är att *variabelnamn* ersätts av *variabelns värde* om man använder dubbla citationstecken. Om man använder enkla citationstecken sker ingen ersättning, istället används variabelns namn. Ett exempel:
+**Många fel beror på felaktiga citationstecken**. Man kan ofta välja om man använder enkla eller dubbla citationstecken, men ibland är det avgörande vad man använder. Den stora skillnaden är att *variabelnamn* ersätts av *variabelns värde* om man använder dubbla citationstecken. Om man använder enkla citationstecken sker ingen ersättning, istället används variabelns namn. Ett exempel:
 
 {% highlight php  startinline=True %}
 $name = "Robyn Fenty";
-
 
 echo "<p>Welcome $name</p>"; //värdet av $name kommer att skrivas ut
 
@@ -87,9 +86,10 @@ echo '<p>Welcome $name</p>'; //$name kommer att skrivas ut
 
 Utskriften blir 
 
-    Welcome Robyn Fenty
-    
-    Welcome $name
+`
+Welcome Robyn Fenty
+Welcome $name
+`
 
 Vanligtvis är det första alternativet man är intresserad dvs att *variabelns värde* används. 
 
@@ -200,7 +200,7 @@ echo "</pre>";
 
 Utskriften blir
 
-`
+{% highlight text %}
 Testutskrift av list: (med print_r)
 Array
 (
@@ -222,7 +222,7 @@ array(4) {
   [3]=>
   int(123)
 }
-`
+{% endhighlight %}
 
 `print_r` skriver ut innehållet i en array, `var_dump` skriver även ut vilken typ innehållet har, i det här fallet *string* och *int* (*int* = *integer* = *heltal*). `<pre>`-taggarna i exemplet gör att testutskriften blir lättare att läsa. 
 
