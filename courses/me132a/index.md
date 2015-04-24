@@ -108,6 +108,13 @@ Påsk-katten hälsar: Ingen undervisning
 
 - Föreläsning 14
 
+Det finns inga föreläsningsanteckningar, men ett antal verktyg som professionella PHP-utvecklare använder kommer att gås igenom såsom: 
+
+- [git](http://git-scm.com)
+- [github](https://github.com)
+- [php storm](https://www.jetbrains.com/phpstorm/)
+- [markdown](http://daringfireball.net/projects/markdown/)
+
 
 ### Vecka 19 - Ramverk
 
