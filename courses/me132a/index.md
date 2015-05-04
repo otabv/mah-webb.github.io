@@ -115,12 +115,23 @@ Det finns inga föreläsningsanteckningar, men ett antal verktyg som professione
 - [php storm](https://www.jetbrains.com/phpstorm/)
 - [markdown](http://daringfireball.net/projects/markdown/)
 
-
 ### Vecka 19 - Ramverk
 
 - Föreläsning 15
-- Laboration - projekthandledning
 
+Olika ramverk kommer att gås igenom:
+
+- PHP-ramverk
+    - [Varför man ska använda PHP-ramverk](http://www.phpandstuff.com/articles/top-10-reasons-why-you-should-use-a-php-framework)
+    - [Slim](http://www.slimframework.com/)
+    - [Laravel](http://laravel.com)
+- JavaScript-ramverk
+    - [AngularJS](https://angularjs.org/)
+    - [Backbone](http://backbonejs.org/)
+- CSS-ramverk
+    - [Bootstrap](http://getbootstrap.com)
+
+- Laboration - projekthandledning
 
 ### Vecka 20
 
