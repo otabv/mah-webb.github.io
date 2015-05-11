@@ -135,7 +135,7 @@ Olika ramverk kommer att gås igenom:
 
 ### Vecka 20
 
-- Laboration - projekthandledning
+- Laboration - projekthandledning. **Handledningen tisdag 12 maj börjar först kl 15.00.**
 
 ### Vecka 21
 
