@@ -265,11 +265,11 @@ Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/
 
 {% highlight php  startinline=True %}
 function rescale(&$im,$height) {
-	$sx = imagesx($im);
-	$sy = imagesy($im);
-	$width = round($height * $sx / $sy);
-	$newim = imagecreatetruecolor($width, $height);
-	imagecopyresampled($newim, $im, 0, 0, 0, 0, $width, $height, $sx, $sy);
+    $sx = imagesx($im);
+    $sy = imagesy($im);
+    $width = round($height * $sx / $sy);
+    $newim = imagecreatetruecolor($width, $height);
+    imagecopyresampled($newim, $im, 0, 0, 0, 0, $width, $height, $sx, $sy);
     return $newim;
 }
 {% endhighlight %} 
