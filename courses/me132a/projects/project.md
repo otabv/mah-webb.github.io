@@ -259,7 +259,30 @@ För VG krävs även:
 
 ### Miniexempel på meme-generator
 
-Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php) på en meme-generator. 
+Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php) på en meme-generator.
+
+**Tillägg 2015-05-28** Några har efterlyst möjligheten att skala om en bild. Funktionen `rescale` kan används till det:
+
+{% highlight php  startinline=True %}
+function rescale(&$im,$height) {
+	$sx = imagesx($im);
+	$sy = imagesy($im);
+	$width = round($height * $sx / $sy);
+	$newim = imagecreatetruecolor($width, $height);
+	imagecopyresampled($newim, $im, 0, 0, 0, 0, $width, $height, $sx, $sy);
+    return $newim;
+}
+{% endhighlight %} 
+
+Lägg till funktionen i memefunctions-filen och anropa så här:
+
+{% highlight php  startinline=True %}
+//antag att ni läst in en bild från fil i variabeln $im, tex så här:
+$im=imagecreatefrompng($destination);
+
+//skala om bilden så att den får höjden 400 pixlar
+$im=rescale($im,400);
+{% endhighlight %}
 
 ![Startsida](images/meme1.png)
 
