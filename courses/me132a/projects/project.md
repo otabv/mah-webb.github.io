@@ -245,22 +245,6 @@ function meme_text(&$im,$size,$x,$y,$font,$text) {
 
 Typsnittet som brukar användas är Impact. (finns i [projektfiler.zip](projektfiler.zip)). 
 
-Projektet måste stödja följande:
-
-* Nya bilder måste kunna laddas upp och sparas
-* Meme-text ska kunna läggas till nyuppladdade eller tidigare uppladdade bilder
-* Färdig meme-bild ska sparas. Dessutom måste en länk till detta meme skapas så att man senare kan hitta den
-
-För VG krävs även:
-
-* ÅÄÖ ska hanteras korrekt.
-* Länk till bilden ska kunna mailas till godtycklig mailadress.
-* Länk till alla genererade bilder ska sparas i en databas. 
-
-### Miniexempel på meme-generator
-
-Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php) på en meme-generator.
-
 **Tillägg 2015-05-28** Några har efterlyst möjligheten att skala om en bild. Funktionen `rescale` kan används till det:
 
 {% highlight php  startinline=True %}
@@ -283,6 +267,23 @@ $im=imagecreatefrompng($destination);
 //skala om bilden så att den får höjden 400 pixlar
 $im=rescale($im,400);
 {% endhighlight %}
+
+Projektet måste stödja följande:
+
+* Nya bilder måste kunna laddas upp och sparas
+* Meme-text ska kunna läggas till nyuppladdade eller tidigare uppladdade bilder
+* Färdig meme-bild ska sparas. Dessutom måste en länk till detta meme skapas så att man senare kan hitta den
+
+För VG krävs även:
+
+* ÅÄÖ ska hanteras korrekt.
+* Länk till bilden ska kunna mailas till godtycklig mailadress.
+* Länk till alla genererade bilder ska sparas i en databas. 
+
+### Miniexempel på meme-generator
+
+Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php) på en meme-generator.
+
 
 ![Startsida](images/meme1.png)
 
