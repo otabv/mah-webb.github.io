@@ -38,7 +38,7 @@ Följande ska lämnas in på it's learning senast 2 juni kl 13:00:
 
 ## Projektredovisning
 
-Projektet visas för lärare och övriga kursdeltagare den 3 juni kl 13:15-17:00. Projektet ska vara fullt fungerande så att det kan visas och testas.
+Projektet visas för lärare och övriga kursdeltagare den 3 juni kl 13:15-17:00 i sal B353. Projektet ska vara fullt fungerande så att det kan visas och testas.
 
 ## Betygsbedömning
 
