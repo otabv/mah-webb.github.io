@@ -49,10 +49,6 @@ Dessutom måste följande finnas i en zip-fil:
 - Välkommenterad kod. 
 - Strukturerad kod med indragningar. 
 
-## Projektredovisning
-
-Färdigt projekt redovisas inför klassen onsdag 16 december. Projektet lämnas in på It's learning senast tisdag 15 december kl 12.00. 
-
 ## Projektförslag
 
 Följande uppgifter finns som förslag:

@@ -40,8 +40,7 @@ Om man klickar på ett djurnamn i resultatlistan, till exempel Katt, kommer man 
 
 Observera att denna sida hämtar information från alla tre tabellerna. 
 
-Handledning kommer att ges under labbtillfällena, men det krävs att ni jobbar med projektet även på egen hand. De tre php-filerna lämnas in på It's learning senast måndag 3 november kl 12.00. 
-
+Handledning kommer att ges under labbtillfällena, men det krävs att ni jobbar med projektet även på egen hand. 
 
 ##Bilaga: Bilder och sql-kod
 
