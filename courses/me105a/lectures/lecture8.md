@@ -25,7 +25,7 @@ li {text-align:left}
 ### Dagens innehåll
 
 - Normalisering - läs mer på <http://www.databasteknik.se/webbkursen/normalisering/index.html>
-- Export av data
+- Import av data
 
 ### Normalisering
 För att databaser ska vara säkra och effektiva krävs:- Frånvaro av redundans (undvik samma data upprepade gånger)- Minimalt antal null-värden (undvik tomma fält)- Hinder för att data går förloradeSträva efter att alla tabeller uppfyller tredje normalformen!### Funktionellt beroendeFunktionellt beroende mellan kolumner i en tabell innebär att en kolumn, eller en kombination av kolumner entydigt bestämmer en annan kolumn. **Exempel, funktionellt beroende**studentnamn | <u>studentid</u> | <u>labnr</u> | labstatus | postnr | stad--- | --- | --- Pär Pärsson | ad123456 | 1 | G | 22240 | LundStina Stenhammar | ad654321 | 1 | VG | 22240 | LundPär Pärsson | ad123456 | 2 | G | 22240 | LundOla Olasson | ad314159 | 1 | G | 20506 | MalmöOla Olasson | ad314159 | 2 | VG | 20506 | MalmöPär Pärsson | ad999999 | 1 | VG | 20507 | MalmöOBS att det finns två olika Pär Pärsson i tabellenExempel på funktionella beroenden: 

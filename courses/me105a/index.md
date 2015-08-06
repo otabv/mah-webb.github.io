@@ -16,8 +16,6 @@ Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T oc
 
 [www.databasteknik.se/webbkursen](http://www.databasteknik.se/webbkursen)
 
-Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte att beställa längre, så den utgår. 
-
 ## Nyttiga länkar
 
 * [Kursplan][kursplan]
@@ -64,7 +62,7 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 - [Laboration 6](exercises/lab6.html)
 
 
-### Vecka 42 - Export av data, introduktion till xml
+### Vecka 42 - Export av data, introduktion till xml och json
 
 - [Föreläsning 7](lectures/lecture7.html)
 - [Laboration 7](exercises/lab7.html)
@@ -72,24 +70,28 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 43 - Miniprojekt
 
-- Föreläsning 7b
+- Föreläsning 7b - mer om export, xml och json
 - Eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
+
+<!--från förra året:
+Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://www.w3schools.com/xml/default.asp), [xslt](http://www.w3schools.com/xsl/default.asp) och [json](http://www.w3schools.com/json/default.asp) är [w3schools](http://www.w3schools.com). Alla exempel från labben finns samlade i [lecture9.zip](lectures/lecture9.zip).
+-->
 
 ### Vecka 44 - Miniprojekt
 
 - Ingen föreläsning, eget arbete med miniprojektet
 - Handledning av miniprojekt under laborationstillfällena. 
-- Inlämning av miniprojekt på It's learning fredag 31 oktober kl 17.00
+- Inlämning av miniprojekt på It's learning fredag 30 oktober kl 17.00
 
 ### Vecka 45 - Import av data
 
 - [Föreläsning 8](lectures/lecture8.html)
 - [Laboration 8](exercises/lab8.html)
 
-### Vecka 46 - Mer xml, xslt, json
+### Vecka 46 - Från E/R-diagram till färdig databas
 
-- Föreläsning 9. Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://www.w3schools.com/xml/default.asp), [xslt](http://www.w3schools.com/xsl/default.asp) och [json](http://www.w3schools.com/json/default.asp) är [w3schools](http://www.w3schools.com). Alla exempel från labben finns samlade i [lecture9.zip](lectures/lecture9.zip).
+- Föreläsning 9
 - [Laboration 9](exercises/lab9.html)
 
 ### Vecka 47 - Projektstart
@@ -111,9 +113,9 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 51 - Projekt
 
-- Inlämning  17 december kl 12.00 och redovisning av projekt, torsdag 18 december kl 9.15-12.00. 
+- Inlämning 15 december kl 12.00 och redovisning av projekt, onsdag 16 december kl 13.15-17.00. 
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
-[schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=idag&resurser=k.ME105A-20142-TS342-
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-08-31&resurser=k.ME105A-20152-TS561-
 [itslearning]: https://mah.itslearning.com
 
