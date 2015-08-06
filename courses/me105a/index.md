@@ -4,7 +4,7 @@ code: me105a
 title: Databasbaserad publicering ME105A (15.0 hp)
 ---
 
-# Databasbaserad publicering ME105A
+# Databasbaserad publicering ME105A 2015
 
 Välkomna till Databasbaserad publicering. Information för kursen kommer i år att finnas på [mah-webb.github.io](http://mah-webb.github.io) istället för på Things I Teach. Inlämningar sker som vanligt på [It's learning][itslearning]. 
 
@@ -72,7 +72,8 @@ Boken **XML:Visual QuickStart Guide** finns med i kursplanen men den går inte a
 
 ### Vecka 43 - Miniprojekt
 
-- Ingen föreläsning, eget arbete med [miniprojektet](projects/miniproject.html). 
+- Föreläsning 7b
+- Eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
 
 ### Vecka 44 - Miniprojekt
