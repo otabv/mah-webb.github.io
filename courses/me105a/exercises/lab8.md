@@ -17,6 +17,7 @@ I förra labben gjorde vi en webbsida med produkterna i tabellen products:
 ![](im8/bild1.png)
 
 I denna labb ska vi göra ett liknande dokument med InDesign. Då måste vi först exportera innehållet i tabellen, som InDesign sedan kan importera. En sådan export påbörjades i förra labben, men måste kompletteras något.
+
 ##Uppgift 1
 
 Vi ska använda InDesigns inbyggda Data Merge-funktion för att importera data till InDesign. För att InDesign ska kunna använda data från databasen måste den tabb-separerade filen från förra labben kompletteras så att den dels innehåller en rubrikrad med namnet på de olika kolumnerna, dels en kolumn med sökväg till de olika bilderna. Kolumnnamn för bildkolumnen måste börja med ett @-tecken. Komplettera uppgift 2 från laboration 7 så att tab-filen får utseende enligt figur nedan. Skapa en fil */me105a/laboration8/uppgift1/index.php* som skapar filen *export.txt*:
@@ -38,25 +39,13 @@ Nu går det att dra de olika kolumnerna till textramaramarna och bilden till rek
 
 ![](im8/bild5.png)
 
-    
-
-
 Resultatet bör bli så här:
 
 ![](im8/bild6.png)
 
-
-
-
-
 Experimentera fritt med layouten i mallen och skapa nya kataloger:
 
-
 ![](im8/bild7.png)
-
-
-
-
 
 Lämna in minst två mallar och två resulterande kataloger. 
 
@@ -64,24 +53,18 @@ Lämna in minst två mallar och två resulterande kataloger.
 
 Data Merge-funktionen i InDesign är bra om man snabbt ska upprepa samma layout flera gånger, men räcker inte till för mer avancerade layout-uppgifter. Vi kommer nu att titta på en plug-in till InDesign som heter InData. Med InData kan man bland annat göra vilkorsstyrd import och på så vis få en bättre anpassad layout. Även här behöver vi en tabbseparerad exportfil, men med några viktiga skillnader jämfört med uppgift 1:
 
-- exportfilen ska *inte* innehålla en rubrikrrad. 
-- det får inte vara något inledande snedstreck i bildens sökväg. 
+- exportfilen ska *inte* innehålla en *rubrikrrad*. 
+- det får *inte* vara något *inledande snedstreck* i bildens sökväg. 
 
 Gör en ny php-fil i mappen */me105a/laboration8/uppgift2/* som skapar filen *export.txt* enligt nedan:
 
 ![](im8/bild8.png)
-
-
-
-
 
 Ladda ner export.txt till mappen uppgift2 och **byt namn på den till export.tab**. En bugg i den installerade versionen av InData gör att den inte kan öppna .txt-filer. 
 
 Skapa ett nytt InDesign-dokument, döpt till *mall.indd*, och placerat i mappen *uppgift2*. Här är det viktigt att **Primary Text Frame är förbockat**, att **Facing Pages inte är förbockat* och att *två kolumnner* är valda:
 
 ![](im8/bild9.png)
-
-
 
 När detta är gjort ska vi göra en **InData-prototyp**, dvs en mall för hur vår exportfil ska visas. Eftersom vi inte har tabellrubriker i vår exportfil måste vi börja med att tala om vilka kolumner vi har. Gör det genom att först i InDesign-dokumentet, på sidan 1, skriva:
 
@@ -101,7 +84,6 @@ Sedan ska vi presentera hur vår bild ska visas. Skriv på nästa två rader:
 Andra raden säger att bilden ska visas i rätt bredd-höjd-förhållande och rymmas i angiven bildram. 
 Slutligen ska vi tala om vilka fält vi vill visa, och hur de ska visas. Genom att skriva «kolumnnamn»
 definierar vi hur kolumnerna ska visas. Här kan vi även ändra typsnitt och annan formattering, som sedan kommer att visas i det färdiga dokumentet. 	
-
 {% highlight text %}
 «prod_name»
 «prod_desc»
@@ -112,23 +94,13 @@ Slutligen ska vi lägga till en bild, vilket är lite bökigt. Börja med att l�
 
 ![](im8/bild10.png)
 
-
-
-
 Ändra storlek och typsnitt på *prod_name*, *prod_desc* och *prod_price*.
 
-
 ![](im8/bild11.png)
-
-
-
-
-
 
 Nu är snart dags att importera data, **men allra först måste dokumentet sparas, annars går ändringar förlorade!** 
 
 Välj **InData->Import from file** och välj filen export.tab. Det är **mycket viktigt** att välja **Tab-delimited.**
- 
 
 ![](im8/bild12.png)
 
