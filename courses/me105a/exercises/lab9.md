@@ -86,7 +86,6 @@ Skapa ett InDesign-dokument precis som i laboration 8, uppgift 2, lägg in ny In
 
 ![](im9/bild5.png)
 
-
 ## Uppgift 3 - frivillig men rekommenderad
 
 ej klar

@@ -4,6 +4,21 @@ code: me105a
 title: Självstudier 1
 ---
 
+
+<script>
+  var toggle = function() {
+  var mydiv = document.getElementById('answer1');
+  if (mydiv.style.display === 'block' || mydiv.style.display === '')
+    mydiv.style.display = 'none';
+  else
+    mydiv.style.display = 'block'
+  }
+</script>
+
+<div id="answer1">asdf</div>
+<input type="button" value="visa/göm svar" onclick="toggle();"></input>
+
+
 #Självstudier 1
 
 ##Uppgift 1
@@ -34,6 +49,9 @@ th, td {padding: 6px;}
 Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
 
 ## Lösning till uppgift 1
+
+
+
 
 {% highlight sql %}
 CREATE TABLE classroom (
