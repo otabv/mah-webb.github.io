@@ -14,6 +14,9 @@ title: Självstudier 1
     mydiv.style.display = 'block'
   }
 </script>
+<style>
+#answer1 {display:none}
+</style>
 
 
 
