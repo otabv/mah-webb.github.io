@@ -6,7 +6,7 @@ title: Självstudier 1
 
 
 <script>
-  var toggle = function() {
+  var toggle1 = function() {
   var mydiv = document.getElementById('answer1');
   if (mydiv.style.display === 'block' || mydiv.style.display === '')
     mydiv.style.display = 'none';
@@ -15,8 +15,6 @@ title: Självstudier 1
   }
 </script>
 
-<div id="answer1">asdf</div>
-<input type="button" value="visa/göm svar" onclick="toggle();"></input>
 
 
 #Självstudier 1
@@ -50,16 +48,17 @@ Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du fö
 
 ## Lösning till uppgift 1
 
+<input type="button" value="visa/göm lösning 1" onclick="toggle1();">
 
-
-
+<div id="answer1">
 {% highlight sql %}
 CREATE TABLE classroom (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   roomnumber CHAR(4),
   seats INT
 )
-{% endhighlight %}## Lösning till uppgift 2
+{% endhighlight %}</div>
+## Lösning till uppgift 2
 	
 SQL för att lägga till rum:
 
