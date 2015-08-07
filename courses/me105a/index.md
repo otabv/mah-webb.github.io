@@ -6,7 +6,7 @@ title: Databasbaserad publicering ME105A (15.0 hp)
 
 # Databasbaserad publicering ME105A 2015
 
-Välkomna till Databasbaserad publicering. Information för kursen kommer i år att finnas på [mah-webb.github.io](http://mah-webb.github.io) istället för på Things I Teach. Inlämningar sker som vanligt på [It's learning][itslearning]. 
+Välkomna till Databasbaserad publicering. Information för kursen finns på [mah-webb.github.io](http://mah-webb.github.io). Inlämningar sker som vanligt på [It's learning][itslearning]. 
 
 ## Kurslitteratur
 
@@ -70,12 +70,12 @@ Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T oc
 
 ### Vecka 43 - Miniprojekt
 
-- Föreläsning 7b - mer om export, xml och json
+- Föreläsning 8 - mer om export, xml och json
 - Eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
 
 <!--från förra året:
-Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://www.w3schools.com/xml/default.asp), [xslt](http://www.w3schools.com/xsl/default.asp) och [json](http://www.w3schools.com/json/default.asp) är [w3schools](http://www.w3schools.com). Alla exempel från labben finns samlade i [lecture9.zip](lectures/lecture9.zip).
+Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://www.w3schools.com/xml/default.asp), [xslt](http://www.w3schools.com/xsl/default.asp) och [json](http://www.w3schools.com/json/default.asp) är [w3schools](http://www.w3schools.com). Alla exempel från labben finns samlade i [lecture8.zip](lectures/lecture8.zip).
 -->
 
 ### Vecka 44 - Miniprojekt
@@ -86,12 +86,13 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 
 ### Vecka 45 - Import av data
 
-- [Föreläsning 8](lectures/lecture8.html)
+- [Föreläsning 9](lectures/lecture9.html)
 - [Laboration 8](exercises/lab8.html)
 
 ### Vecka 46 - Från E/R-diagram till färdig databas
 
-- Föreläsning 9
+<!--här ska det nog in något om att lägga till data i flera tabeller a la projkettips-->
+- Föreläsning 10
 - [Laboration 9](exercises/lab9.html)
 
 ### Vecka 47 - Projektstart

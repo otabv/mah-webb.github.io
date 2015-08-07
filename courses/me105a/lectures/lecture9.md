@@ -1,9 +1,9 @@
 ---
 layout: instructions
 code: me105a
-title: Föreläsning 8
+title: Föreläsning 9
 controls: false
-date: 2014-11-03
+date: 2015-08-07
 theme: bopeterson/cleaver-lecture
 ---
 
@@ -20,7 +20,7 @@ li {text-align:left}
 
 # Databasbaserad publicering
 
-## Föreläsning 8
+## Föreläsning 9
 
 ### Dagens innehåll
 
