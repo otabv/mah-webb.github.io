@@ -29,6 +29,7 @@ Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som f
 
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
+
 <div id="answer1" style="display:none">
 
 <p>showrooms.php:</p>
@@ -62,6 +63,7 @@ Vi har inte gått igenom hur man sorterar ett sökresultat från en databas än.
 
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 1" onclick="toggle('answer2');">
+
 <div id="answer2" style="display:none">
 
 <p>Ändra SELECT-raden till</p>
