@@ -25,6 +25,28 @@ th, td {padding: 6px;}
 
 #Självstudier 3
 
+
+Testar vilt
+
+
+En indforad
+
+En till inforad
+{: .info}
+
+
+Hej
+Hopp
+Faderalla
+{: .info}
+
+<style>
+class test {font-family:"verdana"}
+</style>
+
+Blir detta verdana?
+{: .test}
+
 ##Uppgift 1
 
 Rita E/R-diagram för en databas som ska innehålla två entiteter:
