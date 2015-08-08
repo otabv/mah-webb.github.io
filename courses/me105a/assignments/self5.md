@@ -15,7 +15,7 @@ th, td {padding: 6px;}
 
 ##Uppgift 1 
 
-Ange SQL för att lista alla rum inklusive vilken byggnad de ligger i. 
+Ange SQL för att lista alla rum inklusive vilken byggnad de ligger i. xxxxxxx
  
 ##Uppgift 2
 
