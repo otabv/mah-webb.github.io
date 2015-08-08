@@ -51,9 +51,9 @@ Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du fö
 
 ## Lösning till uppgift 1
 
-<input type="button" value="visa/göm lösning 1 xxxx" onclick="toggle('answer1');">
+<input type="button" value="visa/göm lösning 1 xxxxx" onclick="toggle('answer1');">
 
-<div id="answer1" style="dispaly:none">
+<div id="answer1" style="display:none">
 {% highlight sql %}
 CREATE TABLE classroom (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
