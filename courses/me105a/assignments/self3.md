@@ -51,7 +51,7 @@ Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med e
 
 <div id="answer1" style="display:none">
 
-<img src="im3/er.png>">
+<img src="im3/er.png">
 
 </div>
 <!--END SHOW/HIDE-->
