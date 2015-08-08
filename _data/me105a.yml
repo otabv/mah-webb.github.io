@@ -25,11 +25,11 @@ lectures:
 
 # Uppgifter
 assignments:
-    - name: Självstudie 1 - nu med lösning
+    - name: Självstudie 1
       file: self1
-    - name: Självstudie 2 - nu med lösning
+    - name: Självstudie 2
       file: self2
-    - name: Självstudie 3 - nu med lösning
+    - name: Självstudie 3
       file: self3
     - name: Självstudie 4
       file: self4

@@ -14,17 +14,23 @@ title: Självstudier 1
     mydiv.style.display = 'block'
   }
 </script>
-<style>
-#answer1xxx {display:none}
-</style>
-
-
 
 #Självstudier 1
 
 ##Uppgift 1
 
 Starta MySQL Query Browser och skapa tabellen *classroom* från föreläsningsanteckningarna.
+
+<input type="button" value="visa/göm lösning 1" onclick="toggle('answer1');">
+
+<div id="answer1" style="display:none">
+{% highlight sql %}
+CREATE TABLE classroom (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  roomnumber CHAR(4),
+  seats INT
+)
+{% endhighlight %}</div>
 
 ##Uppgift 2
 
@@ -45,24 +51,9 @@ th, td {padding: 6px;}
 | C310 | 40 |
 | B303 | 20 |
 
-##Uppgift 3
+<input type="button" value="visa/göm lösning 2" onclick="toggle('answer2');">
 
-Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
-
-## Lösning till uppgift 1
-
-<input type="button" value="visa/göm lösning 1 xxxxx" onclick="toggle('answer1');">
-
-<div id="answer1" style="display:none">
-{% highlight sql %}
-CREATE TABLE classroom (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  roomnumber CHAR(4),
-  seats INT
-)
-{% endhighlight %}</div>
-## Lösning till uppgift 2
-	
+<div id="answer2" style="display:none">
 SQL för att lägga till rum:
 
 {% highlight mysql %}
@@ -70,11 +61,17 @@ INSERT INTO  classroom (roomnumber,seats) VALUES ('B305',28);
 INSERT INTO  classroom (roomnumber,seats) VALUES ('C310',40);
 INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
 {% endhighlight %}
+</div>
 
-## Lösning till uppgift 3
 
+##Uppgift 3
+
+Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
+<input type="button" value="visa/göm lösning 3" onclick="toggle('answer3');">
+
+<div id="answer3" style="display:none">
 Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:
 
 {% highlight text %}
 Data too long for column 'roomnumber' at row 1{% endhighlight %}
-
+</div>
