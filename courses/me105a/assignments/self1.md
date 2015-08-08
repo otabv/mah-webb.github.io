@@ -53,7 +53,7 @@ Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du fö
 
 <input type="button" value="visa/göm lösning 1 xxx" onclick="toggle('answer1');">
 
-<div id="answer1" display="none">
+<div id="answer1" style="dispaly:none">
 {% highlight sql %}
 CREATE TABLE classroom (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
