@@ -44,7 +44,7 @@ Följande information om byggnaden ska sparas:
 
 Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med ett förhållande mellan entiteterna byggnad och sal.
 
-
+XXXXXXXX
 
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
