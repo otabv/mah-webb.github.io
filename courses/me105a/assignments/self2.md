@@ -27,13 +27,39 @@ th, td {padding: 6px;}
 
 Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som finns lagrade i tabellen *classroom* från föreläsning 1 och självstudieuppgift 1.
 
+<div id="answer1" style="display:none">
+
+showrooms.php:
+
+före div id answer
+
+{% highlight php %}
+<?php
+//ändra userid till ditt eget
+include $_SERVER['DOCUMENT_ROOT'].'/userid/me105a/connect.php';
+
+$sql="SELECT * FROM classroom";
+$result=$pdo->query($sql);
+
+foreach ($result as $row) {
+	$roomnumber=$row['roomnumber'];
+	$seats=$row['seats'];
+	
+	echo "$roomnumber har $seats platser";
+	echo "<br>";
+}
+?>
+{% endhighlight %}
+</div>
+
+
 <input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
 
 <div id="answer1" style="display:none">
 
 showrooms.php:
 
-xxx
+inom div id answer
 
 {% highlight php %}
 <?php
