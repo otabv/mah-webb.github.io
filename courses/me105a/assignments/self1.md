@@ -21,16 +21,19 @@ title: Självstudier 1
 
 Starta MySQL Query Browser och skapa tabellen *classroom* från föreläsningsanteckningarna.
 
-<input type="button" value="visa/göm lösning 1" onclick="toggle('answer1');">
 
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning 1" onclick="toggle('answer1');">
 <div id="answer1" style="display:none">
+
 {% highlight sql %}
 CREATE TABLE classroom (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   roomnumber CHAR(4),
   seats INT
 )
-{% endhighlight %}</div>
+{% endhighlight %}</div>
+<!--END SHOW/HIDE-->
 
 ##Uppgift 2
 
@@ -49,27 +52,32 @@ th, td {padding: 6px;}
 | C310 | 40 |
 | B303 | 20 |
 
+<!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 2" onclick="toggle('answer2');">
-
 <div id="answer2" style="display:none">
-SQL för att lägga till rum:
+
+<p>SQL för att lägga till rum:</p>
 
 {% highlight mysql %}
 INSERT INTO  classroom (roomnumber,seats) VALUES ('B305',28);
 INSERT INTO  classroom (roomnumber,seats) VALUES ('C310',40);
 INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
 {% endhighlight %}
+
 </div>
+<!--END SHOW/HIDE-->
 
 
 ##Uppgift 3
 
 Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
-<input type="button" value="visa/göm lösning 3" onclick="toggle('answer3');">
+<!--START SHOW/HIDE--><input type="button" value="visa/göm lösning 3" onclick="toggle('answer3');">
+<div id="answer3" style="display:none">
 
-<div id="answer3" style="display:none"><p>
-Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:
+<p>Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:</p>
 
 {% highlight text %}
 Data too long for column 'roomnumber' at row 1{% endhighlight %}
+
 </div>
+<!--END SHOW/HIDE-->
