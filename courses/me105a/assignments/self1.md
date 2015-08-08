@@ -36,14 +36,12 @@ CREATE TABLE classroom (
 
 Lägg till följande klassrum med hjälp av lämpliga SQL-satser i MySQL Query Browser;
 
-
 <style>
 table {border-collapse: collapse;font-size:smaller}
 th, td {border: 1px solid #BBBBBB}
 th, td {text-align:left}
 th, td {padding: 6px;}
 </style>
-
 
 | roomnumber  | seats  |
 |---|---|
@@ -69,7 +67,7 @@ INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
 Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
 <input type="button" value="visa/göm lösning 3" onclick="toggle('answer3');">
 
-<div id="answer3" style="display:none">
+<div id="answer3" style="display:none"><p>
 Kolumnen roomnumber får max innehålla 4 tecken. Man får ett felmeddelande om man försöker lägga in mer än fyra tecken:
 
 {% highlight text %}

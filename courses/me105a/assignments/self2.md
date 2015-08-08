@@ -27,11 +27,13 @@ th, td {padding: 6px;}
 
 Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som finns lagrade i tabellen *classroom* från föreläsning 1 och självstudieuppgift 1.
 
-<input type="button" value="visa/göm lösning 1 xxx span" onclick="toggle('answer1');">
+<input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
 
 <div id="answer1" style="display:none">
 
-<p>showrooms.php:</p>
+showrooms.php:
+
+xxx
 
 {% highlight php %}
 <?php
