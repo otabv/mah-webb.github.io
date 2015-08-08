@@ -27,9 +27,9 @@ th, td {padding: 6px;}
 
 Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som finns lagrade i tabellen *classroom* från föreläsning 1 och självstudieuppgift 1.
 
-<input type="button" value="visa/göm lösning 1" onclick="toggle('answer1');">
+<input type="button" value="visa/göm lösning 1 xxx span" onclick="toggle('answer1');">
 
-<div id="answer1" style="display:none"><p>
+<span id="answer1" style="display:none">
 
 showrooms.php:
 
@@ -50,7 +50,7 @@ foreach ($result as $row) {
 }
 ?>
 {% endhighlight %}
-</p></div>
+</span>
 
 ##Uppgift 2
 
