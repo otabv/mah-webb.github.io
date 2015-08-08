@@ -21,52 +21,8 @@ th, td {padding: 6px;}
   }
 </script>
 
-
-
 #Självstudier 3
 
-
-Testar vilt
-
-
-En inforad
-
-En till inforad
-{: .info}
-
-
-Hej
-Hopp
-Faderalla
-{: .info}
-
-
-Detta 
-	
-var 
-
-väl
-lite
-konstigt
-{: .test}
-
-<style>
-.test {font-family:"verdana"}
-#testid {font-family:"comic sans ms"}
-</style>
-
-Blir detta verdana?
-{: .test}
-
-Blir detta en id?
-{: #testid}
-
-En
-id
-på
-flera
-rader
-{: #testid}
 
 ##Uppgift 1
 
@@ -95,8 +51,7 @@ Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med e
 
 <div id="answer1" style="display:none">
 
-
-![](im3/er.png)
+<img src="im3/er.png>">
 
 </div>
 <!--END SHOW/HIDE-->
@@ -111,7 +66,7 @@ Vilken typ av förhållande är det mellan byggnad och sal? En-till-en, en-till-
 
 <div id="answer2" style="display:none">
 
-<p>Mellan byggnad och sal är sambandet *en-till-många*: En byggnad kan innehålla många salar. (Mellan sal och byggnad är sambandet *många-till-en*).</p>
+<p>Mellan byggnad och sal är sambandet <b>en-till-många</b>: En byggnad kan innehålla många salar. (Mellan sal och byggnad är sambandet <b>många-till-en</b>).</p>
 
 </div>
 <!--END SHOW/HIDE-->
@@ -127,26 +82,10 @@ Ta fram tabeller som motsvarar entiteterna sal och byggnad. Vilka kolumner behö
 
 <div id="answer3" style="display:none">
 
-<p>Vi ser direkt i ER-diagrammet att tabellen *classroom* behöver kolumnerna *id*, *seats* och *roomnumber*. Dessutom behövs kolumnen *buildingid* för att koppla ett visst rum till en viss byggnad. </p>
+<p>Vi ser direkt i ER-diagrammet att tabellen <b>classroom</b> behöver kolumnerna <b>id</b>, <b>seats</b> och <b>roomnumber</b>. Dessutom behövs kolumnen <b>buildingid</b> för att koppla ett visst rum till en viss byggnad. </p>
 
-<p>Tabellen *building* behöver kolumnerna *id*, *name*, *street* och *streetnumber*. Här behövs ingen extra kolumn. </p>
+<p>Tabellen <b>building</b> behöver kolumnerna <b>id</b>, <b>name</b>, <b>street</b> och <b>streetnumber</b>. Här behövs ingen extra kolumn. </p>
 
 </div>
 <!--END SHOW/HIDE-->
-
-
-
-##Lösning uppgift 1
- 
-![](im3/er.png)
-
-##Lösning uppgift 2
-
-Mellan byggnad och sal är sambandet *en-till-många*: En byggnad kan innehålla många salar. (Mellan sal och byggnad är sambandet *många-till-en*).
-
-##Lösning uppgift 3
-
-Vi ser direkt i ER-diagrammet att tabellen *classroom* behöver kolumnerna *id*, *seats* och *roomnumber*. Dessutom behövs kolumnen *buildingid* för att koppla ett visst rum till en viss byggnad. 
-
-Tabellen *building* behöver kolumnerna *id*, *name*, *street* och *streetnumber*. Här behövs ingen extra kolumn. 
 
