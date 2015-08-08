@@ -44,21 +44,15 @@ Följande information om byggnaden ska sparas:
 
 Dessutom ska det framgå i vilken byggnad en viss sal ligger. Det gör man med ett förhållande mellan entiteterna byggnad och sal.
 
-XXXXXXXX
-
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
 
 <div id="answer1" style="display:none">
 
-<img src="im3/er.png">
+<p><img src="im3/er.png"></p>
 
 </div>
 <!--END SHOW/HIDE-->
-
-
-![](im3/er.png)
-
 
 ## Uppgift 2
 
