@@ -45,7 +45,7 @@ CREATE TABLE classroom (
 )
 {% endhighlight %}
 
-<p>Kolumnen <b>buildingid</b> i <b>classroom</b> kopplar ett visst rum till en viss byggnad. 
+<p>Kolumnen <b>buildingid</b> i <b>classroom</b> kopplar ett visst rum till en viss byggnad. </p>
 
 {% highlight sql %}
 CREATE TABLE building (
