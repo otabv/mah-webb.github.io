@@ -29,9 +29,9 @@ Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som f
 
 <input type="button" value="visa/göm lösning 1" onclick="toggle('answer1');">
 
-<div id="answer1" style="display:none"><p>
+<div id="answer1" style="display:none">
 
-showrooms.php:
+<p>showrooms.php:</p>
 
 {% highlight php %}
 <?php
@@ -50,7 +50,7 @@ foreach ($result as $row) {
 }
 ?>
 {% endhighlight %}
-</p></div>
+</div>
 
 ##Uppgift 2
 
@@ -60,10 +60,10 @@ Vi har inte gått igenom hur man sorterar ett sökresultat från en databas än.
 
 <input type="button" value="visa/göm lösning 1" onclick="toggle('answer2');">
 
-<div id="answer2" style="display:none"><p>
-Ändra SELECT-raden till
+<div id="answer2" style="display:none">
+<p>Ändra SELECT-raden till</p>
 
 {% highlight php  startinline=True %}
 $sql="SELECT * FROM classroom ORDER BY seats";
 {% endhighlight %}
-</p></div>
+</div>
