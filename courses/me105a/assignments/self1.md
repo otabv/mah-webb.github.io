@@ -6,8 +6,8 @@ title: Självstudier 1
 
 
 <script>
-  var toggle1 = function() {
-  var mydiv = document.getElementById('answer1');
+  var toggle = function(id) {
+  var mydiv = document.getElementById(id);
   if (mydiv.style.display === 'block' || mydiv.style.display === '')
     mydiv.style.display = 'none';
   else
@@ -15,7 +15,7 @@ title: Självstudier 1
   }
 </script>
 <style>
-#answer1 {display:none}
+#answer1xxx {display:none}
 </style>
 
 
@@ -51,9 +51,9 @@ Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du fö
 
 ## Lösning till uppgift 1
 
-<input type="button" value="visa/göm lösning 1" onclick="toggle1();">
+<input type="button" value="visa/göm lösning 1 xxx" onclick="toggle('answer1');">
 
-<div id="answer1">
+<div id="answer1" display="none">
 {% highlight sql %}
 CREATE TABLE classroom (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
