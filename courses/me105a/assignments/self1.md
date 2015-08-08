@@ -19,7 +19,7 @@ title: Självstudier 1
 
 ##Uppgift 1
 
-Starta MySQL Query Browser och skapa tabellen *classroom* från föreläsningsanteckningarna.
+Starta MySQL Query Browser och skapa tabellen *classroom* från föreläsningsanteckningarna med hjälp av lämplig sql-kod. 
 
 
 <!--START SHOW/HIDE-->
