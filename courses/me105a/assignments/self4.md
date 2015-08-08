@@ -11,6 +11,16 @@ th, td {text-align:left}
 th, td {padding: 6px;}
 </style>
 
+<script>
+  var toggle = function(id) {
+  var mydiv = document.getElementById(id);
+  if (mydiv.style.display === 'block' || mydiv.style.display === '')
+    mydiv.style.display = 'none';
+  else
+    mydiv.style.display = 'block'
+  }
+</script>
+
 #Självstudier 4
 
 ##Uppgift 1 
@@ -19,12 +29,39 @@ Skapa tabellerna *classroom* och *building* utifrån E/R-diagrammen från själv
 
 {% highlight sql %}
 DROP TABLE classroom
-{% endhighlight %} 
+{% endhighlight %}
 
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
 
-Innan jag lagt till script
+<div id="answer1" style="display:none">
 
+{% highlight sql %}
+CREATE TABLE classroom (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  roomnumber CHAR(4),
+  seats INT,
+  buildingid INT
+)
+{% endhighlight %}
 
+<p>Kolumnen <b>buildingid</b> i <b>classroom</b> kopplar ett visst rum till en viss byggnad. 
+
+{% highlight sql %}
+CREATE TABLE building (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  name TEXT,
+  streetnumber CHAR(10),
+  street TEXT
+)
+{% endhighlight %}
+
+<p>Typen CHAR(10) på <b>streetnumber</b>) gör att 10 tecken, både siffror och bokstäver kan sparas, till exempel 3C eller 11H.</p> 
+
+</div>
+<!--END SHOW/HIDE-->
+
+ 
 
 ##Uppgift 2
 
@@ -43,38 +80,3 @@ Gör formulär för att mata in sal i tabellen *classroom*. Man ska med en dropd
 Mata in några salar i de olika byggnaderna. 
 
 
-##Lösning uppgift 1
-
-{% highlight sql %}
-CREATE TABLE classroom (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  roomnumber CHAR(4),
-  seats INT,
-  buildingid INT
-)
-{% endhighlight %}
-
-Kolumnen *buildingid* i *classroom* kopplar ett visst rum till en viss byggnad. 
-
-{% highlight sql %}
-CREATE TABLE building (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  name TEXT,
-  streetnumber CHAR(10),
-  street TEXT
-)
-{% endhighlight %}
-
-Typen CHAR(10) på *streetnumber* gör att 10 tecken, både siffror och bokstäver kan sparas, till exempel 3C eller 11H. 
-
-##Lösning uppgift 2
-
-kommer snart
-
-##Lösning uppgift 3
-
-kommer snart
-
-##Lösning uppgift 4
-
-kommer snart
