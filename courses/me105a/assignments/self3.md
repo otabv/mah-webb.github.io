@@ -29,7 +29,7 @@ th, td {padding: 6px;}
 Testar vilt
 
 
-En indforad
+En inforad
 
 En till inforad
 {: .info}
@@ -40,12 +40,33 @@ Hopp
 Faderalla
 {: .info}
 
+
+Detta 
+	
+var 
+
+väl
+lite
+konstigt
+{: .test}
+
 <style>
-class test {font-family:"verdana"}
+.test {font-family:"verdana"}
+#testid {font-family:"comic sans ms"}
 </style>
 
 Blir detta verdana?
 {: .test}
+
+Blir detta en id?
+{: #testid}
+
+En
+id
+på
+flera
+rader
+{: #testid}
 
 ##Uppgift 1
 
