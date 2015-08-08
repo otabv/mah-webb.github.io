@@ -29,9 +29,9 @@ Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som f
 
 <input type="button" value="visa/göm lösning 1 xxx span" onclick="toggle('answer1');">
 
-<span id="answer1" style="display:none">
+<div id="answer1" style="display:none">
 
-showrooms.php:
+<p>showrooms.php:</p>
 
 {% highlight php %}
 <?php
@@ -50,7 +50,7 @@ foreach ($result as $row) {
 }
 ?>
 {% endhighlight %}
-</span>
+</div>
 
 ##Uppgift 2
 
