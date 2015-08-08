@@ -21,6 +21,11 @@ Skapa tabellerna *classroom* och *building* utifrån E/R-diagrammen från själv
 DROP TABLE classroom
 {% endhighlight %} 
 
+
+Innan jag lagt till script
+
+
+
 ##Uppgift 2
 
 Gör html och php-sidor med formulär för att mata in byggnader i tabellen *building*.
@@ -53,10 +58,11 @@ Kolumnen *buildingid* i *classroom* kopplar ett visst rum till en viss byggnad.
 
 {% highlight sql %}
 CREATE TABLE building (
-id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-name TEXT,
-streetnumber CHAR(10),
-street TEXT)
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  name TEXT,
+  streetnumber CHAR(10),
+  street TEXT
+)
 {% endhighlight %}
 
 Typen CHAR(10) på *streetnumber* gör att 10 tecken, både siffror och bokstäver kan sparas, till exempel 3C eller 11H. 
