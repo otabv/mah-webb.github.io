@@ -57,6 +57,9 @@ XXXXXXXX
 <!--END SHOW/HIDE-->
 
 
+![](im3/er.png)
+
+
 ## Uppgift 2
 
 Vilken typ av förhållande är det mellan byggnad och sal? En-till-en, en-till-många, många-till-en eller många-till-många?
