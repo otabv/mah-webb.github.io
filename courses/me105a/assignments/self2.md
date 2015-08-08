@@ -29,7 +29,7 @@ Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som f
 
 showrooms.php:
 
-före div id answer
+före div id answer xxx
 
 {% highlight php %}
 <?php
