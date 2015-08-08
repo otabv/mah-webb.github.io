@@ -31,7 +31,7 @@ Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som f
 
 <div id="answer1" style="display:none">
 
-###showrooms.php:
+showrooms.php:
 
 {% highlight php %}
 <?php
