@@ -31,8 +31,10 @@ Ange SQL för att lista alla rum inklusive antal platser och vilken byggnad de l
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
 
-
+{::options parse_block_html="true" /}
 <div id="answer1" style="display:none">
+
+*Tjohoo* xxx **haha**
 
 {% highlight mysql %}
 SELECT name,roomnumber,seats FROM classroom 
