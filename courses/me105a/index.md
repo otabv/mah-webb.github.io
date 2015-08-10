@@ -28,21 +28,21 @@ Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T oc
 
 - [Föreläsning 1](lectures/lecture1.html)
 - [Laboration 1](exercises/lab1.html)
-- [Självstudie 1 - med lösning](assignments/self1.html)
+- [Självstudie 1](assignments/self1.html)
 
 
 ### Vecka 37 - PHP och MySQL
 
 - [Föreläsning 2](lectures/lecture2.html)
 - [Laboration 2](exercises/lab2.html)
-- [Självstudie 2 - med lösning](assignments/self2.html)
+- [Självstudie 2](assignments/self2.html)
 
 
 ### Vecka 38 - E/R-diagram
 
 - [Föreläsning 3](lectures/lecture3.html)
 - [Laboration 3](exercises/lab3.html)
-- [Självstudie 3 - med lösning](assignments/self3.html)
+- [Självstudie 3](assignments/self3.html)
 
 ### Vecka 39 - Mer om E/R-diagram
 
