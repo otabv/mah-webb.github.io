@@ -1,7 +1,7 @@
 ---
 layout: instructions
 code: me105a
-title: Självstudier 6
+title: Självstudier 7
 ---
 
 <style>
@@ -22,7 +22,7 @@ th, td {padding: 6px;}
 </script>
 
 
-#Självstudier 6
+#Självstudier 7
 
 ##Uppgift 1 
 

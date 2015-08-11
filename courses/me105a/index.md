@@ -64,6 +64,8 @@ Det finns självstudier med lösningar under de flesta veckorna. Självstudierna
 
 - [Föreläsning 6](lectures/lecture6.html)
 - [Laboration 6](exercises/lab6.html)
+- [Självstudie 6](assignments/self6.html)
+
 
 
 ### Vecka 42 - Export av data, introduktion till xml och json
