@@ -16,6 +16,10 @@ Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T oc
 
 [www.databasteknik.se/webbkursen](http://www.databasteknik.se/webbkursen)
 
+## Självstudier
+
+Det finns självstudier med lösningar under de flesta veckorna. Självstudierna är helt frivilliga, men rekommenderas starkt. De ska ses som ett komplement till labbarna, där liknande moment tränas. 
+
 ## Nyttiga länkar
 
 * [Kursplan][kursplan]
