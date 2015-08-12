@@ -101,7 +101,7 @@ $username=$_POST['username'];
 $seats=$_POST['password'];
 
 //upprätta förbindelse med databasen
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
 
 //sql för att lägga till användare
 $sql="INSERT INTO user 
