@@ -34,6 +34,7 @@ Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-s
 {::options parse_block_html="true" /}
 <div id="answer1" style="display:none">
 
+{% highlight html+php %}
 <!doctype html>
 <html>
 <head>
@@ -76,6 +77,7 @@ echo "<a href='$filename'>$filename</a>";
 ?>
 </body>
 </html>
+{% endhighlight %}
 
 </div>
 <!--END SHOW/HIDE-->
@@ -90,6 +92,7 @@ Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-s
 {::options parse_block_html="true" /}
 <div id="answer2" style="display:none">
 
+{% highlight html+php %}
 <!doctype html>
 <html>
 <head>
@@ -137,6 +140,7 @@ echo "<a href='$filename'>$filename</a>";
 ?>
 </body>
 </html>
+{% endhighlight %}
 
 </div>
 <!--END SHOW/HIDE-->
@@ -151,6 +155,7 @@ Gör en php-sida som exporterar alla kolumner i tabellen **building** i en komma
 {::options parse_block_html="true" /}
 <div id="answer3" style="display:none">
 
+{% highlight html+php %}
 <!doctype html>
 <html>
 <head>
@@ -198,6 +203,7 @@ echo "<a href='$filename'>$filename</a>";
 ?>
 </body>
 </html>
+{% endhighlight %}
 
 </div>
 <!--END SHOW/HIDE-->
