@@ -24,15 +24,9 @@ th, td {padding: 6px;}
 
 #Självstudier 7
 
-##Uppgift 1 
+##Uppgift 1
 
-Skapa en tabell **user** som ska kunna användas för att logga in i building-classroom-databasen från tidigare självstudier. Tabellen ska innehålla följande kolumner:
-
-- **id** av typen INT. Denna kolumn är primärnyckel för tabellen. 
-- **username** av typen CHAR(64). Denna kolumn får inte vara tom, och får bara innehålla unika värden
-- **password** av typen CHAR(32). Denna kolumn får inte vara tom.
-
-Lägg till tabellen med MySQL Query Browser.
+Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-separerad fil **utan att använda** php-funktionen `fputcsv`
 
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
@@ -40,20 +34,14 @@ Lägg till tabellen med MySQL Query Browser.
 {::options parse_block_html="true" /}
 <div id="answer1" style="display:none">
 
-{% highlight mysql %}
-CREATE TABLE user (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    username CHAR(64) UNIQUE NOT NULL,
-    password CHAR(32) NOT NULL
-)
-{% endhighlight %}
+lösning
 
 </div>
 <!--END SHOW/HIDE-->
  
 ##Uppgift 2
 
-Gör en webbsida där man kan registrera sig genom att mata in användarnamn och lösenord. Om användarnamnet redan finns ska man få ett meddelande om det, om det inte finns ska det läggas till i databasen. Lösenordet ska sparas md5-kodat i databasen. 
+Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-separerad fil **genom att använda** php-funktionen `fputcsv`
 
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning" onclick="toggle('answer2');">
@@ -61,72 +49,63 @@ Gör en webbsida där man kan registrera sig genom att mata in användarnamn och
 {::options parse_block_html="true" /}
 <div id="answer2" style="display:none">
 
-**register1.html**
-
-{% highlight html+php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Registrera användare - steg 1</title>
-</head>
-<body>
-<h2>Registrera användare - steg 1</h2>
-<form method="post" action="register2.php">
-<input type="text" name="username"> användarnamn<br>
-<input type="password" name="password"> lösenord<br>
-<input type="submit" value="Registrera">
-</form>
-</body>
-</html>
-{% endhighlight %}
-
-**register2.php**
-
-{% highlight html+php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Registrera användare - steg 2</title>
-</head>
-<body>
-<h2>Registrera användare - steg 2</h2>
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-//första steget är att ta hand om data från formuläret
-$username=$_POST['username'];
-$seats=$_POST['password'];
-
-//upprätta förbindelse med databasen
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
-
-//sql för att lägga till användare
-$sql="INSERT INTO user 
-(username,password) VALUES
-('$username',MD5('$seats'))";
-
-try {
-	//lägg till användare i databasen
-	$result=$pdo->exec($sql);
-	echo "$username har registrerats.";
-}
-catch (Exception $e)
-{
-	//visa felmeddelande om username redan fanns.
-	//OBS 1 felmeddelandet visas även om man försöker ange ett
-	//användarnamn längre än 64 tecken, eller ett tomt användarnamn
-	//OBS 2 det blir inget felmeddelande om man lämnar lösenordet tomt. 
-	//Även ett tomt lösenord ger 32 tecken när man gör md5-kodning
-	echo "Användarnamnet $username finns redan registrerat.";
-}
-?>
-</body>
-</html>
-{% endhighlight %}
+lösning
 
 </div>
 <!--END SHOW/HIDE-->
 
+##Uppgift 3
+
+Gör en php-sida som exporterar alla kolumner i tabellen **building** i en komma-separerad fil **genom att använda** php-funktionen `fputcsv`
+
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning" onclick="toggle('answer3');">
+
+{::options parse_block_html="true" /}
+<div id="answer3" style="display:none">
+
+lösning
+
+</div>
+<!--END SHOW/HIDE-->
+
+##Uppgift 4
+
+Gör en sida med länkar till alla exporterade filer så att de enkelt kan hämtas från servern. 
+
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning" onclick="toggle('answer4');">
+
+{::options parse_block_html="true" /}
+<div id="answer4" style="display:none">
+
+lösning
+
+</div>
+<!--END SHOW/HIDE-->
+
+
+
+##Uppgift 5
+
+Lägg till några byggnader som innehåller olika tecken som kan ställa till problem i databassammanhang, och testa om exporten funkar. Testa följande tecken:
+
+- åäö
+- ; (semikolon)
+- , (komma)
+- ' (apostrof)
+- " (citationstecken)
+- < > (mindre än och större än)
+
+Hur ser den exporterade filen ut?
+
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning" onclick="toggle('answer5');">
+
+{::options parse_block_html="true" /}
+<div id="answer5" style="display:none">
+
+lösning
+
+</div>
+<!--END SHOW/HIDE-->
