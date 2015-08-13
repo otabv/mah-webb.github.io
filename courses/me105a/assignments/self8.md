@@ -34,12 +34,12 @@ Denna fil finns att [ladda ned](buildings.txt).
 
 Även bilder på byggnaderna finns att ladda ned:
 
-- [niagara](niagara.png)
-- [orkanen](orkanen.png)
-- [scylla](scylla.png)
-- [odontologen](odontologen.png)
-- [gaddan](gaddan.png)
-- [halsasamhalle](halsasamhalle.png)
+- [niagara](im8/niagara.png)
+- [orkanen](im8/orkanen.png)
+- [scylla](im8/scylla.png)
+- [odontologen](im8/odontologen.png)
+- [gaddan](im8/gaddan.png)
+- [halsasamhalle](im8/halsasamhalle.png)
 
 Använd InDesigns mergefunktion för att ladda in den tab-separerade textfilen och gör en layout som innehåller namn, adress och bild på byggnaderna. 
 
