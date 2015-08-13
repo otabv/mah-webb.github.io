@@ -26,3 +26,32 @@ th, td {padding: 6px;}
 
 ##Uppgift 1
 
+Följande fil är exporterad från tabellen **building** från tidigare självstudier, men även kompletterad med en kolumn som innehåller filnamn på bilder av byggnaderna. 
+
+![](im8/exportfil.png)
+
+Denna fil finns att [ladda ned](buildings.txt). 
+
+Även bilder på byggnaderna finns att ladda ned:
+
+- [niagara](niagara.png)
+- [orkanen](orkanen.png)
+- [scylla](scylla.png)
+- [odontologen](odontologen.png)
+- [gaddan](gaddan.png)
+- [halsasamhalle](halsasamhalle.png)
+
+Använd InDesigns mergefunktion för att ladda in den tab-separerade textfilen och gör en layout som innehåller namn, adress och bild på byggnaderna. 
+
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning" onclick="toggle('answerXXX');">
+
+{::options parse_block_html="true" /}
+<div id="answerXXX" style="display:none">
+
+lösning
+
+</div>
+<!--END SHOW/HIDE-->
+
+

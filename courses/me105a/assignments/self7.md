@@ -42,7 +42,7 @@ Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-s
 <title>Uppgift 1</title>
 </head>
 <body>
-<h1>Självstudie 8</h1>
+<h1>Självstudie 7</h1>
 <h2>Uppgift 1</h2>
 <?php
 error_reporting(E_ALL);
@@ -101,7 +101,7 @@ Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-s
 </head>
 
 <body>
-<h1>Självstudie 8</h1>
+<h1>Självstudie 7</h1>
 <h2>Uppgift 2</h2>
 <?php
 error_reporting(E_ALL);
@@ -164,7 +164,7 @@ Gör en php-sida som exporterar alla kolumner i tabellen **building** i en komma
 </head>
 
 <body>
-<h1>Självstudie 8</h1>
+<h1>Självstudie 7</h1>
 <h2>Uppgift 3</h2>
 <?php
 error_reporting(E_ALL);

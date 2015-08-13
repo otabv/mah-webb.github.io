@@ -1,0 +1,7 @@
+id	name	street	streetnumber	@image
+1	Niagara	Nordenskiöldsgatan	1	/images/niagara.png
+2	Orkanen	Nordenskiöldsgatan	10	/images/orkanen.png
+3	Scylla	Nordenskiöldsgatan	8	/images/scylla.png
+4	Odontologen	"Carl Gustafs väg"	34	/images/odontologen.png
+5	Gäddan	Citadellsvägen	7	/images/gaddan.png
+6	"Hälsa och samhälle"	"Jan Waldenströms gata"	25	/images/halsasamhalle.png
