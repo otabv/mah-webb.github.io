@@ -26,11 +26,11 @@ th, td {padding: 6px;}
 
 ##Uppgift 1
 
-Följande fil är exporterad från tabellen **building** från tidigare självstudier, men även kompletterad med en kolumn som innehåller filnamn på bilder av byggnaderna. 
+Följande fil är exporterad från tabellen **building** från tidigare självstudier, men även kompletterad med en kolumn som innehåller filnamn på bilder av byggnaderna. InDesign kräver UTF-16- format på filen istället för UTF-8 som vi brukar använda, annars fungerar inte åäö.
 
 ![](im8/exportfil.png)
 
-Denna fil finns att [ladda ned](buildings.txt). 
+Denna fil finns att ladda ned: [buildings.txt UTF-16](buildings.txt). 
 
 Även bilder på byggnaderna finns att ladda ned:
 
@@ -44,10 +44,10 @@ Denna fil finns att [ladda ned](buildings.txt).
 Använd InDesigns mergefunktion för att ladda in den tab-separerade textfilen och gör en layout som innehåller namn, adress och bild på byggnaderna. 
 
 <!--START SHOW/HIDE-->
-<input type="button" value="visa/göm lösning" onclick="toggle('answerXXX');">
+<input type="button" value="visa/göm lösning" onclick="toggle('answer1');">
 
 {::options parse_block_html="true" /}
-<div id="answerXXX" style="display:none">
+<div id="answer1" style="display:none">
 
 lösning
 
