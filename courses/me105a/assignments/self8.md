@@ -53,9 +53,13 @@ Följande InDesign-mall läser in buildings.txt och skapar en layout:
 
 [buildings.indd](buildings.indd)
 
+![](im8/buildings.png)
+
 Resultatet av en datamerge blir följande fil:
 
 [buildings_result.indd](buildings_result.indd)
+
+![](im8/buildings_result.png)
 
 </div>
 <!--END SHOW/HIDE-->
