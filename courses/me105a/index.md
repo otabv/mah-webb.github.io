@@ -72,6 +72,7 @@ Det finns självstudier med lösningar under de flesta veckorna. Självstudierna
 
 - [Föreläsning 7](lectures/lecture7.html)
 - [Laboration 7](exercises/lab7.html)
+- [Självstudie 7](assignments/self7.html)
 
 
 ### Vecka 43 - Miniprojekt
@@ -94,6 +95,8 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 
 - [Föreläsning 9](lectures/lecture9.html)
 - [Laboration 8](exercises/lab8.html)
+- [Självstudie 8](assignments/self8.html)
+
 
 ### Vecka 46 - Från E/R-diagram till färdig databas
 
