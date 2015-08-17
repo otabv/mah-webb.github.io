@@ -49,7 +49,13 @@ Använd InDesigns mergefunktion för att ladda in den tab-separerade textfilen o
 {::options parse_block_html="true" /}
 <div id="answer1" style="display:none">
 
-lösning
+Följande InDesign-mall läser in buildings.txt och skapar en layout:
+
+[buildings.indd](buildings.indd)
+
+Resultatet av en datamerge blir följande fil:
+
+[buildings_result.indd](buildings_result.indd)
 
 </div>
 <!--END SHOW/HIDE-->
