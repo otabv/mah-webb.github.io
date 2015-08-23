@@ -1,19 +1,20 @@
 ---
 layout: course
-code: me134a
-title: Bedömningsmatriser - ME134A
+code: me153a
+title: Bedömningsmatriser - ME153A
 ---
 
-# Bedömningsmatriser - ME134A
+# Bedömningsmatriser - ME153A
 
-## Uppgift 1: Grundläggande HTML
+## Uppgift 1: HTML & CSS 1
 
-| Kriterium               | Underkänt                                                | Godtagbart                                   | Bättre                                                |
-| -----------             | -----------                                              | ------------                                 | --------                                              |
-| **Tekniskt innehållt**  | Koden saknar ett eller flera obligatoriska HTML element. | Samtliga HTML element är inkluderade.        | Ytterliggare HTML element är inkluderade.             |
-| **Validering**          | Sidan genomgår inte W3Cs validerings verktyg.            | Sidan är godkänd i W3Cs validerings verktyg. | Både varningar och fel är korrekt lösta.              |
-| **Kodstruktur**         | Inga kommentarer eller indentering.                      | Koden är kommenterad och indenterad.         | Förtydligande kommentarer och konsekvent indentering. |
-| **Tillgänglighet**      | Felaktigkt användande av HTML element.                   | Lämpligt användande av HTML element.         |
+| Kriterium               | Underkänt                                               | Godtagbart                                                                                                                           | Bättre                                                                             |
+| -----------             | -----------                                             | ------------                                                                                                                         | --------                                                                           |
+| **Tekniskt innehållt**  | Materialet saknar ett eller flera obligatoriska moment. | Samtliga moment är inkluderade.                                                                                                      |                                                                                    |
+| **Validering**          | Materialet genomgår inte W3Cs validerings verktyg.      | Materialet godkäns av W3Cs validerings verktyg.                                                                                      |                                                                                    |
+| **Kodstruktur**         | Inga kommentarer eller indentering.                     | Materialet är kommenterat och indenterat.                                                                                            | Förtydligande kommentarer och konsekvent indentering.                              |
+| **Tillgänglighet**      | Felaktigkt användande av HTML-element.                  | Korrekt användande av HTML-element.                                                                                                  |
+| **Reflektion**          | Studenten presenterar endast sitt tillvägagångssätt.    | Texten uppnår en reflekterande nivå som visar på att studenten har förstått utförande samt vilka lärdomar som kan dras av processen. | Resonemangen når en högre nivå och studenten resonerar över alternativa lösningar. |
 {: .small}
 
 ## Uppgift 2: Användbarhet
@@ -26,42 +27,40 @@ title: Bedömningsmatriser - ME134A
 | **Förbättringsförslag** | Inga förbättringsförslag presenteras eller utan teorianknytning. | Tydliga förbättringar föreslås med teorianknytning.     | Förbättringar grundas både i målgrupp och syfte utifrån teori.                                                             |
 {: .small}
 
-## Uppgift 3: Grundläggande CSS
+## Uppgift 3: HTML & CSS 2
 
-| Kriterium              | Underkänt                                                | Godtagbart                                                                                                                           | Bättre                                                                             |
-| -----------            | -----------                                              | ------------                                                                                                                         | --------                                                                           |
-| **Teorianknytning**    | Ingen eller otydlig koppling till teori.                 | Tydlig koppling till teori.                                                                                                          | Studenten använder flera referenser som kritiskt analyseras mot varandra.          |
-| **Tekniskt innehållt** | Koden saknar ett eller flera obligatoriska HTML element. | Samtliga element är inkluderade.                                                                                                     | Ytterligare HTML element är inkluderade.                                           |
-| **Validering**         | Sidan genomgår inte W3Cs validerings verktyg.            | Sidan är godkänd i W3Cs validerings verktyg.                                                                                         | Validerings processen diskuteras i reflektionen.                                   |
-| **Kodstruktur**        | Inga kommentarer eller indentering.                      | Koden är kommenterad och indenterad.                                                                                                 | Förtydligande kommentarer och konsekvent indentering.                              |
-| **Reflektion**         | Studenten presenterar endast sitt tillvägagångssätt.     | Texten uppnår en reflekterande nivå som visar på att studenten har förstått utförande samt vilka lärdomar som kan dras av processen. | Resonemangen når en högre nivå och studenten resonerar över alternativa lösningar. |
-| **Användbarhet**       | Ingen återkoppling till användbarhet.                    | Användbarhet diskuteras och implementeras på webbplatsen.                                                                            | Användbarhet analyseras och alternativa lösningar presenteras i reflektionen.      |
+| Kriterium              | Underkänt                                                | Godtagbart                                                                                                                              | Bättre                                                                    |
+| -----------            | -----------                                              | ------------                                                                                                                            | --------                                                                  |
+| **Tekniskt innehållt** | Koden saknar ett eller flera obligatoriska HTML-element. | Samtliga element är inkluderade.                                                                                                        | Ytterligare HTML-element är inkluderade.                                  |
+| **Validering**         | Koden genomgår inte W3Cs validerings verktyg.            | Koden godkänds av W3Cs validerings verktyg.                                                                                             |                                                                           |
+| **Kodstruktur**        | Inga kommentarer eller indentering.                      | Koden är kommenterad och indenterad på ett konsekvent och korrekt sätt.                                                                 |                                                                           |
+| **Användbarhet**       | Ingen återkoppling till användbarhet.                    | Användbarhet diskuteras och implementeras på webbplatsen.                                                                               | Användbarhet analyseras och alternativa lösningar presenteras i analysen. |
+| **Analys**             | Studenten presenterar endast sitt tillvägagångssätt.     | Analysen uppnår en reflekterande nivå som visar på att studenten har förstått utförandet samt vilka lärdomar som kan dras av processen. |                                                                           |
+| **Teorianknytning**    | Ingen eller otydlig koppling till teori.                 | Tydlig koppling till relevant teori.                                                                                                             | Studenten resonerar kritiskt över de referenser som används. |
 {: .small}
 
-## Uppgift 4: CMS - WordPress
+## Uppgift 4: WordPress
 
 | Kriterium               | Underkänt                                                       | Godtagbart                                                                                                                           | Bättre                                                                                      |
 | -----------             | -----------                                                     | ------------                                                                                                                         | --------                                                                                    |
-| **Teorianknytning**     | Ingen eller otydlig koppling till teori.                        | Tydlig koppling till teori.                                                                                                          | Studenten använder flera referenser som kritiskt analyseras mot varandra.                   |
 | **Tekniskt innehåll**   | Ingen eller liten förändringar har gjorts utifrån orginaltemat. | Större förändringar har gjorts utifrån orginaltemat med fokus på användbarhet.                                                       | Det går inte att koppla ihop webbplatsen med orginaltemat.                                  |
-| **Obligatoriska delar** | Webbplatsen saknar ett eller flera obligatoriska delar.         | Samtliga objekt är inkluderade.                                                                                                      | Ytterligare objekt är inkluderade.                                                          |
+| **Grafik & Bilder**     | Ingen anpassning till webben.                                   | Lämpligt format och färgrymd.                                                                                                        | Bilderna är ytterligare anpassade för visning på webben och resonemang förs i reflektionen. |
 | **Reflektion**          | Studenten presenterar endast sitt tillvägagångssätt.            | Texten uppnår en reflekterande nivå som visar på att studenten har förstått utförande samt vilka lärdomar som kan dras av processen. | Resonemangen når en högre nivå och studenten resonerar över alternativa lösningar.          |
 | **Användbarhet**        | Ingen återkoppling till användbarhet.                           | Användbarhet diskuteras och implementeras på webbplatsen.                                                                            | Användbarhet analyseras och alternativa lösningar presenteras i reflektionen.               |
-| **Grafik & Bilder**     | Ingen anpassning till webben.                                   | Lämpligt format och färgrymd.                                                                                                        | Bilderna är ytterligare anpassade för visning på webben och resonemang förs i reflektionen. |
+| **Teorianknytning**     | Ingen eller otydlig koppling till teori.                        | Tydlig koppling till relevant teori.                                                                                                          | Studenten använder flera referenser som kritiskt analyseras mot varandra.                   |
 {: .small}
 
 ## Uppgift 5: Kampanjsida
 
-| Kriterium                | Underkänt                                                | Godtagbart                                                                                                                           | Bättre                                                                                      |
-| -----------              | -----------                                              | ------------                                                                                                                         | --------                                                                                    |
-| **Teorianknytning**      | Ingen eller otydlig koppling till teori.                 | Tydlig koppling till teori.                                                                                                          | Studenten använder flera referenser som kritiskt analyseras mot varandra.                   |
-| **Tekniskt innehållt**   | Koden saknar ett eller flera obligatoriska HTML element. | Samtliga HTML element är inkluderade.                                                                                                | Ytterliggare HTML element är inkluderade.                                                   |
-| **Validering**           | Sidan genomgår inte W3Cs validerings verktyg.            | Sidan är godkänd i W3Cs validerings verktyg.                                                                                         | Både varningar och fel är korrekt lösta.                                                    |
-| **Kodstruktur**          | Inga kommentarer eller indentering.                      | Koden är kommenterad och indenterad.                                                                                                 | Förtydligande kommentarer och konsekvent indentering.                                       |
-| **Reflektion**           | Studenten presenterar endast sitt tillvägagångssätt.     | Texten uppnår en reflekterande nivå som visar på att studenten har förstått utförande samt vilka lärdomar som kan dras av processen. | Resonemangen når en högre nivå och studenten resonerar över alternativa lösningar.          |
-| **Syfte & Målgrupp**     | Ingen koppling mellan design, målgrupp och syfte.        | Studenten presenterar hur designen förhåller sig till syfte och målgrupp.                                                            | Olika designförslag presenteras och diskuteras mot varandra.                                |
-| **Användbarhet**         | Ingen återkoppling till användbarhet.                    | Användbarhet diskuteras och implementeras på webbplatsen.                                                                            | Användbarhet analyseras och alternativa lösningar presenteras i reflektionen.               |
-| **Grafik: Bild & Video** | Ingen anpassning till webben.                            | Lämpligt format, färgrymd och val av rörlig bild.                                                                                    | Grafiken är ytterligare anpassade för visning på webben och resonemang förs i reflektionen. |
+| Kriterium              | Underkänt                                                | Godtagbart                                                                                                                              | Bättre                                                                        |
+| -----------            | -----------                                              | ------------                                                                                                                            | --------                                                                      |
+| **Tekniskt innehållt** | Koden saknar ett eller flera obligatoriska HTML-element. | Samtliga element är inkluderade.                                                                                                        | Ytterligare HTML-element är inkluderade.                                      |
+| **Kodstruktur**        | Inga kommentarer eller indentering.                      | Koden är kommenterad och indenterad.                                                                                                    |                                                                               |
+| **Validering**         | Webbplatsen godkäns inte W3Cs validerings verktyg.       | Webbplatsen godkäns av W3Cs validerings verktyg.                                                                                        |                                                                               |
+| **Analys**             | Studenten presenterar endast sitt tillvägagångssätt.     | Analysen uppnår en reflekterande nivå som visar på att studenten har förstått utförandet samt vilka lärdomar som kan dras av processen. |                                                                               |
+| **Syfte & Målgrupp**   | Ingen koppling mellan design, målgrupp och syfte.        | Studenten presenterar hur designen förhåller sig till syfte och målgrupp.                                                               | Olika designförslag presenteras och diskuteras mot varandra.                  |
+| **Användbarhet**       | Ingen återkoppling till användbarhet.                    | Användbarhet diskuteras och implementeras på webbplatsen.                                                                               | Användbarhet analyseras och alternativa lösningar presenteras i reflektionen. |
+| **Teorianknytning**    | Ingen eller otydlig koppling till teori.                 | Tydlig koppling till relevant teori.                                                                                                    | Studenten använder flera referenser som kritiskt analyseras mot varandra.     |
 {: .small}
 
 ## Projekt: Bornholm
