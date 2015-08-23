@@ -1,7 +1,7 @@
 # Lista över öppna kurser
 
-- name: Webbpublicering
-  code: me134a
+- name: "Medieteknik: Webbpublicering"
+  code: me153a
   credits: 15.0
 
 - name: Webbproduktion

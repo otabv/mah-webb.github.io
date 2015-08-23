@@ -1,14 +1,14 @@
 ---
 layout: course
-code: me135a
-title: Webbproduktion ME135A (15.0 hp)
+code: me153a
+title: "Medieteknik: Webbpublicering ME153A (15.0 hp)"
 ---
 
-# Webbproduktion - ME135A
+# Medieteknik: Webbpublicering - ME153A
 
 ## Beskrivning
 
-Kursen syftar till att studenten ska tillgodogöra sig grundläggande kunskap om webbproduktion, för att kunna planera och leda webbproduktioner.
+Kursen syftar till att studenten tillgodogör sig grundläggande kunskap om webbpublicering, utifrån aktuella standarder, för att självständigt kunna framställa och underhålla tekniskt- samt användbarhetsmässigt korrekta webbproduktioner. Men även mindre produktioner för skärmvisning innehållande interaktivitet i form av ljud, bild, animation och interaktivitet. Lärandet sker i former av föreläsningar, laborationer och projekt på campus.
 
 Den fullständiga kursplanen finner ni [här][kursplan].
 
@@ -29,7 +29,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 
 ## Kursöversikt
 
-![Kursöversikt](/assets/img/me153a_me135a_översikt.png) _Samtliga moduler som ingår i kursen Webbproduktion_
+![Kursöversikt](/assets/img/me153a_me135a_översikt.png) _Samtliga moduler som ingår i kursen Medieteknik: Webbpublicering_
 
 ## Länkar
 
@@ -38,7 +38,7 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 * [It's learning][itslearning]
 * [Bedömningsmatriser][matrix]
 
-[kursplan]: /courses/me135a/syllabus.html "Gå till kursplanen"
-[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20142-TS401-%2C "Gå till schemat"
+[kursplan]: /courses/me153a/syllabus.html "Gå till kursplanen"
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME134A-20142-75076-%2Ck.ME134A-20142-TS495-%2C "Gå till schemat"
 [itslearning]: https://mah.itslearning.com/elogin/ "Gå till It's learning"
-[matrix]: /courses/me135a/matrix.html "Gå till bedömningsmatriser"
+[matrix]: /courses/me153a/matrix.html "Gå till bedömningsmatriser"
