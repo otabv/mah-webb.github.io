@@ -77,7 +77,7 @@ Det finns självstudier med lösningar under de flesta veckorna. Självstudierna
 
 ### Vecka 43 - Miniprojekt
 
-- Föreläsning 8 - mer om export, xml och json
+- Föreläsning 8 -  Från E/R-diagram till färdig databas
 - Eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
 
@@ -98,14 +98,14 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 - [Självstudie 8](assignments/self8.html)
 
 
-### Vecka 46 - Från E/R-diagram till färdig databas
+### Vecka 46 - Gästföreläsing - ämne meddelas senare
 
-<!--här ska det nog in något om att lägga till data i flera tabeller a la projkettips-->
-- Föreläsning 10
+- Föreläsning 10 - Gästföreläsning
 - [Laboration 9](exercises/lab9.html)
 
 ### Vecka 47 - Projektstart
 
+<!--här ska det nog in något om att lägga till data i flera tabeller a la projkettips-->
 - [Projektbeskrivning](projects/project.html)
 - Handledning av projekt under laborationstillfällena
 
