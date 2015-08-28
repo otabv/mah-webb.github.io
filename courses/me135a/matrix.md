@@ -57,7 +57,6 @@ title: Bedömningsmatriser - ME135A
 | **Underbyggnad**           | Ingen eller otydlig koppling till källa.                                                               | Studenten använder flera källor som kritiskt analyseras och diskuteras .                         |
 | **Affärskoncept**          | Konceptet är ofullständigt och saknar väsentliga delar.                                                | Konceptet innehåller de delar som gör att läsaren förstår vad det innehåller och går ut på.      | Konceptet redogörs noggrant och utförligt med en tydlig röd tråd.   |
 | **Trendpresentation**      | Endast en presentation av trenderna.                                                                   | Trenderna presenteras och resonemang för och mot att trenderna blir verklighet förs.             | Trenderna jämförs och kombineras och synergieffekter föreslås.      |
-| **Problemdefinition**      | Inget eller vagt presenterat problem.                                                                  | Ett problem presenteras och diskuteras utifrån informationskällor.                               |
 | **Applicering på företag** | Trenden appliceras utan eftertanke eller motivering. Produkten existerar redan och tillför inget nytt. | En trend appliceras på ett företag och löser ett prbolem eller genererar mervärde för företaget. | Flera trender kombineras och appliceras tillsammans på ett företag. |
 {: .small}
 
