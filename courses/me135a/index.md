@@ -39,6 +39,6 @@ Tänk på att du gör uppgifterna för att lära dig. Så länge du använt alla
 * [Bedömningsmatriser][matrix]
 
 [kursplan]: /courses/me135a/syllabus.html "Gå till kursplanen"
-[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20142-TS401-%2C "Gå till schemat"
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=m&intervallAntal=6&sokMedAND=false&sprak=SV&resurser=k.ME135A-20152-TS568-%2C "Gå till schemat"
 [itslearning]: https://mah.itslearning.com/elogin/ "Gå till It's learning"
 [matrix]: /courses/me135a/matrix.html "Gå till bedömningsmatriser"
