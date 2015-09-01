@@ -1165,6 +1165,10 @@ body .web-app-nav-container {
         display: none;
     }
 
+    .sidebar h3.course-name {
+        margin: 0 auto;
+    }
+
     .sidebar.toggle .course-name,
     .sidebar.toggle .course-overview,
     .sidebar.toggle .blog-header,
