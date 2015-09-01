@@ -19,7 +19,11 @@ Stegen på sidorna 35-42 i boken PHP & MySQL - Novice to Ninja ska följas, men 
 
 Gå till <http://ddwap.mah.se> och logga in.
 
-Klicka sedan MYSQL QUERY BROWSER och logga in. **OBS ange ditt användarnamn med små bokstäver, annars blir det problem längre fram i kursen.**
+Klicka sedan MYSQL QUERY BROWSER och logga in. 
+
+**OBS 1** Ange i första hand ditt användarnamn med små bokstäver, annars kan det bli problem längre fram i kursen.
+
+**OBS 2** Om det inte funkar med små bokstäver, prova då med stora. 
 
 ![mysql query browser](im1/image001.png)
  
@@ -75,7 +79,7 @@ Vissa saker måste dock bytas ut:
 - Username är ert användarnamn
 - Databasens namn är inte ijdb utan ert användarnamn
 
-PHP-filerna sparas på precis samma sätt som i kursen Programmering för webben. Du kan behålla dina Dreamweaver-inställningar. Om inställningarna inte finns kvar finns det instruktioner på <http://ddwap.mah.se/k3bope/me132a/public2014/dwsettings.pdf>. 
+PHP-filerna sparas på samma sätt som i kursen Programmering för webben. Eftersom vi nu i höst 2015 har en ny datorsal måste du göra om dina Dreamweaver-inställningar. [Instruktioner för att ställa in Dreameweaver](dwsettings2015.html). 
 
 Förhoppningsvis finns mappen ddwap kvar från föregående kurs. Skapa en ny mapp *inuti* ddwap som heter *me105a*.  Skapa dessutom en mapp i me105a som heter *lab1*. Labbens filer lägger du sedan i *ddwap/me105a/lab1*. 
 
@@ -94,6 +98,8 @@ använda vårt användarnamn som databasnamn
 
 ersätt k3bope på två ställen med ert userid och 
 ersätt XXXXXXXXX med ert lösenord
+
+OBS: om du var tvungen att logga in på MySQL Query Browser med stora bokstäver, måste du även använda stora bokstäver i användarnamnet på andra stället i raden $pdo=new...
 */
 
 $pdo=new PDO('mysql:host=localhost;dbname=k3bope','k3bope','XXXXXXXXX'); 
@@ -153,6 +159,8 @@ Testa att öppna index.php med en webbläsare. Om allt funkar ska skämtet som m
 **OBS** Lämna endast in filen index.php på it's learning, behåll connect.php för er själva eftersom den innehåller ert lösenord. 
 
 ## Uppgift 4
+
+**OBS** Spara all SQL-kod du skriver i denna uppgift i ett separat textdokument. Koden ska sedan lämnas på It's learning. 
 
 Använd MySQL Query Browser för att skapa en ny tabell med SQL-kod 
 
