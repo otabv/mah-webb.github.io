@@ -9,7 +9,7 @@ title: Laboration 1
 Syfte med laborationen:
 att testa PHP-kod för att kommunicera med MySQL
 
-Redovisning: Redovisa filen index.php på It's learning.
+Redovisning: Redovisa filen index.php från uppgift 3 samt sql-koden från uppgift 4 på It's learning.
 
 Genom hela kursen kommer vi att använda samma webbserver som i Programmering för webben, <http://ddwap.mah.se>  med stöd för PHP och MySQL. För att kunna använda MySQL-delen för databaser måste först en databas skapas som sedan kan användas genom hela kursen. 
 
