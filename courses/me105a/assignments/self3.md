@@ -86,3 +86,10 @@ Ta fram tabeller som motsvarar entiteterna sal och byggnad. Vilka kolumner behö
 </div>
 <!--END SHOW/HIDE-->
 
+##Statistik
+
+Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
+
+<iframe frameborder="0" src="http://ddwap.mah.se/k3bope/me105a/self/result.php?thisstudy=3" width="500" height="500">
+</iframe>
+

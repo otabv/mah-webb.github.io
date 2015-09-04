@@ -4,7 +4,6 @@ code: me105a
 title: Självstudier 1
 ---
 
-
 <script>
   var toggle = function(id) {
   var mydiv = document.getElementById(id);
@@ -84,3 +83,12 @@ Data too long for column 'roomnumber' at row 1{% endhighlight %}
 
 </div>
 <!--END SHOW/HIDE-->
+
+##Statistik
+
+Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
+
+<iframe frameborder="0" src="http://ddwap.mah.se/k3bope/me105a/self/result.php?thisstudy=1" width="500" height="500">
+</iframe>
+
+
