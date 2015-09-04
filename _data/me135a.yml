@@ -56,11 +56,11 @@ projects:
 
 # Föreläsningar
 lectures:
-    # - name: Föreläsning 1
-    #   file: F01
+    - name: Kursintroduktion
+      file: F01
 
-    # - name: Föreläsning 2
-    #   file: F02
+    - name: Föreläsning 1
+      file: F02
 
     # - name: Föreläsning 3
     #   file: F03
