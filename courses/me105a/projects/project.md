@@ -8,31 +8,43 @@ title: projekt
 pre {white-space: pre-wrap;}
 </style>
 
-# Projekt, Databasbaserad publicering 2014
+# Projekt, Databasbaserad publicering 2015
 
 Projektet går ut på att bygga en interaktiv databas där innehållet kan visas både i tryck och på webben.
 
 Projekt görs självständigt. Projektet måste innehålla:
 
 - En databas som innehåller minst tre entiteter som har förhållanden till varandra. 
-- Minst en ett-till-många-relation. För VG krävs även minst en många-till-många-relation.
+- Minst en ett-till-många-relation. 
 - E/R-diagram som visar databasens struktur.
 - Webbsidor med formulär med möjlighet att mata in data i några av tabellerna. Det är ok om några av tabellerna har fått data inlagt i förväg, till exempel med MySQL Query Browser.
 - Webbsida med sökfunktion.
 - Möjlighet att exportera Innehållet i tabellerna i tab-separerat format.
-- InDesign-mallar som kan importera den tab-separerade filen och sedan vara grund till en tryckt presentation.
+- InDesign-mallar som med hjälp av InData kan importera den tab-separerade filen och sedan vara grund till en tryckt presentation.
 
-## Projektstart
 
-Första steget är att välja projektförslag (se nedan) och tänka ut vilka entiteter som behövs, och sedan göra ett E/R-diagram. Senast tisdag 18 november mailar ni bo.peterson@mah.se vilket projekt ni valt. Under första handledningstillfället, 18 eller 19 november kan ni får hjälp med struktur och E/R-diagram. 
 
-## Projektrapport
+För betyget godkänd krävs, förutom det som nämns ovan:
 
-Projektrapporten ska innehålla:
+- HTML-kod ska kunna matas in i formulär på ett säkert sätt utan att html-taggar förstör övrig layout. 
+- Välkommenterad kod. 
+- Strukturerad kod med indragningar.
+- En reflektionen över er lösnings säkerhets- och integritetsaspekter.
 
-- En beskrivning av er databas.
+För betyget väl godkänd krävs även
+
+- Minst en många-till-många-relation. 
+- Grundläggande skydd mot sql-injection. 
+- ÅÄÖ ska hanteras korrekt i in- och utmatningar. 
+
+Följande lämnas in:
+
+En projektrapporten som innehåller:
+
+- En beskrivning av er databas. Vad gör den? Hur fungerar den? Är det något som inte fungerar som tänkt?
 - E/R-diagram.
 - Tabellstruktur, dvs vilka tabeller ni har, och vilka kolumner de innehåller. 
+- Reflektion över er lösnings säkerhets- och integritetsaspekter.
 - Komplett webbadress till lösningen. **Om webbadress saknas i rapporten kan jag inte testa er lösning och projektet blir underkänt.**
 
 Dessutom måste följande finnas i en zip-fil:
@@ -40,14 +52,11 @@ Dessutom måste följande finnas i en zip-fil:
 - PHP-kod
 - Tab-separerad exportfil
 - Indesign-mall som kan importera exportfilen
-- PDF-fil som resultat av att mallen importerat den tab-separerade filen. 
+- **PDF-fil** som resultat av att mallen importerat den tab-separerade filen 
 
-- Minst en många-till-många-relation. 
-- ÅÄÖ ska hanteras korrekt i in- och utmatningar. 
-- Grundläggande skydd mot sql-injection. 
-- HTML-kod ska kunna matas in utan att layout förstörs. 
-- Välkommenterad kod. 
-- Strukturerad kod med indragningar. 
+## Projektstart
+
+Första steget är att välja projektförslag (se nedan) och tänka ut vilka entiteter som behövs, och sedan göra ett E/R-diagram. Under första handledningstillfället kan ni få hjälp med struktur och E/R-diagram. 
 
 ## Projektförslag
 
@@ -63,6 +72,7 @@ Följande uppgifter finns som förslag:
 - Bildarkiv
 - Blog
 - Eget förslag. Ange i så fall ert förslag!
+- Meme-databas
 
 ## Handledning
 
