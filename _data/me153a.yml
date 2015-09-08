@@ -74,8 +74,8 @@ lectures:
     - name: Föreläsning 1
       file: F02
       
-    # - name: Föreläsning 3
-    #   file: F03
+    - name: Föreläsning 2
+      file: F03
 
     # - name: Föreläsning 4
     #   file: F04
