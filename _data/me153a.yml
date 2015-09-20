@@ -36,8 +36,8 @@ exercises:
     - name: Laboration 2
       file: L02
 
-    # - name: Laboration 3
-    #   file: L03
+    - name: Laboration 3
+      file: L03
 
     # - name: Laboration 4
     #   file: L04
