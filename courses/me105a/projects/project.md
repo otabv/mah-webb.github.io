@@ -34,12 +34,13 @@ För betyget godkänd krävs, förutom det som nämns ovan:
 För betyget väl godkänd krävs även
 
 - Minst en många-till-många-relation. 
-- Grundläggande skydd mot sql-injection. 
+- Grundläggande skydd mot sql-injection.
+- Användande av *prepared statements*. 
 - ÅÄÖ ska hanteras korrekt i in- och utmatningar. 
 
 Följande lämnas in:
 
-En projektrapporten som innehåller:
+En projektrapport som innehåller:
 
 - En beskrivning av er databas. Vad gör den? Hur fungerar den? Är det något som inte fungerar som tänkt?
 - E/R-diagram.

@@ -42,6 +42,8 @@ Observera att denna sida hämtar information från alla tre tabellerna.
 
 Handledning kommer att ges under labbtillfällena, men det krävs att ni jobbar med projektet även på egen hand. 
 
+Lämna in php-filerna ihopzippade, samt, **mycket viktigt**, en länk till ert miniprojekt, dvs något i stil med `http://ddwap.mah.se/userid/me105a/miniprojekt`
+
 ##Bilaga: Bilder och sql-kod
 
 cat.jpg
