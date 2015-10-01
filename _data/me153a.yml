@@ -77,11 +77,11 @@ lectures:
     - name: Föreläsning 2
       file: F03
 
-    # - name: Föreläsning 4
-    #   file: F04
+    - name: Diskussion 3
+      file: F04
 
-    # - name: Föreläsning 5
-    #   file: F05
+    - name: Föreläsning 3
+      file: F05
 
     # - name: Föreläsning 6
     #   file: F06
