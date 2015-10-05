@@ -112,20 +112,26 @@ SQL-injection betyder att obehöriga användare försöker lura ett system genom
 
 Antag att man har ett formulär med fälten user och password. Om man i fältet password matar in texten
 
+{% highlight text %}
 user:elev
 password: xxx' or 'a'='a
+{% endhighlight %}
 
 Antag vidare att fälten user går vidare till PHP-variabeln $user och password går vidare till $password. Om nu detta hanteras av mottagande PHP-sida på följande vis:
 
+{% highlight mysql %}
 $sql="SELECT privileges FROM security WHERE
 user='$user' and password='$password' ";
+{% endhighlight %}
 
 kommer SQL-kommandot att bli
 
+{% highlight mysql %}
 SELECT privileges FROM security WHERE
 user='elev' and password='xxx' or 'a'='a'
+{% endhighlight %}
 
-Eftersom 'a' alltid är lika med 'a' kommer SELECT att hitta poster även om man angivit fel lösenord för elev, och eventuellt få rättigheter trots att man egentligen saknar det. 
+Eftersom `'a'` alltid är lika med `'a'` kommer `SELECT` att hitta poster även om man angivit fel lösenord för elev, och eventuellt få rättigheter trots att man egentligen saknar det. 
 
 PHP har ett antal funktioner man kan använda för att undvika apostrofer kommer med i inmatningsfält. Bland annat kan man använda sig av *prepared statements*. Läs mer om det på sidan 123-124 i boken PHP and MySQL - Novice to Ninja. 
 
@@ -188,7 +194,7 @@ Eftersom vi här gör ROLLBACK innan vi hunnit göra COMMIT kommer inte ändring
 
 Se kapitel 9 i PHP & MySQL: Novice to Ninja. Cookies, sessions and access control.
 
-Spara aldrig lösenord i klartext i tabeller. Spara kodade lösenord. Boken använder en kodningsmetod som kallas MD5, som har vissa säkerhetsbrister men som vi kommer att använda som exempel i labbarna. En säkrare metod finns beskriven på <http://se2.php.net/manual/en/book.password.php>.
+Spara aldrig lösenord i klartext i tabeller. Spara kodade lösenord. Boken använder en kodningsmetod som kallas MD5, som har vissa säkerhetsbrister men som vi kommer att använda som exempel i labbarna. En säkrare metod finns beskriven på <http://php.net/manual/en/book.password.php>.
 
 MD5 finns både i PHP och i MySQL. 
  
