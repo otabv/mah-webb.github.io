@@ -119,7 +119,7 @@ password: xxx' or 'a'='a
 
 Antag vidare att fälten user går vidare till PHP-variabeln $user och password går vidare till $password. Om nu detta hanteras av mottagande PHP-sida på följande vis:
 
-{% highlight mysql %}
+{% highlight php startinline=True %}
 $sql="SELECT privileges FROM security WHERE
 user='$user' and password='$password' ";
 {% endhighlight %}
