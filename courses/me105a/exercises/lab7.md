@@ -13,7 +13,7 @@ img {
 
 #Laboration 7
 
-I denna lab ska vi exportera produkterna i tabellerna products i olika format. Först som en vanlig html-sida, sedan som en tabseparerad fil och slutligen i xml-format.
+I denna lab ska vi exportera produkterna i tabellerna products i olika format. Först som en vanlig html-sida, sedan som en tab-separerad fil och slutligen i xml-format.
 
 ##Uppgift 1
 
@@ -72,37 +72,33 @@ PHP har ett antal färdiga funktioner för att bygga upp xml-dokument.
 Ett rotelement med namnet toycatalog kan skapas med följande rader kod:
 
 {% highlight php  startinline=True %}
-$doc = new DomDocument('1.0');
-$root = $doc->createElement('toycatalog');
-$root = $doc->appendChild($root);
+$xml=new SimpleXMLElement("<toycatalog></toycatalog>");
 {% endhighlight %}
 
-För varje rad i tabellen skapas ett toy-element med följande rader:
+För varje rad i tabellen (dvs inne i en loop) skapas ett toy-element:
 
 {% highlight php  startinline=True %}
-$rownode = $doc->createElement('toy');
-$root->appendChild($rownode);
+$toy = $xml->addChild("toy");
 {% endhighlight %}
 
-För varje kolumn skapas ett element enligt följande exemel för kolumnen prod_id:
+För varje kolumn i tabellen skapas ett child-element till toy-elementet enligt följande grundexempel:
 
 {% highlight php  startinline=True %}
-//här skapas taggen <prod_id>:
-$child = $doc->createElement("prod_id"); 
-$rownode->appendChild($child);
-//här fylls taggen <prod_id> med innehåll:
-$value = $doc->createTextNode($row["prod_id"]); 
-$child->appendChild($value);
+$toy->addChild('prod_name',$row['prod_name']);
 {% endhighlight %}
 
-När alla rader och kolumner är tillagda finns hela xml-strukturen i variabeln `$doc`. Denna variabel kan dock inte skrivas ut direkt utan måste konverteras till en sträng som sedan kan exporteras i en fil. Det görs med koden 
+För prod_price ska vi även lägga till ett attribut "currency". Vi måste då tillfälligt lagra prod_price-noden i en variabel, för att sedan lägga till attributet:
 
 {% highlight php  startinline=True %}
-$export = $doc->saveXML(); 
-//$export innehåller nu all xml som en text
+$price = $toy->addChild('prod_price',$row['prod_price']);
+$price->addAttribute("currency","dollars");
 {% endhighlight %}
 
-Elementet får namnet *prod_id* och innehåller det som finns i `$row["prod_id"]`, dvs det värde som hämtats ur databasen för aktuell rad och kolumn. 
+När alla rader och kolumner är tillagda finns hela xml-strukturen i variabeln `$xml`. Denna kan exporteras till en fil med funktionen `asXML()`.
+
+{% highlight php  startinline=True %}
+$xml->asXML("$filename");
+{% endhighlight %}
 
 Skapa en php-sida som i 3 men som använder funktionerna ovan för att skapa själva xml-dokumentet. 
 
