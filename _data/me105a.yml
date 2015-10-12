@@ -19,9 +19,10 @@ lectures:
        file: lecture6
      - name: Föreläsning 7
        file: lecture7
-     - name: Föreläsning 8
+     - name: Föreläsning 8 (ej klar)
        file: lecture8
-
+     - name: Föreläsning 9
+       file: lecture9
 
 # Uppgifter
 assignments:
