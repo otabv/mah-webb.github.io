@@ -11,6 +11,17 @@ img {
 }
 </style>
 
+<script>
+  var toggle = function(id) {
+  var mydiv = document.getElementById(id);
+  if (mydiv.style.display === 'block' || mydiv.style.display === '')
+    mydiv.style.display = 'none';
+  else
+    mydiv.style.display = 'block'
+  }
+</script>
+
+
 #Laboration 7
 
 I denna lab ska vi exportera produkterna i tabellerna products i olika format. Först som en vanlig html-sida, sedan som en tab-separerad fil och slutligen i xml-format.
@@ -101,6 +112,70 @@ $xml->asXML("$filename");
 {% endhighlight %}
 
 Skapa en php-sida som i 3 men som använder funktionerna ovan för att skapa själva xml-dokumentet. 
+
+
+<!--START SHOW/HIDE-->
+<input type="button" value="visa/göm lösning till frivillig uppgift" onclick="toggle('answer4');">
+
+{::options parse_block_html="true" /}
+<div id="answer4" style="display:none">
+
+{% highlight html+php %}
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Xml</title>
+</head>
+
+<body>
+
+<?php
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+$sql="SELECT prod_price,prod_id,prod_name,prod_desc FROM products";
+$result=$pdo->query($sql);
+
+$output="<h2>A file has been created</h2>";
+
+$filename="products.xml";
+
+//skapa xml med rot
+$xml=new SimpleXMLElement("<toycatalog></toycatalog>");
+foreach ($result as $row) {
+	//lägg till toy-element för varje produkt
+	$toy = $xml->addChild("toy");
+	
+	//lägg till id.
+	$toy->addChild('prod_id',$row['prod_id']);
+	
+	//lägg till produktnamn
+	$toy->addChild('prod_name',$row['prod_name']);
+	
+	//lägg till pris. Obs: eftersom vi behöver lägga till attributet
+	//currency måste vi mellanlagra noden i variabeln $price
+	$price = $toy->addChild('prod_price',$row['prod_price']);
+	$price->addAttribute("currency","dollars");
+	
+	//lägg till beskrivning
+	$toy->addChild('prod_desc',$row['prod_desc']);
+	
+}
+$xml->asXML("$filename");
+
+$output.="<a href='$filename'>$filename</a>";
+
+echo $output;
+
+?>
+
+</body>
+</html>
+{% endhighlight %}
+
+</div>
+<!--END SHOW/HIDE-->
 
 ##Bilaga med bilder att använda
 
