@@ -91,7 +91,7 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 - Handledning av miniprojekt under laborationstillfällena. 
 - Inlämning av miniprojekt på It's learning fredag 30 oktober kl 17.00
 
-### Vecka 45 - Import av data
+### Vecka 45 - Normalisering samt import av data
 
 - [Föreläsning 9](lectures/lecture9.html)
 - [Laboration 8](exercises/lab8.html)
