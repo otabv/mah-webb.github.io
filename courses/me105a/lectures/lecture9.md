@@ -74,11 +74,11 @@ Första steget är att exportera data på något av de sätt som beskrevs på f�
 
 Andra steget är att antingen någon av InDesigns inbyggda importfunktioner, eller att använda en plugin. 
 
-![](im8/xml.png)
+![](im9/xml.png)
 
 Den funktionen är kraftfull och flexibel men svåranvänd. Ett enklare men mer begränsat sätt är att använda InDesigns Data Merge-funktion:
 
-![](im8/datamerge.png)
+![](im9/datamerge.png)
 
 Data Merge-funktionen kan importera tab-separerade filer (tsv) och skapa ett innehåll med konsistent layout. 
 
@@ -86,7 +86,7 @@ Det finns även olika plugins till InDesign, som ger ytterligare möjligheter ti
 
 Vi kommer att använda dels inbyggda Data Merge, dels InData i veckans laboration. 
 
-![](im8/indata.png)Även Word innehåller en data merge-funktion liknande den i InDesign, "Koppla dokument" på svenska:
+![](im9/indata.png)Även Word innehåller en data merge-funktion liknande den i InDesign, "Koppla dokument" på svenska:
 
-![](im8/word.png)
+![](im9/word.png)
 
