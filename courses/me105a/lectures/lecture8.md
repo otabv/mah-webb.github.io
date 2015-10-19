@@ -124,9 +124,9 @@ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 name TEXT);
 
 CREATE TABLE filmcategory (
-firstname INT,
-lastname INT,
-PRIMARY KEY(firstname,lastname));
+filmid INT,
+categoryid INT,
+PRIMARY KEY(filmid,categoryid));
 {% endhighlight %}
 
 Låt oss skapa dessa tabeller, samt lägga till några kategorier i tabellen *category*:
@@ -143,8 +143,8 @@ Låt oss även lägga till några regissörer:
 INSERT INTO person (firstname,lastname) VALUES ('Quentin','Tarantino');
 INSERT INTO person (firstname,lastname) VALUES ('Alfred','Hitchcock');
 INSERT INTO person (firstname,lastname) VALUES ('David','Lynch');
+INSERT INTO person (firstname,lastname) VALUES ('Ridley','Scott');
 {% endhighlight %}
-
 
 #### PHP-sidor
 
@@ -473,5 +473,5 @@ kommentera (eller komplettera):
 - kategori uppdateras inte
 - man kan inte lägga till nya regissörer
 - style?
-- 
+- även <?= $variabelexempel ?>
 -->
