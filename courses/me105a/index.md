@@ -77,7 +77,7 @@ Det finns självstudier med lösningar under de flesta veckorna. Självstudierna
 
 ### Vecka 43 - Miniprojekt
 
-- Föreläsning 8 -  Från E/R-diagram till färdig databas
+- [Föreläsning 8](lectures/lecture8.html) -  Från E/R-diagram till färdig databas och PHP
 - Eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
 
