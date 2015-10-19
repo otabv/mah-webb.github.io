@@ -83,14 +83,14 @@ lectures:
     - name: Föreläsning 3
       file: F05
 
-    # - name: Föreläsning 6
-    #   file: F06
+    - name: Föreläsning 6
+      file: F06
 
-    # - name: Föreläsning 7
-    #   file: F07
+    - name: Föreläsning 7
+      file: F07
 
-    # - name: Föreläsning 8
-    #   file: F08
+    - name: Föreläsning 8
+      file: F08
 
     # - name: Föreläsning 9
     #   file: F09
