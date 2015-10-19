@@ -383,12 +383,95 @@ foreach ($result as $row) {
 </html>
 {% endhighlight %}
 
-Nu har vi en väl fungerande sida. Det som återstår är att kunna lägga till regissör och kategori. 
+Nu har vi en väl fungerande sida. Det som återstår är att kunna lägga till regissör och kategori. Vi börja med att lägga till en dropdown-meny där man kan välja regissör. Menyn hämtar värden från tabellen *person*. 
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+if (isset($_POST['title'])) {
+    $title=$_POST['title'];
+    $directorid=$_POST['directorid'];
+    $sql="INSERT INTO film SET
+          title = :title,
+          directorid = :directorid";
+    $s = $pdo->prepare($sql);
+    $s->bindValue(':title',$title);
+    $s->bindValue(':directorid',$directorid);
+    $s->execute();
+    
+    //PHP_SELF innehåller url till aktuell sida. 
+    $self=$_SERVER['PHP_SELF']; 
+    //ladda om sidan när en film lagts till
+    header("Location: $self");
+    //avsluta sedan scriptet
+    exit();
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 8</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<form action='' method='post'>
+<input name='title' > titel<br>
+<select name='directorid'>
+<?php 
+//sök vilka directors som finns och visa i dropdownmeny
+$sql="SELECT * FROM person";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+    $id=$row["id"];
+    $firstname=$row["firstname"];
+    $lastname=$row["lastname"];
+    echo "<option value='$id'>$firstname $lastname</option>";
+}
+?>
+</select> regissör <br>
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+    $title=$row['title'];
+    echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+Nu återstår bara att kunna lägga till kategori, vilket vi återkommer till vid en senare föreläsning. 
+
+
+
 
 <!--
-xxx sedan med director-meny
+Återstår att göra:
 
-xxx sedan med radiobuttons för kategori
+Här ska vi kunna lägga till flera kategorier till en film, och använder *checkboxes*. Vi kan lägga till tre checkboxar för de tre kategorierna vi la till tidigare, *sci-fi*, *komedi* och *thriller*:
 
-xxx ev möjlighet att även lägga till ny director
+{% highlight html %}
+<input type="checkbox" name="category[]" value="1"> sci-fi<br>
+<input type="checkbox" name="category[]" value="2"> komedi<br>
+<input type="checkbox" name="category[]" value="3"> thriller<br>
+{% endhighlight %}
+
+Observera att vi måste lägga till hakparentes efter category, för att markera för PHP att category kan innehålla flera värden. `$_POST("category")` kommer att innehålla en array med förbockade värden. 
+
+lägg till bild på sida
+
+kommentera (eller komplettera):
+- kategori uppdateras inte
+- man kan inte lägga till nya regissörer
+- style?
+- 
 -->
