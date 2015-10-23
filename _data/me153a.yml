@@ -2,7 +2,7 @@
 name: "Medieteknik: Webbpublicering"
 code: me153a
 credits: 15.0
-   
+
 # Kursplan, filnamn (syllabus.md)
 syllabus: true
 
@@ -45,8 +45,8 @@ exercises:
     - name: Laboration 5
       file: L05
 
-    # - name: Laboration 6
-    #   file: L06
+    - name: Laboration 6
+      file: L06
 
     # - name: Laboration 7
     #   file: L07
@@ -73,7 +73,7 @@ lectures:
 
     - name: Föreläsning 1
       file: F02
-      
+
     - name: Föreläsning 2
       file: F03
 
