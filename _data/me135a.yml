@@ -45,8 +45,8 @@ exercises:
     - name: Laboration 5
       file: L05
 
-    # - name: Laboration 6
-    #   file: L06
+    - name: Laboration 6
+      file: L06
 
 # Projekt
 projects:
