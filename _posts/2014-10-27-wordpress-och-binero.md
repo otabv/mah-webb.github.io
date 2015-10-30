@@ -12,7 +12,7 @@ category: wordpress
 Ni måste ha en kampanjkod för att kunna registrera ett konto på binero utan kostnad.
 {: .info}
 
-För att registrera er på binero med en kampanjkod börjar ni med att besöka `https://store.binero.se/`.
+För att registrera er på binero med en kampanjkod börjar ni med att besöka följande sida: `https://store.binero.se/`. Därefter följer ni stegen i samband med de som listas nedan med förtydligande - var nogrann!
 
 1. Fyll i textrutan med det domännamn ni skulle vilja ha (t.ex `lisanilsson.se` eller `andersjohansson.se`). **Observera** att det ska vara en `.se` domän och ni **måste** välja en direkt
 2. På nästa steg väljer ni vilken typ av tjänst, i detta fallet ska det vara **Privatpaketet** (kostanden för detta kommer försvinna på sista steget)
