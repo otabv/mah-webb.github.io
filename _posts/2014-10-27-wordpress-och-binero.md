@@ -8,11 +8,20 @@ category: wordpress
 
 ## Skapa ett binerokonto
 
-Använd er kampanjkod för att registrera ett konto på binero.
 
-Adressen är `https://www.binero.se/bestall?campaign=` där ni __lägger till__ kampanjkoden i slutet. Här fyller ni sedan i era personuppgifter och vilken domän ni vill ha. __Observera__ - för att domänen ska vara gratis krävs det att ni registrerar en domän direkt.
+Ni måste ha en kampanjkod för att kunna registrera ett konto på binero utan kostnad.
+{: .info}
 
-Skulle fråga om val av server uppstå väljer ni "Linux".
+För att registrera er på binero med en kampanjkod börjar ni med att besöka `https://store.binero.se/`.
+
+1. Fyll i textrutan med det domännamn ni skulle vilja ha (t.ex `lisanilsson.se` eller `andersjohansson.se`). **Observera** att det ska vara en `.se` domän och ni **måste** välja en direkt
+2. På nästa steg väljer ni vilken typ av tjänst, i detta fallet ska det vara **Privatpaketet** (kostanden för detta kommer försvinna på sista steget)
+3. Fyll i era personuppgifter, tänk på att komma ihåg vilken email ni registrerar för det kommer skickas ut en bekräftelse till denna
+4. På sista steget kan ni välja "Faktura", under dessa val kan ni fylla i kampanjkoden - var nogranna när ni fyller i denna så det inte blir fel. När denna är ifylld bör priserna ändras till 0kr - kontrollera detta innan ni slutligen väljer att acceptera allt.
+
+När ni gått igenom alla stegen så kommer ett par emails att skickas till den mail ni registrerade er med. Detta kan ta en stund så vänligen vänta (ibland kan ni även behöva kontrollera er skräppost).
+{: .info}
+
 
 ## Installera WordPress på binero
 
