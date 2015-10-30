@@ -48,6 +48,9 @@ exercises:
     - name: Laboration 6
       file: L06
 
+    - name: Laboration 7
+      file: L07
+
 # Projekt
 projects:
     - name: Bornholm
