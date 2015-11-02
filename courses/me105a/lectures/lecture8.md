@@ -471,7 +471,7 @@ PHP-kod som tar emot formuläret. Variabeln `$categoryids` blir en array:
 $categoryids=$_POST['categoryids'];
 {% endhighlight %}
 
-Denna array kan vi sedan loopa igenom för att lägga till en ny rad för varje kategory:
+Denna array kan vi sedan loopa igenom för att lägga till en ny rad för varje kategori:
 
 {% highlight php  startinline=True %}
 foreach($categoryids as $categoryid) {
@@ -584,4 +584,6 @@ Nu har vi en inmatningssida som funkar hyfsat bra, men det finns naturligtvis my
 - olika sätt att presentera filmer, tex samla filmer inom en kategori för sig
 - sökfunktioner
 - css för bättre layout
+
+<!--här kan man ha en skärmdump på sidan-->
 

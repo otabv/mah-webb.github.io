@@ -20,18 +20,17 @@ I denna labb ska vi göra ett liknande dokument med InDesign. Då måste vi för
 
 ##Uppgift 1
 
-Vi ska använda InDesigns inbyggda Data Merge-funktion för att importera data till InDesign. För att InDesign ska kunna använda data från databasen måste den tabb-separerade filen från förra labben kompletteras så att den dels innehåller en rubrikrad med namnet på de olika kolumnerna, dels en kolumn med sökväg till de olika bilderna. Kolumnnamn för bildkolumnen måste börja med ett @-tecken. Komplettera uppgift 2 från laboration 7 så att tab-filen får utseende enligt figur nedan. Skapa en fil */me105a/laboration8/uppgift1/index.php* som skapar filen *export.txt*:
+Vi ska använda InDesigns inbyggda Data Merge-funktion för att importera data till InDesign. För att InDesign ska kunna använda data från databasen måste den tab-separerade filen från förra labben kompletteras så att den dels innehåller en rubrikrad med namnet på de olika kolumnerna, dels en kolumn med sökväg till de olika bilderna. Kolumnnamn för bildkolumnen måste börja med ett @-tecken. Komplettera uppgift 2 från laboration 7 så att tab-filen får utseende enligt figur nedan. Skapa en fil */me105a/laboration8/uppgift1.php* som skapar filen *export1.txt*:
 
 ![](im8/bild2.png)
 
-Filen export.txt skapas på webbservern. Se till att hämta den och lägg även filen *export.txt* i */me105a/laboration8/uppgift1/*
+Filen export1.txt skapas på webbservern. Se till att hämta den och lägg även filen *export1.txt* i */me105a/laboration8/*
 
-Nästa steg är att skapa ett InDesign-dokument som kan importera export.txt. Skapa ett nytt dokument i InDesign, döp det till *products.indd* och lägg även detta dokument i mappen *uppgift1*. Lägg även mappen med bilder från förra labben här och döp den mappen till *images*. Mappstrukturen ska då se ut så här:
+Lägg även mappen med bilder från förra labben i mappen *laboration8* och döp den mappen till *images*. Det är mycket viktigt att mappen med bilder heter *images* och att den mappen ligger i *laboration8*. 
 
+Nästa steg är att skapa ett InDesign-dokument som kan importera export1.txt. Skapa ett nytt dokument i InDesign, döp det till *products.indd* och lägg även detta dokument i mappen *laboration8*. 
 
-![](im8/bild3.png)
-
-Skapa tre textramar med *Type tool* och en rektangelram med *Rectangle Frame Tool*. Välj sedan *Window->Utilities->Data Merge*. Klicka pilen i övre högra hörnet av Data Merge-fönstret och välj *Select Data Source*. Välj filen som exporterats från databasen. 
+Skapa tre textramar med *Type tool* och en rektangelram med *Rectangle **Frame** Tool* (inte *Rectangle Tool*). Välj sedan *Window->Utilities->Data Merge*. Klicka pilen i övre högra hörnet av Data Merge-fönstret och välj *Select Data Source*. Välj filen som exporterats från databasen. 
 
 ![](im8/bild4.png)
 
@@ -51,22 +50,22 @@ Lämna in minst två mallar och två resulterande kataloger.
 
 ##Uppgift 2
 
-Data Merge-funktionen i InDesign är bra om man snabbt ska upprepa samma layout flera gånger, men räcker inte till för mer avancerade layout-uppgifter. Vi kommer nu att titta på en plug-in till InDesign som heter InData. Med InData kan man bland annat göra vilkorsstyrd import och på så vis få en bättre anpassad layout. Även här behöver vi en tabbseparerad exportfil, men med några viktiga skillnader jämfört med uppgift 1:
+Data Merge-funktionen i InDesign är bra om man snabbt ska upprepa samma layout flera gånger, men räcker inte till för mer avancerade layout-uppgifter. Vi kommer nu att titta på en plug-in till InDesign som heter InData. Med InData kan man bland annat göra vilkorsstyrd import och på så vis få en bättre anpassad layout. Även här behöver vi en tab-separerad exportfil, men med några viktiga skillnader jämfört med uppgift 1:
 
 - exportfilen ska *inte* innehålla en *rubrikrrad*. 
 - det får *inte* vara något *inledande snedstreck* i bildens sökväg. 
 
-Gör en ny php-fil i mappen */me105a/laboration8/uppgift2/* som skapar filen *export.txt* enligt nedan:
+Gör en ny php-fil *uppgift2.php* i mappen */me105a/laboration8/* som skapar filen *export2.txt* enligt nedan:
 
 ![](im8/bild8.png)
 
-Ladda ner export.txt till mappen uppgift2 och **byt namn på den till export.tab**. En bugg i den installerade versionen av InData gör att den inte kan öppna .txt-filer. 
+Ladda ner *export2.txt* till mappen *laboration8*.
 
-Skapa ett nytt InDesign-dokument, döpt till *mall.indd*, och placerat i mappen *uppgift2*. Här är det viktigt att **Primary Text Frame är förbockat**, att **Facing Pages inte är förbockat* och att *två kolumnner* är valda:
+Skapa ett nytt InDesign-dokument, döpt till *mall.indd*, och placerat i mappen *laboration8*. Här är det viktigt att *Primary Text Frame **är** förbockat*, att *Facing Pages **inte** är förbockat* och att *två kolumnner* är valda:
 
 ![](im8/bild9.png)
 
-När detta är gjort ska vi göra en **InData-prototyp**, dvs en mall för hur vår exportfil ska visas. Eftersom vi inte har tabellrubriker i vår exportfil måste vi börja med att tala om vilka kolumner vi har. Gör det genom att först i InDesign-dokumentet, på sidan 1, skriva:
+När detta är gjort ska vi göra en *InData-prototyp*, dvs en mall för hur vår exportfil ska visas. Eftersom vi inte har tabellrubriker i vår exportfil måste vi börja med att tala om vilka kolumner vi har. Gör det genom att först i InDesign-dokumentet, på sidan 1, skriva:
 
 {% highlight text %}
 «fields prod_id, prod_picture, prod_price, prod_name, prod_desc
@@ -90,7 +89,7 @@ definierar vi hur kolumnerna ska visas. Här kan vi även ändra typsnitt och an
 $«prod_price»
 {% endhighlight %}
 
-Slutligen ska vi lägga till en bild, vilket är lite bökigt. Börja med att lägga till en bildram **var som helst på sidan** med Rectangle Frame Tool. Markera hela ramen och klipp ut den (cut). Ställ sedan textmarkören på en tom rad efter prod_price och välj klistra in (paste). Det bör nu se ut ungefär som nedan:
+Slutligen ska vi lägga till en bild, vilket är lite bökigt. Börja med att lägga till en bildram *var som helst på sidan* med Rectangle Frame Tool. Markera hela ramen och klipp ut den (cut). Ställ sedan textmarkören på en tom rad efter prod_price och välj klistra in (paste). Det bör nu se ut ungefär som nedan:
 
 ![](im8/bild10.png)
 
@@ -100,12 +99,10 @@ Slutligen ska vi lägga till en bild, vilket är lite bökigt. Börja med att l�
 
 Nu är snart dags att importera data, **men allra först måste dokumentet sparas, annars går ändringar förlorade!** 
 
-Välj **InData->Import from file** och välj filen export.tab. Det är **mycket viktigt** att välja **Tab-delimited.**
-
-![](im8/bild12.png)
+Välj *InData->Import from file* och välj filen *export2.txt*. Om alternativet *comma-delimited* är förvalt måste detta ändras till *tab-delimited*. 
 
 När detta är gjort är det bara att starta importen, och resultatet bör bli ungefär så här:
 
 ![](im8/bild13.png)
 
-Spara resultet med **Save as...** och ge dokumentet namnet *resultat.indd*. Om man inte väljer **Save as...** kommer mallen att skrivas över och kan inte återanvändas. Lämna in mall och resultat. 
+Spara resultet med *Save as...* och ge dokumentet namnet *resultat.indd*. Om man inte väljer *Save as...* kommer mallen att skrivas över och kan inte återanvändas. Lämna in mall och resultat. 
