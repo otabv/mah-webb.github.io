@@ -51,7 +51,7 @@ __Nya:__
 * I menyn väljer ni _Arkiv_ -> _Platshanteraren_ (alt. _File_ -> _Site Manager_)
 * I vänstermenyn välj att skapa en _Ny plats_ (alt. _New Site_) - döp denna sedan till något relevant
 * I högermenyn under _Värd_ (alt. _Host_) fyller ni nu i något i stil med `ftp.mindomän.se`
-* Under _Kryptering_ (alt. _Encryption) väljer ni det sista alternativet _Enkel FTP_
+* Under _Kryptering_ (alt. _Encryption_) väljer ni det sista alternativet _Enkel FTP_
 * Under _Inloggningstyp_ (alt. _Logon type_) väljer ni _Normal_ och fyller därefter i ert användarnamn och lösenord för er FTP
 * Klicka sedan "OK" __inte__ "Anslut" -> gå sedan tillbaka i menyn (Arkiv) och klicka anslut (detta gör att allt ni gjorde sparas till framtiden)
 
