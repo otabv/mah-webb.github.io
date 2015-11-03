@@ -43,6 +43,20 @@ Nu har vi uppgifterna för att kunna logga in på webbhotellets FTP-server genom
 
 Om vi utgår från FileZilla så fyller vi i följande fält för att logga in (det skiljer sig inte mycket i andra program):
 
+I den senaste version av FileZilla behöver vi ansluta på ett alternativt vis som listas nedan, om ni har en äldre version av FileZilla sedan innan kan ni fortfarande utgå från det tidigare viset.
+{: .info}
+
+__Nya:__
+
+* I menyn väljer ni _Arkiv_ -> _Platshanteraren_ (alt. _File_ -> _Site Manager_)
+* I vänstermenyn välj att skapa en _Ny plats_ (alt. _New Site_) - döp denna sedan till något relevant
+* I högermenyn under _Värd_ (alt. _Host_) fyller ni nu i något i stil med `ftp.mindomän.se`
+* Under _Kryptering_ (alt. _Encryption) väljer ni det sista alternativet _Enkel FTP_
+* Under _Inloggningstyp_ (alt. _Logon type_) väljer ni _Normal_ och fyller därefter i ert användarnamn och lösenord för er FTP
+* Klicka sedan "OK" __inte__ "Anslut" -> gå sedan tillbaka i menyn (Arkiv) och klicka anslut (detta gör att allt ni gjorde sparas till framtiden)
+
+__Gamla:__
+
 * __Host__: IP-adressen/preview-värdnamn.
 * __Username__: användarnamnet (det som börjar med en sifferkombination).
 * __Password__: det lösenord ni själva fyllde i på bineros kontrollpanel.
