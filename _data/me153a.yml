@@ -51,11 +51,11 @@ exercises:
     - name: Laboration 7
       file: L07
 
-    # - name: Laboration 8
-    #   file: L08
+    - name: Laboration 8
+      file: L08
 
-    # - name: Laboration 9
-    #   file: L09
+    - name: Laboration 9
+      file: L09
 
     # - name: Laboration 10
     #   file: L10

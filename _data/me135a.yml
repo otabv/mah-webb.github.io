@@ -50,6 +50,9 @@ exercises:
 
     - name: Laboration 7
       file: L07
+      
+    - name: Laboration 8
+      file: L08
 
 # Projekt
 projects:
@@ -83,8 +86,8 @@ lectures:
     - name: Föreläsning 8
       file: F08
 
-    # - name: Föreläsning 9
-    #   file: F09
+    - name: Föreläsning 9
+      file: F09
 
     # - name: Föreläsning 10
     #   file: F10
