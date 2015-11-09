@@ -98,15 +98,16 @@ för att bara visa dollar-tecken + pris om det finns prisuppgift i exportfilen. 
 
 ![](im9/exportutanpris.png)
 
-Vi passar även på att testa att åäö fungerar. Vi måste först lägga till en ny produkt som saknar prisuppgift. Problemet är att när vi skapade *products*-tabellen för flera labbar sedan satte vi som villkor att kolumnen *prod_price* alltid måste innehålla ett värde. Använd *mysqlbrowser* för att
+Vi passar även på att testa att åäö fungerar. Vi måste först lägga till en ny produkt som saknar prisuppgift. Problemet är att när vi skapade *products*-tabellen för flera labbar sedan satte vi som villkor att kolumnen *prod_price* alltid måste innehålla ett värde. Följande måste göras:
 
-- Ändra kolumnen *prod_price* så att den tillåts vara tom. Det görs med sql-kommandot `ALTER TABLE products MODIFY COLUMN prod_price DECIMAL(8,2)`.
-- Lägg till en ny produkt saknar pris, och dessutom innehåller svenska tecken:  
-   prod_id ska vara BR04 (eller något annat unikt prod_id)
-   vend_id ska vara BRS01 (dvs kopplat till Bears R Us)
-   prod_name ska vara Teddybjörn (eller något annat som innehåller svenska tecken)
-   prod_desc kan vara Gosig teddybjörn med mjuk päls (eller något annat med svenska tecken)
-- Dessutom måste en ny bild som föreställer en teddybjörn in i mappen *images*. Döp bilden till BR04.jpg för att det ska fungera, om prod_id är BR04. 
+Använd *mysqlbrowser* för att ändra kolumnen *prod_price* så att den tillåts vara tom. Det görs med sql-kommandot `ALTER TABLE products MODIFY COLUMN prod_price DECIMAL(8,2)`. Lägg sedan till en ny produkt saknar pris, och dessutom innehåller svenska tecken:
+
+- prod_id ska vara BR04 (eller något annat unikt prod_id)
+- vend_id ska vara BRS01 (dvs kopplat till Bears R Us)
+- prod_name ska vara Teddybjörn (eller något annat som innehåller svenska tecken)
+- prod_desc kan vara Gosig teddybjörn med mjuk päls (eller något annat med svenska tecken)
+
+Slutligen måste en ny bild som föreställer en teddybjörn in i mappen *images*. Döp bilden till BR04.jpg för att det ska fungera, om prod_id är BR04. 
 
 När filen importeras måste man välja encoding: Unicode för att svenska tecken ska visas korrekt. 
 
