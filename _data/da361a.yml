@@ -6,20 +6,6 @@ credits: 7.5
 # Kursplan, filnamn (syllabus.md)
 syllabus: true
 
-# Laborationer
-exercises:
-    - name: Laboration 1
-      file: E01
-
-    # - name: Laboration 2
-    #   file: E02
-
-    # - name: Laboration 3
-    #   file: E03
-
-    # - name: Laboration 4
-    #   file: E04
-
 # Föreläsningar
 lectures:
     - name: Kursintroduktion
@@ -34,3 +20,39 @@ lectures:
     # - name: Föreläsning 3
     #   file: L04
 
+    # - name: Föreläsning 4
+    #   file: L05
+
+    # - name: Föreläsning 5
+    #   file: L06
+
+    # - name: Föreläsning 6
+    #   file: L07
+
+# Uppgifter
+assignments:
+    - name: Uppgift 1
+      file: U01
+
+    - name: Uppgift 2
+      file: U02
+
+# Laborationer
+exercises:
+    - name: Laboration 1
+      file: E01
+
+    # - name: Laboration 2
+    #   file: E02
+
+    # - name: Laboration 3
+    #   file: E03
+
+    # - name: Laboration 4
+    #   file: E04
+
+    # - name: Laboration 5
+    #   file: E05
+
+    # - name: Laboration 6
+    #   file: E06
