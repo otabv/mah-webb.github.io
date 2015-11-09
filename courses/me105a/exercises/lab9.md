@@ -86,6 +86,8 @@ Skapa ett InDesign-dokument precis som i laboration 8, uppgift 2, lägg in ny In
 
 ![](im9/bild5.png)
 
+Exportera resultatet i pdf-format. 
+
 ## Uppgift 3
 
 Antag att det finns produkter som saknar prisuppgift. Då kommer det att visas ett ensamt dollar-tecken på en rad om vi använder mallen från uppgift 2. Använd InData-villkoret 
@@ -109,8 +111,15 @@ Använd *mysqlbrowser* för att ändra kolumnen *prod_price* så att den tillåt
 
 Slutligen måste en ny bild som föreställer en teddybjörn in i mappen *images*. Döp bilden till BR04.jpg för att det ska fungera, om prod_id är BR04. 
 
-När filen importeras måste man välja encoding: Unicode för att svenska tecken ska visas korrekt. 
+Fungerar åäö? Om det inte fungerar, experimentera med importinställningar tills det fungerar. 
 
-## Uppgift 4 - frivillig men rekommenderad
+Exportera resultatet i pdf-format när det fungerar. 
 
-JSON
+**Redovisning** 
+
+- Redovisa alla php-filer från uppgift 1 och 2
+- Redovisa både InDesign-mallar och exporterade pdf-filer från uppgift 2 och 3.  
+
+<!--## Uppgift 4 - frivillig men rekommenderad
+
+JSON-->
