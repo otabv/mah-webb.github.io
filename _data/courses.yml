@@ -16,10 +16,6 @@
   code: me132a
   credits: 15.0
 
-- name: Interaction Technology
-  code: da606a
-  credits: 7.5
-  
 - name: Inledande webbprogrammering med JavaScript
   code: me152a
   credits: 15.0
@@ -27,3 +23,8 @@
 - name: Objektorienterad programmering och modellering
   code: da361a
   credits: 7.5
+
+- name: Interaction Technology
+  code: da606a
+  credits: 7.5
+  
