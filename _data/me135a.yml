@@ -80,17 +80,17 @@ lectures:
     - name: Föreläsning 3
       file: F05
 
-    - name: Föreläsning 6
+    - name: Föreläsning 4
       file: F06
 
-    - name: Föreläsning 7
+    - name: Föreläsning 5
       file: F07
 
-    - name: Föreläsning 8
+    - name: Föreläsning 6
       file: F08
 
-    - name: Föreläsning 9
+    - name: Föreläsning 7
       file: F09
 
-    # - name: Föreläsning 10
-    #   file: F10
+    - name: Föreläsning 8
+      file: F10
