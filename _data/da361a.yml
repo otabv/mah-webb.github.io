@@ -11,23 +11,23 @@ lectures:
     - name: Kursintroduktion
       file: F01
 
-    # - name: Föreläsning 1
-    #   file: L02
+    - name: Föreläsning 1
+      file: F02
 
     # - name: Föreläsning 2
-    #   file: L03
+    #   file: F03
 
     # - name: Föreläsning 3
-    #   file: L04
+    #   file: F04
 
     # - name: Föreläsning 4
-    #   file: L05
+    #   file: F05
 
     # - name: Föreläsning 5
-    #   file: L06
+    #   file: F06
 
     # - name: Föreläsning 6
-    #   file: L07
+    #   file: F07
 
 # Uppgifter
 assignments:
