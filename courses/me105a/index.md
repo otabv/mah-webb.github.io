@@ -106,7 +106,7 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 ### Vecka 47 - Projektstart
 
 <!--här ska det nog in något om att lägga till data i flera tabeller a la projkettips-->
-- [Föreläsning 10 - Projekt](projects/project.html)
+- [Föreläsning 11 - Projekt](projects/project.html)
 - Handledning av projekt under laborationstillfällena
 
 ### Vecka 48 - Projekt
