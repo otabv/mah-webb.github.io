@@ -24,4 +24,6 @@ li {text-align:left}
 
 ### Gästföreläsning av Bato Vogel om Internet of Things och Big Data
 
+<div class="video">
 <iframe src="https://drive.google.com/file/d/0B5cG4-71MFFFaHFsYWt4VXl2bms/preview" width="640" height="480"></iframe>
+</div>

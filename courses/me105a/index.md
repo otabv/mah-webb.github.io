@@ -100,7 +100,7 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 
 ### Vecka 46 - Gästföreläsing - Internet of Things and Big Data
 
-- Föreläsning 10 - Gästföreläsning med Bato Vogel om Internet of Things and Big Data
+- [Föreläsning 10](lectures/lecture10.html) - Gästföreläsning med Bato Vogel om Internet of Things and Big Data
 - [Laboration 9](exercises/lab9.html)
 
 ### Vecka 47 - Projektstart
