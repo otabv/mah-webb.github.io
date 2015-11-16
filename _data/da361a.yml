@@ -31,8 +31,8 @@ lectures:
 
 # Uppgifter
 assignments:
-    # - name: Uppgift 1
-    #   file: U01
+    - name: Uppgift 1
+      file: U01
 
     # - name: Uppgift 2
     #   file: U02
