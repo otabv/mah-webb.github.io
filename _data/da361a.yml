@@ -20,8 +20,8 @@ lectures:
     - name: Föreläsning 3
       file: F04
 
-    # - name: Föreläsning 4
-    #   file: F05
+    - name: Föreläsning 4
+      file: F05
 
     # - name: Föreläsning 5
     #   file: F06
