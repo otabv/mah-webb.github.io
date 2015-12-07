@@ -123,7 +123,14 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 
 ### Vecka 51 - Projekt
 
-- Inlämning 15 december kl 12.00 och redovisning av projekt, onsdag 16 december kl 13.15-17.00. 
+- Inlämning 15 december kl 12.00
+- redovisning av projekt, onsdag 16 december kl 13.15-17.00. 
+
+Redovisningen kommer att gå till så att ni får 5 minuter var för att presentera projektet. Ni får då:
+
+- demonstrera er databas
+- berätta om eventuella problem eller utmaningar ni stött på
+- berätta om vad ni lärt er
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
 [schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-08-31&resurser=k.ME105A-20152-TS561-
