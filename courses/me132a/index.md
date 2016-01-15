@@ -4,7 +4,7 @@ code: me132a
 title: Programmering för webben ME132A (15.0 hp)
 ---
 
-# Programmering för webben våren 2015
+# Programmering för webben våren 2016
 
 Välkomna till Programmering för webben! Kursen är upplagd med en föreläsning följd av laboration i stort sett varje vecka, där syftet med laborationen är att träna de moment som gicks igenom på föreläsningen. I slutet av kursen kommer även ett projekt att genomföras. 
 
@@ -55,7 +55,7 @@ Lärare på kursen:
 ### Vecka 7 - Loopar
 
 - [Föreläsning 5](lectures/lecture5.html)
-- [Laboration 5](exercises/lab5.html)
+- [Laboration 5](exercises/lab5.html)<!--ej klar-->
 
 ### Vecka 8 - Självstudier
 
