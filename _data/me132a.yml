@@ -5,64 +5,64 @@ credits: 15.0
 
 # Föreläsningar
 lectures:
-     - name: Föreläsning 1
+     - name: F 1 - Introduktion
        file: lecture1
-     - name: Föreläsning 2
+     - name: F 2 - Variabler
        file: lecture2
-     - name: Föreläsning 3
+     - name: F 3 - Formulär
        file: lecture3
-     - name: Föreläsning 4
+     - name: F 4 - Strängar, if
        file: lecture4
-     - name: Föreläsning 6 (F 5 utgick)
+     - name: F 5 - Loopar
+       file: lecture4
+     - name: F 6 - Funktioner
        file: lecture6
-     - name: Föreläsning 7
+     - name: F 7 - Filhantering
        file: lecture7
-     - name: Föreläsning 8
+     - name: F 8 - Filuppladdning
        file: lecture8
-     - name: Föreläsning 9
+     - name: F 9 - Cookies, sessions
        file: lecture9
-     - name: Föreläsning 10
+     - name: F 10 - Mail, bilder
        file: lecture10
-     - name: Föreläsning 11
+     - name: F 11 - Databaser
        file: lecture11
-     - name: Föreläsning 12
+     - name: F 12 - API
        file: lecture12
-     - name: Föreläsning 13
+     - name: F 13 - Felsökning
        file: lecture13
-
-
 
 # Laborationer
 exercises:
     - name: Serverinställningar
       file: dwsettings
-    - name: Laboration 1
+    - name: Lab 1 - Introduktion
       file: lab1
-    - name: Laboration 2
+    - name: Lab 2 - Variabler
       file: lab2
-    - name: Laboration 3
+    - name: Lab 3 - Formulär
       file: lab3
-    - name: Laboration 4
+    - name: Lab 4 - Strängar
       file: lab4
-    - name: Laboration 5
+    - name: Lab 5 - Loopar
       file: lab5
-    - name: Laboration 6
+    - name: Lab 6 - Funktioner
       file: lab6
-    - name: Laboration 7
+    - name: Lab 7 - Filhantering
       file: lab7
-    - name: Laboration 8
+    - name: Lab 8 - Filuppladdning
       file: lab8
-    - name: Laboration 9
+    - name: Lab 9 - Cookies, sessions
       file: lab9
-    - name: Laboration 10
+    - name: Lab 10 - Mail, bilder
       file: lab10
-    - name: Laboration 11
+    - name: Lab 11 - Databaser
       file: lab11
-    - name: Laboration 12
-      file: lab12
+#    - name: Lab 12 - API
+#      file: lab12
 
 # Projekt
-projects:
-    - name: Projektbeskrivning
-      file: project
+#projects:
+#    - name: Projektbeskrivning
+#      file: project
       

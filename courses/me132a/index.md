@@ -15,7 +15,13 @@ Föreläsningar och laborationer kommer att vara tätt kopplade till boken PHP &
 Lärare på kursen:
 
 - Bo Peterson, bo.peterson@mah.se (kursansvarig)
-- Sebastian Bengtegård, sebastian.bengtegard@mah.se
+- Sebastian Bengtegård, sebastian.bengtegard@mah.se (endast början av kursen)
+- Daniel Palmér daniel.palmr@gmail.com
+
+## Gruppindelning
+
+- Laborationsgrupp 1: Efternamn som börjar på A-J
+- Laborationsgrupp 2: Efternamn som börjar på K-Ö
 
 ## Nyttiga länkar
 
@@ -25,31 +31,35 @@ Lärare på kursen:
 
 ## Veckoplan
 
-### Vecka 4 - Introduktion till kursen
+### Vecka 3 - Introduktion till kursen
 
 - [Föreläsning 1](lectures/lecture1.html)
 - [Laboration 1](exercises/lab1.html)
 - [Inställningar av Dreamweaver eller FileZilla](exercises/dwsettings.html)
 
-### Vecka 5 - Variabler
+### Vecka 4 - Variabler
 
 - [Föreläsning 2](lectures/lecture2.html)
 - [Laboration 2](exercises/lab2.html)
 
-### Vecka 6 - Formulär
+### Vecka 5 - Formulär
 
 - [Föreläsning 3](lectures/lecture3.html)
 - [Laboration 3](exercises/lab3.html)
 
-### Vecka 7 - Strängar, kontrollstrukturer
+### Vecka 6 - Strängar, kontrollstrukturer, indentering
 
 - [Föreläsning 4](lectures/lecture4.html)
 - [Laboration 4](exercises/lab4.html)
 
-### Vecka 8 - Loopar, include
+### Vecka 7 - Loopar
 
-- Ingen föreläsning. Förbered istället genom att läsa s. 76-85 i boken. Börja längst ned på s. 76 där det står om *while-loopar*.
+- [Föreläsning 5](lectures/lecture5.html)
 - [Laboration 5](exercises/lab5.html)
+
+### Vecka 8 - Självstudier
+
+- Självstudieuppgifter kommer
 
 ### Vecka 9 - Funktioner
 
@@ -66,21 +76,22 @@ Lärare på kursen:
 - [Föreläsning 8](lectures/lecture8.html)
 - [Laboration 8](exercises/lab8.html)
 
-### Vecka 12 - Cookies, sessions
+
+### Vecka 12 - Självstudier
+
+- Självstudieuppgifter kommer
+
+<!--easter beyonce????-->
+
+### Vecka 13 - Cookies, sessions
 
 - [Föreläsning 9](lectures/lecture9.html)
 - [Laboration 9](exercises/lab9.html)
 
-### Vecka 13 - Skicka mail, skapa bilder, skapa pdf
+### Vecka 14 - Skicka mail, skapa bilder, skapa pdf
 
 - [Föreläsning 10](lectures/lecture10.html)
 - [Laboration 10](exercises/lab10.html)
-
-### Vecka 14
-
-Påsk-katten hälsar: Ingen undervisning
-
-![](eastercat.jpg)
 
 ### Vecka 15 - Introduktion till databaser
 
@@ -89,70 +100,66 @@ Påsk-katten hälsar: Ingen undervisning
 
 ### Vecka 16 - Använda externa API
 
+<!--
 **Viktig förberedelse inför laborationen:**
 
 1. Gå in på flickr.com och öppna ett konto om du inte redan har ett
 2. Ladda upp minst 10 egna foton på flickr och tagga bilderna med sökord. Använd olika taggar men se till att flera bilder har samma tag.
 3. Läs igenom avsnittet API authentication i instruktionerna på [Search for photos using PHP and the flickr API](http://www.web-development-blog.com/archives/search-for-photos-using-php-and-the-flickr-api/) och skaffa en egen API key. Spara den på ett ställe så att du kommer åt den under labben. 
+-->
+
 
 - [Föreläsning 12](lectures/lecture12.html)
-- [Laboration 12](exercises/lab12.html)
+- Laboration 12<!--Laboration 12--><!--(exercises/lab12.html)--><!--instagram? instawall?-->
 
 ### Vecka 17 - Felsökningstekniker samt projektintroduktion
 
 - [Föreläsning 13](lectures/lecture13.html)
-- Laboration - projekthandledning
-- [Projektbeskrivning](projects/project.html)
+- Projektbeskrivning <!--Projektbeskrivning--><!--projects/project.html-->
+- Projekthandledning under schemalagd laborationstid
 
 ### Vecka 18 - Viktiga verktyg såsom Git, Github mm
 
-- Föreläsning 14
+- Föreläsning 14. Det finns inga föreläsningsanteckningar, men ett antal verktyg som professionella PHP-utvecklare använder kommer att gås igenom såsom: 
+    - [git](http://git-scm.com)
+    - [github](https://github.com)
+    - [php storm](https://www.jetbrains.com/phpstorm/)
+    - [markdown](http://daringfireball.net/projects/markdown/)
 
-Det finns inga föreläsningsanteckningar, men ett antal verktyg som professionella PHP-utvecklare använder kommer att gås igenom såsom: 
-
-- [git](http://git-scm.com)
-- [github](https://github.com)
-- [php storm](https://www.jetbrains.com/phpstorm/)
-- [markdown](http://daringfireball.net/projects/markdown/)
+- Projekthandledning under schemalagd laborationstid
 
 ### Vecka 19 - Ramverk
 
-- Föreläsning 15
+- Föreläsning 15. Olika ramverk kommer att gås igenom:
 
-Olika ramverk kommer att gås igenom:
+    - PHP-ramverk
+        - [Varför man ska använda PHP-ramverk](http://www.phpandstuff.com/articles/top-10-reasons-why-you-should-use-a-php-framework)
+        - [Slim](http://www.slimframework.com/)
+        - [Laravel](http://laravel.com)
+    - JavaScript-ramverk
+        - [AngularJS](https://angularjs.org/)
+        - [Backbone](http://backbonejs.org/)
+    - CSS-ramverk
+        - [Bootstrap](http://getbootstrap.com)
 
-- PHP-ramverk
-    - [Varför man ska använda PHP-ramverk](http://www.phpandstuff.com/articles/top-10-reasons-why-you-should-use-a-php-framework)
-    - [Slim](http://www.slimframework.com/)
-    - [Laravel](http://laravel.com)
-- JavaScript-ramverk
-    - [AngularJS](https://angularjs.org/)
-    - [Backbone](http://backbonejs.org/)
-- CSS-ramverk
-    - [Bootstrap](http://getbootstrap.com)
-
-- Laboration - projekthandledning
+- Projekthandledning under schemalagd laborationstid
 
 ### Vecka 20
 
-- Laboration - projekthandledning. **Handledningen tisdag 12 maj börjar först kl 15.00.**
+- Projekthandledning under schemalagd laborationstid
 
 ### Vecka 21
 
-- Laboration - projekthandledning
+- Projekthandledning under schemalagd laborationstid
 
 ### Vecka 22
 
-- Laboration - projekthandledning
-
-### Vecka 23
-
-- Projektredovisning för båda grupperna onsdag 3 juni kl 13.15-17.00
+- Projektredovisning för båda grupperna tisdag 31 maj kl 13.15-17.00
 
 
 
 
 [kursplan]: http://edu.mah.se/me132a#Syllabus
-[schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.ME132A-20151-TS522-
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2016-01-18&resurser=k.ME132A-20161-TS585-
 [itslearning]: https://mah.itslearning.com
 
