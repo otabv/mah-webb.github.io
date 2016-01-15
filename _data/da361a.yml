@@ -23,8 +23,8 @@ lectures:
     - name: Föreläsning 4
       file: F05
 
-    # - name: Föreläsning 5
-    #   file: F06
+    - name: Föreläsning 5
+      file: F06
 
     # - name: Föreläsning 6
     #   file: F07
@@ -48,11 +48,11 @@ exercises:
     - name: Laboration 3
       file: L03
 
-    # - name: Laboration 4
-    #   file: E04
+    - name: Laboration 4
+      file: L04
 
-    # - name: Laboration 5
-    #   file: E05
+    - name: Laboration 5
+      file: L05
 
     # - name: Laboration 6
     #   file: E06
