@@ -1,7 +1,7 @@
 ---
 layout: instructions_en
 code: da606a
-title: Workshop 3
+title: Workshop 2
 ---
 
 # Workshop 3 - Sensors and Actuators, Connection to internet

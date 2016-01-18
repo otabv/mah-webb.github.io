@@ -1,7 +1,7 @@
 ---
 layout: instructions_en
 code: da606a
-title: Arduino introduction
+title: Workshop 1
 ---
 
 # Arduino introduction
