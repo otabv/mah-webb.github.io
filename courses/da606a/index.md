@@ -6,17 +6,16 @@ title: Interaction Technology DA606A
 
 # Interaction Technology DA606A
 
-Welcome to the course Interaction technology! There will be **no class the first week, on 21 Jan** because I will be teaching abroad that week. Instead the first class will be on 28 Jan. There are some preparations you will have to do before we meet on 28 Jan. Please make sure this is done before the first class as we will need it from start. 
-
-All the preparation necessary are found in the instructions for [Workshop 1](workshops/ws1.html). Please note that you **do not** have to buy the course literature found in the syllabus, instead you need to get some material that you will find more information about in the instructions for Workshop 1.   
+Welcome to the course Interaction technology! 
 
 ##General information about the course
 
 We will use the [Arduino](http://arduino.cc) platform throughout the course. We will start with a series of workshops learning the Arduino step by step. The course is assessed by a project at the end of the course. 
 
-Course responsible:
+Teachers:
 
 - Bo Peterson, bo.peterson@mah.se
+- Nils Ehrenberg, nils.ehrenberg@mah.se
 
 Useful links:
 
@@ -24,48 +23,31 @@ Useful links:
 * [Schedule][schema]
 * [It's learning][itslearning]
 
-## Week 1 - Course preparations - Do it by yourselves
+## Week 1 - Introduction to Arduino
 
 - [Workshop 1](workshops/ws1.html)
 
-## Week 2 - Introduction to Arduino
+## Week 2 - Arduino and Internet
 
 - [Workshop 2](workshops/ws2.html)
 
-## Week 3 - Sensors and actuators, Connecting to internet
+## Week 3
 
-- [Workshop 3](workshops/ws3.html)
+## Week 4
 
-## Week 4 - Connecting to web services
+## Week 5
 
-- [Workshop 4](workshops/ws4.html)
-
-## Week 5 - Reading Xively data with Processing
-
-- This week you have to work on your own with the assignment described in [Workshop 5](workshops/ws5.html)
-
-[kursplan]: http://edu.mah.se/da606a#Syllabus
-[schema]: http://schema.mah.se/setup/jsp/SchemaGrafik.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-01-19&resurser=k.DA606A-20151-TS432-
-[itslearning]: https://mah.itslearning.com
-
-## Week 6 - Getting internet access behind routers and Introduction to the project
-
-- [Workshop 6](workshops/ws6.html)
+## Week 6
 
 ## Week 7 - Project work
 
-- Workshop 7 - Supervision of project 
-
 ## Week 8 - Project work
-
-- Workshop 8 - Supervision of project 
 
 ## Week 9 - Project work
 
-- Workshop 9 - Supervision of project 
-
 ## Week 10 - Project presentation
 
-- Workshop 10 - Presentation of project
 
- 
+[kursplan]: http://edu.mah.se/da606a#Syllabus
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2016-01-18&resurser=k.DA606A-20161-TS545-
+[itslearning]: https://mah.itslearning.com

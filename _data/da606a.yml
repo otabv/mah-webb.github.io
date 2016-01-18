@@ -7,15 +7,7 @@ credits: 7.5
 
 # Workshops
 workshops:
-    - name: Course introduction
+    - name: Arduino intro
       file: ws1
-    - name: Introduction to Arduino
-      file: ws2
     - name: Sensors, actuators, internet
-      file: ws3
-    - name: Connecting to web services
-      file: ws4
-    - name: Reading Xively data with Processing
-      file: ws5
-    - name: Presentation of project
-      file: ws6
+      file: ws2
