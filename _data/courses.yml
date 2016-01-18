@@ -1,5 +1,17 @@
 # Lista över öppna kurser
 
+- name: Programmering för webben
+  code: me132a
+  credits: 15.0
+
+- name: Inledande webbprogrammering med JavaScript
+  code: me152a
+  credits: 15.0
+
+- name: "Crossmedia: Flerkanalspublicering"
+  code: me151a
+  credits: 15.0
+
 - name: "Medieteknik: Webbpublicering"
   code: me153a
   credits: 15.0
@@ -10,14 +22,6 @@
   
 - name: Databasbaserad publicering
   code: me105a
-  credits: 15.0
-
-- name: Programmering för webben
-  code: me132a
-  credits: 15.0
-
-- name: Inledande webbprogrammering med JavaScript
-  code: me152a
   credits: 15.0
 
 - name: Objektorienterad programmering och modellering

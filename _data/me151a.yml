@@ -1,0 +1,38 @@
+# Kursinformation
+name: "Crossmedia: Flerkanalspublicering"
+code: me151a
+credits: 15.0
+
+# Kursplan, filnamn (syllabus.md)
+syllabus: true
+
+# Laborationer
+exercises:
+    # - name: Laboration 1
+    #   file: E01
+    # - name: Laboration 2
+    #   file: E02
+    # - name: Laboration 3
+    #   file: E03
+    # - name: Laboration 4
+    #   file: E04
+    #
+    #   etc...
+
+# Projekt
+projects:
+    # - name: Projekt
+    #   file: P01
+    #   credits: 6
+    #
+    #   etc...
+
+# Föreläsningar
+lectures:
+    # - name: Kursintroduktion
+    #   file: L01
+    # - name: Föreläsning 1
+    #   file: L02
+    # - name: Föreläsning 2
+    #
+    #   etc...
