@@ -10,7 +10,7 @@ title: Workshop 1
 
 Introduced in 2005, developed by people from the Interaction Design Institute in Ivrea (Massimo Banzi), from Malmö University (David Cuarielles) and some more to replace expensive systems that broke all the time. 
 
-![](im2/arduinoteam.png)
+![](im1/arduinoteam.png)
 
 - Developed for design students
 - Now used by students, designers, artists, "makers", engineers...
@@ -26,11 +26,11 @@ Introduced in 2005, developed by people from the Interaction Design Institute in
 
 The base is a small circuit board with a micro controller, and inputs and outputs:
 
-![](im2/ArduinoUno_R3_Front_450px.jpg)
+![](im1/ArduinoUno_R3_Front_450px.jpg)
 
 The board is expandable by "shields". This is for example an Wifi shield that can be stacked on top of the Arduino. 
 
-![](im2/A000058_front_450.jpg) 
+![](im1/A000058_front_450.jpg) 
 
 There are many different shields available, both official shields, and third party shields. 
 
@@ -79,7 +79,7 @@ void loop() {
 
 The breadboard is very useful for connecting the inputs and outputs of the Arduino. 
 
-![](im2/breadboard_11.jpg)
+![](im1/breadboard_11.jpg)
 
 
 ## Sensors

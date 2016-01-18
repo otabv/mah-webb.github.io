@@ -30,7 +30,7 @@ We start with a **push button**. A push button has two states
 
 To connect a push button, you need something called a *pull up resistor*. (Actually you can also use a pull down resistor, or even a built-in pull up resistor in the Arduino, as described in [this tutorial](http://arduino.cc/en/Tutorial/DigitalPins)).
 
-![](im3/button.png)
+![](im2/button.png)
 
 A good value for the pull up resistor is somewhere around 10k (10k is short for 10k&#937; which in turn is short for 10000 ohms). The pull up resistor makes sure that the input of the Arduino will be 5 V when the button is **not** pushed and 0 V when the button **is** pushed. 
 
@@ -70,7 +70,7 @@ Really small motors can also be connected directly to the Arduino, but larger mo
 
 Let's connect a push button and a LED to the Arduino.
 
-![](im3/buttonandled.png)
+![](im2/buttonandled.png)
 
 This sketch will *turn off* the LED when the button is pushed. 
 
