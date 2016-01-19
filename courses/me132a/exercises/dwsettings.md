@@ -6,6 +6,11 @@ title: Dreamweaver-inställningar
 
 #Inställningar för Dreamweaver (steg 1, 2, 3 och 4) eller FileZilla (steg 1, 2 och 5)
 
+##OBS
+
+Tyvärr har IT-avdelningen inte lyckats lösa så att de inställningar man gör i Dreamweaver eller Filezilla sparas. Det gör att inställningarna har försvunnit nästa gång man loggar in. Därför är det inte meningsfullt att göra steg 3, 4 och 5. 
+
+**Gör därför endast steg 1 och 2 nedan** 
 
 När man gör webbsidor med PHP måste sidorna ligga på en server med stöd för PHP för att man ska kunna titta på dem. I kursen kommer vi att använda servern ddwap.mah.se. I detta dokument finns information om hur man ansluter till ddwap. **För att kunna fullfölja laborationerna i kursen är det viktigt att man får inställningarna att fungera**. Vi kommer huvudsakligen att använda Dreamweaver när vi skriver vår PHP-kod, och informationen här gäller huvudsakligen Dreamweaver. Om man hellre vill använda andra verktyg finns kortfattad information på slutet i dokumentet.
 
@@ -33,7 +38,7 @@ Starta Dreamweaver CS6. (Om du hellre vill använda valfri texteditor och FileZi
 
 Gör följande inställningar:
 
-Definera en ny site genom att välja Site->New site… Ställ in enligt figurera nedan men byt ut *k3bope* mot ditt egna användarnamn. Döp din site till *ddwap* och välj mappen *ddwap* du skapat i steg 2 som Local Site Folder
+Definiera en ny site genom att välja Site->New site… Ställ in enligt figurera nedan men byt ut *k3bope* mot ditt egna användarnamn. Döp din site till *ddwap* och välj mappen *ddwap* du skapat i steg 2 som Local Site Folder
 
 
 
@@ -80,4 +85,4 @@ Man kan istället för Dreamweaver använda godtycklig texteditor tillsammans me
 
 ##Att ansluta från egen dator
 
-Samma inställningar för både Dreamweaver och Filezilla kan användas om man använder sin egen dator och jobbar hemifrån. Ibland kan man dock behöva ändra inställningen för passive/active ftp. Om det inte funkar med inställningarna ovan, prova att i Dreamweaver ta bort bocken vid "Use passive ftp" under More options, eller i Filezilla prova olika inställnignar på active och passive under Transfer Settings.
+Samma inställningar för både Dreamweaver och Filezilla kan användas om man använder sin egen dator och jobbar hemifrån. Ibland kan man dock behöva ändra inställningen för passive/active ftp. Om det inte funkar med inställningarna ovan, prova att i Dreamweaver ta bort bocken vid "Use passive ftp" under More options, eller i Filezilla prova olika inställningar på active och passive under Transfer Settings.

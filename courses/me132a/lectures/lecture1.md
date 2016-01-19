@@ -3,21 +3,10 @@ layout: instructions
 code: me132a
 title: Föreläsning 1
 controls: false
-date: 2014-12-15
+date: 2016-01-18
 ---
 
 # Programmering för webben	
-
-##Lärare:
-
-Sebastian Bengtegård
-
-Bo Peterson (kursansvarig)
-
-##Webbplatser med kursmaterial:
-
-- It’s learning - inlämningar av uppgifter
-- <http://mah-webb.github.io/courses/me132a/> - all annan information
 
 ## Kurslitteratur
 
@@ -84,10 +73,12 @@ This is a test!
 <title>PHP test</title>
 </head>
 <body>
+<p>
 <?php
 $text="This is a PHP-test";
 echo $text;
 ?>
+</p>
 </body>
 </html>
 {% endhighlight %}
