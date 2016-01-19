@@ -8,58 +8,58 @@ syllabus: true
 
 # Laborationer
 exercises:
-    - name: Laboration 1
-      file: E01
-    - name: Laboration 2
-      file: E02
-    - name: Laboration 3
-      file: E03
-    - name: Laboration 4
-      file: E04
-    - name: GitHub
-      file: E05
-    - name: Laboration 5
-      file: E06
-    - name: Laboration 6
-      file: E07
-    - name: Laboration 7
-      file: E08
-    - name: Laboration 8
-      file: E09
-    - name: Laboration 9
-      file: E10
-    - name: Laboration 10
-      file: E11
-    - name: Laboration 11
-      file: E12
-    - name: Laboration 12
-      file: E13
+    # - name: Laboration 1
+    #   file: E01
+    # - name: Laboration 2
+    #   file: E02
+    # - name: Laboration 3
+    #   file: E03
+    # - name: Laboration 4
+    #   file: E04
+    # - name: GitHub
+    #   file: E05
+    # - name: Laboration 5
+    #   file: E06
+    # - name: Laboration 6
+    #   file: E07
+    # - name: Laboration 7
+    #   file: E08
+    # - name: Laboration 8
+    #   file: E09
+    # - name: Laboration 9
+    #   file: E10
+    # - name: Laboration 10
+    #   file: E11
+    # - name: Laboration 11
+    #   file: E12
+    # - name: Laboration 12
+    #   file: E13
 
 # Projekt
 projects:
-    - name: Projekt
-      file: P01
-      credits: 6
+    # - name: Projekt
+    #   file: P01
+    #   credits: 6
 
 # Föreläsningar
 lectures:
-    - name: Kursintroduktion
-      file: L01
-    - name: Föreläsning 1
-      file: L02
-    - name: Föreläsning 2
-      file: L03
-    - name: Föreläsning 3
-      file: L04
-    - name: Föreläsning 4
-      file: L05
-    - name: Föreläsning 5
-      file: L06
-    - name: Föreläsning 6
-      file: L07
-    - name: Föreläsning 7
-      file: L08
-    - name: Föreläsning 8
-      file: L09
-    - name: Föreläsning 9
-      file: L10
+    # - name: Kursintroduktion
+    #   file: L01
+    # - name: Föreläsning 1
+    #   file: L02
+    # - name: Föreläsning 2
+    #   file: L03
+    # - name: Föreläsning 3
+    #   file: L04
+    # - name: Föreläsning 4
+    #   file: L05
+    # - name: Föreläsning 5
+    #   file: L06
+    # - name: Föreläsning 6
+    #   file: L07
+    # - name: Föreläsning 7
+    #   file: L08
+    # - name: Föreläsning 8
+    #   file: L09
+    # - name: Föreläsning 9
+    #   file: L10
