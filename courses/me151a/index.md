@@ -41,25 +41,33 @@ Betyg: U/G
 ###CMS (3 HP)
 
 Att programmera HTML och CSS kan vara en tidskrävande historia, tid är pengar och pengar vill din framtida arbetsgivare ha, helst mycket av. Därför är verktyg och metoder som sparar tid för utvecklarna värdefulla. Dessa verktyg används på merparten av webbyråerna i branschen. Några av dessa verktyg kan ni hitta nedan, en mer utförlig förklaring hittar ni på nätet.
-HTML 5 boilerplate
-SASS/LESS
-HAML/JADE
-CMS (Wordpress, Joomla, Drupal, o.s.v)
-GitHub
+
+- HTML 5 boilerplate
+- SASS/LESS
+- HAML/JADE
+- CMS (Wordpress, Joomla, Drupal, o.s.v)
+- GitHub
+
 I denna uppgift ska ni göra en webbplats med valfri avsändare. Ni kommer att bekanta er med Wordpresstemat Bones.
+
 SASS är en variant av CSS som möjliggör att ni kan använda varibles, nesting, mixins och selectors inheritance. Detta verktyg underlätta för er när ni sitter och jobbar med CSS. SASS kräver att ni använder en kompilator till exempel CodeKit eller Koala, som tolkar er SASS-kod och generar ren CSS-kod för webbläsaren. De flesta webbeditorerna (Smultron, Dreamweaver, Brackets, Sublime, o.s.v.) har stöd för SASS och LESS. Ibland krävs det att ni installerar en plugin för att er syntax ska visas korrekt.
 För mer information om SASS:
 http://sass-lang.com/
 http://en.wikipedia.org/wiki/Sass_(stylesheet_language)
+
 Bones är ett Wordpresstema som kan ses som ett tomt skal som kräver omfattande CSS-utveckling för att resultatet ska resultera i en komplett webbplats. Bones är ett fungerade tema som är optimerat för olika enheter med en kod som är uppbyggt på ett noggrant och genomtänkt sätt, till skillnad från många andra Wordpressteman.
+
 För mer information om Bones:
 http://themble.com/bones/
+
 Ni ska själva bestämma avsändaren, förslagsvis ett mindre företag eller organisation. Se det som ett bra tillfälle att göra en hemsida till svärfar/svärmors konditori eller syrran som har öppnat en äventyrspark i Eslöv. Oavsett vad ni väljer ska ni lämna in en projektplan över ert arbete. Projektplanen ska ta upp; företagsinformation och bakgrund, syfte med hemsidan, målgrupp över företaget och webbplatsen, samt en förklaring över vad webbplatsen ska innehålla och hur den ska fungera. Fråga gärna om råd om ni är osäkra på vilka företag som är lämpliga. Tänk på att försöka välja ett företag/organisation med en passande arbetsbörda – det vill säga; uppdraget ska motsvara de högskolepoäng uppgiften är avsedd för.
+
 Krav för uppgiften:
-Projektplan innehållande företagsinformation och anpassning vad gäller design och användbarhet utifrån syfte och målgrupp
-Wordpresstemat Bones används
-Komplett design
-Reflektion över processen och tekniken
+
+- Projektplan innehållande företagsinformation och anpassning vad gäller design och användbarhet utifrån syfte och målgrupp
+- Wordpresstemat Bones används
+- Komplett design
+- Reflektion över processen och tekniken
 
 Betyg: U/G
 
