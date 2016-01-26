@@ -12,8 +12,8 @@ Hej och välkommen till Crossmediakursen. Crossmedia är ett tvärvetenskapligt 
 
 ####Vecka 4:
 
-- Kursintroduktion: 2h - CTJOKA
-- Gästföreläsning: obokad 2h – CTJOKA
+- Föreläsning: Kursintroduktion - 2h
+- Gästföreläsning: obokad - 2h
 
 ####Vecka 5:
 
