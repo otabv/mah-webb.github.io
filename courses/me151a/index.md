@@ -8,6 +8,108 @@ title: "Crossmedia: Flerkanalspublicering (15.0 hp)"
 
 Hej och välkommen till Crossmediakursen. Crossmedia är ett tvärvetenskapligt ämne med flera intressanta ingångsvinklar. Kursen är uppbyggd av föreläsningar, laborationer, seminarier och workshops. Ett flertal av föreläsningarna är gästföreläsningar. Detta är ett omtyckt inslag som ger en tydlig koppling till mediebranschen. Det är viktigt att ni utnyttjar dessa tillfällen och deltar aktivt. Vi kommer ta närvaro.
 
+##Veckoschema
+
+####Vecka 4:
+
+- Kursintroduktion: 2h - CTJOKA
+- Gästföreläsning: obokad 2h – CTJOKA
+
+####Vecka 5:
+
+- Gästföreläsning: Hampus Schildfat - Solentro - 2h
+- Gästföreläsning: David Klein - Internet i fokus - 2h
+- Laboration: Wordpress & Bones
+
+####Vecka 6:
+
+- Enskilt arbetet: Läs litteraturen till seminarium 1
+- I grupp: Spela in material till laboration 2 - Podcast
+
+####Vecka 7:
+
+- Laboration: Podcast och Crossmedia
+- Workshop: Augmented Reality med Maria Engberg - 3h
+- Workshop: Idégenerering med Drivhuset - 2h
+
+####Vecka 8:
+
+- Gästföreläsning: Martin Lundin, Antikrundan - 2h
+- Projektavstämning
+
+####Vecka 9:
+
+- Gästföreläsning: SEO, Top Visible/Resultify - Obokad
+- Laboration: Sökmotoroptimering
+- Litteraturseminarie 1
+
+####Vecka 10:
+
+- Gästföreläsning: Storytelling, Dennis Augustsson - Obokad
+- Workshop: Arduino
+- Gästföreläsning: SVT, Anna Bylund - 2h
+- Projektavstämning
+
+####Vecka 11:
+
+- Gästföreläsning: Sociala medier, Joakim Jardenberg - Obokad
+- Laborationer: Mobilapplikationer
+- Projektavstämning
+
+####Vecka 12:
+
+- Presentation: Idépresentation/pitch för kund/investerare
+- Gästföreläsning: Tomas De Souza, Sydsvenskan - Obokad
+- Workshop: Mikael Svedemar, Interaktionsdesign - Ska flyttas
+- Projektavstämning
+
+####Vecka 13:
+
+- Gästföreläsning: Animering - Obokad
+- Laboration: Animering - 4h
+- Projektavstämning
+
+####Vecka 14:
+
+- Laboration: Mediadatabser - SKA ÄNDRAS
+- Projektavstämning
+
+####Vecka 15:
+
+- Projektavstämning
+
+####Vecka 16:
+
+- Handledning: Projekt, bokas via mail med Bo
+- Laboration: 3D-modelering
+
+####Vecka 17:
+
+- Handledning: Projekt, bokas via mail med Bo
+- Gästföreläsning: Magnus Westmar, Obokad
+
+####Vecka 18:
+
+- Litteraturseminarie 2
+
+####Vecka 19:
+
+- Handledning: Projekt, bokas via mail med Bo
+
+####Vecka 20:
+
+- Eget arbete, macsal bokad
+
+####Vecka 21:
+
+- Eget arbete, macsal bokad
+
+####Vecka 22:
+
+- Workshop: Utvärdering av kursen
+- Extra laboration - för berörda studenter
+- Extra presentation - för berörda studenter
+
 ##Beskrivning av examinationer
 
 Nedan följer beskrivningar av samtliga examinationer i kursen. Uppgifterna är kopplade till moment som vi övar i kursen. Var uppmärksam på föreläsningar och laborationer så blir uppgifterna tydligare. Om det är någon del du inte förstår eller är osäker på är det bättre att fråga innan ni lämnar in. Börja dock med att själva försöka lista ut lösningen/svaret!
@@ -15,27 +117,31 @@ Nedan följer beskrivningar av samtliga examinationer i kursen. Uppgifterna är 
 ###Laborationer (2 HP)
 
 Samtliga laborationer och tillhörande labbuppgifter är obligatoriska, dessa finner listade nedan:  
-Wordpress & Bones
-Podcast & Crossmedia
-Sökmotorsoptimering
-Mobilapplikationer
-Animering
-Mediadatabaser
-3D-modellering
+
+- Wordpress & Bones
+- Podcast & Crossmedia
+- Sökmotorsoptimering
+- Mobilapplikationer
+- Animering
+- 3D-modellering
+
 Labbuppgifterna redovisas i samband med laborationerna eller vid passande tillfälle. Det går alltså bra att komma in till mig och visa upp sitt arbete. Extra labbtillfälle ligger i slutet av terminen.
 Inför vissa laborationer ombeds ni att ta del av diverse material
+
 Betyg: U/G
 
 ###Litteraturseminarie 1 (1 HP)
 
 På litteraturseminariet kommer vi att diskutera innebörden av begreppet Crossmedia och närliggande begrepp, samt deras inbördes relation, och sätta dem i relation till konkreta exempel. Vi kommer att ta upp hur Crossmedia används beroende på vilket perspektiv man utgår ifrån. Till exempel ur ett användarperspektiv kontra ur ett producentperspektiv. Vi kommer genom detta försöka skapa en gemensam syn på vad
+
 Crossmedia innebär. Ni ska förbereda er väl och delta aktivt i seminariet för att bli godkända. Mer information om detta hittar ni på Itslearning.
+
 Betyg: U/G
 
 ###Litteraturseminarie 2 (1 HP)
 
-Inför seminariet kommer ni få ett antal frågor som handlar om personuppgiftslagen, etiska och juridiska problem när man arbetar med att
-lagra personuppgifter. Samt frågor angående etiska och moraliska aspekter inom reklam- och mediabranschen. För att delta på seminariet måste ni besvara dessa frågor, inlämning sker på itslearning
+Inför seminariet kommer ni få ett antal frågor som handlar om personuppgiftslagen, etiska och juridiska problem när man arbetar med att lagra personuppgifter. Samt frågor angående etiska och moraliska aspekter inom reklam- och mediabranschen. För att delta på seminariet måste ni besvara dessa frågor, inlämning sker på itslearning
+
 Betyg: U/G
 
 ###CMS (3 HP)
@@ -51,7 +157,9 @@ Att programmera HTML och CSS kan vara en tidskrävande historia, tid är pengar 
 I denna uppgift ska ni göra en webbplats med valfri avsändare. Ni kommer att bekanta er med Wordpresstemat Bones.
 
 SASS är en variant av CSS som möjliggör att ni kan använda varibles, nesting, mixins och selectors inheritance. Detta verktyg underlätta för er när ni sitter och jobbar med CSS. SASS kräver att ni använder en kompilator till exempel CodeKit eller Koala, som tolkar er SASS-kod och generar ren CSS-kod för webbläsaren. De flesta webbeditorerna (Smultron, Dreamweaver, Brackets, Sublime, o.s.v.) har stöd för SASS och LESS. Ibland krävs det att ni installerar en plugin för att er syntax ska visas korrekt.
+
 För mer information om SASS:
+
 http://sass-lang.com/
 http://en.wikipedia.org/wiki/Sass_(stylesheet_language)
 
