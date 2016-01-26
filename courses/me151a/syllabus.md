@@ -39,6 +39,9 @@ Efter avslutad kurs ska studenten:
 
 ##Bedömning
 
+Krav för godkänd: Godkänt projektarbete 5 hp och godkända inlämningsuppgifter samt reflektion 10 hp.
+Krav för väl godkänd: Studenten ska ha väl godkänt i både projekt och reflektion.
+
 ##Kursinnehåll
 
 - Crossmedia, transmedia, participatory och konvergenskultur
