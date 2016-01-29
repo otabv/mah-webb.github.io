@@ -265,3 +265,177 @@ Utskriften blir
 {% highlight text %}
 I am $firstname $lastname
 {% endhighlight %}
+
+
+### Exempel som visades på föreläsning 2016-01-25
+
+
+#### f2.php
+
+{% highlight php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML test</title>
+</head>
+<body>
+<p>
+    
+    
+<!-- en html-kommentar-->
+<?php
+//variabeln antal lagrar antalet hundar
+$antal = 23;
+
+$vikt = 4.47; //variablen vikt lagrar hundarnas vikt
+
+/*
+allt mellan snedstreck-stjärnorna är kommentarer
+*/
+
+echo "<h2>Exempel 1</h2>";
+echo $antal;
+echo " hundar väger tillsammans ";
+echo $antal*$vikt;
+echo " kg om de väger ";
+echo $vikt;
+echo " kg var"; 
+
+echo "<h2>Exempel 2</h2>";
+
+echo "en sträng: ";
+echo "x*y";
+
+$x=15;
+$y=17;
+echo " en uträkning: ";
+echo $x*$y;
+
+echo "<h2>Exempel 3 - konkatenering</h2>";
+
+$mellan=" ";
+
+$ord1="Jag";
+$ord2="har";
+$ord3="inga";
+$ord4="bilar";
+
+$historia= $ord1.$mellan.$ord2.$mellan.$ord3.$mellan.$ord4;
+
+echo $historia;
+
+echo "<h2>Exempel 4</h2>";
+
+$fet = "<strong>";
+$slutfet="</strong>";
+
+echo "PHP rockar ";
+echo $fet;
+echo "fett";
+echo $slutfet;
+
+echo "<h2>Exempel 5 - En array</h2>";
+
+$vikter = array(4.3,5.2,7.1,8.2,1.2,3.5,3.7,7.3,8.2,12.3);
+
+echo $vikter[3];
+
+
+echo "<h2>Exempel 6</h2>";
+
+echo $historia;
+
+?>
+
+</p>
+</body>
+</html>
+{% endhighlight %}
+
+#### f2_array.php
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML test</title>
+</head>
+<body>
+<p>
+   
+<?php
+
+echo "<h2>Exempel 5 - En array</h2>";
+//olika hundars vikter
+$vikter = array(4.3,5.2,7.1,8.2,1.2,3.5,3.7,7.3,8.2,12.3);
+
+
+//summan av alla hundars vikter
+$summa =  $vikter[0]+$vikter[1]+$vikter[2]+$vikter[3]+$vikter[4]+$vikter[5]+$vikter[6]+$vikter[7]+$vikter[8]+$vikter[9];
+
+//antalet hundar
+$antal = 10;
+
+//diverse statistik om hundarna
+echo "Hundrna väger tillsammans ";
+echo $summa;
+echo " kg ";
+echo "Hundarna väger i medel ";
+echo $summa / $antal;
+echo " kg";
+
+//hundarnas namn
+$namn = array("Bo","Sebastian","Johannes","Sven","Sara","Henriette","Caroline","Max","Carina","Pär");
+
+//uppgifter om specifik hund nr x
+
+$x = 9;
+echo "<br>";
+echo "Hunden ";
+echo $namn[$x];
+echo " väger ";
+echo $vikter[$x];
+echo " kg";
+
+?>
+
+</body>
+</html>
+{% endhighlight %}
+
+
+#### f2_assoc_array.php
+
+{% highlight php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML test</title>
+</head>
+<body>
+<p>
+<?php
+$hundar = array("Bo"=>4.3,"Sebastian"=>3.2,"Johannes"=>7.1,"Sven"=>4.2);
+echo "En hund väger ";
+echo $hundar["Sebastian"];
+echo " kg";
+
+echo "<br>";
+$namn = "Johannes";
+
+echo "Hunden ";
+echo $namn;
+echo " väger ";
+echo $hundar[$namn];
+echo " kg";
+
+?>
+
+</body>
+</html>
+{% endhighlight %}
+
+
