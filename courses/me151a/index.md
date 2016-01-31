@@ -21,7 +21,7 @@ Hej och välkommen till Crossmediakursen. Crossmedia är ett tvärvetenskapligt 
 - Gästföreläsning: David Klein - Internet i fokus - 2h
 - Laboration: Wordpress & Bones
 
-####Vecka 6:
+####Vecka 6: VIKTIGT
 
 - Enskilt arbetet: Läs litteraturen till seminarium 1
 - I grupp: Spela in material till laboration 2 - Podcast
