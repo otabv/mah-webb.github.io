@@ -178,5 +178,167 @@ som inte kommer att utföra något javascript utan istället skrivas ut så här
 
 ![](im3/formoutputhtmlspecial.png)
 
+### Kodexempel från föreläsning 2016-02-01
+
+#### taggar.html
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+Du &amp; jag &lt;tillsammans&gt;
+
+</body>
+</html>
+{% endhighlight %}
+
+#### tecken.html
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+Räksmörgås - kan bli fel om filen sparas med annan teckenkodning än UTF-8
+
+</body>
+</html>
+{% endhighlight %}
+
+#### arrayrep.php
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<?php
+$person1=array("firstname"=>"Bo", "lastname"=>"Peterson", "email"=>"bo.peterson@mah.se","age"=>"51");
+$person2=array("firstname"=>"Sebastian", "lastname"=>"Bengtegård", "email"=>"sebastian.bengtegard@mah.se","age"=>"27");
+
+echo "Person 1 heter ";
+echo $person1["firstname"];
+echo "<br>";
+
+echo "Person 2 heter ";
+echo $person2["firstname"];
+?>
+
+
+</body>
+</html>
+{% endhighlight %}
+
+#### form.html
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p>
+En html-sida (php behövs inte här) med ett formulär
+</p>
+
+<form action="formreply.php" method="post">
+    <input type="text" name="fullname"> För- och efternamn<br>
+    <input type="text" name="email"> epost<br>
+    <input type="submit" value="skicka formuläret">
+</form>
+
+
+</body>
+</html>
+{% endhighlight %}
+
+#### formreply.php
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<?php
+    
+echo $_POST["fullname"];
+echo "<br>";
+echo $_POST["email"];    
+    
+//här hade kanske behövts kod för att spara namn och epost i en databas    
+    
+?>
+
+
+</body>
+</html>
+{% endhighlight %}
+
+#### formbetter.html
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<p>
+En html-sida (php behövs inte här) med ett formulär
+</p>
+
+<form action="formreplybetter.php" method="post">
+    <input type="text" name="fullname"> För- och efternamn<br>
+    <input type="text" name="email"> epost<br>
+    <input type="submit" value="skicka formuläret">
+</form>
+
+
+</body>
+</html>
+{% endhighlight %}
+
+#### formreplybetter.php
+
+{% highlight html+php %}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<?php
+    
+$fullname=htmlspecialchars($_POST["fullname"],ENT_QUOTES,"UTF-8");
+    
+    
+echo $fullname;
+echo "<br>";
+echo $_POST["email"];    
+    
+//här hade kanske behövts kod för att spara namn och epost i en databas    
+    
+?>
+
+
+</body>
+</html>
+{% endhighlight %}
+
 
 
