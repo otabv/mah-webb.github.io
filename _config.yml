@@ -8,9 +8,11 @@ analytics: UA-48530327-3
 
 url: http://mah-webb.github.io
 
-highlighter: pygments
+# highlighter: pygments
+# markdown: kramdown
 
-markdown: kramdown
+kramdown:
+    input: GFM
 
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE.txt']
 
