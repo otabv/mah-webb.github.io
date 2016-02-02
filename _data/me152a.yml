@@ -10,8 +10,8 @@ syllabus: true
 exercises:
     - name: Laboration 1
       file: E01
-    # - name: Laboration 2
-    #   file: E02
+    - name: Laboration 2
+      file: E02
     # - name: Laboration 3
     #   file: E03
     # - name: Laboration 4
