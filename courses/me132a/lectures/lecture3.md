@@ -115,7 +115,7 @@ en associativ array med namnet $_GET som innehåller formulärdata.
  
 Följande kod kan användas för att hämta det som skrivits in i ett formulär och spara i en vanlig variabel:
 
-{% highlight php  startinline=True %}
+{% highlight php %}
 $firstname=$_GET['firstname'];
 {% endhighlight %}
 
@@ -160,7 +160,7 @@ kan man ta hand om skadlig kod i inmatningsfälten.
 
 Vi kan komplettera vår PHP-kod som tar hand om formulärdata enligt följande:
 
-{% highlight php  startinline=True %}
+{% highlight php %}
 $firstname=$_GET['firstname'];
 $firstname=htmlspecialchars($firstname,ENT_QUOTES,'UTF-8');
 
@@ -182,7 +182,7 @@ som inte kommer att utföra något javascript utan istället skrivas ut så här
 
 #### taggar.html
 
-{% highlight html+php %}
+{% highlight php %}
 <!doctype html>
 <html>
 <head>
@@ -198,7 +198,7 @@ Du &amp; jag &lt;tillsammans&gt;
 
 #### tecken.html
 
-{% highlight html+php %}
+{% highlight php %}
 <!doctype html>
 <html>
 <head>
@@ -214,7 +214,7 @@ Räksmörgås - kan bli fel om filen sparas med annan teckenkodning än UTF-8
 
 #### arrayrep.php
 
-{% highlight html+php %}
+{% highlight php %}
 <!doctype html>
 <html>
 <head>
@@ -241,7 +241,7 @@ echo $person2["firstname"];
 
 #### form.html
 
-{% highlight html+php %}
+{% highlight php %}
 <!doctype html>
 <html>
 <head>
@@ -290,7 +290,7 @@ echo $_POST["email"];
 
 #### formbetter.html
 
-{% highlight html+php %}
+{% highlight php %}
 <!doctype html>
 <html>
 <head>
@@ -314,7 +314,7 @@ En html-sida (php behövs inte här) med ett formulär
 
 #### formreplybetter.php
 
-{% highlight html+php %}
+```php
 <!doctype html>
 <html>
 <head>
@@ -338,7 +338,7 @@ echo $_POST["email"];
 
 </body>
 </html>
-{% endhighlight %}
+```
 
 
-
+2016-02-03
