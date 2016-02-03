@@ -48,7 +48,7 @@ The servo motor is often found in radio controlled airplanes and cars to control
 
 The servo motor has a gear box built in and a sensor for measuring the position of the outgoing shaft. Arduino already has a built in function for controlling servos:
 
-```c
+```cpp
 myservo.write(val); 
 ```
 
@@ -64,7 +64,7 @@ Let's connect a push button and a LED to the Arduino.
 
 This sketch will *turn off* the LED when the button is pushed. 
 
-```c
+```cpp
 int buttonPin = 5; //button connected to pin 5 with pull up resistor
 int ledPin = 8;
 
@@ -104,7 +104,7 @@ Giving commands like this is in a URL is usually called *representational state 
 
 Here is the code that will be explained in detail. 
 
-```c
+```cpp
 #include <SPI.h>
 #include <Ethernet.h>
 
@@ -216,7 +216,7 @@ The Arduino that *control* will instead act as web client. That means that it ac
 
 A push button should be connected to the pin 8 of the controlling Arduino. We will now use an internal pull up resistor meaning that we can connect the push button directly between pin 8 and GND. Pushing the button on the client will turn on or off the LED on the server. Here is the web client sketch: 
 
-```c
+```cpp
 //This is an adapted version of the Example
 //File->Examples->Ethernet->WebClientRepeating
 
@@ -481,7 +481,7 @@ void flashLed(int times) {
 }
 ```
 
-## Connection to Zapier
+## Assignment for next week: connection to Zapier
 
 - Log in to <http://zapier.com>
 - Make a new zap
@@ -493,7 +493,3 @@ void flashLed(int times) {
 - Add the web hook url to Xively and test the trigger. 
 - Go back again to Zapier and match up the web hook to for example Twitter. You can insert fields containing values from the Xively data stream. 
 - Name it and turn it on. You can now have a tweet automatically sent when a sensor value passes a certain threshold. 
-
-## Challenge for next week
-
-Make processing sketch that reads and visualizes Xively data. See [workshop 5](ws5.html) for more info.  
