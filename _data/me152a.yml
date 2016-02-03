@@ -45,8 +45,8 @@ projects:
 lectures:
     - name: Kursintroduktion
       file: L01
-    # - name: Föreläsning 1
-    #   file: L02
+    - name: Föreläsning 1
+      file: L02
     # - name: Föreläsning 2
     #   file: L03
     # - name: Föreläsning 3
