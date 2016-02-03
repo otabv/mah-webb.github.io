@@ -265,7 +265,7 @@ En html-sida (php behövs inte här) med ett formulär
 
 #### formreply.php
 
-{% highlight html+php %}
+{% highlight php %}
 <!doctype html>
 <html>
 <head>
