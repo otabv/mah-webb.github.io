@@ -27,11 +27,13 @@ Useful links:
 
 - [Workshop 1](workshops/ws1.html)
 
-## Week 2 - Arduino and Internet
+## Week 2 - Sensors, internet
 
 - [Workshop 2](workshops/ws2.html)
 
-## Week 3
+## Week 3 - Actuators, web services
+
+- [Workshop 3](workshops/ws3.html)
 
 ## Week 4
 
