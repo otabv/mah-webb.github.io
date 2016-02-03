@@ -46,7 +46,7 @@ Installation instructions:
 
 ## The first "sketch": make an LED blink
 
-```c++
+```c_cpp
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.

@@ -8,7 +8,7 @@ title: Interaction Technology DA606A
 
 Welcome to the course Interaction technology! 
 
-##General information about the course
+## General information about the course
 
 We will use the [Arduino](http://arduino.cc) platform throughout the course. We will start with a series of workshops learning the Arduino step by step. The course is assessed by a project at the end of the course. 
 
