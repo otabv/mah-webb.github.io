@@ -48,7 +48,7 @@ The servo motor is often found in radio controlled airplanes and cars to control
 
 The servo motor has a gear box built in and a sensor for measuring the position of the outgoing shaft. Arduino already has a built in function for controlling servos:
 
-```c++
+```c
 myservo.write(val); 
 ```
 
@@ -64,7 +64,7 @@ Let's connect a push button and a LED to the Arduino.
 
 This sketch will *turn off* the LED when the button is pushed. 
 
-```c++
+```c
 int buttonPin = 5; //button connected to pin 5 with pull up resistor
 int ledPin = 8;
 
@@ -104,7 +104,7 @@ Giving commands like this is in a URL is usually called *representational state 
 
 Here is the code that will be explained in detail. 
 
-```c++
+```c
 #include <SPI.h>
 #include <Ethernet.h>
 
@@ -216,7 +216,7 @@ The Arduino that *control* will instead act as web client. That means that it ac
 
 A push button should be connected to the pin 8 of the controlling Arduino. We will now use an internal pull up resistor meaning that we can connect the push button directly between pin 8 and GND. Pushing the button on the client will turn on or off the LED on the server. Here is the web client sketch: 
 
-```c++
+```c
 //This is an adapted version of the Example
 //File->Examples->Ethernet->WebClientRepeating
 
@@ -323,7 +323,7 @@ Start by logging in to <http://xively.com>. Add a device, then add a channel for
 
 Note the API key and Feed ID for this channel. These values will go into this Arduino sketch:
 
-```c++
+```cpp
 //this is a slight modification of the example
 //Ethernet->CosmClient, modified to work both for Arduino Uno with ethernet shield and for Arduino Galileo
 

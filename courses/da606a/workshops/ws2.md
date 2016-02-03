@@ -36,7 +36,7 @@ A good value for the pull up resistor is somewhere around 10k (10k is short for 
 
 The state of the button can be detected by the following Arduino code:
 
-```arduino
+```c
 int buttonPin = 5; //button connected to pin 5 with pull up resistor
 
 void setup() {                

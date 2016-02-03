@@ -46,7 +46,7 @@ Installation instructions:
 
 ## The first "sketch": make an LED blink
 
-```
+```c
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
@@ -105,7 +105,7 @@ This example introduces some new important components:
 - The map() function is very useful for adjusting the range of values from sensors. 
 
 
-```c++
+```c
 void setup() {
   // initialize serial communications (for debugging only):
   Serial.begin(9600);
