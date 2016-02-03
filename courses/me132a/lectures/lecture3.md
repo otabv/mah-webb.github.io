@@ -6,17 +6,17 @@ controls: false
 date: 2015-01-29
 ---
 
-#Programmering för webben 
+# Programmering för webben 
 
-##Föreläsning 3
+## Föreläsning 3
 
-###Dagens innehåll 
+### Dagens innehåll 
 
 - Teckenkodning 
 - Formulär 
 - PHP-kod för att ta hand om formulärdata
 
-###Teckenkodning
+### Teckenkodning
 
 Tecken som används i html-taggar och i URLer måste hanteras på ett speciellt sätt för att kunna visas på en webbsida:
 
@@ -67,7 +67,7 @@ Den teckenkodning som rekommenderas är vanligtvis UTF-8, men ISO-8859-1 använd
 
 
  
-###Formulär
+### Formulär
 
 HTML-formulär är ofta input till PHP-program
 
@@ -99,7 +99,7 @@ Det som matats in i fälten skickas med som en del av adressen till formoutput.p
 http://ddwap.mah.se/k3bope/me132a/lecture3/formoutput.php?firstname=Sasha&lastname=Fierce
 {% endhighlight %}
 
-###Formulärrepetition
+### Formulärrepetition
 
 Vanligaste formulär-elementen: 
 
@@ -107,7 +107,7 @@ Vanligaste formulär-elementen:
 - select (dropdown meny)
 - textarea
  
-###PHP-kod som tar hand om formulärdata
+### PHP-kod som tar hand om formulärdata
 
 Sidan forminput.html innehåller ett formulär. När man klickar Send
 kommer man till sidan formoutput.php. PHP-sidan skapar automatiskt
@@ -121,7 +121,7 @@ $firstname=$_GET['firstname'];
 
 Det är viktigt att det namn som ett fält fått i formuläret är detsamma som det som står mellan efter $_GET mellan hakparanteserna.
 
-###POST eller GET?
+### POST eller GET?
 Det finns två metoder för att skicka formulär, POST och GET
 
 **GET**: formulärdata skickas med i URL.
@@ -140,7 +140,7 @@ PHP skapar  tre associativa arrayer som innehåller värden från skickade formu
 - $_GET innehåller värden om formuläret skickats med method='get'.
 - $_REQUEST innehåller värden oavsett om formuläret skickats med method='post' eller 'get'.
  
-###Säkerhetslucka mm
+### Säkerhetslucka mm
 
 En eventuell säkerhetslucka i formulär är möjligheten att
 inmataren lägger in skadlig kod i formuläret. Antag att vi skriver in ett javascript i inmatningsfältet:
