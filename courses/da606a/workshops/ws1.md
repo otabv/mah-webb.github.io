@@ -10,8 +10,6 @@ title: Workshop 1
 
 Introduced in 2005, developed by people from the Interaction Design Institute in Ivrea (Massimo Banzi), from Malmö University (David Cuarielles) and some more to replace expensive systems that broke all the time. 
 
-![](im1/arduinoteam.png)
-
 - Developed for design students
 - Now used by students, designers, artists, "makers", engineers...
 
@@ -48,7 +46,7 @@ Installation instructions:
 
 ## The first "sketch": make an LED blink
 
-{% highlight c++ %}
+```c++
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
@@ -73,10 +71,10 @@ void loop() {
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);               // wait for a second
 }
-{% endhighlight %}
+```
 
 ## The breadboard
-
+	
 The breadboard is very useful for connecting the inputs and outputs of the Arduino. 
 
 ![](im1/breadboard_11.jpg)
@@ -95,7 +93,7 @@ Used as outputs. An actuator can produce for example sound (a speaker), light (a
 Our first mission is to make a simple instrument or sound device behaving somewhat like a [Theremin](http://en.wikipedia.org/wiki/Theremin). We will connect a light sensor - a photo resistor - and small speaker to the Arduino. You can use a potentiometer if you don't have a photo resistor. 
 
 - The speaker can be connected directly between ground and one of the digital outputs. Let's use digital pin 9
--  The photo resistor  is connected in the same way as the push button from the last workshop but this time to an analog input. Let's use analog input 0. 
+-  The photo resistor is connected in series with a 2k resistor between ground and +5V. The middle point is connected to an analog input. Let's use analog input 0. This connection is called a *volatage divider*. 
 
 We will use the Tone Pitch Follower example in 
 
@@ -107,7 +105,7 @@ This example introduces some new important components:
 - The map() function is very useful for adjusting the range of values from sensors. 
 
 
-{% highlight c++ %}
+```c++
 void setup() {
   // initialize serial communications (for debugging only):
   Serial.begin(9600);
@@ -128,6 +126,6 @@ void loop() {
   tone(9, thisPitch, 10);
   delay(1);        // delay in between reads for stability
 }
-{% endhighlight %}
+```
 
 Next week we will dig deeper inte sensors and actuators. 

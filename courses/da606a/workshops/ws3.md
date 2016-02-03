@@ -1,16 +1,94 @@
 ---
 layout: instructions_en
 code: da606a
-title: Workshop 4
+title: Workshop 3
 ---
 
-# Workshop 4 - Connecting to web services
+# Workshop 3 - Actuators and Connecting to web services
 
-Today we will connect the Arduino to web services like <http://xively.com>, <http://zapier.com> and <http://twitter.com>.
+Today we will connect the Arduino to web services like <http://xively.com> and <http://zapier.com> and learn more by actuators. 
+
+
+## Actuators
+
+Actuators are things that will produce some action that humans usually can detect. Actions can for example be sound, light or movement. Examples of actuators are:
+
+- light sources (lamps, LEDs)
+- motors (servo motors, DC motors, stepper motors)
+- speakers (magnetic or piezo speaker)
+- heating elements
+
+Small speakers can be connected directly to the Arduino, between ground (GND) and one of the digital output pins. But wait, aren't speakers analog? Yes they are, but it is possible to produce analog output on on the digital pins with something called pulse width modulation, PWM. 
+
+An LED can be connected almost directly to the Arduino, but it must be connected in series with a resistor of ca 200&#937;, otherwise the Arduino might be damaged. 
+
+Really small motors can also be connected directly to the Arduino, but larger motors need som kind of amplification and external power source to work, for example a device called an H-bridge. DC-motors and servo motors are the most common motors connected to the Arduino.
+
+### DC motors
+
+A normal electrical motor such as the one in the image below is simply rotating continuously when it is connected to a power source. 
+
+![](im3/dcmotor.jpg)
+
+**Standard DC motor**
+
+The simplest way to connect a DC motor to the Arduino is to use a motor shield, which has one or more [H-bridges](https://en.wikipedia.org/wiki/H_bridge) on them:
+
+![](im3/motorshield.jpg)
+
+**Motor shield**
+
+### Servo motors
+
+The servo motor is often found in radio controlled airplanes and cars to control flaps and steering. They are very practical to use together with the Arduino if you want to make a movement between fixed positions. 
+
+![](im3/micro_servo.jpg)
+
+**Servo motor**. Image from [Wikipedia](http://en.wikipedia.org/wiki/Servo_(radio_control))
+
+The servo motor has a gear box built in and a sensor for measuring the position of the outgoing shaft. Arduino already has a built in function for controlling servos:
+
+```c++
+myservo.write(val); 
+```
+
+where `val` is a variable that should have a value between 0 and 180. When this function is called, the servo will move to the number of degrees according to `val`.
+
+[Sweep](http://arduino.cc/en/Tutorial/sweep) and [Knob](http://arduino.cc/en/Tutorial/Knob) are two good tutorials from the official Arduino site. 
+
+## LED and push button example
+
+Let's connect a push button and a LED to the Arduino.
+
+![](im3/buttonandled.png)
+
+This sketch will *turn off* the LED when the button is pushed. 
+
+```c++
+int buttonPin = 5; //button connected to pin 5 with pull up resistor
+int ledPin = 8;
+
+void setup() {
+  //NOTE: you can use internal pullup instead of external pullup if you
+  //change following line to
+  //pinMode(buttonPin, INPUT_PULLUP);          
+  pinMode(buttonPin, INPUT);     
+  pinMode(ledPin, OUTPUT);     
+
+}
+
+void loop() {
+  int val=digitalRead(buttonPin);
+  //the variable val will be: 
+  // HIGH when the button is not pushed
+  // LOW when the button is pushed
+  digitalWrite(ledPin,val);
+}
+```
 
 ## Controlling a LED from the web
 
-Now will try to control the Arduino from a web page, by turning on and off an LED. 
+Now we will try to control the Arduino from a web page, by turning on and off an LED. 
 
 The led is turned on or off by requesting a web page from the Arduino with either 
 
@@ -20,11 +98,13 @@ or
 
 http://http://195.178.228.115/arduino/off
 
+Giving commands like this is in a URL is usually called *representational state transfer*, or [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) 
+
 **NOTE** The IP-number must be changed to your IP-number.
 
 Here is the code that will be explained in detail. 
 
-{% highlight c++ %}
+```c++
 #include <SPI.h>
 #include <Ethernet.h>
 
@@ -126,7 +206,7 @@ void htmlend(EthernetClient client) {
   client.print(F("</body>"));
   client.print(F("</html>"));
 }
-{% endhighlight %}
+```
 
 ## Control one Arduino from another one
 
@@ -136,7 +216,7 @@ The Arduino that *control* will instead act as web client. That means that it ac
 
 A push button should be connected to the pin 8 of the controlling Arduino. We will now use an internal pull up resistor meaning that we can connect the push button directly between pin 8 and GND. Pushing the button on the client will turn on or off the LED on the server. Here is the web client sketch: 
 
-{% highlight c++ %}
+```c++
 //This is an adapted version of the Example
 //File->Examples->Ethernet->WebClientRepeating
 
@@ -233,7 +313,7 @@ void httpRequest() {
     client.stop();
   }
 }
-{% endhighlight %}
+```
 
 ## Connecting to Xively
 
@@ -243,7 +323,7 @@ Start by logging in to <http://xively.com>. Add a device, then add a channel for
 
 Note the API key and Feed ID for this channel. These values will go into this Arduino sketch:
 
-{% highlight c++ %}
+```c++
 //this is a slight modification of the example
 //Ethernet->CosmClient, modified to work both for Arduino Uno with ethernet shield and for Arduino Galileo
 
@@ -399,7 +479,7 @@ void flashLed(int times) {
     }
   }
 }
-{% endhighlight %}
+```
 
 ## Connection to Zapier
 

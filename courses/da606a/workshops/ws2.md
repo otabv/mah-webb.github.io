@@ -4,7 +4,7 @@ code: da606a
 title: Workshop 2
 ---
 
-# Workshop 3 - Sensors and Actuators, Connection to internet
+# Workshop 2 - Sensors and Actuators, Connection to internet
 
 ## Sensors and Actuators
 
@@ -36,7 +36,7 @@ A good value for the pull up resistor is somewhere around 10k (10k is short for 
 
 The state of the button can be detected by the following Arduino code:
 
-{% highlight c++ %}
+```c++
 int buttonPin = 5; //button connected to pin 5 with pull up resistor
 
 void setup() {                
@@ -49,49 +49,13 @@ void loop() {
   // HIGH when the button is not pushed
   // LOW when the button is pushed
 }
-{% endhighlight %}
+```
 
 A **light sensor** or **photo resisitor** can be connected in the same way as the button. A photo resistor has a changing resistance when the light is changing. If it is connected with a pull up resistor, the voltage will change between 0 V and 5 V depending on the light. The photo resistor is an *analog* sensor while the push button is a *digital* sensor, and must be connected to the analog input of the Arduino. 
 
 ### Actuators
 
-Actuators are things that will produce some action that humans usually can detect. Actions can for example be sound, light or movement. Examples of actuators are:
-
-- light sources (lamps, LEDs)
-- motors (servo motors, DC motors, stepper motors)
-- speakers (magnetic or piezo speaker)
-- heating elements
-
-Small speakers can be connected directly to the Arduino, between ground (GND) and one of the digital output pins. But wait, aren't speakers analog? Yes they are, but it is possible to produce analog output on on the digital pins with something called pulse widht modulation, PWM. More on that later.  
-
-An LED can be connected almost directly to the Arduino, but it must be connected in series with a resistor of ca 200&#937;, otherwise the Arduino might be damaged. 
-
-Really small motors can also be connected directly to the Arduino, but larger motors need som kind of amplification and external power source to work.
-
-Let's connect a push button and a LED to the Arduino.
-
-![](im2/buttonandled.png)
-
-This sketch will *turn off* the LED when the button is pushed. 
-
-{% highlight c++ %}
-int buttonPin = 5; //button connected to pin 5 with pull up resistor
-int ledPin = 8;
-
-void setup() {                
-   pinMode(buttonPin, INPUT);     
-   pinMode(ledPin, OUTPUT);     
-
-}
-
-void loop() {
-  int val=digitalRead(buttonPin);
-  //the variable val will be: 
-  // HIGH when the button is not pushed
-  // LOW when the button is pushed
-  digitalWrite(ledPin,val);
-}
-{% endhighlight %}
+This section has moved to [workshop 3](ws3.html)
 
 ### Analog and Digital
 
@@ -116,7 +80,7 @@ Examples -> Ethernet - WebServer
 but it has been modified a little. 
 
 
-{% highlight c++ %}
+```c++
 /*
   Web Server 
  */
@@ -222,7 +186,6 @@ void loop()
     Serial.println("finnished");
   }
 }
-{% endhighlight %}
-
+```
 
 Open a web browser and enter the IP-number of your Arduino in the address field, for example and you should see a web page that changes color when the light condition for the light sensor changes. 
