@@ -110,7 +110,7 @@ Here is the code that will be explained in detail.
 
 #define BUFSIZ 100
 
-int led=9;
+int led=8;
 
 //replace with mac address of your arduino
 byte mac[]= { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? };
@@ -223,7 +223,7 @@ A push button should be connected to the pin 8 of the controlling Arduino. We wi
 #include <SPI.h>
 #include <Ethernet.h>
 
-int buttonPin=8;
+int buttonPin=5;
 
 byte mac[] = { 0x90, 0xA2, 0xDA, 0x??, 0x??, 0x?? }; 
 //NOTE The ? should be changed to 
@@ -241,9 +241,8 @@ char otherArduinoServer[] = "192.168.0.7";
 boolean lastConnected = false; // state of the connection last time through the main loop
 
 void setup() {
-  pinMode(buttonPin, INPUT);
-  digitalWrite(buttonPin, HIGH); // enable internal pull up. this line is not needed with external pull up connected to on button  
-
+  pinMode(buttonPin, INPUT_PULLUP);
+  
   // start serial port:
   Serial.begin(9600);
   // give the ethernet module time to boot up:

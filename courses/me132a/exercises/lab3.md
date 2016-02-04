@@ -24,7 +24,7 @@ När man klickar *skicka* ska man komma till en PHP-sida med filnamnet *upp1.php
 
 ![](im3/svar1.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Skapa ett formulär som är identiskt med formuläret i uppgift 1 men döp den till *upp2.html*. 
 
@@ -41,7 +41,7 @@ Skicka mail: <a href="mailto:bo.peterson@mah.se">Bo Peterson</a>
 {% endhighlight %}
 
 
-##Uppgift 3
+## Uppgift 3
 
 Nu ska ett lite mer omfattande formulär göras, med följande utseende:
 
@@ -51,7 +51,7 @@ Formuläret ska leda vidare till
 
 ![](im3/svar3.png)
 
-##Uppgift 4
+## Uppgift 4
 
 Om man inte använt sig av funktionen `htmlspecialchars()` kan man få konstiga och ibland rent av skadliga resultat om en användare matar in html-kod i formulären. 
 
@@ -63,7 +63,7 @@ i fältet *förnamn* i formuläret (men ersätt *dittnamn* med det du heter). Kl
 
 Komplettera lösningen till uppgift 3 så att den oskadliggör eventuell kod i inmatningsfält.
 
-##Uppgift 5
+## Uppgift 5
 
 Komplettera uppgift 5 i laboration 2 (förra laborationen) med ett formulär så att man kan välja en viss månad i en dropdownmeny och sedan få veta hur många dagar det är i den månaden. Svarsidan kan se nästan likadan ut som i laboration 2, men måste hämta rätt månad från formuläret. 
 
