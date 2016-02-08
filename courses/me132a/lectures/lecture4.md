@@ -181,6 +181,7 @@ Ibland behöver man tre likhetstecken `===` i jämförelser. Mer om det finns at
 Funktion `isset()` tillsammans med en if-sats är mycket användbart för att kolla om en variabel finns eller inte: 
 
 ```php
+<?php
 $x = 5;
 if (isset($x)) {
 	echo 'varibeln $x finns<br>';} else {
@@ -188,6 +189,7 @@ if (isset($x)) {
 if (isset($y)) {
 	echo 'varibeln $y finns<br>';} else {
 	echo 'variabeln $y finns inte<br>';}
+?>
 ``` 
 
 Resultatet blir
