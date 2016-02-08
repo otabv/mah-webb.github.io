@@ -6,11 +6,11 @@ controls: false
 date: 2015-02-05
 ---
 
-#Programmering för webben
+# Programmering för webben
 
-##Föreläsning 4
+## Föreläsning 4
 
-###Dagens innehåll
+### Dagens innehåll
 
 - Strängar
     - Dubbla eller enkla citationstecken?
@@ -21,7 +21,7 @@ date: 2015-02-05
 - Kontrollstrukturer
     - if-else
 
-###Strängar
+### Strängar
 
 En sträng är helt enkelt en sammanhängande följd av tecken.
 Tecknen kan vara bokstäver, siffror, mellanslag, speciella
@@ -36,7 +36,7 @@ Exempel på strängar:
 
 "Sträng nummer 2"
 
-###Dubbla eller enkla citationstecken?
+### Dubbla eller enkla citationstecken?
 
 Det spelar oftast ingen roll om man använder enkla eller
 dubbla citationstecken, men det finns undantag nämligen om man ska skriva ut ett variabelvärde inuti en sträng:
@@ -77,7 +77,7 @@ $name = "Tim O'Reilly"; //funkar
 $name = 'Tim O\'Reilly'; //funkar också
 {% endhighlight %}
 
-###Escape-tecken
+### Escape-tecken
 
 Tecknet \ (backslash) kallas för escape-tecken, och används för att få med tecken i strängar som inte kan vara med direkt.
 
@@ -175,3 +175,35 @@ if ($lang=="sw") {
 Man kan lägga på hur många else if som helst men det blir snabbt otympligt. Ett alternativ är att använda `switch`. Läs mer om switch på <http://php.net/manual/en/control-structures.switch.php>
 
 Ibland behöver man tre likhetstecken `===` i jämförelser. Mer om det finns att läsa på <http://php.net/manual/en/language.operators.comparison.php>
+
+**Exempel för att kolla data från formulär**
+
+Funktion `isset()` tillsammans med en if-sats är mycket användbart för att kolla om en variabel finns eller inte: 
+
+```php
+$x = 5;
+if (isset($x)) {
+	echo 'varibeln $x finns<br>';} else {
+	echo 'variabeln $x finns inte<br>';}
+if (isset($y)) {
+	echo 'varibeln $y finns<br>';} else {
+	echo 'variabeln $y finns inte<br>';}
+``` 
+
+Resultatet blir
+
+```
+varibeln $x finns
+variabeln $y finns inte
+```
+
+Funktionen är väldigt användbar för att kolla att data finns från ett formulär:
+
+```php
+if (isset($_POST['email'])) {
+	$email = $_POST['email'];} else {
+	$email = "okänd epostadress";}
+
+echo "Epost: $email";
+```
+
