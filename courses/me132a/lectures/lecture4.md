@@ -216,7 +216,7 @@ varibeln $x finns
 variabeln $y finns inte
 ```
 
-Funktionen är väldigt användbar för att kolla att data finns från ett formulär:
+Funktionen är väldigt användbar för att kolla att data kommer från ett formulär:
 
 ```php
 <?php
@@ -228,3 +228,170 @@ echo "Epost: $email";
 ?>
 ```
 
+### Exempel från föreläsning 2016-02-08
+
+#### Exempel 1
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 4, exempel 1</title>
+</head>
+
+<body>
+<?php
+$x='en enkel sträng';
+
+$spelalt1 = '"Chippen" spelar fotboll med Tim O\'Reilly'; //funkar
+
+$spelalt2 = "\"Chippen\" spelar fotboll med Tim O'Reilly"; //funkar
+
+$spelalt3 = "\"Chippen\" spelar fotboll med Tim O\'Reilly"; //funkar inte
+
+echo $spelalt1 . "<br>";
+echo $spelalt2 . "<br>";
+echo $spelalt3 . "<br>";
+
+//vi vill göra strängen "\"'
+$komplicerat = "\"\\\"'";
+
+echo $komplicerat;
+
+?>
+
+
+</body>
+</html>
+```
+
+#### Exempel 2
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 4, exempel 2</title>
+</head>
+
+<body>
+<?php
+
+$text = "Jag "; //$text får startvärde
+$text .= "har "; //$text utökas med nytt värd
+$text .= "katt ";
+$text .= "som ";
+$text .= "vill ";
+$text .= "äta ";
+$text .= "tonfisk";
+
+echo $text;
+?>
+
+</body>
+</html>
+```
+
+#### Exempel 3
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 4, exempel 3</title>
+</head>
+
+<body>
+<?php
+
+$text = "Jag "; //$text får startvärde
+$text .= "har "; //$text utökas med nytt värd
+$text .= "katt ";
+$text .= "som ";
+$text .= "vill ";
+$text .= "äta ";
+$text .= "tonfisk";
+
+echo $text;
+
+echo "<br>";
+
+//nu vill vi omvandla texten till VERSALER
+
+$textversal = strtoupper($text);
+
+echo $textversal;
+
+echo "<br>";
+
+//åäö funkade inte, prova mb_strtoupper istället mb = multibyte
+
+$textversal2 = mb_strtoupper($text);
+echo $textversal2;
+echo "<br>";
+
+//vi ska testa baklängesspråk
+
+echo strrev($text);
+
+
+?>
+
+
+</body>
+</html>
+```
+
+#### Exempel 4
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 4, exempel 3</title>
+</head>
+
+<body>
+<?php
+
+$text = "Jag "; //$text får startvärde
+$text .= "har "; //$text utökas med nytt värd
+$text .= "katt ";
+$text .= "som ";
+$text .= "vill ";
+$text .= "äta ";
+$text .= "tonfisk";
+
+echo $text;
+
+echo "<br>";
+
+//nu vill vi omvandla texten till VERSALER
+
+$textversal = strtoupper($text);
+
+echo $textversal;
+
+echo "<br>";
+
+//åäö funkade inte, prova mb_strtoupper istället mb = multibyte
+
+$textversal2 = mb_strtoupper($text);
+echo $textversal2;
+echo "<br>";
+
+//vi ska testa baklängesspråk
+
+echo strrev($text);
+
+
+?>
+
+
+</body>
+</html>
+```
