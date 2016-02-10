@@ -299,7 +299,7 @@ void httpRequest() {
     }
     
     client.println("Host: ");
-    client.println(otherArduinoServer);
+    client.print(otherArduinoServer);
     client.println("User-Agent: arduino-ethernet");
     client.println("Connection: close");
     client.println();

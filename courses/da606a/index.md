@@ -35,7 +35,9 @@ Useful links:
 
 - [Workshop 3](workshops/ws3.html)
 
-## Week 4
+## Week 4 - More web services
+
+- [Workshop 4](workshops/ws4.html)
 
 ## Week 5
 

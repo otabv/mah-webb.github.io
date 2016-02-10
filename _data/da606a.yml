@@ -13,3 +13,5 @@ workshops:
       file: ws2
     - name: Actuators, web services
       file: ws3
+    - name: More web services
+      file: ws4
