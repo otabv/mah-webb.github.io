@@ -20,11 +20,6 @@ date: 2015-02-15
 
 Vi har tidigare sett villkor i if-satser:
 
-```php
-<?php
-
-?>
-```
 
 ```php
 <?php
@@ -207,16 +202,22 @@ Indentering eller indrag av kod används både till html-kod och php-kod. Indent
 <?php
 $animals=array('cat','dog','cat','dog');
 $sizes=array('small','big','big','small');
-for ($i=0; $i<count($animal); $i++);
+for ($i=0; $i<count($animals); $i++) {
     $thisanimal=$animals[$i];
     $thissize=$sizes[$i];
     if ($thisanimal=='cat') {
         if ($thissize=='small') {
-           echo "mjau";         } else {
-            echo "MJAU";        }    } elseif ($thisanimal == 'dog') {
+           echo "mjau<br>"; 
+        } else {
+            echo "MJAU<br>";
+        }
+    } elseif ($thisanimal == 'dog') {
         if ($thissize=='small') {
-           echo "voff";         } else {
-            echo "VOFF";        }            }
+           echo "voff<br>"; 
+        } else {
+            echo "VOFF<br>";
+        }        
+    }
 }
 ?>
 ```
