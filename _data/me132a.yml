@@ -13,8 +13,8 @@ lectures:
        file: lecture3
      - name: F 4 - Strängar, if
        file: lecture4
-#     - name: F 5 - Loopar
-#       file: lecture5
+     - name: F 5 - Loopar, indentering
+       file: lecture5
      - name: F 6 - Funktioner
        file: lecture6
      - name: F 7 - Filhantering

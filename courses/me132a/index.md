@@ -54,7 +54,7 @@ Lärare på kursen:
 
 ### Vecka 7 - Loopar
 
-- Föreläsning 5
+- [Föreläsning 5](lectures/lecture5.html)
 - [Laboration 5](exercises/lab5.html)<!--ej klar-->
 
 ### Vecka 8 - Självstudier
