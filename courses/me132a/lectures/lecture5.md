@@ -209,13 +209,13 @@ for ($i=0; $i<count($animals); $i++) {
     $thissize=$sizes[$i];
     if ($thisanimal=='cat') {
         if ($thissize=='small') {
-           echo "mjau<br>"; 
+            echo "mjau<br>"; 
         } else {
             echo "MJAU<br>";
         }
     } elseif ($thisanimal == 'dog') {
         if ($thissize=='small') {
-           echo "voff<br>"; 
+            echo "voff<br>"; 
         } else {
             echo "VOFF<br>";
         }        
