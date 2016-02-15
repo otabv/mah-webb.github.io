@@ -103,6 +103,14 @@ while ($count<=3)
 ?>
 ```
 
+Resultatet blir
+
+```
+1
+2
+3
+```
+
 #### For
 
 En for-loop kan ses som en mer kompakt variant av en while-loop, där startvärde, villkor och uppräkning står tillsammans
@@ -114,13 +122,6 @@ for (startvärde; villkor; uppräkning) {
 ?>
 ```
 
-Resultatet blir
-
-```
-1
-2
-3
-```
 
 ##### Exempel
 
@@ -183,13 +184,14 @@ december
 
 Samma exempel kan göras med en for-loop. Vi använder då funktionen `count()` för att ta reda på hur många element som finns i vår array. Vi behöver även en variabel `$i` som index.
 
- ```php
-<?php
-$months = array('januari','februari','mars','april','maj','juni','juli','augusti','september','oktober','november','december');
-for ($i=0; $i<count($months); $i++) {
+```php
+ <?php
+ $months = array('januari','februari','mars','april','maj','juni','juli','augusti','september','oktober','november','december');
+ for ($i=0; $i<count($months); $i++) {
     $onemonth = $months[$i];
     echo $onemonth;
-    echo "<br>";}
+    echo "<br>";
+}
 ?>
 ```
 
@@ -223,3 +225,144 @@ for ($i=0; $i<count($animals); $i++) {
 ```
 
 Olika texteditorer har offtast funktioner för att automatiskt rätta till felaktig indentering. I Atom kan man till exempel markera det som ska indenteras och välja Edit -> Lines -> Auto indent. 
+
+### Exempel från föreläsning 2016-02-15
+
+#### exempel1.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 5, exempel</title>
+</head>
+
+<body>
+<?php
+$age=17;
+if ($age<16)
+{
+    $category="barn";
+}
+elseif ($age>=16 and  $age<30)
+{
+    $category="ung vuxen";
+}
+else
+{
+    $category="vuxen";
+}
+echo "Du är $age år och tillhör kategorin $category";
+?>
+
+
+</body>
+</html>
+```
+
+#### exempel2.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 5, exempel</title>
+</head>
+
+<body>
+<?php
+$age=5;
+
+while ($age<16) {
+    echo "du är $age år och du är ett barn<br>";
+    $age = $age + 1; //kan också skrivas $age++
+}
+echo "nu är loopen klar";
+?>
+
+
+</body>
+</html>
+```
+
+#### exempel3.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 5, exempel</title>
+</head>
+
+<body>
+<?php
+
+
+for ($age=5; $age<16; $age++) {
+    echo "du är $age år och du är ett barn<br>";
+}
+echo "nu är loopen klar";
+?>
+
+
+</body>
+</html>
+
+```
+
+#### exempel4.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 5, exempel</title>
+</head>
+
+<body>
+<?php
+$names=array('Beyoncé','Rihanna','Taylor Swift','Seinabo Sey','Sabina Ddumba');
+$length=count($names);
+for ($index=0; $index < $length; $index++) {
+    echo "Artist nummer $index: ";
+    echo $names[$index];
+    echo "<br>";
+}
+echo "loopen slut";
+?>
+
+
+</body>
+</html>
+```
+
+#### exempel5.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Föreläsning 5, exempel</title>
+</head>
+
+<body>
+<?php
+$names=array('Beyoncé','Rihanna','Taylor Swift','Seinabo Sey','Sabina Ddumba');
+
+foreach($names as $onename) {
+    echo "Artist: ";
+    echo $onename;
+    echo "<br>";
+}
+echo "loopen slut";
+?>
+
+</body>
+</html>
+```
+
