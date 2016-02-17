@@ -21,10 +21,10 @@ We could get rid of the intermediate PHP-server with a more powerful Arduino suc
 
 We have to start from the back:
 
-Step 1: Create a Google spread sheet. 
-Step 2: Create a new *Zap* in Zapier. Use webhook as Trigger App. Follow the instructions and remember your custom url. Then use Google Sheets and Create Spreadsheet Row as action.
-Step 3: Create an acount on ddwap.mah.se. Put the PHP-program found below on the PHP-server.
-Step 4: Put the Arduino sketch below in your Arduino. Change the sketch to send some sensor data as well. 
+1. Create a Google spread sheet. 
+2. Create a new *Zap* in Zapier. Use webhook as Trigger App. Follow the instructions and remember your custom url. Then use Google Sheets and Create Spreadsheet Row as action.
+3. Create an acount on ddwap.mah.se. Put the PHP-program found below on the PHP-server.
+4. Put the Arduino sketch below in your Arduino. Change the sketch to send some sensor data as well. 
 
 ## PHP program zapier.php
 
