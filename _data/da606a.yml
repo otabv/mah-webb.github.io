@@ -7,15 +7,15 @@ credits: 7.5
 
 # Workshops
 workshops:
-    - name: Arduino intro
+    - name: 1 - Arduino intro
       file: ws1
-    - name: Sensors, internet
+    - name: 2 - Sensors, internet
       file: ws2
-    - name: Actuators, web services
+    - name: 3 - Actuators, web services
       file: ws3
-    - name: More web services
+    - name: 4 - More web services
       file: ws4
-    - name: WebSockets
+    - name: 5 - WebSockets
       file: ws5
 
 

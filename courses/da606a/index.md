@@ -39,9 +39,13 @@ Useful links:
 
 - [Workshop 4](workshops/ws4.html)
 
-## Week 5
+## Week 5 - WebSockets
 
-## Week 6
+- [Workshop 5](workshops/ws5.html)
+
+## Week 6 - Project work
+
+- [Project](projects/project.html)
 
 ## Week 7 - Project work
 
