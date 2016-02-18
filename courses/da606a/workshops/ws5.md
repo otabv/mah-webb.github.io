@@ -93,6 +93,7 @@ void loop() {
 
     // capture the value of analog 0, send it along
     data = String(analogRead(0));
+    Serial.println("Sending "+data);
     webSocketClient.sendData(data);
   } else {    
     Serial.println("Client disconnected.");
