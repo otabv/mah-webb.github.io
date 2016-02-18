@@ -4,6 +4,11 @@ code: me132a
 credits: 15.0
 
 # Föreläsningar
+
+assignments:
+    - name: Självstudie 1
+      file: self1
+
 lectures:
      - name: F 1 - Introduktion
        file: lecture1

@@ -59,7 +59,7 @@ Lärare på kursen:
 
 ### Vecka 8 - Självstudier
 
-- Självstudieuppgifter kommer
+- [Självstudie 1](assignments/self1.html)
 
 ### Vecka 9 - Funktioner
 
