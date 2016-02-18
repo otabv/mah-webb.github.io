@@ -25,6 +25,7 @@ Vi har tidigare gjort en PHP-sida som beräknar en triangels area. Uppgiften nu 
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 1" onclick="toggle('answer1');">
 
+{::options parse_block_html="true" /}
 <div id="answer1" style="display:none">
 
 **upp1.html**
@@ -63,6 +64,7 @@ Komplettera uppgift 1 så att man kan välja om man vill beräkna area av triang
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 2" onclick="toggle('answer2');">
 
+{::options parse_block_html="true" /}
 <div id="answer2" style="display:none">
 
 **upp2.html**
@@ -113,6 +115,7 @@ Uppgiften går ut på att testa strängfunktioner. Det krävs inte att funkt
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 3" onclick="toggle('answer3');">
 
+{::options parse_block_html="true" /}
 <div id="answer3" style="display:none">
 
 **upp3.html**
@@ -151,6 +154,7 @@ Fungerar det med åäö? Fungerar det med blandade stora och små bokstäve
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 4" onclick="toggle('answer4');">
 
+{::options parse_block_html="true" /}
 <div id="answer4" style="display:none">
 
 **upp4.html**
@@ -200,7 +204,8 @@ Funktionen str_replace(sök, ersätt, text) byter ut alla förekomster av *so
 <!--START SHOW/HIDE-->
 <input type="button" value="visa/göm lösning 5" onclick="toggle('answer5');">
 
-<div id="answer4" style="display:none">
+{::options parse_block_html="true" /}
+<div id="answer5" style="display:none">
 
 **upp5.html**
 
@@ -216,7 +221,7 @@ Skriv en text <br>
 
 **upp5.php**
 
-````php
+```php
 <?php
 $text=$_POST["text"];
 
@@ -229,7 +234,7 @@ echo $newtext;
 //$newtext=str_replace("E","I",$newtext);
 //efter raden $newtext=str_replace("e","i",$text);
 ?>
-````
+```
 </div>
 <!--END SHOW/HIDE-->
 
