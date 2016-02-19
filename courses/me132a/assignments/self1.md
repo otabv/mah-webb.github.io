@@ -161,35 +161,35 @@ Fungerar det med åäö? Fungerar det med blandade stora och små bokstäve
 
 ```html
 <form action="upp4.php" method="post">
-Skriv en text <br />
-<input type="text" width="50" name="text" />
-<input type="submit" value="vänd på texten" />
+Skriv en text <br>
+<input type="text" width="50" name="text">
+<input type="submit" value="vänd på texten">
 </form>
 ```
 
 **upp4.php**
 
-````php
+```php
+<?php
 $text=$_POST["text"];
 
 $reversetext=strrev($text);
 
-echo "Texten baklänges blir <b>";
-echo $reversetext;
-echo "</b><br><br>";
-if ($text==$reversetext) 
-{
+echo "Texten baklänges blir ";
+echo "<b>$reversetext</b>";
+echo "<br><br>";
+if ($text==$reversetext) {
 	echo "Texten är ett palindrom";
 }
-else
-{
+else {
 	echo "Texten är <b>inte</b> ett palindrom";
 }
 //obs att det inte funkar om man blandar stora och små bokstäver
 //sirap i paris blir palindrom men inte Sirap i Paris
 //lösning: ändra i if-satesen till
 // if (strtoupper($text)==strtoupper($reversetext))
-````
+?>
+```
 </div>
 <!--END SHOW/HIDE-->
 
@@ -214,7 +214,7 @@ Funktionen str_replace(sök, ersätt, text) byter ut alla förekomster av *so
 Skriv en text <br>
 <textarea rows="10" cols="40" name="text">
 </textarea>
-<br />
+<br>
 <input type="submit" value="Byt ut alla e mot i">
 </form>
 ```
@@ -239,4 +239,13 @@ echo $newtext;
 <!--END SHOW/HIDE-->
 
 Bygg gärna vidare så att alla vokaler byts ut mot i. 
+
+## Statistik
+
+Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
+
+<iframe frameborder="0" src="http://ddwap.mah.se/k3bope/me105a/self/result.php?thisstudy=1git" width="500" height="500">
+</iframe>
+
+
 

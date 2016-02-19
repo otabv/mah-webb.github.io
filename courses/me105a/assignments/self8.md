@@ -22,9 +22,9 @@ th, td {padding: 6px;}
 </script>
 
 
-#Självstudier 8
+# Självstudier 8
 
-##Uppgift 1
+## Uppgift 1
 
 Följande fil är exporterad från tabellen **building** från tidigare självstudier, men även kompletterad med en kolumn som innehåller filnamn på bilder av byggnaderna. InDesign kräver UTF-16- format på filen istället för UTF-8 som vi brukar använda, annars fungerar inte åäö.
 
@@ -65,7 +65,7 @@ Resultatet av en datamerge blir följande fil:
 <!--END SHOW/HIDE-->
 
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 
