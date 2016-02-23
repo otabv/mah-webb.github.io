@@ -6,17 +6,17 @@ title: Laboration 6
 
 # Laboration 6
 
-##Syfte med laborationen:
+## Syfte med laborationen:
 
 - att förstå hur include fungerar i PHP
 - att förstå hur egendefinierade funktioner fungerar i PHP
 - att se ett enkelt exempel på pseudokod
 
-##Förberedelser:
+## Förberedelser:
 
 - Läs sidorna 161-176 i boken, samt kompletterande kursmaterialet include.pdf. Sidorna 165-169 innehåller en del om mysql och databaser som vi inte gått igenom. Läs sidorna ändå, men bekymra er inte om allt inte går att förstå. 
 
-##Lämna in följande:
+## Lämna in följande:
 
 - Mappen lab6 ihopzippad samt mappen includes ihopzippad.
 
@@ -48,7 +48,7 @@ skriv ut variabeln $smallest
 
 Skriv in koden i filen index.php i mappen upp1 i mappen lab6 och testa! Utskriften ska bli det minsta talet i `$numbers`. 
 
-##Uppgift 2
+## Uppgift 2
 
 Vi ska nu göra en *funktion* som kan hitta minsta talet i en lista. 
 
@@ -67,7 +67,7 @@ function minvalue($numbers) {
 
 Skapa sedan filen index.php i mappen upp2. Detta ska vara en komplett fil med head, body etc. Filen ska först infoga functions.inc.php. Sedan ska en array med ett antal tal definieras. Slutligen ska funktionen `minvalue` anropas och minsta talet ska skrivas ut. Utskriften ska bli som i uppgift 1.  
 
-##Uppgift 3
+## Uppgift 3
 
 En stor fördel med include är att man kan bygga ett bibliotek av funktioner som man behöver använda flera gånger. Skapa en mapp direkt i ddwap (alltså inte i mappen lab6) som heter includes
 
