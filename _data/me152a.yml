@@ -18,8 +18,8 @@ exercises:
       file: E04
     - name: Laboration 5
       file: E05
-    - name: Laboration - DOM
-      file: DOM
+    # - name: Laboration - DOM
+    #   file: DOM
 
     # - name: Laboration 7
     #   file: E08
