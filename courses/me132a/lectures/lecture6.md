@@ -188,4 +188,197 @@ if ($age>=18 and $age<65) {
 ?>
 ```
 ### Viktigt inför nästa veckaGör följande förberedelse inför labben i nästa vecka:Förbered 5 valfria png-bilder, 5 jpeg-bilder och 5 gif-bilder, alla  150 x 150 px.
-Se till att filnamnen endast innehåller små bokstäver och siffror, inga åäö. 
+Se till att filnamnen endast innehåller små bokstäver och siffror, inga åäö. ### Kodexempel från föreläsning 2016-02-29
+
+**exempel1.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exempel</title>
+</head>
+<body>
+    <?php
+    //funktionsdefinition
+    function area($width,$height) {
+        $a = $width * $height;
+        
+        return $a;
+    }
+    
+    echo area(5,7);
+    echo "<br>";
+
+    $x = 5;
+    $y = 12;
+    
+    echo area($x,$y);
+    
+    //mått på rum 1
+    $x1 = 4.2;
+    $y1 = 3.6;
+    
+    //mått på rum 2
+    $x2 = 5.2;
+    $y2 = 5.5;
+    
+    //mått på rum 3
+    $x3 = 2.6;
+    $y3 = 3.2;
+    
+    $a1 = area($x1,$y1);
+    $a2 = area($x2,$y2);
+    $a3 = area($x3,$y3);
+    
+    $a = $a1 + $a2 + $a3;
+    
+    echo "Lägenheten är $a m2";
+    
+    ?>    
+</body
+</html>
+```
+
+**exempel2.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exempel</title>
+</head>
+<body>
+    <?php
+    function cleantext($text) {
+        $text = htmlspecialchars($text,ENT_QUOTES,'utf-8');
+        $text = trim($text);
+        $text = strtoupper($text);
+        return $text;
+    }
+    
+    //uppertext och lowertext kommer egentligen från en formulärinmatning
+    $uppertext = "       almost dead    "; 
+    $lowertext = "      better eat these 35 cabbages      ";
+    
+    $uppertext = cleantext($uppertext);
+    $lowertext = cleantext($lowertext);
+    
+    echo $uppertext;
+    echo $lowertext;
+    ?>
+    
+    
+    
+</body
+</html>
+```
+
+**exempel3.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exempel</title>
+</head>
+<body>
+    <?php
+    /*
+    Pseudo-kod
+    funktion jämnt?
+        dela med 2
+        titta på decimaldelen
+        om decimaldelen är noll
+            ja!
+        annars
+            nej!
+    */
+    
+    
+    //pseudokoden översatt till php-kod
+    function even($number) {
+        $half = $number / 2;
+        $whole = floor($half);
+        $decimal = $half - $whole;
+        if ($decimal==0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    $x = 12;
+    
+    if (even($x)) {
+        echo "$x är jämnt";
+    } else {
+        echo "$x är udda";
+    }
+    echo "<br>";
+    
+    $x = 7;
+    
+    if (even($x)) {
+        echo "$x är jämnt";
+    } else {
+        echo "$x är udda";
+    }
+    echo "<br>";
+    
+    ?>
+    
+
+</body
+</html>
+```
+
+**exempel4.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>exempel</title>
+</head>
+<body>
+    <?php
+    include "functions.php";
+    
+    //jag vill beräkna arean av en cirkel
+    
+    $r = 5;
+    $a = area_circle($r);
+    
+    echo "En cirkel med radien $r har arean $a";
+    
+    ?>
+</body
+</html>
+```
+
+**functions.php**
+
+```php
+<?php
+//denna fill innehåller php-kod men ingen html-kod
+function area_rectangle($width,$height) {
+    $a = $width * $height;
+    return $a;
+}
+
+function area_circle($radius) {
+    $a = M_PI * $radius * $radius;
+    return $a;
+}
+
+function area_triangle($base,$height) {
+    $a = $base * $height / 2;
+    return $a;
+}
+?>
+```
