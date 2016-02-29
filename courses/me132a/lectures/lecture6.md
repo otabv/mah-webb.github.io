@@ -237,7 +237,7 @@ if ($age>=18 and $age<65) {
     echo "Lägenheten är $a m2";
     
     ?>    
-</body
+</body>
 </html>
 ```
 
@@ -272,7 +272,7 @@ if ($age>=18 and $age<65) {
     
     
     
-</body
+</body>
 </html>
 ```
 
@@ -332,7 +332,7 @@ if ($age>=18 and $age<65) {
     ?>
     
 
-</body
+</body>
 </html>
 ```
 
@@ -357,7 +357,7 @@ if ($age>=18 and $age<65) {
     echo "En cirkel med radien $r har arean $a";
     
     ?>
-</body
+</body>
 </html>
 ```
 
