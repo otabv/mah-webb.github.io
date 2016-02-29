@@ -26,25 +26,27 @@ OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer loka
 
 Uppgiften går ut på att skriva PHP-kod som hittar **minsta** talet i en lista. Utgångspunkten är att det finns en array, `$numbers`, som innehåller ett godtyckligt antal tal, tex: 
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $numbers=array(3,42,77,2,18,9,44,88,4,56);
-{% endhighlight %}
+?>
+```
 
 I detta fall ska utskriften bli:
 
-{% highlight text %}
+```
 Minsta talet är 2
-{% endhighlight %}
+```
 
 Ta hjälp av följande pseudo-kod:
 
-{% highlight text %}
+```
 definiera array $numbers;
 definiera en variabel $smallest som får värdet av första elementet i array
 för varje element i $numbers:
     kom ihåg aktuellt elementet om det är mindre än $smallest 
 skriv ut variabeln $smallest
-{% endhighlight %}
+```
 
 Skriv in koden i filen index.php i mappen upp1 i mappen lab6 och testa! Utskriften ska bli det minsta talet i `$numbers`. 
 
@@ -56,14 +58,13 @@ Skapa en mapp upp2 i lab6. Skapa sedan filen functions.inc.php i mappen upp2.
 
 Filen ska innehålla funktionen `minvalue($numbers)` som hittar och returnerar minsta värdet i en array. Använd koden för att hitta minsta värdet från uppgift 1 när du skriver funktionen. Filen ska endast innehålla phpstart- och sluttag samt funktionsdefinitionen:
 
-{% highlight php %}
-
+```php
 <?php
 function minvalue($numbers) {
     //definition av funktionen
 }
 ?>
-{% endhighlight %}
+```
 
 Skapa sedan filen index.php i mappen upp2. Detta ska vara en komplett fil med head, body etc. Filen ska först infoga functions.inc.php. Sedan ska en array med ett antal tal definieras. Slutligen ska funktionen `minvalue` anropas och minsta talet ska skrivas ut. Utskriften ska bli som i uppgift 1.  
 
@@ -79,9 +80,11 @@ Skapa sedan en fil index.php i en mapp upp3 i lab6. Denna fil ska infoga functio
 
 På sidan 172 i boken beskrivs hur man kan använda `$_SERVER['DOCUMENT_ROOT']` för att komma åt den katalog där include-filerna ligger. För att det ska funka på vår server måste vi komplettera med vårt användarnamn före `/includes/`
 
-{% highlight php  startinline=True %}
+```php
+<?php
 include $_SERVER['DOCUMENT_ROOT']."/userid/includes/footer.inc.html.php";
-{% endhighlight %}
+?>
+```
 
 Börja med att infoga functions.inc.php. Definiera sedan en array `$numbers` som i tidigare uppgifter. Anropa sedan funktionerna maxvalue och minvalue för att hitta största och minsta värdet i `$number`. Utskriften ska bli:
 
@@ -102,11 +105,11 @@ Största talet är 88<br>
 
 Följande css kan användas för att placera sidfoten längst ned på sidan:
 
-{% highlight css %}
+```css
 <style type="text/css">
 #footer {
 	position:absolute;
 	bottom:0.5cm;
 }
 </style>
-{% endhighlight %}
+```
