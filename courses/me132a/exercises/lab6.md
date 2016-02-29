@@ -106,7 +106,7 @@ Största talet är 88<br>
 Följande css kan användas för att placera sidfoten längst ned på sidan:
 
 ```css
-<style type="text/css">
+<style>
 #footer {
 	position:absolute;
 	bottom:0.5cm;
