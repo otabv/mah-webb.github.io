@@ -18,7 +18,10 @@ exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE.txt']
 
 include: ['.htaccess']
 
+gems: [jekyll-paginate]
+
 permalink: /blog/:categories/:title.html
 
 paginate: 5
 paginate_path: /blog/page:num
+

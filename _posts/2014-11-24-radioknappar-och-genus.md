@@ -4,7 +4,7 @@ title: Om radioknappar och genus
 category: all
 ---
 
-#Om radioknappar och genus
+# Om radioknappar och genus
 
 För ett tag sedan uppstod det en diskussion om genus under en föreläsning i kursen [Webbproduktion](http://edu.mah.se/sv/Course/ME135A#Syllabus). Föreläsaren skulle gå igenom radioknappar i webbformulär och använde sig av följande exempel:
 
@@ -39,28 +39,27 @@ Utmärkt av W3C att standardexemplet Male/Female nu är utbytt. Jag hoppas att v
 För den som tycker det är intressant och vill läsa mer om kombinationen genus, webbutveckling och programmering kan jag rekommendera följande länkar:
 
 - [Feminist Hacker Barbie](http://www.wired.com/2014/11/feminist-hacker-barbie-just-little-girls-need/)
-
 - [Geek Girl Meetup Öresund](http://geekgirlmeetup.com/oresund/)
-
 - [Girls Who Code](http://girlswhocode.com)
 
-##Slutligen - vad tycker ni? 
+## Slutligen - vad tycker ni? 
 
 <form action="http://ddwap.mah.se/k3bope/genus/reply.php" method="get">
-<fieldset>
- <legend>Vilket av nedanstående alternativ i ett formulär skulle du föredra om du vill registrera dig på en webbplats?</legend>
-<input type="radio" value="0" name="formalternative"> Man - Kvinna<br>
-<input type="radio" value="1" name="formalternative"> Man - Kvinna - Hen<br>
-<input type="radio" value="2" name="formalternative"> Man - Kvinna - Möjlighet att ange eget alternativ<br>
-<input type="radio" value="3" name="formalternative"> Ingen fråga alls om kön<br>
-<input type="radio" value="4" name="formalternative"> Jag bryr mig inte<br>
-<textarea rows="5" cols="40" name="comment" placeholder="egen kommentar"></textarea><br>
-<input type="submit" value="Skicka">
-</fieldset>
+    <fieldset>
+        <legend>Vilket av nedanstående alternativ i ett formulär skulle du föredra om du vill registrera dig på en webbplats?</legend>
+        <input type="radio" value="0" name="formalternative" /> Man - Kvinna<br>
+        <input type="radio" value="1" name="formalternative" /> Man - Kvinna - Hen<br>
+        <input type="radio" value="2" name="formalternative" /> Man - Kvinna - Möjlighet att ange eget alternativ<br>
+        <input type="radio" value="3" name="formalternative" /> Ingen fråga alls om kön<br>
+        <input type="radio" value="4" name="formalternative" /> Jag bryr mig inte<br>
+        <textarea rows="5" cols="40" name="comment" placeholder="egen kommentar"></textarea><br>
+        <input type="submit" value="Skicka" />
+    </fieldset>
 </form>
 
+
 Bo Peterson  
-@bo_peterson
+@bo\_peterson
 
 <iframe frameborder="0" src="http://ddwap.mah.se/k3bope/genus/result.php" width="500" height="500">
 </iframe>
