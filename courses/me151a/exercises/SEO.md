@@ -1,0 +1,185 @@
+---
+layout: instructions
+title: Laboration | SEO
+code: me151a
+---
+
+# Laboration SEO
+
+I denna labb ska vi titta vidare på flexbox och positionering men framförallt ska vi införa ett nytt koncept som heter sökmotorsoptimering – SEO. I labben kommer vi hänvisa till Google’s sökmotor och vi är medvetna om att det finns fler sökmotorer men Google är en så pass stor aktör så att det är nästan synonymt med SEO. Bing och Yahoo är två andra alternativ som finns. Dessa anpassar sig dock till den stora jätten Google. Vi hänvisar till Mozillas SEO-guide för nybörjare. Det är viktigt att ni läser dessa kapitel och tar del av informationen eftersom våra instruktioner och beskrivningar endast är sammanfattningar.
+
+## Introduktion
+
+Vad gäller sökmotoroptimering (SEO) så finns det flera olika aspekter att arbeta med, allt från ordval till kodlösningar. Exakt vilka dessa är och hur ni ska göra för att få en positiv effekt på sökresultatet är delvis hemligt och dessutom i ständig förändring. Det är alltså svårt och det kräver omfattande resurser för att landa högst på upp i listorna i Googles sökresultat. Detta är dock en sanning med modifikation eftersom vissa sökfraser är mindre populära och därmed lättare att konkurrera om. Prova t.ex. att söka på ”Sveriges bästa syn” kontra ”köpa lägenhet”. Att komma överst med sökfrasen ”köpa lägenhet” är dyrt och det krävs ett omfattande arbete i att sökoptimera webbplatsen, men att komma överst med sökfrasen ”Sveriges bästa syn” är helt grattis, i alla fall just nu.
+
+__Ta del av:__
+kapitel 1 & 2 - The Beginners Guide To SEO, [https://moz.com/beginners-guide-to-seo](https://moz.com/beginners-guide-to-seo)
+
+__Titta på__ följande video på Youtube; [http://www.hobo-web.co.uk/seo-tutorial/](http://www.hobo-web.co.uk/seo-tutorial/)
+
+Ett alternativ i den digitala marknadsföringen är AdWords. Genom Google AdWords går det att köpa sig till vissa positioner på Google. De områden ni ser markerat med Annons är platser som är köpta. Läs mer om detta här: [https://www.google.se/adwords/](https://www.google.se/adwords/)
+
+![SERP example](/assets/img/serp_example.png) _Taget från http://www.wordstream.com/serp_
+
+## Keywords eller Sökord
+
+För att Google eller andra sökmotorer ska kunna koppla ihop användare med innehåll används keywords eller nyckelord. Enkelt förklarat är det de ord eller den fras som ni söker på i Google. Alltså söker jag på ”Malmö” så kommer webbplatser relaterat till staden Malmö visas i sökresultatet. En viktig del i att arbeta med SEO är att förstå användarnas sökbeteende. Hur söker användaren? Och vilken sökord/fras söker användaren på?
+
+__Ta del av:__ kapitel 4 & 5 - The Beginners Guide To SEO, [https://moz.com/beginners-guide-to-seo](https://moz.com/beginners-guide-to-seo)
+
+Förr i tiden användes en meta-tagg dedikerad till keywords. Problemet var dock att utvecklare missanvände koden och "spammade" sidan med keywords. På grund av detta har Google valt att ignorera taggen och om den missanvänds kommer detta påverka indexeringen på ett negativt sätt.
+
+Dock används keywords fortfarande, men istället för att ni lägger till unika keywords på egen hand bedöms innehållet på er webbplats. Alltså söker en användare på t.ex. skor så letar Googles sökmotor efter webbplatser med ordet skor. Sökmotorn kommer också bedöma hur ordet används, hur ofta det förekommer och om fler användare har haft nytta av webbplatsen. Ni måste dock vara försiktiga, ni kan t.ex. inte göra så här:
+
+Exempel:
+{% highlight html linenos %}
+<article>
+    <h1>Skor</h1>
+    <p>
+        Skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, skor, skor, skor, skor,
+        skor, skor, skor, skor, mm
+    </p>
+    <img src="skor.png" alt="Bild på en sko">
+</article>
+{% endhighlight %}
+
+Det kommer Google identifiera som att ni försöka fuska till er ranking. Vilket ni med facit i hand också försöker göra. Att ni skriver skor 68 gånger hjälper inte användaren, och detta upptäcker Google och bestraffar webbplatsen.  
+
+Istället måst ni bygga upp er information på ett sätt som både är användbart för användaren och identifiera vad han eller hon söker på.
+
+### Rubriker
+
+En rubriks uppgift är att sammanfatta, skapa intresse och leda läsaren genom texten. Därför värdesätter Google h1-taggen högt och keywords eller sökord i rubriker är en viktig del i arbetet. Välj därför rubriker med omsorg, fundera på hur ni kan lägga upp texten så att rubriken inte tappar värde för användaren men samtidigt är bra för sökoptimeringen. H2-taggen har också ett visst värde även om det inte är lika högt som h1-taggen. Lägre nivåer, h3-h6, är inte lika viktiga som h1 och h2.
+
+### Meta: description och title
+
+Två metataggar som är viktiga är Description och Title. I sökresultatet visas både titeln och beskrivningen och detta utan att användaren har klickat sig in på sidan. Således är informationen inte bara för rankingen utan även för att användaren ska fatta tyckte för webbplatsens innehåll.
+
+{% highlight html linenos %}
+<!-- Titel -->
+<title>Nike Air Presto Fleece - Sneakersnstuff</title>
+
+<!-- Beskrivning (delar upp för att förtydliga) -->
+<meta name="description"
+    content="Shop for the Nike Air Presto Fleece Men's Shoe
+    at the official Nike Store. Read product specs and order
+    the Nike Air Presto Fleece Men's Shoe online.">
+{% endhighlight %}
+
+### Bilder: alt-attributet
+
+Sökmotorerna tolkar inte bilder på samma sätt som vi gör. Själva bilden ignoreras men attributet alt tolkas som bildens innehåll. Det är därför viktigt att tänka vad ni skriver in som värde i attributet. Tänk på att alt-texten ska förklara bilden inte bara benämna den.
+
+{% highlight html linenos %}
+<img src="nike-huarache-nm.png" alt="Nikes senaste sneakernyhet - Huarache NM">
+{% endhighlight %}
+
+### Bounce rate, besökare och länkar
+
+Att en webbplats har mycket trafik tolkar Google som att den är användbar. Kanske en förenkling av verkligheten men det tyder ändå på att det är viktigt att ni har trafik till er webbplats. Det blir en positiv spiral för antalet besökare gynnar sökbarheten och gör så att ni får ännu fler besökare. Därför är det viktigt att ni gör innehållet intressant och att ni får besökaren att stanna på er webbplats. Det finns en term som heter ”bounce rate”.
+
+Googles syfte med deras sökmotor är att koppla ihop användare med det innehåll användaren letar efter. Detta vill Google göra så bra som möjligt. När en användare lämnar sidan utan att ha fullföljt sitt syfte mäts detta kallas för bounce rate eller avvisningsfrekvens på svenskan. Google tolkar detta som att besökaren inte hittade det han eller hon sökte efter. Alltså kommer Google väva in detta i hur ni rankar i sökresultatet.
+
+__Exempel:__
+
+{% highlight html %}
+Ni har gjort en webbplats som säljer möbler och ni har valt ordet ”köpa säng
+online” som ett av de viktigaste sökorden och sökfrasen. Ni har sedan en tid
+tillbaka haft slut på sängar i lagret detta har påverkat leveranstiderna
+negativt och det tar flera månader innan konsumenten kan få en säng. För
+företaget är det inget problem eftersom ni säljer flera andra sorters möbler.
+Dock är webbplatsen fortfarande optimerad för sökordet ”köpa säng online”.
+
+Eftersom ett flertal av era besökare letar efter att köpa en säng online och ni
+inte kan leverera produkten inom rimlig tid så kommer de flesta av besökarna
+lämna er sida och leta vidare i sökresultatet. Detta kommer påverka er bounce
+rate negativt och därmed kommer Google tolka detta som att er sida inte kan
+erbjuda det ni lovar. Resultatet blir att ni tappar i ranking.
+{% endhighlight %}
+
+__Ta del av:__ kapitel 7 - The Beginners Guide To SEO, [https://moz.com/beginners-guide-to-seo](https://moz.com/beginners-guide-to-seo)
+
+## Robotar
+
+Ett problem vad gäller bounce rate är robotar, elaka eller goda, men ja dem finns på riktigt. Kallas också för ”Crawlers” eller ”spiders”. En robot (i webbsammanhang) är ett program som är automatiserat att utföra olika uppgifter. T.ex. har flygstolen.se en sådan robot som går in på andra sidor och letar efter flygbiljetter och priser till användaren. Flygstolens robot är relativt harmlös men den kommer påverka bounce raten eftersom den går in plockar information på en webbplats och sen går vidare till nästa. Google tolkar detta som att det är en besökare som går in och letar efter något som den inte hittar för att sen leta vidare. Sanningen är ju faktiskt att roboten hittade informationen men letar ändå vidare. Det finns andra robotar som inte är lika harmlösa utan är ute efter att få servern att överbelasta och förstöra er anseende i Googles ögon.
+
+## Länkar
+
+För att avgöra om innehållet på er sida är intressant och aktuellt kommer Google leta efter länkar som leder till er sida. Alltså andras länkar och helst från sidor som har redan har hög status och ranking. För att få egna länkar krävs det att ni är engagerade och aktivt marknadsföra ert innehåll och er webbplats. Detta går givetvis att göra på massa olika sätt men aktivt delta i forum och andra webbsammanhang där det aktuella ämnet diksuteras. Det är också positivt om ni själva länkar till andra webbplatser – länkar du till oss så länkar vi till er - Win-Win.
+
+## URL:er
+
+En URL är en unik adress som pekar till en resurs (webbplats, PDF, Bild, osv.) på webben. Dessa URL:er är viktiga för att användaren ska hitta rätt. För att underlätta för användaren och höja användbarheten över webbplatsen bör dessa ha logiska och enkla namn. En användbar webbplats belönas hos Google.
+
+URL:en nedan länkar till samma sida:
+
+* Bra - `http://supersidan.se/kontakt`
+* Dåligt - `http://supersidan.se/?page=14&id=12`
+
+## Kodstruktur
+
+I Googles ögon är koden viktig, en korrekt skriven kod håller hög standard vad gäller användbarhet. Google värnar om att användaren ska kunna uppfylla sitt syfte så effektivt som möjligt och väver in kvaliteten på koden i algoritmen som avgör rankingen. Första steget är att se till er webbplats är godkänd i validatorn. Det är viktigt att förstå att sökmotorerna/maskinerna inte tolkar vår webbplats på samma sätt som vi människor. Vi måste alltså underlätta för maskinerna att förstå innehållet.
+
+Något vi redan har behandlat i kursen är semantik och de semantiska taggarna. Detta är något som har stor betydelse för att koden ska bedömas som god kod. Rätt tagg till rätt innehåll. En navigation ska t.ex. använda taggen <nav>. Tänk på att validatorn inte kontrollerar om ni använt rätt kod vad gäller semantik. Skulle ni använda <div class="nav"> så är koden fortfarande godkänd i validatorn.
+
+## Mätverktyg
+
+Som vi tidigare har nämnt så finns det flera olika faktorer att bejaka när ni arbetar med SEO. Allt från innehåll till teknisk kod. Detta tillsammans med att algoritmen som räknar ut sökresultat är hemlig gör att det är viktigt att mäta och utvärdera. Vi måste veta att det SEO-arbetet vi gör ger önskad effekt.
+
+Det finns mängder av mätverktyg. Ett av de viktigaste är Google Analytics. Verktyget Analytics mäter trafiken på webbplatsen. SEO-strategin är en ständig process som hela tiden måste bejaka användaren, konkurrenter, avsändaren och inte minst Google.  
+
+Det finns flera olika metoder och synsätt på hur man kan arbeta med SEO. Nedan ser ni en förenklad process:
+
+1.	Analysera syftet – vad är tanken med webbplatsen? (Sälja Skor)
+2.	Analysera användarens sökbeteende – Hur och vad letar användaren efter? (Identifiera keywords)
+3.	Skapa innehåll på webbplatsen – koppla ihop sökord och sökfraser med innehåll
+4. Teknisk förbättring och anpassning
+5.	Mät, utvärdera och förbättra.
+
+__Ta del av:__ kapitel 8, 9 & 10 - The Beginners Guide To SEO, [https://moz.com/beginners-guide-to-seo](https://moz.com/beginners-guide-to-seo)
+
+## Uppgift
+
+Ni ska nu göra en webbplats med valfritt innehåll. Webbplatsen ska kodas på ett korrekt sätt med lämplig struktur, var noga med att använda semantiska taggar. Som vanligt ska ni använda Flexbox för layout och nyttja de kunskaper ni har fått från tidigare laborationer. Tänk på att inte kopiera koden från förra laborationen utan att ni skriver den från grunden. Det är viktigt med repetition speciellt när det kommer till kod. Övning ger färdighet.
+
+Eftersom ni har haft fler tillfällen att träna på layout och flexbox får ni nu själva välja hur er sida ska utformas. Tänk på att ni ska göra en undersida med innehåll och inte en startsida. Ni måste alltså tänka på hur ni disponerar sidans ytan.
+
+Ni ska välja en egen avsändare med en tjänst eller produkt i fokus. Till exempel:
+* Webbshop - Online försäljning av t.ex. kläder.
+* Spotify - Musiktjänst på nätet.
+* Finax – Promota Finax senaste produkt - Müsli Deluxe.
+
+När layouten är klar och ni har valt ämne ska ni fylla på med innehåll.
+Det går bra att kopiera text från internet och anpassa efter sidans behov, tänk dock på att det är viktigt att texten är verklig och inte i stil med "Lorem Ipsum". SEO-anpassa innehållet efter vad ni har lärt er i beskrivningen ovan.
+
+Välj ut sökord/keywords baserat på vad ni tror besökaren använder för sökord eller sökfras, analysera och diskutera detta med en labbkollega. Implementera sökorden på er webbplats och utvärdera webbplatsen.
+
+Googla på valda sökfraser. Vilka konkurrenter har ni? alltså de webbplatser som konkurrerar om samma sökord eller sökfras.
+
+Steg-för-Steg:
+
+1. Välj avsändare, syfte och tjänst eller produkt
+2. Analysera sökbeetendet hos målgruppen
+3. Ta fram nyckelord och sökfraser för webbplatsen
+4. Skissa upp en layout - gör en blueprint
+5. Skapa grunden i HTML och CSS, använd flexbox
+6. Fyll sidan med relevant innehåll
+7. SEO-anpassa
+    * Kodstruktur, semantik och korrekt validering
+    * Bilder (alt, figure, figcaption)
+    * Länkar (title)
+    * Metadata (title, description)
+    * Rubriker (h1, h2)
+8. Hitta 3 konkurrenter, analysera deras kod och jämför med er egen. Skriv ner dessa som kommentarer i ert HTML-dokument
+
+Vad gäller sökmotoroptimering så finns det mycket att lära sig och vi har bara skrapat på ytan. Det händer mycket i branschen och det finns flera intressanta möjligheter och affärstillfällen för er som vill fördjupa er i ämnet.
+
+Lycka till!
+/Johannes & Sebastian
