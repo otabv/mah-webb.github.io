@@ -6,7 +6,9 @@ code: me151a
 
 # Laboration SEO
 
-I denna labb ska vi titta vidare på flexbox och positionering men framförallt ska vi införa ett nytt koncept som heter sökmotorsoptimering – SEO. I labben kommer vi hänvisa till Google’s sökmotor och vi är medvetna om att det finns fler sökmotorer men Google är en så pass stor aktör så att det är nästan synonymt med SEO. Bing och Yahoo är två andra alternativ som finns. Dessa anpassar sig dock till den stora jätten Google. Vi hänvisar till Mozillas SEO-guide för nybörjare. Det är viktigt att ni läser dessa kapitel och tar del av informationen eftersom våra instruktioner och beskrivningar endast är sammanfattningar.
+I denna labb ska vi titta SEO - sökmotorsoptimering. I labben kommer vi hänvisa till Google’s sökmotor och vi är medvetna om att det finns fler sökmotorer men Google är en så pass stor aktör så att det är nästan synonymt med SEO. Bing och Yahoo är två andra alternativ som finns. Dessa anpassar sig, i viss mån, till den stora jätten Google. Vi hänvisar till Mozillas SEO-guide för nybörjare. Det är viktigt att ni läser dessa kapitel och tar del av informationen eftersom våra instruktioner och beskrivningar endast är sammanfattningar.
+
+Det är viktigt att ni funderar och tar med er kunskapen från labben till Wordpressuppgiften. Er Wordpressinlämning ska vara optimerad efter kund och syfte.
 
 ## Introduktion
 
@@ -131,7 +133,7 @@ Något vi redan har behandlat i kursen är semantik och de semantiska taggarna. 
 
 ## Mätverktyg
 
-Som vi tidigare har nämnt så finns det flera olika faktorer att bejaka när ni arbetar med SEO. Allt från innehåll till teknisk kod. Detta tillsammans med att algoritmen som räknar ut sökresultat är hemlig gör att det är viktigt att mäta och utvärdera. Vi måste veta att det SEO-arbetet vi gör ger önskad effekt.
+Som vi tidigare har nämnt så finns det flera olika faktorer att bejaka när ni arbetar med SEO. Allt från innehåll till teknisk kod. Detta tillsammans med att algoritmen som räknar ut sökresultat är hemlig gör att det är viktigt att mäta och utvärdera. Vi måste veta att det SEO-arbetet vi utför ger önskad effekt. Det är också viktigt att fundera på vilka förändringar som resulterar i vad.
 
 Det finns mängder av mätverktyg. Ett av de viktigaste är Google Analytics. Verktyget Analytics mäter trafiken på webbplatsen. SEO-strategin är en ständig process som hela tiden måste bejaka användaren, konkurrenter, avsändaren och inte minst Google.  
 
@@ -140,16 +142,14 @@ Det finns flera olika metoder och synsätt på hur man kan arbeta med SEO. Nedan
 1.	Analysera syftet – vad är tanken med webbplatsen? (Sälja Skor)
 2.	Analysera användarens sökbeteende – Hur och vad letar användaren efter? (Identifiera keywords)
 3.	Skapa innehåll på webbplatsen – koppla ihop sökord och sökfraser med innehåll
-4. Teknisk förbättring och anpassning
-5.	Mät, utvärdera och förbättra.
+4.  Teknisk förbättring och anpassning
+5.  Mät, utvärdera och förbättra.
 
 __Ta del av:__ kapitel 8, 9 & 10 - The Beginners Guide To SEO, [https://moz.com/beginners-guide-to-seo](https://moz.com/beginners-guide-to-seo)
 
 ## Uppgift
 
-Ni ska nu göra en webbplats med valfritt innehåll. Webbplatsen ska kodas på ett korrekt sätt med lämplig struktur, var noga med att använda semantiska taggar. Som vanligt ska ni använda Flexbox för layout och nyttja de kunskaper ni har fått från tidigare laborationer. Tänk på att inte kopiera koden från förra laborationen utan att ni skriver den från grunden. Det är viktigt med repetition speciellt när det kommer till kod. Övning ger färdighet.
-
-Eftersom ni har haft fler tillfällen att träna på layout och flexbox får ni nu själva välja hur er sida ska utformas. Tänk på att ni ska göra en undersida med innehåll och inte en startsida. Ni måste alltså tänka på hur ni disponerar sidans ytan.
+Ni ska nu göra en webbplats med valfritt innehåll. Webbplatsen ska kodas på ett korrekt sätt med lämplig struktur, var noga med att använda semantiska taggar. 
 
 Ni ska välja en egen avsändare med en tjänst eller produkt i fokus. Till exempel:
 * Webbshop - Online försäljning av t.ex. kläder.
