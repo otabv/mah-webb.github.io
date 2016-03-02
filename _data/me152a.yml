@@ -52,8 +52,8 @@ lectures:
       file: L03
     - name: Föreläsning 3
       file: L04
-    # - name: Föreläsning 4
-    #   file: L05
+    - name: Föreläsning 4
+      file: L05
     # - name: Föreläsning 5
     #   file: L06
     # - name: Föreläsning 6
