@@ -149,7 +149,7 @@ __Ta del av:__ kapitel 8, 9 & 10 - The Beginners Guide To SEO, [https://moz.com/
 
 ## Uppgift
 
-Ni ska nu göra en webbplats med valfritt innehåll. Webbplatsen ska kodas på ett korrekt sätt med lämplig struktur, var noga med att använda semantiska taggar. 
+Ni ska nu göra en webbplats med valfritt innehåll. Webbplatsen ska kodas på ett korrekt sätt med lämplig struktur, var noga med att använda semantiska taggar.
 
 Ni ska välja en egen avsändare med en tjänst eller produkt i fokus. Till exempel:
 * Webbshop - Online försäljning av t.ex. kläder.
@@ -169,7 +169,7 @@ Steg-för-Steg:
 2. Analysera sökbeetendet hos målgruppen
 3. Ta fram nyckelord och sökfraser för webbplatsen
 4. Skissa upp en layout - gör en blueprint
-5. Skapa grunden i HTML och CSS, använd flexbox
+5. Skapa grunden i HTML och CSS, använd gärna flexbox
 6. Fyll sidan med relevant innehåll
 7. SEO-anpassa
     * Kodstruktur, semantik och korrekt validering
