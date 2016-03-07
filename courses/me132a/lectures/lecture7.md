@@ -291,3 +291,124 @@ Cesar
 ```
 
  
+### Exempel från föreläsning 2016-03-07
+
+**exempel1.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<?php
+//$files blir en array med alla filnamn i mappen images
+$files=scandir("images"); 
+foreach ($files as $file) { 
+    echo $file;
+    echo "<br>";
+}
+?>
+</body>
+</html>
+```
+
+**exempel2.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+
+$str=file_get_contents("test.txt");
+
+echo $str;
+
+?>
+</body>
+</html>
+
+```
+
+Exemplet kräver att filen `test.txt` ligger i samma mapp som `exempel2.php`:
+
+```
+Bertil
+Catarina
+Adam
+Karin
+Sven
+Sture
+Sam Le
+Oscar
+```
+
+
+**exempel3.php**
+
+```php
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <?php
+    $filename = "nyfil.txt";
+    
+    $filecontents = "Adam Beata Caroline David";
+    
+    
+    file_put_contents($filename,$filecontents);
+    
+    echo "Echo filen $filename har nu skapats!";        
+    ?>
+  </body>
+</html>
+```
+
+**exempel4.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<?php
+
+$str=file_get_contents("test.txt");
+
+$arr = explode("\n",$str);
+
+sort($arr);
+
+echo "<ul>";
+foreach($arr as $name) {
+    echo "<li>";
+    echo $name;
+    echo "</li>";
+    
+}
+echo "</ul>";
+
+?>
+</body>
+</html>
+
+```
+
