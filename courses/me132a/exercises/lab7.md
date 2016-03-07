@@ -61,7 +61,7 @@ Uppgiften går ut på att skriva ut några egenskaper hos en lista med tal:
 
 För att skriva ut de olika talen måste man loopa igenom listan. Listan är att antal tal lagrade i en array, tex
 
-```
+```php
 <?php
 $list = array(3, 7, 12, 18, 5, 4);
 ?>
@@ -77,12 +77,12 @@ Uppgiften går ut på att träna stränghantering.
 
 Filen *index.php* i *upp4* ska göra följande: Några variabler innehåller information om länk, dels texten i länken, dels url som länken leder till. Dessutom variabler som innehåller annan text och rubrik. Utgå från följande variabler:
 
-```
+```php
 <?php
 $headline="Stränghantering";
 $text="Dagens laborationshandledning finns färdig att ";
 $linktext="ladda ned";
-$url="http://dvwebb.mah.se/k3bope/me132a/public2014/lab7.pdf";
+$url="http://mah-webb.github.io/courses/me132a/exercises/lab7.html";
 ?>
 ```
 
@@ -102,7 +102,7 @@ Källkoden ska se ut ungefär så här:
 <body>
 <h3>Stränghantering</h3>
 Dagens laborationshandledning finns färdig att 
-<a href="http://dvwebb.mah.se/k3bope/me132a/public2014/lab7.pdf">ladda ned</a>.
+<a href="http://mah-webb.github.io/courses/me132a/exercises/lab7.html">ladda ned</a>.
 </body>
 </html>
 ```
