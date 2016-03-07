@@ -3,17 +3,17 @@ layout: instructions
 code: me132a
 title: Föreläsning 7
 controls: false
-date: 2015-02-26
+date: 2016-03-07
 ---
 
-#Programmering för webben
+# Programmering för webben
 
-##Föreläsning 7
+## Föreläsning 7
 
-###Dagens innehåll- Filhantering 
+### Dagens innehåll- Filhantering 
 - Repetition av arrayer och loopar
  
-###Filhantering
+### Filhantering
 
 Funktionen `scandir` listar alla filer och kataloger i en katalog och sparar dem i en array. 
 
@@ -23,15 +23,17 @@ Exempel: mappen *images* innehåller följande filer.
 
 PHP-kod för att spara filnamn i en array `$files` och sedan skriva ut dem blir:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $files=scandir("images"); //$files blir en array med alla filnamn i mappen images
 foreach ($files as $file) { 
     echo $file;
     echo "<br>";
 }
-{% endhighlight %}
+?>
+```
 
-###Sökvägar
+### Sökvägar
 
 För att öppna en fil som ligger i annan katalog måste man ange sökväg.
 
@@ -91,17 +93,19 @@ För att referera till *nina.jpg* anger vi
 
 `images/nina.jpg`
  
-###Läsa in filer
+### Läsa in filer
 
 Funktionen `file_get_contents` kan användas för att läsa in godtycklig fil i en php-variabel.
 
 **Exempel**
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $str=file_get_contents("text.txt"); //$str innehåller nu texten från filen text.txt
-{% endhighlight %}
+?>
+```
  
-###Kopiera, ta bort filer mm
+### Kopiera, ta bort filer mm
 
 Följande funktioner är användbara för att hantera filer:
 
@@ -110,7 +114,7 @@ Följande funktioner är användbara för att hantera filer:
 - `unlink` - raderar fil
 - `file_put_contents` - sparar data i en fil
  
-###Radbrytningar i textfiler
+### Radbrytningar i textfiler
 
 Filer kan innehålla ett antal osynliga tecken som tex radbrytningar.
 
@@ -124,16 +128,18 @@ Olika datorsystem använder olika tecken för radbrytning:
 - PC: `\r\n`
 - Äldre Mac: `\r`
  
-###Dela upp rader i en fil
+### Dela upp rader i en fil
 
 Strängfunktionen `explode` är användbar vid filhantering. Grundfunktionen är att den delar upp en sträng och lägger in delarna i en array. Man bestämmer att uppdelningen ska ske vid ett visst tecken. 
 
 **Exempel**
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $string="adam,bertil,cesar,david";
 $arr=explode("," ,$string); //dela upp $string vid komma-tecken
-{% endhighlight %}
+?>
+```
 
 Resultat:
 
@@ -143,82 +149,100 @@ Funktionen `explode` kan användas för att dela upp raderna i en fil så att va
 
 **Exempel**
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $file=file_get_contents("text.txt");
 $rows=explode("\n",$file);
-{% endhighlight %}
+?>
+```
 
 Resultat:
 
 `$row` blir en array där `$rows[0]="Shakira"`, `$rows[1]="Beyoncé"` och `$rows[2]="Rihanna"`
  
-###Array, repetition
+### Array, repetition
 
 Värden i en array kan tilldelas på följande sätt:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $drawer = array("nyckel","telefon","passagekort");
-{% endhighlight %} 
+?>
+``` 
 
 Värden kan hämtas på följande sätt:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 echo $drawer[0]; //skriver ut nyckel
 echo $drawer[1]; //skriver ut telefon
 echo $drawer[2]; //skriver ut passagekort
-{% endhighlight %} 
+?>
+``` 
  
 Värden kan läggas till i en befintlig array. Här skapas ett fjärde element (med index = 3) med innehållet plånbok:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $drawer[3] = "plånbok";
-{% endhighlight %} 
+?>
+``` 
 
 
 Man kan även utelämna index för att lägga till ett element i slutet. Här skapas ett femte element (om det redan fanns fyra) med innehållet klocka:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $drawer[] = "klocka";
-{% endhighlight %} 
+?>
+``` 
 
-{% highlight php  startinline=True %}
+```php
+<?php
 echo $drawer[3]; //skriver ut plånbok 
 echo $drawer[4]; //skriver ut klocka
-{% endhighlight %} 
+?>
+``` 
 
 Variabler kan användas som index till en array:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $i = 4;
 echo $drawer[$i]; //skriver ut klocka
-{% endhighlight %} 
+?>
+``` 
  
-##For-loop, repetition
+## For-loop, repetition
 
-{% highlight text %}
+```
 for (startvärde; villkor; ändra värde på räknare)
 {
     kod som upprepas
 }
-{% endhighlight %}
+```
 
-{% highlight text %}
+```php
+<?php
 foreach ($arrayvariabel as $variabel)
 {
     kod som upprepas. För varje varv innehåller 
     $variabel de olika elementen från $arrayvariabel i 
     tur och ordning
 }
-{% endhighlight %}
+?>
+```
 
 **Exempel**
 
-{% highlight php  startinline=True %}
+```php
+<?php
 for ($i=1; $i<=3; $i++)
 {
     echo "$i ";
 }
-{% endhighlight %} 
+?>
+``` 
 
 Resultat:
 
@@ -228,38 +252,42 @@ Resultat:
 
 Gå igenom en array med en loop:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $names=array('Adam','Bertil','Cesar');
 for ($i=0;$i<count($names);$i++) {
     echo $names[$i];
     echo "<br>";}
-{% endhighlight %}
+?>
+```
 
 Resultat:
 
-{% highlight text %}
+```
 Adam
 Bertil
 Cesar
-{% endhighlight %}
+```
 
 **Exempel**
 
 Samma sak med foreach:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $names=array('Adam','Bertil','Cesar');
 foreach ($names as $name) {
     echo $name;
     echo "<br>";}
-{% endhighlight %}
+?>
+```
 
 Resultat:
 
-{% highlight text %}
+```
 Adam
 Bertil
 Cesar
-{% endhighlight %}
+```
 
  
