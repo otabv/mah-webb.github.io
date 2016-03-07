@@ -4,9 +4,9 @@ code: me132a
 title: Laboration 7
 ---
 
-#Laboration 7
+# Laboration 7
 
-##Syfte med laborationen:
+## Syfte med laborationen:
 
 - att förstå enkel filhantering i PHP
 - att repetera grundläggande PHP-begrepp såsom loopar, arrayer, stränghantering och formulär. 
@@ -14,17 +14,17 @@ title: Laboration 7
 VIKTIGT: uppgift 3-5 är repetitionsuppgifter som behandlar grundläggande byggstenar i programmering och som måste behärskas. Det är därför viktigt att uppgifterna görs självständigt. Målet är inte att ni ska hinna bli klara med uppgift 3-5 under laborationstillfället, utan att ni jobbar med dem tills ni verkligen förstått dem. 
 {: .info}
 
-##Förberedelser:
+## Förberedelser:
 
 - lägg 5 valfria png-bilder, 5 jpeg-bilder och 5 gif-bilder 150 x 150 px i  ddwap/me132a/lab7/images. Se till att filnamnen endast innehåller små bokstäver a-z samt eventuellt siffror. 
 
-##Lämna in följande:
+## Lämna in följande:
 
 - Alla php-filer ihopzippade.
 
 OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen ddwap/me132a/lab7
 
-##Uppgift 1
+## Uppgift 1
 
 Uppgiften går ut på att skriva ett PHP-script som visar alla bilder av typen gif, jpg eller png i en katalog. 
 
@@ -38,7 +38,7 @@ Om *images* innehåller 15 bilder, 5 jpg, 5 png (samma bilder som jpg) och 5 gif
 
 ![](im7/bild1.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Skapa ett formulär *upp2/index.html* där man med radiobuttons kan välja vilka bildformat som ska visas. Formuläret kan se ut så här:
 
@@ -52,7 +52,7 @@ Om istället *jpg* är förbockad blir utskriften
 
 ![](im7/bild4.png)
 
-##Uppgift 3 - Repetitionsuppgift
+## Uppgift 3 - Repetitionsuppgift
 
 Uppgiften går ut på att skriva ut några egenskaper hos en lista med tal:
 
@@ -61,26 +61,30 @@ Uppgiften går ut på att skriva ut några egenskaper hos en lista med tal:
 
 För att skriva ut de olika talen måste man loopa igenom listan. Listan är att antal tal lagrade i en array, tex
 
-{% highlight php  startinline=True %}
+```
+<?php
 $list = array(3, 7, 12, 18, 5, 4);
-{% endhighlight %}
+?>
+```
 
 Utskriften ska i detta fall bli:
 
 ![](im7/bild5.png)
 
-##Uppgift 4 - Repetitionsuppgift
+## Uppgift 4 - Repetitionsuppgift
 
 Uppgiften går ut på att träna stränghantering. 
 
 Filen *index.php* i *upp4* ska göra följande: Några variabler innehåller information om länk, dels texten i länken, dels url som länken leder till. Dessutom variabler som innehåller annan text och rubrik. Utgå från följande variabler:
 
-{% highlight php  startinline=True %}
+```
+<?php
 $headline="Stränghantering";
 $text="Dagens laborationshandledning finns färdig att ";
 $linktext="ladda ned";
 $url="http://dvwebb.mah.se/k3bope/me132a/public2014/lab7.pdf";
-{% endhighlight %}
+?>
+```
 
 Kombinera utskrift av variablerna så att resultatet blir:
 
@@ -88,7 +92,7 @@ Kombinera utskrift av variablerna så att resultatet blir:
 
 Källkoden ska se ut ungefär så här: 
 
-{% highlight html %}
+```html
 <!doctype html>
 <html>
 <head>
@@ -101,9 +105,9 @@ Dagens laborationshandledning finns färdig att
 <a href="http://dvwebb.mah.se/k3bope/me132a/public2014/lab7.pdf">ladda ned</a>.
 </body>
 </html>
-{% endhighlight %}
+```
 
-##Uppgift 5 - Repetitionsuppgift
+## Uppgift 5 - Repetitionsuppgift
 
 Gör ett formulär med fyra fält enligt nedan, döp filen till *index.html* och lägg i mappen *upp5*. 
 
