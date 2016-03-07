@@ -20,9 +20,9 @@ exercises:
       file: E05
     - name: Laboration 6
       file: E06
+    - name: Laboration 7
+      file: E07
 
-    # - name: Laboration 7
-    #   file: E08
     # - name: Laboration 8
     #   file: E09
     # - name: Laboration 9
