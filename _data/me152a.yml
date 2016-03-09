@@ -23,24 +23,15 @@ exercises:
     - name: Laboration 7
       file: E07
 
-    # - name: Laboration 8
-    #   file: E09
-    # - name: Laboration 9
-    #   file: E10
-    # - name: Laboration 10
-    #   file: E11
-    # - name: Laboration 11
-    #   file: E12
-    # - name: Laboration 12
-    #   file: E13
-    # - name: GitHub
-    #   file: E05
+    - name: Extra 1
+      file: EX01
 
-# Projekt
-projects:
-    # - name: Projekt
-    #   file: P01
-    #   credits: 6
+# Assignments
+assignments:
+    - name: Assignment 1
+      file: A01
+    - name: Assignment 2
+      file: A02
 
 # Föreläsningar
 lectures:
