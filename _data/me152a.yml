@@ -22,9 +22,13 @@ exercises:
       file: E06
     - name: Laboration 7
       file: E07
+    - name: Laboration 8
+      file: E08
 
     - name: Extra 1
       file: EX01
+    - name: Extra 2
+      file: EX02
 
 # Assignments
 assignments:
