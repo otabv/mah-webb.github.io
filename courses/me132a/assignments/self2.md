@@ -120,7 +120,7 @@ echo $text2;
 
 ## Uppgift 3
 
-Gör ett formulär där man kan ladda upp en bild. Bilden ska visas direkt efter uppladdning. 
+Gör ett formulär där man kan ladda upp en bild. Bilden ska visas direkt efter uppladdning. Under bilden ska bildens filnamn visas. 
 
 Formuläret:
 

@@ -8,6 +8,8 @@ credits: 15.0
 assignments:
     - name: Självstudie 1
       file: self1
+    - name: Självstudie 2
+      file: self2
 
 lectures:
      - name: F 1 - Introduktion

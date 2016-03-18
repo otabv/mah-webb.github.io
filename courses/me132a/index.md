@@ -79,9 +79,11 @@ Lärare på kursen:
 
 ### Vecka 12 - Självstudier
 
-- Självstudieuppgifter kommer
+- [Självstudie 2](assignments/self2.html)
 
-<!--easter beyonce????-->
+Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo med självstudieuppgifter och Beyoncé som påskhare.  
+
+![](beyonce-easter-photo.jpg)
 
 ### Vecka 13 - Cookies, sessions
 
