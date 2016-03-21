@@ -24,9 +24,8 @@ exercises:
       file: E07
     - name: Laboration 8
       file: E08
-
-    - name: Extra 1
-      file: EX01
+    - name: Laboration 9 (Extra 1)
+      file: E09
     - name: Extra 2
       file: EX02
 
