@@ -48,10 +48,10 @@ lectures:
       file: L04
     - name: Föreläsning 4
       file: L05
-    # - name: Föreläsning 5
-    #   file: L06
-    # - name: Föreläsning 6
-    #   file: L07
+    - name: Föreläsning 5
+      file: L06
+    - name: Föreläsning 6
+      file: L07
     # - name: Föreläsning 7
     #   file: L08
     # - name: Föreläsning 8
