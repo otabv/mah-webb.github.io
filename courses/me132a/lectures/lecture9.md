@@ -6,15 +6,15 @@ controls: false
 date: 2015-03-12
 ---
 
-#Programmering för webben
+# Programmering för webben
 
-##Föreläsning 9
+## Föreläsning 9
 
-###Dagens innehåll
+### Dagens innehåll
 - Cookies
 - Sessions
 
-###Cookies
+### Cookies
 
 Cookies används för att lagra uppgifter om besökare till en webbplats. Det kan till exempel vara om man besökt en webbplats tidigare eller inte. Det kan också vara söktermer man använt tidigare.
 
@@ -29,25 +29,31 @@ Mängden data som kan sparas i cookies är begränsad.
 
 PHP-funktionen `setcookie` används för att spara en cookie.
 
-{% highlight php  startinline=True %}
+```php
+<?php
 setcookie(name,value,expire)
-{% endhighlight %}
+?>
+```
 
 eller
 
-{% highlight php  startinline=True %}
+```php
+<?php
 setcookie(name,value,expire,path)
-{% endhighlight %}
+?>
+```
 
 Tidigare sparade cookies kommer man åt med
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $_COOKIE['cookiename']
-{% endhighlight %}
+?>
+```
 
 Cookies måste sparas allra först på en webb-sida, innan någon html-kod kommer.
  
-###Sessions
+### Sessions
 
 *Sessions* används för att lagra uppgifter *under* ett besök till en viss webbplats till skillnad från *cookies* som används för att lagra uppgifter *mellan* olika besök till en webbplats. En vanlig uppgift som lagras är till exempel användarnamn, och om användaren är inloggad eller inte. En session avslutas vanligtvis när en webbläsare stängs.
 
@@ -57,9 +63,11 @@ Med sessionsvariabler kan man överföra data från en webbsida till en annan un
 
 PHP-sidor med sessionshantering börjar vanligtvis med PHP-kod som innehåller raden 
 
-{% highlight php  startinline=True %}
+```php
+<?php
 session_start();
-{% endhighlight %}
+?>
+```
 
 innan det kommer någon html-kod.
 
@@ -67,15 +75,17 @@ Koden startar en ny session om ingen session är igång eller återskapar alla s
 
 Så fort en session är startad kan man komma åt sessionsvariabler med
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $_SESSION['sessionvariablename']
-{% endhighlight %}
+?>
+```
 
-###Cookie-exempel
+### Cookie-exempel
 
 Räknar antal besök på en site
 
-{% highlight html+php %}
+```php
 <?php
 //spara antal tidigare besök i variablen $visits eller sätt $visits till 0 om 
 //inga tidigare besök gjorts:
@@ -102,13 +112,14 @@ echo "Howdy partner, this is your visit number $visits to this site.";
 ?>
 </body>
 </html>
-{% endhighlight %}
+?>
+```
  
-###Session-exempel
+### Session-exempel
 
 Räknar besök på en viss sida under en session.
 
-{% highlight html+php %}
+```php
 <?php
 session_start();
 ?>
@@ -134,19 +145,24 @@ echo "This is visit ".$_SESSION['visits']." "."during this session. ";
 ?>
 </body>
 </html>
-{% endhighlight %}
+?>
+```
 
-###Ta bort cookies och sessions
+### Ta bort cookies och sessions
 
 Cookies försvinner av sig själva när expire-tiden har gått ut. En cookie kan tas bort genom att sätta expire till en tidpunkt som redan inträffat:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 setcookie('visits','',time()-3600*24*365);
-{% endhighlight %}
+?>
+```
 
 En session kan avslutas med:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $_SESSION=array();
 session_destroy();
-{% endhighlight %}
+?>
+```
