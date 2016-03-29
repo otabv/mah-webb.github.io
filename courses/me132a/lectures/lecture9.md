@@ -166,3 +166,97 @@ $_SESSION=array();
 session_destroy();
 ?>
 ```
+
+### Exempel från föreläsning 2016-03-29
+
+**cookies.php**
+
+```php
+<?php
+$date=date("Y-m-d H:i:s");
+if (!isset($_COOKIE["dateoffirstvisit"])){
+    //cookie expires in one year
+    setcookie("dateoffirstvisit",$date,time() + 60 * 60 * 24 * 365);
+}
+
+setcookie("dateoflastvisit",$date,time() + 60 * 60 * 24 * 365);
+
+?>
+<!doctype html5>
+<html>
+<head>
+</head>
+<body>
+<?php
+echo "Dagens datum: $date";
+
+echo "<br>";
+
+echo "Datum för första besök: ";
+echo $_COOKIE["dateoffirstvisit"];
+
+echo "<br>";
+
+echo "Datum för senaste besök: ";
+echo $_COOKIE["dateoflastvisit"];
+?>
+</body>
+</html>
+```
+
+**session.php**
+
+```php
+<?php
+session_start();
+?>
+<!doctype html5>
+<html>
+<head>
+</head>
+<body>
+<h1>Sida 1</h1>
+<?php
+//$date lever bara på denna sidan
+$date = date("Y-m-d H:i:s");
+echo $date;
+echo "<br>";
+//sessionsvariabler lever vidare efter att sidan lämnats
+$_SESSION["username"]="bo_peterson";
+echo "User: ";
+echo $_SESSION["username"];
+echo "<br>";
+?>
+    
+<a href="session2.php">Sessionsida nummer 2</a>    
+</body>
+</html>
+```
+
+
+**session2.php**
+
+
+```php
+<?php
+session_start();
+?>
+<!doctype html5>
+<html>
+<head>
+</head>
+<body>
+<h1>Sida 2</h1>
+<?php
+//$date finns inte längre
+echo $date;
+echo "<br>";
+
+//men en sessionsvariabel kan komma från en tidigare sida
+echo "Username: ";
+echo $_SESSION["username"];
+?>
+</body>
+</html>
+```
+
