@@ -4,20 +4,20 @@ code: me132a
 title: Laboration 10
 ---
 
-#Laboration 10
+# Laboration 10
 
-##Syfte med laborationen:
+## Syfte med laborationen:
 
 - att förstå hur man skickar mail med PHP
 - att förstå hur man skapar bilder med PHP
 
-##Lämna in följande:
+## Lämna in följande:
 
 - Alla php-filer ihopzippade
 
 OBS: Använd samma katalogstruktur som i tidigare laborationer, dvs lägg alla filer i katalogen ddwap/me132a/lab10
 
-##Uppgift 1
+## Uppgift 1
 
 Två sidor ska göras och läggas i mappen lab10/upp1. Först *index.html* som innehåller ett formulär, som sedan leder till *sendmail.php*.
 
@@ -29,7 +29,7 @@ När man klickar *skicka* ska man komma vidare till sidan *sendmail.php* som ski
 
 ![](im10/bild2.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Sidan index.php ska göras och läggas i mappen *lab10/upp2*. Sidan ska hämta data från en textfil, *values.txt*, och rita ett stapeldiagram med staplar som motsvarar värdena i filen. Textfilen *values.txt* innehåller 10 st heltal separerade med kommatecken, och inget annat. Filen kan tex se ut så här:
 
@@ -45,23 +45,25 @@ Det är även tillåtet att göra diagrammet "uppochen" vilket är lite enklare.
 
 Testa att ändra värden i values.txt (glöm inte ladda upp på servern efter ändringar) och kolla så att diagrammet ändras. 
 
-##Uppgift 3
+## Uppgift 3
 
 I denna uppgift ska vi låta inmatningen i ett formulär styra ett diagram. Tre värden matas in i diagrammet, rött, grönt och blått. När man klickar skicka ska man få upp ett tårtdiagram (pie chart) som visar fördelningen av de olika färgerna. Använd funktionen 
 
-{% highlight php  startinline=True %}
+```php
+<?php
 imagefilledarc($im, x-koordinat, y-koordinat, bredd, höjd, startvinkel, slutvinkel, färg,IMG_ARC_PIE);
-{% endhighlight %}
+?>
+```
 
 för att visa varje tårtbit. 
 
 ![](im10/bild6.png)
 
-##Uppgift 4
+## Uppgift 4
 
 Gör en html-fil med följande innehåll: 
 
-{% highlight html %}
+```html
 <!doctype html>
 <html>
 <head>
@@ -73,7 +75,7 @@ Gör en html-fil med följande innehåll:
 <img src="image.php?text=Bo+Peterson">
 </body>
 </html>
-{% endhighlight %}
+```
 
 Denna sida ska visa bilden *image.php*, som trots att det är en php-fil i själva verket är en png-bild. Bilden ska bara vara en svart bakgrund, 200x200px med den text som står efter ?text= på html-sidan. Om texten på html-sidan ändras, ska texten på bilden ändras. 
 
@@ -83,23 +85,29 @@ Resultatet med texten ovan ska bli:
 
 Sidan *image.php* får enbart innehålla php-kod (ingen html-kod alls). För att webbläsaren ska förstå att det är en bild måste en så kallad http-header skickas med följande PHP-kod:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 header("Content-type: image/png");
-{% endhighlight %}
+?>
+```
 
 Istället för att spara bilden som vi tidigare gjort med raden 
 
-{% highlight php  startinline=True %}
+```php
+<?php
 imagepng($im,”filnamn.png");
-{% endhighlight %}
+?>
+```
 
 skriver vi nu bara
 
-{% highlight php  startinline=True %}
+```php
+<?php
 imagepng($im);
-{% endhighlight %}
+?>
+```
 
-##Uppgift 5 - frivillig
+## Uppgift 5 - frivillig
 
 Uppgiften ska vara precis som uppgift 4, men istället för att en svart bakgrund ska kompletteras med en text ska en befintlig bild kompletteras med samma text. Denna teknik kan bland annat användas för att lägga in vattenstämplar i foton. Resultatet kan bli följande:
 
