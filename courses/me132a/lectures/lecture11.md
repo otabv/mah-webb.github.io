@@ -65,7 +65,7 @@ I kommande kurser kommer vi att titta på hur flera tabeller kan vara kopplade t
 
 ### Skapa tabell
 
-```mysql
+```sql
 CREATE TABLE
 tabellnamn
 (kolumnnamn1 KOLUMNTYP, kolomnnamn2 KOLUMNTYP, kolumnnamn3 KOLUMNTYP)
@@ -73,7 +73,7 @@ tabellnamn
 
 ### Lägga till data i tabell
 
-```mysql
+```sql
 INSERT INTO tabellnamn
 (kolumnnamn1, kolumnnamn2, kolumnnamn3) VALUES (värde1, värde2, värde3)
 ```
@@ -82,26 +82,26 @@ INSERT INTO tabellnamn
 
 Alla rader och alla kolumner:
 
-```mysql
+```sql
 SELECT * FROM tabellnamn
 ```
 
 Alla rader men endast kolumn 1 och 3:
 
-```mysql
+```sql
 SELECT kolumnnamn1,kolumnnamn3 FROM tabellnamn
 ```
 
 Endast rader där en kolumnnamn1 har ett visst värde:
 
-```mysql
+```sql
 SELECT * FROM tabellnamn WHERE
 kolumnnamn3='Columbia'
 ```
 
 **Exempel: Skapa tabellen friends**
 
-```mysql
+```sql
 CREATE TABLE friends
 (id INTEGER PRIMARY KEY NOT NULL, name TEXT, email TEXT)
 ```
@@ -117,7 +117,7 @@ CREATE TABLE friends
 
 **Exempel : Lägga till rader**
 
-```mysql
+```sql
 INSERT INTO friends (id,name,email) VALUES
 (1,'Beyonce','beyonce@knowles.com')
 INSERT INTO friends (id,name,email) VALUES 
@@ -128,7 +128,7 @@ INSERT INTO friends (id,name,email) VALUES
 
 **Exempel: Söka rader**
 
-```mysql
+```sql
 SELECT email FROM friends WHERE name='Wyclef Jean'
 ```
  
@@ -240,7 +240,7 @@ while ($row = $results->fetch()) {
 
 ### Autoincrement och primärnyckel
 
-```mysql
+```sql
 CREATE TABLE friends
 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
 name TEXT,

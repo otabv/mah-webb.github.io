@@ -61,6 +61,6 @@ Testa att lägga till flera rader med samma id. Vad händer? Ett sätt att komma
 
 Gör ett formulär där man kan söka fram epostadressen till en specifik person. Om man anger till exempel Beyoncé i sökfältet ska man bara få upp Beyoncés adress på resultatsidan. SQL-satsen måste då kompletteras med WHERE:
 
-```mysql
+```sql
 SELECT name,email FROM friends WHERE name = 'det man matat in i formuläret'
 ```
