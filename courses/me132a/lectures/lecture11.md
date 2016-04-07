@@ -3,18 +3,18 @@ layout: instructions
 code: me132a
 title: Föreläsning 11
 controls: false
-date: 2015-04-01
+date: 2015-06-07
 ---
 
-#Programmering för webben
+# Programmering för webben
 
-##Föreläsning 11
+## Föreläsning 11
 
-###Dagens innehåll
+### Dagens innehåll
 
 Introduktion till databaser
 
-###Vad är en databas?
+### Vad är en databas?
 
 - Databaser lagrar information på ett strukturerat sätt.
 - Databaser gör det möjligt att komma åt informationen på flera sätt
@@ -22,7 +22,7 @@ Introduktion till databaser
 
 Det finns olika typer av databaser, bland annat relationsdatabaser, objektdatabaser  och grafdatabaser. Vi kommer endast att titta översiktligt på relationsdatabaser.
 
-###Relationsdatabaser
+### Relationsdatabaser
 
 En relationsdatabas är en **samling tabeller**
 
@@ -42,14 +42,14 @@ id | epost | namn
 1 | bo.peterson@mah.se | Bo Peterson
 2 | johannes.karlsson@mah.se | Johannes Karlsson
 
-###Relaterade tabeller
+### Relaterade tabeller
 
 En viktig egenskap hos en tabell är att en kolumn (ibland flera kolumner) måste innehålla unika värden. Denna kolumn kallas
 *primärnyckel* eller *primary key*. Den kolumnen får aldrig vara tom.
 
 I kommande kurser kommer vi att titta på hur flera tabeller kan vara kopplade till varandra eller *relaterade* till varandra. Detta är en mycket viktig egenskap hos relationsdatabaser. I denna kurs nöjer vi oss att titta på ensamma tabeller.
 
-###Saker man kan göra med en tabell
+### Saker man kan göra med en tabell
 
 - Skapa tabell
 
@@ -63,48 +63,48 @@ I kommande kurser kommer vi att titta på hur flera tabeller kan vara kopplade t
 
 - Allt detta kan göras med ett speciellt språk, Structured Query Language (SQL)
 
-###Skapa tabell
+### Skapa tabell
 
-{% highlight mysql %}
+```mysql
 CREATE TABLE
 tabellnamn
 (kolumnnamn1 KOLUMNTYP, kolomnnamn2 KOLUMNTYP, kolumnnamn3 KOLUMNTYP)
-{% endhighlight %}
+```
 
-###Lägga till data i tabell
+### Lägga till data i tabell
 
-{% highlight mysql %}
+```mysql
 INSERT INTO tabellnamn
 (kolumnnamn1, kolumnnamn2, kolumnnamn3) VALUES (värde1, värde2, värde3)
-{% endhighlight %}
+```
 
-###Söka i en tabell
+### Söka i en tabell
 
 Alla rader och alla kolumner:
 
-{% highlight mysql %}
+```mysql
 SELECT * FROM tabellnamn
-{% endhighlight %}
+```
 
 Alla rader men endast kolumn 1 och 3:
 
-{% highlight mysql %}
+```mysql
 SELECT kolumnnamn1,kolumnnamn3 FROM tabellnamn
-{% endhighlight %}
+```
 
 Endast rader där en kolumnnamn1 har ett visst värde:
 
-{% highlight mysql %}
+```mysql
 SELECT * FROM tabellnamn WHERE
 kolumnnamn3='Columbia'
-{% endhighlight %}
+```
 
 **Exempel: Skapa tabellen friends**
 
-{% highlight mysql %}
+```mysql
 CREATE TABLE friends
 (id INTEGER PRIMARY KEY NOT NULL, name TEXT, email TEXT)
-{% endhighlight %}
+```
 
 
 `INTEGER` betyder att kolumnen innhåller heltal
@@ -117,22 +117,22 @@ CREATE TABLE friends
 
 **Exempel : Lägga till rader**
 
-{% highlight mysql %}
+```mysql
 INSERT INTO friends (id,name,email) VALUES
 (1,'Beyonce','beyonce@knowles.com')
 INSERT INTO friends (id,name,email) VALUES 
 (2,'Wyclef Jean','wyclef@yele.org')
 INSERT INTO friends (id,name,email) VALUES
 (3,'KRS-1','krs@one.com')
-{% endhighlight %}
+```
 
 **Exempel: Söka rader**
 
-{% highlight mysql %}
+```mysql
 SELECT email FROM friends WHERE name='Wyclef Jean'
-{% endhighlight %}
+```
  
-###DBMS Databese management systems
+### DBMS Databese management systems
 
 Det finns många olika så kallade Database Management Systems, DBMS, till exempel:
 
@@ -141,13 +141,13 @@ Det finns många olika så kallade Database Management Systems, DBMS, till exemp
 - PostgreSQL - också vanlig, kraftfull, gratis
 - Oracle - mycket kraftfull, dyr, stora kommersiella system
 
-###PHP och databaser
+### PHP och databaser
 
 I denna kursen kommer vi att använda en av de allra enklaste, databashanterarna, SQLite. I fortsättningskurs kommer vi att använda den mer kraftfulla MySQL. SQL-kommandon för båda är i stort sett desamma.
 
 **Exempel: skapa databas med PHP**
 
-{% highlight php startinline=True %}
+```php
 <?php
 //create a new database or open it if it already exists
 $dbname="friendbase.sqlite3";
@@ -171,12 +171,12 @@ catch (PDOException $e) {
     echo "table could not be created ($e)";
 }
 ?>
-{% endhighlight %}
+```
 
 
 **Exempel: lägga in rader i tabell med PHP**
 
-{% highlight php startinline=True %}
+```php
 <?php
 //open database
 $dbname='friendbase.sqlite3';
@@ -196,11 +196,11 @@ catch (PDOException $e) {
 }
 
 ?>
-{% endhighlight %}
+```
 
 **Exemepel: söka i tabell med PHP**
 
-{% highlight php startinline=True %}
+```php
 <?php
 //create a new database or open it if it already exists
 $dbname="friendbase.sqlite3";
@@ -236,16 +236,16 @@ while ($row = $results->fetch()) {
     echo "<br>";
 }
 ?>
-{% endhighlight %}
+```
 
-###Autoincrement och primärnyckel
+### Autoincrement och primärnyckel
 
-{% highlight mysql %}
+```mysql
 CREATE TABLE friends
 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
 name TEXT,
 email TEXT)
-{% endhighlight %}
+```
 
 Primärnyckeln får automatiskt ett unikt värde. Vanligtvis startar det på 1, och blir sedan 2, 3 osv. 
 

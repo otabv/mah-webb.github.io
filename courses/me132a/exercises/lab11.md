@@ -4,23 +4,23 @@ code: me132a
 title: Laboration 11
 ---
 
-#Laboration 11
+# Laboration 11
 
-##Syfte med laborationen:
+## Syfte med laborationen:
 
 - att få en introduktion till databaser
 
-##Förberedelser:
+## Förberedelser:
 
 - läs föreläsningsanteckningar
 
-##Lämna in följande:
+## Lämna in följande:
 
 - Alla php-filer ihopzippade
 
 OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen *ddwap/me132a/lab11*
 
-##Uppgift 1
+## Uppgift 1
 
 Utgångspunkten är tabellen *friends* från föreläsningsanteckningarna till föreläsning 11. 
 
@@ -41,7 +41,7 @@ För varje namn som läggs till i formuläret tillkommer en rad i databasen, och
 
 ![](im11/bild2.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Ändra sidan insert.php så att den visar klickbara mailto-länkar:
 
@@ -49,19 +49,18 @@ För varje namn som läggs till i formuläret tillkommer en rad i databasen, och
 
 Html-kod för länkarna ovan: 
 
-{% highlight html %}
+```html
 Send mail to <a href='mailto:wyclef@yele.org'>Wyclef</a>
-{% endhighlight %}
+```
 
-##Uppgift 3
+## Uppgift 3
 
 Testa att lägga till flera rader med samma id. Vad händer? Ett sätt att komma förbi detta är att använda AUTOINCREMENT. Ändra create.php så att en ny tabell med autoincrement skapas istället. Ändra sedan index.html och insert.php så att man inte behöver ange id. 
 
-##Uppgift 4
+## Uppgift 4
 
-Gör ett formulär där man kan söka fram epostadressen till en specifik person. Om man anger till exempel Beyonce i sökfältet ska man bara få upp Beyonces adress på resultatsidan. SQL-satsen måste då kompletteras med WHERE:
+Gör ett formulär där man kan söka fram epostadressen till en specifik person. Om man anger till exempel Beyoncé i sökfältet ska man bara få upp Beyoncés adress på resultatsidan. SQL-satsen måste då kompletteras med WHERE:
 
-{% highlight mysql %}
+```mysql
 SELECT name,email FROM friends WHERE name = 'det man matat in i formuläret'
-{% endhighlight %}
-
+```
