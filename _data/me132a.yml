@@ -65,8 +65,8 @@ exercises:
       file: lab10
     - name: Lab 11 - Databaser
       file: lab11
-#    - name: Lab 12 - API
-#      file: lab12
+    - name: Lab 12 - API
+      file: lab12
 
 # Projekt
 #projects:

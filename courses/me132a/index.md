@@ -112,7 +112,7 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 
 
 - [Föreläsning 12](lectures/lecture12.html)
-- Laboration 12<!--Laboration 12--><!--(exercises/lab12.html)--><!--instagram? instawall?-->
+- [Laboration 11](exercises/lab12.html) <!--instagram? instawall?-->
 
 ### Vecka 17 - Felsökningstekniker samt projektintroduktion
 
