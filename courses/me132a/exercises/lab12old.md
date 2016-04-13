@@ -4,9 +4,9 @@ code: me132a
 title: Laboration 12
 ---
 
-#Laboration 12 Flickr-API
+# Laboration 12 Flickr-API
 
-##Förberedelse
+## Förberedelse
 
 1. Gå in på [flickr.com](http://flickr.com) och öppna ett konto om du inte redan har ett
 2. Ladda upp minst 10 egna foton på flickr och tagga bilderna med sökord. Använd olika taggar men se till att flera bilder har samma tag.
@@ -16,21 +16,26 @@ title: Laboration 12
 
 Följ instruktionerna på [Search for photos using PHP and the flickr API](http://www.web-development-blog.com/archives/search-for-photos-using-php-and-the-flickr-api/) för att göra en sida som visar 50 bilder som matchar en viss förbestämd söktext (Du väljer själv söktext. Ingen fantasi? Prova "cat", "dog", "rihanna")
 
-Den servern vi använder stöder inte file_get_contents fullt för att hämta websidor. Därför måste raden 
+Den servern vi använder stöder inte file_get_contents fullt för att hämta webbsidor (file_get_contents fungerar men är väldigt långsam). Därför bör raden 
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $result = file_get_contents($search);
-{% endhighlight %}
+?>
+```
 
-bytas ut mot
+bytas ut mot `curl_get` som gör samma sak:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 $result = curl_get($search);
-{% endhighlight %}
+?>
+```
 
 Dessutom måste vi komplettera koden med funktionen curl_get enligt följande:
 
-{% highlight php  startinline=True %}
+```php
+<?php
 function curl_get($url){
     $return = '';
     (function_exists('curl_init')) ? '' : die('cURL Must be installed!');
@@ -55,7 +60,8 @@ function curl_get($url){
     curl_close($curl);
     return $result;
 }
-{% endhighlight %}
+?>
+```
 
 Resultatet ska bli något i stil med: 
 
