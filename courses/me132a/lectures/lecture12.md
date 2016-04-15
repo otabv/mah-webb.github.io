@@ -6,32 +6,33 @@ controls: false
 date: 2015-04-10
 ---
 
-#Programmering för webben
+# Programmering för webben
 
-##Föreläsning 12
+## Föreläsning 12
 
-###Dagens innehåll
+### Dagens innehåll
 
 - API
 - Multidimensionella arrayer
 
-###API - Application Programming Interface
+### API - Application Programming Interface
 
 API eller Application Programming Interface är en samling regler om hur en viss programvara kan kommunicera med annan programvara.
 
-###Varför API?
+### Varför API?
 
 API använder man oftast för att bygga egna program som kommunicerar med befintliga program, eller webbtjänster. Det finns exempelvis API för flickr, twitter, google mm. Med hjälp av dessa API kan man göra egna anpassade versioner av flickr, twitter, google etc.
 
-###Exempel på API
+### Exempel på API
 
 - [Twitter API](https://dev.twitter.com/rest/public)
 - [Facebook API](https://developers.facebook.com)
 - [Google Maps API](https://developers.google.com/maps/web/)
 - [Open Movie Database API](http://www.omdbapi.com)
 - [Flickr API](https://www.flickr.com/services/api/)
+- [Instagram API](https://www.instagram.com/developer/)
 
-###Multidimensionell array
+### Multidimensionell array
 
 För en kort array-repetition, se [W3Schools](http://www.w3schools.com/php/php_arrays.asp) samt föreläsning 2.
 
@@ -47,7 +48,7 @@ Peter | Griffin
 Bo | Peterson
 Glenn | Quagmire
 
-{% highlight php  startinline=True %}
+```php
 <?php
 //först gör vi tre associativa arrayer
 $name1=array('firstname'=>'Peter','lastname'=>'Griffin');
@@ -62,13 +63,13 @@ echo "<br>";
 
 echo $names[0]['firstname']; //Peter skrivs ut
 ?>
-{% endhighlight %}
+```
 
 Ett spelbräde är ett annat exempel:
 
 ![](im12/soduko.png)
 
-{% highlight php  startinline=True %}
+```php
 <?php
 $soduko[0]=array('5','3',' ',' ',' ','7',' ',' ',' ');
 $soduko[1]=array('6',' ',' ','1','9','5',' ',' ',' ');
@@ -94,4 +95,5 @@ for ($row=0;$row<9;$row++)
 }
 echo "</table>";
 ?>
-{% endhighlight %}
+```
+
