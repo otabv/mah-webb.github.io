@@ -39,6 +39,8 @@ En förutsättning är dock att man använder `method='get'` i formulärets form
 ```php
 <?php
 $stad = $_GET['stad'];
+?>
+```
 
 istället för
 
