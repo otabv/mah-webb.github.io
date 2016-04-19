@@ -28,6 +28,8 @@ exercises:
       file: E09
     - name: Extra 2
       file: EX02
+    - name: GitHub
+      file: github
 
 # Assignments
 assignments:

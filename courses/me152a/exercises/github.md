@@ -12,7 +12,7 @@ Nedan presenteras två listor av de olika kommandon som kommer användas, det ä
 
 ## Terminalen
 
-Nedan listas några av de vanliga kommandon som används i terminalen. Det finns givetvis fler. För att få mer information om ett kommando kan ni skriva `man` följt av ett kommando, exempelvis `man ls` för att ta reda på mer om "ls". Använd "q" för att lämna och "j/k" för att gå ner och upp i denna text.
+Nedan listas några av de vanliga kommandon som används i terminalen. Det finns givetvis fler. För att få mer information om ett kommando kan ni skriva `man` följt av ett kommando, exempelvis `man ls` för att ta reda på mer om "ls". Använd "q" för att lämna och pilarna upp och ner för att navigera i texten.
 
 * `ls`, visar alla filer i en katalog. Kommandot kan även följas av en katalog om ni vill visa filer i en annan katalog än den ni befinner er i, exempelvis `ls css` för att visa filer i katalogen "css". För att visa dolda filer kan ni lägga till `-a`, exempelvis `ls -a css` för att visa alla filer, samt dolda, i katalogen "css".
 * `cd`, byta katalog. Exempelvis `cd Desktop` för att byta till katalogen "Desktop". Använd `cd ..` för att gå upp ett steg.
@@ -33,7 +33,7 @@ Nedan listas några av de vanligaste kommandon som används i samband med Git oc
 
 * `git status`, visar statusen för det nuvarande projektet. Här listas bland annat nya filer som lagts till, tagits bort eller ändrats.
 * `git clone`, gör en klon (alt. hämtar) ett nytt repositorie.
-    * Exempelvis `git clone http://github.com/användarnamn/repositorie.git`, där ni bytar ut användarnamn och repositorie mot det ni vill.
+    * Exempelvis `git clone http://github.com/username/repository.git`, där ni bytar ut användarnamn och repositorie mot det ni vill.
 * `git add`, lägger till en eller flera filer som lagts till, tagits bort eller ändrats (för att vidare spara dessa ändringar). Exempelvs `git add css/stylesheet.css` för att lägga till ändringar i filen "stylesheet.css" som befinner sig i katalogen "css".
 * `git commit`, spara de filer som lagts till med `git add` där ni även anger en kort kommentar om ändringen. Exempelvis `git commit css/stylesheet.css -m "added new classes for buttons"`. Notera att kommentaren kommer efter sökvägen till er fil i form av `-m "..."` där kommentaren skrivs inom citationstecknen.
 * `git pull`, hämtar de senaste ändringarna från ert nuvarande projekt (t.ex om någon annan gjort ändringar). Observera att dessa ändringar kommer spara över era befintliga ändringar. Detta innebär att ni måste vara nogranna med att ni inte gjort ändringar innan ni hämtar de senaste ändringarna och vise versa.
