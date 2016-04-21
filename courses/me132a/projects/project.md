@@ -36,7 +36,7 @@ Följande ska lämnas in på its learning senast 30 maj kl 13:00:
 	* Projektets namn.
 	* Webbadress (url) till projektet.
 	* En beskrivning av projektet.
-	* Eventuella förbättringar som kan göras. Till exempel: Funkar åäö? Finns det säkerhetsluckor?
+	* Eventuella förbättringar som kan göras, tex saker som inte fungerar som tänkt. 
 	* En reflektion över vad du lärt dig av projektet.
 	* Skärmdumpar av valda sidor ur projektet.
 
