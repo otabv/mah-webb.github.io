@@ -54,9 +54,13 @@ lectures:
       file: L06
     - name: Föreläsning 6
       file: L07
-    # - name: Föreläsning 7
-    #   file: L08
-    # - name: Föreläsning 8
-    #   file: L09
-    # - name: Föreläsning 9
-    #   file: L10
+    - name: Föreläsning 7
+      file: L08
+    - name: Föreläsning 8
+      file: L09
+    - name: Föreläsning 9
+      file: L10
+    - name: Föreläsning 10
+      file: L11
+    - name: Föreläsning 11
+      file: L12
