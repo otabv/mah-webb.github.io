@@ -3,27 +3,31 @@ layout: instructions
 code: me132a
 title: Projekt
 controls: false
-date: 2015-04-07
-update: 2015-06-02
+date: 2016-04-21
 ---
 
-#Programmering för webben
+# Programmering för webben
 
-## Projektbeskrivning vt 2015
+## Projektbeskrivning vt 2016
 
 Det finns tre olika projekt att välja mellan:
 
-1. Quiz. Se vidare beskrivning nedan.
-2. Meme-generator. Se vidare beskrivning nedan. 
-3. Egen projektidé som måste godkännas av kursansvarig. 
+1. Quiz. 
+2. Memory.  
+3. Integrera något existerande API. Måste godkännas av kursansvarig. 
 
-## Handledning
+Se detaljerade specifikationer nedan. Alternativ 3 är ett mer öppet projekt som godkännas av kursansvarig när projektet startar. 
 
-Handledning kommer att ges under schemalagda laborationstillfällen varje vecka.
+## Allmänt
+
+* Projektet utförs enskilt
+* Handledning kommer att ges under schemalagda laborationstillfällen varje vecka.
+* Betygsskalan är underkänd, godkänd, väl godkänd
+
 
 ## Projektinlämning
 
-Följande ska lämnas in på it's learning senast 2 juni kl 13:00:
+Följande ska lämnas in på its learning senast 30 maj kl 13:00:
 
 * Alla sidor med PHP-kod och HTML-kod ihopzippade.
 * En webbadress (url) till ett fungerande projekt. **OBS** Om adressen saknas går projeket ej att testa vilket automatiskt leder till underkänt. 
@@ -37,267 +41,218 @@ Följande ska lämnas in på it's learning senast 2 juni kl 13:00:
 	* Skärmdumpar av valda sidor ur projektet.
 
 
+
 ## Projektredovisning
 
-Projektet visas för lärare och övriga kursdeltagare den 3 juni kl 13:15-17:00 i sal B353. Projektet ska vara fullt fungerande så att det kan visas och testas.
+Projektet visas för lärare och övriga kursdeltagare den 31 maj kl 13:15-17:00 i sal E223. Projektet ska vara fullt fungerande så att det kan visas och testas.
 
 ## Betygsbedömning
 
-För betyget godkänd krävs fungerande kod som är välstrukturerad, indenterad och kommenterad. 
+För betyget godkänd krävs fungerande kod som uppfyller specifikationerna nedan. Det krävs att koden fungerar som specificerat utan att felmeddelanden visas. Det krävs även att koden är välstrukturerad, kommenterad och korrekt indenterad. Felaktigt indenterad kod är mycket svårläst och godkänns därför inte. Se [föreläsning 5](http://mah-webb.github.io/courses/me132a/lectures/lecture5.html) för mer information om indentering. 
 
 För väl godkänd krävs även tilläggskrav som beskrivs under de olika projektidéerna.
 
+Projektet behöver **inte** hantera ett korrekt beteende om man klickar webbläsarens tillbaka- och framåtknappar. Det är alltså ok om tillexempel quiz-alternativet beter sig konstigt om först svarar på en fråga och sedan klickar tillbaka-knappen och svarar på samma fråga igen.  
 
 ## Projektalternativ 1: Quiz
 
-
-Projektet går ut på att skriva PHP-kod för en quiz. 
-Här finns ett mini-exempel på hur [resultatet av projektet kan se ut](http://ddwap.mah.se/k3bope/me132a/projekt2014/quiz/start.php).
-
-Det rekommenderas, men är inte tvunget, att använda följande struktur:
-
-1. Sidan index.php som är startsida där quizens alla frågor sparas i sessionsvariabler.
-1. Sidan question.php som visar alla frågorna, en åt gången.
-1. För VG: även sidan sendmail.php som skickar mail och sparar data i en databas. 
-
-Dessutom behövs en fil *functions.php* som innehåller hjälpfunktioner som behöver användas. 
+Projektet går ut på att skriva PHP-kod för en frågesport. [Här finns ett miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2016/quiz/start.php) av projektet. Detta exempel visar dock endast grunden och saknar några delar, till exempel poängräkning, för att bli godkänt. 
 
 ### Detaljerad beskrivning av quiz
 
-* En quiz ska bestå av minst 7 frågor.
-* En quiz ska ha minst 6 resultatalternativ som man kan få när man är klar med quizen. Om quizen är "Viken färg föredrar du?" kan resultatalternativen till exempel vara röd, blå, gul, grön, orange, vit, svart.
-* Varje fråga ska ha lika många svarsalternativ som det finns resultatalternativ.
-* Varje svarsalternativ måste stämma överens med ett resultatalternativ. 
-* När quizen är klar får man ett resultat baserat på det resultatalternativ som valts flest gånger. 
+* En quiz ska bestå av minst 10 frågor.
+* Varje fråga ska ha minst 4 svarsalternativ.
+* Endast ett svarsalternativ ska vara korrekt.
 * Till varje fråga ska det finnas en bild.
-* Till varje resultatalternativ ska det finnas en bild.
+* Om man svarar rätt på en fråga får man fortsätta svara på nästa fråga.
+* Om man svarar fel på en fråga är frågesporten slut. 
+* Om man svarat rätt på alla frågor är också frågesporten slut.
+* När spelet är slut ska man få veta hur många poäng man fått. Ni avgör själva hur många poäng varje fråga ger. 
 
 För VG krävs även:
 
-* Att resultatet sparas i en databas.
-* Att resultatet kan skickas med mail till godtycklig mailadress.
+* Att spelaren börjar med att ange sitt namn (eller alias) och epost-adress
+* Att resultatet, namnet, datumet och klockslaget sparas i en databas.
+* Att resultatet samt highscorelista med namn och poäng skickas med mail till spelaren. 
 
-
-### Detaljerad beskrivning av ingående sidor
+### Förslag till struktur för projektet
 
 Följande beskrivning är en **rekommendation**. Om ni hellre vill lösa uppgiften på ett annat sätt så att specifikationerna uppfylls går det bra. 
 
-Det **rekommenderas varmt** att man börjar med att skriva en funktion för att visa en fråga.
+Förslaget är att ni bygger upp grundfunktionen till projektet med två sidor, sidorna `start.php` och `question.php`. Extra sidor kan tillkomma beroende på hur ni löser projektet. 
 
-I filen functions.php i [projektfiler.zip](projektfiler.zip) finns en stomme till funktionen show_question som kan användas för att visa en fråga:
+#### Sidan start.php
 
-{% highlight php  startinline=True %}
+Sidan `start.php` definierar alla frågor och några saker till i ett antal sessionsvariabler:
+
+* `$_SESSION["questions"]` är en array som innehåller alla frågor
+* `$_SESSION["answers"]` är en 2-dimensionell array som innehåller alla svarsalternativ
+* `$_SESSION["rightanswers"]` är en array som innehåller korrekt svar
+* `$_SESSION["images"]` är en array som innehåller filnamn till bild till frågan
+* `$_SESSION["questionnumber"]` är en sessionsvariabel som håller reda på aktuell fråga. 
+
+Så här skulle det kunna se ut för att definiera två frågor, fråga 0, och fråga 1. 
+
+```php
 <?php
-function show_question($question,$alternative,$image) {
-	//steg 1: komplettera denna funktion så att den visar ett formulär med en fråga
-	shuffle_assoc($alternative);
-	foreach ($alternative as $onevalue=>$onealternative) {
-		//lägg till kod för radiobuttons här
-	}
-}
+$_SESSION["questions"][0]="Vad heter Beyoncés dotter?";
+$_SESSION["answers"][0]=array("Blue Ivy","Red Lily","Green Oak","Silver Surfer");
+$_SESSION["rightanswers"][0]="Blue Ivy";
+$_SESSION["images"][0]="bey.jpg";
+
+$_SESSION["questions"][1]="Vad heter Rihanna egentligen?";
+$_SESSION["answers"][1]=array("Alecia Beth Moore","Louise Ciccone","Robyn Fenty","Silver Surfer");
+$_SESSION["rightanswers"][1]="Robyn Fenty";
+$_SESSION["images"][1]="riri.jpg";
 ?>
-{% endhighlight %}
+```
 
-Raden `shuffle_assoc($alternative)` gör att radioknapparna med svarsalternativen kommer i slumpvis ordning. 
+Genom att frågorna finns i sessionsvariabler kommer vi åt frågorna på mer än en php-sida. 
 
-I filen testshowquestion.php i [projektfiler.zip](projektfiler.zip) finns **en fråga** förberedd:
+Sidan kan se ut ungefär så här:
 
-{% highlight html+php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Test show_question</title>
-</head>
-<body>
-<?php
-echo "<h1>Test show_question</h1>";
-include "functions.php";
-$question="Vilken blomma föredrar du?";
-$image="flower.jpg";
-$alternative=array("ros","maskros","fyrklöver");
-show_question($question,$alternative,$image);
-?>
-</body>
-</html>
-{% endhighlight %}
+![](images/quizstart.png)
 
-Från början, alltså innan man gjort klart funktionen show_question, visas bara en tom sida.
+När man klickar "Starta quizzen" kommer man vidare till sidan `question.php`.
 
-![Testshowquestion innan funktionen show_question är klar](images/testshowquestion.png)
+#### Sidan question.php
 
-<div style="text-align:center">Testshowquestion innan funktionen show_question är klar</div>
+När man kommer till `question.php` finns alla frågor, svar och bilder tillgängliga i de olika sessionsvariablerna. Sidan question har till huvuduppgift att visa en fråga med svarsalternativ och kan se ut ungefär så här:
 
-När funktionen show_question är klar visas ett formulär med en fråga.
+![](images/question.png)
 
-![Testshowquestion när funktionen show_question är klar](images/testshowquestionfinished.png)
-
-<div style="text-align:center">Testshowquestion när funktionen show_question är klar</div>
-
-Poängen med funktionen är att den ska kunna visa en godtycklig fråga. Om innehållet i variblerna `$question, $image och $alternative`  ändras så ska formuläret ändras. Testa till exempel att lägga till fler alternativ i variabeln `$alternative`. Då ska alla alternativ automatiskt läggas till. 
-
-{% highlight php  startinline=True %}
-<?php
-$alternative=array("ros","maskros","fyrklöver","tulpan","vitsippa");
-?>
-{% endhighlight %}
-
-![Testshowquestion när fler alternativ lagts till](images/testshowquestionextended.png)
-
-<div style="text-align:center">Testshowquestion när fler alternativ lagts till</div>
-
-När du fått testshowquestion att fungera bör den skapa ett formulär med html-kod som ser ut ungefär så här:
-
-*Testshowquestion när fler alternativ lagts till*
-
-{% highlight html %}
-<form method='get' action='question.php'>
-<input type='radio' name='answer' value='2'> fyrklöver<br>
-<input type='radio' name='answer' value='0'> ros<br>
-<input type='radio' name='answer' value='1'> maskros<br>
-<input type='submit' value='next'>
-</form>
-{% endhighlight %}
-
-
-När detta fungerar är det dags att göra sidorna start.php och question.php.
-
-**start.php** innehåller ett formulär där man anger sitt namn. 
-
-![Sidan start.php](images/startphp.png) 
-
-<div style="text-align:center">Sidan start.php</div>
-
-Sidan start.php innehåller också PHP-kod som lagrar alla frågor i sessionsvariabler. Följande sessionsvariabler kan definieras:
-
-* `$_SESSION['quizname']` - namnet på quizen
-* `$_SESSION['question']` - en array med själva frågorna
-* `$_SESSION['alternative']` - en tvådimensionell array med svarsalternativ för alla frågor.
-* `$_SESSION['image']` - en array med filnamn på bilder till varje fråga
-* `$_SESSION['result']` - en array med alla resultatalternativ. 
-* `$_SESSION['resultimage']` - en array med filnamn på resultat-bilder. Till varje resultatalternativ ska det finnas en bild
-* `$_SESSION['questionnumber']` - aktuellt frågenummer. Från början ska den ha värdet 0.
-* `$_SESSION['answer']` - en array som används för att registrera vad man har svarat på de olika svarsalternaiven. Från början en tom array, men för varje fråga registreras vilket svarsalternativ man valt i ett nytt element. 
-
-När man klickar *starta quiz* kommer man till sidan question.php som visar första frågan. 
-
-**question.php** är själva hjärtat i quizen. Sidan ska visa de olika frågorna, en åt gången. Sidan testshowquestion.php är en bra grund, men den måste utökas enligt följande:
-
-* **Första gången** man kommer till sidan question.php ska den spara namnet man matat in på startsidan i en sessionsvariabeln `$_SESSION['name']`.
-* Alla gånger **utom första** gången man kommer till sidan ska den registrera vad man svarade på föregående fråga. Detta registreras i `$_SESSION['answer']`.
-* Alla gånger **utom sista** gången ska den visa en ny fråga inklusive svarsalternativ och bild (som testshowquestion).
-* **Sista gången** ska den istället visa resultatet av quizen. 
-
-För att avgöra om man är på sidan första gången eller inte kan man använda sig av variabeln `$_SESSION['questionnumber']` som anger vilken fråga man är på. För varje fråga måste denna variabel räknas upp med ett. 
-
-![Sidan question.php första gågen den visas](images/questionphp1.png)
-
-<div style="text-align:center">Sidan question.php första gågen den visas</div>
-
-När man kommit till sista frågan och klickar nästa ska resultatet av quizen visas.
-
-![Sidan question.php när alla frågor visats](images/questionphp2.png)
-
-<div style="text-align:center">Sidan question.php när alla frågor visats</div>
-
-För att visa resultatet finns en färdig funktion `find_most($array)` som hittar det tal som förekommer flest gånger i en array. Det svarsalternativ som man svarat flest gånger är också det blir resultatet på quizen. 
-
-För VG måste även projektet kompletteras med ett formulär där man kan ange en epostadress att skicka resultatet till. Dessutom måste namn och resultat sparas i en databas, så att tidigare resultat kan visas. Se ytterligare VG-krav under rubriken Betygsbedömning.
-
-![Sidan question med epost-funktion](images/questionphp3.png)
-
-<div style="text-align:center">Sidan question med epost-funktion</div>
-
-När man klickar skicka kommer man vidare till sidan sendmail.php. 
-  
-**sendmail.php** skickar epost med resultatet till den adress som angavs i formuläret på föregående sida. Sidan sparar dessutom resultat och namn i en databas och visar alla tidigare resultat. 
+När man klickar ett svar kommer man tillbaka till sidan `question.php` igen. Om man klickar rätt svar kan sidan se ut så här:
  
-![Sidan sendmail.php](images/sendmailphp.png)
+![](images/question2.png)
 
-<div style="text-align:center">Sidan sendmail.php</div>
+Om man istället klickar fel svar kan det bli så här:
 
-## Projektalternativ 2: Meme-generator
+![](images/question3.png)
 
-Projektet går ut på att skriva PHP-kod som gör det möjligt att ladda upp en bild och sedan förse bilden med text i bildens överkant och nederkant. Man ska även kunna lägga till text till befintliga bilder. Detta projektet är inte lika styrt som quiz-alternativet, här gäller i större utsträckning att finna egna lösningar. Det finns en färdig funktion i filen memefunctions.php i [projektfiler.zip](projektfiler.zip) att tillgå som är till hjälp för att komplettera bild med text "av meme-typ" på bestämda koordinater:
+Slutligen, när man svarat rätt på alla frågor kan det se ut så här:
 
-{% highlight php  startinline=True %}
-<?php
-function meme_text(&$im,$size,$x,$y,$font,$text) {
-	//adds "meme-styled" text (white with black outline) to an image
-	$col=imagecolorallocate($im,255,255,255); //white text
-	$outlinecol=imagecolorallocate($im,0,0,0); //black outline
-	$width=2; //width of outline
-    // For every X pixel to the left and the right
-    $xd=0-abs($width);
-    for ($xc=$x-abs($width);$xc<=$x+abs($width);$xc++) {
-        // For every Y pixel to the top and the bottom
-        $yd=0-abs($width);
-        for ($yc=$y-abs($width);$yc<=$y+abs($width);$yc++) {
-            $text1 = imagettftext($im,$size,0,$xc,$yc,$outlinecol,$font,$text);
-            $yd++;
-        }
-        $xd++;
+![](images/question4.png)
+
+Observera att poäng också måste visas för ett godkänt projekt. 
+
+Som ni märker kommer sidan `question.php` att få lite olika utseende som beror på hur man svarar på frågan tidigare. Vi behöver därför styra sidans utseende med några if-satser. Vi måste ta hänsyn till följande:
+
+* Vi måste kolla om svaret på föregående fråga var rätt eller fel **utom när vi kommer till allra första frågan** (dvs när vi kommer från sidan `start.php`).
+* Om svaret är fel ska vi visa slutpoäng och avsluta spelet
+* Om vi har svarat rätt på sista frågan ska vi också avsluta spelet
+* Om vi svarat rätt men vi inte är på sista frågan ska vi visa nästa fråga
+
+Följande pseudo-kod kan vara till hjälp för att strukturerar sidan:
+
+```text
+
+om vi är på första frågan {
+    visa frågan 
+} annars {
+    kontrollera svarat
+    visa om det var rätt eller fel svar
+    om det var fel svar {
+        visa slutpoäng
+    } annars, om vi svarat på alla frågor
+         grattis, du klarade alla frågorna!
+    } annars {
+        visa frågan
     }
-    // Draw the main text
-    $text2 = imagettftext($im,$size,0,$x,$y,$col,$font,$text);
-}	
-?>
-{% endhighlight %}
-
-Typsnittet som brukar användas är Impact. (finns i [projektfiler.zip](projektfiler.zip)). 
-
-**Tillägg 2015-05-28** Några har efterlyst möjligheten att skala om en bild. Funktionen `rescale` kan används till det:
-
-{% highlight php  startinline=True %}
-function rescale(&$im,$height) {
-    $sx = imagesx($im);
-    $sy = imagesy($im);
-    $width = round($height * $sx / $sy);
-    $newim = imagecreatetruecolor($width, $height);
-    imagecopyresampled($newim, $im, 0, 0, 0, 0, $width, $height, $sx, $sy);
-    return $newim;
 }
-{% endhighlight %} 
 
-Lägg till funktionen i memefunctions-filen och anropa så här:
+```
 
-{% highlight php  startinline=True %}
-//antag att ni läst in en bild från fil i variabeln $im, tex så här:
-$im=imagecreatefrompng($destination);
+## Projektalternativ 2: Memory
 
-//skala om bilden så att den får höjden 400 pixlar
-$im=rescale($im,400);
-{% endhighlight %}
+Projektet går ut på att skriva PHP-kod för ett memoryspel. [Här finns ett miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2016/memory/start.php) av projektet. Detta exempel visar dock endast grunden och saknar några delar för att bli godkänt. 
 
-Projektet måste stödja följande:
+### Detaljerad beskrivning av memory
 
-* Nya bilder måste kunna laddas upp och sparas
-* Meme-text ska kunna läggas till nyuppladdade eller tidigare uppladdade bilder
-* Färdig meme-bild ska sparas. Dessutom måste en länk till detta meme skapas så att man senare kan hitta den
+* Memoryspelet ska bestå av minst 16 brickor och minst 8 olika bilder. I utgångsläget visas baksidan av brickorna. Alla brickor har likadana baksidor. Brickorna ligger upplagda i ett rutnät med ett antal rader och kolumner. 
+* Genom att klicka brickorna vänds brickorna och framsidan visas.
+* Spelaren ska vända två brickor. Om de visar samma motiv är det ett korrekt drag och brickorna plockas bort. Om de visar olika motiv vänds de tillbaka
+* När alla par har hittats är spelet slut
+* Det är valfritt att göra ett spel för en spelare eller ett spel för två spelare. För VG krävs dock att spelet kan hantera både en och två spelare
+* Om du väljer att göra spelet för en spelare ska det visas hur många drag som behövdes för att avsluta spelet. 
+* Om du väljer att göra spelet för två spelare ska det visas hur många par respektive spelare hittat när spelet är klart. 
 
-För VG krävs även:
+För betyget VG krävs dessutom 
 
-* ÅÄÖ ska hanteras korrekt.
-* Länk till bilden ska kunna mailas till godtycklig mailadress.
-* Länk till alla genererade bilder ska sparas i en databas. 
+* Att man börjar med att välja en eller två spelare
+* Att spelerens eller spelarnas namn anges
+* Att nya bilder till spelet kan laddas upp via ett webbformulär
+* Att bildernas position slumpas fram
 
-### Miniexempel på meme-generator
+### Förslag till struktur för projektet
 
-Här finns ett [miniexempel](http://ddwap.mah.se/k3bope/me132a/projekt2014/meme/start.php) på en meme-generator.
+Följande beskrivning är en **rekommendation**. Om ni hellre vill lösa uppgiften på ett annat sätt så att specifikationerna uppfylls går det bra.
+ 
+Förslaget är att ni bygger upp grundfunktionen till projektet med fyra sidor, sidorna `start.php`, `board1.php`, `board2.php` och `board3.php`. Extra sidor kan tillkomma beroende på hur ni löser projektet. 
+
+#### Sidan start.php
+
+Sidan `start.php` definierar själva spelplanen och sparar den i ett antal sessionsvariabler:
+
+* `$_SESSION['board']` är en tvådimensionell array som innehåller filnamn på alla brickor. Varje bild återkommer två gånger. 
+* `$_SESSION['state']` är också en tvådimensionell array som innehåller varje brickas *status* eller tillstånd. Varje bricka kan ha tre tillstånd: Tillstånd 0 betyder att baksidan visas. Tillstånd 1 betyder att framsidan visas. Tillstånd 2 betyder att brickan är borta från spelet och inte visas. 
+* `$_SESSION['move1row']` är rad-koordinat för den först vända brickan 
+* `$_SESSION['move1col']` är kolumn-koordinat för den först vända brickan
+* `$_SESSION['move2row']` är rad-koordinat för den andra vända brickan 
+* `$_SESSION['move2col']` är kolumn-koordinat för den andra vända brickan
 
 
-![Startsida](images/meme1.png)
 
-<div style="text-align:center">Startsida</div>
+Följande kod definierar ett spelplan med 2 rader och 4 kolumner:
 
-![Formulär för att lägga till text](images/meme2.png)
+```php
+<?php
+$_SESSION['board'][0]=array("cat.png","beyonce.png","dog.png","rihanna.png");
+$_SESSION['board'][1]=array("rihanna.png","dog.png","cat.png","beyonce.png");
 
-<div style="text-align:center">Formulär för att lägga till text</div>
+$_SESSION['state'][0]=array(0,0,0,0);
+$_SESSION['state'][1]=array(0,0,0,0);
+?>
+```
 
-![Färdig bild med text](images/meme3.png)
+Varje bricka får då en koordinat. Exempelvis har de två beyoce.png-brickorna koordinaterna `[0][1]`  och `[1][3]`, dvs `$_SESSION['board'][0][1]` har värdet `beyonce.png` och `$_SESSION['board'][1][3]` har också värdet `beyonce.png`. 
 
-<div style="text-align:center">Färdig bild med text</div>
+Sidan start kan se ut ungefär så här:
 
-## Projektalternativ 3: Egen idé
+![](images/memorystart.png)
 
-Om du har en egen idé måste du kontakta kursansvarig <bo.peterson@mah.se> för att diskutera idén senast 2015-04-24.
+När man klickar start kommer man vidare till sidan `board1.php`.
+
+#### Sidorna board1.php, board2.php och board3.php
+
+Sidan `board1.php` visar brädet med alla brickor med baksidan upp, och kan se ut så här:
+
+![](images/board1_1.png)
+
+Lite senare i spelet när några brickor försvunnit kan `board1.php` se ut så här:
+
+![](images/board1_2.png)
+
+När man klickar en baksida på `board1.php` kommer man vidare till sidan `board2.png` som visar brädet med en bricka vänd:
+
+![](images/board2_1.png)
+
+När man sedan klickar en baksida på `board2.php` kommer man vidare till sidan `board3.png` som visar brädet med två brickor vända. Sidan visar också om det var ett bra eller dåligt drag, dvs om man hittade två lika brickor eller inte. 
+
+![](images/board3_1.png)
+
+Sidan ska även ha en länk som leder tillbaka till `board1.php`. När man återvänder till `board1.php` ska brickorna tas bort om man hittade samma bild eller vändas tillbaka om man inte hittade samma bild. 
+
+Man kan slå ihop de tre sidorna board1, 2 och 3 i en sida, `board.php` som hanterar de olika fallen med hjälp av if-satser istället, på liknande sätt som är beskrivet för sidan `question.php` i quiz-uppgiften. 
+
+## Projektalternativ 3: Egen API-idé
+
+Om du vill ha mer frihet än i quiz- och memory-uppgifterna kan du välja en egen idé där du integrerar något befintligt API med egna PHP-sidor. Några exempel på API som kan integreras är 
+
+- [Twitter API](https://dev.twitter.com/rest/public)
+- [Facebook API](https://developers.facebook.com)
+- [Google Maps API](https://developers.google.com/maps/web/)
+- [Open Movie Database API](http://www.omdbapi.com)
+- [Flickr API](https://www.flickr.com/services/api/)
+- [Instagram API](https://www.instagram.com/developer/)
+
+Om du har en egen idé måste du kontakta kursansvarig <bo.peterson@mah.se> för att diskutera idén så snart som möjligt. 
