@@ -117,7 +117,7 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 ### Vecka 17 - Felsökningstekniker samt projektintroduktion
 
 - [Föreläsning 13](lectures/lecture13.html)
-- Projektbeskrivning <!--Projektbeskrivning--><!--projects/project.html-->
+- [Projektbeskrivning](projects/project.html)
 - Projekthandledning under schemalagd laborationstid
 
 ### Vecka 18 - Viktiga verktyg såsom Git, Github mm

@@ -69,7 +69,7 @@ exercises:
       file: lab12
 
 # Projekt
-#projects:
-#    - name: Projektbeskrivning
-#      file: project
+projects:
+    - name: Projektbeskrivning
+      file: project
       
