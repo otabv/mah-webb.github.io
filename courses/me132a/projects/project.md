@@ -27,7 +27,7 @@ Se detaljerade specifikationer nedan. Alternativ 3 är ett mer öppet projekt so
 
 ## Projektinlämning
 
-Följande ska lämnas in på its learning senast 30 maj kl 13:00:
+Följande ska lämnas in på its learning senast 30 maj kl 23:55:
 
 * Alla sidor med PHP-kod och HTML-kod ihopzippade.
 * En webbadress (url) till ett fungerande projekt. **OBS** Om adressen saknas går projeket ej att testa vilket automatiskt leder till underkänt. 
@@ -236,7 +236,7 @@ När man klickar en baksida på `board1.php` kommer man vidare till sidan `board
 
 ![](images/board2_1.png)
 
-När man sedan klickar en baksida på `board2.php` kommer man vidare till sidan `board3.png` som visar brädet med två brickor vända. Sidan visar också om det var ett bra eller dåligt drag, dvs om man hittade två lika brickor eller inte. 
+När man sedan klickar en baksida på `board2.php` kommer man vidare till sidan `board3.php` som visar brädet med två brickor vända. Sidan visar också om det var ett bra eller dåligt drag, dvs om man hittade två lika brickor eller inte. 
 
 ![](images/board3_1.png)
 
