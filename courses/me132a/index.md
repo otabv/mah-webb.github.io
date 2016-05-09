@@ -135,12 +135,14 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 - Föreläsning 15. Olika ramverk kommer att gås igenom:
 
     - PHP-ramverk
-        - [Varför man ska använda PHP-ramverk](http://www.phpandstuff.com/articles/top-10-reasons-why-you-should-use-a-php-framework)
+        - [Mest populära ramverk 2015](http://www.sitepoint.com/best-php-framework-2015-sitepoint-survey-results/)
+        - [Varför man ska använda PHP-ramverk](http://symfony.com/why-use-a-framework)
         - [Slim](http://www.slimframework.com/)
         - [Laravel](http://laravel.com)
     - JavaScript-ramverk
         - [AngularJS](https://angularjs.org/)
         - [Backbone](http://backbonejs.org/)
+        - [React](https://facebook.github.io/react/)
     - CSS-ramverk
         - [Bootstrap](http://getbootstrap.com)
 
