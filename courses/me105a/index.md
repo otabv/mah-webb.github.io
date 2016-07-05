@@ -6,6 +6,8 @@ title: Databasbaserad publicering ME105A (15.0 hp)
 
 # Databasbaserad publicering ME105A 2015
 
+Uppdatera
+
 Välkomna till Databasbaserad publicering. Information för kursen finns på [mah-webb.github.io](http://mah-webb.github.io). Inlämningar sker som vanligt på [It's learning][itslearning]. 
 
 ## Kurslitteratur
