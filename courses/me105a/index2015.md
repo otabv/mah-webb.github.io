@@ -6,23 +6,21 @@ title: Databasbaserad publicering ME105A (15.0 hp)
 
 # Databasbaserad publicering ME105A 2015
 
-Välkomna till Databasbaserad publicering. Information för kursen finns på [mah-webb.github.io](http://mah-webb.github.io). 
+Uppdatera
+
+Välkomna till Databasbaserad publicering. Information för kursen finns på [mah-webb.github.io](http://mah-webb.github.io). Inlämningar sker som vanligt på [It's learning][itslearning]. 
 
 ## Kurslitteratur
 
 Vi kommer att använda boken **PHP & MySQL - Novice to Ninja** även i denna kurs. 
 
-Dessutom kommer vi att använda delar av boken **Databasteknik** av Padron-McCarthy, T och Risch, T. De delar vi behöver finns på bokens webbplats, 
+Dessutom kommer vi att använda boken **Databasteknik** av Padron-McCarthy, T och Risch, T. Det för kursen viktigaste innehållet i Databasteknik finns på bokens webbplats, 
 
 [www.databasteknik.se/webbkursen](http://www.databasteknik.se/webbkursen)
 
 ## Självstudier
 
 Det finns självstudier med lösningar under de flesta veckorna. Självstudierna är helt frivilliga, men rekommenderas starkt. De ska ses som ett komplement till labbarna, där liknande moment tränas. 
-
-## Laborationer
-
-I kursen kommer "kompisrättning", eller "peer grading" av laborationerna att användas. 
 
 ## Nyttiga länkar
 
@@ -32,39 +30,39 @@ I kursen kommer "kompisrättning", eller "peer grading" av laborationerna att an
 
 ## Veckoplan
 
-### Vecka 35 - Introduktion till kursen och till databaser
+### Vecka 36 - Introduktion till kursen och till databaser
 
 - [Föreläsning 1](lectures/lecture1.html)
 - [Laboration 1](exercises/lab1.html)
 - [Självstudie 1](assignments/self1.html)
 
 
-### Vecka 36 - PHP och MySQL
+### Vecka 37 - PHP och MySQL
 
 - [Föreläsning 2](lectures/lecture2.html)
 - [Laboration 2](exercises/lab2.html)
 - [Självstudie 2](assignments/self2.html)
 
 
-### Vecka 37 - E/R-diagram
+### Vecka 38 - E/R-diagram
 
 - [Föreläsning 3](lectures/lecture3.html)
 - [Laboration 3](exercises/lab3.html)
 - [Självstudie 3](assignments/self3.html)
 
-### Vecka 38 - Mer om E/R-diagram
+### Vecka 39 - Mer om E/R-diagram
 
 - [Föreläsning 4](lectures/lecture4.html)
 - [Laboration 4](exercises/lab4.html)
 - [Självstudie 4](assignments/self4.html)
 
-### Vecka 39 - SQL framlänges och baklänges
+### Vecka 40 - SQL framlänges och baklänges
 
 - [Föreläsning 5](lectures/lecture5.html)
 - [Laboration 5](exercises/lab5.html)
 - [Självstudie 5](assignments/self5.html)
 
-### Vecka 40 - Säkerhet
+### Vecka 41 - Säkerhet
 
 - [Föreläsning 6](lectures/lecture6.html)
 - [Laboration 6](exercises/lab6.html)
@@ -72,23 +70,16 @@ I kursen kommer "kompisrättning", eller "peer grading" av laborationerna att an
 
 
 
-### Vecka 41 - Export av data, introduktion till xml och json
+### Vecka 42 - Export av data, introduktion till xml och json
 
 - [Föreläsning 7](lectures/lecture7.html)
 - [Laboration 7](exercises/lab7.html)
 - [Självstudie 7](assignments/self7.html)
 
 
-### Vecka 42 - Normalisering samt import av data
-
-- [Föreläsning 8](lectures/lecture8.html)
-- [Laboration 8](exercises/lab8.html)
-- [Självstudie 8](assignments/self8.html)
-
-
 ### Vecka 43 - Miniprojekt
 
-- [Föreläsning 9](lectures/lecture9.html) -  Från E/R-diagram till färdig databas och PHP
+- [Föreläsning 8](lectures/lecture8.html) -  Från E/R-diagram till färdig databas och PHP
 - Eget arbete med [miniprojektet](projects/miniproject.html). 
 - Handledning av miniprojekt under laborationstillfällena. 
 
@@ -99,21 +90,25 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 ### Vecka 44 - Miniprojekt
 
 - Ingen föreläsning, eget arbete med miniprojektet
-- Inlämning av miniprojekt fredag 4 november kl 17.00
+- Handledning av miniprojekt under laborationstillfällena. 
+- Inlämning av miniprojekt på It's learning fredag 30 oktober kl 17.00
 
-### Vecka 45 - Gästföreläsing - Internet of Things and Big Data
+### Vecka 45 - Normalisering samt import av data
+
+- [Föreläsning 9](lectures/lecture9.html)
+- [Laboration 8](exercises/lab8.html)
+- [Självstudie 8](assignments/self8.html)
+
+
+### Vecka 46 - Gästföreläsing - Internet of Things and Big Data
 
 - [Föreläsning 10](lectures/lecture10.html) - Gästföreläsning med Bato Vogel om Internet of Things and Big Data
 - [Laboration 9](exercises/lab9.html)
 
-### Vecka 46 - Projektstart
+### Vecka 47 - Projektstart
 
 <!--här ska det nog in något om att lägga till data i flera tabeller a la projkettips-->
-
-- Handledning av projekt under laborationstillfällena
-
-### Vecka 47 - Projekt
-
+- [Föreläsning 11 - Projekt](projects/project.html)
 - Handledning av projekt under laborationstillfällena
 
 ### Vecka 48 - Projekt
@@ -126,8 +121,12 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 
 ### Vecka 50 - Projekt
 
-- Inlämning 13 december kl 13.00
-- redovisning av projekt, onsdag 14 december kl 13.15-17.00. 
+- Handledning av projekt under laborationstillfällena
+
+### Vecka 51 - Projekt
+
+- Inlämning 15 december kl 12.00
+- redovisning av projekt, onsdag 16 december kl 13.15-17.00. 
 
 Redovisningen kommer att gå till så att ni får 5 minuter var för att presentera projektet. Ni får då:
 
@@ -136,6 +135,6 @@ Redovisningen kommer att gå till så att ni får 5 minuter var för att present
 - berätta om vad ni lärt er
 
 [kursplan]: http://edu.mah.se/me105a#Syllabus
-[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2016-07-29&resurser=k.ME105A-20162-TS598-
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2015-08-31&resurser=k.ME105A-20152-TS561-
 [itslearning]: https://mah.itslearning.com
 

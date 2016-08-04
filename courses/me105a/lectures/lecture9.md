@@ -3,8 +3,7 @@ layout: instructions
 code: me105a
 title: Föreläsning 9
 controls: false
-date: 2015-08-07
-theme: bopeterson/cleaver-lecture
+date: 2015-10-14
 ---
 
 <style>
@@ -14,8 +13,6 @@ th, td {text-align:left}
 th, td {padding: 6px;}
 hr {display: none}
 pre {font-size:large}
-li {text-align:left}
-.content {text-align:left}
 </style>
 
 # Databasbaserad publicering
@@ -24,69 +21,569 @@ li {text-align:left}
 
 ### Dagens innehåll
 
-- Normalisering - läs mer på <http://www.databasteknik.se/webbkursen/normalisering/index.html>
-- Import av data
+- Från E/R till tabeller och php-sidor
+- Prepared statements
+- En sida, flera ändamål
 
-### Normalisering
-För att databaser ska vara säkra och effektiva krävs:- Frånvaro av redundans (undvik samma data upprepade gånger)- Minimalt antal null-värden (undvik tomma fält)- Hinder för att data går förloradeSträva efter att alla tabeller uppfyller tredje normalformen!### Funktionellt beroendeFunktionellt beroende mellan kolumner i en tabell innebär att en kolumn, eller en kombination av kolumner entydigt bestämmer en annan kolumn. **Exempel, funktionellt beroende**studentnamn | <u>studentid</u> | <u>labnr</u> | labstatus | postnr | stad--- | --- | --- Pär Pärsson | ad123456 | 1 | G | 22240 | LundStina Stenhammar | ad654321 | 1 | VG | 22240 | LundPär Pärsson | ad123456 | 2 | G | 22240 | LundOla Olasson | ad314159 | 1 | G | 20506 | MalmöOla Olasson | ad314159 | 2 | VG | 20506 | MalmöPär Pärsson | ad999999 | 1 | VG | 20507 | MalmöOBS att det finns två olika Pär Pärsson i tabellenExempel på funktionella beroenden: 
+### En filmdatabas
 
-**studentnamn** är funktionellt beroende av **studentid**. Det kan skrivas
+#### E/R-diagram
 
-	studentid -> studentnamn
+Vi ska nu göra en förenklad filmdatabas, med följande förutsättningar:
 
-Det gäller även att **labstatus** är funktionellt beroende av **studentid** och **labnr** tillsammans. Det skrivs 
+Vi vill kunna spara följande uppgifter om en film:
 
-    {studentid,labnr} -> labstatus. ### Första normalform 1NF- Varje attribut i en tabell får endast innehålla ett värde### Andra normalform 2NF- Måste vara i 1NF samt- Alla attribut som är *icke-nycklar* måste vara funktionellt beroende av *hela* *primärnyckeln*. Detta är endast ett problem då man har sammansatta primärnycklar.Ett icke-nyckelattribut definieras som ett attribut som inte ingår i primärnyckeln.
+- titel
+- regissör
+- kategori
 
-### Tredje normalform 3NF
-- Måste vara 2NF samt- Attribut som är icke-nycklar får inte vara funktionellt beroende av andra attribut som är icke-nycklar### Exempel
+Vilka entiteter har vi? Det finns inte ett enda svar på frågan, men vi gör ett försök att få en struktur som inte begränsar oss om vi vill få med mer information vid ett senare skede.
 
-Följande exempel uppfyller inte första normalformen. Förutsättningen är att en person kan ha endast en adress men flera telefonnummer.|  <u>id</u> | namn | adress | telefonnummer| --- | --- | --- | --- | 1 | Bo P | Sofiavägen 3C | 133816, 6657619| 2 | Sebastian B | Stora Östergatan | 3460010Ej 1NF eftersom telefonnummer innehåller flera värden (inte *atomär*)Lösning: dela upp i två tabeller| namn | <u>id</u>
-| --- | --- | Bo P | 1| Sebastian B | 2| <u>id</u> | person_id | adress | telefonnummer| --- | --- | --- | ---| 1 | 1 | Sofiavägen 3C | 133816| 2 | 2 | Stora Östergatan | 3460010| 3 | 1 | Sofiavägen 3C | 6657619### Exempel
+En grundläggande entitet är entiteten **film**. 
 
-Följande exempel uppfyller 1NF men innehåller redundanta data| studentnamn | <u>studentid</u> | <u>labnr</u> | labstatus | postnr | stad | | --- | --- | --- | Pär Pärsson | ad123456 | 1 | G | 22240 | Lund | | Stina Stenhammar | ad654321 | 1 | VG | 22240 | Lund | | Pär Pärsson | ad123456 | 2 | G | 22240 | Lund | | Ola Olasson | ad314159 | 1 | G | 20506 | Malmö | | Ola Olasson | ad314159 | 2 | VG | 20506 | Malmö | | Pär Pärsson | ad999999 | 1 | VG | 20507 | MalmöOBS 1: två olika Pär Pärsson i tabellen.OBS 2: tabellen har sammansatt primärnyckel, studentid och labnr tillsammans
+Entiteten film kan då ha attributen id, titel, regissör och kategori:
 
-Vi har följande funktionella beroenden:
+![](im9/bild1.jpg)
 
-{% highlight text %}
-studentid -> studentnamn
-studentid -> postnr
-studentid -> stad
-{% endhighlight %}Ej 2NF eftersom den har sammansatt primärnyckel, men studentnamn, postnr och stad beror inte av hela nyckeln, utan bara av studentid. De kolumnerna ska bort och in egen tabell!
-| <u>studentid</u> | <u>labnr</u> | labstatus| --- | --- | --- | ad123456 | 1 | G| ad654321 | 1 | VG| ad123456 | 2 | G| ad314159 | 1 | G| ad314159 | 2 | VG| ad999999 | 1 | VG| studentnamn | <u>studentid</u> | postnr | stad| --- | --- | --- | Pär Pärsson | ad123456 | 22240 | Lund| Stina Stenhammar | ad654321 | 22240 | Lund| Ola Olasson | ad314159 | 20506 | Malmö| Pär Pärsson | ad999999 | 20507 | MalmöTabellerna är nu i 2NF!
+I princip funkar detta men problemet med detta är att varje film bara kan ha en titel, en regissör och en kategori. Vi får ta ett steg tillbaka och ställa oss några frågor:
 
-Vi har följande funktionella beroende:
+- kan en film ha flera titlar? (tex svensk och engelsk titel)
+- kan en film ha flera regissörer?
+- kan en film tillhöra flera kategorier?
 
-{% highlight text %}
-postnr -> stad{% endhighlight %}
-Men de är inte i 3NF eftersom stad är beroende av postnr och båda är icke-nycklar.Lösning: stad in i egen tabell| <u>studentid</u> | <u>labnr</u> | labstatus| --- | --- | --- | ad123456 | 1 | G| ad654321 | 1 | VG| ad123456 | 2 | G| ad314159 | 1 | G| ad314159 | 2 | VG| ad999999 | 1 | VG| studentnamn | <u>studentid</u> | postnr| --- | --- | --- | Pär Pärsson | ad123456 | 22240| Stina Stenhammar | ad654321 | 22241| Ola Olasson | ad314159 | 20506| Pär Pärsson | ad999999 | 20507| <u>postnr</u> | stad| --- | --- | --- | 22240 | Lund| 22241 | Lund| 20506 | Malmö| 20507 | MalmöNu är tabellen i 3NF.
-OBS:  i vissa fall kan 2NF vara att föredra framför 3NF. I exemplet ovan kan till exempel prestanda bli lidande när man delar upp i flera tabeller - det tar ofta längre tid att söka i flera än i en tabell. 
+Låt oss för enkelhetens skull anta följande:
 
-Utöver 1NF, 2NF och 3NF finns det ytterligare normalformer, tex Boyce-Codds normalform, *BCNF*. Den kan ni läsa om på 
+- En film kan endast ha **en titel**
+- En film kan endast ha **en regissör**
+- En film kan tillhöra **många kategorier**
 
-<http://www.databasteknik.se/webbkursen/normalisering/index.html>
+Vi gör ett nytt försök, med tre entiteter istället för en, entiteterna *film*, *director* och *category*. 
 
-### Import av data
+![](im9/bild2.jpg)
 
-Hur importerar man data från en databas till InDesign eller annat layoutprogram?
+Nu börjar det likna något. Ett-till-många-förhållandet mellan regissör och film gör att en regissör kan ha gjort många filmer. Däremot kan inte en film ha flera regissörer. Många-till-många-förhållandet mellan film och kategori gör att en film kan tillhöra många kategorier, samtidigt som en många filmer kan tillhöra samma kategori. 
 
-Första steget är att exportera data på något av de sätt som beskrevs på förra föreläsningen, tex som xml, csv, tsv eller json
+Ett problem även med denna lösning är att en och samma person kan förutom att vara regissör även vara  till exempel skådespelare. Vi kan ha en entitet *person* istället för director, med två förhållande mellan *person* och *film*, förhållandena *directs* (ett-till-många) och *plays in* (många-till-många):
 
-Andra steget är att antingen någon av InDesigns inbyggda importfunktioner, eller att använda en plugin. 
+![](im9/bild3.jpg)
 
-![](im9/xml.png)
+Nu har vi fått en ganska flexibel struktur som vi kan nöja oss med (men vi får vara beredda på problem om vi vill utöka lösningen så att titlar kan vara på flera språk). 
 
-Den funktionen är kraftfull och flexibel men svåranvänd. Ett enklare men mer begränsat sätt är att använda InDesigns Data Merge-funktion:
+#### Tabeller
 
-![](im9/datamerge.png)
+Nästa steg är att omvandla E/R-diagrammet till tabeller. Vi hoppar över förhållandet *plays in* så länge, eftersom vi inte behöver ha med information om skådespelare. 
 
-Data Merge-funktionen kan importera tab-separerade filer (tsv) och skapa ett innehåll med konsistent layout. 
+Entiteten *person* blir en tabell med lika många kolumner som attribut:
 
-Det finns även olika plugins till InDesign, som ger ytterligare möjligheter till automatiserad layout. Några sådana exempel  är [InData](http://emsoftware.com/products/emdata/), [CatBase](https://www.catbase.com/) och [Easy Catalog](http://www.65bit.com/software/easycatalog/). 
 
-Vi kommer att använda dels inbyggda Data Merge, dels InData i veckans laboration. 
+**person**
 
-![](im9/indata.png)Även Word innehåller en data merge-funktion liknande den i InDesign, "Koppla dokument" på svenska:
+| <u>id</u>  | firstname  | lastname  |
+|---|---|---|
+|   |  | &nbsp; |
 
-![](im9/word.png)
+Tabellen film är *många*-tabellen i ett ett-till-många-förhållande och behöver därför en extra kolumn som vi kan kalla *directorid* utöver attributen:
+
+**film**
+
+| <u>id</u>  | title  | directorid  |
+|---|---|---|
+|   |  | &nbsp; |
+
+Entiteten *category* får lika många kolumner som attribut:
+
+**category**
+
+| <u>id</u>  | name  |
+|---|---|
+|   | &nbsp; |
+
+Slutligen behöver vi en tabell för att hantera många-till-många-förhållanden mellan film och category:
+
+**filmcategory**
+
+| <u>filmid</u>  | <u>categoryid</u>  |
+|---|---|
+|   | &nbsp; |
+
+Nu är det bara att ta fram lämplig sql-kod för att skapa tabellerna:
+
+{% highlight mysql %}
+CREATE TABLE person (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+firstname TEXT,
+lastname TEXT);
+
+CREATE TABLE film (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title TEXT,
+directorid INT);
+
+CREATE TABLE category (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name TEXT);
+
+CREATE TABLE filmcategory (
+filmid INT,
+categoryid INT,
+PRIMARY KEY(filmid,categoryid));
+{% endhighlight %}
+
+Låt oss skapa dessa tabeller, samt lägga till några kategorier i tabellen *category*:
+
+{% highlight mysql %}
+INSERT INTO category (name) VALUES ('sci-fi');
+INSERT INTO category (name) VALUES ('komedi');
+INSERT INTO category (name) VALUES ('thriller');
+{% endhighlight %}
+
+Låt oss även lägga till några regissörer:
+
+{% highlight mysql %}
+INSERT INTO person (firstname,lastname) VALUES ('Quentin','Tarantino');
+INSERT INTO person (firstname,lastname) VALUES ('Alfred','Hitchcock');
+INSERT INTO person (firstname,lastname) VALUES ('David','Lynch');
+INSERT INTO person (firstname,lastname) VALUES ('Ridley','Scott');
+{% endhighlight %}
+
+#### PHP-sidor
+
+Nu är vi redo att göra PHP-sidor som kan lägga till filmer. 
+
+Vi kan börja med en sida som bara lägger till filmer, men inga kategorier, och inga regissörer. Vi gör sidan film.php som leder vidare till filmadded.php. Sidan film.php visar dels ett formulär för att lägga till en ny film, dessutom en lista med de 10 senast tillagda filmerna. 
+
+**film.php**
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<form action='filmadded.php' method='post'>
+<input name='title' > titel<br>
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+	$title=$row['title'];
+	echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+
+**filmadded.php**
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9 - added</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<?php
+$title=$_POST['title'];
+$sql="INSERT INTO film (title) VALUES ('$title')";
+$pdo->query($sql);
+echo "$title har lagts till";
+?>
+
+</body>
+</html>
+{% endhighlight %}
+
+Vi kan förbättra denna lösning genom att slå ihop de två filerna till en fil som "känner av" om vi kommer direkt till sidan eller om vi kommer dit genom formuläret för att lägga till ny film. Vi känner av det med följande kod som vi lägger i början av filen:
+
+{% highlight php  startinline=True %}
+if (isset($_POST['title']))
+{% endhighlight %}
+
+Ny version av **film.php**:
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+if (isset($_POST['title'])) {
+	$title=$_POST['title'];
+	$sql="INSERT INTO film (title) VALUES ('$title')";
+	$pdo->query($sql);
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<!--formuläret leder tillbaka till samma sida-->
+<form action='' method='post'>
+<input name='title'> titel<br>
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+	$title=$row['title'];
+	echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+Observera att action-attributet är tomt, detta gör att formulärsidan leder tillbaka till sig själv. Om man kommer till sidan genom att direkt skriva in url, eller om man kommer till sidan via en länk, då finns ingen `$_POST['title']`  och inget försök görs för att lägga till film i databasen. Däremot som kommer koden på slutet att köras och de 10 senast tillagda filmerna kommer att visas. 
+
+Ett problem med denna lösning är om man försöker ladda om sidan efter att man lagt till en film. Filmen kommer då att läggas till en gång till:
+
+![](im9/bild4.png)
+
+Ett trick för att lösa detta är att ladda om sidan så fort man lagt till en ny film. Det finns ett sätt att lösa detta genom att lägga till *headers* till en html-sida. Följande kod tar reda på url till aktuell sida och laddar sedan om den:
+
+{% highlight php  startinline=True %}
+$self=$_SERVER['PHP_SELF'];
+header("Location: $self");
+{% endhighlight %}
+
+Detta är kod som skickas innan själva html-koden skickas och måste därför vara i början av koden, innan `<!doctype....`. Vi lägger till några rader som laddar om sidan så fort en film lagts till:
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+if (isset($_POST['title'])) {
+	$title=$_POST['title'];
+	$sql="INSERT INTO film (title) VALUES ('$title')";
+	$pdo->query($sql);
+	
+	//PHP_SELF innehåller url till aktuell sida. 
+	$self=$_SERVER['PHP_SELF']; 
+	//ladda om sidan när en film lagts till
+	header("Location: $self");
+	//avsluta sedan scriptet
+	exit();
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<form action='' method='post'>
+<input name='title' > titel<br>
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+	$title=$row['title'];
+	echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+Nu kan sidan laddas om utan att man får upp en dialogruta som undrar om man verkligen vill skicka formuläret igen, och utan att filmen läggs till en andra gång. 
+
+Vi är inte klara än. Fortfarande är vår lösning osäker, och med sql-injection kan man förstöra tabellerna. Prepared statements är ett sätt att skydda sig mot sql-injections. Detta finns beskrivet i boken *PHP % MySQL - Novice to Ninja* på sidorna 123-125.
+
+{% highlight php  startinline=True %}
+$sql="INSERT INTO film SET title = :title";
+$s = $pdo->prepare($sql);
+$s->bindValue(':title',$title);
+$s->execute();
+{% endhighlight %}
+
+Sidan med *prepared statement* blir då så här:
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+if (isset($_POST['title'])) {
+	$title=$_POST['title'];
+	$sql="INSERT INTO film SET
+	      title = :title";
+	$s = $pdo->prepare($sql);
+	$s->bindValue(':title',$title);
+	$s->execute();
+	
+	//PHP_SELF innehåller url till aktuell sida. 
+	$self=$_SERVER['PHP_SELF']; 
+	//ladda om sidan när en film lagts till
+	header("Location: $self");
+	//avsluta sedan scriptet
+	exit();
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<form action='' method='post'>
+<input name='title' > titel<br>
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+	$title=$row['title'];
+	echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+Nu har vi en väl fungerande sida. Det som återstår är att kunna lägga till regissör och kategori. Vi börjar med att lägga till en dropdown-meny där man kan välja regissör. Menyn hämtar värden från tabellen *person*. 
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+if (isset($_POST['title'])) {
+    $title=$_POST['title'];
+    $directorid=$_POST['directorid'];
+    $sql="INSERT INTO film SET
+          title = :title,
+          directorid = :directorid";
+    $s = $pdo->prepare($sql);
+    $s->bindValue(':title',$title);
+    $s->bindValue(':directorid',$directorid);
+    $s->execute();
+    
+    //PHP_SELF innehåller url till aktuell sida. 
+    $self=$_SERVER['PHP_SELF']; 
+    //ladda om sidan när en film lagts till
+    header("Location: $self");
+    //avsluta sedan scriptet
+    exit();
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<form action='' method='post'>
+<input name='title' > titel<br>
+<select name='directorid'>
+<?php 
+//sök vilka directors som finns och visa i dropdownmeny
+$sql="SELECT * FROM person";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+    $id=$row["id"];
+    $firstname=$row["firstname"];
+    $lastname=$row["lastname"];
+    echo "<option value='$id'>$firstname $lastname</option>";
+}
+?>
+</select> regissör <br>
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+    $title=$row['title'];
+    echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+Nu återstår bara att kunna lägga till kategori. Att lägga till kategori kräver lite till. Vi måste lägga till dels categoryid, dels filmid i tabellen filmcategory. Vi måste börja med att ta reda på filmid för den film som vi just lagt till. Eftersom id skapats automatiskt med autoincrement, vet vi inte vilket id senaste filmen fått, men vi kan ta reda på det med funktionen `lastInsertId()`. Följande rad sparar id i en variabel:
+
+{% highlight php  startinline=True %}
+$newfilmid=$pdo->lastInsertId();
+{% endhighlight %}
+
+En annan sak är att vi kan bocka för flera kategorier. Om en film tillhör flera kategorier ska varje kategori resultera i en ny rad i tabellen filmcategory. Genom att lägga till hakparenteser på name-attributet i input-taggen kommer alla valda kategorier att resultera i en array på php-sidan som tar emot formuläret.
+
+Formulär:
+
+{% highlight html %}
+<input type="checkbox" name="categoryids[]" value="1"> sci-fi<br>
+<input type="checkbox" name="categoryids[]" value="2"> komedi<br>
+<input type="checkbox" name="categoryids[]" value="3"> thriller<br>
+{% endhighlight %}
+
+PHP-kod som tar emot formuläret. Variabeln `$categoryids` blir en array:
+
+{% highlight php  startinline=True %}
+$categoryids=$_POST['categoryids'];
+{% endhighlight %}
+
+Denna array kan vi sedan loopa igenom för att lägga till en ny rad för varje kategori:
+
+{% highlight php  startinline=True %}
+foreach($categoryids as $categoryid) {
+	//kod för att lägga till i tabellen filmcategory
+}
+{% endhighlight %}
+
+Det hela resulterar i följande kod:
+
+{% highlight html+php %}
+<?php
+//anslut till databas
+include $_SERVER['DOCUMENT_ROOT'] . "/k3bope/me105a/connect.php";
+if (isset($_POST['title'])) {
+    $title=$_POST['title'];
+    $directorid=$_POST['directorid'];
+    if (isset($_POST['categoryids'])) {
+        $categoryids=$_POST['categoryids'];
+    } else {
+        $categoryids=array(); //tom array om inga kategorier valts
+    }
+
+
+    //lägg till film i tabellen film
+    $sql="INSERT INTO film SET
+          title = :title,
+          directorid = :directorid";
+    $s = $pdo->prepare($sql);
+    $s->bindValue(':title',$title);
+    $s->bindValue(':directorid',$directorid);
+    $s->execute();
+   
+    //lägg till kategorier för filmen i tabellen filmcategory 
+    //id för nytillagd film
+    $newfilmid=$pdo->lastInsertId();
+    
+    //$category är en array, eftersom flera kategorier kan ha valts. 
+    //Lägg till en rad i filmcategory för varje kategori
+    foreach($categoryids as $categoryid) {
+       $sql="INSERT INTO filmcategory SET
+             filmid = :filmid,
+             categoryid = :categoryid";
+       $s = $pdo->prepare($sql);
+       $s->bindValue(':filmid',$newfilmid);
+       $s->bindValue(':categoryid',$categoryid);
+       $s->execute();
+    }
+    
+    //PHP_SELF innehåller url till aktuell sida. 
+    $self=$_SERVER['PHP_SELF']; 
+    //ladda om sidan när en film lagts till
+    header("Location: $self");
+    //avsluta sedan scriptet
+    exit();
+}
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lecture 9</title>
+</head>
+
+<body>
+<h2>Lägg till film</h2>
+<form action='' method='post'>
+<input name='title' > titel<br>
+<select name='directorid'>
+<?php
+//sök vilka directors som finns och visa i dropdownmeny
+$sql="SELECT * FROM person";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+    $id=$row["id"];
+    $firstname=$row["firstname"];
+    $lastname=$row["lastname"];
+    echo "<option value='$id'>$firstname $lastname</option>";
+}
+?>
+</select> regissör <br>
+
+<!--egentligen borde tillgängliga kategorier hämtas ur tabellben category-->
+<!--hakparentes efter categoryids eftersom flera kategorier kan bockas för-->
+<input type="checkbox" name="categoryids[]" value="1"> sci-fi<br>
+<input type="checkbox" name="categoryids[]" value="2"> komedi<br>
+<input type="checkbox" name="categoryids[]" value="3"> thriller<br>
+
+<input type='submit' value='lägg till'>
+</form>
+
+<h2>Senaste filmer</h2>
+<?php
+//visa 10 senaste filmerna
+$sql="SELECT * FROM film ORDER BY id DESC LIMIT 10";
+$result=$pdo->query($sql);
+foreach ($result as $row) {
+    $title=$row['title'];
+    echo '<h3>' . $title . '</h3>';
+}
+?>
+</body>
+</html>
+{% endhighlight %}
+
+
+Nu har vi en inmatningssida som funkar hyfsat bra, men det finns naturligtvis mycket som kan förbättras och läggas till som till exempel:
+
+- möjlighet att lägga till nya regissörer
+- möjlighet att lägga till nya kategorier
+- olika sätt att presentera filmer, tex samla filmer inom en kategori för sig
+- sökfunktioner
+- css för bättre layout
+
+<!--här kan man ha en skärmdump på sidan-->
 
