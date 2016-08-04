@@ -22,9 +22,9 @@ th, td {padding: 6px;}
 </script>
 
 
-#Självstudier 6
+# Självstudier 6
 
-##Uppgift 1 
+## Uppgift 1 
 
 Skapa en tabell **user** som ska kunna användas för att logga in i building-classroom-databasen från tidigare självstudier. Tabellen ska innehålla följande kolumner:
 
@@ -51,7 +51,7 @@ CREATE TABLE user (
 </div>
 <!--END SHOW/HIDE-->
  
-##Uppgift 2
+## Uppgift 2
 
 Gör en webbsida där man kan registrera sig genom att mata in användarnamn och lösenord. Om användarnamnet redan finns ska man få ett meddelande om det, om det inte finns ska det läggas till i databasen. Lösenordet ska sparas md5-kodat i databasen. 
 
@@ -131,7 +131,7 @@ catch (Exception $e)
 <!--END SHOW/HIDE-->
 
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 

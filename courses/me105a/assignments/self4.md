@@ -21,9 +21,9 @@ th, td {padding: 6px;}
   }
 </script>
 
-#Självstudier 4
+# Självstudier 4
 
-##Uppgift 1 
+## Uppgift 1 
 
 Skapa tabellerna *classroom* och *building* utifrån E/R-diagrammen från självstudie 3 med lämplig SQL (CREATE TABLE classroom etc). Använd MySQL Query Browser. **OBS** Om du redan har en tabell *classroom* från självstudie 1 måste du börja med att ta bort den. Det gör du med
 
@@ -63,7 +63,7 @@ CREATE TABLE building (
 
  
 
-##Uppgift 2
+## Uppgift 2
 
 Gör html och php-sidor med formulär för att mata in byggnader i tabellen *building*.
 
@@ -139,7 +139,7 @@ echo "$name has been added<br><br>";
 </div>
 <!--END SHOW/HIDE-->
 
-##Uppgift 3
+## Uppgift 3
 
 Mata in minst två byggnader, tex Niagara (Nordenskiöldsgatan 1) och Orkanen (Nordenskiöldsgatan 10).
 
@@ -154,7 +154,7 @@ Mata in minst två byggnader, tex Niagara (Nordenskiöldsgatan 1) och Orkanen (N
 <!--END SHOW/HIDE-->
 
 
-##Uppgift 4
+## Uppgift 4
 
 Gör formulärsida och sida för att ta emot resultatet från formuläret för att mata in sal i tabellen *classroom*. Man ska med en dropdownmeny kunna välja vilken byggnad en sal ligger i. Denna dropdownmeny ska hämta värden från tabellen *building*. 
 
@@ -241,7 +241,7 @@ echo "$roomnumber has been added<br><br>";
 <!--END SHOW/HIDE-->
 
 
-##Uppgift 5
+## Uppgift 5
 
 Mata in några salar i de olika byggnaderna. 
 
@@ -255,7 +255,7 @@ Mata in några salar i de olika byggnaderna.
 </div>
 <!--END SHOW/HIDE-->
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 

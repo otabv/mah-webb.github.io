@@ -14,9 +14,9 @@ title: Självstudier 1
   }
 </script>
 
-#Självstudier 1
+# Självstudier 1
 
-##Uppgift 1
+## Uppgift 1
 
 Starta MySQL Query Browser och skapa tabellen *classroom* från föreläsningsanteckningarna med hjälp av lämplig sql-kod. 
 
@@ -35,7 +35,7 @@ CREATE TABLE classroom (
 {% endhighlight %}</div>
 <!--END SHOW/HIDE-->
 
-##Uppgift 2
+## Uppgift 2
 
 Lägg till följande klassrum med hjälp av lämpliga SQL-satser i MySQL Query Browser;
 
@@ -69,7 +69,7 @@ INSERT INTO  classroom (roomnumber,seats) VALUES ('B303',20);
 <!--END SHOW/HIDE-->
 
 
-##Uppgift 3
+## Uppgift 3
 
 Fullständiga beteckningen på B305 är egentligen K2B305. Vad händer om du försöker lägga till K2B305 istället? Varför?
 <!--START SHOW/HIDE--><input type="button" value="visa/göm lösning 3" onclick="toggle('answer3');">
@@ -84,7 +84,7 @@ Data too long for column 'roomnumber' at row 1{% endhighlight %}
 </div>
 <!--END SHOW/HIDE-->
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 

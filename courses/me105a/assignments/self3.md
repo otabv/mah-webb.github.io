@@ -21,10 +21,10 @@ th, td {padding: 6px;}
   }
 </script>
 
-#Självstudier 3
+# Självstudier 3
 
 
-##Uppgift 1
+## Uppgift 1
 
 Rita E/R-diagram för en databas som ska innehålla två entiteter:
 
@@ -86,7 +86,7 @@ Ta fram tabeller som motsvarar entiteterna sal och byggnad. Vilka kolumner behö
 </div>
 <!--END SHOW/HIDE-->
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 

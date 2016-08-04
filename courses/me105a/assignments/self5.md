@@ -22,9 +22,9 @@ th, td {padding: 6px;}
 </script>
 
 
-#Självstudier 5
+# Självstudier 5
 
-##Uppgift 1 
+## Uppgift 1 
 
 Ange SQL för att lista alla rum inklusive antal platser och vilken byggnad de ligger i. Testa med MySQL Query Browser. 
 
@@ -43,7 +43,7 @@ INNER JOIN building ON building.id=buildingid
 <!--END SHOW/HIDE-->
 
  
-##Uppgift 2
+## Uppgift 2
 
 Sök alla salar med minst 30 sittplatser. Visa namn på sal, antal platser och namn på byggnad. OBS: om du inte matat in några salar med minst 30 sittplatser kommer du inte att få några träffar. 
 
@@ -52,7 +52,7 @@ Sök alla salar med minst 30 sittplatser. Visa namn på sal, antal platser och n
 
 <div id="answer2" style="display:none">
 
-{% highlight mysql %}
+{% highlight sql %}
 #bygg vidare på sökningen från uppgift 1
 SELECT name,roomnumber,seats FROM classroom 
 INNER JOIN building ON building.id=buildingid
@@ -63,7 +63,7 @@ WHERE seats >= 30
 <!--END SHOW/HIDE-->
 
 
-##Uppgift 3
+## Uppgift 3
 
 Sök samtliga salar i en av byggnaderna som finns inmatad (tex Niagara), sortera salarna i storleksordning. 
 
@@ -83,7 +83,7 @@ ORDER BY seats
 <!--END SHOW/HIDE-->
 
 
-##Uppgift 4
+## Uppgift 4
 
 Sök alla salar med beteckning som börjar med B. Visa namn på sal och antal platser. 
 
@@ -100,7 +100,7 @@ SELECT roomnumber,seats FROM classroom WHERE roomnumber LIKE 'B%'
 </div>
 <!--END SHOW/HIDE-->
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 

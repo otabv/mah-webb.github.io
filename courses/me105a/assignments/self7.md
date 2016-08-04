@@ -22,9 +22,9 @@ th, td {padding: 6px;}
 </script>
 
 
-#Självstudier 7
+# Självstudier 7
 
-##Uppgift 1
+## Uppgift 1
 
 Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-separerad fil **utan att använda** php-funktionen `fputcsv`
 
@@ -82,7 +82,7 @@ echo "<a href='$filename'>$filename</a>";
 </div>
 <!--END SHOW/HIDE-->
  
-##Uppgift 2
+## Uppgift 2
 
 Gör en php-sida som exporterar alla kolumner i tabellen **building** i en tab-separerad fil **genom att använda** php-funktionen `fputcsv`
 
@@ -145,7 +145,7 @@ echo "<a href='$filename'>$filename</a>";
 </div>
 <!--END SHOW/HIDE-->
 
-##Uppgift 3
+## Uppgift 3
 
 Gör en php-sida som exporterar alla kolumner i tabellen **building** i en komma-separerad fil **genom att använda** php-funktionen `fputcsv`
 
@@ -208,7 +208,7 @@ echo "<a href='$filename'>$filename</a>";
 </div>
 <!--END SHOW/HIDE-->
 
-##Uppgift 4
+## Uppgift 4
 
 Använd formuläret från självstudie 4 för att lägga till några byggnader som innehåller olika tecken som kan ställa till problem i databassammanhang, och testa hur exporten från uppgift 3 fungerar. 
 
@@ -263,7 +263,7 @@ Hur man matar in apostrofer i databaser diskuteras på sidan 149 och framåt i b
 </div>
 <!--END SHOW/HIDE-->
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 

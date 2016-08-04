@@ -21,9 +21,9 @@ th, td {text-align:left}
 th, td {padding: 6px;}
 </style>
 
-#Självstudier 2
+# Självstudier 2
 
-##Uppgift 1
+## Uppgift 1
 
 Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som finns lagrade i tabellen *classroom* från föreläsning 1 och självstudieuppgift 1.
 
@@ -55,7 +55,7 @@ foreach ($result as $row) {
 </div>
 <!--END SHOW/HIDE-->
 
-##Uppgift 2
+## Uppgift 2
 
 Gör en sida *showrooms.php* som visar alla rum och antal platser i rummen som finns lagrade i tabellen *classroom* men nu ska de vara sorterade i stigande ordning med minst antal platser först och flest antal platser sist i listan.
 
@@ -75,7 +75,7 @@ $sql="SELECT * FROM classroom ORDER BY seats";
 </div>
 <!--END SHOW/HIDE-->
 
-##Statistik
+## Statistik
 
 Jättesnällt om du talar om att du gjort eller försökt göra självstudien. Det är helt anonymt.
 
