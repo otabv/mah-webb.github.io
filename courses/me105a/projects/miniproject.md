@@ -8,7 +8,7 @@ title: miniprojekt
 pre {white-space: pre-wrap;}
 </style>
 
-#Miniprojekt
+# Miniprojekt
 
 Syftet med miniprojektet är att förbereda er på det slutliga projektet. Ni får en färdig databas som innehåller information om djur. Tre stycken PHP-sidor ska göras så att man kan söka information i djurdatabasen. 
 
@@ -44,7 +44,7 @@ Handledning kommer att ges under labbtillfällena, men det krävs att ni jobbar 
 
 Lämna in php-filerna ihopzippade, samt, **mycket viktigt**, en länk till ert miniprojekt, dvs något i stil med `http://ddwap.mah.se/userid/me105a/miniprojekt`
 
-##Bilaga: Bilder och sql-kod
+## Bilaga: Bilder och sql-kod
 
 cat.jpg
 ![](cat.jpg)
@@ -62,7 +62,7 @@ wolf.jpg
 ![](wolf.jpg)
 
 
-{% highlight mysql %}
+```sql
 #skapa tabeller
 
 CREATE TABLE family (
@@ -111,4 +111,4 @@ INSERT INTO species (id,name,sci_name,description,image,genus_id) VALUES
 
 INSERT INTO species (id,name,sci_name,description,image,genus_id) VALUES
 (5,'Varg','Canis lupus','Varg, gråvarg eller ulv är ett rovdjur vars utbredningsområde sträcker sig över stora delar av världen. Vargen är det största hunddjuret och en fullvuxen varg väger vanligen 30 till 50 kg. En mängd underarter är beskrivna men det vetenskapligt faktiskt accepterade antalet är under diskussion. Vargen är även stamfader till hunden.','wolf.jpg',3);
-{% endhighlight %}
+```

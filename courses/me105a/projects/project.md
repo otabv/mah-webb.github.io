@@ -10,6 +10,8 @@ pre {white-space: pre-wrap;}
 
 # Projekt, Databasbaserad publicering 2015
 
+**OBS PRELIMINÄRT PROJEKT, KAN KOMMA ATT ÄNDRAS**
+
 Projektet går ut på att bygga en interaktiv databas där innehållet kan visas både i tryck och på webben.
 
 Projekt görs självständigt. Projektet måste innehålla:

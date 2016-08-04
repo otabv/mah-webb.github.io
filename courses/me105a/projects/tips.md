@@ -4,9 +4,9 @@ code: me105a
 title: projekt
 ---
 
-#Projekttips
+# Projekttips
 
-##Lägga till data i flera tabeller
+## Lägga till data i flera tabeller
 
 Om man har två tabeller som är kopplade till varandra genom många-till-många förhållande eller ett-till-många-förhållande måste man ibland lägga till data i flera tabeller samtidigt. 
 
@@ -34,7 +34,7 @@ $result=$pdo->query($sql);
 
 Nu är Bäver inlagd i species och korrekt kopplad till Castor i genus.
 
-##Hämta resultat från sökning utan loop
+## Hämta resultat från sökning utan loop
 
 När vi söker i en tabell med SELECT får vi ofta ett resultat med flera rader och brukar använda en loop för att visa resultat:
 
