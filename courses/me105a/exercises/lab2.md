@@ -4,15 +4,15 @@ code: me105a
 title: Laboration 2
 ---
 
-#Laboration 2
+# Laboration 2
 
 Syfte med laborationen:
 att göra använda PHP för att ta hand om data från formulär och kommunicera med en MySQL-databas. 
 
-###Förberedelser:
+### Förberedelser:
 Läs kapitel 4 till och med sidan 118 i boken "PHP & MySQL - Novice to Ninja"
 
-###Redovisning:
+### Redovisning:
 Redovisa alla PHP-filer du skapat under labben på It's learning.
 
 Uppgiften går ut på att fortsätta med joke-tabellen som skapades i labb 1 men nu ska vi istället skriva egna formulär för att kommunicera med tabellen. 
@@ -41,7 +41,7 @@ precis som i laboration 1 för att ansluta till databasen.
 
 
 
-##Uppgift 1
+## Uppgift 1
 Skapa ett formulär, *index.html* i mappen */ddwap/me105a/lab2/uppgift1/* där man ska kunna lägga till nya skämt. 
 
 ![](im2/image007.png)
@@ -53,14 +53,14 @@ Formuläret ska leda vidare till sidan *add.php* som lägger till skämtet i tab
 ![](im2/image009.png)
 
 
-##Uppgift 2
+## Uppgift 2
 Komplettera uppgift 1 så att sidan med formuläret även visar alla tidigare skämt. Sidan med formuläret måste nu vara en PHP-sida istället för HTML. Döp filen till *index.php* och lägg i */ddwap/me105a/lab2/uppgift2/*
 
 ![](im2/image011.png)
 
 Har du glömt hur man visar sökresultatet ur tabellen? Se laboration 1. 
 
-##Uppgift 3
+## Uppgift 3
 
 Det kan bli problem om man matar in html-taggar i formuläret i uppgift 1 och 2. Om man gör följande inmatning
 
@@ -72,14 +72,14 @@ blir resultatet
 
 Modifiera uppgift 2 så att sidan som tar emot skämtet och lägger till det i databasen tar hand om eventuell html-kod i formulärinmatningen. 
 
-##Uppgift 4
+## Uppgift 4
 
 I förra labben skapades även tabellen *contacts*. Gör ett formulär och en svarssida där du kan mata in namn och e-post. 
 
-##Uppgift 5
+## Uppgift 5
 
 Gör en sida *showall.php* som visar alla namn och e-postadresser som finns i tabellen *contacts*. 
 
-##Uppgift 6 (frivillig)
+## Uppgift 6 (frivillig)
 
 Komplettera uppgift 4 så att epost-adressen endast läggs till i tabellen om den innehåller ett @-tecken. Tips: använd php-funktionen [strpos](http://php.net/manual/en/function.strpos.php) för att testa om @-tecknet finns med. 

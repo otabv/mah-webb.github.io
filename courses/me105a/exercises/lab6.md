@@ -8,9 +8,9 @@ title: Laboration 6
 pre {white-space: pre-wrap;}
 </style>
 
-#Laboration 6
+# Laboration 6
 
-##Uppgift 1
+## Uppgift 1
 
 Uppgiften går ut på att göra inloggning med lösenord, där vi använder tabellen author för att hantera användarnamn och lösenord.
 Först måste vi förbereda tabellen author så att den kan innehålla lösenord. 
@@ -58,7 +58,7 @@ Sidan check.php får olika utseende om man använt rätt lösenord eller inte:
 
 ![](im6/wrong.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Komplettera sidan check.php så att den sätter följande sessionsvariabler:
 
@@ -90,7 +90,7 @@ Slutligen gör vi sidan add.php som är den sida som tar hand om formulärinneh�
 
 ![](im6/tvatomater.png)
 
-##Uppgift 3
+## Uppgift 3
 
 Se till att du har minst två korrekta epost-adresser med tillhörande lösenord i author-tabellen. Testa att logga in med först ena adressen och lägg till ett skämt, sedan med andra adressen och lägg till ett skämt. Du kan nu söka alla skämt i tabellen med
 
@@ -101,7 +101,7 @@ ON author.id=authorid
 
 för att få fram alla skämt och deras författare. Testa att sökningen funkar med MySQL Query Browser.
 
-##Uppgift 4
+## Uppgift 4
 
 Vi har nu sett till så att man måste ha lösenord för att kunna logga in. Vi har däremot inte säkrat databasen mot sql-injections. Komplettera formulärhanteringen så att databasen har ett grundläggande skydd mot det. 
 

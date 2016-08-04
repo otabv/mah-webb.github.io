@@ -11,7 +11,7 @@ img {
 }
 </style>
 
-#Laboration 9
+# Laboration 9
 
 I labb 7 gjorde vi en webbsida med produkter. I labb 8 gjorde vi en liknande layout i InDesign och importerade data från databasen. 
 
@@ -31,13 +31,13 @@ resulterar i följande resultat
 
 där **vend_name** upprepas för varje produkt. Dagens uppgift går ut på att göra en webbsida och ett InDesign-dokument där varje leverantör visas som en rubrik, följt av de produkter som leverantören kan tillhandahålla. 
 
-##Uppgift 1
+## Uppgift 1
 
 Gör en webbsida liknande uppgift 1 i laboration 7, men med produkterna grupperade under levarantörsnamnet. (här nedan har css med float:left använts för att få produkterna bredvid varandra, men det går även att ha produkterna under varandra om man inte vill använda css)
 
 ![](im9/bild3.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Nu ska en liknande sida göras med InDesign med InData-plugin. Första steget blir att komplettera exportfilen från laboration 8, uppgift 2, så att den även innehåller *vend_name*. Filen export.txt ska innehålla i tur och ordning 
 

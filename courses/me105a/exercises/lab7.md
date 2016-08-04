@@ -22,11 +22,11 @@ img {
 </script>
 
 
-#Laboration 7
+# Laboration 7
 
 I denna lab ska vi exportera produkterna i tabellerna products i olika format. Först som en vanlig html-sida, sedan som en tab-separerad fil och slutligen i xml-format.
 
-##Uppgift 1
+## Uppgift 1
 
 Uppgiften är att söka alla produkter i tabellen products, och visa en rubrik med produktnamn och pris, sedan en bild, sedan produktbeskrivning. Ni har tillgång till en [zip-fil](im7/images.zip) med en bild för varje produkt, och filnamnet är *prod_id.jpg*. För tex Bird bean bag toy med produktid *BNBG02* är filnamnet på bilden *BNBG02.jpg*. **OBS** Ibland har skolans datorer problem med att packa upp zip-filer. Bilderna finns var för sig i en bilaga i slutet av handledningen som kan användas istället. 
 
@@ -34,7 +34,7 @@ Webbsidan kan till exempel se ut så här:
 
 ![](im7/allproducts.png)
 
-##Uppgift 2
+## Uppgift 2
 
 Uppgiften är att skriva en php-sida som skapar en tab-separerad fil med kolumnerna prod_id, prod_price, prod_name och prod_desc för alla produkter i tabellen products. Sidan ska med funktionen file_put_contents() skapa en textfil samt visa en länk till filen. Sidan kan se ut så här:
 
@@ -44,7 +44,7 @@ När man klickar export.txt ska man få fram den tab-separerade filen:
 
 ![](im7/tab.png)
 
-##Uppgift 3
+## Uppgift 3
 
 Nu ska istället en xml-fil skapas med samma data som i tab-filen i förra uppgiften. Målet är att filen ska ha följande struktur:
 
@@ -76,7 +76,7 @@ När man klickar länken ska xml-sidan visas:
 
 ![](im7/xml2.png)
 
-##Uppgift 4 - frivillig
+## Uppgift 4 - frivillig
 
 PHP har ett antal färdiga funktioner för att bygga upp xml-dokument. 
 
@@ -177,13 +177,13 @@ echo $output;
 </div>
 <!--END SHOW/HIDE-->
 
-##Bilaga med bilder att använda
+## Bilaga med bilder att använda
 
-###zip-arkiv med samtliga bilder
+### zip-arkiv med samtliga bilder
 
 [images.zip](im7/images.zip)
 
-###samma bilder som o i zip-arkivet men var för sig
+### samma bilder som o i zip-arkivet men var för sig
 
 BNBG01.jpg
 ![](im7/BNBG01.jpg)

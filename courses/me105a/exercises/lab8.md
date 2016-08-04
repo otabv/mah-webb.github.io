@@ -10,7 +10,7 @@ img {
    border:1px solid #CCCCCC;
 }
 </style>
-#Laboration 8
+# Laboration 8
 
 I förra labben gjorde vi en webbsida med produkterna i tabellen products:
 
@@ -18,7 +18,7 @@ I förra labben gjorde vi en webbsida med produkterna i tabellen products:
 
 I denna labb ska vi göra ett liknande dokument med InDesign. Då måste vi först exportera innehållet i tabellen, som InDesign sedan kan importera. En sådan export påbörjades i förra labben, men måste kompletteras något.
 
-##Uppgift 1
+## Uppgift 1
 
 Vi ska använda InDesigns inbyggda Data Merge-funktion för att importera data till InDesign. För att InDesign ska kunna använda data från databasen måste den tab-separerade filen från förra labben kompletteras så att den dels innehåller en rubrikrad med namnet på de olika kolumnerna, dels en kolumn med sökväg till de olika bilderna. Kolumnnamn för bildkolumnen måste börja med ett @-tecken. Komplettera uppgift 2 från laboration 7 så att tab-filen får utseende enligt figur nedan. Skapa en fil */me105a/laboration8/uppgift1.php* som skapar filen *export1.txt*:
 
@@ -48,7 +48,7 @@ Experimentera fritt med layouten i mallen och skapa nya kataloger:
 
 Lämna in minst två mallar och två resulterande kataloger. 
 
-##Uppgift 2
+## Uppgift 2
 
 Data Merge-funktionen i InDesign är bra om man snabbt ska upprepa samma layout flera gånger, men räcker inte till för mer avancerade layout-uppgifter. Vi kommer nu att titta på en plug-in till InDesign som heter InData. Med InData kan man bland annat göra vilkorsstyrd import och på så vis få en bättre anpassad layout. Även här behöver vi en tab-separerad exportfil, men med några viktiga skillnader jämfört med uppgift 1:
 

@@ -4,7 +4,7 @@ code: me105a
 title: Laboration 1
 ---
 
-#Laboration 1
+# Laboration 1
 
 Syfte med laborationen:
 att testa PHP-kod för att kommunicera med MySQL
@@ -13,7 +13,7 @@ Redovisning: Redovisa filen index.php från uppgift 3 samt sql-koden från uppgi
 
 Genom hela kursen kommer vi att använda samma webbserver som i Programmering för webben, <http://ddwap.mah.se>  med stöd för PHP och MySQL. För att kunna använda MySQL-delen för databaser måste först en databas skapas som sedan kan användas genom hela kursen. 
 
-##Uppgift 1
+## Uppgift 1
 
 Stegen på sidorna 35-42 i boken PHP & MySQL - Novice to Ninja ska följas, men något modifierade. De modifierade stegen finns beskrivna nedan. 
 
@@ -68,7 +68,7 @@ Prova någon av alternativen. Om det funkar kan du se att en rad lagts till i ta
 Nu är det klart att börja med den egentliga laborationen.
 
 
-##Uppgift 2
+## Uppgift 2
 
 Uppgiften går ut på att fortsätta med joke-tabellen som skapades i föra uppgiften men nu ska vi istället skriva egen PHP-kod för att kommunicera med tabellen. 
 
@@ -119,7 +119,7 @@ foreach ($result as $row) {
 
 Publicera den på servern och öppna med webbläsare. Om allt funkar ska det skämt som matades in i uppgift 1 visas. 
 
-##Uppgift 3
+## Uppgift 3
 Som ni ser i föregående uppgift så sparas ert lösenord i klartext i php-filen. Det gör till exempel att den som rättar er labb får tillgång till ert lösenord om ni skickar in filen som den är på it's learning. För att slippa undan är det bättre att lägga lösenordet i en separat fil som infogas med include. Denna fil kan sedan användas genom hela kursen för att ansluta till er databas. En annan brist i koden i föregående uppgift är att eventuella fel vid anslutning till databasen inte hanteras. Även felhanteringen kan läggas in den separata filen med lösenordet. 
 
 Skapa en fil som ligger direkt i katalogen me105a (alltså inte i lab1) som heter *connect.php*. Den ska innehålla följande kod (men med k3bope ersätt med ert användarnamn och xxxxxxx med ert lösenord). Filen ska bara innehålla php-kod, ingen html-kod. 
