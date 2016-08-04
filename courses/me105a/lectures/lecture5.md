@@ -324,7 +324,7 @@ Vi kommer att använda en exempeldatabas hämtad från boken SAMS Teach Yourself
 
 ### En massa exempel:
 
-```mysql
+```sql
 #sortering
 #sortera dyraste varor först. om två varor har samma pris 
 #sorteras de i bokstavsordning
