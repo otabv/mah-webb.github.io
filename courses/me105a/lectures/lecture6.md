@@ -31,16 +31,16 @@ Läs kapitel 9 i boken PHP & MySQL: Novice to Ninja. Läs even kapitel 13 i boke
 
 <http://www.databasteknik.se/webbkursen/transaktioner/index.html>.
  
-###Olika typer av säkerhet
+### Olika typer av säkerhet
 
 - säkerhet mot intrång av obehöriga
 - säkerhet mot olämpliga inmatningar/ändringar av behöriga
 - säkerhet vid driftstörningar, datorkrascher, strömavbrott mm
 - säkerhet kan dels hanteras av SQL, dels av PHP, vanligtvis av en kombination
 
-###SQL-hantering av säkerhet mot intrång av obehöriga
+### SQL-hantering av säkerhet mot intrång av obehöriga
 
-####Grant
+#### Grant
 
 Med SQL-kommandot GRANT kan man ge användare olika typer av rättigheter till tabeller:
 
@@ -58,84 +58,84 @@ Med kommandot REVOKE kan man ta bort rättigheter.
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 GRANT SELECT,INSERT ON album TO elev
-{% endhighlight %}
+```
 
 ger användaren elev rätt att hämta data och lägga till data till tabellen album.
 
-{% highlight mysql %}
+```sql
 REVOKE INSERT ON album TO elev
-{% endhighlight %}
+```
 
 tar bort möjligheten att lägga till poster för elev.
 
-{% highlight mysql %}
+```sql
 GRANT UPDATE(catalognumber) ON album TO elev
-{% endhighlight %}
+```
 
 ger elev rätten att ändra kolumnen catalognumber (men inte övriga kolumner)
 
-{% highlight mysql %}
+```sql
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE
 ON mytunes.* TO elev@localhost IDENTIFIED BY 'heMLiG'
-{% endhighlight %}
+```
 
 ger elev rätt att hämta poster, lägga till poster, ändra poster, ta bort poster för *alla* tabeller i databasen mytunes samt skapa nya tabeller i mytunes. Det förutsätter att elev ansluter från localhost, dvs samma dator som databashanteraren samt att lösenordet 'heMLiG' används.
 
-{% highlight mysql %}
+```sql
 GRANT SELECT ON mytunes.* TO elev@'%'
-{% endhighlight %}
+```
 
 ger elev rätt hämta data oavsett vilken dator han ansluter ifrån.
-{% highlight mysql %}
+```sql
 GRANT SELECT ON mytunes.* TO elev@'%.mah.se'
-{% endhighlight %}
+```
 
 ger elev rätt att hämta data om han ansluter från godtycklig dator inom mah.se. 
 
 **OBSERVERA:** Om man ansluter till SQL-servern via en PHP-server, är det PHP-serverns adress som är det intressanta. I exemplet ovan kan man hämta data från mytunes även från datorer utanför mah om man går via en PHP-server inom mah. 
 
-{% highlight mysql %}
+```sql
 GRANT ALL ON mytunes.* TO elev
-{% endhighlight %}
+```
 
 ger elev i stort sett alla rättigheter. 
 
-####ROLE
+#### ROLE
 
 Ofta behöver en hel grupp av användare samma rättigheter till en databas. Man kan då skapa *roller* med kommandot CREATE ROLE. En grupp kan tex vara kurssekreterare som kan ha vissa rättigheter, en annan grupp kan vara kursansvariga lärare som har andra rättigheter. Alla som tillhör en viss grupp (roll) kan då ges samma rättigheter. MySQL v 4 stöder inte roller.
 
-###SQL-injection attacks
+### SQL-injection attacks
 
 SQL-injection betyder att obehöriga användare försöker lura ett system genom att infoga SQL-kod i inmatningsfält, vanligtvis i ett webbformulär.
 
 Antag att man har ett formulär med fälten user och password. Om man i fältet password matar in texten
 
-{% highlight text %}
+```
 user:elev
 password: xxx' or 'a'='a
-{% endhighlight %}
+```
 
 Antag vidare att fälten user går vidare till PHP-variabeln $user och password går vidare till $password. Om nu detta hanteras av mottagande PHP-sida på följande vis:
 
-{% highlight php startinline=True %}
+```php
 $sql="SELECT privileges FROM security WHERE
 user='$user' and password='$password' ";
-{% endhighlight %}
+```
 
 kommer SQL-kommandot att bli
 
-{% highlight mysql %}
+```sql
 SELECT privileges FROM security WHERE
 user='elev' and password='xxx' or 'a'='a'
-{% endhighlight %}
+```
 
 Eftersom `'a'` alltid är lika med `'a'` kommer `SELECT` att hitta poster även om man angivit fel lösenord för elev, och eventuellt få rättigheter trots att man egentligen saknar det. 
 
 PHP har ett antal funktioner man kan använda för att undvika apostrofer kommer med i inmatningsfält. Bland annat kan man använda sig av *prepared statements*. Läs mer om det på sidan 123-124 i boken PHP and MySQL - Novice to Ninja. 
 
-###Säkerhet mot olämpliga inmatningar/ändringar av behöriga användare
+### Säkerhet mot olämpliga inmatningar/ändringar av behöriga användare
 
 Att skydda mot detta kan vara väl så svårt eller till och med svårare än att skydda mot intrång av obehöriga. Användare med rättighet att ändra data kan ställa till stor skada om de ändrar data på olämpligt sätt. 
 
@@ -146,7 +146,7 @@ Det finns inget generellt sätt att skydda sig mot detta, men följande försikt
 - Väl utformat gränssnitt med lämpliga varningsmeddelanden. 
 
 
-###Säkerhet vid driftstörningar, datorkrascher, strömavbrott mm
+### Säkerhet vid driftstörningar, datorkrascher, strömavbrott mm
 
 I första hand bör man naturligtvis undvika att det sker datorkrascher och strömavbrott med UPS (uninterruptable power supply) och liknande. Trots försiktighetsåtgärder kan man inte skydda sig helt mot till exempel hårdvarufel. Vissa av säkerhetsåtgärderna är de samma som tidigare, till exempel backup, men det finns några viktiga fall där man använder en teknik som kallas *transactions* eller *transaktioner*. 
 
@@ -154,15 +154,15 @@ En transaktion är en serie av SQL-kommandon som måste utföras tillsammans.
 
 **Ett klassiskt exempel:** antag att vi ska överföra pengar (785 kr) från ett konto  till ett annat. Då börjar vi med att dra pengar från ett konto:
 
-{% highlight mysql %}
+```sql
 UPDATE konto SET saldo=saldo-785 WHERE kontonr='113-335-7891';
-{% endhighlight %}
+```
 
 Sedan sätter vi in på annat konto:
 
-{% highlight mysql %}
+```sql
 UPDATE konto SET saldo=saldo+785 WHERE kontonr='113-684-4322';
-{% endhighlight %}
+```
 
 Vad händer om servern kraschar efter att vi dragit pengar men inte hunnit sätta in? Jo, pengarna försvinner helt och hållet!
 
@@ -170,11 +170,11 @@ Om en databas är inställd för att hantera transaktioner utförs inte SQL-komm
 
 Vi kan då komplettera vårt exempel:
 
-{% highlight mysql %}
+```sql
 UPDATE konto SET saldo=saldo-785 WHERE kontonr='113-335-7891';
 UPDATE konto SET saldo=saldo+785 WHERE kontonr='113-684-4322';
 COMMIT;
-{% endhighlight %}
+```
 
 Raderna är till en början transitoriska dvs de sparas inte permanent i databasen förrän man utför commit. Om servern kraschar mellan rad 1 och rad 2 kommer inga ändringar att ha sparats i databasen eftersom man inte utfört COMMIT.
 
@@ -182,15 +182,15 @@ Tidigare versioner av mysql saknade transaktioner men det finns i de senaste ver
 
 Det kan vara andra skäl till att man avbryter en transaktion än hårdvarufell. Om det visar sig efter att man dragit pengar från ett konto och det visar sig att det inte fanns tillräckligt med pengar på kontot kan man göra ROLLBACK.
 
-{% highlight mysql %}
+```sql
 UPDATE konto SET saldo=saldo-785 WHERE kontonr='113-335-7891';
 SELECT saldo FROM konto W HERE kontonr='113-335-7891';
 ROLLBACK;
-{% endhighlight %}
+```
 
 Eftersom vi här gör ROLLBACK innan vi hunnit göra COMMIT kommer inte ändringen på rad 1 att sparas.
 
-###Säkerhetshantering PHP
+### Säkerhetshantering PHP
 
 Se kapitel 9 i PHP & MySQL: Novice to Ninja. Cookies, sessions and access control.
 
@@ -198,30 +198,30 @@ Spara aldrig lösenord i klartext i tabeller. Spara kodade lösenord. Boken anv�
 
 MD5 finns både i PHP och i MySQL. 
  
-###Exploits of a Mom - Mer om SQL injection
+### Exploits of a Mom - Mer om SQL injection
 
 Antag att vi har tabellen **Students** med kolumnerna **id**, **name**, **class** och **address**:
 
-{% highlight mysql %}
+```sql
 CREATE TABLE Students (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 adress TEXT,
 class TEXT,
 name TEXT)
-{% endhighlight %}
+```
 
 Lägg till några rader:
 
-{% highlight mysql %}
+```sql
 INSERT INTO Students (adress,class,name) VALUES 
 ('4A','Bråkmakargatan 6','Lotta');
 INSERT INTO Students (adress,class,name) VALUES 
 ('3B','Lönneberga','Emil');
-{% endhighlight %}
+```
 
 Prova sedan att lägga till lille *Bobby Tables* med fullständiga namnet *Robert');DROP TABLE Students;--* med hjälp av en PHP-fil, där namnet finns i variablen $name:
 
-{% highlight php %}
+```php
 <?php
 include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
 $name="Robert');DROP TABLE Students;--";
@@ -231,6 +231,6 @@ $sql="INSERT INTO Students (adress,class,name) VALUES ('$adress','$class','$name
 $result=$pdo->exec($sql);
 echo "$name has been added";
 ?>
-{% endhighlight %}
+```
 
 Resultatet blir att tabellen Students med hela sitt innehåll försvinner!

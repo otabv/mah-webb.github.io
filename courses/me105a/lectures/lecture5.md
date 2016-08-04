@@ -59,21 +59,21 @@ Följande fyra kommandon används huvudsakligen för datamanipulation:
 
 Hämtar rader och kolumner från en eller flera tabeller genom ett antal villkor, dvs *söker* i tabeller. 
 
-{% highlight mysql %}
+```sql
 SELECT kolumner (eller * för alla) FROM tabell/er  [ WHERE villkor ]
-{% endhighlight %}
+```
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 SELECT kursnamn FROM kurser WHERE kurskod='ME105A'
-{% endhighlight %}
+```
 
 Hämtar kolumnen kursnamn från alla rader i tabellen kurser där kurskoden är ME105A
 
-{% highlight mysql %}
+```sql
 SELECT * FROM kurser
-{% endhighlight %}
+```
 
 Hämtar alla kolumner från alla rader i tabellen kurser (eftersom WHERE-villkor saknades)
 
@@ -87,10 +87,10 @@ Det går att kombinera villkor genom logiska operatorerna (AND OR NOT), samt jä
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 SELECT fornamn, efternamn FROM Studenter 
 WHERE postnummer <= 21155 AND ort = 'Malmö' OR ort = 'Lund';
-{% endhighlight %}
+```
 
 Observera apostroferna runt Malmö och Lund (text) men inte runt 21155 (heltal).
 
@@ -100,17 +100,17 @@ Observera apostroferna runt Malmö och Lund (text) men inte runt 21155 (heltal).
 
 Används för att sortera informationen
 
-{% highlight mysql %}
+```sql
 SELECT * FROM Kurser ORDER BY kurskod
-{% endhighlight %}
+```
 
 Visar all information om alla kurser sorterat i bokstavsordning/nummerordning efter kurskod.
 
 För att vända ordningen används DESC efter sorteringskolumnen; 
 
-{% highlight mysql %}
+```sql
 SELECT * FROM Kurser ORDER BY kurskod DESC;
-{% endhighlight %}
+```
 
 ---
 
@@ -118,19 +118,19 @@ SELECT * FROM Kurser ORDER BY kurskod DESC;
 
 Det finns ett antal funktioner som går att använda med SELECT;
 
-{% highlight text %}
+```
 COUNT (Räknar antalet rader)
 MIN (Returnerar det lägsta värdet i kolumnen)
 MAX (Returnerar det högsta värdet i kolumnen)
 SUM (Returnerar en summa)
 AVG (Returnerar ett medeltal)
-{% endhighlight %}
+```
 
 ---
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 SELECT COUNT(*) FROM Studenter;
 #Returnerar antalet rader i tabellen Studenter.
 
@@ -145,7 +145,7 @@ SELECT SUM(skonummer) FROM Studenter;
 
 SELECT AVG(skonummer) FROM Studenter;
 #Returnerar medelvärdet  av skonumren i tabellen Studenter.
-{% endhighlight %}
+```
 
 ---
 
@@ -158,10 +158,10 @@ BETWEEN Värde1 AND Värde2;
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 SELECT * FROM Score WHERE score 
 BETWEEN 5000 AND 10000;
-{% endhighlight %}
+```
 
 Hittar alla förekomster där poängen är mellan 5000 och 10000 inklusive 5000 och 10000.
 
@@ -176,37 +176,37 @@ Används för att negera ett villkor.
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 SELECT * FROM Account WHERE NOT Branchname='Crawley';
-{% endhighlight %}
+```
 
 ### UPDATE
 
 Används för att ändra information i tabellen.
 
-{% highlight mysql %}
+```sql
 UPDATE Tabell SET kolumnnamn = 'Nytt värde'  WHERE (villkor);
-{% endhighlight %}
+```
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 UPDATE studenter SET gatuadress = 'Amiralsgatan' 
 WHERE personnummer = '630126-2351';
-{% endhighlight %}
+```
 
 DELETE
 Används för att ta bort rader i en tabell efter vissa givna villkor.
 
-{% highlight mysql %}
+```sql
 DELETE FROM tabell WHERE villkor;
-{% endhighlight %}
+```
 
 Till exempel
 
-{% highlight mysql %}
+```sql
 DELETE FROM kurser WHERE examinator = 'Elisabeth Nilsson';
-{% endhighlight %}
+```
 
 tar bort alla rader där Elisabeth Nilsson är examinator.
 
@@ -214,9 +214,9 @@ tar bort alla rader där Elisabeth Nilsson är examinator.
 
 **Om man inte har WHERE med i**
 
-{% highlight mysql %}
+```sql
 DELETE FROM tabell
-{% endhighlight %}
+```
 
 **försvinner alla rader från tabellen!**
 
@@ -224,28 +224,28 @@ DELETE FROM tabell
 
 Används för att lägga till nya rader i databasen.
 
-{% highlight mysql %}
+```sql
 INSERT INTO tabell 
 (kolumnnamn1, kolumnnamn2) VALUES (värde1,värde2);
-{% endhighlight %}
+```
 
 Exempel:
 
 Antag att vi har en tabell *kurser* med tre kolumner, *kurskod*, *kursnamn* och *examinator*
 
-{% highlight mysql %}
+```sql
 INSERT INTO kurser 
 (kurskod, kursnamn) VALUES 
 ('ME134A', 'Webbpublicering');
-{% endhighlight %}
+```
 
 Nu skapas en ny rad i tabellen *kurser* med *kurskod* ME134A och *kursnamn* Webbpublicering men med ett tomt värde i kolumnen *examinator*.
 
-{% highlight mysql %}
+```sql
 INSERT INTO kurser 
 (kursnamn,kurskod,examinator) VALUES 
 ('ME135A', 'Webbproduktion', 'Johannes Karlsson');
-{% endhighlight %}
+```
 
 Nu skapas en ny rad i tabellen *kurser* med *kurskod* ME135A och *kursnamn* Webbproduktion och *examinator* Johannes Karlsson.
 
@@ -261,13 +261,13 @@ Används för att bygga databasens struktur
 
 Exempel:
 
-{% highlight mysql %}
+```sql
 CREATE TABLE students 
 (firstname TEXT,
 lastname TEXT,
 shoesize INT,
 id INT PRIMARY KEY NOT NULL)
-{% endhighlight %}
+```
 
 ### ALTER TABLE
 
@@ -275,16 +275,16 @@ Exempel:
 
 Lägg till en kolumnen *hp* av typen INT till tabellen kurser
 
-{% highlight mysql %}
+```sql
 ALTER TABLE kurser
 ADD hp INT
-{% endhighlight %}
+```
 
 Ändra namn på kolumnen *hp* till *hogskolepoang*:
 
-{% highlight mysql %}
+```sql
 ALTER TABLE kurser CHANGE hp hogskolepoang INT
-{% endhighlight %}
+```
 
 OBS att man måste ange gamla namnet på kolumnet, sedan nya namnet, och slutligen typen (även om man inte ändrar typen på kolumnen)
 
@@ -292,15 +292,15 @@ OBS att man måste ange gamla namnet på kolumnet, sedan nya namnet, och slutlig
 
 Tar bort en hel tabell och all data som finns i den.
 
-{% highlight sql %}
+```sql
 DROP TABLE tabellnamn
-{% endhighlight %}
+```
 
 Exempel:
 
-{% highlight sql %}
+```sql
 DROP TABLE game
-{% endhighlight %}
+```
 
 **OBS Tar bort hela tabellen game och allt som finns i den, så använd med försiktighet…**
 
