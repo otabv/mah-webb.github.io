@@ -31,7 +31,7 @@ Dagens föreläsning går igenom
 
 ---
 
-###SQL
+### SQL
 
 Står för Structured Query Language och används för att hämta, uppdatera, lägga till och radera data och tabeller från en databas.
 
@@ -43,7 +43,7 @@ Man skiljer på kommandon för *Data Manipulation* och kommandon för *Data Defi
 
 ---
 
-###Data Manipulation
+### Data Manipulation
 
 Följande fyra kommandon används huvudsakligen för datamanipulation: 
 
@@ -55,7 +55,7 @@ Följande fyra kommandon används huvudsakligen för datamanipulation:
 
 ---
 
-###SELECT
+### SELECT
 
 Hämtar rader och kolumner från en eller flera tabeller genom ett antal villkor, dvs *söker* i tabeller. 
 
@@ -81,7 +81,7 @@ I villkor används ' ' runt text, dock ej kring heltal (integers)
 
 ---
 
-###Jämförelser
+### Jämförelser
 
 Det går att kombinera villkor genom logiska operatorerna (AND OR NOT), samt jämförelse (<, >, <=, >=, <>)
 
@@ -96,7 +96,7 @@ Observera apostroferna runt Malmö och Lund (text) men inte runt 21155 (heltal).
 
 ---
 
-###ORDER BY
+### ORDER BY
 
 Används för att sortera informationen
 
@@ -114,7 +114,7 @@ SELECT * FROM Kurser ORDER BY kurskod DESC;
 
 ---
 
-###Mer om SELECT
+### Mer om SELECT
 
 Det finns ett antal funktioner som går att använda med SELECT;
 
@@ -149,7 +149,7 @@ SELECT AVG(skonummer) FROM Studenter;
 
 ---
 
-###BETWEEN ... AND ...
+### BETWEEN ... AND ...
 
 Används för att hitta värden inom ett visst intervall. Returnerar värden mellan och INKLUSIVE de angivna kriterierna.
 
@@ -165,12 +165,12 @@ BETWEEN 5000 AND 10000;
 
 Hittar alla förekomster där poängen är mellan 5000 och 10000 inklusive 5000 och 10000.
 
-###DISTINCT 
+### DISTINCT 
 Används för att inte visa dubbletter
 
 ---
 
-###NOT
+### NOT
 
 Används för att negera ett villkor.
 
@@ -180,7 +180,7 @@ Exempel:
 SELECT * FROM Account WHERE NOT Branchname='Crawley';
 {% endhighlight %}
 
-###UPDATE
+### UPDATE
 
 Används för att ändra information i tabellen.
 
@@ -220,7 +220,7 @@ DELETE FROM tabell
 
 **försvinner alla rader från tabellen!**
 
-###INSERT INTO
+### INSERT INTO
 
 Används för att lägga till nya rader i databasen.
 
@@ -249,7 +249,7 @@ INSERT INTO kurser
 
 Nu skapas en ny rad i tabellen *kurser* med *kurskod* ME135A och *kursnamn* Webbproduktion och *examinator* Johannes Karlsson.
 
-###SQL Data Definition
+### SQL Data Definition
 
 Används för att bygga databasens struktur
 
@@ -257,7 +257,7 @@ Används för att bygga databasens struktur
 - ALTER TABLE för ändra tabell, tex lägga till nya kolumner
 - DROP TABLE
 
-###CREATE TABLE
+### CREATE TABLE
 
 Exempel:
 
@@ -269,7 +269,7 @@ shoesize INT,
 id INT PRIMARY KEY NOT NULL)
 {% endhighlight %}
 
-###ALTER TABLE
+### ALTER TABLE
 
 Exempel:
 
@@ -288,17 +288,17 @@ ALTER TABLE kurser CHANGE hp hogskolepoang INT
 
 OBS att man måste ange gamla namnet på kolumnet, sedan nya namnet, och slutligen typen (även om man inte ändrar typen på kolumnen)
 
-###DROP TABLE
+### DROP TABLE
 
 Tar bort en hel tabell och all data som finns i den.
 
-{% highlight mysql %}
+{% highlight sql %}
 DROP TABLE tabellnamn
 {% endhighlight %}
 
 Exempel:
 
-{% highlight mysql %}
+{% highlight sql %}
 DROP TABLE game
 {% endhighlight %}
 
@@ -306,7 +306,7 @@ DROP TABLE game
 
 ---
 
-###Ett komplett exempel
+### Ett komplett exempel
 
 Vi kommer att använda en exempeldatabas hämtad från boken SAMS Teach Yourself SQL in 10 minutes med följande ER-diagram (attributen utelämnade). 
 
@@ -322,9 +322,9 @@ Vi kommer att använda en exempeldatabas hämtad från boken SAMS Teach Yourself
 
 ![](im5/orderitems.png)
 
-###En massa exempel:
+### En massa exempel:
 
-{% highlight mysql %}
+```mysql
 #sortering
 #sortera dyraste varor först. om två varor har samma pris 
 #sorteras de i bokstavsordning
@@ -413,5 +413,4 @@ SELECT vend_name,prod_name,prod_price
 FROM vendors INNER JOIN products 
 ON vendors.vend_id = products.vend_id;
 
-{% endhighlight %}
-
+```

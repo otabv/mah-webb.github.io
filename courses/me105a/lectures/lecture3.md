@@ -14,9 +14,9 @@ th, td {padding: 6px;}
 hr {display: none}
 </style>
 
-#Databasbaserad publicering
+# Databasbaserad publicering
 
-##Föreläsning 3
+## Föreläsning 3
 
 Dagens föreläsning går igenom **E/R-modellen**
 
@@ -39,7 +39,7 @@ En entitet kan ha olika **egenskaper**, oftast kallade **attribut**. Egenskapern
 
 ---
 
-###Exempel på E/R-diagram
+### Exempel på E/R-diagram
 
 Antag att vi vill ha en databas med telefonnummer till olika personer. Vi tänker oss att en person har endast ett nummer. Detta nummer kan inte delas av flera personer. Vi kan definerara entiteten *abonnent* som kan ha attributen nummer och namn. Ett E/R-diagram kan då få följande utseende. Attributet *nummer* är understruken eftersom det unikt kan identifiera varje entitet.
 
@@ -47,7 +47,7 @@ Antag att vi vill ha en databas med telefonnummer till olika personer. Vi tänke
 
 ---
 
-###Dåligt exempel på E/R-diagram
+### Dåligt exempel på E/R-diagram
 Antag att vi vill att varje person kan ha flera nummer. Vi kan då utöka vårt diagram tex så här:
 
 ![](im3/er2.png)
@@ -56,14 +56,14 @@ Detta är vanligtvis en **mycket dålig lösning**, eftersom det sedan är svår
 
 ---
 
-###Bättre exempel på E/R-diagram
+### Bättre exempel på E/R-diagram
 Det finns två naturliga entiteter som vi kan välja när vi ska modellera vår databas, *person* och *abonnemang*. Vi tänker oss till en början att en person kan ha flera telefonabonnemang (godtyckligt många), däremot kan inte ett abonnemang delas av flera personer. Ett E/R-diagram kan få följande utseende:
 
 ![](im3/er3.png)
 
 ---
 
-###Förhållanden (relationships)
+### Förhållanden (relationships)
 Det finns några grundläggande typer av förhållanden mellan entiteter, förhållanden av olika *ordning* (*cardinality* på engelska)
 
 - ett-till-ett
@@ -83,7 +83,7 @@ Bokstäverna M och N anger nu att vi har ett många-till-många-förhållande me
 
 ---
 
-###Relational data structures
+### Relational data structures
 Relationsdatabaser eller relational data structures är den idag vanligast förekommande typen av databaser. Det finns alternativ, tex grafdatabaser som är på stark frammarsch. För relationsdatabser gäller att **alla data sparas i tvådimensionella tabeller**.
 
 Varje tabell består av:
@@ -97,12 +97,12 @@ Varje attribut är *atomärt*, dvs kan endast innehålla ett värde.
 
 ---
 
-###Omvandling av E/R-modell till relationsdatabas
+### Omvandling av E/R-modell till relationsdatabas
 Det finns en strukturerad metod för att omvandla ett E/R-diagram till  en relationsdatabas. I stora drag går det ut på att låta varje entitet representeras av en tabell, där varje kolumn representerar ett attribut. Det krävs lite mer om man har många-till-många-förhållanden vilket vi kommer till på senare föreläsningar. 
 
 ---
 
-###Omvandling av första E/R-exemplet till relationsdatabas:
+### Omvandling av första E/R-exemplet till relationsdatabas:
 
 ![](im3/er1.png)
 
@@ -115,7 +115,7 @@ Det finns en strukturerad metod för att omvandla ett E/R-diagram till  en relat
 
 ---
 
-###Omvandling av andra E/R-exemplet (det dåliga)
+### Omvandling av andra E/R-exemplet (det dåliga)
 
 ![](im3/er2.png)
 

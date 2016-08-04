@@ -14,7 +14,7 @@ title: Föreläsning 1
 
 #### Lärare
 
-Bo Peterson och Sebastian Bengtegård
+Bo Peterson
 
 #### Webbplats
 
