@@ -26,8 +26,6 @@ Bo Peterson
 
 - Databasteknik
 - PHP & MySQL - Novice to Ninja
-- Dessutom rekommenderas: A Designers Guide to Adobe InDesign and XML
-- Följande bok har utgått från förlaget och används inte mer: Howard Goldberg, Kevin: XML:Visual QuickStart Guide, Peachpit Press Publications 2008
 
 ![](im1/books.png)
 
