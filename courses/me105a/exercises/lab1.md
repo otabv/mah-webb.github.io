@@ -9,7 +9,7 @@ title: Laboration 1
 Syfte med laborationen:
 att testa PHP-kod för att kommunicera med MySQL
 
-Redovisning: Redovisa filen index.php från uppgift 3 samt sql-koden från uppgift 4 på It's learning.
+<!--Redovisning: Redovisa filen index.php från uppgift 3 samt sql-koden från uppgift 4 på It's learning.-->
 
 Genom hela kursen kommer vi att använda samma webbserver som i Programmering för webben, <http://ddwap.mah.se>  med stöd för PHP och MySQL. För att kunna använda MySQL-delen för databaser måste först en databas skapas som sedan kan användas genom hela kursen. 
 
@@ -21,15 +21,30 @@ Gå till <http://ddwap.mah.se> och logga in.
 
 Klicka sedan MYSQL QUERY BROWSER och logga in. 
 
-**OBS 1** Ange i första hand ditt användarnamn med små bokstäver, annars kan det bli problem längre fram i kursen.
-
-**OBS 2** Om det inte funkar med små bokstäver, prova då med stora. 
+**OBS 1** Ange ditt användarnamn med små bokstäver, annars kan det bli problem längre fram i kursen.
 
 ![mysql query browser](im1/image001.png)
  
 
 ![](im1/image002.png)
  
+Om det inte funkar att logga in, prova följande:
+
+Gå till 
+
+<https://ddwap.mah.se/dotnet/create/>
+
+Ange :
+
+- ditt användarnamn
+- det lösenord du använder för att logga in på skolans datorer mm
+- valfritt nytt lösenord för databasen - detta kan vara samma som för skolans datorer, men bör vara ett annat
+- upprepa nytt lösenord för databasen
+
+Testa sedan att logga in med det nya lösenordet på 
+
+<https://ddwap.mah.se/mysqlbrowser/conn.php>
+
 Det finns nu två databaser, en som heter *information_schema*, som vi *inte* kommer att använda, och en som heter samma som ditt användarnamn, i mitt fall *k3bope*. Det är den vi kommer att använda genom hela kursen. I boken heter databasen som används *ijdb* men vi saknar rättigheter att skapa nya databaser och måste därför använda databasen med samma namn som användarnamnet. 
 
 ![](im1/image003.png)
@@ -77,19 +92,17 @@ Vi kommer att göra ungefär det som beskrivs på s. 96 och framåt i boken, “
 Vissa saker måste dock bytas ut:
 
 - Username är ert användarnamn
-- Databasens namn är inte ijdb utan ert användarnamn
+- Databasens namn är inte *ijdb* utan ert *användarnamn*
 
-PHP-filerna sparas på samma sätt som i kursen Programmering för webben. Eftersom vi nu i höst 2015 har en ny datorsal måste du göra om dina Dreamweaver-inställningar. [Instruktioner för att ställa in Dreameweaver](dwsettings2015.html). 
+PHP-filerna sparas på samma sätt som i kursen Programmering för webben. 
 
-Förhoppningsvis finns mappen ddwap kvar från föregående kurs. Skapa en ny mapp *inuti* ddwap som heter *me105a*.  Skapa dessutom en mapp i me105a som heter *lab1*. Labbens filer lägger du sedan i *ddwap/me105a/lab1*. 
+Skapa en mapp som heter *me105a*.  Skapa dessutom en mapp i me105a som heter *lab1*. Labbens filer lägger du sedan i *me105a/lab1*. 
 
-Skapa en ny php-fil i mappen ddwap/me105/lab1 som döps till index.php. Mappen ddwap måste vara den mappen som angetts som Local Site Folder i site-inställningarna i Dreamweaver:
-
-![](im1/image010.png)
+Skapa en ny php-fil i mappen *me105/lab1* som döps till *index.php*. 
 
 Testa sedan koden nedan. 
 
-{% highlight php %}
+```php
 <?php
 /* 
 steg 1: upprätta kontakt mellan php-sidan och databasen
@@ -115,16 +128,16 @@ foreach ($result as $row) {
 	echo "<br>";
 }
 ?>
-{% endhighlight %}
+```
 
 Publicera den på servern och öppna med webbläsare. Om allt funkar ska det skämt som matades in i uppgift 1 visas. 
 
 ## Uppgift 3
 Som ni ser i föregående uppgift så sparas ert lösenord i klartext i php-filen. Det gör till exempel att den som rättar er labb får tillgång till ert lösenord om ni skickar in filen som den är på it's learning. För att slippa undan är det bättre att lägga lösenordet i en separat fil som infogas med include. Denna fil kan sedan användas genom hela kursen för att ansluta till er databas. En annan brist i koden i föregående uppgift är att eventuella fel vid anslutning till databasen inte hanteras. Även felhanteringen kan läggas in den separata filen med lösenordet. 
 
-Skapa en fil som ligger direkt i katalogen me105a (alltså inte i lab1) som heter *connect.php*. Den ska innehålla följande kod (men med k3bope ersätt med ert användarnamn och xxxxxxx med ert lösenord). Filen ska bara innehålla php-kod, ingen html-kod. 
+Skapa en fil som ligger direkt i katalogen *me105a* (alltså inte i lab1) som heter *connect.php*. Den ska innehålla följande kod (men med *k3bope* ersatt med ert *användarnamn med små bokstäver* och *xxxxxxx* med ert *lösenord*). Filen ska bara innehålla php-kod, ingen html-kod. 
 
-{% highlight php %}
+```ppp
 <?php
 try 
 {
@@ -138,19 +151,19 @@ catch (Exception $e)
 	exit();
 }
 ?>
-{% endhighlight %}
+```
 
 Ersätt sedan raden 
 
-{% highlight php startinline=True %}
+```php
 $pdo=new PDO(...
-{% endhighlight %}
+```
 
 i index.php med
 
-{% highlight php startinline=True %}
+```php
 include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
-{% endhighlight %}
+```
 
 där *username* är ditt användarnamn. 
 
@@ -160,13 +173,11 @@ Testa att öppna index.php med en webbläsare. Om allt funkar ska skämtet som m
 
 ## Uppgift 4
 
-**OBS** Spara all SQL-kod du skriver i denna uppgift i ett separat textdokument. Koden ska sedan lämnas på It's learning. 
-
 Använd MySQL Query Browser för att skapa en ny tabell med SQL-kod 
 
-{% highlight sql %}
+```sql
 CREATE TABLE...
-{% endhighlight %}Tabellen ska heta *contacts* och ha följande kolumner:
+```Tabellen ska heta *contacts* och ha följande kolumner:
 
 - id (med auto increment)
 - firstname
@@ -175,7 +186,3 @@ CREATE TABLE...
 
 Lägg sedan till ett namn och epostadress till tabellen. 
 
-Lämna in på it's learning:
-
-- sql-kod för att skapa tabell
-- sql-kod för att lägga till namn till tabellen
