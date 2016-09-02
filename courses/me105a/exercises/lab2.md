@@ -42,7 +42,7 @@ precis som i laboration 1 för att ansluta till databasen.
 
 
 ## Uppgift 1
-Skapa ett formulär, *index.html* i mappen */ddwap/me105a/lab2/uppgift1/* där man ska kunna lägga till nya skämt. 
+Skapa ett formulär, *index.html* i mappen *me105a/lab2/uppgift1/* där man ska kunna lägga till nya skämt. 
 
 ![](im2/image007.png)
 
