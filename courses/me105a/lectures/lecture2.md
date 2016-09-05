@@ -239,7 +239,7 @@ INSERT INTO animals (animal,color) VALUES ('elephant','pink');
 
 #### add.php
 
-```html
+```php
 <!doctype html>
 <html>
 <head>
@@ -273,109 +273,4 @@ echo "$animal med färgen $color har lagts till i tabellen";
 </body>
 </html>
 ```
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-#### test.php html (strunta i detta, enbart för att testa)
-
-```html
-<!doctype html>
-<html>
-<head>
-<title>Untitled Document</title>
-</head>
-<body>
-
-<?php
-$animal=$_POST['animal'];
-?>
-</body>
-</html>
-```
-
-#### test.php php (strunta i detta, enbart för att testa)
-
-```php
-<!doctype html>
-<html>
-<head>
-<title>Untitled Document</title>
-</head>
-<body>
-
-<?php
-$animal=$_POST['animal'];
-?>
-</body>
-</html>
-```
-
-#### test.php php+html (strunta i detta, enbart för att testa)
-
-```php+html
-<!doctype html>
-<html>
-<head>
-<title>Untitled Document</title>
-</head>
-<body>
-
-<?php
-$animal=$_POST['animal'];
-?>
-</body>
-</html>
-```
-
-#### test.php html+php (strunta i detta, enbart för att testa)
-
-```html+php
-<!doctype html>
-<html>
-<head>
-<title>Untitled Document</title>
-</head>
-<body>
-
-<?php
-$animal=$_POST['animal'];
-?>
-</body>
-</html>
-```
-
 
