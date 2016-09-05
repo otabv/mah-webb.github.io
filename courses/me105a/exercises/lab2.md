@@ -15,7 +15,7 @@ Läs kapitel 4 till och med sidan 118 i boken "PHP & MySQL - Novice to Ninja"
 
 ### Redovisning:
 
-Redovisa endast uppgift 3, 4 och 5. Både **php-kod**, samt **ddwap-länk** till uppgifterna lämnas in på <https://peergrade.io>.
+Redovisa endast uppgift 3, 4 och 5. Både **php-kod**, samt **ddwap-länk** till uppgifterna lämnas in på <http://peergrade.io>.
 
 ### Introduktion
 
