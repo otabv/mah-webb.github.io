@@ -6,7 +6,7 @@ controls: false
 theme: bopeterson/cleaver-lecture
 ---
 
-{::options parse_block_html="true" /}
+{::options parse_block_html="false" /}
 <div>
 <img id="myImage" src="im2/elephant.png">
 <script>
