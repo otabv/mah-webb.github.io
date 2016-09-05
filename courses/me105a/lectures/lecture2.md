@@ -23,7 +23,7 @@ function vanish() {
 	this.style.visibility='hidden';}
 function moveRight(){
     left = parseInt(imgObj.style.left);
-    imgObj.style.left = (left + 3) + 'px';
+    imgObj.style.left = (left + 2) + 'px';
     setTimeout(function(){moveRight();},10); 
     if (left>window.innerWidth+50) {
         imgObj.style.left = '-300px'; 
@@ -35,7 +35,7 @@ init();
 </div>
 
 
-# xDatabasbaserad publicering
+# Databasbaserad publicering
 
 ## Föreläsning 2
 
