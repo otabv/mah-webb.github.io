@@ -30,6 +30,7 @@ function moveRight(){
     }    
 }
 window.onload = function() {init();};
+init();
 </script>
 </div>
 
