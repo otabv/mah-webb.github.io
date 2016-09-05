@@ -10,10 +10,14 @@ Syfte med laborationen:
 att göra använda PHP för att ta hand om data från formulär och kommunicera med en MySQL-databas. 
 
 ### Förberedelser:
+
 Läs kapitel 4 till och med sidan 118 i boken "PHP & MySQL - Novice to Ninja"
 
 ### Redovisning:
-Redovisa alla PHP-filer du skapat under labben på It's learning.
+
+Redovisa endast uppgift 3, 4 och 5. Både **php-kod**, samt **ddwap-länk** till uppgifterna lämnas in på <https://peergrade.io>.
+
+### Introduktion
 
 Uppgiften går ut på att fortsätta med joke-tabellen som skapades i labb 1 men nu ska vi istället skriva egna formulär för att kommunicera med tabellen. 
 
@@ -42,6 +46,7 @@ precis som i laboration 1 för att ansluta till databasen.
 
 
 ## Uppgift 1
+
 Skapa ett formulär, *index.html* i mappen *me105a/lab2/uppgift1/* där man ska kunna lägga till nya skämt. 
 
 ![](im2/image007.png)
@@ -54,6 +59,7 @@ Formuläret ska leda vidare till sidan *add.php* som lägger till skämtet i tab
 
 
 ## Uppgift 2
+
 Komplettera uppgift 1 så att sidan med formuläret även visar alla tidigare skämt. Sidan med formuläret måste nu vara en PHP-sida istället för HTML. Döp filen till *index.php* och lägg i */ddwap/me105a/lab2/uppgift2/*
 
 ![](im2/image011.png)
