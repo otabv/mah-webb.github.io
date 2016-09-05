@@ -60,7 +60,7 @@ Formuläret ska leda vidare till sidan *add.php* som lägger till skämtet i tab
 
 ## Uppgift 2
 
-Komplettera uppgift 1 så att sidan med formuläret även visar alla tidigare skämt. Sidan med formuläret måste nu vara en PHP-sida istället för HTML. Döp filen till *index.php* och lägg i */ddwap/me105a/lab2/uppgift2/*
+Komplettera uppgift 1 så att sidan med formuläret även visar alla tidigare skämt. Sidan med formuläret måste nu vara en PHP-sida istället för HTML. Döp filen till *index.php* och lägg i *me105a/lab2/uppgift2/*
 
 ![](im2/image011.png)
 
