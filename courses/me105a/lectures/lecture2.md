@@ -14,7 +14,7 @@ var left=0, imgObj=null;
 function init(){
    imgObj = document.getElementById('myImage');
    imgObj.style.position= 'absolute';
-   imgObj.style.top = window.innerHeight+450+'px';
+   imgObj.style.top = '1500px';//'window.innerHeight+450+'px';
    imgObj.style.left = '-300px';
    moveRight();
    imgObj.addEventListener("click", vanish);
