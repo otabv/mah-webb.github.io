@@ -214,3 +214,62 @@ INSERT INTO animals (animal,color) VALUES ('elephant','pink');
 {% endhighlight %}
 
 
+### Kodexempel från föreläsning 2016-09-05
+
+#### form.html
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form method='post' action='add.php'>
+<input type='text' name='animal'> Djur <br>
+<input type='text' name='color'> Färg <br>
+<input type='submit' value='Lägg till'> 
+</form>
+
+</body>
+</html>
+```
+
+#### add.php
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<?php
+//första steget är att ansluta till databasen
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+//nästa steg: hämta data från formulär
+
+$animal=$_POST['animal'];
+$color=$_POST['color'];
+
+//nu ska vi skapa sql-kod
+$sql="INSERT INTO animals (animal,color) VALUES ('$animal','$color')";
+//nu måste vi skicka denna sql-kod till databasen
+//det kan man göra med $pdo->exec eller $pdo->query
+//exec används oftast när man ska lägga till någonting (tex INSERT)
+//medan query används när man hämtar någonting (tex SELECT)
+$result=$pdo->exec($sql);
+
+echo "$animal med färgen $color har lagts till i tabellen";
+
+</body>
+</html>
+
+?>
+```
