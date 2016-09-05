@@ -6,6 +6,33 @@ controls: false
 theme: bopeterson/cleaver-lecture
 ---
 
+<img id="myImage" src="im2/elephant.png">
+<script>
+var left=0, imgObj=null;
+function init(){
+   imgObj = document.getElementById('myImage');
+   imgObj.style.position= 'absolute';
+   imgObj.style.top = window.innerHeight+150+'px';
+   imgObj.style.left = '-300px';
+   moveRight();
+   imgObj.addEventListener("click", vanish);
+}
+function vanish() {
+	this.style.visibility='hidden';}
+
+function moveRight(){
+    left = parseInt(imgObj.style.left);
+    imgObj.style.left = (left + 3) + 'px';
+    setTimeout(function(){moveRight();},10); 
+    if (left>window.innerWidth+50) {
+        imgObj.style.left = '-300px'; 
+    }    
+}
+window.onload = function() {init();};
+</script>
+
+
+
 # Databasbaserad publicering
 
 ## Föreläsning 2
