@@ -6,6 +6,8 @@ controls: false
 theme: bopeterson/cleaver-lecture
 ---
 
+{::options parse_block_html="true" /}
+<div>
 <img id="myImage" src="im2/elephant.png">
 <script>
 var left=0, imgObj=null;
@@ -29,7 +31,7 @@ function moveRight(){
 }
 window.onload = function() {init();};
 </script>
-
+</div>
 
 
 # Databasbaserad publicering
