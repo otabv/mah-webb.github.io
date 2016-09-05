@@ -19,7 +19,6 @@ function init(){
 }
 function vanish() {
 	this.style.visibility='hidden';}
-
 function moveRight(){
     left = parseInt(imgObj.style.left);
     imgObj.style.left = (left + 3) + 'px';
