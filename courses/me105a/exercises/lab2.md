@@ -15,7 +15,18 @@ Läs kapitel 4 till och med sidan 118 i boken "PHP & MySQL - Novice to Ninja"
 
 ### Redovisning:
 
-Redovisa endast uppgift 3, 4 och 5. Både **php-kod**, samt **ddwap-länk** till uppgifterna lämnas in på <http://peergrade.io>.
+Redovisa uppgift 3, 4 och 5 på <http://peergrade.io>.
+
+Lämna in ett ziparkiv döpt till **lab2.zip** som innehåller följande filer:
+
+- En textfil, **links.txt**, som innehåller **ddwap-länkar** till: 
+    - formuläret för att lägga till nytt skämt, uppgift 3
+    - formuläret för att lägga till ny kontakt, uppgift 4
+    - sidan showall.php, uppgift 5
+- Uppgift 3: html-sidan med formulär och php-sidan som tar emot formuläret
+- Uppgift 4: html-sidan med formulär och php-sidan som tar emot formuläret
+- Uppgift 5: showall.php
+
 
 ### Introduktion
 
