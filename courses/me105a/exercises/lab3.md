@@ -8,6 +8,17 @@ title: Laboration 3
 
 Syftet med laborationen är att komplettera joke-databasen så att den även kan hantera vem som som matat in skämten. **OBS** I uppgift 1-3 hanterar vi databasen direkt med SQL-kommandon i MySQL Query Browser. I uppgift 4 använder vi istället PHP-kod.
 
+## Redovisning
+
+Redovisa uppgift 4, 5 och 6 på <http://peergrade.io>.
+
+Lämna in ett ziparkiv döpt till **lab3.zip** som innehåller följande filer:
+
+- Uppgift 4: php-sidorna authorform.php och authoradded.php samt en textfil links.txt med ddwap-länk till authorform.php
+- Uppgift 5: skiss av E/R-diagram, handritad eller digitalt framställd
+- Uppgift 6: skiss av E/R-diagram, handritad eller digitalt framställd
+
+
 ## Uppgift 1
 
 Gå in på ddwap.mah.se, Manage files, och sedan MySQL Query Browser. Komplettera tabellen joke med en kolumn för **authorname** och en kolumn för **authoremail** enligt s 143 i boken. 
@@ -55,7 +66,7 @@ UPDATE joke SET authorid=1
 
 ## Uppgift 4
 
-I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabellen. Gör nu sidor på samma sätt för att lägga till name och email i authortabellen. Gör en sida *authorform.php* som leder vidare till *authoradded.php*. Lägg sidorna i */ddwap/me105a/lab3/uppgift4/*
+I förra labben gjorde vi php-sidor för att lägga till ett skämt i joke-tabellen. Gör nu sidor på samma sätt för att lägga till name och email i authortabellen. Gör en sida *authorform.php* som leder vidare till *authoradded.php*. Lägg sidorna i */me105a/lab3/uppgift4/*
 
 ![](im3/add.png)
 
