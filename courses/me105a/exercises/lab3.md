@@ -21,7 +21,7 @@ Lämna in ett ziparkiv döpt till **lab3.zip** som innehåller följande filer:
 
 ## Uppgift 1
 
-Gå in på ddwap.mah.se, Manage files, och sedan MySQL Query Browser. Komplettera tabellen joke med en kolumn för **authorname** och en kolumn för **authoremail** enligt s 143 i boken. 
+Gå in på ddwap.mah.se och sedan MySQL Query Browser. Komplettera tabellen joke med en kolumn för **authorname** och en kolumn för **authoremail** enligt s 143 i boken. 
 
 Lägg sedan till några namn och epostadresser. Utgå från följande exempel
 
