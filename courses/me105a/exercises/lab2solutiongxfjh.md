@@ -99,4 +99,4 @@ Gör en sida *showall.php* som visar alla namn och e-postadresser som finns i ta
 
 ## Uppgift 6 (frivillig)
 
-Komplettera uppgift 4 så att epost-adressen endast läggs till i tabellen om den innehåller ett @-tecken. Tips: använd php-funktionen [strpos](http://php.net/manual/en/function.strpos.php) för att testa om @-tecknet finns med.
+Komplettera uppgift 4 så att epost-adressen endast läggs till i tabellen om den innehåller ett @-tecken. Tips: använd php-funktionen [strpos](http://php.net/manual/en/function.strpos.php) för att testa om @-tecknet finns med. 
