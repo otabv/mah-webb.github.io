@@ -1,102 +1,309 @@
 ---
 layout: instructions
 code: me105a
-title: Laboration 2
+title: Laboration 2 lösning
 ---
 
-# Laboration 2
-
-Syfte med laborationen:
-att göra använda PHP för att ta hand om data från formulär och kommunicera med en MySQL-databas. 
-
-### Förberedelser:
-
-Läs kapitel 4 till och med sidan 118 i boken "PHP & MySQL - Novice to Ninja"
-
-### Redovisning:
-
-Redovisa uppgift 3, 4 och 5 på <http://peergrade.io>.
-
-Lämna in ett ziparkiv döpt till **lab2.zip** som innehåller följande filer:
-
-- En textfil, **links.txt**, som innehåller **ddwap-länkar** till: 
-    - formuläret för att lägga till nytt skämt, uppgift 3
-    - formuläret för att lägga till ny kontakt, uppgift 4
-    - sidan showall.php, uppgift 5
-- Uppgift 3: html-sidan med formulär och php-sidan som tar emot formuläret
-- Uppgift 4: html-sidan med formulär och php-sidan som tar emot formuläret
-- Uppgift 5: showall.php
-
-
-### Introduktion
-
-Uppgiften går ut på att fortsätta med joke-tabellen som skapades i labb 1 men nu ska vi istället skriva egna formulär för att kommunicera med tabellen. 
-
-I stora drag kan instruktionerna i kapitel 4 följas men vissa saker måste ändras.
-
-- Username är samma användarnamn som ni använder för att logga in
-- Databasens namn är inte *ijdb* utan ert *användarnamn*
-- För att inte ert lösenord ska synas lägger vi det i en egen fil som hämtas in vid behov på samma sätt som i laboration 1. 
-- Vi kommer att göra sökning i databas något förenklat jämfört med avsnittet *Handling SELECT Results*. I boken används include-filer, en while-loop och en foreach-loop. Vi kommer endast att använda en foreach-loop som i laboration 1. 
- 
-Om det i boken står 
-
-{% highlight php startinline=True %}
-$pdo=new PDO('mysqli:host=localhost;dbname=ijdb','ijdbuser','mypassword');
-{% endhighlight %}
-
-så skriver vi istället
-
-{% highlight php startinline=True %}
-//ersätt username med ditt användarnamn
-include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
-{% endhighlight %}
-
-precis som i laboration 1 för att ansluta till databasen. 
-
-
-
-## Uppgift 1
-
-Skapa ett formulär, *index.html* i mappen *me105a/lab2/uppgift1/* där man ska kunna lägga till nya skämt. 
-
-![](im2/image007.png)
-
-
-
-Formuläret ska leda vidare till sidan *add.php* som lägger till skämtet i tabellen *joke* i databasen och meddelar att det är gjort. Dagens datum i formatet åååå-mm-dd ska automatiskt läggas till i tabellen (jämför laboration 1 i grundkursen Programmering för webben)
-
-![](im2/image009.png)
-
-
-## Uppgift 2
-
-Komplettera uppgift 1 så att sidan med formuläret även visar alla tidigare skämt. Sidan med formuläret måste nu vara en PHP-sida istället för HTML. Döp filen till *index.php* och lägg i *me105a/lab2/uppgift2/*
-
-![](im2/image011.png)
-
-Har du glömt hur man visar sökresultatet ur tabellen? Se laboration 1. 
+# Laboration 2 lösning
 
 ## Uppgift 3
 
-Det kan bli problem om man matar in html-taggar i formuläret i uppgift 1 och 2. Om man gör följande inmatning
+Se även index_alt2.php nedan där index och add slagits ihop till en sida. 
 
-![](im2/htmlinject.png)
+### index.php
 
-blir resultatet
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 3</title>
+</head>
+<body>
+<h2>Add a joke</h2>
+<form method="post" action="add.php">
+<textarea name="joketext"></textarea><br>
+<!--textarea är att föredra, men man kan även ha input type=text -->
+<input type="submit" value="Add">
+</form>
 
-![](im2/htmlinjectresult.png)
+<h2>All jokes</h2>
+<?php
+//anslut till databasen - ersätt k3bope med ert eget användarnamn
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
 
-Modifiera uppgift 2 så att sidan som tar emot skämtet och lägger till det i databasen tar hand om eventuell html-kod i formulärinmatningen. 
+$sql='SELECT * FROM joke';
+$result=$pdo->query($sql); //här funkar *inte* exec eftersom vi hämtar från databasen
+
+//loopa igenom resultatet
+foreach ($result as $row) {
+    //variabeln $row innehåller alla kolumner i aktuell rad
+	//hämta kolumnen joketext ur aktuell rad
+    $joketext=$row['joketext'];
+	echo "<p>$joketext</p>"; //istället för <p> kan <br> användas för att åtskilja de olika skämten
+}
+?>
+
+</body>
+</html>
+```
+
+### add.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 3</title>
+</head>
+<body>
+<?php
+//anslut till databasen - ersätt k3bope med ert eget användarnamn
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+//kolla vilket skämt som matats in i formuläret
+$joketext=htmlspecialchars($_POST['joketext'],ENT_QUOTES,'UTF-8');
+
+//lägg dagens datum i formatet åååå-mm-dd i variabeln $date
+$jokedate=date('Y-m-d');
+
+//skapa SQL-kod för att lägga till $joketext och $jokedate
+//OBS att man förs måste definiera variabeln $sql och sedan $pdo->... för 
+//att SQL-frågan ska utföras. 
+$sql="INSERT INTO joke (joketext,jokedate) VALUES ('$joketext','$jokedate')";
+$result=$pdo->query($sql); //även $result=$pdo->exec($sql); fungerar för att lägga till i en tabell
+
+//Ge ett bekräftande meddelande. Har används en echo-rad för att
+//skriva hela meddelandet. Detta kan också delas up i flera rader. 
+echo "<p>This joke:</p><p>$joketext</p><p>has been added ($jokedate)</p>";
+?>
+</body>
+</html>
+```
+
+### index_alt2.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 3, alternativ 2</title>
+</head>
+<body>
+<h2>Add a joke</h2>
+<form method="post" action=""><!--formuläret leder till sig självt-->
+<textarea name="joketext"></textarea><br>
+<!--textarea är att föredra, men man kan även ha input type=text -->
+<input type="submit" value="Add">
+</form>
+
+<?php
+//här är ett alternativ där index.php och add.php har slagits ihop
+//till en sida med både formulär, kod för att lägga till i databas
+//och kod för att visa alla skämt
+
+//anslut till databasen - ersätt k3bope med ert eget användarnamn
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+//kolla om vi kommer till denna sida direkt (då ska inget skämt läggas till)
+//eller om vi kommer hit genom att klickat "add" i formuläret.
+//isåfall finns $_POST['joketext'] och koden för att lägga till nytt skämt
+//kommer att köras. 
+if (isset($_POST['joketext'])) {
+    //kolla vilket skämt som matats in i formuläret
+    $joketext=htmlspecialchars($_POST['joketext'],ENT_QUOTES,'UTF-8');
+
+    //lägg dagens datum i formatet åååå-mm-dd i variabeln $date
+    $jokedate=date('Y-m-d');
+
+    //skapa SQL-kod för att lägga till $joketext och $jokedate
+    //OBS att man förs måste definiera variabeln $sql och sedan $pdo->... för 
+    //att SQL-frågan ska utföras. 
+    $sql="INSERT INTO joke (joketext,jokedate) VALUES ('$joketext','$jokedate')";
+    $result=$pdo->query($sql); //även $result=$pdo->exec($sql); fungerar för att lägga till i en tabell
+
+    //Ge ett bekräftande meddelande.
+    echo "<h2>New joke</h2>"; 
+    echo "<p>This joke:</p><p>$joketext</p><p>has been added ($jokedate)</p>";
+}
+
+$sql='SELECT * FROM joke';
+$result=$pdo->query($sql); //här funkar *inte* exec eftersom vi hämtar från databasen
+
+echo "<h2>All jokes</h2>";
+//loopa igenom resultatet
+foreach ($result as $row) {
+    //variabeln $row innehåller alla kolumner i aktuell rad
+	//hämta kolumnen joketext ur aktuell rad
+    $joketext=$row['joketext'];
+	echo "<p>$joketext</p>"; //istället för <p> kan <br> användas för att åtskilja de olika skämten
+}
+?>
+
+</body>
+</html>
+```
 
 ## Uppgift 4
 
-I förra labben skapades även tabellen *contacts*. Gör ett formulär och en svarssida där du kan mata in namn och e-post. 
+### index.html
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 4</title>
+</head>
+<body>
+<h2>Lägg till en kontakt</h2>
+<form method="post" action="add.php">
+<input type="text" name="firstname"> Förnamn<br>
+<input type="text" name="lastname"> Efternamn<br>
+<input type="email" name="email"> E-post<br>
+<input type="submit" value="Lägg till">
+</form>
+</body>
+</html>
+```
+
+### add.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 4</title>
+</head>
+<body>
+<?php
+//anslut till databasen - ersätt k3bope med ert eget användarnamn
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+//kolla vilken adress som matats in i formuläret, ta hand om specialtecken
+$firstname=htmlspecialchars($_POST['firstname'],ENT_QUOTES,'UTF-8');
+$lastname=htmlspecialchars($_POST['lastname'],ENT_QUOTES,'UTF-8');
+$email=htmlspecialchars($_POST['email'],ENT_QUOTES,'UTF-8');
+
+//skapa SQL-kod för att lägga till namn och epost
+//OBS att man förs måste definiera variabeln $sql och sedan $pdo->... för 
+//att SQL-frågan ska utföras. 
+$sql="INSERT INTO contacts (firstname,lastname,email) VALUES ('$firstname','$lastname','$email')";
+$result=$pdo->query($sql); //även $result=$pdo->exec($sql); fungerar för att lägga till i en tabell
+
+//Ge ett bekräftande meddelande. 
+echo "<p>$firstname $lastname</p><p>har lagts till.</p>";
+?>
+</body>
+</html>
+```
 
 ## Uppgift 5
 
-Gör en sida *showall.php* som visar alla namn och e-postadresser som finns i tabellen *contacts*. 
+### showall.php
 
-## Uppgift 6 (frivillig)
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 5</title>
+</head>
+<body>
+<h2>Kontakter</h2>
 
-Komplettera uppgift 4 så att epost-adressen endast läggs till i tabellen om den innehåller ett @-tecken. Tips: använd php-funktionen [strpos](http://php.net/manual/en/function.strpos.php) för att testa om @-tecknet finns med. 
+<?php
+//anslut till databasen - ersätt k3bope med ert eget användarnamn
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+//sök alla kontakter
+$sql='SELECT * FROM contacts';
+$result=$pdo->query($sql); //här funkar *inte* exec eftersom vi hämtar från databasen
+
+echo "<h2>Alternativ 1</h2>";
+
+//loopa igenom resultatet
+foreach ($result as $row) {
+    //variabeln $row innehåller alla kolumner i aktuell rad
+    $firstname=$row['firstname'];
+    $lastname=$row['lastname'];
+    $email=$row['email'];
+    echo "$firstname $lastname $email";
+}
+
+//samma sak fast i en html-tabell istället
+
+//sök alla kontakter
+$sql='SELECT * FROM contacts';
+$result=$pdo->query($sql); //här funkar *inte* exec eftersom vi hämtar från databasen
+
+echo "<h2>Alternativ 2</h2>";
+
+echo "<table border='0' cellpadding='2'>"; //table-tag före loopen
+//loopa igenom resultatet
+foreach ($result as $row) {
+    //variabeln $row innehåller alla kolumner i aktuell rad
+    $firstname=$row['firstname'];
+    $lastname=$row['lastname'];
+    $email=$row['email'];
+    echo "<tr>"; //rad-tag före en rad
+    echo "<td>$firstname</td>"; //kolumn-tag före och efter varje kolumn
+    echo "<td>$lastname</td>"; //kolumn-tag före och efter varje kolumn
+    echo "<td>$email</td>"; //kolumn-tag före och efter varje kolumn
+    echo "</tr>"; //slut-tag efter en rad
+}
+echo "</table>"; //slut-tag för tabellen efter loopen
+?>
+
+</body>
+</html>
+```
+
+## Uppgift 6
+
+Lösningen fungerar men om man matar in felaktig epostadress måste man börja om med hela formuläret igen. Bättre är att använda javascript direkt vid inmatning, se exempel på <http://www.w3resource.com/javascript/form/email-validation.php>
+
+### add.php
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Laboration 2, uppgift 6</title>
+</head>
+<body>
+<?php
+//anslut till databasen - ersätt k3bope med ert eget användarnamn
+include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+
+//kolla vilken adress som matats in i formuläret, ta hand om specialtecken
+$firstname=htmlspecialchars($_POST['firstname'],ENT_QUOTES,'UTF-8');
+$lastname=htmlspecialchars($_POST['lastname'],ENT_QUOTES,'UTF-8');
+$email=htmlspecialchars($_POST['email'],ENT_QUOTES,'UTF-8');
+
+//kolla om $email innehåller @
+
+if (strpos($email,"@")===false) {
+    echo "E-postadressen är ogiltig, <a href='index.html'>försök igen</a>";
+} else {
+    //skapa SQL-kod för att lägga till namn och epost
+    //OBS att man förs måste definiera variabeln $sql och sedan $pdo->... för 
+    //att SQL-frågan ska utföras. 
+    $sql="INSERT INTO contacts (firstname,lastname,email) VALUES ('$firstname','$lastname','$email')";
+    $result=$pdo->query($sql); //även $result=$pdo->exec($sql); fungerar för att lägga till i en tabell
+
+    //Ge ett bekräftande meddelande. 
+    echo "<p>$firstname $lastname</p><p>har lagts till.</p>";    
+}
+
+?>
+</body>
+</html>
+```
+
+
+
