@@ -8,6 +8,19 @@ title: Laboration 4
 
 I laboration 2 gjorde vi ett formulär för att lägga till skämt i joke-tabellen och i laboration 3 gjorde vi formulär för att lägga till författare i author-tabellen. Nu ska vi knyta ihop dessa formulär.
 
+## Redovisning
+
+Lämna in ett ziparkiv döpt till **lab4.zip** som innehåller följande filer:
+
+- en textfil, **links.txt**, som innehåller länkar till 
+    - index.php i uppgift 2
+    - showalljokes.php i uppgift 5
+ - en textfil **usability.txt** som innehåller dina tankar om användbarheten i uppgift 2 
+ - en textfil **sql.txt** som innehåller sql-kod från uppgift 3 och 4
+ - alla php-filer från uppgift 1
+ - alla php-filer från uppgift 2
+ - alla php-filer från uppgift 5
+
 ## Uppgift 1
 
 **Joke**-tabellen har nu följande struktur:
@@ -42,9 +55,9 @@ Detta kräver en sökning i author-tabellen, och varje rad i dropdown-meny skapa
 </select>
 {% endhighlight %}
 
-## Uppgift 2a
+## Uppgift 2
 
-Lägg till en länk add new author som leder till formulär för att lägga till author.
+Lägg till en länk **add new author** i index.php från uppgift 1, som leder till ett formulär för att lägga till ny author.
 
 ![](im4/droppedImage-28.png)
 
@@ -58,9 +71,7 @@ Sidan *authoradded.php* ska ha en länk tillbaka till *index.php* så att man ka
 
 Nu finns ett komplett system för att lägga till författare och skämt och koppla dem till varandra. 
 
-## Uppgift 2b
-
-Fundera över systemets användbarhet. Vad händer om matat in ett skämt, upptäcker att författaren inte finns i menyn, klickar *add new author* och sedan tillbaka till formuläret för att lägga till skämt. Lämna kortfattat in dina tankar om detta på It's learning.  
+Fundera även över systemets användbarhet. Vad händer om matat in ett skämt, upptäcker att författaren inte finns i menyn, klickar *add new author* och sedan tillbaka till formuläret för att lägga till skämt. Lämna kortfattat in dina tankar om detta på Peergrade.io.  
 
 ## Uppgift 3
 
@@ -72,11 +83,11 @@ Ange SQL-kod för att söka samtliga skämt med författare och vem som är för
 SELECT * FROM joke INNER JOIN author ON komplettera här med lämplig fortsättning 
 {% endhighlight %}
 
-för att göra sökningen. Redovisa SQL-koden på It's learning. 
+för att göra sökningen. Redovisa SQL-koden. 
 
 ## Uppgift 4
 
-Använd sedan INNER JOIN för att  söka alla skämt i joketabellen som  har ditt eget namn som författare. Redovisa korrekt SQL-kod för detta på it's learning. 
+Använd sedan INNER JOIN för att  söka alla skämt i joketabellen som  har ditt eget namn som författare. Redovisa korrekt SQL-kod för detta. 
 
 ## Uppgift 5
 
