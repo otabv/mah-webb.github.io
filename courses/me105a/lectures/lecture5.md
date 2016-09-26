@@ -89,7 +89,7 @@ Exempel:
 
 ```sql
 SELECT fornamn, efternamn FROM Studenter 
-WHERE postnummer <= 21155 AND ort = 'Malmö' OR ort = 'Lund';
+WHERE (postnummer <= 21155 AND ort = 'Malmö') OR (ort = 'Lund');
 ```
 
 Observera apostroferna runt Malmö och Lund (text) men inte runt 21155 (heltal).
@@ -195,7 +195,8 @@ UPDATE studenter SET gatuadress = 'Amiralsgatan'
 WHERE personnummer = '630126-2351';
 ```
 
-DELETE
+### DELETE
+
 Används för att ta bort rader i en tabell efter vissa givna villkor.
 
 ```sql
