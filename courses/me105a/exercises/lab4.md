@@ -17,8 +17,8 @@ Lämna in ett ziparkiv döpt till **lab4.zip** som innehåller följande filer:
     - showalljokes.php i uppgift 5
  - en textfil **usability.txt** som innehåller dina tankar om användbarheten i uppgift 2 
  - en textfil **sql.txt** som innehåller sql-kod från uppgift 3 och 4
- - alla php-filer från uppgift 1
- - alla php-filer från uppgift 2
+ - alla php-filer från uppgift 1 <!-- behövs egentligen inte, kommer sedan i upp 2-->
+ - alla html- och php-filer från uppgift 2
  - alla php-filer från uppgift 5
 
 ## Uppgift 1
@@ -61,7 +61,7 @@ Lägg till en länk **add new author** i index.php från uppgift 1, som leder ti
 
 ![](im4/droppedImage-28.png)
 
-Länken add new author ska leda till sidan *autorform.html* som in sin tur leder till sidan *authoradded.php* som tar emot data från formuläret och lägger in i tabellen author.
+Länken add new author ska leda till sidan *authorform.html* som in sin tur leder till sidan *authoradded.php* som tar emot data från formuläret och lägger in i tabellen author.
 
 ![](im4/droppedImage-31.png)
 
