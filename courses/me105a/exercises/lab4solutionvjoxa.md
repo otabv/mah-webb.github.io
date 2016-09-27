@@ -30,7 +30,7 @@ Filerna *index.php*  samt *add.php* är identiska med samma filer i uppgift 2, f
 <?php
 //kod för drop-down-meny
 //anslut till databasen
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
 //sök alla författare
 $sql='SELECT * FROM author';
 $result=$pdo->query($sql);
@@ -66,7 +66,7 @@ foreach ($result as $row) {
 <h1>Joke added</h1>
 <?php
 //anslut till databasen
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
 
 //hämta data från formuläret
 $joketext=$_POST['joketext'];
@@ -120,8 +120,8 @@ echo "$joketext has been added.";
 //första steget är att ta hand om data från formuläret
 $name=$_POST['name'];
 $email=$_POST['email'];
-//anslut till databasen - ersätt k3bope med ert eget användarnamn
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+//anslut till databasen
+include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
 
 $sql="INSERT INTO author 
 (name,email) VALUES
@@ -162,7 +162,7 @@ SELECT joketext,name FROM joke INNER JOIN author ON joke.authorid = author.id
 Lägg till WHERE ... efter SQL-koden från förra uppgiften:
 
 ```sql
-SELECT * FROM joke INNER JOIN author ON joke.authorid = author.id WHERE name = 'ditt eget namn'
+SELECT joketext,name FROM joke INNER JOIN author ON joke.authorid = author.id WHERE name = 'ditt eget namn'
 ```
 
 ## Uppgift 5
@@ -179,7 +179,7 @@ SELECT * FROM joke INNER JOIN author ON joke.authorid = author.id WHERE name = '
 <body>
 <h1>Alla skämt</h1>
 <?php
-include $_SERVER['DOCUMENT_ROOT'].'/k3bope/me105a/connect.php';
+include $_SERVER['DOCUMENT_ROOT'].'/username/me105a/connect.php';
 
 echo "<h2>Alternativ 1, med tabell</h2>";
 $sql='SELECT joketext,name FROM joke INNER JOIN author ON joke.authorid=author.id';
