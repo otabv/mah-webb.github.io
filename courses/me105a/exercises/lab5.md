@@ -52,7 +52,7 @@ item_price | DECIMAL(8,2)**OBS** att orderitems har två kolumner som tillsamm
 - Lämna även in namn på kunden som gjorde ordern. ## Uppgift 6Visa en lista över ordernummer på alla beställningar som Village Toys gjort.- Lämna in SQL-kod på Peergrade.
 - Lämna även in en lista över de ordernummer som hittades. ## Uppgift 7Hur många ordrar har Village Toys gjort?- Lämna in SQL-kod på Peergrade.
 - Ange även hur många ordrar Village Toys gjort.## Uppgift 8Visa en lista med order_num, prod_desc och order_date för samtliga beställda objekt. Ledtråd: här måste orders och products kopplas ihop via orderitems. Man måste alltså göra alltså först koppla ihop products och orderitems med INNER JOIN, och sedan koppla vidare till orders, också med INNER JOIN.- Lämna in SQL-kod på Peergrade.
-- Lämna även in en lista över alla order_num, prod_desc och order_date som hittades.## Uppgift 9Visa namnet på alla customers som beställt en 'Raggedy Ann'- Lämna in SQL-kod på Peergrade.- Lämna även in en lista över alla customers som hittades. ## Uppgift 10Visa sorterat i bokstavsordning namn och beskrivning för alla produkter där beskrivningen innehåller ordet 'doll'- Lämna in SQL-koden för alla uppgifter på Peergrade.
+- Lämna även in en lista över alla order_num, prod_desc och order_date som hittades.## Uppgift 9Visa namnet på alla customers som beställt en 'Raggedy Ann'- Lämna in SQL-kod på Peergrade.- Lämna även in en lista över alla customers som hittades. ## Uppgift 10Visa sorterat i bokstavsordning namn och produktbeskrivning för alla produkter där *beskrivningen* innehåller ordet 'doll'- Lämna in SQL-koden för alla uppgifter på Peergrade.
 - Lämna även in den sorterade listan.
 
 
