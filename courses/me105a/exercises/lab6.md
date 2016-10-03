@@ -10,6 +10,19 @@ pre {white-space: pre-wrap;}
 
 # Laboration 6
 
+## Redovisning
+
+Lämna in ett ziparkiv döpt till **lab6.zip** som innehåller följande filer:
+
+- login.php - xxx kolla version
+- check.php
+- jokeform.php
+- add.php
+- en textfil, **links.txt**, som innehåller länkar till 
+    - minst två epostadresser och lösenord
+    - länk till login.php  xxx kolla om någon mer
+
+
 ## Uppgift 1
 
 Uppgiften går ut på att göra inloggning med lösenord, där vi använder tabellen author för att hantera användarnamn och lösenord.
@@ -27,7 +40,7 @@ Steg 2: vi ska använda email som användarid, och då måste denna kolumn defin
 ALTER TABLE author ADD UNIQUE(email)
 {% endhighlight %}
 
-OBS här kanske du får ett felmeddelande om kolumnen email redan innehåller dubletter (samma email på flera rader). Ta då bort dublettraderna och försök igen. 
+OBS här kanske du får ett felmeddelande om kolumnen email redan innehåller dubbletter (samma email på flera rader). Ta då bort dubblettraderna och försök igen. 
 
 Steg 3: 
 
@@ -42,8 +55,13 @@ Nu ska du komplettera den raden med ett kodat lösenord. Det görs med funktione
 UPDATE author SET password=MD5('lösenordijdb') WHERE id=17
 {% endhighlight %}
 
-men id=17 måste bytas ut mot det id som du har i din tabell, och lösenord måste bytas ut till ett lösenord som du själv väljer. Det är viktigt att du kommer ihåg det lösenordet under resten av labben! När du har gjort detta kan det se ut så här:
+men tänk på följande:
 
+- id=17 måste bytas ut mot det id som du har i din tabell, 
+- lösenord måste bytas ut till ett lösenord som du själv väljer men som du kan dela med dig av till den som rättar uppgiften. Det är viktigt att du kommer ihåg det lösenordet under resten av labben! 
+- behåll *ijdb*, det så kallade *saltet* efter lösenord. 
+
+När du har gjort detta kan det se ut så här:
 
 ![](im6/tablemd5.png)
 
@@ -76,7 +94,7 @@ $_SESSION['loggedin']=...
 //false om man misslyckats
 {% endhighlight %}
 
-Sidan check.php ska även ha en länk som leder vidare till formuläret jokeform.php. Sidan ska då se ut som till första alternativet om man lyckas logga in och som andra om man misslyckas:
+Sidan check.php ska även ha en länk som leder vidare till formuläret jokeform.php. Sidan ska då se ut som första alternativet om man lyckas logga in och som andra om man misslyckas:
 
 ![](im6/welcomegoahead.png)
 
