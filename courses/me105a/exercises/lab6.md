@@ -14,13 +14,14 @@ pre {white-space: pre-wrap;}
 
 Lämna in ett ziparkiv döpt till **lab6.zip** som innehåller följande filer:
 
-- login.php - xxx kolla version
-- check.php
-- jokeform.php
-- add.php
+- Senaste versionen av följande php-filer (vissa filer från uppgift 1 och uppgift 2 modifieras i senare uppgifter):
+    - login.php
+    - check.php
+    - jokeform.php
+    - add.php
 - en textfil, **links.txt**, som innehåller länkar till 
-    - minst två epostadresser och lösenord
-    - länk till login.php  xxx kolla om någon mer
+    - minst två epostadresser med tillhörande lösenord som kan användas för att logga in i din databas
+    - länk till login.php
 
 
 ## Uppgift 1
