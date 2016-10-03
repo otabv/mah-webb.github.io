@@ -216,9 +216,9 @@ Lägg till några rader:
 
 ```sql
 INSERT INTO Students (adress,class,name) VALUES 
-('4A','Bråkmakargatan 6','Lotta');
+('Bråkmakargatan 6','4A',Lotta');
 INSERT INTO Students (adress,class,name) VALUES 
-('3B','Lönneberga','Emil');
+('Lönneberga','3B','Emil');
 ```
 
 Prova sedan att lägga till lille *Bobby Tables* med fullständiga namnet *Robert');DROP TABLE Students;--* med hjälp av en PHP-fil, där namnet finns i variablen $name:
