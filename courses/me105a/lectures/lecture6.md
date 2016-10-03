@@ -221,7 +221,7 @@ INSERT INTO Students (adress,class,name) VALUES
 ('Lönneberga','3B','Emil');
 ```
 
-Prova sedan att lägga till lille *Bobby Tables* med fullständiga namnet *Robert');DROP TABLE Students;--* med hjälp av en PHP-fil, där namnet finns i variablen $name:
+Prova sedan att lägga till lille *Bobby Tables* med fullständiga namnet `Robert');DROP TABLE Students;--` med hjälp av en PHP-fil, där namnet finns i variablen $name:
 
 ```php
 <?php
