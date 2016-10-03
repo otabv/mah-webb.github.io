@@ -216,7 +216,7 @@ Lägg till några rader:
 
 ```sql
 INSERT INTO Students (adress,class,name) VALUES 
-('Bråkmakargatan 6','4A',Lotta');
+('Bråkmakargatan 6','4A','Lotta');
 INSERT INTO Students (adress,class,name) VALUES 
 ('Lönneberga','3B','Emil');
 ```
