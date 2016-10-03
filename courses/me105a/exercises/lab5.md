@@ -47,7 +47,7 @@ item_price | DECIMAL(8,2)**OBS** att orderitems har två kolumner som tillsamm
 
 
 
-## Uppgift 4Visa en lista med namn på alla kunder (customers) och orderdatum (order_date) för alla beställningar som gjorts till och med januari 2001. Ledtråd: börja med att koppla ihop customers och orders med INNER JOIN. Lägg till ett villkor med WHERE som kollar att datum är mindre än '2001-02-01'- Lämna in SQL-kod på Peergrade.
+## Uppgift 4Visa en lista med namn på alla kunder (cust_name) och orderdatum (order_date) för alla beställningar som gjorts till och med januari 2001. Ledtråd: börja med att koppla ihop customers och orders med INNER JOIN. Lägg till ett villkor med WHERE som kollar att datum är mindre än '2001-02-01'- Lämna in SQL-kod på Peergrade.
 - Lämna även in en lista över alla kunder som hittas. ## Uppgift 5Vem (dvs vilket customer name) har gjort order nr 20007?- Lämna in SQL-kod på Peergrade.
 - Lämna även in namn på kunden som gjorde ordern. ## Uppgift 6Visa en lista över ordernummer på alla beställningar som Village Toys gjort.- Lämna in SQL-kod på Peergrade.
 - Lämna även in en lista över de ordernummer som hittades. ## Uppgift 7Hur många ordrar har Village Toys gjort?- Lämna in SQL-kod på Peergrade.
