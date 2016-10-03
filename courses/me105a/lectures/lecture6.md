@@ -110,7 +110,7 @@ Ofta behöver en hel grupp av användare samma rättigheter till en databas. Man
 
 SQL-injection betyder att obehöriga användare försöker lura ett system genom att infoga SQL-kod i inmatningsfält, vanligtvis i ett webbformulär.
 
-![](im6/jason-bourne.png "Jo se den, Alicia Vikander är bra")
+![](im6/jason-bourne.png "Se den, Alicia Vikander är bra i alla fall")
 
 Antag att man har ett formulär med fälten user och password. Om man i fältet password matar in texten
 
