@@ -62,17 +62,17 @@ $loggedin=false;
 //Om matchande epost och lösenord hittats kommer loopen att genomlöpas minst
 //en gång, och $loggedin kommer att bli true, annars förblir $loggedin false
 foreach ($result as $row) {
-	$name=$row['name'];
-	$id=$row['id']; //id kommer vi att använda först i uppgift 2
+    $name=$row['name'];
+    $id=$row['id']; //id kommer vi att använda först i uppgift 2
     $loggedin=true;
 }
 
 if ($loggedin) {
-	//inloggningen lyckades
-	echo "Welcome $name. ";    
+    //inloggningen lyckades
+    echo "Welcome $name. ";    
 } else {
     //inloggningen misslyckades
-	echo "Wrong username or password";
+    echo "Wrong username or password";
 }
 
 ?>
@@ -120,23 +120,23 @@ $loggedin=false;
 //Om matchande epost och lösenord hittats kommer loopen att genomlöpas minst
 //en gång, och $loggedin kommer att bli true, annars förblir $loggedin false
 foreach ($result as $row) {
-	$name=$row['name'];
-	$id=$row['id'];
+    $name=$row['name'];
+    $id=$row['id'];
     $loggedin=true;
 }
 
 if ($loggedin) {
-	//inloggningen lyckades
-	$_SESSION['loggedin']=true;
-	$_SESSION['authorname']=$name;
-	$_SESSION['authorid']=$id;
+    //inloggningen lyckades
+    $_SESSION['loggedin']=true;
+    $_SESSION['authorname']=$name;
+    $_SESSION['authorid']=$id;
     echo "Welcome $name. ";    
-	echo "<a href='jokeform.php'>Add a joke</a>";
+    echo "<a href='jokeform.php'>Add a joke</a>";
 } else {
     //inloggningen misslyckades
-	$_SESSION['loggedin']=false;
-	$_SESSION['authorname']='';
-	$_SESSION['authorid']='';
+    $_SESSION['loggedin']=false;
+    $_SESSION['authorname']='';
+    $_SESSION['authorid']='';
     echo "Wrong username or password";
 }
 
@@ -252,23 +252,23 @@ $loggedin=false;
 //Om matchande epost och lösenord hittats kommer loopen att genomlöpas minst
 //en gång, och $loggedin kommer att bli true, annars förblir $loggedin false
 foreach ($result as $row) {
-	$name=$row['name'];
-	$id=$row['id'];
+    $name=$row['name'];
+    $id=$row['id'];
     $loggedin=true;
 }
 
 if ($loggedin) {
-	//inloggningen lyckades
-	$_SESSION['loggedin']=true;
-	$_SESSION['authorname']=$name;
-	$_SESSION['authorid']=$id;
+    //inloggningen lyckades
+    $_SESSION['loggedin']=true;
+    $_SESSION['authorname']=$name;
+    $_SESSION['authorid']=$id;
     echo "Welcome $name. ";    
-	echo "<a href='jokeform.php'>Add a joke</a>";
+    echo "<a href='jokeform.php'>Add a joke</a>";
 } else {
     //inloggningen misslyckades
-	$_SESSION['loggedin']=false;
-	$_SESSION['authorname']='';
-	$_SESSION['authorid']='';
+    $_SESSION['loggedin']=false;
+    $_SESSION['authorname']='';
+    $_SESSION['authorid']='';
     echo "Wrong username or password";
 }
 
