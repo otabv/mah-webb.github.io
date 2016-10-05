@@ -206,10 +206,12 @@ Lösningsförslaget till uppgift 2 är mycket känsligt för sql-injections. Man
 Man kan även ta bort joke-tabellen genom att mata in följande skämt:
 
 ```
-Don’t ask a database to help you move furniture. They’ve been known to drop tables.','1970-01-01',99999);DROP TABLE joke;--
+Don’t ask a database to help you move furniture. 
+They’ve been known to drop tables.','1970-01-01',99999);
+DROP TABLE joke;--
 ```
 
-Ett grundläggande skydd får man genom att använda funktionen `htmlspecialchars`. Ännu bättre skydd får man genom att även använde såkallade *prepared statements*.
+Ett grundläggande skydd får man genom att använda funktionen `htmlspecialchars`. Ännu bättre skydd får man genom att även använde så kallade *prepared statements*.
 
 ### login.php - senaste versionen (samma som uppgift 1)
 
