@@ -198,6 +198,19 @@ echo "$joketext has been added";
 
 ## Uppgift 4
 
+Lösningsförslaget till uppgift 2 är mycket känsligt för sql-injections. Man kan bland annat logga in utan lösenord genom att ange följande email:
+
+```
+' OR 'zzz'='zzz';--
+```
+Man kan även ta bort joke-tabellen genom att mata in följande skämt:
+
+```
+Don’t ask a database to help you move furniture. They’ve been known to drop tables.','1970-01-01',99999);DROP TABLE joke;--
+```
+
+Ett grundläggande skydd får man genom att använda funktionen `htmlspecialchars`. Ännu bättre skydd får man genom att även använde såkallade *prepared statements*.
+
 ### login.php - senaste versionen (samma som uppgift 1)
 
 ```php
