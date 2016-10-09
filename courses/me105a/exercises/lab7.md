@@ -46,7 +46,9 @@ När man klickar export.txt ska man få fram den tab-separerade filen:
 
 ## Uppgift 3
 
-Nu ska istället en xml-fil skapas med samma data som i tab-filen i förra uppgiften. Målet är att filen ska ha följande struktur:
+**OBS UPPGIFT 3 KOMMER ATT ÄNDRAS FRÅN XML TILL JASON!!! KLART SENAST TISDAG FÖRMIDDAG**
+
+~~Nu ska istället en xml-fil skapas med samma data som i tab-filen i förra uppgiften. Målet är att filen ska ha följande struktur:~~
 
 ![](im7/xml.png)
 
