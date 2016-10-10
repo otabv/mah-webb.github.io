@@ -122,7 +122,9 @@ Den resulterande json-filen kan se ut så här:
 
 ## Uppgift 4 - frivillig
 
-PHP har ett antal färdiga funktioner för att bygga upp xml-dokument. 
+PHP har ett antal färdiga funktioner för att bygga upp xml-dokument. Det resulterande xml-dokumentet kan se ut så här:
+
+![](im7/xml.png)
 
 Ett rotelement med namnet toycatalog kan skapas med följande rader kod:
 
