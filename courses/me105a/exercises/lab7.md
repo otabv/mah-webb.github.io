@@ -26,6 +26,10 @@ img {
 
 I denna lab ska vi exportera produkterna i tabellerna products i olika format. Först som en vanlig html-sida, sedan som en tab-separerad fil och slutligen i json-format.
 
+## Redovisning
+
+Lämna in php-filerna från uppgift 1, 2 och 3 på <http://peergrade.io>. 
+
 ## Uppgift 1
 
 Uppgiften är att söka alla produkter i tabellen products, och visa en rubrik med produktnamn och pris, sedan en bild, sedan produktbeskrivning. Ni har tillgång till en [zip-fil](im7/images.zip) med en bild för varje produkt, och filnamnet är *prod_id.jpg*. För tex Bird bean bag toy med produktid *BNBG02* är filnamnet på bilden *BNBG02.jpg*. **OBS** Ibland har skolans datorer problem med att packa upp zip-filer. Bilderna finns var för sig i en bilaga i slutet av handledningen som kan användas istället. 

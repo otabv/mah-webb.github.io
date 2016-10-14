@@ -18,6 +18,13 @@ I förra labben gjorde vi en webbsida med produkterna i tabellen products:
 
 I denna labb ska vi göra ett liknande dokument med InDesign. Då måste vi först exportera innehållet i tabellen, som InDesign sedan kan importera. En sådan export påbörjades i förra labben, men måste kompletteras något.
 
+## Redovisning
+
+Lämna in ett zip-arkiv med följande på <http://peergrade.io>.
+
+- Uppgift 1: minst två indesign-mallar och tillhörande resulterande pdf-kataloger
+- Uppgift 2: en indesign-mall och resulterande pdf-katalog
+
 ## Uppgift 1
 
 Vi ska använda InDesigns inbyggda Data Merge-funktion för att importera data till InDesign. För att InDesign ska kunna använda data från databasen måste den tab-separerade filen från förra labben kompletteras så att den dels innehåller en rubrikrad med namnet på de olika kolumnerna, dels en kolumn med sökväg till de olika bilderna. Kolumnnamn för bildkolumnen måste börja med ett @-tecken. Komplettera uppgift 2 från laboration 7 så att tab-filen får utseende enligt figur nedan. Skapa en fil */me105a/laboration8/uppgift1.php* som skapar filen *export1.txt*:
@@ -46,7 +53,7 @@ Experimentera fritt med layouten i mallen och skapa nya kataloger:
 
 ![](im8/bild7.png)
 
-Lämna in minst två mallar och två resulterande kataloger. 
+När du är nöjd med en katalog, dvs resultatet av en mall sparar du den som en pdf. Lämna in minst två indesign-mallar och tillhörande resulterande pdf-kataloger. 
 
 ## Uppgift 2
 
@@ -105,4 +112,8 @@ När detta är gjort är det bara att starta importen, och resultatet bör bli u
 
 ![](im8/bild13.png)
 
-Spara resultet med *Save as...* och ge dokumentet namnet *resultat.indd*. Om man inte väljer *Save as...* kommer mallen att skrivas över och kan inte återanvändas. Lämna in mall och resultat. 
+Spara resultet med *Save as...* och ge dokumentet namnet *resultat.indd*. Om man inte väljer *Save as...* kommer mallen att skrivas över och kan inte återanvändas. 
+
+När du är nöjd med en katalog, dvs resultatet av en mall sparar du den som en pdf. Lämna in en indesign-mall och resulterande pdf-katalog. 
+
+
