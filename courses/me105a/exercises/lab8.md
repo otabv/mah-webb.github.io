@@ -31,7 +31,7 @@ Vi ska använda InDesigns inbyggda Data Merge-funktion för att importera data t
 
 ![](im8/bild2.png)
 
-Filen export1.txt skapas på webbservern. Se till att hämta den och lägg även filen *export1.txt* i */me105a/laboration8/*
+Filen export1.txt skapas på webbservern. Se till att hämta den till hårddisken på din dator, och lägg den lokalt i en mapp någonstans som du döper till *laboration8*. 
 
 Lägg även mappen med bilder från förra labben i mappen *laboration8* och döp den mappen till *images*. Det är mycket viktigt att mappen med bilder heter *images* och att den mappen ligger i *laboration8*. 
 
