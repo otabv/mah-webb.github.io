@@ -31,6 +31,14 @@ resulterar i följande resultat
 
 där **vend_name** upprepas för varje produkt. Dagens uppgift går ut på att göra en webbsida och ett InDesign-dokument där varje leverantör visas som en rubrik, följt av de produkter som leverantören kan tillhandahålla. 
 
+## Redovisning
+
+Gör ett zip-arkiv med
+
+- php-filen från uppgift 1
+- textfil med länk till php-filen i uppgift 1
+- både InDesign-mallar och exporterade pdf-filer från uppgift 2 och 3.  
+
 ## Uppgift 1
 
 Gör en webbsida liknande uppgift 1 i laboration 7, men med produkterna grupperade under levarantörsnamnet. (här nedan har css med float:left använts för att få produkterna bredvid varandra, men det går även att ha produkterna under varandra om man inte vill använda css)
@@ -115,10 +123,7 @@ Fungerar åäö? Om det inte fungerar, experimentera med importinställningar ti
 
 Exportera resultatet i pdf-format när det fungerar. 
 
-**Redovisning** 
 
-- Redovisa alla php-filer från uppgift 1 och 2
-- Redovisa både InDesign-mallar och exporterade pdf-filer från uppgift 2 och 3.  
 
 <!--## Uppgift 4 - frivillig men rekommenderad
 
