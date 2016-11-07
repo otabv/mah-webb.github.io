@@ -8,9 +8,7 @@ title: projekt
 pre {white-space: pre-wrap;}
 </style>
 
-# Projekt, Databasbaserad publicering 2015
-
-**OBS PRELIMINÄRT PROJEKT, KAN KOMMA ATT ÄNDRAS**
+# Projekt, Databasbaserad publicering 2016
 
 Projektet går ut på att bygga en interaktiv databas där innehållet kan visas både i tryck och på webben.
 
@@ -19,21 +17,19 @@ Projekt görs självständigt. Projektet måste innehålla:
 - En databas som innehåller minst tre entiteter som har förhållanden till varandra. 
 - Minst en ett-till-många-relation. 
 - E/R-diagram som visar databasens struktur.
-- Webbsidor med formulär med möjlighet att mata in data i några av tabellerna. Det är ok om några av tabellerna har fått data inlagt i förväg, till exempel med MySQL Query Browser.
+- Webbsidor med formulär som gör det möjligt att mata in data i några av tabellerna. Det är ok att några av tabellerna har fått data inlagt i förväg, till exempel med MySQL Query Browser.
 - Webbsida med sökfunktion.
 - Möjlighet att exportera Innehållet i tabellerna i tab-separerat format.
-- InDesign-mallar som med hjälp av InData kan importera den tab-separerade filen och sedan vara grund till en tryckt presentation.
+- InDesign-mallar som med hjälp av InData kan importera den tab-separerade filen och sedan vara grund till ett tryckt dokument.
 
-
-
-För betyget godkänd krävs, förutom det som nämns ovan:
+För betyget **godkänd** krävs, förutom det som nämns ovan:
 
 - HTML-kod ska kunna matas in i formulär på ett säkert sätt utan att html-taggar förstör övrig layout. 
 - Välkommenterad kod. 
 - Strukturerad kod med indragningar.
 - En reflektionen över er lösnings säkerhets- och integritetsaspekter.
 
-För betyget väl godkänd krävs även
+För betyget **väl godkänd** krävs även
 
 - Minst en många-till-många-relation. 
 - Grundläggande skydd mot sql-injection.
@@ -83,4 +79,4 @@ Handledning kommer att finnas tillgänglig under de schemalagda laborationstillf
 
 ## Projekttips
 
-Här finns några [projekttips](tips.html). 
+Här finns några [projekttips](tips.html). Använd även miniprojektet som inspiration. 
