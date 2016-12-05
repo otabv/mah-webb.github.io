@@ -126,7 +126,7 @@ Det finns inga föreläsningsanteckningar, men en bra resurs för [xml](http://w
 
 ### Vecka 50 - Projekt
 
-- Inlämning 13 december kl 13.00
+- Inlämning 13 december kl 13.00 på [itslearning].
 - redovisning av projekt, onsdag 14 december kl 13.15-17.00. 
 
 Redovisningen kommer att gå till så att ni får 5 minuter var för att presentera projektet. Ni får då:
