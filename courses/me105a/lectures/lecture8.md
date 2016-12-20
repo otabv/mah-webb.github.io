@@ -86,7 +86,18 @@ Det finns även olika plugins till InDesign, som ger ytterligare möjligheter ti
 
 Vi kommer att använda dels inbyggda Data Merge, dels InData i veckans laboration. 
 
-![](im8/indata.png)Även Word innehåller en data merge-funktion liknande den i InDesign, "Koppla dokument" på svenska:
+![](im8/indata.png)#### Problem med svenska tecken
 
-![](im8/word.png)
+Ett problem man måste se upp med är svenska tecken, åäö, när man importerar till InDesign. Data Merge-funktionen har tex problem med att importera utf-8-filer. För att få importen att fungera korrekt kan man behöva konvertera utf-8-filer till utf-16. Det kan man göra med följande php-kod:
 
+```php
+//konvertera filen $filename från utf-8 till utf-16
+<?php
+function utf8_to_utf16($filename) {
+	$utf8_contents=file_get_contents($filename);
+	file_put_contents($filename,iconv("UTF-8", "UTF-16", $utf8_contents));
+}
+?>
+```
+
+Sedan väljer man *unicode* som *data encoding* när man importerar till InDesign. 
