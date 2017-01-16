@@ -50,8 +50,7 @@ PHP-kod börjar med `<?php` och avslutas med `?>`
 
 ### Exempel på en ren html-sida och en sida med inbäddad php-kod
 
-{% highlight html %}
-<!doctype html>
+```html<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -63,9 +62,9 @@ This is a test!
 </p>
 </body>
 </html>
-{% endhighlight %}
+```
 
-{% highlight html+php %}
+```php
 <!doctype html>
 <html>
 <head>
@@ -81,5 +80,47 @@ echo $text;
 </p>
 </body>
 </html>
-{% endhighlight %}
+```
+
+### Exempel från föreläsningen 2017-01-16
+
+**f1.php**
+
+```php
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exempel föreläsning 1, 2017-01-16</title>
+</head>
+<body>
+<p>
+<!--html-kommentar-->
+Här har vi <i>vanlig</i> html-kod.
+</p>
+
+<p>
+<?php
+//allt efter // på en rad är en kommentar
+//php-koden nedan skapar html-kod
+
+//variabler börjar med dollar-tecken
+//$tag är variablens namn, <i> är variablens värde
+$tag="<i>"; 
+$endtag="</i>";
+
+//i echo-satsen nedan ersätts variabelnamnen med variabelvärden. 
+echo "Här har vi istället $tag php-kod $endtag";
+?> 
+</p>
+
+<p>
+<?php
+//funktionen date kan visa både datum och klockslag.
+$time = date("H:i:s"); //visa timmar, minuter och sekunder
+echo "Klockan är $time";
+?>
+</body>
+</html>
+```
 
