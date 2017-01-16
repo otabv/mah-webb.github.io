@@ -15,16 +15,18 @@ Förberedelser:
 
 - Läs kapitel 3 t.o.m sidan 53 i boken.
 
-Lämna in följande på it's learning:
+Lämna in en **zip-fil** som innehåller följande på peergrad.io:
 
-- Alla php- och html-filer ihopzippade
-- Svar på alla frågor markerade med **Fråga** i labbhandledningen.
+- Alla php- och html-filer du skapat
+- En text-fil som innehåller
+    - länkar till dina php och html-filer. De börjar med http://ddwap.mah.se/dittanvändarnamn/me132a...
+    - svar på allt som är markerat med **Fråga** i labbhandlendledningen
 
 ## Uppgift 1 – Skapa konto på server
 
 Följ [instruktionerna](filezillasettings.html) för att skapa ett konto på servern ddwap. 
 
-##Uppgift 2 – En enkel HTML-sida och PHP-sida
+## Uppgift 2 – En enkel HTML-sida och PHP-sida
 
 Uppgiften är att skapa en enkel HTML-sida som bara visar texten "Hello world!" och en PHP-sida som visar samma sak. 
 
@@ -54,7 +56,7 @@ Exemplet today.php använder PHP-funktionen `date('l, F dS Y.')` för att visa d
 
 ![](im1/date1.png)
 
-##Uppgift 4 – anpassa datumformatet
+## Uppgift 4 – anpassa datumformatet
 
 Vad innebär egentligen `date('l, F dS Y.')` ? Jo, date(…) är en fördefinierad PHP-funktion som visar aktuellt datum och aktuell tid. Texten 'l, F ds Y.' mellan parenteserna anger formatet på datumet. En fullständig beskrivning av datumformat hittar man i PHP-manualen på <http://www.php.net>. Direktlänk till datumfunktionen är <http://se2.php.net/manual/en/function.date.php>
 

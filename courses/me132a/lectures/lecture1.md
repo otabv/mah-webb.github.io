@@ -22,17 +22,17 @@ Grunder i programmering - generellt för olika programmeringsspråk
 
 Programmering i programspråket PHP
 
-###Vad är programmering?
+### Vad är programmering?
 
 **Kort defininition av programmering:** creating a sequence of instructions to enable the computer to do something 
 
 **Från wikipedia:** Computer programming (often shortened to programming or coding) is the process of writing, testing, debugging/troubleshooting, and maintaining the source code of computer programs. This source code is written in a programming language. 
 
-###Vad är webbprogrammering?
+### Vad är webbprogrammering?
 
 Webbprogrammering innebär vanligtvis att man skriver program som inte kan köras fristående, utan som kräver en webbläsare för att köras. 
 
-###Vad är PHP?
+### Vad är PHP?
 
 PHP står för **PHP: Hypertext Preprocessor**  och är ett programmeringsspråk som är utvecklat för att passa bra ihop med HTML-kod och webbsidor. PHP är, till skillnad från JavaScript som också används med HTML-kod, ett språk för program som körs på *webservern*, så kallad *server-side scripting*. 
 
@@ -48,7 +48,7 @@ PHP-kod börjar med `<?php` och avslutas med `?>`
 
 `echo` används när man vill att något som PHP beräknat fram ska synas på en webbsida
 
-###Exempel på en ren html-sida och en sida med inbäddad php-kod
+### Exempel på en ren html-sida och en sida med inbäddad php-kod
 
 {% highlight html %}
 <!doctype html>
