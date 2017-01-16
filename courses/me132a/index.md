@@ -166,6 +166,5 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 
 
 [kursplan]: http://edu.mah.se/me132a#Syllabus
-[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2016-01-18&resurser=k.ME132A-20161-TS585-
+[schema]: http://schema.mah.se/setup/jsp/Schema.jsp?intervallTyp=m&sprak=SV&sokMedAND=false&intervallAntal=6&startDatum=2017-01-16&resurser=k.ME132A-20171-TS855-
 [itslearning]: https://mah.itslearning.com
-
