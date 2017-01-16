@@ -20,29 +20,23 @@ Lämna in följande på it's learning:
 - Alla php- och html-filer ihopzippade
 - Svar på alla frågor markerade med **Fråga** i labbhandledningen.
 
-## Uppgift 1 – Dreamweaverinställningar
+## Uppgift 1 – Skapa konto på server
 
-Ställ in Dreamweaver enligt instruktioner i [dwsettings](dwsettings.html). De inställningar som gjorts nu kan behållas genom hela kursen. Se till att de funkar nu, annars kommer inte laborationerna att fungera framöver! Inställningarna går i korthet ut på att ställa in Dreamweaver så att alla php-sidor skapas lokalt på din Mac. För att kunna testa sidorna måste de skickas till webbservern ddwap.mah.se. När inställningarna är korrekt gjorda skickar man sidorna till servern genom att välja *Skicka/Put* under de gröna och blåa pilarna. 
-
-![](im1/put.png)
-
-Sidan är då skickad till servern ddwap.mah.se och kan testas genom att man klickar Förhandsgranska/Preview (jordgloben)
-
-![](im1/preview.png)
+Följ [instruktionerna](filezillasettings.html) för att skapa ett konto på servern ddwap. 
 
 ##Uppgift 2 – En enkel HTML-sida och PHP-sida
 
 Uppgiften är att skapa en enkel HTML-sida som bara visar texten "Hello world!" och en PHP-sida som visar samma sak. 
 
-I kursen kommer endast kodläget i Dreamweaver att användas. Skapa en ny html-sida. Spara sidan med namnet *hello.html* i katalogen *ddwap/me132a/lab1*. Sidan ska ha *Hello World! HTML* som title, och ha följande utseende:
+Skapa en ny html-sida. Spara sidan med namnet **hello.html** i katalogen **me132a/lab1**. Sidan ska ha *Hello World! HTML* som title, och ha följande utseende:
 
 ![](im1/hellohtml.png)
 
 **OBS:** använda små bokstäver, samt undvik åäö och mellanslag i fil- och katalognamn.
 
-En likadan sida ska göras, men nu med PHP-kod. Skapa en ny PHP-sida och spara den som *hello.php* i katalogen *ddwap/me132a/lab1* . OBS: det är mycket viktigt att statiska sidor slutar med .html och att PHP-sidor slutar med .php
+En likadan sida ska göras, men nu med PHP-kod. Skapa en ny PHP-sida och spara den som **hello.php** i katalogen **me132a/lab1** . OBS: det är mycket viktigt att statiska sidor slutar med .html och att PHP-sidor slutar med .php
 
-Jämför med exemplet echo.php på sidan 52 i boken. Anpassa hello.php så att den använder echo-funktionen för att visa *Hello world!* på samma sätt som echo.php visar *This is a test*. 
+Jämför med exemplet *echo.php* på sidan 52 i boken. Anpassa **hello.php** så att den använder echo-funktionen för att visa *Hello world!* på samma sätt som *echo.php* visar *This is a test*. 
 
 Ge även sidan *Hello World! PHP* som title. Den färdiga sidan ska ha följande utseende:
 
@@ -56,7 +50,7 @@ Titta på båda sidornas källkod.
 
 I förra uppgiften vann vi inget på att använda PHP, men så fort man vill ha någon form av dynamiskt innehåll kommer PHP väl till pass. Dynamiskt innehåll i sin enklaste form kan vara dagens datum. 
 
-Exemplet today.php använder PHP-funktionen `date('l, F dS Y.')` för att visa dagens datum. Skapa en ny PHP-fil, *hello2.php* som förutom texten Hello world visar dagens datum. Sidan ska ha följande utseende (men datumet ska uppdateras automatiskt):
+Exemplet today.php använder PHP-funktionen `date('l, F dS Y.')` för att visa dagens datum. Skapa en ny PHP-fil, **hello2.php** som förutom texten Hello world visar dagens datum. Sidan ska ha följande utseende (men datumet ska uppdateras automatiskt):
 
 ![](im1/date1.png)
 
@@ -68,7 +62,7 @@ Där kan man läsa att bokstaven l (lilla L) innebär att dagen ska visas som te
 
 Skapa en ny PHP-fil med namn hello3.php som visar datumet enligt formatet 
 
-	2013-01-21
+	2017-01-16
  
 istället. 
 

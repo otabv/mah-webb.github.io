@@ -4,30 +4,28 @@ code: me132a
 title: Programmering för webben ME132A (15.0 hp)
 ---
 
-# Programmering för webben våren 2016
+# Programmering för webben våren 2017
 
 Välkomna till Programmering för webben! Kursen är upplagd med en föreläsning följd av laboration i stort sett varje vecka, där syftet med laborationen är att träna de moment som gicks igenom på föreläsningen. I slutet av kursen kommer även ett projekt att genomföras. 
 
-Kursmaterial kommer att finnas på denna webbplats, men inlämningar av uppgifter görs på It's learning.
+Kursmaterial kommer att finnas på denna webbplats, inlämningar görs på [Peergrade](https://peergrade.io).
 
 Föreläsningar och laborationer kommer att vara tätt kopplade till boken PHP & MySQL-Novice to Ninja av Kevin Yank. Boken behandlar både PHP och MySQL. Denna kurs kommer i stort sett endast att behandla PHP-delen av boken. MySQL-delen av boken, dvs kopplingar till databaser, kommer att gås igenom i kursen Databasbaserad publicering i höst.
 
 Lärare på kursen:
 
 - Bo Peterson, bo.peterson@mah.se (kursansvarig)
-- Sebastian Bengtegård, sebastian.bengtegard@mah.se (endast början av kursen)
-- Daniel Palmér daniel.palmr@gmail.com
 
 ## Gruppindelning
 
-- Laborationsgrupp 1: Efternamn som börjar på A-J
-- Laborationsgrupp 2: Efternamn som börjar på K-Ö
+- Laborationsgrupp 1: Efternamn som börjar på A-K
+- Laborationsgrupp 2: Efternamn som börjar på L-Ö
 
 ## Nyttiga länkar
 
 * [Kursplan][kursplan]
 * [Schema][schema]
-* [It's learning][itslearning]
+* [Peergrade](https://peergrade.io)
 
 ## Veckoplan
 
@@ -35,7 +33,7 @@ Lärare på kursen:
 
 - [Föreläsning 1](lectures/lecture1.html)
 - [Laboration 1](exercises/lab1.html)
-- [Inställningar av Dreamweaver eller FileZilla](exercises/dwsettings.html)
+- [Inställningar av FileZilla](exercises/filezillasettings.html)
 
 ### Vecka 4 - Variabler
 
@@ -76,7 +74,7 @@ Lärare på kursen:
 - [Föreläsning 8](lectures/lecture8.html)
 - [Laboration 8](exercises/lab8.html)
 
-
+<!--
 ### Vecka 12 - Självstudier
 
 - [Självstudie 2](assignments/self2.html)
@@ -102,6 +100,8 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 
 ### Vecka 16 - Använda externa API
 
+-->
+
 <!--
 **Viktig förberedelse inför laborationen:**
 
@@ -110,10 +110,11 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 3. Läs igenom avsnittet API authentication i instruktionerna på [Search for photos using PHP and the flickr API](http://www.web-development-blog.com/archives/search-for-photos-using-php-and-the-flickr-api/) och skaffa en egen API key. Spara den på ett ställe så att du kommer åt den under labben. 
 -->
 
-
+<!--
 - [Föreläsning 12](lectures/lecture12.html)
 - [Laboration 12](exercises/lab12.html) <!--instagram? instawall?-->
 
+<!--
 ### Vecka 17 - Felsökningstekniker samt projektintroduktion
 
 - [Föreläsning 13](lectures/lecture13.html)
@@ -155,10 +156,11 @@ Ingen schemalagd undervisning denna påskvecka. Istället håller vi tillgodo me
 ### Vecka 21
 
 - Projekthandledning under schemalagd laborationstid
+-->
 
 ### Vecka 22
 
-- Projektredovisning för båda grupperna tisdag 31 maj kl 13.15-17.00
+- Projektredovisning för båda grupperna tisdag 30 maj kl 13.15-17.00
 
 
 
