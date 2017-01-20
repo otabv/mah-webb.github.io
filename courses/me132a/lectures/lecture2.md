@@ -7,11 +7,11 @@ date: 2015-02-19
 ---
 
 
-#Programmering för webben 
+# Programmering för webben 
 
-##Föreläsning 2 
+## Föreläsning 2 
 
-###Dagens innehåll 
+### Dagens innehåll 
 
 - Varför använda PHP? Var används PHP?
 - Tilldelning
@@ -19,13 +19,13 @@ date: 2015-02-19
 - Kommentarer 
 - Arrayer 
 
-###Varför använda PHP? Var används PHP 
+### Varför använda PHP? Var används PHP 
 
 - Där innehåll skräddarsys efter användaren, tex sociala medier som Facebook, [Facebook](http://www.facebook.com/login.php)
 - Bloggar, tex bloggar gjorda med [Wordpress](http://wordpress.com) 
 - Webbplatser där information ständigt uppdateras som nyheter och uppslagsverk, tex [Wikipedia](http://wikipedia.org) 
 
-###Variabler
+### Variabler
 
 ![](im2/variabler.png)
 
@@ -41,7 +41,11 @@ date: 2015-02-19
 - **OBS 2:** variabelnamn är skiftlägeskänsliga (case-sensitive) dvs $Weight, $WEIGHT och $weight är olika variabler. 
 - **OBS 3**: svenska tecken åäö får användas i variabelnamn, men kan leda till problem om filer flyttas mellan olika datorsystem. Använd a-z för att undvika problem. 
 
-###Tilldelning 
+För att sammanfatta:
+
+Variabler har ett *namn* och ett *värde*. Värdet kan ändras. 
+
+### Tilldelning 
 
 Variabler kan tilldelas (assign) numeriska värden. Tilldelning sker med likhetstecknet = 
 
@@ -49,9 +53,9 @@ Variabler kan tilldelas (assign) numeriska värden. Tilldelning sker med likhets
 
 Variabeln weight tilldelas värdet 7 skrivs så här i PHP:
 
-{% highlight php  startinline=True %}
+```php
 $weight = 7; 
-{% endhighlight %}
+```
 
 Observera att de flesta rader i PHP avslutas med ett semikolon. 
  
@@ -64,11 +68,11 @@ Man kan välja om man använder enkla eller dubbla citationstecken, men i vissa 
 
 Variabeln month tilldelas värdet April skrivs så här:
 
-{% highlight php  startinline=True %}
+```php
  $month = "April"; 
-{% endhighlight %}
+```
 
-###Operatorer
+### Operatorer
 
 Operatorer används för att utföra beräkningar och för att manipulera såväl numeriska värden som text. 
 
@@ -82,12 +86,12 @@ Exempel på *aritmetiska operatorer* dvs operatorer för numeriska värden är
 **Exempel**
 Detta exempel beräknar och skriver ut aktuell ålder.
 
-{% highlight php  startinline=True %}
+```php
 $birthyear = 1965;
 $year = 2015; 
 $age = $year - $birthyear;
 echo $age; 
-{% endhighlight %}
+```
 
 Det finns två *strängoperatorer* i PHP dvs operatorer för text. Den vanligaste är en punkt:
 
@@ -95,34 +99,34 @@ Det finns två *strängoperatorer* i PHP dvs operatorer för text. Den vanligast
 
 **Exempel** 
 
-{% highlight php  startinline=True %}
+```php
 $firstname = "Sasha"; 
 $lastname = "Fierce"; 
 $fullname = $firstname . $lastname;
 echo $fullname;
-{% endhighlight %}
+```
 
 Resultat som skrivs ut: 
 
-{% highlight text %}	
+```text	
 SashaFierce 
-{% endhighlight %}
+```
 
 
 **Exempel**
 
 Med mellanslag mellan för- och efternamn: 
 
-{% highlight php  startinline=True %} 
+```php 
 $fullname = $firstname . " " . $lastname;
-{% endhighlight %}
+```
  
 Resultat som skrivs ut: 
-{% highlight text %}	
+```text	
 Sasha Fierce 
-{% endhighlight %}
+```
 
-###Kommentarer
+### Kommentarer
  
 En viktig del av programmering är dokumentation och en viktig del av dokumentationen är kommentarer i koden. Kommentarer kan skrivas på två sätt, beroende på en kommentar omfattar en eller flera rader
 
@@ -130,25 +134,25 @@ En kommentar för en rad inleds med // och kan antingen stå ensamt på en rad, 
 
 **Exempel**
  
-{% highlight php  startinline=True %}
+```php
 //variablerna $height och $widht innehåller höjd och bredd på en rektangel
 $area = $height * $width; //area för rektangel beräknas 
-{% endhighlight %}
+```
 
 En kommentar för flera rader inleds med /* och avslutas med */- 
 
 **Exempel** 
 
-{% highlight php  startinline=True %}
+```php
 /* Följande program beräknar arean av en rektangel.   Ingångsvärden: 
    rektangelns höjd, $height
    rektangelns bredd, $width
    Resultat: $area
 */ 
 $area = $height * $width; 
-{% endhighlight %}
+```
 
-###Arrayer 
+### Arrayer 
 
 Arrayer är speciella variabler som kan innehålla flera värden. Om en variabel kan liknas vid en låda, kan en array liknas vid en byrå med flera lådor. 
 
@@ -162,51 +166,51 @@ Själva arrayen ("byrån") har ett namn, och de olika elementen ("lådorna") är
 
 Arrayer kan få sina värden tilldelade på olika sätt, tex så här: 
 
-{% highlight php  startinline=True %}
+```php
 $drawer = array("nyckel","telefon","passagekort");
-{% endhighlight %}
+```
  
 Ordet nyckel läggs i låda 0, telefon i låda 1, och passagekort i låda 2.
  
 Värden kan hämtas ur en array genom att man anger index inom hakparenteser [ ] på följande sätt: 
 	
 
-{% highlight php  startinline=True %}
+```php
 echo $drawer[0]; //skriver ut nyckel 
 echo $drawer[1]; //skriver ut telefon
 echo $drawer[2]; //skriver ut passagekort
-{% endhighlight %}
+```
   
 Värden kan läggas till i en befintlig array:
 
-{% highlight php  startinline=True %}
+```php
 $drawer[3] = "plånbok";
-{% endhighlight %}
+```
  
 Ett fjärde element (med index = 3) skapas med innehållet plånbok. 
 
 Man kan även utelämna index för att lägga till ett element sist i en array: 
 
-{% highlight php  startinline=True %}
+```php
 $drawer[] = "klocka";
-{% endhighlight %}
+```
  
 Ett femte element skapas (om det redan fanns fyra) med innehållet klocka.
 
-{% highlight php  startinline=True %} 
+```php 
 echo $drawer[3]; //skriver ut plånbok 
 echo $drawer[4]; //skriver ut klocka 
-{% endhighlight %}
+```
  
 Variabler kan användas som index: 
  
-{% highlight php  startinline=True %} 
+```php 
 $i = 4;
 echo $drawer[$i]; //skriver ut klocka
-{% endhighlight %}
+```
  
 
-###Associativa arrayer
+### Associativa arrayer
 
 Istället för att numrera elementen i en array kan man ge dem namn. De kallas då associativa arrayer. 
 
@@ -214,65 +218,64 @@ Istället för att numrera elementen i en array kan man ge dem namn. De kallas d
 
 De kan få värden så här:
 
-{% highlight php  startinline=True %} 
+```php 
 $days['januari'] = 31; 
 $days['februari'] = 28;
 $days['mars'] = 31;
-{% endhighlight %}
+```
 
 Eller så här: 
 
-{% highlight php  startinline=True %} 
+```php 
 $days = array('januari'=>31,'februari'=>28,'mars'=>31);
-{% endhighlight %}
+```
  
 Utskrift: 
 
-{% highlight php  startinline=True %} 
+```php 
 echo $days['januari']; //31 skrivs ut
 echo $days['februari']; //28 skrivs ut
 echo $days['mars']; //31 skrivs ut
-{% endhighlight %}
+```
  
 ### Variabelvärden i strängar
 
 Värdet på en variabel kan skrivas ut tillsammans med annan text enligt följande:
 
-{% highlight php  startinline=True %} 
+```php 
 $firstname = "Sasha";
 $lastname="Fierce"; 
 echo "I am $firstname $lastname";
-{% endhighlight %}
+```
 
 Utskriften blir
 
-{% highlight text %}
+```text
 I am Sasha Fierce 
-{% endhighlight %}
+```
 
 `I am` skrivs alltså ut, men istället för att $firstname och $lastname skrivs ut så skrivs *innehållet* i variabeln $firstname och $lastname ut, dvs `Sasha` och `Fierce`. 
 
 Ofta spelar det ingen roll om man använder ' eller " men i exemplet ovan spelar det stor roll. Om man byter ut dubbla mot enkla citationstecken kommer *namnet* på variabeln istället för *innehållet* av variabeln att skrivas ut. 
 
-{% highlight php  startinline=True %} 
+```php 
 $firstname = "Sasha";
 $lastname="Fierce"; 
 echo 'I am $firstname $lastname';
-{% endhighlight %}
+```
 
 Utskriften blir
 
-{% highlight text %}
+```text
 I am $firstname $lastname
-{% endhighlight %}
+```
 
 
-### Exempel som visades på föreläsning 2016-01-25
-
+### Här kommer ett antal exempel från förra årets föreläsning (2016-01-25)
 
 #### f2.php
 
-{% highlight php %}
+```php
 <!doctype html>
 <html>
 <head>
@@ -351,11 +354,11 @@ echo $historia;
 </p>
 </body>
 </html>
-{% endhighlight %}
+```
 
 #### f2_array.php
 
-{% highlight html+php %}
+```php
 <!doctype html>
 <html>
 <head>
@@ -403,12 +406,12 @@ echo " kg";
 
 </body>
 </html>
-{% endhighlight %}
+```
 
 
 #### f2_assoc_array.php
 
-{% highlight php %}
+```php
 <!doctype html>
 <html>
 <head>
@@ -436,6 +439,6 @@ echo " kg";
 
 </body>
 </html>
-{% endhighlight %}
+```
 
 
