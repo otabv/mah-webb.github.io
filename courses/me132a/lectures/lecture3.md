@@ -208,198 +208,100 @@ echo $days['mars']; //31 skrivs ut
 
 $_POST och $_GET är exempel på associativa arrayer som PHP skapar automatiskt. 
 
-### Kodexempel från föreläsning 2016-02-01
-
-#### taggar.html
-
-{% highlight php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-
-Du &amp; jag &lt;tillsammans&gt;
-
-</body>
-</html>
-{% endhighlight %}
-
-#### tecken.html
-
-{% highlight php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-
-Räksmörgås - kan bli fel om filen sparas med annan teckenkodning än UTF-8
-
-</body>
-</html>
-{% endhighlight %}
-
-#### arrayrep.php
-
-{% highlight php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-
-<?php
-$person1=array("firstname"=>"Bo", "lastname"=>"Peterson", "email"=>"bo.peterson@mah.se","age"=>"51");
-$person2=array("firstname"=>"Sebastian", "lastname"=>"Bengtegård", "email"=>"sebastian.bengtegard@mah.se","age"=>"27");
-
-echo "Person 1 heter ";
-echo $person1["firstname"];
-echo "<br>";
-
-echo "Person 2 heter ";
-echo $person2["firstname"];
-?>
-
-
-</body>
-</html>
-{% endhighlight %}
+### Kodexempel från föreläsning 2017-01-30
 
 #### form.html
 
-{% highlight php %}
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-<p>
-En html-sida (php behövs inte här) med ett formulär
-</p>
-
-<form action="formreply.php" method="post">
-    <input type="text" name="fullname"> För- och efternamn<br>
-    <input type="text" name="email"> epost<br>
-    <input type="submit" value="skicka formuläret">
-</form>
-
-
-</body>
-</html>
-{% endhighlight %}
-
-#### formreply.php
-
-{% highlight php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-
-<?php
-    
-echo $_POST["fullname"];
-echo "<br>";
-echo $_POST["email"];    
-    
-//här hade kanske behövts kod för att spara namn och epost i en databas    
-    
-?>
-
-
-</body>
-</html>
-{% endhighlight %}
-
-#### formbetter.html
-
-{% highlight php %}
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-<p>
-En html-sida (php behövs inte här) med ett formulär
-</p>
-
-<form action="formreplybetter.php" method="post">
-    <input type="text" name="fullname"> För- och efternamn<br>
-    <input type="text" name="email"> epost<br>
-    <input type="submit" value="skicka formuläret">
-</form>
-
-
-</body>
-</html>
-{% endhighlight %}
-
-#### formreplybetter.php
-
-```php
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-</head>
-<body>
-
-<?php
-    
-$fullname=htmlspecialchars($_POST["fullname"],ENT_QUOTES,"UTF-8");
-    
-    
-echo $fullname;
-echo "<br>";
-echo $_POST["email"];    
-    
-//här hade kanske behövts kod för att spara namn och epost i en databas    
-    
-?>
-
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>from.html</title>
+  </head>
+  <body>
+    <form action="formoutput.php" method="post">
+    <input type="text" name="firstname"> First name<br>
+    <input type="text" name="lastname"> Last name<br>
+    <input type="password" name="password"> Lösenord<br>
+    <input type="submit" value="Send">
+    </form>
+  </body>
 </html>
 ```
 
-#### f2_assoc_array.php
+#### formoutput.php
 
 ```php
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>HTML test</title>
-</head>
-<body>
-<p>
-<?php
-$hundar = array("Bo"=>4.3,"Sebastian"=>3.2,"Johannes"=>7.1,"Sven"=>4.2);
-echo "En hund väger ";
-echo $hundar["Sebastian"];
-echo " kg";
+  <head>
+    <meta charset="utf-8">
+    <title>formoutput.php</title>
+  </head>
+  <body>
+    <h1>Resultat från formulär</h1>
+    <?php
+    //ta emot data från formulär
+    //variabeln $_POST skapas automatiskt
+    //och innehåller allt som matats in i formuläret
 
-echo "<br>";
-$namn = "Johannes";
+    //använd htmlspecialchars för att förhindra att man lägger in
+    //html-kod i formuläret som påverkar sidans utseende
+    $firstname = htmlspecialchars($_POST["firstname"],ENT_QUOTES,'utf-8');
+    $lastname = htmlspecialchars($_POST["lastname"],ENT_QUOTES,'utf-8');
+    //password skrivs inte ut, vi behöver inte htmlspecialchars
+    $password = $_POST["password"];
 
-echo "Hunden ";
-echo $namn;
-echo " väger ";
-echo $hundar[$namn];
-echo " kg";
-
-?>
-
-</body>
+    echo $firstname;
+    echo " ";
+    echo $lastname;
+    ?>
+  </body>
 </html>
 ```
 
+#### arrays.php
+
+```php
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+  <?php
+  //en vanlig Array med siffror som index och som dessutom innehåller siffror
+  $shoesizes = array(42,39,39,37,45,38,39,44,47);
+
+  echo $shoesizes[3];
+  echo "<br>";
+  //en associativ arrar dvs med namn som index men som innehåller siffror
+  $shoesizes_assoc = array("alice"=>42,"bob"=>37,"caroline"=>39);
+
+  echo $shoesizes_assoc["caroline"];
+  echo "<br>";
+
+  //både vanliga och associativa arrayer kan innehålla både text och siffror
+  $fruits = array("apelsin","banan","citron");
+
+  echo $fruits[2];
+  echo "<br>";
+
+  //en associativ array med text som innehåll
+  $rooms = array("A0510"=>"lektionssal","B0201"=>"föreläsningssal","C0303"=>"grupprum","A0101"=>"reception");
+
+  echo $rooms["B0201"];
+  echo "<br>";
+
+  //vi kommer till loopar om några veckor
+  foreach ($rooms as $room){
+    echo "$room";
+    echo "<br>";
+  }
+  ?>
+  </body>
+</html>
+```
 
