@@ -208,36 +208,7 @@ Variabler kan användas som index:
 $i = 4;
 echo $drawer[$i]; //skriver ut klocka
 ```
- 
-
-### Associativa arrayer
-
-Istället för att numrera elementen i en array kan man ge dem namn. De kallas då associativa arrayer. 
-
-![](im2/assocarray.png)
-
-De kan få värden så här:
-
-```php 
-$days['januari'] = 31; 
-$days['februari'] = 28;
-$days['mars'] = 31;
-```
-
-Eller så här: 
-
-```php 
-$days = array('januari'=>31,'februari'=>28,'mars'=>31);
-```
- 
-Utskrift: 
-
-```php 
-echo $days['januari']; //31 skrivs ut
-echo $days['februari']; //28 skrivs ut
-echo $days['mars']; //31 skrivs ut
-```
- 
+  
 ### Variabelvärden i strängar
 
 Värdet på en variabel kan skrivas ut tillsammans med annan text enligt följande:
@@ -408,37 +379,5 @@ echo " kg";
 </html>
 ```
 
-
-#### f2_assoc_array.php
-
-```php
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>HTML test</title>
-</head>
-<body>
-<p>
-<?php
-$hundar = array("Bo"=>4.3,"Sebastian"=>3.2,"Johannes"=>7.1,"Sven"=>4.2);
-echo "En hund väger ";
-echo $hundar["Sebastian"];
-echo " kg";
-
-echo "<br>";
-$namn = "Johannes";
-
-echo "Hunden ";
-echo $namn;
-echo " väger ";
-echo $hundar[$namn];
-echo " kg";
-
-?>
-
-</body>
-</html>
-```
 
 
