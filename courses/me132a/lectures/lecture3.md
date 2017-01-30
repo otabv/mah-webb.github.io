@@ -304,4 +304,3 @@ $_POST och $_GET är exempel på associativa arrayer som PHP skapar automatiskt.
   </body>
 </html>
 ```
-
