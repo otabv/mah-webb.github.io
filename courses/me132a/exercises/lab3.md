@@ -14,6 +14,16 @@ Syfte med laborationen:
 
 Läs kapitel 3, s. 57-70 i boken PHP & MySQL
 
+## Inlämning
+
+Lämna in en **zip-fil** som innehåller följande på peergrad.io:
+
+- Alla php- och html-filer du skapat
+- En text-fil som innehåller länkar till dina php och html-filer. 
+
+OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen `me132a/lab3`
+
+
 ## Uppgift 1
 
 Första uppgiften är att skapa ett formulär med två fält, ett för *namn* och ett för *epost-adress*. Döp filen till *upp1.html*.
@@ -47,9 +57,11 @@ Nu ska ett lite mer omfattande formulär göras, med följande utseende:
 
 ![](im3/form3.png)
 
-Formuläret ska leda vidare till 
+Menyn med betalningssätt ska innehålla minst två alternativ. Formuläret ska leda vidare till 
 
 ![](im3/svar3.png)
+
+Svarsidan behöver *inte* hantera kryssrutan för nyhetsbrev. 
 
 ## Uppgift 4
 
@@ -63,9 +75,9 @@ i fältet *förnamn* i formuläret (men ersätt *dittnamn* med det du heter). Kl
 
 Komplettera lösningen till uppgift 3 så att den oskadliggör eventuell kod i inmatningsfält.
 
-## Uppgift 5 - ej klar, blir klar senast 2017-01-31
+## Uppgift 5
 
-Komplettera... 
+Gör ett formulär där man kan mata in radien på en cirkel. Formuläret ska leda vidare till en php-sida som beräknar cirkelns area. Bestäm själv hur sidan ska se ut. För att utföra beräkningen behövs konstanten &pi; som man i php kan skriva `M_PI`.  
 
 
 <!-- uppgift 5 i laboration 2 (förra laborationen) med ett formulär så att man kan välja en viss månad i en dropdownmeny och sedan få veta hur många dagar det är i den månaden. Svarsidan kan se nästan likadan ut som i laboration 2, men måste hämta rätt månad från formuläret. 
