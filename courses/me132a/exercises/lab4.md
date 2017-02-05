@@ -12,9 +12,9 @@ Syfte med laborationen:
 
 OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen ddwap/me132a/lab4. För att sedan testas måste de skickas över till servern ddwap.mah.se.
 
-Lämna in följande:
+Lämna in följande på peergrade:
 
-Alla php-filer ihopzippade
+Alla php-filer ihopzippade samt en textfil med länkar till de olika uppgifterna. 
 
 ## Uppgift 1
 
