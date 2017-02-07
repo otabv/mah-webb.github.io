@@ -21,7 +21,7 @@ Install the Bluetooth Terminal Android application from Next Prototypes:
 
 **NOTE** There are several applications with the same name, make sure to use the one from Next Prototypes.
 
-##Communcation between Android and Arduino
+## Communcation between Android and Arduino
 
 Now an Android phone can communicate with an Arduino with a Bluesmirf module. It might be necessary to pair the android phone and the Bluesmirf first, see **Finding** and **Pairing** below. 
 
@@ -96,7 +96,7 @@ void loop()
 }
 {% endhighlight %}
 
-##Configuration of Bluesmirf
+## Configuration of Bluesmirf
 
 This sketch can be used for configuration of the Bluesmirf (taken from the [Sparkfun tutorial above](https://learn.sparkfun.com/tutorials/using-the-bluesmirf) but slightly modified):
 
@@ -149,7 +149,7 @@ void loop()
 }
 {% endhighlight %}
 
-##Finding Bluetooth devices
+## Finding Bluetooth devices
 
 This sketch will find available bluetooth devices:
 
@@ -202,7 +202,7 @@ void loop()
 }
 {% endhighlight %}
 
-##Pairing with a bluetooth device
+## Pairing with a bluetooth device
 
 This sketch will pair with a device found by the previous sketch
 
@@ -235,7 +235,7 @@ void loop()
 }
 {% endhighlight %}
 
-##Further work
+## Further work
 
 If you want to develop your own Android apps, or modify existing apps, check the following links:
 
