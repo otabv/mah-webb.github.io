@@ -20,7 +20,7 @@ Lämna in följande
 
 OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i katalogen ddwap/me132a/lab5.
 
-##Uppgift 1
+## Uppgift 1
 
 Gör en PHP-fil som heter upp1.php som innehåller en array med 5 element. Varje element ska innehålla ett namn. Skriv PHP-kod som med en **while-loop** genererar följande HTML-kod, dvs kod som ger en punktlista:
 
@@ -105,7 +105,7 @@ Resultatet kan se ut så här:
 </table>
 </div>
 
-##Uppgift 4
+## Uppgift 4
 
 Nu ska en **foreach-loop** användas för att loopa igenom en **associativ array** och skapa en tabell. Använd samma array med månader som vi använt tidigare:
 
@@ -149,7 +149,7 @@ Resultatet kan då se ut så här:
 </table>
 </div>
 
-##Uppgift 5
+## Uppgift 5
 
 Vi ska nu se hur en PHP-fil kan infoga en annan PHP-fil med hjälp av `include`.
 
