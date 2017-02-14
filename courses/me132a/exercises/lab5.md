@@ -22,7 +22,7 @@ OBS: Använd samma katalogstruktur som i laboration 1, dvs lägg alla filer i ka
 
 ## Uppgift 1
 
-Gör en PHP-fil som heter upp1.php som innehåller en array med 5 element. Varje element ska innehålla ett namn. Skriv PHP-kod som med en **while-loop** genererar följande HTML-kod, dvs kod som ger en punktlista:
+Gör en PHP-fil som heter `upp1.php` som innehåller en array med 5 element. Varje element ska innehålla ett namn. Skriv PHP-kod som med en **while-loop** genererar följande HTML-kod, dvs kod som ger en punktlista:
 
 {% highlight html %}
 <ul>
@@ -53,7 +53,7 @@ Det är viktigt att utskriften uppdateras om arrayen med namn uppdateras dvs om 
 
 ## Uppgift 2
 
-Gör en fil upp2.php som istället skriver ut namn från en array med en **for-loop** som en numrerad lista:
+Gör en fil `upp2.php` som istället skriver ut namn från en array med en **for-loop** som en numrerad lista:
 
 {% highlight html %}
 <ol>
@@ -81,7 +81,7 @@ Resultatet kan se ut så här:
 
 ## Uppgift 3
 
-Gör en php-sida upp3.php. Denna sida ska ocks använda en **for-loop**, men nu ska en tabell med två kolumner skapas. Följande HTML-kod ska skapas av PHP:
+Gör en php-sida `upp3.php`. Denna sida ska ocks använda en **for-loop**, men nu ska en tabell med två kolumner skapas. Följande HTML-kod ska skapas av PHP:
 
 {% highlight html %}
 <table border="1">
@@ -107,53 +107,13 @@ Resultatet kan se ut så här:
 
 ## Uppgift 4
 
-Nu ska en **foreach-loop** användas för att loopa igenom en **associativ array** och skapa en tabell. Använd samma array med månader som vi använt tidigare:
-
-{% highlight php  startinline=True %}
-$days_in_months=array('januari'=>31,'februari'=>28,'mars'=>31,'april'=>30,'maj'=>31,'juni'=>30,'juli'=>31,'augusti'=>31,'september'=>30,'oktober'=>31,'november'=>30,'december'=>31);
-{% endhighlight %}
-
-{% highlight html %}
-<h2>Foreach-exempel</h2>
-<table border="1"><tr><td>januari</td><td>31</td></tr>
-<tr><td>februari</td><td>28</td></tr>
-<tr><td>mars</td><td>31</td></tr>
-<tr><td>april</td><td>30</td></tr>
-<tr><td>maj</td><td>31</td></tr>
-<tr><td>juni</td><td>30</td></tr>
-<tr><td>juli</td><td>31</td></tr>
-<tr><td>augusti</td><td>31</td></tr>
-<tr><td>september</td><td>30</td></tr>
-<tr><td>oktober</td><td>31</td></tr>
-<tr><td>november</td><td>30</td></tr>
-<tr><td>december</td><td>31</td></tr>
-</table>
-{% endhighlight %}
-
-Resultatet kan då se ut så här:
-
-<div style="border:2px solid black;padding:20px">
-<h2>Foreach-exempel</h2>
-<table border="1"><tr><td>januari</td><td>31</td></tr>
-<tr><td>februari</td><td>28</td></tr>
-<tr><td>mars</td><td>31</td></tr>
-<tr><td>april</td><td>30</td></tr>
-<tr><td>maj</td><td>31</td></tr>
-<tr><td>juni</td><td>30</td></tr>
-<tr><td>juli</td><td>31</td></tr>
-<tr><td>augusti</td><td>31</td></tr>
-<tr><td>september</td><td>30</td></tr>
-<tr><td>oktober</td><td>31</td></tr>
-<tr><td>november</td><td>30</td></tr>
-<tr><td>december</td><td>31</td></tr>
-</table>
-</div>
+Nu ska en **foreach-loop** användas för att loopa igenom en vår array. Skapa filen `upp4.php`. Resultatet ska bli som i uppgift 2, dvs en ordnad lista. 
 
 ## Uppgift 5
 
-Vi ska nu se hur en PHP-fil kan infoga en annan PHP-fil med hjälp av `include`.
+Vi ska nu se hur en PHP-fil kan infoga en annan PHP-fil med hjälp av `include`. *Viktigt:* skapa underkatalogen `upp5` i katalogen `lab5`.  
 
-Gör en php-sida som döps till *index.php* och som läggs i katalogen *upp5* i *lab5*. 
+Gör en php-sida som döps till *index.php* och som läggs i katalogen *upp5*.
 
 Filen ska ha samma struktur som exemplet på sidan 84 i boken. 
 
