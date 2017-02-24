@@ -61,25 +61,24 @@ En stomme till filen finns nedan. Komplettera funktionen så att innehållet i a
 
 Utskriften ska bli:
 
+<div style="border:2px solid black; padding:20px">
+<h2>Numbers</h2>
+3<br> 
+42<br>
+77<br>
+2<br>
+18<br>
+9<br>
+44<br>
+88<br>
+4<br>
+56<br>
+<h2>Artists</h2>
+M.I.A.<br>
+Santigold<br>
+Beyoncé<br>
+</div>
 
-**Numbers**
-  
-3  
-42  
-77  
-2  
-18  
-9  
-44  
-88  
-4  
-56  
-  
-**Artists**  
-  
-M.I.A.  
-Santigold  
-Beyoncé  
   
 ## Uppgift 2
 
